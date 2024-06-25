@@ -1006,7 +1006,7 @@ narrative_event = {
 		else_if = {
 			limit = { is_female = yes } 
 			create_bloodline = {
-				type = heartbraker_female_bloodline
+				type = heartbreaker_female_bloodline
 			}
 			clr_character_flag = anastasia_war
 			add_character_flag = anastasia_win
@@ -1014,7 +1014,7 @@ narrative_event = {
 		else_if = {
 			limit = { is_female = no }
 			create_bloodline = {
-				type = heartbraker_male_bloodline
+				type = heartbreaker_male_bloodline
 			}
 			clr_character_flag = anastasia_war
 			add_character_flag = anastasia_win

@@ -80,7 +80,7 @@ narrative_event = {
 					is_alternate_start = no
 					OR = { 
 						religion_group = christian
-						religion_group = mesoamerican
+						religion_group = mesoamerican_gods
 						religion_group = cult_of_saints
 					}
 					NOT = {
@@ -105,7 +105,7 @@ narrative_event = {
 				is_alternate_start = no
 				OR = { 
 					religion_group = christian
-					religion_group = mesoamerican
+					religion_group = mesoamerican_gods
 					religion_group = cult_of_saints
 				}
 				NOT = {
@@ -172,7 +172,7 @@ narrative_event = {
 	desc = {
 		trigger = {
 			OR = { 
-				religion_group = mesoamerican
+				religion_group = mesoamerican_gods
 			}
 		}
 		text = EVTDESCLoR40_HELLENIC
@@ -181,7 +181,7 @@ narrative_event = {
 		trigger = {
 			NOR = { 
 				religion_group = christian
-				religion_group = mesoamerican
+				religion_group = mesoamerican_gods
 				religion_group = cult_of_saints
 			}
 		}

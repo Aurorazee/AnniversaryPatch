@@ -1064,7 +1064,7 @@ check_if_ancestor_worship_worthy_effect = {
 			factor = 1.5
 			OR = {
 				has_religion_feature = religion_harems
-				has_religion_feature = religion_trailwalker
+				has_religion_feature = religion_feature_trailwalker
 			}
 			any_spouse = {
 				count = 2
@@ -1075,7 +1075,7 @@ check_if_ancestor_worship_worthy_effect = {
 			factor = 0.65
 			OR = {
 				has_religion_feature = religion_harems
-				has_religion_feature = religion_trailwalker
+				has_religion_feature = religion_feature_trailwalker
 			}
 			NOT = {
 				any_spouse = {
@@ -1087,7 +1087,7 @@ check_if_ancestor_worship_worthy_effect = {
 			factor = 0.65
 			OR = {
 				has_religion_feature = religion_harems
-				has_religion_feature = religion_trailwalker
+				has_religion_feature = religion_feature_trailwalker
 			}
 			trait = chaste
 		}

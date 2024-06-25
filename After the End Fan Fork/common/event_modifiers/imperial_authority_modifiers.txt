@@ -445,7 +445,7 @@ imperial_authority_modifier_40 = {
 	monthly_character_prestige = -0.5
 	global_tax_modifier = -0.125
 	global_levy_size = -0.125
-	retinuesize_perc = -1.033
+	#retinuesize_perc = -1.033
 	retinuesize_perc = -0.25
 }
 
