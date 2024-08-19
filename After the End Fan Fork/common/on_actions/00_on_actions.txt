@@ -75,6 +75,8 @@ on_startup = {
 		
 		
 		ORFmaint.11
+
+		orientalist.5 #Landing the Grand Sultan in Tampa
 	}
 }
 
