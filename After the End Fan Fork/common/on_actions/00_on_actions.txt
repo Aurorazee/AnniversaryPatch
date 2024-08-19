@@ -2990,7 +2990,6 @@ on_new_holder_inheritance = {
 		delayed_hagia_sophia_conversion = {
 			delay = 14
 			100 = LT.20900
-			100 = AMLT.3
 		}
 	}
 }
@@ -3033,7 +3032,6 @@ on_new_holder_usurpation = {
 		delayed_hagia_sophia_conversion = {
 			delay = 14
 			100 = LT.20900
-			100 = AMLT.3
 		}
 	}
 }
