@@ -3999,6 +3999,7 @@ narrative_event = {
 			religion = charismatic
 		}
 		NOT = { has_global_flag = fall_hcc }
+		NOT = { has_global_flag = hcc_restored }
 	}
 
 	major_trigger = {
@@ -4029,13 +4030,13 @@ narrative_event = {
 			}
 		}
 		any_demesne_title = {
-				limit = {
-						higher_tier_than = DUKE
-					NOR = {
-						controls_religion = yes
-						clan = yes
-					}
+			limit = {
+				title = e_dixie
+				NOR = {
+					controls_religion = yes
+					clan = yes
 				}
+			}
 			unsafe_destroy_landed_title = THIS
 		}
 	}
@@ -4043,12 +4044,14 @@ narrative_event = {
 		name = EVTOPTB_hcc_fall
 		trigger = {
 			trait = bulldog_hcc
+			NOT = { has_landed_title = e_dixie }
 		}
 	}
 	option = {
 		name = EVTOPTC_hcc_fall
 		trigger = {
 			trait = ram_hcc
+			NOT = { has_landed_title = e_dixie }
 		}
 	}
 	option = {
@@ -4059,6 +4062,7 @@ narrative_event = {
 				trait = bulldog_hcc
 			}
 			religion = evangelical
+			NOT = { has_landed_title = e_dixie }
 		}
 	}
 	option = {
@@ -4101,13 +4105,13 @@ narrative_event = {
 			character = 1861579
 		}
 		any_demesne_title = {
-				limit = {
-						higher_tier_than = DUKE
-					NOR = {
-						controls_religion = yes
-						clan = yes
-					}
+			limit = {
+				title = e_dixie
+				NOR = {
+					controls_religion = yes
+					clan = yes
 				}
+			}
 			unsafe_destroy_landed_title = THIS
 		}
 	}

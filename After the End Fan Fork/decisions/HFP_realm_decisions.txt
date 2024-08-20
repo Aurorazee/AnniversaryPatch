@@ -331,7 +331,7 @@ decisions = {
 
 		allow = {
 			war = no
-			prestige = 4000 
+			prestige = 2500 
 			has_landed_title = c_charleston
 			OR = {
 				has_landed_title = c_beaufort
@@ -420,6 +420,7 @@ decisions = {
 						set_defacto_liege = e_dixie
 					}
 				}
+				set_global_flag = hcc_restored
 			}	
 		}
 	}
@@ -648,7 +649,7 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 3000
+			prestige = 750
 			custom_tooltip = {
 				text = emperor_has_dixie
 
@@ -759,7 +760,7 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 3000
+			prestige = 750
 			custom_tooltip = {
 				text = emperor_has_dixie
 
@@ -876,7 +877,7 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 3000
+			prestige = 750
 			custom_tooltip = {
 				text = emperor_has_dixie
 
@@ -1256,7 +1257,7 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 3000
+			prestige = 500
 			e_dixie = {
 				has_holder = no
 			}
