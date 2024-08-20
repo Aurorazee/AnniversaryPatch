@@ -531,7 +531,7 @@ decisions = {
 			}
 		}
 		allow = {
-			prestige = 3000
+			prestige = 750
 			custom_tooltip = {
 				text = emperor_has_dixie
 
@@ -583,7 +583,7 @@ decisions = {
 				d_sowega = {
 					de_jure_liege = k_georgia_grand_duchy
 				}
-				d_agusta = {
+				d_augusta = {
 					de_jure_liege = k_georgia_grand_duchy
 				}
 				e_dixie = {
