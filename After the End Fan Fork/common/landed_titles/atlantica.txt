@@ -1030,7 +1030,7 @@ e_atlantica = {
 			piety = 200
 		}
 
-		capital = 52
+		capital = 63 # Washington
 
 		# Crusade target weight
 		catholic = 75
