@@ -4743,10 +4743,10 @@ character_event = {
 	
 	only_playable = yes
 	ai = no
-	culture_group = north_germanic
+	religion_group = mesoamerican_gods
 	
 	trigger = {
-		year = 1150
+		year = 2750
 		NOT = { has_character_flag = runestones_halted }
 		NOT = {
 			has_alternate_start_parameter = { key = religion_names value = random }
