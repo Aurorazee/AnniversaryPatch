@@ -9397,57 +9397,57 @@ character_event = {
 }
 
 #Fall to Feudal
-character_event = {
-	id = cetic.542
-	picture = GFX_evt_china_isolationist
-	desc = EVTDESCCETIC542
-	trigger = {
-		has_character_modifier = bureaucracy
-		primary_title = {
-			check_variable = { which = bureau_number value <= 0 }
-			NOT = {
-				has_title_flag = devolved_bureaucracy
-			}
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
+# character_event = {
+	# id = cetic.542
+	# picture = GFX_evt_china_isolationist
+	# desc = EVTDESCCETIC542
+	# trigger = {
+		# has_character_modifier = bureaucracy
+		# primary_title = {
+			# check_variable = { which = bureau_number value <= 0 }
+			# NOT = {
+				# has_title_flag = devolved_bureaucracy
+			# }
+		# }
+	# }
+	# mean_time_to_happen = {
+		# days = 1
+	# }
 	
-	option = {
-		name = EVTOPTACETIC542
-		set_government_type = feudal_government
-		primary_title = {
-			set_title_flag = devolved_bureaucracy
-		}
-	}
-}
+	# option = {
+		# name = EVTOPTACETIC542
+		# set_government_type = feudal_government
+		# primary_title = {
+			# set_title_flag = devolved_bureaucracy
+		# }
+	# }
+# }
 
 #Rise From Feudal
-character_event = {
-	id = cetic.543
-	picture = GFX_evt_china_isolationist
-	desc = EVTDESCCETIC543
-	trigger = {
-		has_character_modifier = bureaucracy
-		government = feudal_government
-		primary_title = {
-			check_variable = { which = bureau_number value = 25 }
-			has_title_flag = devolved_bureaucracy
-		}
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
+# character_event = {
+	# id = cetic.543
+	# picture = GFX_evt_china_isolationist
+	# desc = EVTDESCCETIC543
+	# trigger = {
+		# has_character_modifier = bureaucracy
+		# government = feudal_government
+		# primary_title = {
+			# check_variable = { which = bureau_number value = 25 }
+			# has_title_flag = devolved_bureaucracy
+		# }
+	# }
+	# mean_time_to_happen = {
+		# days = 1
+	# }
 	
-	option = {
-		name = EVTOPTACETIC543
-		set_government_type = bureaucratic_government
-		primary_title = {
-			clr_title_flag = devolved_bureaucracy
-		}
-	}
-}
+	# option = {
+		# name = EVTOPTACETIC543
+		# set_government_type = bureaucratic_government
+		# primary_title = {
+			# clr_title_flag = devolved_bureaucracy
+		# }
+	# }
+# }
 
 #Yearly Bureaucracy Change
 character_event = {
