@@ -89,10 +89,6 @@ character_event = {
 			has_religion_feature = religion_cosmopolitan
 		}
 		modifier = {
-			factor = 2.5
-
-		}
-		modifier = {
 			factor = 0.75
 			liege = {
 				has_artifact = ate_fingerbone_of_saint
@@ -696,7 +692,7 @@ character_event = {
 
 		}
 		
-		job_event_mtth_modifier_learning_score = yes
+		job_event_mtth_modifier_inverted_learning_score  = yes
 		
 		modifier = {
 			factor = 0.75
@@ -1148,7 +1144,7 @@ character_event = {
 			has_religion_feature = religion_dogmatic
 		}
 		
-		job_event_mtth_modifier_learning_score = yes
+		job_event_mtth_modifier_inverted_learning_score = yes
 		
 		modifier = {
 			factor = 0.75

@@ -25,7 +25,6 @@ laws = {
 		}
 		allow = {
 			has_law = culture_tolerance_1
-			TECH_CULTURE_FLEX>=2
 		}
 
 		revoke_allowed = {
@@ -34,7 +33,7 @@ laws = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 0.0005
+				factor = 0.005
 			}
 			modifier = {
 				factor = 10
@@ -57,9 +56,11 @@ laws = {
 			modifier = {
 				factor = 0
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
+					}
 				}
 			}	
 		}
@@ -132,9 +133,11 @@ laws = {
 				factor = 20
 				has_law = culture_tolerance_0
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
+					}
 				}
 			}
 			modifier = {
@@ -151,9 +154,11 @@ laws = {
 				factor = 0
 				has_law = culture_tolerance_2
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
+					}
 				}
 			}
 		}
@@ -202,7 +207,7 @@ laws = {
 		ai_will_do = {
 			factor = 1
 			modifier = {
-				factor = 0.0005
+				factor = 0.005
 			}
 			modifier = {
 				factor = 0
@@ -218,9 +223,11 @@ laws = {
 				factor = 20
 				has_law = culture_tolerance_1
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
+					}
 				}
 			}
 		}
@@ -271,7 +278,6 @@ laws = {
 		}
 		allow = {
 			has_law = religion_tolerance_1
-			TECH_CULTURE_FLEX>=3
 		}
 
 		revoke_allowed = {
@@ -315,7 +321,7 @@ laws = {
 				factor = 0.005
 			}
 			modifier = {
-				factor = 25
+				factor = 5
 				holder_scope = {
 					OR = {
 						religion = anabaptist
@@ -366,10 +372,12 @@ laws = {
 			modifier = {
 				factor = 0
 				holder_scope = {
+					OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 		}
@@ -418,7 +426,6 @@ laws = {
 				has_law = religion_tolerance_0
 				has_law = religion_tolerance_2
 			}
-			TECH_CULTURE_FLEX>=2
 		}
 
 		revoke_allowed = {
@@ -494,10 +501,12 @@ laws = {
 				factor = 0
 				has_law = religion_tolerance_2
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 			modifier = {
@@ -546,10 +555,12 @@ laws = {
 				factor = 20
 				has_law = religion_tolerance_0
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 		}
@@ -619,10 +630,12 @@ laws = {
 				factor = 0
 				has_law = religion_tolerance_3
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 			modifier = {
@@ -649,10 +662,12 @@ laws = {
 				factor = 20
 				has_law = religion_tolerance_1
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 		}
@@ -733,10 +748,12 @@ laws = {
 				factor = 0
 				has_law = religion_tolerance_4
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 			modifier = {
@@ -763,10 +780,12 @@ laws = {
 				factor = 20
 				has_law = religion_tolerance_2
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 		}
@@ -883,10 +902,12 @@ laws = {
 			modifier = {
 				factor = 20
 				holder_scope = {
+				OR = {
 					trait = cruel
 					trait = paranoid
 					trait = possessed
 					trait = zealous
+					}
 				}
 			}
 		}
