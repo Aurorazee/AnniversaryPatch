@@ -725,49 +725,30 @@ upgrade_stained_glass_window = {
 
 upgrade_relic_tomb = {
 	picture = GFX_upgrade_icon_key
-	
+
 	potential = {
-		OR = {
-			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
+		FROMFROM = {
+			is_active = yes
 		}
 	}
-	allow = {
-		trigger_if = {
-			limit = {
-				NOR = {
-					religion_group = christian
-					religion_group = cult_of_saints
-					religion_group = latter_day_saints
-				}
-			}
-			OR = {
-				religion_group = christian
-				religion_group = cult_of_saints
-				religion_group = latter_day_saints
-			}
+
+	allow = { }
+
+	active = {
+		FROMFROM = {
+			is_active = yes
 		}
-	}
-	active = { 
-		OR = {
-			religion_group = christian
-			religion_group = cult_of_saints
-			religion_group = latter_day_saints
-		}
-		hidden_tooltip = {
-			FROMFROM = { is_active = yes }
-		}
+
 		FROM = {
 			show_scope_change = no
+
 			trigger_if = {
-				limit = {
-					NOT = { FROMFROM = { is_building_wonder_upgrade = yes } }
-				}
-				custom_tooltip = {
-					text = must_be_storing_a_relic_TT
-					FROMFROM = { has_wonder_upgrade_flag = is_storing_relic }
-				}
+				limit = { is_building_wonder_upgrade = no }
+			}
+
+			custom_tooltip = {
+				text = must_be_storing_a_relic_TT
+				has_wonder_upgrade_flag = is_storing_relic
 			}
 		}
 	}
@@ -777,10 +758,16 @@ upgrade_relic_tomb = {
 		is_singular
 		holy
 		stores_relic
+		relic_tomb
 	}
+
 	build_time = 24
 	gold_cost_flat = 450
 	gold_cost_ticking = 1
+
+	local_modifier = {
+	}
+
 	owner_modifier = {
 		monthly_character_piety = 0.25
 		custom_modifier_text = storing_a_relic_possible_modifier_tt
