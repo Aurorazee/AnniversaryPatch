@@ -14,3 +14,7 @@ renewers_of_the_faith = {
 	
 	#religious = yes (doesn't work)
 }
+
+mind_hajj_cooldown = {
+	icon = 18
+}
