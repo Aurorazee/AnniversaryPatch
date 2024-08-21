@@ -1017,7 +1017,7 @@ embrace_twelve_tribes;Embrace Twelve Tribes;;;;;;;;;;;;;x
 embrace_twelve_tribes_desc;Embrace the belief in Prophet Gad and the Twelve Tribes of Israel mansion, seeing equality with Judaism and Christianity.;;;;;;;;;;;;;x
 embrace_bobo_ashanti;Embrace Bobo Ashanti;;;;;;;;;;;;;x
 embrace_bobo_ashanti_desc;Embrace the belief in Bobo Ashanti, emphasizing the original rituals of the Rasta faith.;;;;;;;;;;;;;x
-onate_money_to_chrismon_tree;Donate 300¤ to the Knights of the Chrismon Tree;;;;;;;;;;;;;x
+donate_money_to_chrismon_tree;Donate 300¤ to the Knights of the Chrismon Tree;;;;;;;;;;;;;x
 donate_money_to_chrismon_tree_desc;I can donate money to the Knights of the Chrismon Tree in exchange for [Player.Religion.GetPietyName] and lifelong respect from the Church.;;;;;;;;;;;;;x
 donate_money_to_order_of_baptists;Donate 300¤ to the Order of the Baptists.;;;;;;;;;;;;;x
 donate_money_to_order_of_baptists_desc;I can donate money to the Order of the Baptists in exchange for [Player.Religion.GetPietyName] and lifelong respect from the Church.;;;;;;;;;;;;;x

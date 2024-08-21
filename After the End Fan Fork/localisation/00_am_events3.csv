@@ -1682,7 +1682,7 @@ EVTOPTC_solution_ram;It is good the struggle is over...;;;;;;;;;;;;;x
 EVTOPTD_solution_ram;The bickering of fools does not concern me...;;;;;;;;;;;;;x
 
 EVTTITLE_hanovers_landed;House of Hanover Landed;;;;;;;;;x
-EVTDESC_hanovers_landed;Once relegated to the annals of history, [Root.GetTitledName] has fought against the tides of time to leave the fate of [Root.GetHerHis] dieing house. Left with only a petty barony, the Hanovers languished under the Danridges rule, however this arrangement has changed in recent times as the original house of Hanover once again has a proper title to their name. With [Root.GetHerHis] spot on the world stage reclaimed, the only question left is what will [Root.GetSherHe] do next.;;;;;;;;;x
+EVTDESC_hanovers_landed;Once relegated to the annals of history, [Root.GetTitledName] has fought against the tides of time to leave the fate of [Root.GetHerHis] dying house. Left with only a petty barony, the Hanovers languished under the Dandridges rule, however this arrangement has changed in recent times as the original house of Hanover once again has a proper title to their name. With [Root.GetHerHis] spot on the world stage reclaimed, the only question left is what will [Root.GetSheHe] do next.;;;;;;;;;x
 EVTOPT_hanoverlanda;that is the question isn't it.;;;;;;;;;x
 EVTOPT_hanoverlandb;It looks like the we aren't the only one to carry on the legacy anymore;;;;;;;;;x
 EVTOPT_hanoverlandc;Let's hope this revival ends here.;;;;;;;;;x

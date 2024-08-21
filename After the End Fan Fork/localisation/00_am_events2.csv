@@ -2189,7 +2189,7 @@ WAR_NAME_RECONQUISTA_CHICHIMECA;$ORDER$Reconquest War for Gran Chichimeca;;;;;;;
 reconquista_chichimeca_desc;§Y[Root.GetTitledName]§! can start a war to oust the infidels from the region of §Y[k_gran_chichimeca.GetBaseName]§!, and retake all provinces in the area held by §Y$TARGET$§!.;;;;;;;;;;;;;x
 CB_NAME_RECONQUISTA_HUASTECA;Reconquest of Huasteca and Puebla;;;;;;;;;;;;;x
 WAR_NAME_RECONQUISTA_HUASTECA;$ORDER$Reconquest War for Huasteca and Puebla;;;;;;;;;;;;;x
-reconquista_huasteca_desc;§Y[Root.GetTitledName]§! can start a war to oust the infidels from the region of §Y[d_huasteca.GetBaseName]§! and §Y[d_peubla.GetBaseName]§!, and retake all provinces in the area held by §Y$TARGET$§!.;;;;;;;;;;;;;x
+reconquista_huasteca_desc;§Y[Root.GetTitledName]§! can start a war to oust the infidels from the region of §Y[d_huasteca.GetBaseName]§! and §Y[d_puebla.GetBaseName]§!, and retake all provinces in the area held by §Y$TARGET$§!.;;;;;;;;;;;;;x
 CB_NAME_RECLAMATION;Reclamation of [Title.GetBaseName];;;;;;;;;;;;;x
 WAR_NAME_RECLAMATION;$ORDER$Reclamation of [Title.GetBaseName];;;;;;;;;;;;;x
 gaian_reclamation_cb_desc;§Y[Root.GetTitledName]§! can start a war to oust the invaders from [Title.GetBaseName] and reclaim Gaian territory.;;;;;;;;;;;;;x
@@ -2589,7 +2589,7 @@ EVTDESC_st_patricks_1;Nobody remembers why Saint Patrick came to be so well-rega
 EVTOPTA_st_patricks_1;I must find my green robes...;;;;;;;;;;;;;x
 EVTDESC_st_patricks_2;The annual Saint Patrick's Day procession has begun. Your capital's streets are filled with green-clad pilgrims from across the land, and the air is filled with the sounds of cheers and ancient ballads. Many of the pilgrims make a large show of throwing away and trampling over decorative snakes, imitating Saint Patrick's feat of driving away snakes from his native land.;;;;;;;;;;;;;x
 EVTOPTA_st_patricks_2;Oh, Danny boy...;;;;;;;;;;;;;x
-EVTDESC_st_patricks_3;Night has fallen, and the procession has come to an end. The people are now heading to local taverns for the start of the second half of the celebration — the feasts. These "feasts" usually devolve into drunken, hedonistic revelry, so more religious [Root.Religon.GetName]s frown on them. However, they are still an integral part of the celebrations for most.;;;;;;;;;;;;;x
+EVTDESC_st_patricks_3;Night has fallen, and the procession has come to an end. The people are now heading to local taverns for the start of the second half of the celebration — the feasts. These "feasts" usually devolve into drunken, hedonistic revelry, so more religious [Root.Religion.GetName]s frown on them. However, they are still an integral part of the celebrations for most.;;;;;;;;;;;;;x
 EVTOPTA_st_patricks_3;To the tavern!;;;;;;;;;;;;;x
 EVTOPTB_st_patricks_3;I think I'll pass this year.;;;;;;;;;;;;;x
 TXT_st_patricks_drunk;You get a little carried away with your drink...;;;;;;;;;;;;;x
