@@ -334,7 +334,7 @@ character_event = { #Boa Vista leg event tombola
 							tier = DUKE
 						}
 						capital_scope = {
-							region = custom_southern_access
+							region = custom_brazilian_invasion_target_region
 						}
 						NOT = {
 							num_of_friends = 3
@@ -1091,7 +1091,7 @@ narrative_event = { # Messenger invites you to the Lords keep, travel time > 2
 					tier = DUKE
 				}
 				capital_scope = {
-					region = custom_southern_access
+					region = custom_brazilian_invasion_target_region
 				}
 				NOT = {
 					num_of_friends = 3
@@ -1110,7 +1110,7 @@ narrative_event = { # Messenger invites you to the Lords keep, travel time > 2
 					tier = DUKE
 				}
 				capital_scope = {
-					region = custom_southern_access
+					region = custom_brazilian_invasion_target_region
 				}
 				NOT = { block_general_event_trigger = yes }
 				is_rival = ROOT
