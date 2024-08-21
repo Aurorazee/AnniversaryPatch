@@ -128,8 +128,12 @@ decisions = {
 			NOT = {
 				higher_tier_than = DUKE
 			}
-			has_landed_title = d_middle_tennessee
-			religion = catholic
+			OR = {
+				has_landed_title = d_middle_tennessee
+				has_landed_title = d_west_tennessee
+				has_landed_title = d_east_tennessee
+				has_landed_title = d_tenesi
+			}
 			k_tennessee = {
 				has_holder = no
 			}
@@ -158,14 +162,16 @@ decisions = {
 			NOT = {
 				is_incapable = yes
 			}
-			completely_controls = d_middle_tennessee
-			num_of_duke_titles >= 2
+			AND = {
+				completely_controls = d_middle_tennessee
+				completely_controls = d_west_tennessee
+				completely_controls = d_east_tennessee
+			}
 			conditional_tooltip = {
 				trigger = {
 					ai = no
 				}
-
-				prestige = 1000
+				prestige = 500
 			}
 			wealth = 100
 		}
@@ -183,23 +189,13 @@ decisions = {
 				show_scope_change = no
 				de_jure_liege = k_tennessee
 			}
-			if = {
-				limit = {
-					has_landed_title = d_west_tennessee
-				}
-				d_west_tennessee = {
-					show_scope_change = no
-					de_jure_liege = k_tennessee
-				}
+			d_east_tennessee = {
+				show_scope_change = no
+				de_jure_liege = k_tennessee
 			}
-			if = {
-				limit = {
-					has_landed_title = d_east_tennessee
-				}
-				d_east_tennessee = {
-					show_scope_change = no
-					de_jure_liege = k_tennessee
-				}
+			d_west_tennessee = {
+				show_scope_change = no
+				de_jure_liege = k_tennessee
 			}
 			if = {
 				limit = {
@@ -224,8 +220,10 @@ decisions = {
 		ai_check_interval = 60
 
 		potential = {
-			religion = catholic
-			has_landed_title = d_vandalia
+			OR = {
+				has_landed_title = d_vandalia
+				has_landed_title = d_shenandoah
+			}
 			NOT = { 
 				higher_tier_than = DUKE
 			}
@@ -259,12 +257,13 @@ decisions = {
 				is_incapable = yes
 			}
 			completely_controls = d_vandalia
+			completely_controls = d_shenandoah
 			conditional_tooltip = {
 				trigger = {
 					ai = no
 				}
 
-				prestige = 1000
+				prestige = 500
 			}
 			wealth = 100
 		}
@@ -280,6 +279,10 @@ decisions = {
 				copy_title_laws = event_target:current_primary_title
 			}
 			d_vandalia = {
+				show_scope_change = no
+				de_jure_liege = k_west_virginia
+			}
+			d_shenandoah = {
 				show_scope_change = no
 				de_jure_liege = k_west_virginia
 			}
