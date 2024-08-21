@@ -2688,8 +2688,8 @@ ALT_MONETARIST;The [monetarist.GetName] Caliphate;Califat [monetarist.GetName];D
 ALT_MONETARIST_ADJ;[monetarist.GetName] Caliphate;Califat [monetarist.GetName];[monetarist.GetName]es Kalifat;;califal [monetarist.GetName];;;;;;;;;x
 ALT_NORSE;The [norse_pagan_reformed.GetName] Caliphate;Califat [norse_pagan_reformed.GetName];Das [norse_pagan_reformed.GetName]e Kalifat;;El califato [norse_pagan_reformed.GetName];;;;;;;;;x
 ALT_NORSE_ADJ;[norse_pagan_reformed.GetName] Caliphate;Califat [norse_pagan_reformed.GetName];[norse_pagan_reformed.GetName]es Kalifat;;califal [norse_pagan_reformed.GetName];;;;;;;;;x
-ALT_OCCULTIST;The [occultist_reformed_pagan_reformed.GetName] Pontificate;Pontificat [occultist_reformed_pagan_reformed.GetName];Das [occultist_reformed_pagan_reformed.GetName]e Pontifikat;;El pontificado [occultist_reformed_pagan_reformed.GetName];;;;;;;;;x
-ALT_OCCULTIST_ADJ;[occultist_reformed_pagan_reformed.GetName] Pontificate;Pontificat [occultist_reformed_pagan_reformed.GetName];[occultist_reformed_pagan_reformed.GetName]e Paparchie;;papal [occultist_reformed_pagan_reformed.GetName];;;;;;;;;x
+ALT_OCCULTIST;The [occultist_reformed.GetName] Pontificate;Pontificat [occultist_reformed.GetName];Das [occultist_reformed.GetName]e Pontifikat;;El pontificado [occultist_reformed.GetName];;;;;;;;;x
+ALT_OCCULTIST_ADJ;[occultist_reformed.GetName] Pontificate;Pontificat [occultist_reformed.GetName];[occultist_reformed.GetName]e Paparchie;;papal [occultist_reformed.GetName];;;;;;;;;x
 ALT_RUST_CULTIST;The [chrome_cultist.GetName] Temple;Temple [chrome_cultist.GetName];Die [chrome_cultist.GetName]en Tempel;;El templo [chrome_cultist.GetName];;;;;;;;;x
 ALT_RUST_CULTIST_ADJ;[chrome_cultist.GetName] Temple;Temple [chrome_cultist.GetName];[chrome_cultist.GetName]e Papatchie;;papal [chrome_cultist.GetName];;;;;;;;;x
 #ALT_THELEMIC;The [thelemic_reformed.GetName] Pontificate;Pontificat [thelemic_reformed.GetName];Das [thelemic_reformed.GetName]e Pontifikat;;El pontificado [thelemic_reformed.GetName];;;;;;;;;x
