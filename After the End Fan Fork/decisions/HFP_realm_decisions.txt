@@ -691,6 +691,18 @@ decisions = {
 				d_nickajack = {
 					de_jure_liege = k_tuskegee_grand_duchy
 				}
+				if = {
+					limit = {
+						OR = {
+							has_landed_title = d_mobile
+							completely_controls = d_mobile
+						}
+					}
+					d_mobile = {
+						show_scope_change = no
+						de_jure_liege = k_tuskegee_grand_duchy
+					}
+				}
 				primary_title = {
 					k_tuskegee_grand_duchy = {
 						copy_title_laws = PREV
@@ -813,6 +825,18 @@ decisions = {
 				}
 				d_cape_fear = {
 					de_jure_liege = k_tarheel_grand_duchy
+				}
+				if = {
+					limit = {
+						OR = {
+							has_landed_title = d_blue_ridge
+							completely_controls = d_blue_ridge
+						}
+					}
+					d_blue_ridge = {
+						show_scope_change = no
+						de_jure_liege = k_tarheel_grand_duchy
+					}
 				}
 				e_dixie = {
 					owner = {
@@ -1120,6 +1144,18 @@ decisions = {
 				d_nickajack = {
 					de_jure_liege = k_tuskegee
 				}
+				if = {
+					limit = {
+						OR = {
+							has_landed_title = d_mobile
+							completely_controls = d_mobile
+						}
+					}
+					d_mobile = {
+						show_scope_change = no
+						de_jure_liege = k_tuskegee
+					}
+				}
 				primary_title = {
 					k_tuskegee = {
 						copy_title_laws = PREV
@@ -1215,6 +1251,18 @@ decisions = {
 				}
 				d_cape_fear = {
 					de_jure_liege = k_tarheel_grand_duchy
+				}
+				if = {
+					limit = {
+						OR = {
+							has_landed_title = d_blue_ridge
+							completely_controls = d_blue_ridge
+						}
+					}
+					d_mobile = {
+						show_scope_change = no
+						de_jure_liege = k_tarheel
+					}
 				}
 			}
 		}
