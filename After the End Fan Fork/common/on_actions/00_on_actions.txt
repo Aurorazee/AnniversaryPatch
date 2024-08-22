@@ -2931,6 +2931,8 @@ on_new_holder = {
 		
 		islamate.34 # When you conquer a Muslim community
 
+		empirestate.1 #Empire State Formation
+
 		#cetic.503 #Bureaucracy modifier for heirs
 		
 		#cetic.504 #Removes title flags for bureaucracy

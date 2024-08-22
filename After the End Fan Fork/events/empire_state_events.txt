@@ -1,0 +1,79 @@
+namespace = empirestate
+
+narrative_event = {
+	id = empirestate.1
+	title = EVTNAME_empire_state
+	desc = EVTDESC_empire_state
+	picture = GFX_evt_americanist_intervention
+	is_triggered_only = yes
+
+	trigger = {
+		is_playable = yes
+		capital_scope = { region = custom_usa }
+		NOT = { has_global_flag = empire_state_formed }
+	}
+
+	immediate = {
+		set_global_flag = empire_state_formed
+	}
+
+	option = { #Empire State Reaction
+		name = EVTOPTA_empire_state
+		trigger = {
+			has_landed_title = e_nys
+		}
+		prestige = 1000
+		if = { #New Imperial Bloodline. (male)
+			limit = { 
+				has_dlc = "Holy Fury" 
+				is_female = no
+			}
+			create_bloodline = {
+				type = nys_emperor_male
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_nys_emperor"
+			}	
+			sound_effect = bloodline_added
+		}
+		else_if = { #New Imperial Bloodline. (female)
+			limit = { 
+				has_dlc = "Holy Fury" 
+				is_female = yes
+			}
+			create_bloodline = {
+				type = nys_emperor_female
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_nys_emperor"
+			}	
+			sound_effect = bloodline_added
+		}
+	}
+
+	option = { #Northerner Reaction
+		name = EVTOPTB_empire_state
+		trigger = {
+			is_playable = yes
+			capital_scope = { region = world_northeast }
+			NOT = { has_landed_title = e_nys }
+		}
+	}
+
+	option = { #Everyone Else
+		name = EVTOPTC_empire_state
+		trigger = {
+			is_playable = yes
+			NOT = { has_landed_title = e_nys }
+		}
+	}
+
+	option = { #HCC Reaction
+		name = EVTOPTD_empire_state
+		trigger = {
+			is_playable = yes
+			NOT = { has_landed_title = e_nys }
+			has_landed_title = e_dixie
+		}
+	}
+}

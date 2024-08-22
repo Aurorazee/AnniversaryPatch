@@ -256,16 +256,14 @@ decisions = {
 			NOT = { has_global_flag = america_restored }
 			independent = yes
 			OR = {
-				culture = gothamite
-				culture = hudsonian
-				culture = yiddish
+				culture_group = mid_atlantic
+				culture_group = amerodeutsch
 			}
 			higher_tier_than = DUKE
 			e_usa = {
 				has_holder = no
 			}
 			NOT = { has_landed_title = e_dixie }
-			NOT = { has_landed_title = k_keystone }
 		}
 		allow = {
 			is_adult = yes
