@@ -755,7 +755,7 @@ decisions = {
 			is_ruler = yes
 			religion = americanist
 			d_americanist = { has_holder = no }
-			NOT = { has_global_flag = pres_election }
+			had_global_flag = { flag = pres_election days = 730 } #If the election lasts more than two years, that means something has broken with the election event chain
 		}
 		
 		allow = {
@@ -772,6 +772,7 @@ decisions = {
 			d_americanist = { grant_title = ROOT }
 			add_trait = president
 			narrative_event = { id = prez.301 }
+			k_papal_state = { holder_scope = { character_event = { id = prez.98 } } } #Clears all the election event chain flags just as a failsafe
 		}
 		revoke_allowed = {
 			always = no

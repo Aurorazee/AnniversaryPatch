@@ -466,13 +466,23 @@ wonder_temple_pagan = {
 	picture = GFX_wonder_strip_temple
 	model = wonder_temple
 	potential = {
-		religion_group = pagan_group
-		is_reformed_religion = yes
+		OR = {
+			AND = {
+				religion_group = pagan_group
+				is_reformed_religion = yes
+			}
+			religion_group = oldworld
+		}
 	}
 	active = {
 		ROOT = {
-			religion_group = pagan_group
-			is_reformed_religion = yes
+			OR = {
+				AND = {
+					religion_group = pagan_group
+					is_reformed_religion = yes
+				}
+				religion_group = oldworld
+			}
 		}
 	}
 	flags = {
