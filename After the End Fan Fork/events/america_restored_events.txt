@@ -1,7 +1,7 @@
 namespace = americarestored
 
 #USA Restored!
-narrative_event={
+narrative_event = {
 	id = americarestored.1
 	title = EVTNAME_restore_america
 	desc = EVTDESC_restore_america_desc
@@ -96,5 +96,637 @@ narrative_event={
 			has_landed_title = e_dixie
 		}
 		prestige = -1000
+	}
+}
+
+narrative_event = {
+	id = americarestored.2
+	title = EVTNAME_americarestored_2
+	desc = EVTDESC_americarestored_2
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = virginia }
+		completely_controls = k_old_dominion
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_2
+		set_global_flag = virginia
+		prestige = 500
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.3
+	title = EVTNAME_americarestored_3
+	desc = EVTDESC_americarestored_3
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = pennsylvania }
+		completely_controls = k_allegheny
+		completely_controls = k_deitscherei
+		completely_controls = d_philadelphia
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_3
+		set_global_flag = pennsylvania
+		prestige = 500
+		character_event = { id = americarestored.20 days = 12 }		
+	}
+}
+
+narrative_event = {
+	id = americarestored.4
+	title = EVTNAME_americarestored_4
+	desc = EVTDESC_americarestored_4
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = newyork }
+		completely_controls = k_hudsonia
+		completely_controls = d_new_york
+		completely_controls = d_long_island
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_4
+		set_global_flag = newyork
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}	
+
+narrative_event = {
+	id = americarestored.5
+	title = EVTNAME_americarestored_5
+	desc = EVTDESC_americarestored_5
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = newjersey }
+		completely_controls = d_north_jersey
+		completely_controls = d_jersey
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_5
+		set_global_flag = newjersey
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.6
+	title = EVTNAME_americarestored_6
+	desc = EVTDESC_americarestored_6
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = newengland }
+		completely_controls = k_new_england
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_6
+		set_global_flag = newengland
+		prestige = 500
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.7
+	title = EVTNAME_americarestored_7
+	desc = EVTDESC_americarestored_7
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = carolina }
+		completely_controls = k_carolina
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = "EVTOPTA_americarestored_7"
+		set_global_flag = carolina
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.8
+	title = EVTNAME_americarestored_8
+	desc = EVTDESC_americarestored_8
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = the_south }
+		completely_controls = k_dixieland
+		completely_controls = k_magnolia
+		completely_controls = k_louisiana
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_8
+		set_global_flag = the_south
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.9
+	title = EVTNAME_americarestored_9
+	desc = EVTDESC_americarestored_9
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = florida }
+		completely_controls = k_florida
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_9
+		set_global_flag = florida
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.10
+	title = EVTNAME_americarestored_10
+	desc = EVTDESC_americarestored_10
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = dakota }
+		completely_controls = k_lakotah
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_10
+		set_global_flag = dakota
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.11
+	title = EVTNAME_americarestored_11
+	desc = EVTDESC_americarestored_11
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = texas }
+		completely_controls = e_lone_star
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_11
+		set_global_flag = texas
+		prestige = 500
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.12
+	title = EVTNAME_americarestored_12
+	desc = EVTDESC_americarestored_12
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = usa_caribbean }
+		completely_controls = k_cuba
+		completely_controls = d_puerto_rico
+		completely_controls = c_virgin_islands
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_12
+		set_global_flag = usa_caribbean
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.13
+	title = EVTNAME_americarestored_13
+	desc = EVTDESC_americarestored_13
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = usa_canada }
+		completely_controls = k_ontario
+		completely_controls = k_quebec
+		completely_controls = k_the_maritimes
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_13
+		set_global_flag = usa_canada
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.14
+	title = EVTNAME_americarestored_14
+	desc = EVTDESC_americarestored_14
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = greatlakes }
+		completely_controls = k_chicagoland
+		completely_controls = k_michigan
+		completely_controls = k_ohio
+		completely_controls = k_superior
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_14
+		set_global_flag = greatlakes
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.15
+	title = EVTNAME_americarestored_15
+	desc = EVTDESC_americarestored_15
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		completely_controls = e_heartland
+		NOT = { has_global_flag = heartland }
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_15
+		set_global_flag = heartland
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.16
+	title = EVTNAME_americarestored_16
+	desc = EVTDESC_americarestored_16
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = appalachia }
+		completely_controls = k_appalachia
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_16
+		set_global_flag = appalachia
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.17
+	title = EVTNAME_americarestored_17
+	desc = EVTDESC_americarestored_17
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = rockies }
+		completely_controls = e_the_rockies
+		completely_controls = k_arixo
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_17
+		set_global_flag = rockies
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.18
+	title = EVTNAME_americarestored_18
+	desc = EVTDESC_americarestored_18
+	
+	picture = GFX_evt_manifestdestiny
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		NOT = { has_global_flag = pacific }
+		completely_controls = k_jefferson
+		completely_controls = k_francisco
+		completely_controls = k_the_valley
+		completely_controls = k_sacramento
+		completely_controls = k_death_valley
+		completely_controls = k_socal
+		completely_controls = k_cascadia
+		completely_controls = k_lincoln
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_18
+		set_global_flag = pacific
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+
+narrative_event = {
+	id = americarestored.19
+	title = EVTNAME_americarestored_19
+	desc = EVTDESC_americarestored_19
+	
+	picture = GFX_evt_us_seal
+	
+	ai = no
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		has_landed_title = e_usa
+		
+		has_global_flag = virginia
+		has_global_flag = pennsylvania
+		has_global_flag = newjersey
+		has_global_flag = newyork
+		has_global_flag = newengland
+		has_global_flag = carolina
+		has_global_flag = the_south
+		has_global_flag = florida
+		has_global_flag = dakota
+		has_global_flag = texas
+		has_global_flag = greatlakes
+		has_global_flag = heartland
+		has_global_flag = k_appalachia
+		has_global_flag = rockies
+		has_global_flag = pacific
+		
+		NOT = { has_global_flag = second_america }
+	}	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_19
+		set_global_flag = second_america
+		prestige = 500	
+		character_event = { id = americarestored.20 days = 12 }
+	}
+}
+	
+character_event = {
+	id = americarestored.20
+	desc = EVTDESC_americarestored_20
+	picture = GFX_evt_victory_arch_byzantine
+	
+	hide_from = yes
+		
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_usa
+	}
+	
+	option = {
+		name = EVTOPTA_americarestored_20
+		character_event = { id = americarestored.21 days = 12 tooltip = EVTTOOLTIP_americarestored_21 }
+		scaled_wealth = -0.3
+		prestige = 75
+	}
+	option = {
+		name = EVTOPTB_americarestored_20
+		scaled_wealth = -0.1
+		prestige = 25
+	}
+	option = {
+		name = EVTOPTC_americarestored_20
+		prestige = -30
+	}
+}
+
+# Triumph Held
+character_event = {
+	id = americarestored.21
+	desc = EVTDESC_americarestored_21
+	picture = GFX_evt_victory_arch_byzantine
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_americarestored_21
+		custom_tooltip = {
+			text = us_triumph_held
+			hidden_tooltip = {
+				any_realm_lord = {
+					limit = {
+						primary_title = { higher_tier_than = BARON }
+						NOT = { character = ROOT }
+					}
+					opinion = {
+						modifier = opinion_triumph_held
+						who = ROOT
+					}
+					character_event = { id = americarestored.22 }
+				}
+			}
+		}
+	}
+}
+
+# Triumph Held Vassals
+character_event = {
+	id = americarestored.22
+	desc = EVTDESC_americarestored_22
+	picture = GFX_evt_victory_arch_byzantine
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_americarestored_22
 	}
 }

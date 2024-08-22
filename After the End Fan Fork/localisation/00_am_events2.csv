@@ -1687,7 +1687,7 @@ form_the_usa_desc;America was once the mightiest empire on the face of the Earth
 vassalize_mib;Vassalize the Men in Black;;;;;;;;;;;;;x
 vassalize_mib_desc;With America restored, the Men in Black would willingly serve a sufficiently wealthy and patriotic President.;;;;;;;;;;;;;x
 form_the_empire_state;Form the Empire State;;;;;;;;;;;;;x
-form_the_empire_state_desc;For too long, the name of Old America has been claimed by Southerners. The true legacy of America lies in the North. We have reunited the shattered lands of antedeluvian New York under one banner, so now we may become the successor to Old America! Excelsior!;;;;;;;;;;;;;x
+form_the_empire_state_desc;For too long, the name of Old America has been claimed by Southerners. The true legacy of America lies in the North. We have reunited the shattered lands of antediluvian New York under one banner, so now we may become the successor to Old America! Excelsior!;;;;;;;;;;;;;x
 form_the_empire_state_tooltip_1;If the Duchy of Green Mountains is completely controlled and the Kingdom of Vermont is under our control (or doesn't exist), then the Kingdom of Vermont becomes its de-jure liege.\n;;;;;;;;;;;;;x
 form_the_empire_state_tooltip_2;If the Duchy of Raritan and the Duchy South Jersey are completely controlled and the Kingdom of Jersey is under our control (or doesn't exist), then the Kingdom of Jersey becomes their de-jure liege.\n;;;;;;;;;;;;;x
 form_the_empire_state_tooltip_3;If the Duchy of Niagra is completely controlled, then the Kingdom of Hudsonia becomes its de jure liege.;;;;;;;;;;;;;x
@@ -1712,6 +1712,69 @@ EVTOPT_america_emperor;My fellow Americans...;;;;;;;;;;;;;x
 EVTOPT_america_emperor_coreligionist;Hail to the Chief!;;;;;;;;;;;;;x
 EVTOPT_america_emperor_infidel;Not my President!;;;;;;;;;;;;;x
 EVTOPT_america_emperor_dixie;Damn Yankees!;;;;;;;;;;;;;x
+EVTNAME_americarestored_2;Virginia;;;;;;;;;;;;;x
+EVTDESC_americarestored_2;Virginia, being among the eldest of America's daughters, is rightly titled the 'Old Dominion.' Nobility seems to resound in the rustle of its stately oaks when they catch the southern wind, accompany the placid waters of the James in it's journey to the , and announce itself in the swooping valleys of the Shenandoah. Now that we have brought a lasting peace to this dignified land, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_2;Life is truly old there!;;;;;;;;;;;;;x
+EVTNAME_americarestored_3;Pennsylvania;;;;;;;;;;;;;x
+EVTDESC_americarestored_3;Keystone then and keystone now, Pennsylvania sits at a critical junction within our realm between north and south. Once the place where the Founders assembled, it has now been lifted from chaos and returns at its place atop the arch. Its first son, that city of Brotherly Love, has cried out to its brothers and sisters across the land and now may finally join in hand with them! To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_3;A cheesesteak sounds nice right now...;;;;;;;;;;;;;x
+EVTNAME_americarestored_4;New York;;;;;;;;;;;;;x
+EVTDESC_americarestored_4;New York, New York! How can one give praise worthy to you, o lovely realm. The greatest men are left speechless when they behold your towers, your streets, your ports, your markets -- and it is best they do not speak lest they draw the ire of one of your silver-tongued citizens. The blessed River Hudson welcomes all to his embrace, and when the wind breaks against the Adirondacks, that is when you know a divine power resides in everything there. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_4;I love New York!;;;;;;;;;;;;;x
+EVTNAME_americarestored_5;New Jersey;;;;;;;;;;;;;x
+EVTDESC_americarestored_5;Unsatiable avarice has driven countless kings to their dooms, but if they only tasted the sweet air of New Jersey, they would lay down their swords and live a peaceable life. Sat between Philadelphia and New York City, Jerseyans have the acumen of merchants and with the spirit of brotherly love in their hearts. Every manner of man resides in this realm, yet they live in harmony. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_5;Praise the Garden Realm!;;;;;;;;;;;;;x
+EVTNAME_americarestored_6;New England;;;;;;;;;;;;;x
+EVTDESC_americarestored_6;'Birthplace of the Revolution.' That is all that is needed to explain why New England is worthy of praise from every true American patriot. Its men gave their lives for the ideals that once bound America together and now again draw it closer. Every township citizen can recall stories of a far-off ancestor that fought for liberty, and now a new generation can tell stories about how that revolutionary spirit returned in the darkest of times. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_6;Go patriots!;;;;;;;;;;;;;x
+EVTNAME_americarestored_7;The Carolinas;;;;;;;;;;;;;x
+EVTDESC_americarestored_7;The land of tar-heeled men and invincible palmettos, where legends say man once learned to fly, the twin states of North and South Carolina each have a share of the shroud of mystery which cloaks the whole South. Folktales abound among the people, stories of trickster rabbits and blue devils that roam the land and outwit any man unlucky enough to cross their path. Maybe a return under America's aegis will tame this place, but only time will tell. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_7;I wonder if these tales are true?;;;;;;;;;;;;;x
+EVTNAME_americarestored_8;The South;;;;;;;;;;;;;x
+EVTDESC_americarestored_8;Mother to many, friend to all, yet never one to shy away from demonstrating her strength, the South is as simultaneously welcoming and tenacious as its many peoples. Nowhere else will a man feel as comfortable if gracious yet scorned if rude, nobility in the heart of Dixie is not simply a virtue but the dividing line between man and beast. Now that it has been reunited with America, let us hope to keep the hearts of the South tempered as much as we can. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_8;Away, away...;;;;;;;;;;;;;x
+EVTNAME_americarestored_9;Florida;;;;;;;;;;;;;x
+EVTDESC_americarestored_9;The Sunshine Realm indeed! If it were not for the alligators that drag unsuspecting men into the murky Everglade waters, one would think Florida was paradise itself. However, even with its lurking beasts, Florida, with its beauty, its waters, its all-embracing warmth, is a place every man must visit before he dies, and many 'pilgrims' will appreciate that it has returned to America. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_9;I could go for a beach vacation.;;;;;;;;;;;;;x
+EVTNAME_americarestored_10;The Dakotas;;;;;;;;;;;;;x
+EVTDESC_americarestored_10;The Dakotas: home to wild plains, buffalo, and Mount Rushmore. Stories tell of the greatest antediluvian men damning every piece of gold and parcel of land they had ever had in their grasp, as they believed that not even the greatest of their glories would elevate them to the level of the Presidents which grace that mountain. But now, the Dakotas have been reconquered by America, and it may be so that a fifth face could radiate with as much glory as those stony ones. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_10;Maybe I should consult a carver...;;;;;;;;;;;;;x
+EVTNAME_americarestored_11;Texas;;;;;;;;;;;;;x
+EVTDESC_americarestored_11;Texas, a land as independent and proud as any other, though its people still cherish the memories of America. Countless heroes dot the Texan landscape, and locals are always pleased to point out the exact spot where their village's champion stood to slay his enemy -- or meet his end. Both belligerent and beset throughout its antediluvian history, hopefully American rule will help keep the peace. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_11;Where the Rio Grande is flowing...;;;;;;;;;;;;;x
+EVTNAME_americarestored_12;The American Caribbean;;;;;;;;;;;;;x
+EVTDESC_americarestored_12;The presence of small Americanist communities on many Caribbean isles has fueled speculation on the extent the old America. Whatever the case may be, their presence gives us a reason to rule these rich islands. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_12;From sea to sea to sea, I suppose.;;;;;;;;;;;;;x
+EVTNAME_americarestored_13;Canada;;;;;;;;;;;;;x
+EVTDESC_americarestored_13;According to the whispers of men who study antediluvian history, old America attempted to invade Canada many times, but never succeeded in the endeavour. We have now proven our worth by finishing what the Old Republic had started! To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_13;O, America...;;;;;;;;;;;;;x
+EVTNAME_americarestored_14;The Great Lakes;;;;;;;;;;;;;x
+EVTDESC_americarestored_14;The Great Lakes are the gateway of trade between the Atlantic coast and the Mississippi River. Merchants from all backgrounds flock to the region. Of particular note is the Windy City, Chicago, which once rivalled New York in wealth and influence, until the Norseman Soady raized the city. Now that American arms can provide protection, Chicago and many other cities will likely flourish. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_14;The lakes will be peaceful once more.;;;;;;;;;;;;;x
+EVTNAME_americarestored_15;The Heartland;;;;;;;;;;;;;x
+EVTDESC_americarestored_15;The Heartland is home to the great Misssissippi River, and produces what seems like endless amounts of food to be sold. Now that America once again controls it, it is possible none in our realm will go hungry. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_15;Endless fields of corn... amazing...;;;;;;;;;;;;;x
+EVTNAME_americarestored_16;Appalachia;;;;;;;;;;;;;x
+EVTDESC_americarestored_16;The Appalachian Mountains were once thought to be impenetrable. Tribesmen frequently killed soldiers through asymmetric tactics, and the mountains took many lives as well. But now the region has been rid of violent tribes under the rule of America. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_16;Maybe I can go hiking then.;;;;;;;;;;;;;x
+EVTNAME_americarestored_17;The Rockies;;;;;;;;;;;;;x
+EVTDESC_americarestored_17;The Rockies have been known to be an extremely dangerous region. Deserts and mountains will eat through supplies, and bandits may be afoot around any corner. Nevertheless, America has reconquered the lands, and can finally put order to this anarchy. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_17;Another land pacified.;;;;;;;;;;;;;x
+EVTNAME_americarestored_18;From Sea to Shining Sea;;;;;;;;;;;;;x
+EVTDESC_americarestored_18;Before the Event, America stretched the width of the continent. None in this era believed that America could extend that far anymore, but the same could be said about America existing in as well. Now both are true, and all who doubted are silenced! A hub of culture and trade, California and the rest of the Pacific will be a fine addition to this new America. To celebrate, a triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_18;There's so much I want to see on the other side!;;;;;;;;;;;;;x
+EVTNAME_americarestored_19;Pax Americana;;;;;;;;;;;;;x
+EVTDESC_americarestored_19;The [Root.GetTitle] of the United States of America has just reunited the central lands of the Old Republic. It no longer can be denied that America has been reborn. A grand triumph will be held in Washington in honor of [Root.GetTitledFirstName].;;;;;;;;;;;;;x
+EVTOPTA_americarestored_19;A new age is upon us! May [This.Religion.GetHighGodName]'s eternal light shine!;;;;;;;;;;;;;x
+EVTDESC_americarestored_20;In honor of America's recent victory, it would be appropriate to hold a triumph in Washington for the heroic soldiers who fought in the campaign. Such an arrangement will be expensive, but the people expect nothing less.;;;;;;;;;;;;;x
+EVTOPTA_americarestored_20;Yes, a glorious triumph will be held.;;;;;;;;;;;;;x
+EVTOPTB_americarestored_20;A brief parade in the city should be enough.;;;;;;;;;;;;;x
+EVTOPTC_americarestored_20;No, we have no time for such nonsense.;;;;;;;;;;;;;x
+EVTDESC_americarestored_21;A mighty triumph is held in the National Mall to celebrate the brave generals and soldiers who brought defeat to the enemies of America. The people cheer as buglers lead a long procession that includes parading battalions, carts filled with the spoils of war, and banners representing the various states that participated in the war,;;;;;;;;;;;;;x
+EVTOPTA_americarestored_21;The United States is on the verge of success.;;;;;;;;;;;;;x
+us_triumph_held;A triumph is held at the National Mall.;;;;;;;;;;;;;x
+EVTDESC_americarestored_22;The [Root.TopLiege.GetTitle] has commanded that a triumph be held at the National Mall to celebrate the brave soldiers responsible for America's recent victory. The people cheer as trumpeters lead a long procession that includes parading legions, carts filled with the spoils of war, and banners representing the various states that participated in the war.;;;;;;;;;;;;;x
+EVTOPTA_americarestored_22;An impressive display.;;;;;;;;;;;;;x
 restore_presidency;Restore the Presidency;;;;;;;;;;;;;x
 restore_presidency_desc;The title of President of the United States has become defunct, for one reason or another. Now that you control the ancient capital of Old America, it is possible for you to claim the title of President for yourself.;;;;;;;;;;;;;x
 EVTNAME_presidency_restored;The Presidency Restored!;;;;;;;;;;;;;x
