@@ -177,7 +177,7 @@ mesoamerican = {
 			Isra_Israel Ito_Margarito
 			Ladxido'Beedxe' Ladxido'Cha'hui' Libanabidó' Lupe_Guadalupe
 			Miliano_Emiliano Masi_Maximilian Masi_Maximino
-			Nacho_Ignatius Nhischawe Nhisya Nazario Nisdao Nabana' Nabani Nádipa' Nadxibalú Nadxiibidó' Nayechela'dxi' Nirudo' Nisadó'bani Nuuxpiaani' Ñeesisi Nazario Nando_Ferdinand
+			Nacho_Ignatius Nhischawe Nhisya Nazario Nisdao Nabana' Nabani Nádipa' Nadxibalú Nadxiibidó' Nayechela'dxi' Nirudo' Nisadó'bani Nuuxpiaani' Ñeesisi Nando_Ferdinand
 			Pancho_Francisco
 			Riguubidó' Rindáninisa Rucuaanidxí Renato
 			Santiaagu_Santiago

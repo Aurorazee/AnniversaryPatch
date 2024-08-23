@@ -1,5 +1,5 @@
+namespace = MHR
 
-namespace=MHR
 narrative_event = {
 	id = MHR.1
 	title = EVTITLEMHR1
@@ -139,6 +139,7 @@ narrative_event = {
 	major_trigger = {
 		NOT = { has_landed_title = e_centroamerica }
 	}
+}
 
 narrative_event = {
 	id = MHR.3

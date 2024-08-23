@@ -2335,14 +2335,7 @@ liberate_religion = { # New6
 			}
 		}
 	}
-	
-	is_valid_title = {
-		FROM = {
-			any_realm_province = {
-				de_jure_liege_or_above = PREVPREV
-			}
-		}
-	}
+
 
 	on_fail = {
 		ROOT = { 
@@ -3363,9 +3356,9 @@ tributary_permanent_cb = { # New8
 				any_war = {
 					using_cb = tributary_nomad_cb
 				}
-				any_war = {
-					using_cb = tributary_cetic_cb
-				}	
+				# any_war = { #Doesn't exist
+					# using_cb = tributary_cetic_cb
+				# }	
 			}
 		}
 	}
@@ -3685,9 +3678,9 @@ tributary_nomad_cb = { # New9
 				any_war = {
 					using_cb = tributary_nomad_cb
 				}
-				any_war = {
-					using_cb = tributary_cetic_cb
-				}	
+				# any_war = { #Doesn't exist
+					# using_cb = tributary_cetic_cb
+				# }	
 			}
 		}
 	}

@@ -8,10 +8,10 @@ chicano = {
 		color = { 0.8 0.7 0.3 }
 
 		male_names = {
-			Atanagildo Atanasio Aníbal Alarid Auxibio Angélico Adalberto Abelardo Adolfo_Adolf Aldo Alfonso_Alphonse Anselmo Armando Arnaldo Arnulfo Argimiro Alonso Álvaro Amalarico Águila Ataúlfo Armijo Alfonso_Alphonse Aurelio_Aurelius Augusto Alarico Angelico_Angel Anaya Adolfo_Adolf Alire Arturo_Arthur Anzar
-			Bermudo Burgos Baldomero Beltrán Bernardo_Bernard Berto Bruno Braulio Baustita Bernardo_Bernard Borrell Bera
+			Atanagildo Atanasio Aníbal Alarid Auxibio Angélico Adalberto Abelardo Aldo Alfonso_Alphonse Anselmo Armando Arnaldo Arnulfo Argimiro Alonso Álvaro Amalarico Águila Ataúlfo Armijo Aurelio_Aurelius Augusto Alarico Angelico_Angel Anaya Adolfo_Adolf Alire Arturo_Arthur Anzar
+			Bermudo Burgos Baldomero Beltrán Bernardo_Bernard Berto Bruno Braulio Baustita Borrell Bera
 			Casimiro Cortés Cristóbal_Christopher Carlito_Charles César_Caesar Chole Conrado_Conrad Chácon
-			Damián "Diego Carlos" Diego David_David Daniel_Daniel Dionisio Dario_Darius DoroteoDennis_Dionysus Dagoberto Diego Durán "Diego García" Domingo_Dominic
+			Damián "Diego Carlos" David_David Daniel_Daniel Dionisio Dario_Darius DoroteoDennis_Dionysus Dagoberto Diego Durán "Diego García" Domingo_Dominic
 			Edgar Edmundo Emerico_Emmerich Ernesto Neto_Ernesto Eúrico Ervigio Ezequiel_Ezekiel Eloy Eduardo_Edward Eulogio Enrique_Henry Eulate
 			Favila Fruela Federico_Frederick Froilán Fernando_Ferdinand Francisco_Francis Felipe_Philip Facundo Félix_Felix
 			Gundemaro Germán Gilberto_Gilbert Gustavo_Gustav Godofredo_Gottfried Gesaléico Gallegos Guadalupe Gaspar_Caspar Guillermo_William Gervasio_Gervase
@@ -24,7 +24,7 @@ chicano = {
 			Ordoño Otero Óscar_Oscar Oswaldo_Oswald
 			Pizarro Picuris Popé Pino Pelayo_Pelagius Porfirio Pánfilo Ponce Pío_Pius Pedro_Peter
 			Ramiro Raimundo_Raymond Raúl Ricardo Robert Rodrigo Recaredo Rodolfo_Rudolph Reies Rubén_Ruben Rigoberto Rampó Rael
-			Soto Sandoval Sergio Santiago Santi_Santiago Saúl_Saul Salvador_Salvador Chavo_Salvador Sam_Samuel Stanley Seth Severino_Severinus Sebastián_Sebastian Sancho Silverio Silo Sisenando Sigérico Santiago Sergio_Sergius Soto Sal_Salvador Sunifredo Suniario
+			Sandoval Sergio Santiago Santi_Santiago Saúl_Saul Salvador_Salvador Chavo_Salvador Sam_Samuel Stanley Seth Severino_Severinus Sebastián_Sebastian Sancho Silverio Silo Sisenando Sigérico Santiago Sergio_Sergius Soto Sal_Salvador Sunifredo Suniario
 			Teodorico Taos Tesuque Tranquilino Trujillo Trinidad Tuco Tomás_Thomas
 		Ubaldo Urcisio
 			Vigil Vitérico Vicente_Vincent Victor_Victor
@@ -33,22 +33,22 @@ chicano = {
 
 		female_names = {
 			Ayluna Ava Adosinda Amy Andrea Ariadna Antoneta Alina Alicia_Alice Ana_Anna Alondra Alexa Ada Alejandra_Alexandra Ana_Anne Anita Antonia_Antonia Adelina Angélica 
-			Bartolomea Bauda Blanca Beatriz Briana Benita Bonita Blanca Bibiana
-			Cecilia Chantal Cheyanne Cacilda Cristina_Christina Carlota Caridad Catalina Carmela Carisa Chelsi Clarissa Chaya Cara Carla Carmelita_Carmela Casandra Carmen Casilda Celestina Célia Chela Chiquita Cruzita Claire Caitlyn Cloe Consuela Claudia Clotilde Constanza_Constance Catalina Cristina Dolores Dulce
+			Bartolomea Bauda Blanca Beatriz Briana Benita Bonita Bibiana
+			Cecilia Chantal Cheyanne Cacilda Cristina_Christina Carlota Caridad Catalina Carmela Carisa Chelsi Clarissa Chaya Cara Carla Carmelita_Carmela Casandra Carmen Casilda Celestina Célia Chela Chiquita Cruzita Claire Caitlyn Cloe Consuela Claudia Clotilde Constanza_Constance Cristina Dolores Dulce
 			Denise Demetria Devonne Dulcinea Daniela_Danielle
 			Ermesinda Elvira Élia Egilona
 			Francisca_Frances Fé Flavia Froiluba Flordeluna Flor Felicia Fernanda Fátima Frida
 			Gloria Guisla Gaudiosa Gosvinta Gala Graciana Guadalupe Guada_Guadalupe Gabriela_Gabriella Gertrudis Gilberta Gail
 			Hortensia Helena Hildegarda Hortelana Hermila
-			Iris Ira Isabella_Isabelle Ingundis Inés Isabel_Elizabeth Inés Ivana Inmaculada Inéz_Inés Izabelle_Elizabeth Irena_Irene
+			Iris Ira Isabella_Isabelle Ingundis Inés Isabel_Elizabeth Ivana Inmaculada Inéz_Inés Izabelle_Elizabeth Irena_Irene
 			Julia Jimena Juana Jirona Janette Jazmín 
 			Luna Linda Lou_Lourdes Lourdes Leonor Leticia Lola Lila Laura Lora
 			María_Mary Manuela Munia Mafalda Marielos Marisa Marta "Marta Julia" Martina
 			Nampeyo Nao Nicol_Nicolle Nicolasa_Nicolle
 			Ofelia_Ophelia Ozenda Olivia
 			Polly Placidia Plascencia Patricia Penélope Perlita Pascuala Paz Pía Paloma Priscila
-			Raphaelita Rachel Ragnahilda Rosalinda Rosa_Rose Rachel Raquel_Rachel Rebeca_Rebecca Ramona Reina Renata Reyna_Reina Rita_Margarita Rosita_Rosa
-			Sabine Sarah Susana_Susan Sancha Susana_Susan Soraya Sara_Sarah Estefania_Stephanie Scarlet_Scarlett Sam_Samantha Sofía_Sofia Susanita_Susan Selena Souza
+			Raphaelita Rachel Ragnahilda Rosalinda Rosa_Rose Raquel_Rachel Rebeca_Rebecca Ramona Reina Renata Reyna_Reina Rita_Margarita Rosita_Rosa
+			Sabine Sarah Sancha Susana_Susan Soraya Sara_Sarah Estefania_Stephanie Scarlet_Scarlett Sam_Samantha Sofía_Sofia Susanita_Susan Selena Souza
 			Teresa_Theresa Taylor Trinidad Trini_Trinidad Tonia_Antonia Teodorica Teodora Teodegonda Teodosia 
 			Urraca Única Uma
 			Virginia Vilma Vímara Velasquita Verónica_Veronica Vanesa_Vanessa Vivian Victoria_Victoria Valencia Valentina_Valentina Violeta

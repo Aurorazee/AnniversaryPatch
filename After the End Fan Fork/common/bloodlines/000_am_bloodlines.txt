@@ -892,10 +892,12 @@ mountain_lord_male = {
 	picture = GFX_bloodlines_symbol_builder
 	flags = { mountainer_bloodline }
 	active = {
-		culture_group = rockland
-		culture_group = plateau
-		culture = snakelander
-		culture = inlander
+		OR = {
+			culture_group = rockland
+			culture_group = plateau
+			culture = snakelander
+			culture = inlander
+		}
 	}
 }
 
@@ -908,10 +910,12 @@ mountain_lord_female = {
 	picture = GFX_bloodlines_symbol_builder
 	flags = { mountainer_bloodline }
 	active = {
-		culture_group = rockland
-		culture_group = plateau
-		culture = snakelander
-		culture = inlander
+		OR = {
+			culture_group = rockland
+			culture_group = plateau
+			culture = snakelander
+			culture = inlander
+		}
 	}
 }
 

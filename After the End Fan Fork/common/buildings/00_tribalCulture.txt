@@ -6525,7 +6525,7 @@ tribal = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = tb_culture_saxon_english_1
@@ -6575,7 +6575,7 @@ tribal = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = tb_culture_saxon_english_1
@@ -6629,7 +6629,7 @@ tribal = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = tb_culture_saxon_english_1
@@ -6682,7 +6682,7 @@ tribal = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = tb_culture_saxon_english_1
@@ -10543,7 +10543,7 @@ tribal = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10588,7 +10588,7 @@ tribal = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10637,7 +10637,7 @@ tribal = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10685,7 +10685,7 @@ tribal = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10736,7 +10736,7 @@ tribal = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10769,7 +10769,7 @@ tribal = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10806,7 +10806,7 @@ tribal = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10842,7 +10842,7 @@ tribal = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10882,7 +10882,7 @@ tribal = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -10915,7 +10915,7 @@ tribal = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -10952,7 +10952,7 @@ tribal = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -10988,7 +10988,7 @@ tribal = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish

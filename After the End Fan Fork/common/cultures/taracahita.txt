@@ -23,7 +23,7 @@ taracahita = {
 			Químare 
 			Rahui Rajá Ree Reméncani Ricibúrsiri Rihibánsa Riné Rokó Ropokókiri Roróoncani Roque
 			Sapársimi Saté Seba Seka Simásnura Sináscina Siwa Sokoruame Soma Sopori Soru Sumé Suré Súrniri Saúl_Saul
-			Tarí Teporaca Ticíksima Tonachi Torécani Tomás_Thomas Toribio Teporaca
+			Tarí Teporaca Ticíksima Tonachi Torécani Tomás_Thomas Toribio
 			Uba Ubáscani Urí Uriel
 			Wari Wasa Wikaráncane Wikuwáscina Wiri
 		}

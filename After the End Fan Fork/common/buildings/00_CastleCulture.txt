@@ -6542,7 +6542,7 @@ castle = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = ca_culture_saxon_english_1
@@ -6593,7 +6593,7 @@ castle = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = ca_culture_saxon_english_1
@@ -6645,7 +6645,7 @@ castle = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = ca_culture_saxon_english_1
@@ -6698,7 +6698,7 @@ castle = {
 						terrain = forest
 						terrain = hills
 						terrain = marsh
-						terrain = mountains
+						terrain = mountain
 					}
 				}
 				has_building = ca_culture_saxon_english_1
@@ -10474,7 +10474,7 @@ castle = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10520,7 +10520,7 @@ castle = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10567,7 +10567,7 @@ castle = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10615,7 +10615,7 @@ castle = {
 					terrain = forest
 					terrain = hills
 					terrain = marsh
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10664,7 +10664,7 @@ castle = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10698,7 +10698,7 @@ castle = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10733,7 +10733,7 @@ castle = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10769,7 +10769,7 @@ castle = {
 			NOT = {
 				OR = {
 					terrain = hills
-					terrain = mountains
+					terrain = mountain
 				}
 			}
 			OR = {
@@ -10806,7 +10806,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = raramuri
@@ -10838,7 +10838,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = raramuri
@@ -10872,7 +10872,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = raramuri
@@ -10907,7 +10907,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = raramuri
@@ -10976,7 +10976,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = yaqui
@@ -11013,7 +11013,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = yaqui
@@ -11050,7 +11050,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = yaqui
@@ -11090,7 +11090,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -11124,7 +11124,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -11159,7 +11159,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish
@@ -11195,7 +11195,7 @@ castle = {
 		potential = {
 			OR = {
 				terrain = hills
-				terrain = mountains
+				terrain = mountain
 			}
 			OR = {
 				culture = scottish

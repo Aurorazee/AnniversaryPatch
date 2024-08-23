@@ -2083,6 +2083,7 @@ crown_fylkir = {
 	picture = "GFX_crown_fylkir"
 	slot = crown
 	indestructible = yes
+	stacking = no
 	allowed_gift = {
 		always = no
 	}
@@ -3196,7 +3197,6 @@ crown_texas = {
 	}
 	flags = { texas_crown unique crown jewelry crown_jewel }
 	picture = "GFX_crown_texas"
-	quality = 5
 	stacking = no
 	indestructible = yes
 	allowed_gift = {

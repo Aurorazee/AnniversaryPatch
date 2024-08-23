@@ -4801,7 +4801,7 @@ retreat_and_ambush_tactic = {
 				culture_group = norteno
 				culture = neomexicano
 				culture = gaucho
-				culture = adelsverer
+				# culture = adelsverer #Doesn't exist
 			}
 			NOR = {
 				any_current_enemy = { has_opinion_modifier = { who = PREV modifier = opinion_honorable_combat } }

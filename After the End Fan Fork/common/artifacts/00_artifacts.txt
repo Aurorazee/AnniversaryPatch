@@ -1060,25 +1060,6 @@ engraved_sword = {
 	slot = ceremonial_weapon
 }
 
-crown_fylkir = { 
-	monthly_character_prestige = 0.4
-	monthly_character_piety = 0.7
-	stewardship = 2
-	martial = 2
-	tribal_opinion = 10
-	quality = 4
-	active = { 
-		has_landed_title = d_norse_pagan_reformed
-	}
-	flags = { religious unique crown jewelry crown_jewel }
-	picture = "GFX_crown_fylkir"
-	slot = crown
-	stacking = no
-	indestructible = yes
-	allowed_gift = {
-		always = no
-	}
-}
 #Muslim sets & west african sets (daggers also indian)
 dagger_of_glory = {
 	quality = 3

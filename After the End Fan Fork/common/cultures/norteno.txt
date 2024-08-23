@@ -48,7 +48,7 @@ norteno = {
 			Patricia Paola_Paula Petra Priscila Paulina Penélope
 			Susana_Susan Selena Sofía_Sophia Sanjuana
 			Ruth Rosa_Rose Rita_Margarita Renata
-			Valencia Victoria Verónica_Veronica Valentina_Valentina Valencia
+			Valencia Victoria Verónica_Veronica Valentina_Valentina
 			Yolanda Yoli
 			Xiomara Ximena
 		}
@@ -118,7 +118,7 @@ norteno = {
 			Patricia Paola_Paula Petra Priscila Paulina Penélope
 			Susana_Susan Selena Sofía_Sophia Sanjuana
 			Ruth Rosa_Rose Rita_Margarita Renata
-			Valencia Victoria Verónica_Veronica Valentina_Valentina Valencia
+			Valencia Victoria Verónica_Veronica Valentina_Valentina
 			Yolanda Yoli
 			Xiomara Ximena
 		}
@@ -417,7 +417,7 @@ norteno = {
 			Patricia Paola_Paula Petra Priscila Paulina Penélope
 			Susana_Susan Selena Sofía_Sophia Sanjuana
 			Ruth Rosa_Rose Rita_Margarita Renata
-			Valencia Victoria Verónica_Veronica Valentina_Valentina Valencia
+			Valencia Victoria Verónica_Veronica Valentina_Valentina
 			Yolanda Yoli
 			Xiomara Ximena
 		}

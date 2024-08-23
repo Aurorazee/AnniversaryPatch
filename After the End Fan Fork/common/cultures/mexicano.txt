@@ -19,7 +19,7 @@ mexicano = {
 			Gaspar_Caspar Guzmán Gustavo Guadalupe Gonzalo_Gonzalo Guillermo_William Gael Galán Gerardo_Gerard
 			Héctor_Hector Humberto Honorio Heraclio Héleno Hipólito_Hippolyte
 			Ignacio_Ignatius Isidro Isaac
-			Junipero Joaquín Jesús_Jesus Juan_John "Juan José" Javier_Xavier "José María" José_Joseph Julián_Julian Julio_Julius Jesús_Jesus Jacinto
+			Junipero Joaquín Jesús_Jesus Juan_John "Juan José" Javier_Xavier "José María" José_Joseph Julián_Julian Julio_Julius Jacinto
 			Lázaro_Lazarus Lupe_Guadalupe León_Leo Lucio
 			Mario_Marius Miguel_Michael Matías_Matthias Mateo_Matthew Marco_Mark Maximino Manuel_Immanuel Marcelino Minervo Macario Melchor Minervino
 			Nicolás_Nicholas Néstor Neri Natan_Nathan
@@ -190,7 +190,7 @@ mexicano = {
 			Beatríz Britani Briana Bárbara
 			Cecilia Chantal Cacilda Calixta Cachita_Cacilda Cristina_Christina Carlota Caridad Catalina Citlali Constanza_Constance Chanel Chava_Rosalba
 			Digna Delgadina Dulce Dulcinea
-			Eliza Eugenia Emilia Eréndira Elena Emilia Eudoxia Eusebia
+			Eliza Eugenia Emilia Eréndira Elena Eudoxia Eusebia
 			Flor Frida
 			Guadalupe Guada_Guadalupe Génesis_Genesis
 			Helena
@@ -235,7 +235,7 @@ mexicano = {
 		color = { 0.9 0.5 0.4 }
 
 		male_names = {
-			Ángel_Angel Antonio_Anthony Abraham_Abraham Abram_Abraham Aarón_Aaron Abel_Abel Abdiel Ariel Adán_Adam Ángel_Angel Aristeo Andrés_Andrew Agustín_Augustus Anselmo Aureliano_Aurelianus Aurelio_Aurelius Anacleto
+			Ángel_Angel Antonio_Anthony Abraham_Abraham Abram_Abraham Aarón_Aaron Abel_Abel Abdiel Ariel Adán_Adam Aristeo Andrés_Andrew Agustín_Augustus Anselmo Aureliano_Aurelianus Aurelio_Aurelius Anacleto
 			Bartolomé_Bartholomew Baltasar_Balthazar Benjamín_Bejamin Bernabé_Barnabas Benito_Benedict
 			Carlos_Charles Cristóbal_Christopher
 			Daniel_Daniel David_David Dionisio Dámaso Domingo Diego
@@ -244,7 +244,7 @@ mexicano = {
 			Gaspar_Caspar Gabriel_Gabriel Guadalupe_Guadalupe Germán_Herman Gregorio_Gregory
 			Heriberto_Herbert Héctor_Hector
 			Isaac_Isaac Ismael Israel Isaías_Isaiah Ignacio_Ignatius Isidro_Isidore
-			"Juan Nepomuceno" "Juan José" "Juan Carlos" Javier_Xavier Julio_Julius Jacinto Joel Jonás_Jonas Juan_John "Juan Diego" Josué_Joshua Jesús_Jesus "Juan Diego" José_Joseph "José María" "Juan Pablo" Jaime_James Jacob_Jacob Jaír Jeremías_Jeremiah Job_Job Joaquín Jonatan_Jonathan
+			"Juan Nepomuceno" "Juan José" "Juan Carlos" Javier_Xavier Julio_Julius Jacinto Joel Jonás_Jonas Juan_John "Juan Diego" Josué_Joshua Jesús_Jesus José_Joseph "José María" "Juan Pablo" Jaime_James Jacob_Jacob Jaír Jeremías_Jeremiah Job_Job Joaquín Jonatan_Jonathan
 			León_Leo Luís_Louis Lázaro_Lazarus Leoncio
 			Martín_Martin Miguel_Michael "Miguel Ángel" Maximiliano_Maximilian Marcos_Mark Melchor Moisés Melesio Manuel_Immanuel Mario_Marius Mariano_Marius Mateo_Matthew Matías_Matthias
 			Natanael_Nathaniel Natan_Nathan Noé_Noah Nicolás_Nicholas Nepomuceno

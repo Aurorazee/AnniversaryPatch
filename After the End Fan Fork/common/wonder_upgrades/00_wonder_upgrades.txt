@@ -4797,14 +4797,11 @@ upgrade_alamo_mission = {
 
 	flags = {
 		is_singular
+		religion_conversion_faster
 	}
 	build_time = 24
 	gold_cost_flat = 300
 	gold_cost_ticking = 1
-	flags = {
-		is_singular
-		religion_conversion_faster
-	}
 	owner_modifier = {
 		diplomacy = 1
 		starfolk_opinion = 5
@@ -5006,7 +5003,7 @@ upgrade_cincalco = { #Cueva de Cincalco
 	potential = {
 		OR = {
 			religion_group = mesoamerican_gods
-			religion = tonaltec
+			# religion = tonaltec #What is Tonaltec?
 		}
 	}
 	allow = {
@@ -5014,19 +5011,19 @@ upgrade_cincalco = { #Cueva de Cincalco
 			limit = {
 				NOR = {
 					religion_group = mesoamerican_gods
-					religion = tonaltec
+					# religion = tonaltec
 				}
 			}
 			OR = {
 				religion_group = mesoamerican_gods
-				religion = tonaltec
+				# religion = tonaltec
 			}
 		}
 	}
 	active = {
 		OR = {
 			religion_group = mesoamerican_gods
-			religion = tonaltec
+			# religion = tonaltec 
 		}
 	}
 
