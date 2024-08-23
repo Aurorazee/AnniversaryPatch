@@ -202,16 +202,18 @@ decisions = {
 			}
 			if = {
 				limit = {
-					completely_controls = k_carolina
+					completely_controls = k_palmetto
+					completely_controls = k_tarheel
 				}
 				set_global_flag = carolina
 				prestige = 500
 			}
 			if = {
 				limit = {
-					completely_controls = k_dixieland
+					completely_controls = k_georgia
 					completely_controls = k_magnolia
 					completely_controls = k_louisiana
+					completely_controls = k_tuskegee
 				}
 				set_global_flag = the_south
 				prestige = 500
@@ -250,7 +252,7 @@ decisions = {
 				limit = {
 					completely_controls = k_ontario
 					completely_controls = k_quebec
-					completely_controls = k_the_maritimes
+					completely_controls = k_maritimes
 				}
 				set_global_flag = usa_canada
 				prestige = 500
@@ -293,7 +295,7 @@ decisions = {
 					completely_controls = k_francisco
 					completely_controls = k_the_valley
 					completely_controls = k_sacramento
-					completely_controls = k_death_valley
+					completely_controls = k_nevada
 					completely_controls = k_socal
 					completely_controls = k_cascadia
 					completely_controls = k_lincoln
@@ -2019,9 +2021,9 @@ decisions = {
 					NOT = { has_landed_title = k_old_star}
 				}
 	
-				d_texarkana = {
-					de_jure_liege = k_texarkana
-				}
+				# d_texarkana = { #Doesn't exist
+					# de_jure_liege = k_texarkana
+				# }
 	
 				if = {
 					limit = {

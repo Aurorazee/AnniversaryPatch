@@ -12,11 +12,8 @@ cb_pro_imperial = {
 			vassal_of = FROM	
 		}
 	}
-
+	
 	is_valid_title = {
-		NOT = {
-			top_liege = { has_landed_title = e_california }
-		}
 		OR = {
 			tier = emperor
 			tier = king
@@ -5317,7 +5314,8 @@ gaian_reclamation_cb = {
 			}
 		}
 		location = {
-		region = custom_gaian_core_region
+			region = custom_gaian_core_region
+		}
 		OR = {
 			dejure_liege_title = {
 				owner = {
@@ -5327,99 +5325,100 @@ gaian_reclamation_cb = {
 					}
 				}
 			}
-			AND = {
-				borders_major_river = yes
-				any_neighbor_province = {
-				has_owner = yes
-					owner = {
-						OR = {
-						character = ROOT
-						is_liege_or_above = ROOT
-						}
-					}
-				}
-			}
-			any_neighbor_province = {
-			OR = {
-				AND = {
-					has_owner = yes
-					owner = {
-						OR = {
-							character = ROOT
-							is_liege_or_above = ROOT
-							}
-						}
-					}
+			location = {
 				AND = {
 					borders_major_river = yes
 					any_neighbor_province = {
 					has_owner = yes
 						owner = {
 							OR = {
-							character = ROOT
-							is_liege_or_above = ROOT
+								character = ROOT
+								is_liege_or_above = ROOT
 							}
 						}
 					}
 				}
-				AND = {
-					is_land = no
-						any_neighbor_province = {
-							OR = {
-								AND = {
-									has_owner = yes
-									owner = {
-										OR = {
-											character = ROOT
-											is_liege_or_above = ROOT
-										}
+				any_neighbor_province = {
+					OR = {
+						AND = {
+							has_owner = yes
+							owner = {
+								OR = {
+									character = ROOT
+									is_liege_or_above = ROOT
+								}
+							}
+						}
+						AND = {
+							borders_major_river = yes
+							any_neighbor_province = {
+							has_owner = yes
+								owner = {
+									OR = {
+										character = ROOT
+										is_liege_or_above = ROOT
 									}
 								}
-								AND = {
-									borders_major_river = yes
-									any_neighbor_province = {
-									has_owner = yes
+							}
+						}
+						AND = {
+							is_land = no
+							any_neighbor_province = {
+								OR = {
+									AND = {
+										has_owner = yes
 										owner = {
 											OR = {
-											character = ROOT
-											is_liege_or_above = ROOT
+												character = ROOT
+												is_liege_or_above = ROOT
 											}
 										}
 									}
-								}
-								AND = {
+									AND = {
+										borders_major_river = yes
+										any_neighbor_province = {
+										has_owner = yes
+											owner = {
+												OR = {
+												character = ROOT
+												is_liege_or_above = ROOT
+												}
+											}
+										}
+									}
+									AND = {
 										is_land = no
 										any_neighbor_province = {
-										OR = {
-											AND = {
-												has_owner = yes
-												owner = {
-													OR = {
-														character = ROOT
-														is_liege_or_above = ROOT
-													}
-												}
-											}
-											AND = {
-												borders_major_river = yes
-												any_neighbor_province = {
-												has_owner = yes
+											OR = {
+												AND = {
+													has_owner = yes
 													owner = {
-														OR = {
-														character = ROOT
-														is_liege_or_above = ROOT
-														}
-													}
-												}
-											}
-											AND = {
-											is_land = no
-											any_neighbor_province = {
-												owner = {
 														OR = {
 															character = ROOT
 															is_liege_or_above = ROOT
 														}
+													}
+												}
+												AND = {
+													borders_major_river = yes
+													any_neighbor_province = {
+													has_owner = yes
+														owner = {
+															OR = {
+																character = ROOT
+																is_liege_or_above = ROOT
+															}
+														}
+													}
+												}
+												AND = {
+													is_land = no
+													any_neighbor_province = {
+														owner = {
+															OR = {
+																character = ROOT
+																is_liege_or_above = ROOT
+															}
 														}
 													}
 												}
@@ -5701,7 +5700,7 @@ land_run_cb = {
 	on_add = {
 		ROOT = {
 			prestige = -100
-			}
+		}
 	}
 	
 	can_use = {
@@ -6006,29 +6005,25 @@ loyal_sanctioned_governator_war = {
 			add_trait = governator
 			remove_trait = sanctioned_governator
 		}
-		random_realm_title = {
-			limit = {
-				tier = DUKE
-				NOT = {
-					any_province = {
-						is_capital = ROOT
+		ROOT = {
+			remove_trait = governator
+			prestige = -200
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 2.0
+			}
+			random_realm_title = {
+				limit = {
+					tier = DUKE
+					NOT = {
+						any_province = {
+							is_capital = yes
+						}
 					}
-				}
-				location = {
-					any_neighbor_province = {
-						OR = {
-							AND = {
-								has_owner = yes
-								owner = {
-									OR = {
-										character = FROM
-										is_liege_or_above = FROM
-									}
-								}
-							}
-							AND = {
-								is_land = no
-								any_neighbor_province = {
+					location = {
+						any_neighbor_province = {
+							OR = {
+								AND = {
 									has_owner = yes
 									owner = {
 										OR = {
@@ -6037,19 +6032,23 @@ loyal_sanctioned_governator_war = {
 										}
 									}
 								}
+								AND = {
+									is_land = no
+									any_neighbor_province = {
+										has_owner = yes
+										owner = {
+											OR = {
+												character = FROM
+												is_liege_or_above = FROM
+											}
+										}
+									}
+								}
 							}
 						}
 					}
 				}
-			}
-			grant_title = FROM
-		}
-		ROOT = {
-			remove_trait = governator
-			prestige = -200
-			transfer_scaled_wealth = {
-				to = FROM
-				value = 2.0
+				grant_title = FROM
 			}
 		}
 		FROM = {

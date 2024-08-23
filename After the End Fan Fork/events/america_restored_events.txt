@@ -263,7 +263,8 @@ narrative_event = {
 		has_landed_title = e_usa
 		
 		NOT = { has_global_flag = carolina }
-		completely_controls = k_carolina
+		completely_controls = k_palmetto
+		completely_controls = k_tarheel
 	}	
 	
 	mean_time_to_happen = {
@@ -292,9 +293,10 @@ narrative_event = {
 		has_landed_title = e_usa
 		
 		NOT = { has_global_flag = the_south }
-		completely_controls = k_dixieland
+		completely_controls = k_georgia
 		completely_controls = k_magnolia
 		completely_controls = k_louisiana
+		completely_controls = k_tuskegee
 	}	
 	
 	mean_time_to_happen = {
@@ -443,7 +445,7 @@ narrative_event = {
 		NOT = { has_global_flag = usa_canada }
 		completely_controls = k_ontario
 		completely_controls = k_quebec
-		completely_controls = k_the_maritimes
+		completely_controls = k_maritimes
 	}	
 	
 	mean_time_to_happen = {
@@ -595,7 +597,7 @@ narrative_event = {
 		completely_controls = k_francisco
 		completely_controls = k_the_valley
 		completely_controls = k_sacramento
-		completely_controls = k_death_valley
+		completely_controls = k_nevada
 		completely_controls = k_socal
 		completely_controls = k_cascadia
 		completely_controls = k_lincoln
