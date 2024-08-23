@@ -268,7 +268,7 @@ opinion_ate_my_soup = {
 	opinion = 10
 	months = 6
 }
-opinion_annoyed = {
+opinion_annoyed_gaian = {
 	opinion = -5
 	months = 6
 }

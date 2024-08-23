@@ -3364,7 +3364,7 @@ character_event = {
 		}
 		}
 		random_courtier = {
-			opinion = { who = ROOT modifier = opinion_annoyed }
+			opinion = { who = ROOT modifier = opinion_annoyed_gaian }
 		}
 	}
 }
@@ -3424,7 +3424,7 @@ character_event = {
 	option = {
 		name = EVTOPTB_hike_mushroomstew
 		random_courtier = {
-			opinion = { who = ROOT modifier = opinion_annoyed }
+			opinion = { who = ROOT modifier = opinion_annoyed_gaian }
 		}
 		random = {
 			chance = 25

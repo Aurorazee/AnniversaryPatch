@@ -98,7 +98,7 @@ glory_hound_pattern_for = {
 			AND = {
 				liege = { government = open_range_feudalism_government }
 				trait = party_populist
-				liege = { has_law vassal_wars_law_0 } 
+				liege = { has_law = vassal_wars_law_0 } 
 			}
 			NOT = { liege = { government = open_range_feudalism_government }}
 		}

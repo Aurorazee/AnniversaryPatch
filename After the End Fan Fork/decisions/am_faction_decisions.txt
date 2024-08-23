@@ -33,9 +33,7 @@ plot_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -64,8 +62,8 @@ plot_decisions = {
 								NOT = { using_cb = depose_liege }
 								NOT = { using_cb = overthrow_ruler }
 								NOT = { using_cb = overthrow_ruler_no_calls }
-								NOT = { using_cb = succession_on_liege }
-								NOT = { using_cb = other_succession_on_liege }
+								# NOT = { using_cb = succession_on_liege } #Does not exist
+								# NOT = { using_cb = other_succession_on_liege } #Does not exist
 							}
 							AND = {
 								attacker = { character = PREV }

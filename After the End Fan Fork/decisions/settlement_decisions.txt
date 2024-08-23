@@ -122,9 +122,7 @@ settlement_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -212,9 +210,7 @@ settlement_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1 # On average ca 1 year before taken
 		}
@@ -305,9 +301,7 @@ settlement_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1 # On average ca 1 year before taken
 			modifier = {
@@ -357,9 +351,7 @@ settlement_decisions = {
 		effect = {
 			make_capital_holding = yes
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -417,9 +409,7 @@ settlement_decisions = {
 		effect = {
 			revoke_capital_holding = yes
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -615,9 +605,7 @@ settlement_decisions = {
 			}
 
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -671,9 +659,7 @@ settlement_decisions = {
 			}
 
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -1262,9 +1248,7 @@ settlement_decisions = {
 			}
 
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1947,9 +1931,7 @@ settlement_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0.1 # On average ca 1 year before taken
@@ -2631,9 +2613,7 @@ settlement_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		ai_will_do = {
 			factor = 1
@@ -2770,9 +2750,7 @@ settlement_decisions = {
 			grant_title = FROM
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -2831,9 +2809,7 @@ settlement_decisions = {
 				remove_province_modifier = incredibly_poor
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}

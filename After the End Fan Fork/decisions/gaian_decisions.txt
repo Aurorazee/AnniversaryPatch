@@ -92,8 +92,14 @@ targetted_decisions = {
 			}
 		}
 		ai_acceptance = {
-			factor = -50 
+			factor = 0
 			show_maybe_for_human = no
+			additive_modifier = {
+				value = -50
+				localisation_key = baptism_sponsor_opinion
+				always = yes
+				#NOT = { ROOT = { is_offmap_governor = offmap_china } }
+			}
 			additive_modifier = {
 				value = 5
 				localisation_key = baptism_sponsor_opinion
@@ -409,9 +415,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -451,9 +455,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -468,7 +470,7 @@ decisions = {
 				any_neighbor_independent_ruler = {
 					NAND = {
 						religion = gaian
-						has_truce = yes
+						has_truce = ROOT #I don't know if ROOT is the right scope, all I know is that has_truce scopes to character and is not a boolean function
 					}
 				}
 				factor = 0.01

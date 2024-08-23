@@ -230,9 +230,7 @@ targetted_decisions = {
 				add_trait = trans_hurufiyya
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -469,9 +467,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -501,9 +497,7 @@ targetted_decisions = {
 				culture = ROOT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -532,9 +526,7 @@ targetted_decisions = {
 				reverse_culture = ROOT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -582,9 +574,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -954,9 +944,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -1008,9 +996,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -1063,9 +1049,7 @@ targetted_decisions = {
 				culture = carpetbagger
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1185,9 +1169,7 @@ targetted_decisions = {
 				culture = yanquito
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1298,9 +1280,7 @@ targetted_decisions = {
 				culture = nuyorican
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1416,9 +1396,7 @@ targetted_decisions = {
 				culture = neomoor
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1534,9 +1512,7 @@ targetted_decisions = {
 				culture = cajun
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1621,9 +1597,7 @@ targetted_decisions = {
 				culture = creole
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1746,9 +1720,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2253,9 +2225,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -2525,9 +2495,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1

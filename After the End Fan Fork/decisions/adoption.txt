@@ -74,9 +74,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5	
 			modifier = { factor = 10 trait = flowered }		

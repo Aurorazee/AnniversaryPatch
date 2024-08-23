@@ -426,7 +426,6 @@ c_americanist_vp = { # Vice Presidency
 	color={ 160 59 110 }
 	color2={ 220 220 0 }
 
-	capital = 63 # Washington
 	creation_requires_capital = no
 	
 	dignity = -100 # so it won't be primary

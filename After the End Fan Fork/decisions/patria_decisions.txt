@@ -211,6 +211,5 @@ targeted_decisions={
 			factor = 0
 		}
 		
-		revoke_allowed = { always = no }
 	}
 }

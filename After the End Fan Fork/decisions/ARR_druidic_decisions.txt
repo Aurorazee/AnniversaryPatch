@@ -965,15 +965,15 @@ decisions = {
 					}		
 				}
 			}
-			new_character = {
-				character_event = { id = misc.3 } # Diversity
-				character_event = { id = misc.4 } # Physique
-				opinion = {
-					modifier = opinion_patron
-					who = ROOT
-					years = 5
-				}
-			}		
+			# new_character = { #Does not exist
+				# character_event = { id = misc.3 } # Diversity
+				# character_event = { id = misc.4 } # Physique
+				# opinion = {
+					# modifier = opinion_patron
+					# who = ROOT
+					# years = 5
+				# }
+			# }		
 		}
 		ai_will_do = {
 			factor = 1

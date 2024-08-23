@@ -654,12 +654,10 @@ e_mexico = {
 		foa = "ALTEZA_FOA"
 		
 		allow = {
-				trigger = {
-					NOT = {
-						has_global_flag = mexican_empire_restored
-					}
-				}
+			NOT = {
+				has_global_flag = mexican_empire_restored
 			}
+		}
 		
 		d_hidalgo = {
 			color={ 184 126 49 }

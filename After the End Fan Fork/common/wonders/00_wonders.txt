@@ -4771,7 +4771,7 @@ wonder_alamo = {
 		upgrade_giant_cross
 		upgrade_temple_guards
 		upgrade_bells_golden
-		upgrade_keeper_of_memory
+		# upgrade_keeper_of_memory #Does not exist
 		upgrade_hidden_passageways
 		upgrade_riverwalk
 		upgrade_cannon_armory
@@ -5046,8 +5046,8 @@ wonder_palace_chapultepec = {
 		upgrade_cincalco
 		upgrade_grand_mural
 		upgrade_chapultepec_zoo
-		upgrade_altar_a_la_patria
-		upgrade_jardin_del_alcanzar
+		# upgrade_altar_a_la_patria #Does not exist
+		# upgrade_jardin_del_alcanzar #Does not exist
 
 		#
 		upgrade_torture_chamber

@@ -28,10 +28,6 @@ decisions = {
 			modifier = {
 				factor = 0
 				num_of_titles_in_realm >= 8
-			}
-			modifier = {
-				factor = 0
-				num_of_titles_in_realm >= 8
 			}	
 		} 
 	}	

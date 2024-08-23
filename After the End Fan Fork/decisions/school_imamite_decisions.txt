@@ -29,9 +29,7 @@ targetted_decisions = {
 			character_event = { id = MSI.00 }
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -83,9 +81,7 @@ targetted_decisions = {
 			character_event = { id = MSI.01 }
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1

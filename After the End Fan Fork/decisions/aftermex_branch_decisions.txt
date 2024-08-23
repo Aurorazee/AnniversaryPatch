@@ -26,8 +26,6 @@ decisions = {
 			set_character_flag = changedmoravianbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 }

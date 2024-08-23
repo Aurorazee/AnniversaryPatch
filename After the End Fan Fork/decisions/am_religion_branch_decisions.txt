@@ -69,9 +69,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -112,9 +110,7 @@ decisions = {
 			set_character_flag = changedoccultistbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_occultist_reformed_branch = {
 		ai = no
@@ -141,9 +137,7 @@ decisions = {
 			set_character_flag = changedoccultistreformedbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_sacred_heart_branch = {
 		ai = no
@@ -170,9 +164,7 @@ decisions = {
 			set_character_flag = changedsacredheartbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 	}
 	change_patria_grande_branch = {
@@ -200,9 +192,7 @@ decisions = {
 			set_character_flag = changedpatriagrandebranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_high_church_branch = {
 		ai = no
@@ -229,9 +219,7 @@ decisions = {
 			set_character_flag = changedhighchurchbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_peyotist_branch = {
 		ai = no
@@ -258,9 +246,7 @@ decisions = {
 			set_character_flag = changedpeyotistbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_shinto_branch = {
 		ai = no
@@ -287,9 +273,7 @@ decisions = {
 			set_character_flag = changedshintobranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_traditionalist_branch = {
 		ai = no
@@ -316,9 +300,7 @@ decisions = {
 			set_character_flag = changedtraditionalistbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_machete_branch = {
 		ai = no
@@ -346,9 +328,7 @@ decisions = {
 			set_character_flag = changedmachetebranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_machete_reformed_branch = {
 		ai = no
@@ -376,9 +356,7 @@ decisions = {
 			set_character_flag = changedmachetereformedbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_qingzhen_branch = {
 		ai = no
@@ -406,9 +384,7 @@ decisions = {
 			set_character_flag = changedqingzhenbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_trans_branch = {
 		potential = {
@@ -435,9 +411,7 @@ decisions = {
 			set_character_flag = changedtransbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -470,9 +444,7 @@ decisions = {
 			set_character_flag = changedapostolicbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_qabantajik_branch = {
 		ai = no
@@ -501,9 +473,7 @@ decisions = {
 			set_character_flag = changedqabantajikbranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	change_nazarene_branch = {
 		ai = no
@@ -531,8 +501,6 @@ decisions = {
 			set_character_flag = changednazarenebranch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 }

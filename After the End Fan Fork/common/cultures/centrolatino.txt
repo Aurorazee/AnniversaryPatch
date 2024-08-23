@@ -169,7 +169,7 @@ centrolatino = {
 			Adelgonda Adolfa Adolfina Adriana Agata Agatha Aitana Alba Alegría Alejandra_Alexandra Alexa_Alexandra Alicia_Alice Ana Anahi Andrea Angela_Angela Annie_Anne Anyi Arsenia Ascencion Asuncion 
 			Beatriz_Beatrice Belia 
 			Camilla Carmen Cata Chloé_Chloe Cinthya Claudia 
-			Daniela_Danielle Daphne Dominga 
+			Daphne Dominga 
 			Elena_Helen Elizabeth Esefania_Stephanie Estefani_Stephanie Estefania_Stephanie Estella Eva Evita 
 			Giannina Grecia Guadalupe 
 			Ingrid Irene Irichelle Isabel_Isabelle Isabella_Isabelle Ivelisse Ivy 
@@ -241,7 +241,7 @@ centrolatino = {
 			Jaime_James Jamil Javier_Xavier Jerónimo_Jerome Jelf Jesús_Jesus Jairán Jorge_George José_Joseph Juan_John
 			Kamel Khalid
 			Luis_Louis
-			Manuel_Emmanuel Matías_Matthew Miguel_Michael Muhammad_Muhammad Musa_Moses Mustafá_Mustafa Miguel_Michael
+			Manuel_Emmanuel Matías_Matthew Miguel_Michael Muhammad_Muhammad Musa_Moses Mustafá_Mustafa
 			Nabil Nacif Nakhoul Nasri Naufal Nayib Nicolás_Nicholas
 			Omar Óscar_Oscar Osman
 			Pedro_Peter

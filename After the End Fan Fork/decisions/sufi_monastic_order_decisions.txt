@@ -83,9 +83,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -169,9 +167,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -255,9 +251,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -610,9 +604,7 @@ society_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		ai_will_do = {
 			factor = 0.001
@@ -782,9 +774,7 @@ society_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1023,9 +1013,7 @@ society_decisions = {
 			hidden_effect = { character_event = { id = SUFI.4403 } }
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0.1
@@ -1077,8 +1065,7 @@ society_decisions = {
 			# piety = -100
 		# }
 
-		# revoke_allowed = { always = no }
-
+		# 
 		# ai_will_do = {
 			# factor = 0
 		# }
@@ -1099,7 +1086,7 @@ targetted_decisions = {
 		}
 		
 		from_potential = {
-			has_DLC = "Mystics"
+			has_dlc = "Mystics"
 			society_rank >= 2
 			is_sufi_member_trigger = yes
 			NOT = { society_member_of = monastic_order_shiite }

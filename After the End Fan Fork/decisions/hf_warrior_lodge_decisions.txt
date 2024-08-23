@@ -293,9 +293,7 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -593,9 +591,7 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -873,9 +869,7 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1127,9 +1121,7 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1189,7 +1181,6 @@ targeted_decisions = {
 			detract_society_currency_minor_effect = yes
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 1
@@ -1238,7 +1229,6 @@ targeted_decisions = {
 			detract_society_currency_medium_effect = yes
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 1
@@ -1295,7 +1285,6 @@ targeted_decisions = {
 			detract_society_currency_minor_effect = yes
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 1
@@ -1390,7 +1379,6 @@ targeted_decisions = {
 			detract_society_currency_minor_effect = yes
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 1
@@ -1473,7 +1461,6 @@ targeted_decisions = {
 			detract_society_currency_minor_effect = yes
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 1
@@ -1552,7 +1539,6 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = { always = no }
 
 		ai_will_do = {
 			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
@@ -1603,9 +1589,7 @@ society_decisions = {
 			character_event = { id = WR.3 }
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0.5
@@ -1646,9 +1630,7 @@ society_decisions = {
 			character_event = { id = WR.101 }
 			set_character_flag = choosing_persona
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1675,9 +1657,7 @@ society_decisions = {
 			character_event = { id = WR.104 }
 			set_character_flag = choosing_style
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1756,9 +1736,7 @@ society_decisions = {
 			}
 			start_society_progress = yes
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -1771,10 +1749,6 @@ society_decisions = {
 			modifier = {
 				factor = 0.1
 				any_bloodline = { always = yes } #Less likely if already has a bloodline...
-			}
-			modifier = {
-				factor = 0.1
-				duelist_skill_is_high_group_trigger = no #less likely if AI is not a great duelist...
 			}
 			modifier = {
 				factor = 0.1
@@ -2030,9 +2004,7 @@ society_decisions = {
 			}
 			character_event = { id = HF.25000 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -2163,9 +2135,7 @@ society_decisions = {
 				} 
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
 		}
@@ -2241,9 +2211,7 @@ society_decisions = {
 				} 
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0 # decisions with the "is_mercenary" will not be calculated from the script
 		}
@@ -2297,9 +2265,7 @@ society_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -2394,9 +2360,7 @@ society_decisions = {
 				character_event = { id = HF.25021 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -2499,9 +2463,7 @@ society_decisions = {
 				character_event = { id = HF.25006 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -2615,9 +2577,7 @@ society_decisions = {
 			set_character_flag = flag_ordered_fetish_creation
 			character_event = { id = HF.25040 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -2682,9 +2642,7 @@ settlement_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -2754,7 +2712,7 @@ settlement_decisions = {
 					NAND = { 
 						OR = { 
 							has_building = ca_wall_5
-							has_building = ca_con_wall_6
+							# has_building = ca_con_wall_6 #Theodosian Walls
 							is_building = ca_wall_5
 						}
 						OR = { 
@@ -3299,9 +3257,7 @@ settlement_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1

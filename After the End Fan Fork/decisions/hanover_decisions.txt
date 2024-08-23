@@ -47,9 +47,7 @@ decisions = {
 			set_global_flag = dogwood_crown_recreated
 #			narrative_event = { id = americarestored.1 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -99,9 +97,7 @@ decisions = {
 			unsafe_destroy_artifact=old_dominion_old_crown
 			set_global_flag = dogwood_crown_restored
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}

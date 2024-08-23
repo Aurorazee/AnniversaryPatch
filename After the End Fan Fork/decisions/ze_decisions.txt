@@ -100,9 +100,7 @@ targetted_decisions = {
 				set_title_flag = not_hired
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.05
 
@@ -133,9 +131,7 @@ targetted_decisions = {
 		effect = {
 			character_event = { id = ZE.11020 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -164,9 +160,7 @@ targetted_decisions = {
 				character_event = { id = ZE.6020 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -235,9 +229,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -322,9 +314,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -391,9 +381,7 @@ targetted_decisions = {
 				character_event = { id = ZE.8120 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1000
 		}
@@ -422,9 +410,7 @@ targetted_decisions = {
 		effect = {
 			character_event = { id = ZE.23100 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.001
 		}
@@ -453,9 +439,7 @@ targetted_decisions = {
 		effect = {
 			character_event = { id = ZE.23105 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.001
 		}
@@ -526,9 +510,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -604,9 +586,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -689,9 +669,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {

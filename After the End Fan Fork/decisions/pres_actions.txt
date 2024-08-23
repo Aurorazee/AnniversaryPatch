@@ -44,9 +44,7 @@ decisions = {
 			wealth = -100
 			narrative_event = { id = 88000 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -120,9 +118,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -228,9 +224,7 @@ decisions = {
 		effect = {
 			hidden_tooltip = { character_event = { id = prez.8 } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -257,7 +251,6 @@ decisions = {
 		effect = {
 			character_event = { id = prez.6 }
 		}
-		revoke_allowed = { always = no }
 		ai_will_do = { factor = 0 }
 	}
 	
@@ -282,9 +275,7 @@ decisions = {
 				k_papal_state = { holder_scope = { character_event = { id = prez.205 } } }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}

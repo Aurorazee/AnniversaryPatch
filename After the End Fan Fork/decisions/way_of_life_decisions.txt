@@ -34,9 +34,7 @@ targetted_decisions = {
 		effect = {
 			FROM = { character_event = { id = WoL.1109 tooltip = EVTTOOLTIP64046 } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -204,9 +202,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
@@ -374,9 +370,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -412,9 +406,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -469,9 +461,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
 			modifier = {
@@ -542,9 +532,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -576,9 +564,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -649,9 +635,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1 		# 1 = 100% chance every month (for each allowed target!)
@@ -745,9 +729,7 @@ targetted_decisions = {
 			}
 			set_character_flag = carousing_invite
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1110,9 +1092,7 @@ decisions = {
 			set_character_flag = building_observatory
 			hidden_tooltip = { character_event = { id = WoL.6000 } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 

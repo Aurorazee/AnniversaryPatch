@@ -169,9 +169,7 @@ decisions = {
 				set_character_flag = temporary_hcc_thing_until_you_choose_the_thing
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}

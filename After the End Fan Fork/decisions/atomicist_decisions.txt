@@ -66,9 +66,7 @@ decisions = {
 		effect = {
 			character_event = { id = atom.18 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -114,9 +112,7 @@ decisions = {
 			custom_tooltip = { text = TXT_radiant_path_1 }
 			narrative_event = { id = atom.50 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -158,9 +154,7 @@ decisions = {
 				character_event = { id = atom.61 days = 30 } #fallback
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -201,9 +195,7 @@ decisions = {
 				character_event = { id = atom.70 days = 60 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {

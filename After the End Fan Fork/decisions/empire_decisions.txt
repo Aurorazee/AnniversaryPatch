@@ -179,9 +179,7 @@ decisions = {
 			set_global_flag = america_restored
 			narrative_event = { id = americarestored.1 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -232,9 +230,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -444,9 +440,7 @@ decisions = {
 			}
 			set_global_flag = nys_formed
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -504,9 +498,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -560,9 +552,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -674,7 +664,7 @@ decisions = {
 				de_jure_liege = e_atlantica
 			}
 			k_keystone = {
-				ROOT = { make_primary_title = yes }
+				make_primary_title = yes
 			}
 			k_allegheny = {
 				destroy_landed_title = THIS
@@ -704,9 +694,7 @@ decisions = {
 			}
 			set_global_flag = keystone_formed
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -761,9 +749,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -886,9 +872,7 @@ decisions = {
 				hidden_tooltip = { activate_title = { title = THIS status = no } }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -937,9 +921,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1063,9 +1045,7 @@ decisions = {
 				hidden_tooltip = { activate_title = { title = THIS status = no } }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 100
 		}
@@ -1166,9 +1146,7 @@ decisions = {
 				hidden_tooltip = { activate_title = { title = THIS status = no } }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 100
 		}
@@ -1209,9 +1187,7 @@ decisions = {
 				narrative_event = { id = playerbrit.3 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1284,9 +1260,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1343,9 +1317,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1374,9 +1346,7 @@ decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -1446,9 +1416,7 @@ decisions = {
 			set_global_flag = metis_restored
 			narrative_event = { id = metis.1 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1837,7 +1805,7 @@ decisions = {
 					value = off
 				}
 			}
-			NOT = { has_landed_title = e_new_france }
+			# NOT = { has_landed_title = e_new_france } #Does not exist
 			NOT = { has_global_flag = america_restored }
 			independent = yes
 			religion = catholic
@@ -1988,12 +1956,6 @@ decisions = {
 			}
 
 
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 1
 		}
 	}
 }

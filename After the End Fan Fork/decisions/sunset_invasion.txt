@@ -45,19 +45,17 @@ targetted_decisions = {
 				}
 				character_event = { id = SSI.60 }
 			}
-			hidden_tooltip = {
-				FROM = {
-					character_event = { id = SSI.72 }
-				}
-			}
+			# hidden_tooltip = { Doesn't exist
+				# FROM = {
+					# character_event = { id = SSI.72 }
+				# }
+			# }
 			death = {
 				death_reason = death_sacrificed
 				killer = FROM
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}

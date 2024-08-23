@@ -41,9 +41,7 @@ society_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		ai_will_do = {
 			factor = 0.001
@@ -88,9 +86,7 @@ society_decisions = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		ai_will_do = {
 			factor = 0.001
@@ -278,10 +274,6 @@ targetted_decisions = {
 			}
 			FROM = { character_event = { id = MNM.4950 } }
 			character_event = { id = MNM.4951 }
-		}
-		
-		revoke_allowed = {
-		always = no
 		}
 		
 		ai_will_do = {
@@ -476,10 +468,6 @@ targetted_decisions = {
 			}
 			FROM = { character_event = { id = MNM.4960 } }
 			character_event = { id = MNM.4961 }
-		}
-		
-		revoke_allowed = {
-		always = no
 		}
 		
 		ai_will_do = {

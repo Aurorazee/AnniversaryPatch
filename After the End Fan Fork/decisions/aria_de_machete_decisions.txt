@@ -31,7 +31,6 @@ decisions = {
 			set_character_flag = machete_praying_for_prosperity
 		}
 		
-		revoke_allowed = { always = no }
 	}
 }
 
@@ -108,7 +107,6 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = { always = no }
 	}
 	
 	machete_decide_childs_health = {
@@ -230,7 +228,6 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = { always = no }
 		
 		ai_will_do = {
 			factor = 0.01
@@ -316,7 +313,6 @@ targeted_decisions = {
 			}
 		}
 		
-		revoke_allowed = { always = no }
 		
 		ai_will_do = {
 			factor = 0.01

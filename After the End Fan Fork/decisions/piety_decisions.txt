@@ -229,9 +229,7 @@ targetted_decisions = {
 			character_event = { id = MSI.4952 tooltip = EVTTOOLTIP_MSI_4952 }
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1
@@ -272,9 +270,7 @@ targetted_decisions = {
 			character_event = { id = MSI.4953 tooltip = EVTTOOLTIP_MSI_4953 }
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1	
@@ -313,9 +309,7 @@ targetted_decisions = {
 			set_character_flag = hike_inecessible
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1	
@@ -352,9 +346,7 @@ targetted_decisions = {
 			set_character_flag = mini_evangelical_stopper_branch
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 1	

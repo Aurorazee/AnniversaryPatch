@@ -1,8 +1,3 @@
-slots = {
-	weapon = 1
-	torso = 1
-}
-
 terrible_armor = {
 	combat_rating = 2
 	quality = 1

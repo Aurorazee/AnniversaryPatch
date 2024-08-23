@@ -238,7 +238,7 @@ EVTDESC_hike_bear_encounter_18;You are beginning to think you are outmatched as 
 EVTOPT_hike_bear_encounter_16to18;This may have been a mistake...;;;;;;;;;;;;;x
 EVTDESC_hike_bear_encounter_19;You lie bleeding on the ground, hearing shouting and running around you. You see hands and faces above you and soon it seems you are being carried away. Despite your wounds it seems your fellow hikers have managed to drive off the bear and rescue you.;;;;;;;;;;;;;x
 EVTOPT_hike_bear_encounter_19;Thank Gaia...;;;;;;;;;;;;;x
-opinion_annoyed;Annoyed;;;;;;;;;;;;;x
+opinion_annoyed_gaian;Annoyed;;;;;;;;;;;;;x
 EVTDESC_hike_hot_river;As the middle of the day nears, it has grown quite hot... One of the people in your entourage asks you if we all could go into the river. But this part is mighty and dangerous... so there are some risks... possibly even death... ;;;;;;;;;;;;;x
 EVTOPTA_hike_hot_river;A quick dip won't hurt...;;;;;;;;;;;;;x
 EVTOPTB_hike_hot_river;It is far too dangerous...;;;;;;;;;;;;;x

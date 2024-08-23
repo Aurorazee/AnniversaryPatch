@@ -80,9 +80,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -170,9 +168,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -180,7 +176,7 @@ targetted_decisions = {
 				factor = 0
 				OR = {
 					reverse_opinion = { who = FROM value = 40 }
-					FROM = { LIEGE = { dynasty = ROOT } }
+					FROM = { liege = { dynasty = ROOT } }
 				}
 			}
 			modifier = {
@@ -229,9 +225,7 @@ targetted_decisions = {
 		effect = {
 			character_event = { id = atom.15000 days = 1 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -290,9 +284,7 @@ targetted_decisions = {
 		effect = {
 			FROM = { character_event = { id = consumer.3 } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
@@ -326,9 +318,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -366,9 +356,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -404,9 +392,7 @@ targetted_decisions = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
@@ -489,9 +475,7 @@ targetted_decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {

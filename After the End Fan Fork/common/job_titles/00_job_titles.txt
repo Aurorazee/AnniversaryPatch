@@ -24,7 +24,7 @@ job_chancellor = {
 	allow = {
 		can_be_chancellor_trigger = yes
 		FROM = {
-			NAND= {
+			NAND = {
 				hidden_tooltip = {
 				AND ={
 					religion = gaian
@@ -34,7 +34,7 @@ job_chancellor = {
 				custom_tooltip = {
 					text = not_theocratic_feudal
 				}
-				has_character_modifier = lost_oficial_diplomacy_authorization
+				has_character_modifier = lost_official_diplomacy_authorization
 			}
 		}
 	}
@@ -50,7 +50,7 @@ job_chancellor = {
 				custom_tooltip = {
 					text = not_theocratic_feudal
 				}
-				has_character_modifier = lost_oficial_diplomacy_authorization
+				has_character_modifier = lost_official_diplomacy_authorization
 			}
 			NOT = { 
 				AND = {

@@ -128,9 +128,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -240,9 +238,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -349,9 +345,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -435,9 +429,7 @@ decisions = {
 			}
 			set_character_flag = selecting_patron_deity
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -514,9 +506,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -618,9 +608,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -704,9 +692,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
@@ -738,9 +724,7 @@ decisions = {
 				character_event = { id = TOG.500 }
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -821,9 +805,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -905,9 +887,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 
@@ -1022,7 +1002,7 @@ decisions = {
 					on_trigger = religion
 					revelationist 			 = { character_event = { id = TOG.7110 } } 
 					revelationist_reformed	 = { character_event = { id = TOG.7110 } } 
-					espiritista				 = { character_event = { id = TOG.7200 } } 
+					# espiritista				 = { character_event = { id = TOG.7200 } } #Doesn't exist
 					trailwalker				 = { character_event = { id = TOG.7300 } } 
 					trailwalker_reformed	 = { character_event = { id = TOG.7300 } } 
 					celtic_pagan			 = { character_event = { id = TOG.7400 } } 
@@ -1036,9 +1016,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
@@ -1111,9 +1089,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1233,9 +1209,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1362,9 +1336,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1434,9 +1406,7 @@ decisions = {
 			set_character_flag = looking_for_guru
 			character_event = { id = RoI.3000 }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 
@@ -1539,9 +1509,7 @@ decisions = {
 				}
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -1644,9 +1612,7 @@ decisions = {
 			hidden_tooltip = { long_character_event = { id = HL.6000 } } # Select and name horse
 			hidden_tooltip = { character_event = { id = HL.6500 days = 3500 random = 2000 } } # Horse dies
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.1
 			modifier = {
@@ -1787,9 +1753,6 @@ celebrate_yudtes = {
 				}
 			}
 		}
-	}
-	revoke_allowed = {
-		always = no
 	}
 	ai_will_do = {
 		factor = 1
