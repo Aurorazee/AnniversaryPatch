@@ -159,6 +159,148 @@ decisions = {
 					}
 				}
 			}
+			if = { #Prevents americarestored event spam after you form America
+				limit = {
+					completely_controls = k_old_dominion
+				}
+				set_global_flag = virginia
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_allegheny
+					completely_controls = k_deitscherei
+					completely_controls = d_philadelphia
+				}
+				set_global_flag = pennsylvania
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_hudsonia
+					completely_controls = d_new_york
+					completely_controls = d_long_island
+				}
+				set_global_flag = newyork
+				prestige = 500
+			}
+			
+			if = {
+				limit = {
+					completely_controls = d_north_jersey
+					completely_controls = d_jersey
+				}
+				set_global_flag = newjersey
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_new_england
+				}
+				set_global_flag = newengland
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_carolina
+				}
+				set_global_flag = carolina
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_dixieland
+					completely_controls = k_magnolia
+					completely_controls = k_louisiana
+				}
+				set_global_flag = the_south
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_florida
+				}
+				set_global_flag = florida
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_lakotah
+				}
+				set_global_flag = dakota
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = e_lone_star
+				}
+				set_global_flag = texas
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_cuba
+					completely_controls = d_puerto_rico
+					completely_controls	= c_virgin_islands
+				}
+				set_global_flag = usa_caribbean
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_ontario
+					completely_controls = k_quebec
+					completely_controls = k_the_maritimes
+				}
+				set_global_flag = usa_canada
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_chicagoland
+					completely_controls = k_michigan
+					completely_controls = k_ohio
+					completely_controls = k_superior
+				}
+				set_global_flag = greatlakes
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = e_heartland
+				}
+				set_global_flag = heartland
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_appalachia
+				}
+				set_global_flag = appalachia
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = e_the_rockies
+					completely_controls = k_arixo
+				}
+				set_global_flag = rockies
+				prestige = 500
+			}
+			if = {
+				limit = {
+					completely_controls = k_jefferson
+					completely_controls = k_francisco
+					completely_controls = k_the_valley
+					completely_controls = k_sacramento
+					completely_controls = k_death_valley
+					completely_controls = k_socal
+					completely_controls = k_cascadia
+					completely_controls = k_lincoln
+				}
+				set_global_flag = pacific
+				prestige = 500
+			}
 			any_demesne_title = {
 				limit = {
 					tier = KING
