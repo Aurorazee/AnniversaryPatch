@@ -40,13 +40,10 @@ d_nazarene;Saint Herman's Brotherhood;;;;;;;;;;;;;x
 d_nazarene_adj;Brotherhood;;;;;;;;;;;;;x
 d_true_cross;The Fraternity of the True Cross;;;;;;;;;;;;;x
 d_true_cross_adj;Fraternal;;;;;;;;;;;;;x
-d_lord_of_the_ringlings;The Lords of the Ringlings;The Lords of the Ringlings;The Lords of the Ringlings;;The Lords of the Ringlings;;;;;;;;;x
 k_northern_protectorate;Northern Protectorate;;;;;;;;;;;;;x
 k_northern_protectorate_adj;Imperial;;;;;;;;;;;;;x
 k_eastern_protectorate;Eastern Protectorate;;;;;;;;;;;;;x
 k_eastern_protectorate_adj;Imperial;;;;;;;;;;;;;x
-k_nevada;Nevada;;;;;;;;;;;;;x
-k_nevada_adj;Nevadan;;;;;;;;;;;;;x
 e_china_west_governor;Northern Captaincy;;;;;;;;;;;;;x
 e_china_west_governor_adj;Brazilian;;;;;;;;;;;;;x
 e_china;Empire of Brazil;;;;;;;;;;;;;x
@@ -86,7 +83,7 @@ e_prodnanici_adj;Automan;;;;;;;;;;;;;x
 e_filastino;Nueva Palestina;;;;;;;;;;;;;x
 e_filastino_adj;Filastino;;;;;;;;;;;;;x
 
-d_norse_pagan_reformed;The Forsetate;;;;;;;;;;;;;x
+# d_norse_pagan_reformed;The Forsetate;;;;;;;;;;;;;x
 k_redland_adj;Oklahoman;;;;;;;;;;;;;x
 k_redland;Oklahoma;;;;;;;;;;;;;x
 k_nundagunyi;Nundagunyi;;;;;;;;;;;;;x
@@ -4089,7 +4086,6 @@ d_liard_adj;Liardan;Liardan;Liardan;;Liardan;;;;;;;;;x
 d_libertarian;First Order of Our Lady Liberty;First Order of Our Lady Liberty;First Order of Our Lady Liberty;;First Order of Our Lady Liberty;;;;;;;;;x
 d_libertarian_adj;Libertarian;Libertarian;Libertarian;;Libertarian;;;;;;;;;x
 d_lightbringers;Lightbringers;Lightbringers;Lightbringers;;Lightbringers;;;;;;;;;x
-d_lightbringers;Los Cuerudos;Los Cuerudos;Los Cuerudos;;Los Cuerudos;;;;;;;;;x
 d_lightbringers_adj;Lightbringer;Lightbringer;Lightbringer;;Lightbringer;;;;;;;;;x
 d_little_egypt;Little Egypt;Little Egypt;Little Egypt;;Little Egypt;;;;;;;;;x
 d_little_egypt_adj;Egyptian;Egyptian;Egyptian;;Egyptian;;;;;;;;;x
@@ -4208,7 +4204,6 @@ d_miskahannock_adj;Miskahannock;Miskahannock;Miskahannock;;Miskahannock;;;;;;;;;
 d_missinipi;Missinipi;Missinipi;Missinipi;;Missinipi;;;;;;;;;x
 d_missinipi_adj;Missinipi;Missinipi;Missinipi;;Missinipi;;;;;;;;;x
 d_mixteca;Mixteca;Mixteca;Mixteca;;Mixteca;;;;;;;;;x
-d_mixteca;La Mixteca;La Mixteca;La Mixteca;;La Mixteca;;;;;;;;;x
 d_mixteca_adj;Mixteca;Mixteca;Mixteca;;Mixteca;;;;;;;;;x
 d_mobile;Mobile;Mobile;Mobile;;Mobile;;;;;;;;;x
 d_mobile_adj;Mobilian;Mobilian;Mobilian;;Mobilian;;;;;;;;;x
@@ -4230,12 +4225,10 @@ d_monteregie;Montérégie;Montérégie;Montérégie;;Montérégie;;;;;;;;;x
 d_montreal;Montreal;Montreal;Montreal;;Montreal;;;;;;;;;x
 d_montreal_adj;Montrealer;Montrealer;Montrealer;;Montrealer;;;;;;;;;x
 d_moravian;Sínodo de Unidad;Sínodo de Unidad;Sínodo de Unidad;;Sínodo de Unidad;;;;;;;;;x
-d_morazan;Morazan;Morazan;Morazan;;Morazan;;;;;;;;;x
 d_morazan;Morazán;Morazán;Morazán;;Morazán;;;;;;;;;x
 d_morgan_marines;Morgan Marines;Morgan Marines;Morgan Marines;;Morgan Marines;;;;;;;;;x
 d_morgan_marines_adj;Morganite;Morganite;Morganite;;Morganite;;;;;;;;;x
 d_mosquito;Mosquito;Mosquito;Mosquito;;Mosquito;;;;;;;;;x
-d_mosquito;La Mosquitia;La Mosquitia;La Mosquitia;;La Mosquitia;;;;;;;;;x
 d_mosquito_adj;Mosquito;Mosquito;Mosquito;;Mosquito;;;;;;;;;x
 d_mosquito_norte;Mosquito Norte;Mosquito Norte;Mosquito Norte;;Mosquito Norte;;;;;;;;;x
 d_mosquito_norte_adj;Mosquito Norte;Mosquito Norte;Mosquito Norte;;Mosquito Norte;;;;;;;;;x
@@ -5086,9 +5079,7 @@ e_melungeon_adj;Melungeon;Melungeon;Melungeon;;Melungeon;;;;;;;;;x
 e_metis_confederacy;Métis Confederacy;Métis Confederacy;Métis Confederacy;;Métis Confederacy;;;;;;;;;x
 e_metis_confederacy_adj;Metis;Metis;Metis;;Metis;;;;;;;;;x
 e_mexico;Mexico;Mexico;Mexico;;Mexico;;;;;;;;;x
-e_mexico;Mexican Empire;Mexican Empire;Mexican Empire;;Mexican Empire;;;;;;;;;x
 e_mexico_adj;Mexican;Mexican;Mexican;;Mexican;;;;;;;;;x
-e_mexico_adj;Mexicano;Mexicano;Mexicano;;Mexicano;;;;;;;;;x
 e_mikmaq;Mi'kmaq Empire;Mi'kmaq Empire;Mi'kmaq Empire;;Mi'kmaq Empire;;;;;;;;;x
 e_mikmaq_adj;Mi'kmaq;Mi'kmaq;Mi'kmaq;;Mi'kmaq;;;;;;;;;x
 e_miskito;Miskito Empire;Miskito Empire;Miskito Empire;;Miskito Empire;;;;;;;;;x
@@ -5458,7 +5449,7 @@ k_mosquito_adj;Mosquito;Mosquito;Mosquito;;Mosquito;;;;;;;;;x
 k_navajoland;Navajoland;Navajoland;Navajoland;;Navajoland;;;;;;;;;x
 k_navajoland_adj;Navajolander;Navajolander;Navajolander;;Navajolander;;;;;;;;;x
 k_nevada;Nevada;Nevada;Nevada;;Nevada;;;;;;;;;x
-k_nevada_adj;Nevada;Nevada;Nevada;;Nevada;;;;;;;;;x
+k_nevada_adj;Nevadan;Nevadan;Nevadan;;Nevadan;;;;;;;;;x
 k_new_brunswick;New Brunswick;New Brunswick;New Brunswick;;New Brunswick;;;;;;;;;x
 k_new_brunswick_adj;Wicker;Wicker;Wicker;;Wicker;;;;;;;;;x
 k_new_england;New England;New England;New England;;New England;;;;;;;;;x
@@ -5523,7 +5514,7 @@ k_s_mart_adj;S-Mart;S-Mart;S-Mart;;S-Mart;;;;;;;;;x
 k_sacramento;Sacramento;Sacramento;Sacramento;;Sacramento;;;;;;;;;x
 k_sacramento_adj;Sacramentian;Sacramentian;Sacramentian;;Sacramentian;;;;;;;;;x
 k_sagebrush;Sagebrush;Sagebrush;Sagebrush;;Sagebrush;;;;;;;;;x
-k_sagebrush;Brushing;Brushing;Brushing;;Brushing;;;;;;;;;x
+k_sagebrush_adj;Brushing;Brushing;Brushing;;Brushing;;;;;;;;;x
 k_sagrado_corazon;The Archdiocese of Mexico;The Archdiocese of Mexico;The Archdiocese of Mexico;;The Archdiocese of Mexico;;;;;;;;;x
 k_sagrado_corazon_adj;Sacred Heart;Sacred Heart;Sacred Heart;;Sacred Heart;;;;;;;;;x
 k_saguenay;Saguenay;Saguenay;Saguenay;;Saguenay;;;;;;;;;x

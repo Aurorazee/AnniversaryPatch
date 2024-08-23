@@ -77,8 +77,6 @@ EVTOPTA_kalomte_votan;I will protect my world!;;;;;;;;;;;;;x
 kalomte_votan_male;Blood of Kalom'te Votan;;;;;;;;;;;;;x
 kalomte_votan_female;Blood of Kalom'te Votan;;;;;;;;;;;;;x
 bloodline_desc_kalomte_votan;The legendary Kalom'te Votan united the lands of the Yucatan in the name of [Root.Religion.GetHighGodName];;;;;;;;;;;;;x
-salazar;Blood of Israel;;;;;;;;;;;;;x
-salazar_desc;This former viceroy of the Yucatan shocked Mexico by suddenly converting to Neomayanism and declaring independence from the Mexican Empire.;;;;;;;;;;;;;x
 jaguar;Blood of Pancho;;;;;;;;;;;;;x
 jaguar_desc;This stranded adventurer adopted the Neomayan faith while journeying in the jungles of Lacandón and helped peacefully spread it across southern Yucatan.;;;;;;;;;;;;;x
 EVTDESC39840;Claiming to be founded by reincarnations of a great order from millenia before the event, the Twelve Pairs are known for their great exploits against the Ghazis of Mesopotamia and against the Empire of Brazil. These knights have finally expanded north of the Equator after a foothold of the Celeste faith was estabilished.;;;;;;;;;;;;;x
@@ -211,7 +209,7 @@ EVTOPTA_machete_5;I pray to the one who is stallion and dame!;;;;;;;;;;;;;x
 EVTDESC_machete_6;Last night a thunderstorm erupted, the rains will without a doubt bring a lot of prosperity to my land and my people. As I ride on my horse I see a figure in the distance. I can't tell if it's a man or a woman, but it brings great joy to my heart.;;;;;;;;;;;;;x
 EVTOPTA_machete_6;Beautiful either way.;;;;;;;;;;;;;x
 EVTDESC_machete_7;The sky has been clear for weeks now, there is no sign of rain. If things continue like this, the cattle will die and with it the herders. Rucio Moro refuses to answer my prayer.;;;;;;;;;;;;;x
-EVTOPTA_machete_6;Just die already, you shapeshifting horse!;;;;;;;;;;;;;x
+EVTOPTA_machete_7;Just die already, you shapeshifting horse!;;;;;;;;;;;;;x
 machete_blessing_nomad;Blessing of Rucio Moro;;;;;;;;;;;;;x
 machete_blessing_nomad_desc;Rucio Moro has blessed this ruler with abundant rains.;;;;;;;;;;;;;x
 machete_blessing_notnomad;Blessing of Rucio Moro;;;;;;;;;;;;;x
@@ -299,9 +297,9 @@ machete_low_libido;Low Libido;;;;;;;;;;;;;x
 machete_low_libido_desc;This character has been cursed with a low libido by Juan Machete.;;;;;;;;;;;;;x
 
 EVTDESC_patria_choose;Gran Colombia, the Great Fatherland of the ancient golden era, was founded and ruled by heroic saints known as próceres. In the modern era the most devout are able to invoke those immortal spirits so they may grant their blessings. It is only a matter of choosing a saint.;;;;;;;;;;;;;x
-EVTOPT_patria_santander;Santander, the lawmaker.;;;;;;;;;;;;;x
-EVTOPT_patria_bolivar;Bolívar, the warrior of liberty.;;;;;;;;;;;;;x
-EVTOPT_patria_manuelita;Manuelita, the dame of love.;;;;;;;;;;;;;x
+EVTOPT_patria_1_santander;Santander, the lawmaker.;;;;;;;;;;;;;x
+EVTOPT_patria_1_bolivar;Bolívar, the warrior of liberty.;;;;;;;;;;;;;x
+EVTOPT_patria_1_manuelita;Manuelita, the dame of love.;;;;;;;;;;;;;x
 EVTDESC_patria_santander;Francisco de Paula Santander, called Saint Francis or the man of the laws. Santander is the great legislator, a sage who puts integrity and peace above all. His faithful enjoy his blessing when it comes to governing large areas of land and have the wisdom of always choosing a virtuous successor.;;;;;;;;;;;;;x
 EVTOPT_patria_santander;Only the laws will give you freedom.;;;;;;;;;;;;;x
 EVTDESC_patria_bolivar;Simón Bolívar, called Simón Pedro or Saint Peter. The liberator, who breaks the chains and brings death to the tyrants. Bolívar is the saint of war and freedom. His faithful are called to take up arms against those who oppose the spirit of liberty by all possible means and to give all their children equal rights in succession.;;;;;;;;;;;;;x
@@ -324,10 +322,10 @@ EVTDESC_patria_12;The passage transports you. You are now a woman from the Rolo 
 EVTOPTA_patria_12;A vision of beauty.;;;;;;;;;;;;;x
 EVTTITLE_patria_13;The Child on the Cross;;;;;;;;;;;;;x
 EVTDESC_patria_13;The passage transports you. You are now a woman from the Wayuu lands. You have a peaceful life, knowing that your oldest child has recently married and lives happily. That is, until you see a path of blood slowly spreading on the ground beneath your feet.\n\nTerrified, you follow the bloody path. It takes you outside your home, around the block, through the butcher shop, the shoe store and the town square. You follow the path of blood through alleys and avenues until it finally reaches the doors of your son's house. You feel as if your heart is suffocated. You know that a tragedy awaits you inside that house.;;;;;;;;;;;;;x
-EVTOPTA_patria_12;A vision of loss.;;;;;;;;;;;;;x
+EVTOPTA_patria_13;A vision of loss.;;;;;;;;;;;;;x
 EVTTITLE_patria_14;The Patriarch in Glory;;;;;;;;;;;;;x
 EVTDESC_patria_14;The passage transports you. You are now in a magnificent palace. Before you is an intimidating man, and you know immediately that he is a prócer. The saint, who reigns somewhere in the Patria Grande during the golden age, is being celebrated for his greatest achievement. He has totally expelled the Catholics from the country.\n\nThe prócer, deciding that it would be better to hold his celebration in the morning than in the afternoon, gives a simple decree: "It shall be eight in the morning." As soon as he says these words you can see through the window how the sun descends toward dawn. You understand now that this is the true power of a man of the golden age.;;;;;;;;;;;;;x
-EVTOPTA_patria_12;A visionW of power.;;;;;;;;;;;;;x
+EVTOPTA_patria_14;A vision of power.;;;;;;;;;;;;;x
 EVTTITLE_patria_15;The Patriarch in Misery;;;;;;;;;;;;;x
 EVTDESC_patria_15;The passage transports you. You are now facing the sea and next to you is an aging man who calls himself a prócer. You hear a fierce roar and you can see a gigantic iron dragonfly descending from the heavens, which has come to take the sea. The beast is being controlled by a perverse Americanist priest who wants to steal what is left of the golden age.\n\nDesperate, you beg the old saint to do something and stop the heathen, but he just ignores you. You know then that the golden age has come to an end and the Patria Grande is lost.;;;;;;;;;;;;;x
 EVTOPTA_patria_15;A vision of defeat.;;;;;;;;;;;;;x
@@ -541,7 +539,7 @@ EVTOPTA_machete_40;I have the blood of the Llanos and Machete.;;;;;;;;;;;;;x
 EVTOPTB_machete_40;Bolívar is my father, and its people are my family.;;;;;;;;;;;;;x
 EVTDESC_machete_41;The Queen has denied our gods and returned to the perfidious ways of her father. Does she not realize that we deposed her brother because of his belief in Juan Machete and his rejection of our culture?;;;;;;;;;;;;;x
 EVTOPTA_machete_41;The time has come to end her tyranny!;;;;;;;;;;;;;x
-EVTOPTB_machete_40;I will bide my time...;;;;;;;;;;;;;x
+EVTOPTB_machete_41;I will bide my time...;;;;;;;;;;;;;x
 EVTDESC_machete_42;To [Root.GetName],\n\nSimoneta has abandoned the ways of the Tres Potencias. I plan to declare our independence — but I need your help to do so...;;;;;;;;;;;;;x
 EVTOPTA_machete_42;Of course I will support you.;;;;;;;;;;;;;x
 EVTOPTB_machete_42;Perhaps not yet...;;;;;;;;;;;;;x
@@ -587,13 +585,13 @@ EVTDESC_canada_6;At last the schism between the Ursuline See and the American Pa
 
 vassalize_archbishop;Vassalize the Archbishop of Canterbury;;;;;;;;;;;;;x
 vassalize_archbishop_desc;Now that we have reunited the legendary Dominion of Canada, we may be able to convince the Archbishop of Canterbury to submit to imperial rule. Doing so would further legitimize our rule of the great white north.;;;;;;;;;;;;;x
-vassalize_knights_templar_opinion_TT;§Y[k_high_church.Holder.GetTitledName]§! has an opinion of §G50§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
+vassalize_archbishop_opinion_TT;§Y[k_high_church.Holder.GetTitledName]§! has an opinion of §G50§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 TXT_vassalize_archbishop;The Archbishop of Canterbury becomes your vassal.;;;;;;;;;;;;;x
 
 vassalize_abbess_general;Vassalize the Abbess-General;;;;;;;;;;;;;x
 vassalize_abbess_general_desc;Now that we have reunited the legendary Dominion of Canada, we may be able to convince the Abbess-General to submit to imperial rule. Doing so would further legitimize our rule of the great white north.;;;;;;;;;;;;;x
 TXT_vassalize_abbess_general;The Abbess-General becomes your vassal.;;;;;;;;;;;;;x
-vassalize_knights_templar_opinion_TT;§Y[k_ursuline.Holder.GetTitledName]§! has an opinion of §G50§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
+vassalize_abbess_general_opinion_TT;§Y[k_ursuline.Holder.GetTitledName]§! has an opinion of §G50§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expelled_d_knights_of_columbus;Expelled the [d_knights_of_columbus.GetName];;;;;;;;;;;;;x
 expelled_d_knights_of_peter_claver;Expelled the [d_knights_of_peter_claver.GetName];;;;;;;;;;;;;x
@@ -754,11 +752,6 @@ expel_pony_express;Expel the [d_pony_express.GetName];;;;;;;;;;;;;x
 expel_pony_express_desc;I can drive the [d_pony_express.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_pony_express;Donate 300¤ to the [d_pony_express.GetName];;;;;;;;;;;;;x
 donate_money_to_pony_express_desc;I can donate money to the [d_pony_express.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
-
-expel_order_of_the_golden_bunny;Expel the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
-expel_order_of_the_golden_bunny_desc;I can drive the [d_order_of_the_golden_bunny.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
-donate_money_to_order_of_the_golden_bunny;Donate 300¤ to the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
-donate_money_to_order_of_the_golden_bunny_desc;I can donate money to the [d_order_of_the_golden_bunny.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
 
 expel_order_of_the_golden_bunny;Expel the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
 expel_order_of_the_golden_bunny_desc;I can drive the [d_order_of_the_golden_bunny.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
@@ -1205,9 +1198,6 @@ EVT_rustcultist4_TT;The Alliance of Stagehands is formed.;;;;;;;;;;;;;x
 EVT_rustcultist5_TT;The Teamsters are formed.;;;;;;;;;;;;;x
 EVT_rustcultist6_TT;The Federation of Labor is formed.;;;;;;;;;;;;;x
 
-form_zion;Form the Empire of Zion;;;;;;;;;;;;;x
-form_zion_desc;I will not stop until the dream of creating a true Kingdom of Heaven on Earth has been fulfilled. I will make sure that the [Root.Religion.GetName] faith will never perish from this world or the next.;;;;;;;;;;;;;x
-
 EVTTITLEHFATE24200;The Blood of Tecumseh;;;;;;;;;;;;;x
 EVTDESCAHFATE24200;Legends about Tecumseh and his heroic resistance against Old America are told throughout the known world. It is said that Tecumseh was the greatest warrior of his age, possessing great strength, courage, and cunning. Long ago the armies of Old America conquered Tecumseh's homeland and slew hie people. Determined to end the tyranny of the mighty American Empire Tecumseh and his brother Tenskwatawa began an epic campaign to unite the peoples of the North in a great Confederation.\nAlong with his allies such as Norton, and Brock, Tecumseh created a vast Confederation stretching across Old Canada, through the Great Plans and down the Mississippi. Terrified of this new power in the north America waged a long and bloody war against Tecumseh's Confederacy. While Tecumseh fought valiantly he could not overcome the American hordes from the south, and he was killed in personal combat against President Harrison.\nRulers of creeds and nations across North America claim to trace their ancestors to the fleeting line of Tecumseh, yet none have been able to have such a prestigious claim be recognized by their peers and subjects.;;;;;;;;;;;;;x
 TT_EVTOPTAHFATE24200;Attempt to forge a claim to §YTecumseh's Bloodline§!.;;;;;;;;;;;;;x
@@ -1365,8 +1355,8 @@ EVTDESCHFATE24220;Che Guevara is remembered by many for his outstanding military
 TT_EVTOPTAHFATE24220;Attempt to forge a claim to §YGuevara's Bloodline§!.;;;;;;;;;;;;;x
 EVTDESCHFATE24221;As a celebrated [Root.GetTitle] of [Root.PrimaryTitle.GetName], I have already a greater claim to Che's legacy than many other [Root.Culture.GetName] rulers, yet, in order for me to be formally recognized as a reincarnation of the heroic Guerrillero, I must submit myself to the judgment of the wisest amongst us.\nI will call for the oldest and most prestigious priests in the Caribbean and allow them to examine my life and judge my character, so that they can confirm to my peers and subjects what I already know is the truth.;;;;;;;;;;;;;;x
 EVTTITLEHFATE24222;Che's Bravery;;;;;;;;;;;;;;x
-EVTDESCAHF24222;The wise priests that have gathered in [Root.Capital.GetName] to examine and determine whether I am worthy of calling myself heir to Che or not claim that, before anything else, I must prove my courage to them.\nDespite his lack of formal experience in combat, he proved unparalleled bravery during the course of his life, surpassing all expectations to arise as a paragon of virtue and discipline.\nIf I truly am the new Guerrillero of the Caribbean, it should be easy for me to prove that I have the fortitude to meet my bold claim.;;;;;;;;;;;;;;x
-EVTDESCAHF24223;It has been months now, yet the priests are unsatisfied with my conduct.\nThey claim that I have failed to meet the standards of Che's divine valor, of his enlightened leadership in battle and strategic skills.\nIf I truly am his manifestation, I should not dread the prospect of facing my enemies and my insecurities. \nUntil I have proven to them the purity of my intent, they will not allow me to proceed to the next phase of their test.;;;;;;;;;;;;;x
+EVTDESCAHFATE24222;The wise priests that have gathered in [Root.Capital.GetName] to examine and determine whether I am worthy of calling myself heir to Che or not claim that, before anything else, I must prove my courage to them.\nDespite his lack of formal experience in combat, he proved unparalleled bravery during the course of his life, surpassing all expectations to arise as a paragon of virtue and discipline.\nIf I truly am the new Guerrillero of the Caribbean, it should be easy for me to prove that I have the fortitude to meet my bold claim.;;;;;;;;;;;;;;x
+EVTDESCAHFATE24223;It has been months now, yet the priests are unsatisfied with my conduct.\nThey claim that I have failed to meet the standards of Che's divine valor, of his enlightened leadership in battle and strategic skills.\nIf I truly am his manifestation, I should not dread the prospect of facing my enemies and my insecurities. \nUntil I have proven to them the purity of my intent, they will not allow me to proceed to the next phase of their test.;;;;;;;;;;;;;x
 TT_EVTOPTFHFATE24223;Abandon your quest to claim §YGuevara's Bloodline§!.;;;;;;;;;;;;;x
 EVTTITLEHFATE24224;Che's Ambition;;;;;;;;;;;;;;x
 EVTDESCAHFATE24224;Che may have done much, but his ambitions were always greater than his accomplishments, even unto his death.\nAlthough he was able to throw a tyrannical yoke from the neck of Cuba, he dreamed of doing the same to the entire world. He believed in this cause so much that he died trying to accomplish it.\nIf I am Che's manifestation, then I must remember the grand dream he held onto for his entire life.;;;;;;;;;;;;;x
@@ -1491,7 +1481,7 @@ EVTOPTA_iron_1;Is he a threat?;;;;;;;;;;;;;;x
 EVTDESC_iron_5;While fighting for my liege I have gathered a large and loyal following, all of them fine warriors. Rather than betray my liege, I have decided to strike out on my own and take [From.Duchy.GetFullBaseName]. Let [From.Holder.TopLiege.GetTitledFirstName] tremble in fear!;;;;;;;;;;;;;;x
 EVTOPTA_iron_5;Charge!;;;;;;;;;;;;;;x
 EVTDESC_iron_6;The young Kisikawasan has decided to abandon his lands and attack another ruler in the northern prairies.;;;;;;;;;;;;;;x
-EVTDESC_iron_6;As long as he does not attack me!;;;;;;;;;;;;;;x
+EVTOPTA_iron_6;As long as he does not attack me!;;;;;;;;;;;;;;x
 EVTNAME_iron_7;The Iron Chief;;;;;;;;;;;;;;x
 EVTDESC_iron_7;A great conqueror is on the rise in the northern prairies. Kisikawasan Frencheater has proven himself against his rivals. He has declared his intent to revive the Iron Confederacy of old, beginning by crushing [FromFrom.GetTitledName] in a decisive battle. Tens of thousands of brave warriors have gathered under his banner!;;;;;;;;;;;;;;x
 EVTOPTA_iron_7;The Iron Confederacy is reborn!;;;;;;;;;;;;;;x

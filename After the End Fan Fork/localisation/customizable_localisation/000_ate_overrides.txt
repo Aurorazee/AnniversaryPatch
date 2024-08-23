@@ -11432,34 +11432,34 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = GetCeticEmperorEmpressCap
-	text = {
-		trigger = {
-			is_female = no
-			religion = cetic
-		}
-		localisation_key = String_Celestial_Emperor
-	}
-	text = {
-		trigger = {
-			is_female = yes
-			religion = cetic
-		}
-		localisation_key = String_Celestial_Empress
-	}
-	text = {
-		trigger = {
-			is_female = no
-			NOT = { religion = cetic }
-		}
-		localisation_key = String_Emperor
-	}
-	text = {
-		trigger = {
-			is_female = yes
-			NOT = { religion = cetic }
-		}
-		localisation_key = String_Empress
-	}
-}
+# defined_text = { #Duplicate in ate_california, but commenting out this one since it doesn't make sense to me
+	# name = GetCeticEmperorEmpressCap
+	# text = {
+		# trigger = {
+			# is_female = no
+			# religion = cetic
+		# }
+		# localisation_key = String_Celestial_Emperor
+	# }
+	# text = {
+		# trigger = {
+			# is_female = yes
+			# religion = cetic
+		# }
+		# localisation_key = String_Celestial_Empress
+	# }
+	# text = {
+		# trigger = {
+			# is_female = no
+			# NOT = { religion = cetic }
+		# }
+		# localisation_key = String_Emperor
+	# }
+	# text = {
+		# trigger = {
+			# is_female = yes
+			# NOT = { religion = cetic }
+		# }
+		# localisation_key = String_Empress
+	# }
+# }

@@ -2146,11 +2146,9 @@ warrior_lodge_peyotist_call_of_the_plains_power_desc;Enables a decision in the §
 warrior_lodge_celtic_summon_warriors;Summon Warriors of The Dagda;;;;;;;;;;;;;x
 warrior_lodge_celtic_summon_warriors_desc;Request help from your fellow [celtic_pagan_reformed.GetName] warriors against your enemies.;;;;;;;;;;;;;x
 warrior_lodge_celtic_summon_warriors_power_desc;Enables a decision in the §YIntrigue§! menu for §Y[celtic_pagan_reformed.GetName]§! rulers to request troops in war becomes available.;;;;;;;;;;;;;x
-EVTDESCHF25001;My brothers and sisters of [Root.Society.GetName] will gladly come to the help of a fellow [celtic_pagan_reformed.GetName] warrior in the time of need, rushing out of their sacred forests to prove their mettle and fight against the enemies of [Root.PrimaryTitle.GetName].;;;;;;;;;;;;;x
 warrior_lodge_revelationist_battle_trance;Let the Light Move You;;;;;;;;;;;;;x
 warrior_lodge_revelationist_battle_trance_desc;With the help of [Root.Society.GetName] and their mystics, you can achieve an otherworldly level of strength and clarity of intent, for a short period of time.;;;;;;;;;;;;;x
 warrior_lodge_revelationist_battle_trance_power_desc;Enables a decision in the §YIntrigue§! menu for §YRevelationist§! rulers to connect to the Light for a limited time, increasing their military skills.;;;;;;;;;;;;;x
-EVTDESCHF25006;As the mystics surround me, preparing my body and mind for the ritual, one of them asks me what do I wish to do with the power bestowed to me by [revelationist.GetHighGodName].;;;;;;;;;;;;;x
 warrior_lodge_raven_tales_create_fetish;Create Totem;;;;;;;;;;;;;x
 warrior_lodge_raven_tales_create_fetish_desc;Enlist the help of the Lodge's shamans to imbue a totem with a warrior spirit that will increase your prowess on the field of battle.;;;;;;;;;;;;;x
 warrior_lodge_raven_tales_create_fetish_power_desc;Enables a decision in the §YIntrigue§! menu for §Y[raven_tales.GetName]§! rulers to create special masks and idols that increase their prowess in battle.;;;;;;;;;;;;;x
@@ -2269,8 +2267,6 @@ form_national_cathedral_desc;Militarize the National Cathedral Association so th
 vassalize_holy_sepulchre;Vassalize the National Cathedral Association;;;;;;;;;;;;;x
 vassalize_holy_sepulchre_desc;Bring the National Cathedral Association into your realm as a vassal, to once more protect the holy places in Washington.;;;;;;;;;;;;;x
 NOT_HEIR_TITLE_TT;Not heir to any titles;Pas h?tier d'un titre;Kein Erbe von Titeln;;No heredero de ningún t?lo;;;;;x
-ask_ursuline_for_help_ursulinec;Ask St. Ursula's Chosen for Help;;;;;;;;;;;;;x
-ask_ursuline_for_help_ursuline_desc;You can ask §YSt. Ursula's Chosen§! to target a local pagan ruler in their lacustrine campaigns.;;;;;;;;;;;;;x
 northern_crusade_targeted_decision_TT;§Y[d_st_ursulas_chosen.Holder.GetTitledName]§! has §G10§! or higher opinion of §Y[This.GetTitledName]§!;;;;;;;;;;;;;x
 ask_ursuline_for_help_pagan;Potential Target for St. Ursula's Chosen;;;;;;;;;;;;;x
 ask_ursuline_for_help_pagan_desc;You can ask §YSt. Ursula's Chosen§! to target §Y[Root.GetTitledName]§! in their lacustrine campaigns.;;;;;;;;;;;;;x
@@ -2687,7 +2683,7 @@ aphite_quarantine_desc;For long, have the Atomicist heathens used this tainted l
 atomic_quarantine;Aphite Quarantine;;;;;;;;;;;;;x
 atomic_quarantine_desc;This land has been securely contained by the hands of the Atomic Priesthood.;;;;;;;;;;;;x
 destroy_quarantine;Destroy Quarantine;;;;;;;;;;;;;x
-aphite_quarantine_desc;Aphite scum have walled off this holy land from the world. This is unacceptable — the world must see the light of Atomos!;;;;;;;;;;;;x
+destroy_quarantine_desc;Aphite scum have walled off this holy land from the world. This is unacceptable — the world must see the light of Atomos!;;;;;;;;;;;;x
 EVTOPTAPHITE1;To the Windy City.;;;;;;;;;;;;x
 EVTOPTAPHITE2;The pale sands of New Mexico must know purification.;;;;;;;;;;;;x
 EVTOPTAPHITE3;The Arixan heart of Atomicist power must be struck.;;;;;;;;;;;;x

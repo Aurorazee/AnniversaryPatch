@@ -16,7 +16,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPT_patria_santander
+		name = EVTOPT_patria_1_santander
 		hidden_tooltip = {
 			remove_trait = patria_bolivar
 			remove_trait = patria_manuelita
@@ -37,7 +37,7 @@ character_event = {
 	}
 
 	option = {
-		name = EVTOPT_patria_bolivar
+		name = EVTOPT_patria_1_bolivar
 		hidden_tooltip = {
 			remove_trait = patria_santander
 			remove_trait = patria_manuelita
@@ -60,7 +60,7 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPT_patria_manuelita
+		name = EVTOPT_patria_1_manuelita
 		hidden_tooltip = {
 			remove_trait = patria_bolivar
 			remove_trait = patria_santander
@@ -348,7 +348,7 @@ narrative_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_patria_12
+		name = EVTOPTA_patria_13
 		add_character_modifier = {
 			name = patria_vision_loss
 			years = 1
@@ -386,7 +386,7 @@ narrative_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = EVTOPTA_patria_12
+		name = EVTOPTA_patria_14
 		add_character_modifier = {
 			name = patria_vision_power
 			years = 1

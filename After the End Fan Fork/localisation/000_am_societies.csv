@@ -1007,28 +1007,7 @@ secret_religious_society_fidencista_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;
 secret_religious_society_fidencista_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
 secret_religious_society_fidencista_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
 secret_religious_society_fidencista_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
-secret_religious_community_navegante;Secret Fidencista Community;;;;;;;;;;;;;x
-secret_fidencista_community;Secret Fidencista Community;;;;;;;;;;;;;x
-secret_fidencista_community_desc;In secret, Fidencista faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
-secret_religious_society_fidencista_leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à réunir davantage de personnes dans les rangs de sa société.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
-
-secret_religious_society_fidencista;[GetReligiousCommunityName_fidencista];[GetReligiousCommunityName_fidencista];[GetReligiousCommunityName_fidencista];;[GetReligiousCommunityName_fidencista];;;;;;;;;x
-secret_religious_society_REAL_fidencista;The Messengers;;;;;;;;;;;;x
-alt_start_community_name_fidencista;The [fidencista.GetName] Faithful;;;;;;;;;;;;;x
-secret_religious_society_fidencista_desc;[GetReligiousSocietyDesc_fidencista];[GetReligiousSocietyDesc_fidencista];[GetReligiousSocietyDesc_fidencista];;[GetReligiousSocietyDesc_fidencista];;;;;;;;;x
-secretly_convert_to_fidencista_holy_site;Secretly Convert to Fidencista;;;;;;;;;;;;;x
-secretly_convert_to_fidencista_holy_site_desc;The §YFidencista§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secret_religious_society_fidencista_desc_REAL;Ever since its humble roots, Christians have marked themselves by their refusal to abandon their faith in the face of persecution. So it is that a rich tradition of martyrs and underground parishes can give hope to groups of believers in even the darkest of times, no matter what they are outwardly forced to profess. To each other they can profess their true faith in God, and their God is love.;;;;;;;;x
-secret_religious_society_fidencista_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
-secret_religious_society_fidencista_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
-secret_religious_society_fidencista_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
-secret_religious_society_fidencista_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
-secret_religious_society_fidencista_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
-secret_religious_society_fidencista_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
-secret_religious_society_fidencista_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
-secret_religious_society_fidencista_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
-secret_religious_society_fidencista_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
-secret_religious_community_navegante;Secret Fidencista Community;;;;;;;;;;;;;x
+secret_religious_community_fidencista;Secret Fidencista Community;;;;;;;;;;;;;x
 secret_fidencista_community;Secret Fidencista Community;;;;;;;;;;;;;x
 secret_fidencista_community_desc;In secret, Fidencista faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
 secret_religious_society_fidencista_leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à réunir davantage de personnes dans les rangs de sa société.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
@@ -1325,27 +1304,6 @@ secret_religious_community_falling_star;Secret Falling Star Community;;;;;;;;;;;
 secret_falling_star_community;Secret Falling Star Community;;;;;;;;;;;;;x
 secret_falling_star_community_desc;In secret, Falling Star faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
 secret_religious_society_falling_star_leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à réunir davantage de personnes dans les rangs de sa société.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
-
-secret_religious_society_glorian;[GetReligiousCommunityName_glorian];[GetReligiousCommunityName_glorian];[GetReligiousCommunityName_glorian];;[GetReligiousCommunityName_glorian];;;;;;;;;x
-secret_religious_society_REAL_glorian;The Loyalists;;;;;;;;;;;;x
-alt_start_community_name_glorian;The [glorian.GetName] Faithful;;;;;;;;;;;;;x
-secret_religious_society_glorian_desc;[GetReligiousSocietyDesc_glorian];[GetReligiousSocietyDesc_glorian];[GetReligiousSocietyDesc_glorian];;[GetReligiousSocietyDesc_glorian];;;;;;;;;x
-secret_religious_society_glorian_desc_REAL;True followers of the Queen remain loyal even when under the rule of foreign monarchs. Soon, the true house of England will rise again!;;;;;;;;;x
-secretly_convert_to_glorian_holy_site;Secretly Convert to Glorian;;;;;;;;;;;;;x
-secretly_convert_to_glorian_holy_site_desc;The §YGlorian§! pilgrims that flock to the holy site in §Y[Root.Location.GetName]§! impress me with the depth and passion of their faith. I am tempted to convert in secrecy...;;;;;;;;;;;;;x
-secret_religious_society_glorian_currency;Devotion;Dévotion;Hingabe;;Devoción;;;;;;;;;x
-secret_religious_society_glorian_rank_1_female;Faithful;Fidèle;Getreue;;Fiel;;;;x
-secret_religious_society_glorian_rank_2_female;Adherent;Adhérente;Anhängerin;;Seguidora;;;;x
-secret_religious_society_glorian_rank_3_female;Preacher;Prêcheuse;Predigerin;;Predicadora;;;;x
-secret_religious_society_glorian_rank_4_female;Herald;Messagère;Herold;;Mensajera;;;;x
-secret_religious_society_glorian_rank_1_male;Faithful;Fidèle;Getreuer;;Fiel;;;;x
-secret_religious_society_glorian_rank_2_male;Adherent;Adhérent;Anhänger;;Seguidor;;;;x
-secret_religious_society_glorian_rank_3_male;Preacher;Prêcheur;Prediger;;Predicador;;;;x
-secret_religious_society_glorian_rank_4_male;Herald;Messager;Herold;;Mensajero;;;;x
-secret_religious_community_glorian;Secret Glorian Community;;;;;;;;;;;;;x
-secret_glorian_community;Secret Glorian Community;;;;;;;;;;;;;x
-secret_glorian_community_desc;In secret, Glorian faithful have organized themselves as a community in this province. From there it converts others, grows, and protects their own.;En secret, les fidèles se sont organisés en tant que communauté dans cette province. De là, la commaunauté convertit d'autres personnes, grandit et protège les siens.;;;;;;;;;;;;x
-secret_religious_society_glorian_leader_desc;The High Priest, leading the international effort of bringing more people into the fold.;Le grand prêtre dirige l'effort mondial visant à réunir davantage de personnes dans les rangs de sa société.;Der Hohepriester des $SOCIETY|Y$-Zirkels, der die internationalen Bemühungen leitet, mehr Menschen in den Schoß der Familie zu führen.;;El Sumo sacerdote, que dirige la misión a escala internacional para atraer a más fieles.;;;;;;;;;x
 
 secret_religious_society_glorian;[GetReligiousCommunityName_glorian];[GetReligiousCommunityName_glorian];[GetReligiousCommunityName_glorian];;[GetReligiousCommunityName_glorian];;;;;;;;;x
 secret_religious_society_REAL_glorian;The Loyalists;;;;;;;;;;;;x

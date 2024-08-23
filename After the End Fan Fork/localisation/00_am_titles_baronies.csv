@@ -465,7 +465,6 @@ b_apango_GR;Apango;Apango;Apango;;Apango;;;;;;;;;x
 b_apartaderos_ZUL;Apartaderos;Apartaderos;Apartaderos;;Apartaderos;;;;;;;;;x
 b_apartado_ANT;Apartadó;Apartadó;Apartadó;;Apartadó;;;;;;;;;x
 b_apartado_ANT_adj;Apartadóian;Apartadóian;Apartadóian;;Apartadóian;;;;;;;;;x
-b_apaseo_el_grande_GT;Apaseo El Grande;Apaseo El Grande;Apaseo El Grande;;Apaseo El Grande;;;;;;;;;x
 b_apaseo_el_grande_GT;Apaseo el Grande;Apaseo el Grande;Apaseo el Grande;;Apaseo el Grande;;;;;;;;;x
 b_apatou_FRG;Apatou;Apatou;Apatou;;Apatou;;;;;;;;;x
 b_apatou_FRG_adj;Apatouian;Apatouian;Apatouian;;Apatouian;;;;;;;;;x
@@ -589,7 +588,6 @@ b_arroyo_seco_QE;Arroyo Seco;Arroyo Seco;Arroyo Seco;;Arroyo Seco;;;;;;;;;x
 b_arroyohondo_COL;Arroyohondo;Arroyohondo;Arroyohondo;;Arroyohondo;;;;;;;;;x
 b_artas_SD;Artas;Artas;Artas;;Artas;;;;;;;;;x
 b_arteaga_COA;Arteaga;Arteaga;Arteaga;;Arteaga;;;;;;;;;x
-b_arteaga_COA;San Antonio de las Alanzas;San Antonio de las Alanzas;San Antonio de las Alanzas;;San Antonio de las Alanzas;;;;;;;;;x
 b_artemisa_CUB;Artemisa;Artemisa;Artemisa;;Artemisa;;;;;;;;;x
 b_artesia_NM;Artesia;Artesia;Artesia;;Artesia;;;;;;;;;x
 b_arthur_NE;Arthur;Arthur;Arthur;;Arthur;;;;;;;;;x
@@ -793,7 +791,6 @@ b_bahia_de_aguamansa_CO;Bahía de Aguamansa;Bahía de Aguamansa;Bahía de Aguamansa
 b_bahia_de_caraquez_EC;Bahía de Caráquez;Bahía de Caráquez;Bahía de Caráquez;;Bahía de Caráquez;;;;;;;;;x
 b_bahia_de_la_ventana_BAJ;Bahía de la Ventana;Bahía de la Ventana;Bahía de la Ventana;;Bahía de la Ventana;;;;;;;;;x
 b_bahia_de_los_angeles_BAJ;Bahía de los Ángeles;Bahía de los Ángeles;Bahía de los Ángeles;;Bahía de los Ángeles;;;;;;;;;x
-b_bahia_kino_SO;Bahía Kino;Bahía Kino;Bahía Kino;;Bahía Kino;;;;;;;;;x
 b_bahia_kino_SO;Bahía de Kino;Bahía de Kino;Bahía de Kino;;Bahía de Kino;;;;;;;;;x
 b_bahia_lucio_gallardo_pavon_BAJ;Bahia Lucio Gallardo Pavon;Bahia Lucio Gallardo Pavon;Bahia Lucio Gallardo Pavon;;Bahia Lucio Gallardo Pavon;;;;;;;;;x
 b_bahía_san_luis_gonzaga_BAJ;San Luis Gonzaga;San Luis Gonzaga;San Luis Gonzaga;;San Luis Gonzaga;;;;;;;;;x
@@ -2194,7 +2191,6 @@ b_caruto_BOL;Caruto;Caruto;Caruto;;Caruto;;;;;;;;;x
 b_caruto_BOL_adj;Carutoian;Carutoian;Carutoian;;Carutoian;;;;;;;;;x
 b_cary_NC;Cary;Cary;Cary;;Cary;;;;;;;;;x
 b_casa_de_alto_NI;Casa de Alto;Casa de Alto;Casa de Alto;;Casa de Alto;;;;;;;;;x
-b_casas_grandes_CH;Casas Grandes;Casas Grandes;Casas Grandes;;Casas Grandes;;;;;;;;;x
 b_casas_grandes_CH;Nuevo Casas Grandes;Nuevo Casas Grandes;Nuevo Casas Grandes;;Nuevo Casas Grandes;;;;;;;;;x
 b_casas_TM;Casas;Casas;Casas;;Casas;;;;;;;;;x
 b_casaya_PAN;Casaya;Casaya;Casaya;;Casaya;;;;;;;;;x
@@ -2344,7 +2340,6 @@ b_chaatl_BC;Chaatl;Chaatl;Chaatl;;Chaatl;;;;;;;;;x
 b_chacah_CM;Chacah;Chacah;Chacah;;Chacah;;;;;;;;;x
 b_chacahua_OA;Chacahua;Chacahua;Chacahua;;Chacahua;;;;;;;;;x
 b_chacala_JA;Chacala;Chacala;Chacala;;Chacala;;;;;;;;;x
-b_chacanhacam_CM;Chacanhacam;Chacanhacam;Chacanhacam;;Chacanhacam;;;;;;;;;x
 b_chacanhacam_CM;Hormiguero;Hormiguero;Hormiguero;;Hormiguero;;;;;;;;;x
 b_chacchoben_QR;Chacchoben;Chacchoben;Chacchoben;;Chacchoben;;;;;;;;;x
 b_chachipay_COL;Chachipay;Chachipay;Chachipay;;Chachipay;;;;;;;;;x
@@ -2584,7 +2579,6 @@ b_chimalhuacan_MX;Chimalhuacán;Chimalhuacán;Chimalhuacán;;Chimalhuacán;;;;;;;;;x
 b_chimaltenango_GT;Chimaltenango;Chimaltenango;Chimaltenango;;Chimaltenango;;;;;;;;;x
 b_chimaltitan_ZA;Chimaltitán;Chimaltitán;Chimaltitán;;Chimaltitán;;;;;;;;;x
 b_chimichagua_COL;Chimichagua;Chimichagua;Chimichagua;;Chimichagua;;;;;;;;;x
-b_china_CM;China;China;China;;China;;;;;;;;;x
 b_china_CM;Chiná;Chiná;Chiná;;Chiná;;;;;;;;;x
 b_china_NL;China;China;China;;China;;;;;;;;;x
 b_china_spring_TX;China Spring;China Spring;China Spring;;China Spring;;;;;;;;;x
@@ -2707,7 +2701,6 @@ b_ciudad_bolivia_LLA;Ciudad Bolivia;Ciudad Bolivia;Ciudad Bolivia;;Ciudad Bolivi
 b_ciudad_camargo_TAM;Camargo;Camargo;Camargo;;Camargo;;;;;;;;;x
 b_ciudad_canatlan_DU;Ciudad Canatlán;Ciudad Canatlán;Ciudad Canatlán;;Ciudad Canatlán;;;;;;;;;x
 b_ciudad_constitucion_BAJ;Ciudad Constitución;Ciudad Constitución;Ciudad Constitución;;Ciudad Constitución;;;;;;;;;x
-b_ciudad_constitucion_BAJ;El Crucero;El Crucero;El Crucero;;El Crucero;;;;;;;;;x
 b_ciudad_cuauhtemoc_CH;Ciudad Cuauhtemoc;Ciudad Cuauhtemoc;Ciudad Cuauhtemoc;;Ciudad Cuauhtemoc;;;;;;;;;x
 b_ciudad_dario_NI;Ciudad Darío;Ciudad Darío;Ciudad Darío;;Ciudad Darío;;;;;;;;;x
 b_ciudad_de_armeria_CL;Ciudad de Armería;Ciudad de Armería;Ciudad de Armería;;Ciudad de Armería;;;;;;;;;x
@@ -2717,7 +2710,6 @@ b_ciudad_fernandez_SL;Ciudad Fernández;Ciudad Fernández;Ciudad Fernández;;Ciudad
 b_ciudad_guayana_BOL;Ciudad Guayana;Ciudad Guayana;Ciudad Guayana;;Ciudad Guayana;;;;;;;;;x
 b_ciudad_guayana_BOL_adj;Ciudad Guayanaian;Ciudad Guayanaian;Ciudad Guayanaian;;Ciudad Guayanaian;;;;;;;;;x
 b_ciudad_guzman_JA;Ciudad Guzmán;Ciudad Guzmán;Ciudad Guzmán;;Ciudad Guzmán;;;;;;;;;x
-b_ciudad_guzman_JA;Zapotlán de Guzmán;Zapotlán de Guzmán;Zapotlán de Guzmán;;Zapotlán de Guzmán;;;;;;;;;x
 b_ciudad_hidalgo_MC;Ciudad Hidalgo;Ciudad Hidalgo;Ciudad Hidalgo;;Ciudad Hidalgo;;;;;;;;;x
 b_ciudad_insurgentes_BAJ;Ciudad Insurgentes;Ciudad Insurgentes;Ciudad Insurgentes;;Ciudad Insurgentes;;;;;;;;;x
 b_ciudad_juarez_CH;Ciudad Juárez;Ciudad Juárez;Ciudad Juárez;;Ciudad Juárez;;;;;;;;;x
@@ -4800,7 +4792,6 @@ b_fox_lake_AB;Fox Lake;Fox Lake;Fox Lake;;Fox Lake;;;;;;;;;x
 b_fox_mine_MB;Fox Mine;Fox Mine;Fox Mine;;Fox Mine;;;;;;;;;x
 b_foxboro_ON;Foxboro;Foxboro;Foxboro;;Foxboro;;;;;;;;;x
 b_foxhome_MN;Foxhome;Foxhome;Foxhome;;Foxhome;;;;;;;;;x
-b_fraccionamiento_el_rosario_OA;Fraccionamiento El Rosario;Fraccionamiento El Rosario;Fraccionamiento El Rosario;;Fraccionamiento El Rosario;;;;;;;;;x
 b_fraccionamiento_el_rosario_OA;El Rosario;El Rosario;El Rosario;;El Rosario;;;;;;;;;x
 b_frackville_PA;Frackville;Frackville;Frackville;;Frackville;;;;;;;;;x
 b_frances_lake_YT;Frances Lake;Frances Lake;Frances Lake;;Frances Lake;;;;;;;;;x
@@ -5531,7 +5522,6 @@ b_guines_CUB;Güines;Güines;Güines;;Güines;;;;;;;;;x
 b_guiria_VNZ;Guiria;Guiria;Guiria;;Guiria;;;;;;;;;x
 b_guiria_VNZ_adj;Guiriaian;Guiriaian;Guiriaian;;Guiriaian;;;;;;;;;x
 b_guisa_CUB;Guisa;Guisa;Guisa;;Guisa;;;;;;;;;x
-b_guisamopa_SO;Guisamopa;Guisamopa;Guisamopa;;Guisamopa;;;;;;;;;x
 b_guisamopa_SO;Güisampoa;Güisampoa;Güisampoa;;Güisampoa;;;;;;;;;x
 b_guisanbourg_FRG;Guisanbourg;Guisanbourg;Guisanbourg;;Guisanbourg;;;;;;;;;x
 b_gulfport_MS;Gulfport;Gulfport;Gulfport;;Gulfport;;;;;;;;;x
@@ -6152,7 +6142,6 @@ b_huntsville_AL;Huntsville;Huntsville;Huntsville;;Huntsville;;;;;;;;;x
 b_huntsville_ON;Huntsville;Huntsville;Huntsville;;Huntsville;;;;;;;;;x
 b_huntsville_TX;Huntsville;Huntsville;Huntsville;;Huntsville;;;;;;;;;x
 b_hunucma_YU;Hunucmá;Hunucmá;Hunucmá;;Hunucmá;;;;;;;;;x
-b_hunucma_YU;Sisal;Sisal;Sisal;;Sisal;;;;;;;;;x
 b_hurley_NY;Hurley;Hurley;Hurley;;Hurley;;;;;;;;;x
 b_hurley_VA;Hurley;Hurley;Hurley;;Hurley;;;;;;;;;x
 b_hurlock_MD;Hurlock;Hurlock;Hurlock;;Hurlock;;;;;;;;;x
@@ -6281,7 +6270,6 @@ b_iraan_TX;Iraan;Iraan;Iraan;;Iraan;;;;;;;;;x
 b_iracoubo_FRG;Iracoubo;Iracoubo;Iracoubo;;Iracoubo;;;;;;;;;x
 b_iracoubo_FRG_adj;Iracouboian;Iracouboian;Iracouboian;;Iracouboian;;;;;;;;;x
 b_iralaya_HN;Iralaya;Iralaya;Iralaya;;Iralaya;;;;;;;;;x
-b_iralaya_HN;Iralya;Iralya;Iralya;;Iralya;;;;;;;;;x
 b_irapa_VNZ;Irapa;Irapa;Irapa;;Irapa;;;;;;;;;x
 b_irapa_VNZ_adj;Irapaian;Irapaian;Irapaian;;Irapaian;;;;;;;;;x
 b_irapuato_GT;Irapuato;Irapuato;Irapuato;;Irapuato;;;;;;;;;x
@@ -6507,7 +6495,6 @@ b_jesmond_BC;Jesmond;Jesmond;Jesmond;;Jesmond;;;;;;;;;x
 b_jessup_GA;Jessup;Jessup;Jessup;;Jessup;;;;;;;;;x
 b_jesuit_bend_LA;Jesuit Bend;Jesuit Bend;Jesuit Bend;;Jesuit Bend;;;;;;;;;x
 b_jesus_carranza_VE;Jesús Carranza;Jesús Carranza;Jesús Carranza;;Jesús Carranza;;;;;;;;;x
-b_jesus_carranza_VE;Luchijem;Luchijem;Luchijem;;Luchijem;;;;;;;;;x
 b_jesus_de_otoro_HN;Jesus de Otoro;Jesus de Otoro;Jesus de Otoro;;Jesus de Otoro;;;;;;;;;x
 b_jesus_gomez_portugal_AG;Jesús Gómez Portugal;Jesús Gómez Portugal;Jesús Gómez Portugal;;Jesús Gómez Portugal;;;;;;;;;x
 b_jesus_gonzalez_ortega_ZA;Jesús González Ortega;Jesús González Ortega;Jesús González Ortega;;Jesús González Ortega;;;;;;;;;x
@@ -7487,7 +7474,6 @@ b_las_pintitas_JA;Las Pintitas;Las Pintitas;Las Pintitas;;Las Pintitas;;;;;;;;;x
 b_las_pozas_PT;Las Pozas;Las Pozas;Las Pozas;;Las Pozas;;;;;;;;;x
 b_las_pulgas_VNZ;Las Pulgas;Las Pulgas;Las Pulgas;;Las Pulgas;;;;;;;;;x
 b_las_rosas_CP;Las Rosas;Las Rosas;Las Rosas;;Las Rosas;;;;;;;;;x
-b_las_sedas_OA;Las Sedas;Las Sedas;Las Sedas;;Las Sedas;;;;;;;;;x
 b_las_sedas_OA;Telixtlahuaca;Telixtlahuaca;Telixtlahuaca;;Telixtlahuaca;;;;;;;;;x
 b_las_tablas_PAN;Las Tablas;Las Tablas;Las Tablas;;Las Tablas;;;;;;;;;x
 b_las_tablas_PAN_adj;Las Tablasian;Las Tablasian;Las Tablasian;;Las Tablasian;;;;;;;;;x
@@ -8227,7 +8213,6 @@ b_manaquitas_CUB;Manaquitas;Manaquitas;Manaquitas;;Manaquitas;;;;;;;;;x
 b_manari_GUY;Manari;Manari;Manari;;Manari;;;;;;;;;x
 b_manasquan_NJ;Manasquan;Manasquan;Manasquan;;Manasquan;;;;;;;;;x
 b_manassas_VA;Manassas;Manassas;Manassas;;Manassas;;;;;;;;;x
-b_mancarron_NIC;Mancarron;Mancarron;Mancarron;;Mancarron;;;;;;;;;x
 b_mancarron_NIC;Solentiname;Solentiname;Solentiname;;Solentiname;;;;;;;;;x
 b_mancarron_NIC_adj;Mancarronian;Mancarronian;Mancarronian;;Mancarronian;;;;;;;;;x
 b_mancelona_MI;Mancelona;Mancelona;Mancelona;;Mancelona;;;;;;;;;x
@@ -8311,7 +8296,6 @@ b_manzanillo_CO;Manzanillo;Manzanillo;Manzanillo;;Manzanillo;;;;;;;;;x
 b_manzanillo_CUB;Manzanillo;Manzanillo;Manzanillo;;Manzanillo;;;;;;;;;x
 b_mao_DR;Mao;Mao;Mao;;Mao;;;;;;;;;x
 b_mapastepec_CP;Mapastepec;Mapastepec;Mapastepec;;Mapastepec;;;;;;;;;x
-b_mapimi_DU;Mapimi;Mapimi;Mapimi;;Mapimi;;;;;;;;;x
 b_mapimi_DU;Mapimí;Mapimí;Mapimí;;Mapimí;;;;;;;;;x
 b_mapire_LLA;Mapire;Mapire;Mapire;;Mapire;;;;;;;;;x
 b_mapiripan_LLA;Mapiripán;Mapiripán;Mapiripán;;Mapiripán;;;;;;;;;x
@@ -8489,7 +8473,6 @@ b_matador_TX;Matador;Matador;Matador;;Matador;;;;;;;;;x
 b_matagalpa_NI;Matagalpa;Matagalpa;Matagalpa;;Matagalpa;;;;;;;;;x
 b_matagami_QC;Matagami;Matagami;Matagami;;Matagami;;;;;;;;;x
 b_matamoros_COA;Matamoros;Matamoros;Matamoros;;Matamoros;;;;;;;;;x
-b_matamoros_COA;Villa de Matamoros;Villa de Matamoros;Villa de Matamoros;;Villa de Matamoros;;;;;;;;;x
 b_matamoros_TAM;Matamoros;Matamoros;Matamoros;;Matamoros;;;;;;;;;x
 b_matane_QC;Matane;Matane;Matane;;Matane;;;;;;;;;x
 b_matanzas_CUB;Matanzas;Matanzas;Matanzas;;Matanzas;;;;;;;;;x
@@ -8759,7 +8742,6 @@ b_mexicali_BAJ;Mexicali;Mexicali;Mexicali;;Mexicali;;;;;;;;;x
 b_mexican_hat_UT;Mexican Hat;Mexican Hat;Mexican Hat;;Mexican Hat;;;;;;;;;x
 b_mexico_beach_FL;Mexico Beach;Mexico Beach;Mexico Beach;;Mexico Beach;;;;;;;;;x
 b_mexico_MX;Mexico;Mexico;Mexico;;Mexico;;;;;;;;;x
-b_mexico_MX;Cuauhtémoc;Cuauhtémoc;Cuauhtémoc;;Cuauhtémoc;;;;;;;;;x
 b_mexico_NY;Mexico;Mexico;Mexico;;Mexico;;;;;;;;;x
 b_mexquitic_de_carmona_SL;Mexquitic de Carmona;Mexquitic de Carmona;Mexquitic de Carmona;;Mexquitic de Carmona;;;;;;;;;x
 b_meyers_chuck_AK;Meyers Chuck;Meyers Chuck;Meyers Chuck;;Meyers Chuck;;;;;;;;;x
@@ -9677,7 +9659,6 @@ b_nuevo_marzam_CP;Nuevo Marzám;Nuevo Marzám;Nuevo Marzám;;Nuevo Marzám;;;;;;;;;x
 b_nuevo_pital_CM;Nuevo Pital;Nuevo Pital;Nuevo Pital;;Nuevo Pital;;;;;;;;;x
 b_nuevo_progreso_CM;Nuevo Progreso;Nuevo Progreso;Nuevo Progreso;;Nuevo Progreso;;;;;;;;;x
 b_nuevo_progresso_TAM;Nuevo Progresso;Nuevo Progresso;Nuevo Progresso;;Nuevo Progresso;;;;;;;;;x
-b_nuevo_san_juan_parangaricutirimicuaro_MC;Nuevo San Juan Parangaricutirimícuaro;Nuevo San Juan Parangaricutirimícuaro;Nuevo San Juan Parangaricutirimícuaro;;Nuevo San Juan Parangaricutirimícuaro;;;;;;;;;x
 b_nuevo_san_juan_parangaricutirimicuaro_MC;Parangaricutirimícuaro;Parangaricutirimícuaro;Parangaricutirimícuaro;;Parangaricutirimícuaro;;;;;;;;;x
 b_nuevo_santiago_tutla_OA;Nuevo Santiago Tutla;Nuevo Santiago Tutla;Nuevo Santiago Tutla;;Nuevo Santiago Tutla;;;;;;;;;x
 b_nuevo_vallarta_NT;Nuevo Vallarta;Nuevo Vallarta;Nuevo Vallarta;;Nuevo Vallarta;;;;;;;;;x
@@ -10347,7 +10328,6 @@ b_peridot_AZ;Peridot;Peridot;Peridot;;Peridot;;;;;;;;;x
 b_perkasie_PA;Perkasie;Perkasie;Perkasie;;Perkasie;;;;;;;;;x
 b_perkins_GA;Perkins;Perkins;Perkins;;Perkins;;;;;;;;;x
 b_perote_VE;Perote;Perote;Perote;;Perote;;;;;;;;;x
-b_perote_VE;San Carlos Perote;San Carlos Perote;San Carlos Perote;;San Carlos Perote;;;;;;;;;x
 b_perrault_falls_ON;Perrault Falls;Perrault Falls;Perrault Falls;;Perrault Falls;;;;;;;;;x
 b_perry_FL;Perry;Perry;Perry;;Perry;;;;;;;;;x
 b_perry_GA;Perry;Perry;Perry;;Perry;;;;;;;;;x
@@ -11041,7 +11021,6 @@ b_quesnel_BC;Quesnel;Quesnel;Quesnel;;Quesnel;;;;;;;;;x
 b_questa_NM;Questa;Questa;Questa;;Questa;;;;;;;;;x
 b_quetame_COL;Quetame;Quetame;Quetame;;Quetame;;;;;;;;;x
 b_quetzaltenango_GT;Quetzaltenango;Quetzaltenango;Quetzaltenango;;Quetzaltenango;;;;;;;;;x
-b_quetzaltenango_GT;Xelajú;Xelajú;Xelajú;;Xelajú;;;;;;;;;x
 b_quetzaltenango_GT_adj;Quetzaltenango;Quetzaltenango;Quetzaltenango;;Quetzaltenango;;;;;;;;;x
 b_quevedo_EC;Quevedo;Quevedo;Quevedo;;Quevedo;;;;;;;;;x
 b_quezailica_HN;Quezailica;Quezailica;Quezailica;;Quezailica;;;;;;;;;x
@@ -11105,7 +11084,6 @@ b_raleigh_NL_adj;Raleighian;Raleighian;Raleighian;;Raleighian;;;;;;;;;x
 b_ralleau_QC;Ralleau;Ralleau;Ralleau;;Ralleau;;;;;;;;;x
 b_ralph_SD;Ralph;Ralph;Ralph;;Ralph;;;;;;;;;x
 b_ralston_WY;Ralston;Ralston;Ralston;;Ralston;;;;;;;;;x
-b_rama_NI;Rama;Rama;Rama;;Rama;;;;;;;;;x
 b_rama_NI;Bluefields;Bluefields;Bluefields;;Bluefields;;;;;;;;;x
 b_rama_SUR;Rama;Rama;Rama;;Rama;;;;;;;;;x
 b_rama_SUR_adj;Ramaian;Ramaian;Ramaian;;Ramaian;;;;;;;;;x
@@ -11257,7 +11235,6 @@ b_republic_MO;Republic;Republic;Republic;;Republic;;;;;;;;;x
 b_reserve_NM;Reserve;Reserve;Reserve;;Reserve;;;;;;;;;x
 b_reston_MB;Reston;Reston;Reston;;Reston;;;;;;;;;x
 b_retalhuleu_GT;Retalhuleu;Retalhuleu;Retalhuleu;;Retalhuleu;;;;;;;;;x
-b_retalhuleu_GT;Xetulul;Xetulul;Xetulul;;Xetulul;;;;;;;;;x
 b_retreat_WW;Retreat;Retreat;Retreat;;Retreat;;;;;;;;;x
 b_retrete_CUB;Retrete;Retrete;Retrete;;Retrete;;;;;;;;;x
 b_reva_VA;Reva;Reva;Reva;;Reva;;;;;;;;;x
@@ -11922,7 +11899,6 @@ b_san_german_PR;San German;San German;San German;;San German;;;;;;;;;x
 b_san_german_TM;San Germán;San Germán;San Germán;;San Germán;;;;;;;;;x
 b_san_gervasio_QR;San Gervasio;San Gervasio;San Gervasio;;San Gervasio;;;;;;;;;x
 b_san_gregorio_atzompa_PU;San Gregorio Atzompa;San Gregorio Atzompa;San Gregorio Atzompa;;San Gregorio Atzompa;;;;;;;;;x
-b_san_gregorio_atzompa_PU;Chipilo;Chipilo;Chipilo;;Chipilo;;;;;;;;;x
 b_san_ignacio_BAJ;San Ignacio;San Ignacio;San Ignacio;;San Ignacio;;;;;;;;;x
 b_san_ignacio_BL;San Ignacio;San Ignacio;San Ignacio;;San Ignacio;;;;;;;;;x
 b_san_ignacio_JA;San Ignacio;San Ignacio;San Ignacio;;San Ignacio;;;;;;;;;x
@@ -11942,7 +11918,6 @@ b_san_jeronimo_silacayoapilla_OA;San Jerónimo Silacayoapilla;San Jerónimo Silaca
 b_san_jon_NM;San Jon;San Jon;San Jon;;San Jon;;;;;;;;;x
 b_san_jose_adj;San Josean;San Josean;San Josean;;San Josean;;;;;;;;;x
 b_san_jose_ayuquila_OA;San José Ayuquila;San José Ayuquila;San José Ayuquila;;San José Ayuquila;;;;;;;;;x
-b_san_jose_BAJ;San Jose;San Jose;San Jose;;San Jose;;;;;;;;;x
 b_san_jose_BAJ;San José del Cabo;San José del Cabo;San José del Cabo;;San José del Cabo;;;;;;;;;x
 b_san_jose_CA;San Jose;San Jose;San Jose;;San Jose;;;;;;;;;x
 b_san_jose_chiltepec_OA;San José Chiltepec;San José Chiltepec;San José Chiltepec;;San José Chiltepec;;;;;;;;;x
@@ -12248,7 +12223,6 @@ b_santa_maria_del_oro_DU;Santa María del Oro;Santa María del Oro;Santa María del
 b_santa_maria_del_oro_NT;Santa María del Oro;Santa María del Oro;Santa María del Oro;;Santa María del Oro;;;;;;;;;x
 b_santa_maria_del_rio_SL;Santa María del Río;Santa María del Río;Santa María del Río;;Santa María del Río;;;;;;;;;x
 b_santa_maria_huatulco_OA;Santa María Huatulco;Santa María Huatulco;Santa María Huatulco;;Santa María Huatulco;;;;;;;;;x
-b_santa_maria_huatulco_OA;La Crucecita;La Crucecita;La Crucecita;;La Crucecita;;;;;;;;;x
 b_santa_maria_ixcatlan_OA;Santa María Ixcatlán;Santa María Ixcatlán;Santa María Ixcatlán;;Santa María Ixcatlán;;;;;;;;;x
 b_santa_maria_jalapa_del_marques_OA;Santa María Jalapa del Marqués;Santa María Jalapa del Marqués;Santa María Jalapa del Marqués;;Santa María Jalapa del Marqués;;;;;;;;;x
 b_santa_maria_sola_OA;Santa María Sola;Santa María Sola;Santa María Sola;;Santa María Sola;;;;;;;;;x
@@ -12651,7 +12625,6 @@ b_sidney_NY;Sidney;Sidney;Sidney;;Sidney;;;;;;;;;x
 b_sierra_blanca_TX;Sierra Blanca;Sierra Blanca;Sierra Blanca;;Sierra Blanca;;;;;;;;;x
 b_sierra_grande_TM;Sierra Grande;Sierra Grande;Sierra Grande;;Sierra Grande;;;;;;;;;x
 b_sierra_mojada_COA;Sierra Mojada;Sierra Mojada;Sierra Mojada;;Sierra Mojada;;;;;;;;;x
-b_sierra_mojada_COA;Hércules;Hércules;Hércules;;Hércules;;;;;;;;;x
 b_sierra_vista_AZ;Sierra Vista;Sierra Vista;Sierra Vista;;Sierra Vista;;;;;;;;;x
 b_signai_QC;Signai;Signai;Signai;;Signai;;;;;;;;;x
 b_signal_MS;Signal;Signal;Signal;;Signal;;;;;;;;;x
@@ -15054,7 +15027,6 @@ b_yaxchilan_CP;Yaxchilán;Yaxchilán;Yaxchilán;;Yaxchilán;;;;;;;;;x
 b_yaxe_OA;Yaxe;Yaxe;Yaxe;;Yaxe;;;;;;;;;x
 b_yaxha_PT;Yaxhá;Yaxhá;Yaxhá;;Yaxhá;;;;;;;;;x
 b_yaxhal_BL;Yaxhal;Yaxhal;Yaxhal;;Yaxhal;;;;;;;;;x
-b_yaxunah_YU;Yaxunah;Yaxunah;Yaxunah;;Yaxunah;;;;;;;;;x
 b_yaxunah_YU;Yaxuná;Yaxuná;Yaxuná;;Yaxuná;;;;;;;;;x
 b_yecora_SO;Yécora;Yécora;Yécora;;Yécora;;;;;;;;;x
 b_yellow_rock_NV;Yellow Rock;Yellow Rock;Yellow Rock;;Yellow Rock;;;;;;;;;x

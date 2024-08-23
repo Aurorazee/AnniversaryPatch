@@ -30,7 +30,6 @@ baron_canuck;Viscount;;;;;;;;;;;;;x
 baron_caribbanglo;Viscount;;;;;;;;;;;;;x
 baron_caribeno;Patrón;;;;;;;;;;;;;x
 baron_centrolatino;Patrón;;;;;;;;;;;;;x
-baron_chicano;Hidalgo;;;;;;;;;;;;;x
 baron_consumerist;Supervisor;;;;;;;;;;;;;x
 baron_costero;Patrón;;;;;;;;;;;;;x
 baron_edokko;Danshaku;;;;;;;;;;;;;x
@@ -61,7 +60,6 @@ baron_female_canuck;Viscountess;;;;;;;;;;;;;x
 baron_female_caribbanglo;Viscountess;;;;;;;;;;;;;x
 baron_female_caribeno;Patrona;;;;;;;;;;;;;x
 baron_female_centrolatino;Patrona;;;;;;;;;;;;;x
-baron_female_chicano;Hidalga;;;;;;;;;;;;;x
 baron_female_consumerist;Supervisor;;;;;;;;;;;;;x
 baron_female_costero;Patrona;;;;;;;;;;;;;x
 baron_female_edokko;Danshaku-fujin;;;;;;;;;;;;;x
@@ -70,11 +68,7 @@ baron_female_gothamite;Patrooness;;;;;;;;;;;;;x
 baron_female_hudsonian;Patrooness;;;;;;;;;;;;;x
 baron_female_mayan;Ix Tupil;;;;;;;;;;;;;x
 baron_female_metis;Tipayhtum;;;;;;;;;;;;;x
-baron_female_mexicano;Hidalga;;;;;;;;;;;;;x
 baron_female_mikmaq;Autmoin;;;;;;;;;x
-baron_female_mixtec;Ndaja'a;;Ndaja'a;;;Ndaja'a;;;Ndaja'a;;;;;;;;;;x
-baron_female_nahua;Siuatopilejketl;Siuatopilejketl;Siuatopilejketl;;Siuatopilejketl;;;;;;;;;x
-baron_female_raramuri;Kapitani;Kapitani;Kapitani;;Kapitani;;;;;;;;;x
 baron_female_ontarian;Viscountess;;;;;;;;;;;;;x
 baron_female_orinocense;Patrona;;;;;;;;;;;;;x
 baron_female_ozzi;Viscountess;;;;;;;;;;;;;x
@@ -82,29 +76,21 @@ baron_female_petropavlovskiy;Boyar;;;;;;;;;;;;;x
 baron_female_portuguese;Baronesa;;;;;;;;;;;;;x
 baron_female_portunhol;Baronesa;;;;;;;;;;;;;x
 baron_female_prairielander;Viscountess;;;;;;;;;;;;;x
-baron_female_purepecha;T'eroncheti;T'eroncheti;T'eroncheti;;T'eroncheti;;;;;;;;;x
 baron_female_quebecois;Chevalière;;;;;;;;;x
 baron_female_primorsky;Boyar;;;;;;;;;;;;;x
-baron_female_zapotec;Xiaga;Xiaga;Xiaga;;Xiaga;;;;;;;;;x
 baron_gothamite;Patroon;;;;;;;;;;;;;x
 baron_hudsonian;Patroon;;;;;;;;;;;;;x
 baron_mayan;Tupil;;;;;;;;;;;;;x
 baron_metis;Tipayhtum;;;;;;;;;;;;;x
-baron_mexicano;Hidalgo;;;;;;;;;;;;;x
 baron_mikmaq;Autmoin;;;;;;;;;x
-baron_mixtec;Ndaj'a;Ndaj'a;Ndaj'a;;Ndaj'a;;;;;;;;;x
-baron_nahua;Topilejketl;Topilejketl;Topilejketl;;Topilejketl;;;;;;;;;x
-baron_raramuri;Kapitani;Kapitani;Kapitani;;Kapitani;;;;;;;;;x
 baron_ontarian;Viscount;;;;;;;;;;;;;x
 baron_orinocense;Patrón;;;;;;;;;;;;;x
 baron_ozzi;Viscount;;;;;;;;;;;;;x
 baron_petropavlovskiy;Boyar;;;;;;;;;;;;;x
 baron_portuguese;Barão;;;;;;;;;;;;;x
 baron_portunhol;Barão;;;;;;;;;;;;;x
-baron_purepecha;T'eroncheti;T'eroncheti;T'eroncheti;;T'eroncheti;;;;;;;;;x
 baron_quebecois;Chevalier;;;;;;;;;x
 baron_primorsky;Boyar;;;;;;;;;;;;;x
-baron_zapotec;Xiaga;Xiaga;Xiaga;;Xiaga;;;;;;;;;x
 barony_americanist;Garrison;;;;;;;;;;;;;x
 barony_andino;Patronato;;;;;;;;;;;;;x
 barony_brethren;Lieutenancy;;;;;;;;;;;;;x
@@ -113,17 +99,12 @@ barony_canuck;Viscountship;;;;;;;;;;;;;x
 barony_caribbanglo;Viscountship;;;;;;;;;;;;;x
 barony_caribeno;Patronato;;;;;;;;;;;;;x
 barony_centrolatino;Patronato;;;;;;;;;;;;;x
-barony_chicano;Hidalguía;;;;;;;;;;;;;x
-barony_mexicano;Hidalguía;;;;;;;;;;;;;x
 barony_consumerist;Office;;;;;;;;;;;;;x
 barony_costero;Patronato;;;;;;;;;;;;;x
 barony_edokko;Dankoku;;;;;;;;;;;;;x
 barony_gaian;Thicket;;;;;;;;;;;;;x
 barony_gothamite;Patroonship;;;;;;;;;;;;;x
 barony_hudsonian;Patroonship;;;;;;;;;;;;;x
-barony_mixtec;Ñuu;Ñuu;Ñuu;;Ñuu;;;;;;;;;x
-barony_nahua;Kalpan;Kalpan;Kalpan;;Kalpan;;;;;;;;;x
-barony_raramuri;Póbora;Póbora;Póbora;;Póbora;;;;;;;;;x
 barony_of_americanist;Garrison of;;;;;;;;;;;;;x
 barony_of_andino;Patronato of;;;;;;;;;;;;;x
 barony_of_brethren;Lieutenancy of;;;;;;;;;;;;;x
@@ -132,25 +113,18 @@ barony_of_canuck;Viscountship of;;;;;;;;;;;;;x
 barony_of_caribbanglo;Viscountship of;;;;;;;;;;;;;x
 barony_of_caribeno;Patronato of;;;;;;;;;;;;;x
 barony_of_centrolatino;Patronato of;;;;;;;;;;;;;x
-barony_of_chicano;Hidalguía of;;;;;;;;;;;;;x
 barony_of_consumerist;Office of;;;;;;;;;;;;;x
 barony_of_costero;Patronato of;;;;;;;;;;;;;x
 barony_of_edokko;Dankoku of;;;;;;;;;;;;;x
 barony_of_gaian;Thicket of;;;;;;;;;;;;;x
 barony_of_gothamite;Patroonship of;;;;;;;;;;;;;x
 barony_of_hudsonian;Patroonship of;;;;;;;;;;;;;x
-barony_of_mexicano;Hidalguía of;;;;;;;;;;;;;x
-barony_of_mixtec;Ñuu of;;;;;;;;;;;;;x #Town
-barony_of_nahua;Kalpan of;;;;;;;;;;;;;x
-barony_of_raramuri;Póbora of;;;;;;;;;;;;;x
 barony_of_ontarian;Viscountship of;;;;;;;;;;;;;x
 barony_of_orinocense;Patronato of;;;;;;;;;;;;;x
 barony_of_ozzi;Viscountship of;;;;;;;;;;;;;x
 barony_of_petropavlovskiy;Bojárynja of;;;;;;;;;;;;;x
 barony_of_prairielander;Viscountship of;;;;;;;;;;;;;x
-barony_of_purepecha;Ireta;Ireta;Ireta;;Ireta;;;;;;;;;x
 barony_of_primorsky;Bojárynja of;;;;;;;;;;;;;x
-barony_of_zapotec;Guidxihuiini of;;;;;;;;;;;;;x
 barony_ontarian;Viscountship;;;;;;;;;;;;;x
 barony_orinocense;Patronato;;;;;;;;;;;;;x
 barony_ozzi;Viscountship;;;;;;;;;;;;;x
@@ -164,7 +138,6 @@ city_baron_brethren;Landsman;;;;;;;;;;;;;x
 city_baron_caribeno;Alcalde;;;;;;;;;;;;;x
 city_baron_centrolatino;Alcalde;;;;;;;;;;;;;x
 city_baron_chicagoan;Associate;;;;;;;;;;;;;x
-city_baron_chicano;Alcalde;;;;;;;;;;;;;x
 city_baron_chrome_cultist;Machinist;;;;;;;;;;;;;x
 city_baron_consumerist_female;Manager;;;;;;;;;;;;;x
 city_baron_consumerist;Manager;;;;;;;;;;;;;x
@@ -175,20 +148,17 @@ city_baron_female_andino;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_brethren;Landswoman;;;;;;;;;;;;;x
 city_baron_female_caribeno;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_centrolatino;Alcadesa;;;;;;;;;;;;;x
-city_baron_female_chicano;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_chrome_cultist;Machinist;;;;;;;;;;;;;x
 city_baron_female_costero;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_edokko;Shicho;;;;;;;;;;;;;x
 city_baron_female_gaian;Gardener;;;;;;;;;;;;;x
 city_baron_female_mayan;Konol;;;;;;;;;;;;;x
-city_baron_female_mexicano;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_orinocense;Alcadesa;;;;;;;;;;;;;x
 city_baron_female_rust_cultist;Machinist;;;;;;;;;;;;;x
 city_baron_gothamite;Alderman;;;;;;;;;;;;;x
 city_baron_mayan;Konol;;;;;;;;;;;;;x
 city_baron_metis_female;Mayr;;;;;;;;;;;;;x
 city_baron_metis;Mayr;;;;;;;;;;;;;x
-city_baron_mexicano;Alcalde;;;;;;;;;;;;;x
 city_baron_orinocense;Alcalde;;;;;;;;;;;;;x
 city_baron_rust_cultist;Machinist;;;;;;;;;;;;;x
 city_baron;Mayor;;;;;;;;;;;;;x
@@ -211,7 +181,6 @@ city_count_brethren;Harbormaster;;;;;;;;;;;;;x
 city_count_caribeno;Gran Alcalde;;;;;;;;;;;;;x
 city_count_centrolatino;Gran Alcalde;;;;;;;;;;;;;x
 city_count_chicagoan;Soldato;;;;;;;;;;;;;x
-city_count_chicano;Gran Alcalde;;;;;;;;;;;;;x
 city_count_chrome_cultist;Foreman;;;;;;;;;;;;;x
 city_count_consumerist;Franchisee;;;;;;;;;;;;;x
 city_count_costero;Gran Alcalde;;;;;;;;;;;;;x
@@ -232,7 +201,6 @@ city_count_female_hamiltonian;Representative;;;;;;;;;;;;;x
 city_count_female_jeffersonian;Representative;;;;;;;;;;;;;x
 city_count_female_libertarian;Representative;;;;;;;;;;;;;x
 city_count_female_metis;Saaygnyur-Mayr;;;;;;;;;;;;;x
-city_count_female_mexicano;Gran Alcadesa;;;;;;;;;;;;;x
 city_count_female_orinocense;Gran Alcadesa;;;;;;;;;;;;;x
 city_count_female_rust_cultist;Foreman;;;;;;;;;;;;;x
 city_count_female;Lady Mayor;;;;;;;;;;;;;x
@@ -240,7 +208,6 @@ city_count_hamiltonian;Representative;;;;;;;;;;;;;x
 city_count_jeffersonian;Representative;;;;;;;;;;;;;x
 city_count_libertarian;Representative;;;;;;;;;;;;;x
 city_count_metis;Saaygnyur-Mayr;;;;;;;;;;;;;x
-city_count_mexicano;Gran Alcalde;;;;;;;;;;;;;x
 city_count_orinocense;Gran Alcalde;;;;;;;;;;;;;x
 city_count_rust_cultist;Foreman;;;;;;;;;;;;;x
 city_count_primorsky;Rektor;;;;;;;;;;;;;x
@@ -397,7 +364,7 @@ city_kingdom_novorusskiy;Guberniya;;;;;;;;;;;;;x
 city_kingdom_of_chrome_cultist;Union of;;;;;;;;;;;;;x
 city_kingdom_of_consumerist;Multinational of;;;;;;;;;;;;;x
 city_kingdom_of_edokko;Seifu of;;;;;;;;;;;;;x
-city_kingdom_gaian;Ecoregion of;;;;;;;;;;;;;x
+city_kingdom_gaian_of;Ecoregion of;;;;;;;;;;;;;x
 city_kingdom_of_novorusskiy;Guberniya of;;;;;;;;;;;;;x
 city_kingdom_of_ontarian;Province of;;;;;;;;;;;;;x
 city_kingdom_of_petropavlovskiy;Krai of;;;;;;;;;;;;;x
@@ -439,29 +406,21 @@ count_female_lacandon;Ix Batab;;;;;;;;;;;;;x
 count_female_maritimer;Lady;;;;;;;;;;;;;x
 count_female_metis;Doyenn;;;;;;;;;;;;;x
 count_female_mikmaq;Keptin;;;;;;;;;x
-count_female_mixtec;Ña'a Kúu Ja'nu;Ña'a Kúu Ja'nu;Ña'a Kúu Ja'nu;;Ña'a Kúu Ja'nu;;;;;;;;;x
-count_female_nahua;Siuatlayekanketl;Siuatlayekanketl;Siuatlayekanketl;;Siuatlayekanketl;;;;;;;;;x
-count_female_nahua;Jigapitani;Jigapitani;Jigapitani;;Jigapitani;;;;;;;;;x
 count_female_neogodbeite;Representative;;;;;;;;;;;;;x
 count_female_newfie;Lady;;;;;;;;;;;;;x
 count_female_novorusskiy;Grafitsa;;;;;;;;;;;;;x #not sure if this is correct
 count_female_petropavlovskiy;Grafitsa;;;;;;;;;;;;;x #not sure if this is correct
 count_female_portuguese;Condessa;;;;;;;;;;;;;x
 count_female_portunhol;Condessa;;;;;;;;;;;;;x
-count_female_purepecha;Alcandi;Alcandi;Alcandi;;Alcandi;;;;;;;;;x
 count_female_quebecois;Seigneuresse;;;;;;;;;;;;;x
 count_female_quichean;Ix K'amal Be;;;;;;;;;;;;;x
 count_female_rust_cultist;Magnate;;;;;;;;;;;;;x
 count_female_primorskiy;Grafitsa;;;;;;;;;;;;;x #not sure if this is correct
 count_female_yucateco;Ix Batab;;;;;;;;;;;;;x
-count_female_zapotec;Gulaba;Gulaba;Gulaba;;Gulaba;;;;;;;;;x
 count_lacandon;Batab;;;;;;;;;;;;;x
 count_maritimer;Lord;;;;;;;;;;;;;x
 count_metis;Maytr;;;;;;;;;;;;;x
 count_mikmaq;Keptin;;;;;;;;;x
-count_mixtec;Tee Kúu Ja'nu;Tee Kúu Ja'nu;Tee Kúu Ja'nu;;Tee Kúu Ja'nu;;;;;;;;;x
-count_nahua;Tlayekanketl;Tlayekanketl;Tlayekanketl;;Tlayekanketl;;;;;;;;;x
-count_raramuri;Jigapitani;Jigapitani;Jigapitani;;Jigapitani;;;;;;;;;x
 count_neogodbeite;Representative;;;;;;;;;;;;;x
 count_newfie;Lord;;;;;;;;;;;;;x
 count_novorusskiy;Graf;;;;;;;;;;;;;x
@@ -471,7 +430,6 @@ count_petropavlovskiy;Graf;;;;;;;;;;;;;x
 count_portuguese;Conde;;;;;;;;;;;;;x
 count_portunhol;Conde;;;;;;;;;;;;;x
 count_prairielander;Earl;;;;;;;;;;;;;x
-count_purepecha;Alcandi;Alcandi;Alcandi;;Alcandi;;;;;;;;;x
 count_quebecois;Seigneur;;;;;;;;;;;;;x
 count_quichean;K'amal Be;;;;;;;;;;;;;x
 count_rust_cultist;Magnate;;;;;;;;;;;;;x
@@ -479,7 +437,6 @@ count_south_anglo;Earl;;;;;;;;;;;;;x
 count_upland;Earl;;;;;;;;;;;;;x
 count_primorskiy;Graf;;;;;;;;;;;;;x
 count_yucateco;Batab;;;;;;;;;;;;;x
-count_zapotec;Gulaba;Gulaba;Gulaba;;Gulaba;;;;;;;;;x
 county_alaskan;Borough;;;;;;;;;;;;;x
 county_americanist;Post;;;;;;;;;;;;;x
 county_hamiltonian;Post;;;;;;;;;;;;;x
@@ -519,33 +476,26 @@ county_of_creole;Parish of;;;;;;;;;;;;;x
 county_of_edokko;Hakukoku of;;;;;;;;;;;;;x
 county_of_gaian;Habitat of;;;;;;;;;;;;;x
 county_of_maritimer;Lordship of;;;;;;;;;;;;;x
-county_of_mixtec;Ñuu ka'nu of;;;;;;;;;;;;;x #Big town/city/municipality
-county_of_nahua;Ueyikalpan of;;;;;;;;;;;;;x
-county_of_raramuri;Walúlachi of;;;;;;;;;;;;;x
 county_of_newfie;Lordship of;;;;;;;;;;;;;x
 county_of_novorusskiy;Voivodeship of;;;;;;;;;;;;;x
 county_of_ontarian;Earldom of;;;;;;;;;;;;;x
 county_of_ozzi;Earldom of;;;;;;;;;;;;;x
 county_of_petropavlovskiy;Raion of;;;;;;;;;;;;;x
 county_of_prairielander;Earldom of;;;;;;;;;;;;;x
-county_of_purepecha;Ireta K'eri of;;;;;;;;;;;;;x
 county_of_quebecois;Seigneurie of;;;;;;;;;;;;;x
 county_of_rust_cultist;Enterprise of;;;;;;;;;;;;;x
 county_of_south_anglo;Earldom of;;;;;;;;;;;;;x
 county_of_upland;Earldom of;;;;;;;;;;;;;x
 county_of_primorskiy;Raion of;;;;;;;;;;;;;x
-county_of_zapotec;Guidxiroo' of;;;;;;;;;;;;;x
 county_ontarian;Earldom;;;;;;;;;;;;;x
 county_ozzi;Earldom;;;;;;;;;;;;;x
 county_petropavlovskiy;Raion;;;;;;;;;;;;;x
 county_prairielander;Earldom;;;;;;;;;;;;;x
-county_purepecha;Ireta K'eri;Ireta K'eri;Ireta K'eri;;Ireta K'eri;;;;;;;;;x
 county_quebecois;Seigneurie;;;;;;;;;;;;;x
 county_rust_cultist;Enterprise;;;;;;;;;;;;;x
 county_south_anglo;Earldom;;;;;;;;;;;;;x
 county_upland;Earldom;;;;;;;;;;;;;x
 county_primorskiy;Raion;;;;;;;;;;;;;x
-county_zapotec;Guidxiroo';Guidxiroo';Guidxiroo';;Guidxiroo';;;;;;;;;x
 cuty_duke_female_edokko;Chiji;;;;;;;;;;;;;x
 duchy_americanist;District;;;;;;;;;;;;;x
 duchy_hamiltonian;District;;;;;;;;;;;;;x
@@ -563,9 +513,6 @@ duchy_edokko;Kokoku;;;;;;;;;;;;;x
 duchy_gaian;Biome;;;;;;;;;;;;;x
 duchy_lacandon;Ajawil;;;;;;;;;;;;;x
 duchy_metis;Provayns;;;;;;;;;;;;;x
-duchy_mixtec;Ñuu teyu;Ñuu teyu;Ñuu teyu;;Ñuu teyu;;;;;;;;;x
-duchy_nahua;Tekiuajyotl;Tekiuajyotl;Tekiuajyotl;;Tekiuajyotl;;;;;;;;;x
-duchy_raramuri;Kawílili;Kawílili;Kawílili;;Kawílili;;;;;;;;;x
 duchy_norse_pagan_reformed;Jarldom;;;;;;;;;;;;;x
 duchy_norse_pagan;Jarldom;;;;;;;;;;;;;x
 duchy_novorusskiy;Principality;;;;;;;;;;;;;x
@@ -583,9 +530,6 @@ duchy_of_consumerist;Managing Directorate of;;;;;;;;;;;;;x
 duchy_of_edokko;Kokoku of;;;;;;;;;;;;;x
 duchy_of_gaian;Biome of;;;;;;;;;;;;;x
 duchy_of_metis;Provayns di;;;;;;;;;;;;;x
-duchy_of_mixtec;Ñuu teyu of;;;;;;;;;;;;;x # Town/nation/people + seat
-duchy_of_nahua;Tekiuajyotl of;;;;;;;;;;;;;x
-duchy_of_raramuri;Kawílili of;;;;;;;;;;;;;x
 duchy_of_norse_pagan_reformed;Jarldom of;;;;;;;;;;;;;x
 duchy_of_norse_pagan;Jarldom of;;;;;;;;;;;;;x
 duchy_of_novorusskiy;Principality of;;;;;;;;;;;;;x
@@ -593,21 +537,17 @@ duchy_of_ontarian;Marquisate of;;;;;;;;;;;;;x
 duchy_of_ozzi;Marquisate of;;;;;;;;;;;;;x
 duchy_of_petropavlovskiy;Principality of;;;;;;;;;;;;;x
 duchy_of_prairielander;Marquisate of;;;;;;;;;;;;;x
-duchy_of_purepecha;Terungambo of;;;;;;;;;;;;;x
 duchy_of_riverlander;Grand Division of;;;;;;;;;;;;;x
 duchy_of_rust_cultist;Oligarchate of;;;;;;;;;;;;;x
 duchy_of_primorskiy;Principality of;;;;;;;;;;;;;x
-duchy_of_zapotec;Xquidxinu of;;;;;;;;;;;;;x
 duchy_ontarian;Marquisate;;;;;;;;;;;;;x
 duchy_ozzi;Marquisate;;;;;;;;;;;;;x
 duchy_petropavlovskiy;Principality;;;;;;;;;;;;;x
 duchy_prairielander;Marquisate;;;;;;;;;;;;;x
-duchy_purepecha;Terungambo;Terungambo;Terungambo;;Terungambo;;;;;;;;;x
 duchy_quichean;Ajawil;;;;;;;;;;;;;x
 duchy_riverlander;Grand Division;;;;;;;;;;;;;x
 duchy_rust_cultist;Oligarchate;;;;;;;;;;;;;x
 duchy_primorskiy;Principality;;;;;;;;;;;;;x
-duchy_zapotec;Xquidxinu;Xquidxinu;Xquidxinu;;Xquidxinu;;;;;;;;;x
 duke_acadien;Duc;;;;;;;;;;;;;x
 duke_americanist;Colonel;;;;;;;;;;;;;x
 duke_hamiltonian;Colonel;;;;;;;;;;;;;x
@@ -643,9 +583,6 @@ duke_female_innu;Utshimashkueu;;;;;;;;;x
 duke_female_lacandon;Ix Batabob;;;;;;;;;;;;;x
 duke_female_metis;Praynses;;;;;;;;;;;;;x
 duke_female_mikmaq;Kji-Keptin;;;;;;;;;x
-duke_female_mixtec;Xini;Xini;Xini;;Xini;;;;;;;;;x
-duke_female_nahua;Siuatekiuaj;Siuatekiuaj;Siuatekiuaj;;Siuatekiuaj;;;;;;;;;x
-duke_female_raramuri;Silíame;Silíame;Silíame;;Silíame;;;;;;;;;x
 duke_female_neogodbeite;Judge;;;;;;;;;;;;;x
 duke_female_novorusskiy;Knyagina;;;;;;;;;;;;;x
 duke_female_ojibwe;Ogimaakwe;;;;;;;;;x
@@ -655,21 +592,16 @@ duke_female_petropavlovskiy;Printsessa;;;;;;;;;;;;;x
 duke_female_portuguese;Duquesa;;;;;;;;;;;;;x
 duke_female_portunhol;Duquesa;;;;;;;;;;;;;x
 duke_female_prairielander;Marchioness;;;;;;;;;;;;;x
-duke_female_purepecha;Jurámuti;Jurámuti;Jurámuti;;Jurámuti;;;;;;;;;x
 duke_female_quebecois;Duchesse;;;;;;;;;;;;;x
 duke_female_quichean;Ix Nimal;;;;;;;;;;;;;x
 duke_female_riverlander;Grand Duchess;;;;;;;;;;;;;x
 duke_female_rust_cultist;Oligarch;;;;;;;;;;;;;x
 duke_female_primorskiy;Knyagina;;;;;;;;;;;;;x
 duke_female_yucateco;Ix Batabob;;;;;;;;;;;;;x
-duke_female_zapotec;Xhuaana;Xhuaana;Xhuaana;;Xhuaana;;;;;;;;;x
 duke_innu;Utshimau;;;;;;;;;x
 duke_lacandon;Batabob;;;;;;;;;;;;;x
 duke_metis;Prayns;;;;;;;;;;;;;x
 duke_mikmaq;Kji-Keptin;;;;;;;;;x
-duke_mixtec;Xini;Xini;Xini;;Xini;;;;;;;;;x
-duke_nahua;Tekiuaj;Tekiuaj;Tekiuaj;;Tekiuaj;;;;;;;;;x
-duke_raramuri;Silíame;Silíame;Silíame;;Silíame;;;;;;;;;x
 duke_neogodbeite;Judge;;;;;;;;;;;;;x
 duke_norse_pagan_reformed;Jarl;;;;;;;;;;;;;x
 duke_norse_pagan;Jarl;;;;;;;;;;;;;x
@@ -681,14 +613,12 @@ duke_petropavlovskiy;Printseps;;;;;;;;;;;;;x
 duke_portuguese;Duque;;;;;;;;;;;;;x
 duke_portunhol;Duque;;;;;;;;;;;;;x
 duke_prairielander;Marquis;;;;;;;;;;;;;x
-duke_purepecha;Jurámuti;Jurámuti;Jurámuti;;Jurámuti;;;;;;;;;x
 duke_quebecois;Duc;;;;;;;;;;;;;x
 duke_quichean;Nimal;;;;;;;;;;;;;x
 duke_riverlander;Grand Duke;;;;;;;;;;;;;x
 duke_rust_cultist;Oligarch;;;;;;;;;;;;;x
 duke_primorskiy;Knyaz;;;;;;;;;;;;;x
 duke_yucateco;Batabob;;;;;;;;;;;;;x
-duke_zapotec;Xhuaana;Xhuaana;Xhuaana;;Xhuaana;;;;;;;;;x
 emperor_americanist;Supreme Commander;;;;;;;;;;;;;x
 emperor_hamiltonian;Supreme Commander;;;;;;;;;;;;;x
 emperor_jeffersonian;Supreme Commander;;;;;;;;;;;;;x
@@ -708,43 +638,30 @@ emperor_female_edokko;Kogo;;;;;;;;;;;;;x
 emperor_female_gaian;Grand-Director;;;;;;;;;;;;;x
 emperor_female_mayan;Ix Kalom'te;;;;;;;;;;;;;x
 emperor_female_mikmaq;Kji-Saqamaw;;;;;;;;;x
-emperor_female_mixtec;Iya Si'i Tátnuni;Iya Si'i Tátnuni;Iya Si'i Tátnuni;;Iya Si'i Tátnuni;;;;;;;;;x
-emperor_female_nahua;Siuatlajtoani;Siuatlajtoani;Siuatlajtoani;;Siuatlajtoani;;;;;;;;;x
-emperor_female_raramuri;Walubela;Walubela;Walubela;;Walubela;;;;;;;;;x
 emperor_female_neogodbeite;Supreme Judge;;;;;;;;;;;;;x
 emperor_female_novorusskiy;Tsaritsa;;;;;;;;;;;;;x
 emperor_female_petropavlovskiy;Imperatritsa;;;;;;;;;;;;;x
 emperor_female_portuguese;Imperatriz;;;;;;;;;;;;;x
 emperor_female_portunhol;Imperatriz;;;;;;;;;;;;;x
-emperor_female_purepecha;Camáhchacupeti;Camáhchacupeti;Camáhchacupeti;;Camáhchacupeti;;;;;;;;;x
 emperor_female_rust_cultist;Autarch;;;;;;;;;;;;;x
 emperor_female_primorskiy;Tsaritsa;;;;;;;;;;;;;x
-emperor_female_zapotec;Xunaxhidó';Xunaxhidó';Xunaxhidó';;Xunaxhidó';;;;;;;;;x
 emperor_mayan;Kalom'te;;;;;;;;;;;;;x
 emperor_metis_female;Miiyeur Doyenn;;;;;;;;;;;;;x
 emperor_metis;Miiyeur Shef;;;;;;;;;;;;;x
 emperor_mikmaq;Kji-Saqamaw;;;;;;;;;x
-emperor_mixtec;Iya Tátnuni;Iya Tátnuni;Iya Tátnuni;;Iya Tátnuni;;;;;;;;;x
-emperor_nahua;Tlajtoani;Tlajtoani;Tlajtoani;;Tlajtoani;;;;;;;;;x
-emperor_raramuri;Walubela;Walubela;Walubela;;Walubela;;;;;;;;;x
 emperor_neogodbeite;Supreme Judge;;;;;;;;;;;;;x
 emperor_novorusskiy;Tsar;;;;;;;;;;;;;x
 emperor_petropavlovskiy;Imperator;;;;;;;;;;;;;x
 emperor_portuguese;Dom;;;;;;;;;;;;;x
 emperor_portunhol;Dom;;;;;;;;;;;;;x
-emperor_purepecha;Camáhchacupeti;Camáhchacupeti;Camáhchacupeti;;Camáhchacupeti;;;;;;;;;x
 emperor_rust_cultist;Autarch;;;;;;;;;;;;;x
 emperor_primorskiy;Tsar;;;;;;;;;;;;;x
-emperor_zapotec;Xaiquendxó';Xaiquendxó';Xaiquendxó';;Xaiquendxó';;;;;;;;;x
 empire_antillais;Anpi;;;;;;;;;;;;;x
 empire_brethren;Grand Admiralty;;;;;;;;;;;;;x
 empire_consumerist;Conglomerate;;;;;;;;;;;;;x
 empire_edokko;Teikoku;;;;;;;;;;;;;x
 empire_gaian;Bioregion;;;;;;;;;;;;;x
 empire_female_americanist;Command;;;;;;;;;;;;;x
-empire_nahua;Ueyitlajtokayotl;Ueyitlajtokayotl;Ueyitlajtokayotl;;Ueyitlajtokayotl;;;;;;;;;x
-empire_zapotec;Guidxindxó;Guidxindxó;Guidxindxó;;Guidxindxó;;;;;;;;;x
-empire_mixtec;Ñuu ii;Ñuu ii;Ñuu ii;;Ñuu ii;;;;;;;;;x
 empire_raramuri;Napawíkami Pobóro;Napawíkami Pobóro;Napawíkami Pobóro;;Napawíkami Pobóro;;;;;;;;;x
 empire_novorusskiy;Tsardom;;;;;;;;;;;;;x
 empire_of_americanist;Command of;;;;;;;;;;;;;x
@@ -760,17 +677,12 @@ empire_of_brethren;Grand Admiralty of;;;;;;;;;;;;;x
 empire_of_consumerist;Conglomerate of;;;;;;;;;;;;;x
 empire_of_edokko;Teikoku of;;;;;;;;;;;;;x
 empire_of_gaian;Bioregion of;;;;;;;;;;;;;x
-empire_of_nahua;Ueyitlajtokayotl of;;;;;;;;;;;;;x
-empire_of_zapotec;Guidxindxó of;;;;;;;;;;;;;x
-empire_of_mixtec;Ñuu ii of;;;;;;;;;;;;;x #Blessed nation
-empire_of_raramuri;Napawíkami Pobóro of;;;;;;;;;;;;;x
 empire_of_novorusskiy;Tsardom of;;;;;;;;;;;;;x
 empire_of_petropavlovskiy;Imperiya of;;;;;;;;;;;;;x
 empire_of_purepecha;Camácaten of;;;;;;;;;;;;;x
 empire_of_rust_cultist;Autarchy of;;;;;;;;;;;;;x
 empire_of_primorskiy;Tsardom of;;;;;;;;;;;;;x
 empire_petropavlovskiy;Imperiya;;;;;;;;;;;;;x
-empire_purepecha;Camácaten;Camácaten;Camácaten;;Camácaten;;;;;;;;;x
 empire_rust_cultist;Autarchy;;;;;;;;;;;;;x
 empire_primorskiy;Tsardom;;;;;;;;;;;;;x
 EXOVEDATE_PRESIDENT_metis;Prizidaan Exovede;;;;;;;;;;;;;x
@@ -1074,7 +986,7 @@ nomadic_king_cheyenne;Véhóéso;;;;;;;;;;;;;x
 nomadic_king_female_blackfoot;Issohkiimaan;;;;;;;;;;;;;x
 nomadic_king_female_cree;Owikimakana;;;;;;;;;;;;;x
 nomadic_king_female_crow;Uá;;;;;;;;;;;;;x
-nomadic_emperor_female_cheyenne;Véhóná'e;;;;;;;;;;;;;x
+nomadic_king_female_cheyenne;Véhóná'e;;;;;;;;;;;;;x
 nomadic_king_female_llanero;Cabecilla;;;;;;;;;;;;;x
 nomadic_king_female_metis;Ahkwatishiw;;;;;;;;;;;;;x
 nomadic_king_female_prairielander;Atamaness;;;;;;;;;;;;;x
@@ -1260,9 +1172,9 @@ temple_barony_of_nautical;Pilothouse of;;;;;;;;;;;;;x
 temple_barony_of_occultist_reformed;Temple of;;;;;;;;;;;;;x
 temple_barony_of_occultist;Temple of;;;;;;;;;;;;;x
 temple_barony_of_glorian;Temple of;;;;;;;;;;;;;x
-temple_barony_of_glorian;Temple of;;;;;;;;;;;;;x
+temple_barony_of_glorian_reformed;Temple of;;;;;;;;;;;;;x
 temple_barony_of_thelema;Temple of;;;;;;;;;;;;;x
-temple_barony_of_thelema;Temple of;;;;;;;;;;;;;x
+temple_barony_of_thelema_reformed;Temple of;;;;;;;;;;;;;x
 temple_barony_of_orthodox;Temple of;;;;;;;;;;;;;x
 temple_barony_of_pacific;Temple of;;;;;;;;;;;;;x
 temple_barony_of_peyotist;Great Tipi of;;;;;;;;;;;;;x
@@ -1551,7 +1463,7 @@ temple_duke_revelationist_reformed;High Tonguetalker;;;;;;;;;;;;;x
 temple_duke_revelationist;High Tonguetalker;;;;;;;;;;;;;x
 temple_duke_rust_cultist;Inspector;;;;;;;;;;;;;x
 temple_duke_thelema;First Secretary;;;;;;;;;;;;;x
-temple_duke_thelema;Dominus Liminis;;;;;;;;;;;;;x
+temple_duke_thelema_reformed;Dominus Liminis;;;;;;;;;;;;;x
 temple_duke_trailwalker_reformed;Pioneer;;;;;;;;;;;;;x
 temple_duke_trailwalker;Pioneer;;;;;;;;;;;;;x
 temple_duke_ursuline;Père Supérieur;;;;;;;;;;;;;x
@@ -1792,18 +1704,14 @@ temple_kingdom_rust_cultist;Railroad;;;;;;;;;;;;;x
 temple_kingdom_ursuline;Ordre;;;;;;;;;;;;;x
 temple_kingdom_voodoo;Royal Peristil;;;;;;;;;;;;;x
 title_prince_caribeno;Infante;;;;;;;;;;;;;x
-title_prince_chicano;Infante;;;;;;;;;;;;;x
 title_prince_female_caribeno;Infanta;;;;;;;;;;;;;x
-title_prince_female_chicano;Infanta;;;;;;;;;;;;;x
 title_prince_female_gallomerican;Dauphine;;;;;;;;;;;;;x
 title_prince_female_louisianais;Dauphine;;;;;;;;;;;;;x
-title_prince_female_mexicano;Infanta;;;;;;;;;;;;;x
 title_prince_female_orinocense;Infanta;;;;;;;;;;;;;x
 title_prince_female_portuguese;Infanta;;;;;;;;;;;;;x
 title_prince_female_portunhol;Infanta;;;;;;;;;;;;;x
 title_prince_gallomerican;Dauphin;;;;;;;;;;;;;x
 title_prince_louisianais;Dauphin;;;;;;;;;;;;;x
-title_prince_mexicano;Infante;;;;;;;;;;;;;x
 title_prince_orinocense;Infante;;;;;;;;;;;;;x
 title_prince_portuguese;Infante;;;;;;;;;;;;;x
 title_prince_portunhol;Infante;;;;;;;;;;;;;x
@@ -1858,23 +1766,6 @@ emperor_caribeno;Emperador;;;;;;;;;;;;;x
 emperor_female_caribeno;Emperadora;;;;;;;;;;;;;x
 empire_of_caribeno;Imperio of;;;;;;;;;;;;;x
 empire_caribeno;Imperio;;;;;;;;;;;;;x
-
-count_chicano;Señor;;;;;;;;;;;;;x
-count_female_chicano;Señora;;;;;;;;;;;;;x
-county_of_chicano;Señorío of;;;;;;;;;;;;;x
-county_chicano;Señorío;;;;;;;;;;;;;x
-duke_chicano;Marqués;;;;;;;;;;;;;x
-duke_female_chicano;Marquésa;;;;;;;;;;;;;x
-duchy_of_chicano;Marquesado of;;;;;;;;;;;;;x
-duchy_chicano;Marquesado;;;;;;;;;;;;;x
-king_chicano;Rey;;;;;;;;;;;;;x
-king_female_chicano;Reina;;;;;;;;;;;;;x
-kingdom_of_chicano;Reino of;;;;;;;;;;;;;x
-kingdom_chicano;Reino;;;;;;;;;;;;;x
-emperor_chicano;Emperador;;;;;;;;;;;;;x
-emperor_female_chicano;Emperadora;;;;;;;;;;;;;x
-empire_of_chicano;Imperio of;;;;;;;;;;;;;x
-empire_chicano;Imperio;;;;;;;;;;;;;x
 
 count_centrolatino;Señor;;;;;;;;;;;;;x
 count_female_centrolatino;Señora;;;;;;;;;;;;;x
@@ -1963,8 +1854,8 @@ emperor_female_plautdietsch;Kjeisin;;;;;;;;;;;;;x
 empire_of_plautdietsch;Kjeisadom of;;;;;;;;;;;;;x
 empire_plautdietsch;Kjeisadom;;;;;;;;;;;;;x
 
-barony_texaner;Freiherr;;;;;;;;;;;;;x
-barony_female_texaner;Freifrau;;;;;;;;;;;;;x
+baron_texaner;Freiherr;;;;;;;;;;;;;x
+baron_female_texaner;Freifrau;;;;;;;;;;;;;x
 barony_of_texaner;Baronie of;;;;;;;;;;;;;x
 barony_texaner;Baronie;;;;;;;;;;;;;x
 count_texaner;Graf;;;;;;;;;;;;;x
@@ -2124,26 +2015,9 @@ gov_afro_eldership;[Religion.GetGroupName] Eldership;;;;;;;;;;;;;x
 gov_aztec;[Religion.GetName] Aristocracy;;;;;;;;;;;;;x
 gov_aztec_empire;[Religion.GetName] Empire;;;;;;;;;;;;;x
 
-String_Mormon;Mormon;;;;;;;;;;;;;x
-String_Patriot;Patriot;;;;;;;;;;;;;x
-String_Atomicist;Atomicist;;;;;;;;;;;;;x
-String_Gaian;Gaian;;;;;;;;;;;;;x
-String_Cetic;Cetic;;;;;;;;;;;;;x
-String_Rasta;Rasta;;;;;;;;;;;;;x
 String_nautical;Pirate;;;;;;;;;;;;;x
-String_Mormons;Mormons;;;;;;;;;;;;;x
-String_Patriots;Patriots;;;;;;;;;;;;;x
-String_Atomicists;Atomicist;;;;;;;;;;;;;x
-String_Consumerists;Consumerists;;;;;;;;;;;;;x
-String_Monetarists;Monetarists;;;;;;;;;;;;;x
-String_Gaians;Gaians;;;;;;;;;;;;;x
-String_Cetics;Cetics;;;;;;;;;;;;;x
-String_Rastas;Rastas;;;;;;;;;;;;;x
 String_nauticals;Pirates;;;;;;;;;;;;;x
 String_Americanist;Americanist;;;;;;;;;;;;;x
-String_Consumerist;Consumerist;;;;;;;;;;;;;x
-String_Monetarist;Monetarist;;;;;;;;;;;;;x
-String_Rastafari;Rastafari;;;;;;;;;;;;;x
 string_generic_believer;believer;;;;;;;;;;;;;x
 string_generic_believers;believers;;;;;;;;;;;;;x
 string_generic_temple;Temple;;;;;;;;;;;;;x
@@ -2210,7 +2084,6 @@ Holy_Order_Americanist;the Men in Black;;;;;;;;;;;;;x
 Holy_Order_Consumerist;the Golden Archers;;;;;;;;;;;;;x
 Holy_Order_Atomicist;the Sons of Oppenheimer;;;;;;;;;;;;;x
 Holy_Order_Sol_Invicta;the Lightbringers;;;;;;;;;;;;;x
-Holy_Order_Mictlantec;the Dead Sun;;;;;;;;;;;;;x
 Holy_Order_Jewish;the Shomrim;;;;;;;;;;;;;x
 Holy_Order_Rastafarian;the Lions of Judah;;;;;;;;;;;;;x
 Holy_Order_Voodoo;the Order of Saint Expédit;;;;;;;;;;;;;x
@@ -2416,8 +2289,6 @@ crystal_skull;Crystal Skull;;;;;;;;;;;;;x
 crystal_skull_desc;This bizarre-looking skull is made of a single piece of crystal. Although its precise origin is hotly-debated, nobody doubts its divine nature.;;;;;;;;;;;;;x
 aztec_codex;Nahua Codex;;;;;;;;;;;;;x
 aztec_codex_desc;This codex was compiled by the ancestors of the Nahua in the days before the colonizers conquered Mexico, and contains an accurate account of pre-arrival Mesoamerican culture.;;;;;;;;;;;;;x
-montezuma_headdress;Montezuma's Headdress;;;;;;;;;;;;;x
-montezuma_headdress_desc;This headdress once belonged to Motecuhzoma Xocoyotzin himself, and was on his head when he was captured by the conquistador Cortés. It now inspires Mesoamerican warriors on the field of battle.;;;;;;;;;;;;;x
 idol_of_america_kami;Idol of America Kokudo Kunitama-no-Kami;;;;;;;;;;;;;x
 idol_of_america_kami_desc;This idol depicts America Kokudo Kunitama-no-Kami, divine protector of the North American continent. Although not originally Californian in origin, it has been part of the Cetic pantheon since the days of Emperor Elton.;;;;;;;;;;;;;x
 ruby_slipper;Ruby Slipper;;;;;;;;;;;;;x
@@ -2697,7 +2568,7 @@ ALT_RUST_CULTIST_ADJ;[chrome_cultist.GetName] Temple;Temple [chrome_cultist.GetN
 ALT_REVELATIONIST;The [revelationist_reformed.GetName] Temple;Temple [revelationist_reformed.GetName];Das [revelationist_reformed.GetName]e Pontifikat;;El pontificado [revelationist_reformed.GetName];;;;;;;;;x
 ALT_REVELATIONIST_ADJ;[revelationist_reformed.GetName] Temple;Temple [revelationist_reformed.GetName];[revelationist_reformed.GetName]e Tempel;;temple[revelationist_reformed.GetName];;;;;;;;;x
 ALT_TRAILWALKER;The [trailwalker_reformed.GetName] Temple;Temple [revelationist_reformed.GetName];Das [revelationist_reformed.GetName]e Pontifikat;;El pontificado [revelationist_reformed.GetName];;;;;;;;;x
-ALT_REVELATIONIST_ADJ;[trailwalker_reformed.GetName] Temple;Temple [revelationist_reformed.GetName];[revelationist_reformed.GetName]e Tempel;;temple[revelationist_reformed.GetName];;;;;;;;;x
+ALT_TRAILWALKER_ADJ;[trailwalker_reformed.GetName] Temple;Temple [revelationist_reformed.GetName];[revelationist_reformed.GetName]e Tempel;;temple[revelationist_reformed.GetName];;;;;;;;;x
 ALT_MIDEWIWIN;The [midewiwin_reformed.GetName] Pontificate;Pontificat [midewiwin_reformed.GetName];Das [midewiwin_reformed.GetName]e Pontifikat;;El pontificado [midewiwin_reformed.GetName];;;;;;;;;x
 ALT_MIDEWIWIN_ADJ;[midewiwin_reformed.GetName] Pontificate;Pontificat [midewiwin_reformed.GetName];[midewiwin_reformed.GetName]e Tempel;;temple[midewiwin_reformed.GetName];;;;;;;;;x
 ALT_RAVEN_TALES;The [raven_tales_reformed.GetName] Pontificate;Pontificat [raven_tales_reformed.GetName];Das [raven_tales_reformed.GetName]e Pontifikat;;El pontificado [raven_tales_reformed.GetName];;;;;;;;;x
@@ -2766,7 +2637,6 @@ GRANDVIRGINIA_ADJ;Virginian;Virginian;Virginian;;Virginian;;;;;;;;;x
 HEARTBREAKER_REVOLT;Heartbreaker Revolt;Heartbreaker Revolt;Heartbreaker Revolt;;Heartbreaker Revolt;;;;;;;;;x
 HEARTBREAKER_REVOLT_ADJ;Heartbreaker;Heartbreaker;Heartbreaker;;Heartbreaker;;;;;;;;;x
 
-religion_openly_occultist_or_reformed_tooltip;Openly Occultist or reformed;;;;;;;;;;;;;x
 religion_openly_revelationist_or_reformed_tooltip;Openly Revelationist or reformed;;;;;;;;;;;;;x
 religion_openly_rust_cultist_or_heresy_tooltip;Openly Rust Cultist or Chrome Cultist;;;;;;;;;;;;;x
 #religion_openly_thelemic_or_reformed_tooltip;Openly Thelemic or reformed;;;;;;;;;;;;;x
@@ -2774,8 +2644,6 @@ religion_openly_espiritista_or_reformed_tooltip;Openly Tres Potencias;;;;;;;;;;;
 religion_openly_midewiwin_or_reformed_tooltip;Openly Midewiwin or reformed;;;;;;;;;;;;;x
 religion_openly_raven_tales_or_reformed_tooltip;Openly Raven Tales or reformed;;;;;;;;;;;;;x
 religion_openly_trailwalker_or_reformed_tooltip;Openly Trailwalker or reformed;;;;;;;;;;;;;x
-religion_openly_aria_de_machete_or_reformed_tooltip;Openly Aria de Machete or reformed;;;;;;;;;;;;;x
-religion_openly_americanist_or_heresy_tooltip;Openly Americanist or a heresy;;;;;;;;;;;;;x
 
 #Minor Titles
 title_helmsman;Helmsman;;;;;;;;;;;;;x
