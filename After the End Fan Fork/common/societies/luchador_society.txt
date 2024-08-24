@@ -25,8 +25,13 @@ warrior_lodge_mexican = {
 				}
 			}
 		}
-		NOT = {
-			religion_openly_mictlantec_trigger = yes
+		custom_tooltip = {
+			text = does_not_publicly_follow_mictlantec_religion_TT
+			hidden_trigger = {
+				NOT = {
+					religion_openly_mictlantec_trigger = yes
+				}
+			}
 		}
 		is_adult = yes
 		custom_tooltip = {

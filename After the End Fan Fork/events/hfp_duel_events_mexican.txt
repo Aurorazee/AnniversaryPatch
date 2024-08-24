@@ -408,7 +408,6 @@ character_event = {
 		}
 	}
 
-
 	option = { #No, that sounds dangerous
 		name = EVTOPTB_WOL_11000
 		ai_chance = {
@@ -787,7 +786,7 @@ character_event = {
 					value = 60
 					has_character_flag = likely_to_succeed
 				}
-				custom_tooltip = { text = you_succeeding_to_corner_tt }
+				custom_tooltip = { text = you_succeeding_to_corner_wrestling_tt }
 				hidden_effect = {
 					FROM = { character_event = { id = HFP.16066 } }
 				}

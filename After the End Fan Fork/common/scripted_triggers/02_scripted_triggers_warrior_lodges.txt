@@ -216,7 +216,7 @@ has_religion_matching_available_warrior_lodge_trigger = {
 		}
 		AND = {
 			religion_openly_mictlantec_trigger = yes
-			society_member_of = warrior_lodge_mictlantec
+			warrior_lodge_mictlantec = { society_has_members = yes }
 		}
 	}
 }

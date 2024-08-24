@@ -181,6 +181,7 @@ send_duel_result_event_mexican_effect = { # Runs via the attacker/combatant_1
 					event_target:combatant_1 = { has_character_flag = flag_duel_no_draws } #Special triggered event duels.
 					event_target:combatant_2 = { has_character_flag = flag_duel_no_draws } 
 				}
+				always = no
 			}
 			additive_modifier = {
 				duel_result_score_decent_trigger = yes #Score: fairly evenly matched
