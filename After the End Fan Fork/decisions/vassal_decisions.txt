@@ -392,8 +392,6 @@ targetted_decisions = {
 			}
 		}
 		
-		
-		
 		ai_will_do = {
 			factor = 0
 		}
@@ -402,6 +400,7 @@ targetted_decisions = {
 	demand_religious_conversion = {
 		filter = sub_realm
 		ai_target_filter = sub_realm
+		ai_check_interval = 60
 		
 		from_potential = {
 			is_playable = yes
@@ -444,20 +443,20 @@ targetted_decisions = {
 			}
 		}
 		allow = {
-			#OR = {
-				#NOT = {
-				#	has_opinion_modifier = {	#Can not try to convert if recently failed to convert
-				#		who = FROM
-				#		modifier = tried_to_convert_me
-				#	}
-				#}
-				#AND = {
-					#prisoner = yes
-					#host = {
-						#character = FROM
-					#}
-				#}
-			#}
+			OR = {
+				NOT = {
+					has_opinion_modifier = {	#Can not try to convert if recently failed to convert
+						who = FROM
+						modifier = tried_to_convert_me
+					}
+				}
+				AND = {
+					prisoner = yes
+					host = {
+						character = FROM
+					}
+				}
+			}
 			FROM = {has_regent = no}
 			NOT = {
 				religion = FROM
@@ -520,6 +519,11 @@ targetted_decisions = {
 		}
 		ai_acceptance = {
 			factor = 0
+			additive_modifier = {#base reluctance
+				value = -5
+				always = yes
+				localisation_key = REASON_BASE_RELUCTANCE
+			}
 			additive_modifier = {
 				value = 500
 				AND = {
@@ -725,11 +729,6 @@ targetted_decisions = {
 				value = -1
 				ROOT = {is_ruler = yes}
 				localisation_key = REASON_IS_RULER
-			}
-			additive_modifier = {#base reluctance
-				value = -3
-				always = yes
-				localisation_key = REASON_BASE_RELUCTANCE
 			}
 		}
 	}

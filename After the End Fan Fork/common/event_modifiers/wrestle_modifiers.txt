@@ -8,13 +8,12 @@ recent_match_victory = {
 }
 
 fine_workout = {
-	martial = 1
 	health = 0.25
 	icon = 2
 }
 
 good_workout = {
-	martial = 2
+	martial = 1
 	health = 0.5
 	combat_rating = 5
 	icon = 2
@@ -22,7 +21,7 @@ good_workout = {
 
 excellent_workout = {
 	martial = 2
-	health = 0.5
+	health = 0.75
 	combat_rating = 10
 	icon = 2
 }
