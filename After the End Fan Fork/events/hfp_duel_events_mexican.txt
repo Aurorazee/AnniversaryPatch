@@ -1927,6 +1927,9 @@ character_event = {
 		}
 	}
 	option = { #Kill them anyway
+		trigger = {
+			always = no
+		}
 		name = { 
 			text = EVTOPTB_HFP_10105_default
 			trigger = {
