@@ -635,7 +635,6 @@ monastic_order_ibadi = {
 			monthly_character_piety = 0.1
 			learning = 1
 			fertility = 0.15
-			max_wives = 5
 		}
 		decisions = {
 			monastic_orders_go_celibate_sufi #Power: toggle celibacy
@@ -653,7 +652,6 @@ monastic_order_ibadi = {
 			learning = 2
 			build_cost_temple_modifier = -0.25
 			fertility = 0.15
-			max_wives = 6
 		}
 		decisions = {
 			monastic_orders_invite_ascetic_sufi
@@ -671,7 +669,6 @@ monastic_order_ibadi = {
 			build_cost_temple_modifier = -0.5
 			same_religion_opinion = 30
 			fertility = 0.15 
-			max_wives = 7
 		}
 		decisions = {
 			monastic_order_convert_county

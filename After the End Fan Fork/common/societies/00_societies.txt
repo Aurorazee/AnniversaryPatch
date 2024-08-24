@@ -6554,7 +6554,7 @@ starry_wisdom = {
 			OR = {
 				true_religion_occultist_trigger = yes
 				true_religion_occultist_reformed_trigger = yes
-				true_religion_thelemic_trigger = yes
+				true_religion_thelema_trigger = yes
 			}
 			OR = {
 				has_impious_trait_trigger = yes

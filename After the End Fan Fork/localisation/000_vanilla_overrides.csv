@@ -1962,6 +1962,7 @@ HF_222_DESC;My servants apparently lost track of [child_of_destiny.GetFirstName]
 demand_religious_conversion;Demand Religious Conversion;;;;;;;;;x
 demand_religious_conversion_short;Demand Religious Conversion;;;;;;;;;x
 demand_religious_conversion_desc;Demand that [Root.GetTitledName] embrace the [From.Religion.GetName] faith.;;;;;;;;;x
+tried_to_convert_me;Tried to Convert Me;;;;;;;;;x
 REASON_BASE_RELUCTANCE;Base Reluctance;;;;;;;;;x
 REASON_IS_RULER;Is a Ruler;;;;;;;;;x
 REASON_HARD_TO_CONVERT;Religion is Resistant to Conversion;;;;;;;;;x

@@ -385,9 +385,6 @@ targeted_decisions = {
 			ROOT = {
 			}
 		}
-		revoke_allowed = {
-			always = no #Not used in vanilla
-		}
 		ai_will_do = {
 			#Factors for an AI character to take the decision (1 = 100% chance every month - for each allowed target!)
 			factor = 1 

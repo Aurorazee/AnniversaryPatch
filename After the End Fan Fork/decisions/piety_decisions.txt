@@ -169,11 +169,6 @@ targetted_decisions = {
 			FROM = { character_event = { id = MSI.4950 } }
 			character_event = { id = MSI.4951 }
 		}
-		
-		revoke_allowed = {
-		always = no
-		}
-		
 		ai_will_do = {
 			factor = 1
 			modifier = {
