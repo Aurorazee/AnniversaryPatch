@@ -379,6 +379,10 @@ feudal_governments = {
 		dukes_called_kings = yes
 		barons_need_dynasty = yes
 		free_retract_vassalage = yes
+
+		gets_religion_opinion_penalties = no
+		gives_religion_opinion_penalties = no
+		can_demand_religious_conversion = no
 		
 		#No free levies in offensive war
 		
