@@ -32,7 +32,7 @@ province_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 42
+		months = 126
 		modifier = {
 			factor = 2	# peak season in August and September 
 			month = 7
