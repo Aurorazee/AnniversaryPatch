@@ -2011,12 +2011,12 @@ narrative_event = {
 	option = {
 		name = EVTOPTA_mountain_king
 		prestige = 3000
-		give_nickname = nick_the_glorious
 		if = {
 			limit = { 
 				has_dlc = "Holy Fury" 
 				is_female = no
 			}
+			give_nickname = nick_the_mountain_king
 			create_bloodline = {
 				type = mountain_lord_male
 			}
@@ -2030,6 +2030,7 @@ narrative_event = {
 				has_dlc = "Holy Fury" 
 				is_female = yes
 			}
+			give_nickname = nick_the_mountain_queen
 			create_bloodline = {
 				type = mountain_lord_female
 			}
