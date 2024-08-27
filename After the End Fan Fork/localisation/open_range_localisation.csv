@@ -26,9 +26,8 @@ adopt_orf_desc;While difficult smaller realms do sometimes adopt the ways of the
 abandon_orf;Abandon Open Range Feudalism;;;;;;;;;;;;;x
 abandon_orf_desc;While difficult smaller realms do sometimes abandon the ways of the range, handing out the range as personal fiefdoms to the more powerful nobles;;;;;;;;;;;;;x
 
-#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
-ca_orf_range_marshal_1;Heroic Statue;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;x
-ca_orf_range_marshal_1;This heroic statue stands as a testament for the deeds of the great men who came before and that all men can achieve greatness.;FRENCH;GERMAN;;SPANISH;;;;;;;;;;;;;x
+ca_orf_range_marshal_1;Heroic Statue;;;;;;;;;;;;;;x
+ca_orf_range_marshal_1;This heroic statue stands as a testament for the deeds of the great men who came before and that all men can achieve greatness.;;;;;;;;;;;;;;x
 range_building_only_in_capital;Is the County Capital.;;;;;;;;;;;;;;x
 ca_orf_range_marshal_2;Marshal Headquarters;;;;;;;;;;;;;x
 ca_orf_range_marshal_2_desc;From their headquarters in the county capital Marshals serve as Lawbringers and protectors. The Marshal's of the Range are what distinguish the legal range of a province from any other vast empty space.;;;;;;;;;;;;;x
@@ -213,8 +212,6 @@ orf_senate_type_law_2;Open Senate;;;;;;;;;;;;;x
 orf_senate_type_law_2_option;Open;;;;;;;;;;;;;x
 orf_senate_type_law_2_desc;A truly radical proposition where non nobles, merchants and church leaders, can run for senate but they are still elected only by nobility.;;;;;;;;;;;;;x
 TOOLTIP_orf_senate_type_law_2;Radically opens the senate to non noble vassals.;;;;;;;;;;;;;x
-
-
 
 range_privileges_trade;Range Travel Restrictions;;;;;;;;;;;;;x
 range_privileges_trade_desc;While the exclusive rights of nobles to range their cattle on the rangeland is not in question, many merchants ask that they be allowed to travel it and enjoy its safety to travel between settlements.;;;;;;;;;;;;;x

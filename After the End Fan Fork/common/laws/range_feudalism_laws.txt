@@ -37,9 +37,6 @@ laws = {
 			}
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
 		pass_effect = {
 
 		}
@@ -104,9 +101,6 @@ laws = {
 			 
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
 		pass_effect = {
 
 		}
@@ -161,9 +155,6 @@ laws = {
 			 
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
 		pass_effect = {
 
 		}
@@ -221,9 +212,6 @@ laws = {
 			 
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
 		pass_effect = {
 
 		}
@@ -276,9 +264,6 @@ laws = {
 			 
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
 		pass_effect = {
 
 		}
@@ -330,7 +315,7 @@ laws = {
 			} 
 		}
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
@@ -384,7 +369,7 @@ laws = {
 				has_law = orf_senate_type_law_2
 			}
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
@@ -430,7 +415,7 @@ laws = {
 		ai_will_do = {
 			factor = 10
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
@@ -490,18 +475,13 @@ laws = {
 	
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
 				factor = 0
 				holder_scope = { trait = party_populist }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		pass_effect = {
 
@@ -531,18 +511,13 @@ laws = {
 				independent = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
 				factor = 0
 				holder_scope = { trait = party_magnate }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		pass_effect = {
 
@@ -589,18 +564,13 @@ laws = {
 				independent = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
 				factor = 0
 				holder_scope = { trait = party_populist }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		pass_effect = {
 
@@ -630,18 +600,13 @@ laws = {
 				independent = yes
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
 				factor = 0
 				holder_scope = { trait = party_magnate }
 			}
-		}
-		ai_will_revoke = {
-			factor = 0
 		}
 		pass_effect = {
 

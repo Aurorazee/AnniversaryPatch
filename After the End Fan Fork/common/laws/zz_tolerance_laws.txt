@@ -401,8 +401,6 @@ laws = {
 				has_law = religion_tolerance_2
 			}
 		}
-
-		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -443,9 +441,8 @@ laws = {
 				has_law = religion_tolerance_2
 				holder_scope = { 
 					any_vassal = {
-						limit = { NOT = { religion_group = PREV } }
+						NOT = { religion_group = PREV }
 						count = 2 
-						always = yes
 					}
 				}
 			}

@@ -56,7 +56,7 @@ captaincy_mobilization_0 = {
 		temple_opinion = 15
 	}
 	
-captaincy_mobilization_1 = {
+	captaincy_mobilization_1 = {
 		group = captaincy_mobilization
 		allow = {
 		OR = {
@@ -108,7 +108,7 @@ captaincy_mobilization_1 = {
 		castle_vassal_max_levy = -0.10
 		temple_opinion = 5	
 	}
-captaincy_mobilization_2 = {
+	captaincy_mobilization_2 = {
 		group = captaincy_mobilization
 		allow = {
 		OR = {
@@ -157,7 +157,7 @@ captaincy_mobilization_2 = {
 		castle_vassal_max_levy = 0.15
 		temple_opinion = -10	
 	}
-captaincy_mobilization_3 = {
+	captaincy_mobilization_3 = {
 		group = captaincy_mobilization
 		allow = {
 			has_law = captaincy_mobilization_2

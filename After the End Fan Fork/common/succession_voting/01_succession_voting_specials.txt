@@ -319,61 +319,61 @@ byzantine_elective = {
 			}
 			higher_tier_than = DUKE
 		}
-		additive_modifier = { #Byzantine minor titles not so minor after all...
-			value = 15
-			localisation_key = tooltip_imperial_vote_strength_elector_despot
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_despot
-		}
-		additive_modifier = { #Byzantine minor titles not so minor after all...
-			value = 5
-			localisation_key = tooltip_imperial_vote_strength_elector_sebastokrator
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_sebastokrator
-		}
-		additive_modifier = { #Byzantine minor titles not so minor after all...
-			value = 15
-			localisation_key = tooltip_imperial_vote_strength_elector_caesar
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_caesar
-		}
-		additive_modifier = { #Byzantine minor titles not so minor after all...
-			value = 10
-			localisation_key = tooltip_imperial_vote_strength_elector_kouropalates
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_kouropalates
-		}
-		additive_modifier = { #Byzantine minor titles not so minor after all...
-			value = 5
-			localisation_key = tooltip_imperial_vote_strength_elector_anthypatos
-			vassal_of = FROMFROM 
-			NOT = { 
-				FROMFROM = { 
-					holder_scope = { character = ROOT }
-				}
-			}
-			has_minor_title = title_anthypatos
-		}
+		# additive_modifier = { #Byzantine minor titles not so minor after all...
+			# value = 15
+			# localisation_key = tooltip_imperial_vote_strength_elector_despot
+			# vassal_of = FROMFROM 
+			# NOT = { 
+				# FROMFROM = { 
+					# holder_scope = { character = ROOT }
+				# }
+			# }
+			# has_minor_title = title_despot
+		# }
+		# additive_modifier = { #Byzantine minor titles not so minor after all...
+			# value = 5
+			# localisation_key = tooltip_imperial_vote_strength_elector_sebastokrator
+			# vassal_of = FROMFROM 
+			# NOT = { 
+				# FROMFROM = { 
+					# holder_scope = { character = ROOT }
+				# }
+			# }
+			# has_minor_title = title_sebastokrator
+		# }
+		# additive_modifier = { #Byzantine minor titles not so minor after all...
+			# value = 15
+			# localisation_key = tooltip_imperial_vote_strength_elector_caesar
+			# vassal_of = FROMFROM 
+			# NOT = { 
+				# FROMFROM = { 
+					# holder_scope = { character = ROOT }
+				# }
+			# }
+			# has_minor_title = title_caesar
+		# }
+		# additive_modifier = { #Byzantine minor titles not so minor after all...
+			# value = 10
+			# localisation_key = tooltip_imperial_vote_strength_elector_kouropalates
+			# vassal_of = FROMFROM 
+			# NOT = { 
+				# FROMFROM = { 
+					# holder_scope = { character = ROOT }
+				# }
+			# }
+			# has_minor_title = title_kouropalates
+		# }
+		# additive_modifier = { #Byzantine minor titles not so minor after all...
+			# value = 5
+			# localisation_key = tooltip_imperial_vote_strength_elector_anthypatos
+			# vassal_of = FROMFROM 
+			# NOT = { 
+				# FROMFROM = { 
+					# holder_scope = { character = ROOT }
+				# }
+			# }
+			# has_minor_title = title_anthypatos
+		# }
 		#Commanders
 		additive_modifier = { #The less commanders you have appointed, the more influential the remaining ones are.
 			value = 5
@@ -2790,7 +2790,6 @@ byzantine_elective = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				has_religion_feature = religion_holy_family 
-				#has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
 				AND = { 
@@ -2835,7 +2834,6 @@ byzantine_elective = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				has_religion_feature = religion_holy_family 
-				has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
 				AND = { 
@@ -6245,7 +6243,6 @@ hre_feudal_elective = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				has_religion_feature = religion_holy_family 
-				has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
 				AND = { 
@@ -6290,7 +6287,6 @@ hre_feudal_elective = {
 			OR = { 
 				NOT = { is_close_relative = FROM }
 				has_religion_feature = religion_holy_family 
-				has_religion_feature = religion_feature_zun
 			} 
 			OR = { 
 				AND = { 

@@ -1409,8 +1409,10 @@ laws = {
 			holder_scope = {
 				independent = yes
 				is_feudal = yes
+				NOT = {
+					government = open_range_feudalism_government
+				}
 			}
-			NOT = { government = open_range_feudalism_government }
 		}
 		
 		ai_will_do = {

@@ -564,9 +564,9 @@ laws = {
 			has_dlc = "Zeus"
 			NOT = { holder_scope = { is_nomadic = yes } }
 		}
-		revoke_allowed = { always = no }
+		
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			set_allow_title_revokation = no
@@ -584,7 +584,7 @@ laws = {
 			has_dlc = "Zeus"
 			NOT = { holder_scope = { is_nomadic = yes } }
 		}
-		revoke_allowed = { always = no }
+		
 		ai_will_do = { 
 			factor = 1
 			modifier = {
@@ -596,7 +596,7 @@ laws = {
 				has_law = revoke_title_law_2
 			}
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			set_allow_title_revokation = yes
@@ -656,7 +656,7 @@ laws = {
 			NOT = { holder_scope = { government = military_governorate } }
 			NOT = { holder_scope = { government = merchant_republic_government } }
 		}
-		revoke_allowed = { always = no }
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -667,7 +667,7 @@ laws = {
 				holder_scope = { trait = zealous }
 			}
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			set_allow_title_revokation = yes
@@ -696,7 +696,7 @@ laws = {
 			NOT = { holder_scope = { government = open_range_feudalism_government } }
 		}
 		ai_will_do = { factor = 0 }
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
@@ -751,7 +751,7 @@ laws = {
 				has_law = ze_administration_laws_2
 			}
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
@@ -821,7 +821,7 @@ laws = {
 		ai_will_do = {
 			factor = 10
 		}
-		ai_will_revoke = { factor = 0 }
+		
 		pass_effect = { }
 		effect = {
 			if = {
