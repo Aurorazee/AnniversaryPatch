@@ -1,4 +1,4 @@
-###ÄNSI
+###ï¿½NSI
 
 mid_atlantic = {
 	graphical_cultures = { westerngfx }
@@ -103,7 +103,7 @@ mid_atlantic = {
 			Hari Hayan Henreyk_Henry Hector_Hector Horatis_Horace Humbert
 			Idrees_Idris Ignatius Igor_Ingvar Isaac_Isaac Isaiah Isidorr_Isidore
 			Jason Jonas_Jonah Jacobbe_Jacob Joaquin_Joachim Julius_Julius Jaime_James
-			Kiran Koch
+			Kareem Kenan Kiran Koch
 			Lambert Lewis_Louis Levi Ludovick_Louis Leander Leonard Leone_Leon Loren_Lawrence Lucis_Lucius
 			Martin_Martin Marius Manohar Meyer Michael_Michael Marcus_Mark Mattheus_Matthew Mohan
 			Nicholas_Nicholas Narciss Nevis Nestor Nunzis
@@ -115,7 +115,8 @@ mid_atlantic = {
 			Ulderic
 			Varian Vasily Venceslaus_Wenceslaus Vinay Vincent_Vincent Victor_Victor Vladimir
 			Wualter_Walter Wuillem_William Whitehead Wagner
-			York Yohan_John Yuri_George
+			Xiao Xu
+			Yakov York Yohan_John Yuri_George
 			Zachari_Zachary
 		}
 		#add in some West Side Story names for shits and grins
@@ -129,19 +130,21 @@ mid_atlantic = {
 			Gemma Gita Graziella
 			Hermanna Henrietta_Henrietta Helen Hana_Hannah
 			Ines_Agnes Irene
-			Jordan Juliana
+			Jackie Jordan Juliana
 			Karam Keiran
 			Lana Lauren Lila Lola
 			Martha Maria_Mary Maya Minnie_Wilhelmina Margarita_Margaret Maxima Magdalene Mercedes Miran Misha Mona Myrtle
-			Nadia Nari Niki Nina
+			Nadia Nancy Nari Niki Nina
+			Olga
 			Paris Pauline_Pauline Pamela
-			Ramona Rebecca Rosalia Rita Rin Regina Renata Rhoda
+			Rachel Ramona Rebecca Rosalia Rita Rin Regina Renata Rhoda
 			Sasha Salome Sanya Stephanie_Stephanie Sophia Sori
 			Tania Tara Teresita_Theresa Thea
-			Vera Victoria Velma
+			Vanessa Velma Vera Veronica Victoria
 			Willemina_Wilhelmina
-			Yolanda
-			Zelda Zelina Zenobia
+			Xiao
+			Yasmin Yolanda
+			Zelda Zelina Zena Zenobia Zipporah
 		}
 
 		from_dynasty_prefix = "van "
