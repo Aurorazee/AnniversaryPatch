@@ -26,10 +26,6 @@ glory_hound = {
 		#NOT = { trait = craven } #added negative modifier instead
 		NOT = { trait = horse }
 		NOT = { trait = cat }
-		OR = {
-			NOT = { liege = { government = open_range_feudalism_government } }
-			trait = party_populist
-		}
 	}
 	
 	default_selection = {
@@ -85,6 +81,11 @@ glory_hound = {
 		additive_modifier = {
 			value = -10
 			trait = content
+		}
+		additive_modifier = {
+			value = 1000
+			liege = { government = open_range_feudalism_government }
+			trait = party_populist
 		}
 	}
 	

@@ -848,11 +848,11 @@ character_event = {
 			modifier = { factor = 0.5 trait = ambitious }
 			modifier = {
 				factor = 2
-				opinion = { who = liege value = 150 }
+				opinion = { who = liege value >= 50 }
 			}
 			modifier = {
 				factor = 0
-				opinion = { who = liege value = 75 }
+				opinion = { who = liege value < 50 }
 			}
 		}
 	}
@@ -864,7 +864,7 @@ character_event = {
 			modifier = { factor = 5 trait = zealous }
 			modifier = { factor = 4 trait = devout }
 			modifier = { factor = 0 trait = cynical }
-			modifier = { factor = 10 government = theocracy_government }
+			modifier = { factor = 10 is_theocracy = yes }
 		}
 	}
 }
@@ -937,11 +937,11 @@ character_event = {
 			modifier = { factor = 0.5 trait = ambitious }
 			modifier = {
 				factor = 2
-				opinion = { who = liege value = 150 }
+				opinion = { who = liege value >= 50 }
 			}
 			modifier = {
 				factor = 0
-				opinion = { who = liege value = 75 }
+				opinion = { who = liege value < 50 }
 			}
 		}
 	}
@@ -1024,11 +1024,11 @@ character_event = {
 			modifier = { factor = 0.5 trait = ambitious }
 			modifier = {
 				factor = 2
-				opinion = { who = liege value = 150 }
+				opinion = { who = liege value >= 50 }
 			}
 			modifier = {
 				factor = 0
-				opinion = { who = liege value = 75 }
+				opinion = { who = liege value < 50 }
 			}
 		}
 	}

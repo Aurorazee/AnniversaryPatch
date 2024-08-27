@@ -2091,7 +2091,7 @@ decisions = {
 					}
 				}
 			}
-			hidden_tooltip = { narrative_event = { id = tex.2 } } 
+			hidden_tooltip = { narrative_event = { id = texas.2 } } 
 			set_character_flag = founded_texarkana
 
 			chronicle = {

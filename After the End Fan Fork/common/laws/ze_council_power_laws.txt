@@ -76,18 +76,14 @@ laws = {
 				has_law = range_senate_size_0
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -200,15 +196,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -291,18 +283,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -401,15 +389,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -483,18 +467,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -589,15 +569,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -667,18 +643,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -772,15 +744,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -850,18 +818,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -956,15 +920,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -1033,18 +993,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -1139,15 +1095,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -1217,18 +1169,14 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0.05
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -1322,15 +1270,11 @@ laws = {
 				has_law = tribal_organization_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }
@@ -1396,15 +1340,11 @@ laws = {
 			}
 			holy_order = no
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.518 }
@@ -1468,15 +1408,11 @@ laws = {
 			}
 			holy_order = no
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			holder_scope = {
 				character_event = { id = cetic.509 }

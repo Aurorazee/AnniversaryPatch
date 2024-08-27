@@ -104,9 +104,9 @@ malcontent = {
 			}
 		}
 		additive_modifier = {
-			value = 400
+			value = 1000
 			liege = { government = open_range_feudalism_government }
-			trait = party_malcontent
+			trait = party_opposition
 		}
 	}
 	

@@ -27,9 +27,7 @@ succession_laws = {
 				voting_rules = mormon_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	succ_ghazi_elective = {
 		oldest_child_opinion = -5
@@ -57,9 +55,7 @@ succession_laws = {
 				voting_rules = ghazi_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	succ_bureaucratic_elective = {
 		oldest_child_opinion = -5
@@ -90,9 +86,7 @@ succession_laws = {
 				voting_rules = bureaucratic_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 
 	succ_mil_gaian_elective = {
@@ -121,9 +115,7 @@ succession_laws = {
 				voting_rules = mil_gaian_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 	
 	succ_rel_gaian_elective = {
@@ -152,8 +144,6 @@ succession_laws = {
 				voting_rules = rel_gaian_elective
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 	}
 }

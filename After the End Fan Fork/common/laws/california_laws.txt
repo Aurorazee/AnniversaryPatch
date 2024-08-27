@@ -22,9 +22,7 @@ laws = {
 				text = allow_war_TT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.5
 			modifier = {
@@ -172,9 +170,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 	}
 	bureaucratic_war_declaration_1 = {
 		group = bureaucratic_war_declaration
@@ -203,9 +199,7 @@ laws = {
 				text = prevent_war_TT
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0.05
 			modifier = {

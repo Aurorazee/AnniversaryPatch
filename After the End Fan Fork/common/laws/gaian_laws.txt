@@ -14,15 +14,11 @@ captaincy_mobilization_0 = {
 				government = theocratic_feudal_government
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 
 		}
@@ -73,15 +69,11 @@ captaincy_mobilization_1 = {
 				government = theocratic_feudal_government
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 
 		}
@@ -129,15 +121,11 @@ captaincy_mobilization_2 = {
 				government = theocratic_feudal_government
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 
 		}
@@ -179,15 +167,11 @@ captaincy_mobilization_3 = {
 				government = theocratic_feudal_government
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 
 		}

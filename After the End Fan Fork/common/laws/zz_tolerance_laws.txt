@@ -27,9 +27,7 @@ laws = {
 			has_law = culture_tolerance_1
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -64,9 +62,7 @@ laws = {
 				}
 			}	
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			owner = {
@@ -111,9 +107,7 @@ laws = {
 		allow = {
 			always = yes
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -162,9 +156,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			owner = {
 				hidden_tooltip = {
@@ -201,9 +193,7 @@ laws = {
 		allow = {
 			has_law = culture_tolerance_1
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -231,9 +221,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			owner = {
@@ -280,9 +268,7 @@ laws = {
 			has_law = religion_tolerance_1
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		
 		pass_effect = {
@@ -381,9 +367,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		zealous_opinion = -10
 		religion_flex = -1.0
@@ -402,16 +386,6 @@ laws = {
 					government = merchant_republic_government
 				}	
 			}
-			#additive_modifier = { 
-			#	value = 10
-			#	capital_scope = {
-			#		region = custom_fertile_crescent
-			#	}
-			#}
-			#additive_modifier = { 
-			#	value = 10
-			#	title = e_baltic
-			#}
 		}
 		
 		potential = {
@@ -428,9 +402,7 @@ laws = {
 			}
 		}
 
-		revoke_allowed = {
-			always = no
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -564,9 +536,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		zealous_opinion = -5
 		religion_flex = -0.5
@@ -598,9 +568,7 @@ laws = {
 			}
 		}
 		
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -671,9 +639,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		pass_effect = {
 			hidden_tooltip = {
 				owner = {
@@ -716,9 +682,7 @@ laws = {
 				has_law = religion_tolerance_4
 			}
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -789,9 +753,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -841,9 +803,7 @@ laws = {
 		allow = {
 			has_law = religion_tolerance_3
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 
 		
 		pass_effect = {
@@ -911,9 +871,7 @@ laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		zealous_opinion = 10
 		religion_flex = 2.0

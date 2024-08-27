@@ -111,7 +111,7 @@ zealot_pattern_for = {
 			NOT = { 
 				reverse_opinion = {
 					who = ROOT
-					value = 19
+					value = 20
 				}
 			}
 		}
@@ -122,7 +122,7 @@ zealot_pattern_for = {
 			NOT = { 
 				reverse_opinion = {
 					who = ROOT
-					value = 19
+					value = 20
 				}
 			}
 		}
@@ -142,7 +142,7 @@ zealot_pattern_for = {
 			NOT = { 
 				reverse_opinion = {
 					who = ROOT
-					value = 19
+					value = 20
 				}
 			}
 		}
@@ -153,7 +153,7 @@ zealot_pattern_for = {
 			NOT = { 
 				reverse_opinion = {
 					who = ROOT
-					value = 19
+					value = 20
 				}
 			}
 		}

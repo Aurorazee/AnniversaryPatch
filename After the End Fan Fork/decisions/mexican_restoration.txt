@@ -92,7 +92,7 @@ decisions = {
 					}
 				}
 			}
-			completely_controls = c_somberete
+			completely_controls = c_sombrerete
 			b_nora_de_san_pantaleon_ZA = {
 				custom_tooltip = {
 					text = enforce_orthodoxy_holder_religion

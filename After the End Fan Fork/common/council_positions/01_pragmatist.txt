@@ -26,18 +26,6 @@ pragmatist = {
 		#NOT = { trait = zealous }
 		NOT = { trait = horse }
 		NOT = { trait = cat }
-		OR = {
-			NOT = { liege = { government = open_range_feudalism_government } }
-			trait = party_magnate
-			AND = { 
-				liege = { government = open_range_feudalism_government }
-				NOT = { trait = party_magnate }
-				NOT = { trait = party_populist }
-				NOT = { trait = party_theocratic }
-				NOT = { trait = party_royalist }
-				NOT = { trait = party_malcontent }
-			}
-		}
 	}
 	
 	default_selection = {
@@ -99,6 +87,11 @@ pragmatist = {
 			liege = {
 				has_character_modifier = greatest_of_khans
 			}
+		}
+		additive_modifier = {
+			value = 1000
+			liege = { government = open_range_feudalism_government }
+			trait = party_magnate
 		}
 	}
 	

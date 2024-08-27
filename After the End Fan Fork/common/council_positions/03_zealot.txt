@@ -26,10 +26,6 @@ zealot = {
 		#NOT = { trait = cynical }
 		NOT = { trait = horse }
 		NOT = { trait = cat }
-		OR = {
-			NOT = { liege = { government = open_range_feudalism_government } }
-			trait = party_theocratic
-		}
 	}
 	
 	default_selection = {
@@ -137,6 +133,11 @@ zealot = {
 			liege = {
 				has_character_modifier = greatest_of_khans
 			}
+		}
+		additive_modifier = {
+			value = 1000
+			liege = { government = open_range_feudalism_government }
+			trait = party_theocratic
 		}
 	}
 	

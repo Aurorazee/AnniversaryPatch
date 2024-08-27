@@ -30,10 +30,6 @@ loyalist = {
 			opinion = { who = liege value = 0 }
 			trait = horse
 		}
-		OR = {
-			NOT = { liege = { government = open_range_feudalism_government } }
-			trait = party_royalist
-		}
 	}
 	
 	default_selection = {
@@ -95,6 +91,11 @@ loyalist = {
 					has_bloodline_flag = bloodline_loyalist
 				}
 			}
+		}
+		additive_modifier = {
+			value = 1000
+			liege = { government = open_range_feudalism_government }
+			trait = party_royalist
 		}
 	}
 	

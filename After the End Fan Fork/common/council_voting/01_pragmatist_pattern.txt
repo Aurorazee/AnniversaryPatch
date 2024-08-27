@@ -871,7 +871,7 @@ pragmatist_pattern_against = {
 		NOT = {
 			opinion = {
 				who = liege
-				value = -19
+				value = -20
 			}
 		}
 	}

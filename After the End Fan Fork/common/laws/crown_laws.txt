@@ -26,15 +26,11 @@ de_jure_laws = {
 			}
 			NOT = { holder_scope = { government = theocratic_feudal_government } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		effect = {
 			hidden_tooltip = {
 				revoke_law = crown_authority_0
@@ -81,9 +77,7 @@ de_jure_laws = {
 			}
 			NOT = { holder_scope = { government = theocratic_feudal_government } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -91,9 +85,7 @@ de_jure_laws = {
 				NOT = { has_law = crown_authority_0 }
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -176,9 +168,7 @@ de_jure_laws = {
 			}
 			NOT = { holder_scope = { government = theocratic_feudal_government } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -189,9 +179,7 @@ de_jure_laws = {
 				NOT = { has_law = crown_authority_1 }
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -281,9 +269,7 @@ de_jure_laws = {
 			}
 			NOT = { holder_scope = { government = theocratic_feudal_government } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -297,9 +283,7 @@ de_jure_laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -387,9 +371,7 @@ de_jure_laws = {
 			}
 			NOT = { holder_scope = { government = theocratic_feudal_government } }
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -404,9 +386,7 @@ de_jure_laws = {
 			}
 		}
 		
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		
 		pass_effect = {
 			hidden_tooltip = {
@@ -491,15 +471,11 @@ de_jure_laws = {
 		#allow = {
 		#	year = 1000
 		#}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 0
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		effect = {
 			hidden_tooltip = {
 				revoke_law = investiture_law_0
@@ -538,9 +514,7 @@ de_jure_laws = {
 		allow = {
 			holy_order = no
 		}
-		revoke_allowed = {
-			always = no
-		}
+		
 		ai_will_do = {
 			factor = 1
 			modifier = {
@@ -556,9 +530,7 @@ de_jure_laws = {
 				}
 			}
 		}
-		ai_will_revoke = {
-			factor = 0
-		}
+		
 		effect = {
 			hidden_tooltip = {
 				revoke_law = investiture_law_0

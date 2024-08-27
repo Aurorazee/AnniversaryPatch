@@ -89,41 +89,21 @@ glory_hound_pattern_for = {
 	war_voting_power_1 = { always = yes }
 	succession_voting_power_0 = { always = no }
 	succession_voting_power_1 = { always = yes }
-
-	vassal_wars_law_0 = {
-		NOT = { liege = { government = open_range_feudalism_government }}
-	}
-	vassal_wars_law_1 = {
-		OR = {
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				trait = party_populist
-				liege = { has_law = vassal_wars_law_0 } 
-			}
-			NOT = { liege = { government = open_range_feudalism_government }}
-		}
-	}
-	vassal_wars_law_2 = {
-		OR = {
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				trait = party_populist
-			}
-			NOT = { liege = { government = open_range_feudalism_government }}
-		}
-	}
+	vassal_wars_law_0 = { always = yes }
+	vassal_wars_law_1 = { always = no }
+	vassal_wars_law_2 = { always = no }
 	
 	centralization_0 = {
-		NOT = { liege = { government = open_range_feudalism_government }}
+		NOT = { government = open_range_feudalism_government }
 	}
 	centralization_1 = {
 		OR = {
 			AND = {
-				liege = { government = open_range_feudalism_government }
+				government = open_range_feudalism_government
 				liege = { has_law = centralization_0 }
 			}
 			AND = {
-				NOT = { liege = { government = open_range_feudalism_government }} 
+				NOT = { government = open_range_feudalism_government } 
 				OR = {
 					liege = {
 						primary_title = {
@@ -141,11 +121,11 @@ glory_hound_pattern_for = {
 	centralization_2 = {
 		OR = {
 			AND = {
-				liege = { government = open_range_feudalism_government }
+				government = open_range_feudalism_government
 				liege = { has_law = centralization_1 }
 			}
 			AND = {
-				NOT = { liege = { government = open_range_feudalism_government }} 
+				NOT = { government = open_range_feudalism_government } 
 				OR = {
 					liege = {
 						primary_title = {
@@ -163,11 +143,11 @@ glory_hound_pattern_for = {
 	centralization_3 = {
 		OR = {
 			AND = {
-				liege = { government = open_range_feudalism_government }
+				government = open_range_feudalism_government
 				liege = { has_law = centralization_2 }
 			}
 			AND = {
-				NOT = { liege = { government = open_range_feudalism_government }} 
+				NOT = { government = open_range_feudalism_government} 
 				OR = {
 					liege = {
 						primary_title = {
@@ -184,17 +164,11 @@ glory_hound_pattern_for = {
 	}
 	centralization_4 = {
 		OR = {
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				liege = { has_law = centralization_3 }
+			opinion = {
+				who = liege 
+				value = 20
 			}
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government }} 
-				opinion = {
-					who = liege
-					value = 20
-				}
-			}
+			government = open_range_feudalism_government
 		}
 	}
 	vice_royalty_0 = {
@@ -460,182 +434,134 @@ glory_hound_pattern_for = {
 	}
 	
 	range_senate_size_0 = {
-		NOT = { has_law = range_senate_size_1 }
+		always = no
 	}
 	range_senate_size_1 = { 
-		NOT = { has_law = range_senate_size_2 }
+		NOT = { liege = { has_law = range_senate_size_2 } }
 	}
 	range_senate_size_2 = { 
-		NOT = { has_law = range_senate_size_3 }
+		NOT = { liege = { has_law = range_senate_size_3 } }
 	}
 	range_senate_size_3 = { 
-		NOT = { has_law = range_senate_size_4 }
+		NOT = { liege = { has_law = range_senate_size_4 } }
 	}
 	range_senate_size_4 = { 
 		always = yes
 	}
 	
-	culture_tolerance_0 = {
+	orf_senate_type_law_0 = {
 		always = no
+	}
+	orf_senate_type_law_1 = { 
+		NOT = { liege = { has_law = orf_senate_type_law_2 } }
+	}
+	orf_senate_type_law_2 = { 
+		always = yes
+	}
+	
+	range_privileges_trade_0 = { 
+		liege = { government = open_range_feudalism_government }
+		is_republic = yes
+	}
+	range_privileges_trade_1 = { 
+		liege = { government = open_range_feudalism_government }
+		is_republic = no
+	}
+	
+	range_privileges_church_0 = { 
+		liege = { government = open_range_feudalism_government }
+		is_theocracy = yes
+	}
+	range_privileges_church_1 = { 
+		liege = { government = open_range_feudalism_government }
+		is_theocracy = no
+	}
+	
+	culture_tolerance_0 = {
+		OR = {
+			NOT = { liege = { culture = PREV } }
+			opinion = {
+				who = liege
+				value = 59
+			}
+		}
 	}
 	culture_tolerance_1 = {
 		OR = { 
-			AND = {
-				liege = {has_law = culture_tolerance_0}
-				opinion = {
-					who = liege
-					value = 19
-				}
-				NOT = { liege = { government = open_range_feudalism_government } }
+			opinion = {
+				who = liege
+				value = 59
 			}
 			AND = {
 				liege = { has_law = culture_tolerance_0 }
-				liege = { government = open_range_feudalism_government }
+				government = open_range_feudalism_government
+			}
+			AND = {
+				NOT = { liege = { culture = PREV } }
+				liege = { has_law = culture_tolerance_2 }
 			}
 		}
 	}
 	culture_tolerance_2 = {
 		OR = { 
-			AND = {
-				opinion = {
-					who = liege
-					value = 19
-				}
-				NOT = { liege = { government = open_range_feudalism_government } }
+			opinion = {
+				who = liege
+				value = 59
 			}
 			AND = {
 				liege = { has_law = culture_tolerance_1 }
-				liege = { government = open_range_feudalism_government }
+				government = open_range_feudalism_government
 			}
 		}
 	}
 	
 	religion_tolerance_0 = {
 		OR = {
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government } }
-				opinion = {
-					who = liege
-					value = 59
-				}
+			opinion = {
+				who = liege
+				value = 59
 			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				opinion = {
-					who = liege
-					value = 25
-				}
-				liege = { religion = PREV }
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				NOT = { liege = { religion = PREV } }
-			}
+			NOT = { liege = { religion = PREV } }
 		}
 	}
 	religion_tolerance_1 = {
 		OR = {
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government } }
-				opinion = {
-					who = liege
-					value = 59
-				}
+			opinion = {
+				who = liege
+				value = 59
 			}
 			AND = {
-				liege = { government = open_range_feudalism_government }
-				opinion = {
-					who = liege
-					value = 25
-				}
-				liege = { religion = PREV }
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				OR = {
-					NOT = { liege = { religion = PREV } }
-					liege = { has_law = religion_tolerance_0 }
-				}
+				NOT = { liege = { religion = PREV } }
+				liege = { has_law = religion_tolerance_2 }
 			}
 		}
 	}
 	religion_tolerance_2 = {
 		OR = {
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government } }
-				opinion = {
-					who = liege
-					value = 59
-				}
+			opinion = {
+				who = liege
+				value = 59
 			}
 			AND = {
-				liege = { government = open_range_feudalism_government }
-				opinion = {
-					who = liege
-					value = 25
-				}
-				liege = { religion = PREV }
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				OR = {
-					NOT = { liege = { religion = PREV } }
-					liege = { has_law = religion_tolerance_1 }
-				}
+				NOT = { liege = { religion = PREV } }
+				liege = { has_law = religion_tolerance_3 }
 			}
 		}
 	}
 	religion_tolerance_3 = {
 		OR = {
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government } }
-				opinion = {
-					who = liege
-					value = 59
-				}
+			opinion = {
+				who = liege
+				value = 59
 			}
 			AND = {
-				liege = { government = open_range_feudalism_government }
-				opinion = {
-					who = liege
-					value = 25
-				}
-				liege = { religion = PREV }
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				OR = {
-					NOT = { liege = { religion = PREV } }
-					liege = { has_law = religion_tolerance_2 }
-				}
+				NOT = { liege = { religion = PREV } }
+				liege = { has_law = religion_tolerance_4 }
 			}
 		}
 	}
 	religion_tolerance_4 = {
-		OR = {
-			AND = {
-				NOT = { liege = { government = open_range_feudalism_government } }
-				opinion = {
-					who = liege
-					value = 59
-				}
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				opinion = {
-					who = liege
-					value = 25
-				}
-				liege = { religion = PREV }
-			}
-			AND = {
-				liege = { government = open_range_feudalism_government }
-				OR = {
-					NOT = { liege = { religion = PREV } }
-					liege = { has_law = religion_tolerance_0 }
-				}
-			}
-		}
+		liege = { religion = PREV }
 	}
 }
 
@@ -975,73 +901,128 @@ glory_hound_pattern_against = {
 		always = yes
 	}
 	
+	range_senate_size_0 = {
+		always = yes
+	}
+	range_senate_size_1 = { 
+		liege = { has_law = range_senate_size_2 }
+	}
+	range_senate_size_2 = { 
+		liege = { has_law = range_senate_size_3 }
+	}
+	range_senate_size_3 = { 
+		liege = { has_law = range_senate_size_4 }
+	}
+	range_senate_size_4 = { 
+		always = no
+	}
+	
+	orf_senate_type_law_0 = {
+		always = yes
+	}
+	orf_senate_type_law_1 = { 
+		liege = { has_law = orf_senate_type_law_2 }
+	}
+	orf_senate_type_law_2 = { 
+		always = no
+	}
+	
+	range_privileges_trade_0 = { 
+		liege = { government = open_range_feudalism_government }
+		is_republic = no
+	}
+	range_privileges_trade_1 = { 
+		liege = { government = open_range_feudalism_government }
+		is_republic = yes
+	}
+	
+	range_privileges_church_0 = { 
+		liege = { government = open_range_feudalism_government }
+		is_theocracy = no
+	}
+	range_privileges_church_1 = { 
+		liege = { government = open_range_feudalism_government }
+		is_theocracy = yes
+	}
+	
 	culture_tolerance_0 = {
-		NOT = {
-			opinion = {
-				who = liege
-				value = 59
+		AND = {
+			liege = { culture = PREV }
+			NOT = {
+				opinion = {
+					who = liege
+					value = 59
+				}
 			}
 		}
 	}
 	culture_tolerance_1 = {
-		OR = {
-			AND = {
-				NOT = {
-					opinion = {
-						who = liege
-						value = 59
-					}
+		OR = { 
+			NOT = {
+				opinion = {
+					who = liege
+					value = 59
 				}
-				liege = {has_law = culture_tolerance_2}
 			}
 			AND = {
-				NOT = {
-					opinion = {
-						who = liege
-						value = -19
-					}
-				}
-				liege = {has_law = culture_tolerance_0}
+				liege = { has_law = culture_tolerance_2 }
+				government = open_range_feudalism_government
+			}
+			AND = {
+				NOT = { liege = { culture = PREV } }
+				liege = { has_law = culture_tolerance_0 }
 			}
 		}
 	}
 	culture_tolerance_2 = {
-		NOT = {
-			opinion = {
-				who = liege
-				value = -19
+		OR = { 
+			NOT = {
+				opinion = {
+					who = liege
+					value = 59
+				}
 			}
+			government = open_range_feudalism_government
 		}
 	}
 	
 	religion_tolerance_0 = {
-		opinion = {
-			who = liege
-			value < -19
+		AND = {
+			opinion = {
+				who = liege
+				value < -20
+			}
+			NOT = { liege = { religion = PREV } }
 		}
 	}
 	religion_tolerance_1 = {
-		opinion = {
-			who = liege
-			value < -19
+		AND = {
+			opinion = {
+				who = liege
+				value < -20
+			}
+			NOT = { liege = { religion = PREV } }
 		}
 	}
 	religion_tolerance_2 = {
-		opinion = {
-			who = liege
-			value < -19
+		AND = {
+			opinion = {
+				who = liege
+				value < -20
+			}
+			NOT = { liege = { religion = PREV } }
 		}
 	}
 	religion_tolerance_3 = {
 		opinion = {
 			who = liege
-			value < -19
+			value < -20
 		}
 	}
 	religion_tolerance_4 = {
 		opinion = {
 			who = liege
-			value < -19
+			value < -20
 		} 
 	}
 	
