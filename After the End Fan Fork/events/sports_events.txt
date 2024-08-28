@@ -1,0 +1,1184 @@
+namespace = sports
+
+character_event = { #Arriving at stadium
+	id = sports.1
+	title = EVTNAME_sports_1
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_1
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_1
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.2 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_1
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_1
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #Quarter One
+	id = sports.2
+	title = EVTNAME_sports_2
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_2
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_2
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	option = {
+		name = EVTOPT_football_2
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.3 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.4 days = 1 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_2
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.3 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.4 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Succeeded in Quarter One
+	id = sports.3
+	title = EVTNAME_sports_3
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_3
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_3
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.5 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_3
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_3
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+}
+
+character_event = { #Failed in Quarter One
+	id = sports.4
+	title = EVTNAME_sports_4
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_4
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_4
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.5 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_4
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_4
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #Quarter Two
+	id = sports.5
+	title = EVTNAME_sports_5
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_5
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_5
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	option = {
+		name = EVTOPT_football_5
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.6 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.7 days = 1 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_5
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.6 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.7 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Succeeded in Quarter Two
+	id = sports.6
+	title = EVTNAME_sports_6
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_6
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_6
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.8 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_6
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_6
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+}
+
+character_event = { #Failed in Quarter Two
+	id = sports.7
+	title = EVTNAME_sports_7
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_7
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_7
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.8 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_7
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_7
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #Quarter Three
+	id = sports.8
+	title = EVTNAME_sports_8
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_8
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_8
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	option = {
+		name = EVTOPT_football_8
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.9 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.10 days = 1 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_8
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.9 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.10 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Succeeded in Quarter Three
+	id = sports.9
+	title = EVTNAME_sports_9
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_9
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_9
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.11 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_9
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_9
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+}
+
+character_event = { #Failed in Quarter Three
+	id = sports.10
+	title = EVTNAME_sports_10
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_10
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_10
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.11 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_10
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_10
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #Quarter Four, yes I know that Hockey only has 3 periods but variables are cruel
+	id = sports.11
+	title = EVTNAME_sports_11
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_11
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_11
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	option = {
+		name = EVTOPT_football_11
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.12 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.13 days = 1 }
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_11
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 5
+						trait = robust
+					}
+					modifier = {
+						factor = 5
+						trait = gamer
+					}
+					modifier = {
+						factor = 5
+						trait = strategist
+					}
+					modifier = {
+						factor = 5
+						trait = flanker
+					}
+					modifier = {
+						factor = 5
+						trait = organizer
+					}
+					modifier = {
+						factor = 5
+						trait = inspiring_leader
+					}
+					character_event = { id = sports.12 days = 1 }
+				}
+				50 = {
+					modifier = {
+						factor = 5
+						trait = feeble
+					}
+					modifier = {
+						factor = 5
+						trait = dull
+					}
+					modifier = {
+						factor = 5
+						trait = slothful
+					}
+					modifier = {
+						factor = 5
+						trait = craven
+					}
+					modifier = {
+						factor = 5
+						trait = maimed
+					}
+					modifier = {
+						factor = 5
+						trait = ill
+					}
+					character_event = { id = sports.13 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Succeeded in Quarter Four
+	id = sports.12
+	title = EVTNAME_sports_12
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_12
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_12
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.14 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_12
+		trigger = {
+			trait = football
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_12
+		trigger = {
+			trait = hockey
+		}
+		hidden_tooltip = {
+			change_variable = { which = "game_score" value = 1 }
+		}
+	}
+}
+
+character_event = { #Failed in Quarter Four
+	id = sports.13
+	title = EVTNAME_sports_13
+	picture = GFX_evt_olympic_games
+
+	desc = {
+		text = EVTDESC_football_13
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_13
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		character_event = { id = sports.14 days = 1 }
+	}
+
+	option = {
+		name = EVTOPT_football_13
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_13
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #Variable point check to determine victory or defeat
+	id = sports.14
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		if = {
+			limit = { check_variable = { which = game_score value >= 2 } }
+			narrative_event = { id = sports.15 days = 1 }
+		}
+		else_if = {
+			limit = { check_variable = { which = game_score value = 2 } }
+			narrative_event = { id = sports.16 days = 1 }
+		}
+		else = {
+			narrative_event = { id = sports.17 days = 1 }
+		}
+	}
+}
+
+narrative_event = { #Game Victory
+	id = sports.15
+	title = EVTNAME_sports_15
+	picture = GFX_evt_olympic_games
+	border = GFX_event_narrative_frame_war
+
+	desc = {
+		text = EVTDESC_football_15
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_15
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		clr_character_flag = playing_big_game
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = completed_big_game years = 10 }
+	}
+
+	option = {
+		name = EVTOPT_football_15
+		trigger = {
+			trait = football
+		}
+		prestige = 100
+		add_character_modifier = { name = won_big_game years = 10 }
+	}
+	option = {
+		name = EVTOPT_hockey_15
+		trigger = {
+			trait = hockey
+		}
+		prestige = 100
+		add_character_modifier = { name = won_big_game years = 10 }
+	}
+}
+
+narrative_event = { #Game Tie
+	id = sports.16
+	title = EVTNAME_sports_16
+	picture = GFX_evt_olympic_games
+	border = GFX_event_narrative_frame_war
+
+	desc = {
+		text = EVTDESC_football_16
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_16
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		clr_character_flag = playing_big_game
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = completed_big_game years = 10 }
+	}
+
+	option = {
+		name = EVTOPT_football_16
+		trigger = {
+			trait = football
+		}
+		prestige = 50
+	}
+	option = {
+		name = EVTOPT_hockey_16
+		trigger = {
+			trait = hockey
+		}
+		prestige = 50
+	}
+}
+
+narrative_event = { #Game Loss
+	id = sports.17
+	title = EVTNAME_sports_17
+	picture = GFX_evt_olympic_games
+	border = GFX_event_narrative_frame_war
+
+	desc = {
+		text = EVTDESC_football_17
+		trigger = {
+			trait = football
+		}
+	}
+	desc = {
+		text = EVTDESC_hockey_17
+		trigger = {
+			trait = hockey
+		}
+	}
+
+	is_triggered_only = yes
+	trigger = {
+		has_character_flag = playing_big_game
+	}
+
+	immediate = {
+		clr_character_flag = playing_big_game
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = completed_big_game years = 10 }
+	}
+
+	option = {
+		name = EVTOPT_football_17
+		trigger = {
+			trait = football
+		}
+	}
+	option = {
+		name = EVTOPT_hockey_17
+		trigger = {
+			trait = hockey
+		}
+	}
+}
+
+character_event = { #flag clearing
+	id = sports.18
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = playing_big_game
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}

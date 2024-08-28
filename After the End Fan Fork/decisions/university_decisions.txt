@@ -11,7 +11,7 @@ decisions = {
 			}
 		}
 		allow = {
-			wealth = 250
+			wealth = 50
 			learning = 10
 		}
 		effect = {
