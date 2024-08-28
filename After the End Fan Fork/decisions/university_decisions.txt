@@ -109,6 +109,9 @@ targetted_decisions = {
 	send_kid_to_university = {
 		from_potential = {
 			is_ruler = yes
+			capital_scope = {
+					region = custom_usa
+			}
 		}
 		potential = {
 			is_child_of = FROM
@@ -118,9 +121,6 @@ targetted_decisions = {
 			NOT = { age = 25 }
 			NOT = { trait = student }
 			NOT = { trait = graduate }
-			capital_scope = {
-					region = custom_usa
-			}
 		}
 		allow = {
 			FROM = { scaled_wealth = 0.5 }

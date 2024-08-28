@@ -56,6 +56,14 @@ hockey = { #Hockey Player
 	ruler_designer_cost = 5
 }
 
+chariot = { #Charioteer
+	martial = 1
+	same_opinion = 10
+	potential = { age = 16 }
+	random = no
+	ruler_designer_cost = 5
+}
+
 painter = { #Painter
 	diplomacy = 1
 	same_opinion = 10
