@@ -165,7 +165,7 @@ d_consumerist = {
 		
 	creation_requires_capital = no
 	
-	capital = 27 #Philadelphia
+	capital = 3 # Manhattan
 	
 	dignity = 100 # Counted as having this many more counties than it does
 	
@@ -453,7 +453,7 @@ d_libertarian = {
 
 	graphical_culture = holygfx
 	
-	capital = 1019 # Nashville?
+	capital = 4 # Palisades
 	creation_requires_capital = no
 	
 	dignity = 100 # Counted as having this many more counties than it does
@@ -1138,9 +1138,7 @@ d_misrist = {
 	
 	allow = {
 		religion = misrist
-		OR = {
-			wealth = 500
-		}
+		wealth = 500
 	}
 
 	caliphate = yes	
@@ -1716,11 +1714,11 @@ d_navegante = {
 	allow = {
 		religion = navegante
 		OR = {
-				AND = {
+			AND = {
 				trait = born_in_the_caul
 				prestige = 500
 			}	
-				AND = {
+			AND = {
 				prestige = 1000
 			}
 			completely_controls = d_baja_sur
