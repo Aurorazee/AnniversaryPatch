@@ -1182,3 +1182,20 @@ character_event = { #flag clearing
 		clr_character_flag = recent_minor_decision
 	}
 }
+
+character_event = {
+	id = sports.19
+	desc = sports_team_desc
+	picture = GFX_evt_baseball
+
+	is_triggered_only = yes
+
+	option = { #Football
+		name = EVTOPT_football_team
+		add_trait = football
+	}
+	option = { #Hockey
+		name = EVTOPT_hockey_team
+		add_trait = hockey
+	}
+}

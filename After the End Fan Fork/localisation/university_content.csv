@@ -20,10 +20,15 @@ EVTOPT_go_local_university;I will go local...;;;;;;;;;;;;;x
 
 EVTDESC_choose_major;You may choose your major for the year at university. Which major will you choose?;;;;;;;;;;;;;x
 EVTOPT_history_major;I will study history.;;;;;;;;;;;;;x
+TXT_history_specializes_martial;History is good for your Martial.;;;;;;;;;;;;;x
 EVTOPT_science_major;I will study the sciences.;;;;;;;;;;;;;x
+TXT_science_specializes_learning;Science is good for your Learning.;;;;;;;;;;;;;x
 EVTOPT_mathematics_major;I will study mathematics.;;;;;;;;;;;;;x
+TXT_mathematics_specializes_stewardship;Mathematics is good for your Stewardship.;;;;;;;;;;;;;x
 EVTOPT_literature_major;I will study literature.;;;;;;;;;;;;;x
+TXT_literature_specializes_diplomacy;Literature is good for your Diplomacy.;;;;;;;;;;;;;x
 EVTOPT_psychology_major;I will study the mind, maybe even my own.;;;;;;;;;;;;;x
+TXT_psychology_specializes_intrigue;Psychology is good for your Intrigue.;;;;;;;;;;;;;x
 
 EVTDESC_freshman_end;Your freshman year has come to an end, and you've passed your studies. Another year down!;;;;;;;;;;;;;x
 EVTOPT_freshman_end;My freshman year is over!;;;;;;;;;;;;;x

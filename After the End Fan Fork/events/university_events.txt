@@ -134,31 +134,6 @@ character_event = {
 	}
 }
 
-character_event = {
-	id = univ.2
-	desc = sports_team_desc
-	picture = GFX_evt_baseball
-
-	is_triggered_only = yes
-
-	trigger = {
-		OR = {
-			trait = student
-			trait = graduate
-			religion = olympian
-		}
-	}
-
-	option = { #Football
-		name = EVTOPT_football_team
-		add_trait = football
-	}
-	option = { #Hockey
-		name = EVTOPT_hockey_team
-		add_trait = hockey
-	}
-}
-
 # School of history: martial
 # School of mathematics: stewardship
 # School of science: learning
