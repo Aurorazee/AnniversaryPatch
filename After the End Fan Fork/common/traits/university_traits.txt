@@ -1,0 +1,103 @@
+student = {
+	opposites = {
+		graduate
+	}
+	potential = { age = 16 }
+	customizer = no
+	random = no
+
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_SMART
+	
+	male_insult = INSULT_NERD
+	female_insult = INSULT_NERD
+	child_insult = INSULT_DORK
+}
+
+graduate = {
+	opposites = {
+		student
+	}
+	learning = 1
+	same_opinion = 5
+	potential = { age = 16 }
+	customizer = no
+	random = no
+
+	male_compliment_adj = COMPL_LEARNED
+	female_compliment_adj = COMPL_LEARNED
+	child_compliment_adj = COMPL_SMART
+	
+	male_insult = INSULT_NERD
+	female_insult = INSULT_NERD
+	child_insult = INSULT_DORK
+}
+
+football = { #Football Player
+	opposites = {
+		hockey
+	}
+	martial = 1
+	same_opinion = 10
+	potential = { age = 16 }
+	random = no
+	ruler_designer_cost = 5
+}
+
+hockey = { #Hockey Player
+	opposites = {
+		football
+	}
+	martial = 1
+	same_opinion = 10
+	potential = { age = 16 }
+	random = no
+	ruler_designer_cost = 5
+}
+
+painter = { #Painter
+	diplomacy = 1
+	same_opinion = 10
+	ruler_designer_cost = 4
+}
+
+science_degree = { #Science Degree
+	learning = 2
+	same_opinion = 5
+	potential = { age = 16 }
+	random = no
+	customizer = no
+}
+
+literature_degree = { #Literature Degree
+	diplomacy = 2
+	same_opinion = 5
+	potential = { age = 16 }
+	customizer = no
+	random = no
+}
+
+math_degree = { #Mathematics Degree
+	stewardship = 2
+	same_opinion = 5
+	potential = { age = 16 }
+	customizer = no
+	random = no
+}
+
+history_degree = { #History Degree
+	martial = 2
+	same_opinion = 5
+	potential = { age = 16 }
+	customizer = no
+	random = no
+}
+
+psych_degree = { #Psychology Degree
+	intrigue = 2
+	same_opinion = 5
+	potential = { age = 16 }
+	customizer = no
+	random = no
+}

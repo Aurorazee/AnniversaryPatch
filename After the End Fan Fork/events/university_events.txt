@@ -4,106 +4,128 @@ namespace = univ
 # Leaving for university
 character_event = {
 	id = univ.1
-	desc = univ.1.desc
+	desc = EVTDESC_univ_1
 	is_triggered_only = yes
 	picture = GFX_evt_monk
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "New Haven"
+		name = EVTOPT_univ_cambridge
 		trigger = {
-			b_new_haven_CT = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
-			}
+			capital_scope = {
+				region = world_northeast
+			}		
 		}
 		add_trait = student
-		set_character_flag = u_new_haven
+		set_character_flag = u_cambridge
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "Quebec"
+		name = EVTOPT_univ_berkeley
 		trigger = {
-			b_quebec_QC = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
+			capital_scope = {
+				OR = {
+					region = world_west_coast
+					region = custom_california
+				}
 			}
 		}
 		add_trait = student
-		set_character_flag = u_quebec
+		set_character_flag = u_berkeley
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "Austin"
+		name = EVTOPT_univ_of_georgia
 		trigger = {
-			b_austin_TX = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
+			capital_scope = {
+				region = custom_greater_southeast_usa
 			}
 		}
 		add_trait = student
-		set_character_flag = u_austin
+		set_character_flag = u_georgia
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "Cleveland"
+		name = EVTOPT_univ_colorado_boulder
 		trigger = {
-			b_cleveland_OH = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
+			capital_scope = {
+				OR = {
+					region = custom_mountain_zone
+					region = world_great_plains
+				}
 			}
 		}
 		add_trait = student
-		set_character_flag = u_cleveland
+		set_character_flag = u_boulder
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "Kingston"
+		name = EVTOPT_univ_chicago
 		trigger = {
-			b_kingston_JA = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 600 } } } # Caribbean is big
+			capital_scope = {
+				OR = {
+					region = custom_great_lakes
+					region = world_great_plains
+				}
 			}
 		}
 		add_trait = student
-		set_character_flag = u_kingston
+		set_character_flag = u_chicago
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "Atlanta"
+		name = EVTOPT_univ_texas
 		trigger = {
-			b_atlanta_GA = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
+			capital_scope = {
+				OR = {
+					region = custom_texas
+					region = world_great_plains
+				}
 			}
 		}
 		add_trait = student
-		set_character_flag = u_atlanta
+		set_character_flag = u_texas
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = "St. Louis"
+		name = EVTOPT_univ_los_alamos
 		trigger = {
-			b_st_louis_MO = {
-				holder_scope = { NOT = { war_with = ROOT } }
-				location = { NOT = { distance = { where = ROOT distance = 300 } } }
+			capital_scope = {
+				OR = {
+					region = world_southwest
+					region = custom_california
+				}
 			}
 		}
 		add_trait = student
-		set_character_flag = u_st_louis
+		set_character_flag = u_los_alamos
 		FROM = { wealth = -50 }
+		character_event = { id = univ.3 days = 1 }
+	}
+
+	option = { #Choose a university from your own demesne
+		ai_chance = { factor = 1 }
+		name = EVTOPT_go_local_university
+		add_trait = student
+		set_character_flag = u_local_univ
 	}
 	
 	option = {
@@ -112,208 +134,610 @@ character_event = {
 	}
 }
 
-# School of history: military/learning
-# School of business: stewardship/intrigue
-# School of science: stewardship/military
-# School of literature: diplomacy/learning
-# School of politics: intrigue/diplomacy
-
-# End of term
 character_event = {
-	id = univ.10
-	desc = univ.10.desc
+	id = univ.2
+	desc = sports_team_desc
+	picture = GFX_evt_baseball
+
 	is_triggered_only = yes
-	picture = GFX_evt_monk	
+
+	trigger = {
+		OR = {
+			trait = student
+			trait = graduate
+			religion = olympian
+		}
+	}
+
+	option = { #Football
+		name = EVTOPT_football_team
+		add_trait = football
+	}
+	option = { #Hockey
+		name = EVTOPT_hockey_team
+		add_trait = hockey
+	}
+}
+
+# School of history: martial
+# School of mathematics: stewardship
+# School of science: learning
+# School of literature: diplomacy
+# School of psychology: intrigue
+
+# Choose major
+character_event = {
+	id = univ.3
+	desc = EVTDESC_choose_major
+	is_triggered_only = yes
+	picture = GFX_evt_recieve_letter
 
 	trigger = {
 		trait = student
 	}
-	
-	option = {
-		trigger = {
-			NOT = {
-				has_character_flag = college_history
-				has_character_flag = college_science
-				has_character_flag = college_literature
-				has_character_flag = college_politics
-				has_character_flag = college_business
-			}
-		}
-		name = univ.10.optA
-		character_event = { id = univ.11 }
-	}
-	
-	option = { # Completed history
-		trigger = { has_character_flag = college_history }
-		name = univ.10.optA
-		clr_character_flag = college_history
-		change_variable = { which = "college_years" value = 1 }
-		character_event = { id = univ.11 }
-		random_list = {
-			25 = { }
-			25 = { change_martial = 1 }
-			25 = { change_martial = 2 }
-			25 = { change_martial = 3 }
-		}
-		random_list = {
-			25 = { }
-			25 = { change_learning = 1 }
-			25 = { change_learning = 2 }
-			25 = { change_learning = 3 }
-		}
-	}
-	
-	option = { # Completed business
-		trigger = { has_character_flag = college_business }
-		name = univ.10.optA
-		clr_character_flag = college_business
-		change_variable = { which = "college_years" value = 1 }
-		character_event = { id = univ.11 }
-		random_list = {
-			25 = { }
-			25 = { change_stewardship = 1 }
-			25 = { change_stewardship = 2 }
-			25 = { change_stewardship = 3 }
-		}
-		random_list = {
-			25 = { }
-			25 = { change_intrigue = 1 }
-			25 = { change_intrigue = 2 }
-			25 = { change_intrigue = 3 }
-		}
-	}
-	
-	option = { # Completed politics
-		trigger = { has_character_flag = college_politics }
-		name = univ.10.optA
-		clr_character_flag = college_politics
-		change_variable = { which = "college_years" value = 1 }
-		character_event = { id = univ.11 }
-		random_list = {
-			25 = { }
-			25 = { change_intrigue = 1 }
-			25 = { change_intrigue = 2 }
-			25 = { change_intrigue = 3 }
-		}
-		random_list = {
-			25 = { }
-			25 = { change_diplomacy = 1 }
-			25 = { change_diplomacy = 2 }
-			25 = { change_diplomacy = 3 }
-		}
-	}
-	
-	option = { # Completed science
-		trigger = { has_character_flag = college_science }
-		name = univ.10.optA
-		clr_character_flag = college_science
-		change_variable = { which = "college_years" value = 1 }
-		character_event = { id = univ.11 }
-		random_list = {
-			25 = { }
-			25 = { change_martial = 1 }
-			25 = { change_martial = 2 }
-			25 = { change_martial = 3 }
-		}
-		random_list = {
-			25 = { }
-			25 = { change_stewardship = 1 }
-			25 = { change_stewardship = 2 }
-			25 = { change_stewardship = 3 }
-		}
-	}
-	
-	option = { # Completed literature
-		trigger = { has_character_flag = college_literature }
-		name = univ.10.optA
-		clr_character_flag = college_literature
-		change_variable = { which = "college_years" value = 1 }
-		character_event = { id = univ.11 }
-		random_list = {
-			25 = { }
-			25 = { change_diplomacy = 1 }
-			25 = { change_diplomacy = 2 }
-			25 = { change_diplomacy = 3 }
-		}
-		random_list = {
-			25 = { }
-			25 = { change_learning = 1 }
-			25 = { change_learning = 2 }
-			25 = { change_learning = 3 }
-		}
-	}
-}
-
-# Choose school
-character_event = {
-	id = univ.11
-	desc = univ.11.desc
-	is_triggered_only = yes
-	picture = GFX_evt_recieve_letter
-	
-	immediate = {
-		clr_character_flag = college_history
-		clr_character_flag = college_science
-		clr_character_flag = college_literature
-		clr_character_flag = college_politics
-		clr_character_flag = college_business
-	}
 
 	option = {
 		ai_chance = { factor = 1 }
-		name = univ.11.optA # History
+		name = EVTOPT_history_major # History
+		custom_tooltip = { text = TXT_history_specializes_martial }
 		set_character_flag = college_history
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = univ.11.optB # Science
+		name = EVTOPT_science_major # Science
+		custom_tooltip = { text = TXT_science_specializes_learning }
 		set_character_flag = college_science
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = univ.11.optC # Business
-		set_character_flag = college_business
+		name = EVTOPT_mathematics_major # mathematics
+		custom_tooltip = { text = TXT_mathematics_specializes_stewardship }
+		set_character_flag = college_mathematics
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
 		ai_chance = { factor = 0 }
 		name = more_options
-		character_event = { id = univ.12 }
+		character_event = { id = univ.4 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = univ.11.optD # Politics
-		set_character_flag = college_politics
+		name = EVTOPT_psychology_major # Psychology
+		custom_tooltip = { text = TXT_psychology_specializes_intrigue }
+		set_character_flag = college_psychology
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = univ.11.optE # Literature
+		name = EVTOPT_literature_major # Literature
+		custom_tooltip = { text = TXT_literature_specializes_diplomacy }
 		set_character_flag = college_literature
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 }
 
 character_event = {
-	id = univ.12
-	desc = univ.11.desc
+	id = univ.4
+	desc = EVTDESC_choose_major
 	is_triggered_only = yes
 	picture = GFX_evt_recieve_letter
 	
 	option = {
-		name = univ.11.optD # Politics
-		set_character_flag = college_politics
+		name = EVTOPT_psychology_major # psychology
+		custom_tooltip = { text = TXT_psychology_specializes_intrigue }
+		set_character_flag = college_psychology
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
-		name = univ.11.optE # Literature
+		name = EVTOPT_literature_major # Literature
+		custom_tooltip = { text = TXT_literature_specializes_diplomacy }
 		set_character_flag = college_literature
+		set_character_flag = uni_freshman
+		character_event = { id = univ.5 days = 180 }
 	}
 	
 	option = {
 		name = more_options
-		character_event = { id = univ.11 }
+		character_event = { id = univ.3 }
+	}
+}
+
+# End of freshman year
+character_event = {
+	id = univ.5
+	desc = EVTDESC_freshman_end
+	is_triggered_only = yes
+	picture = GFX_evt_monk	
+
+	trigger = {
+		trait = student
+		has_character_flag = uni_freshman
+		NOT = { has_character_flag = uni_sophomore }
+	}
+
+	immediate = {
+		character_event = { id = univ.6 days = 180 }
+	}
+	
+	option = { # Completed history
+		trigger = { has_character_flag = college_history }
+		name = EVTOPT_freshman_end
+		clr_character_flag = uni_freshman
+		set_character_flag = uni_sophomore
+	}
+	
+	option = { # Completed mathematics
+		trigger = { has_character_flag = college_mathematics }
+		name = EVTOPT_freshman_end
+		clr_character_flag = uni_freshman
+		set_character_flag = uni_sophomore
+	}
+	
+	option = { # Completed psychology
+		trigger = { has_character_flag = college_psychology }
+		name = EVTOPT_freshman_end
+		clr_character_flag = uni_freshman
+		set_character_flag = uni_sophomore
+	}
+	
+	option = { # Completed science
+		trigger = { has_character_flag = college_science }
+		name = EVTOPT_freshman_end
+		clr_character_flag = uni_freshman
+		set_character_flag = uni_sophomore
+	}
+	
+	option = { # Completed literature
+		trigger = { has_character_flag = college_literature }
+		name = EVTOPT_freshman_end
+		clr_character_flag = uni_freshman
+		set_character_flag = uni_sophomore
+	}
+}
+
+# End of sophomore year
+character_event = {
+	id = univ.6
+	desc = EVTDESC_sophomore_end
+	is_triggered_only = yes
+	picture = GFX_evt_monk	
+
+	trigger = {
+		trait = student
+		has_character_flag = uni_sophomore
+		NOT = { has_character_flag = uni_junior }
+	}
+
+	immediate = {
+		character_event = { id = univ.7 days = 180 }
+	}
+	
+	option = { # Completed history
+		trigger = { has_character_flag = college_history }
+		name = EVTOPT_sophomore_end
+		clr_character_flag = uni_sophomore
+		set_character_flag = uni_junior
+	}
+	
+	option = { # Completed mathematics
+		trigger = { has_character_flag = college_mathematics }
+		name = EVTOPT_sophomore_end
+		clr_character_flag = uni_sophomore
+		set_character_flag = uni_junior
+	}
+	
+	option = { # Completed psychology
+		trigger = { has_character_flag = college_psychology }
+		name = EVTOPT_sophomore_end
+		clr_character_flag = uni_sophomore
+		set_character_flag = uni_junior
+	}
+	
+	option = { # Completed science
+		trigger = { has_character_flag = college_science }
+		name = EVTOPT_sophomore_end
+		clr_character_flag = uni_sophomore
+		set_character_flag = uni_junior
+	}
+	
+	option = { # Completed literature
+		trigger = { has_character_flag = college_literature }
+		name = EVTOPT_sophomore_end
+		clr_character_flag = uni_sophomore
+		set_character_flag = uni_junior
+	}
+}
+
+# End of junior year
+character_event = {
+	id = univ.7
+	desc = EVTDESC_junior_end
+	is_triggered_only = yes
+	picture = GFX_evt_monk	
+
+	trigger = {
+		trait = student
+		has_character_flag = uni_junior
+		NOT = { has_character_flag = uni_senior }
+	}
+
+	immediate = {
+		character_event = { id = univ.8 days = 180 }
+	}
+	
+	option = { # Completed history
+		trigger = { has_character_flag = college_history }
+		name = EVTOPT_junior_end
+		clr_character_flag = uni_junior
+		set_character_flag = uni_senior
+	}
+	
+	option = { # Completed mathematics
+		trigger = { has_character_flag = college_mathematics }
+		name = EVTOPT_junior_end
+		clr_character_flag = uni_junior
+		set_character_flag = uni_senior
+	}
+	
+	option = { # Completed psychology
+		trigger = { has_character_flag = college_psychology }
+		name = EVTOPT_junior_end
+		clr_character_flag = uni_junior
+		set_character_flag = uni_senior
+	}
+	
+	option = { # Completed science
+		trigger = { has_character_flag = college_science }
+		name = EVTOPT_junior_end
+		clr_character_flag = uni_junior
+		set_character_flag = uni_senior
+	}
+	
+	option = { # Completed literature
+		trigger = { has_character_flag = college_literature }
+		name = EVTOPT_junior_end
+		clr_character_flag = uni_junior
+		set_character_flag = uni_senior
+	}
+}
+
+# End of senior year
+character_event = {
+	id = univ.8
+	desc = EVTDESC_senior_end
+	is_triggered_only = yes
+	picture = GFX_evt_monk	
+
+	trigger = {
+		trait = student
+		has_character_flag = uni_senior
+	}
+
+	immediate = {
+		character_event = { id = univ.9 days = 3 }
+	}
+	
+	option = { # Completed history
+		trigger = { has_character_flag = college_history }
+		name = EVTOPT_senior_end
+	}
+	
+	option = { # Completed mathematics
+		trigger = { has_character_flag = college_mathematics }
+		name = EVTOPT_senior_end
+	}
+	
+	option = { # Completed psychology
+		trigger = { has_character_flag = college_psychology }
+		name = EVTOPT_senior_end
+	}
+	
+	option = { # Completed science
+		trigger = { has_character_flag = college_science }
+		name = EVTOPT_senior_end
+	}
+	
+	option = { # Completed literature
+		trigger = { has_character_flag = college_literature }
+		name = EVTOPT_senior_end
+	}
+}
+
+character_event = { #Graduation Day with Diploma
+	id = univ.9
+	desc = EVTDESC_graduation_day
+	is_triggered_only = yes
+	picture = GFX_evt_receive_letter
+
+	trigger = {
+		trait = student
+		has_character_flag = uni_senior
+	}
+
+	immediate = {
+		character_event = { id = univ.10 days = 1 }
+		clr_character_flag = uni_senior
+	}
+
+	option = { #Graduating with History Degree
+		name = EVTOPT_history_diploma
+		trigger = {
+			has_character_flag = college_history
+		}
+		remove_trait = student
+		add_trait = graduate
+		add_trait = history_degree
+		hidden_tooltip = { clr_character_flag = college_history }
+	}
+	option = { #Graduating with Science Degree
+		name = EVTOPT_science_diploma
+		trigger = {
+			has_character_flag = college_science
+		}
+		remove_trait = student
+		add_trait = graduate
+		add_trait = science_degree
+		hidden_tooltip = { clr_character_flag = college_science }
+	}
+	option = { #Graduating with Mathematics Degree
+		name = EVTOPT_mathematics_diploma
+		trigger = {
+			has_character_flag = college_mathematics
+		}
+		remove_trait = student
+		add_trait = graduate
+		add_trait = math_degree
+		hidden_tooltip = { clr_character_flag = college_mathematics }
+	}
+	option = { #Graduating with Psychology Degree
+		name = EVTOPT_psychology_diploma
+		trigger = {
+			has_character_flag = college_psychology
+		}
+		remove_trait = student
+		add_trait = graduate
+		add_trait = psych_degree
+		hidden_tooltip = { clr_character_flag = college_psychology }
+	}
+	option = { #Graduating with Literature Degree
+		name = EVTOPT_literature_diploma
+		trigger = {
+			has_character_flag = college_literature
+		}
+		remove_trait = student
+		add_trait = graduate
+		add_trait = literature_degree
+		hidden_tooltip = { clr_character_flag = college_literature }
+	}
+}
+
+character_event = { #Finally out of university!
+	id = univ.10
+	desc = EVTDESC_becoming_alumni
+	is_triggered_only = yes
+	picture = GFX_evt_receive_letter
+
+	immediate = {
+		character_event = { id = univ.11 days = 7 }
+	}
+
+	option = { #Cambridge Alumni
+		name = EVTOPT_stanford_alumni
+		trigger = {
+			has_character_flag = u_cambridge
+		}
+		hidden_tooltip = { clr_character_flag = u_cambridge }
+		add_character_modifier = { name = uni_cambridge_alumni duration = -1 }
+	}
+	option = { #Berkeley Alumni
+		name = EVTOPT_berkeley_alumni
+		trigger = {
+			has_character_flag = u_berkeley
+		}
+		hidden_tooltip = { clr_character_flag = u_berkeley }
+		add_character_modifier = { name = uni_berkeley_alumni duration = -1 }
+	}
+	option = { #University of Georgia Alumni
+		name = EVTOPT_georgia_alumni
+		trigger = {
+			has_character_flag = u_georgia
+		}
+		hidden_tooltip = { clr_character_flag = u_georgia }
+		add_character_modifier = { name = uni_georgia_alumni duration = -1 }
+	}
+	option = { #University of Boulder Alumni
+		name = EVTOPT_boulder_alumni
+		trigger = {
+			has_character_flag = u_boulder
+		}
+		hidden_tooltip = { clr_character_flag = u_boulder }
+		add_character_modifier = { name = uni_boulder_alumni duration = -1 }
+	}
+	option = { #University of Chicago Alumni
+		name = EVTOPT_seattle_alumni
+		trigger = {
+			has_character_flag = u_chicago
+		}
+		hidden_tooltip = { clr_character_flag = u_chicago }
+		add_character_modifier = { name = uni_seattle_alumni duration = -1 }
+	}
+	option = { #University of Texas Alumni
+		name = EVTOPT_texas_alumni
+		trigger = {
+			has_character_flag = u_texas
+		}
+		hidden_tooltip = { clr_character_flag = u_texas }
+		add_character_modifier = { name = uni_texas_alumni duration = -1 }
+	}
+	option = { #Los Alamos National Laboratory Alumni
+		name = EVTOPT_los_alamos_alumni
+		trigger = {
+			has_character_flag = u_los_alamos
+		}
+		hidden_tooltip = { clr_character_flag = u_los_alamos }
+		add_character_modifier = { name = uni_los_alamos_alumni duration = -1 }
+	}
+	option = { #Alumni for your local university
+		name = EVTOPT_local_univ_alumni
+		trigger = {
+			has_character_flag = u_local_univ
+		}
+		hidden_tooltip = { clr_character_flag = u_local_univ }
+		add_character_modifier = { name = local_univ_alumni duration = -1 }
+	}
+}
+
+character_event = {
+	id = univ.11
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = u_cambridge
+		clr_character_flag = u_berkeley
+		clr_character_flag = u_georgia
+		clr_character_flag = u_boulder
+		clr_character_flag = u_chicago
+		clr_character_flag = u_texas
+		clr_character_flag = u_los_alamos
+		clr_character_flag = u_local_univ
+		clr_character_flag = college_history
+		clr_character_flag = college_science
+		clr_character_flag = college_mathematics
+		clr_character_flag = college_psychology
+		clr_character_flag = college_literature
+	}
+}
+
+# Changing Your Major
+character_event = {
+	id = univ.12
+	desc = EVTDESC_choose_major
+	is_triggered_only = yes
+	picture = GFX_evt_recieve_letter
+
+	trigger = {
+		trait = student
+	}
+
+	option = {
+		ai_chance = { factor = 1 }
+		name = EVTOPT_history_major # History
+		custom_tooltip = { text = TXT_history_specializes_martial }
+		set_character_flag = college_history
+		hidden_tooltip = {
+			clr_character_flag = college_science
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_psychology
+			clr_character_flag = college_literature
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = EVTOPT_science_major # Science
+		custom_tooltip = { text = TXT_science_specializes_learning }
+		set_character_flag = college_science
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_psychology
+			clr_character_flag = college_literature
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = EVTOPT_mathematics_major # mathematics
+		custom_tooltip = { text = TXT_mathematics_specializes_stewardship }
+		set_character_flag = college_mathematics
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_science
+			clr_character_flag = college_psychology
+			clr_character_flag = college_literature
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 0 }
+		name = more_options
+		character_event = { id = univ.13 }
+	}
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = EVTOPT_psychology_major # Psychology
+		custom_tooltip = { text = TXT_psychology_specializes_intrigue }
+		set_character_flag = college_psychology
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_science
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_literature
+		}
+	}
+	
+	option = {
+		ai_chance = { factor = 1 }
+		name = EVTOPT_literature_major # Literature
+		custom_tooltip = { text = TXT_literature_specializes_diplomacy }
+		set_character_flag = college_literature
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_science
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_psychology
+		}
+	}
+}
+
+character_event = {
+	id = univ.13
+	desc = EVTDESC_choose_major
+	is_triggered_only = yes
+	picture = GFX_evt_recieve_letter
+	
+	option = {
+		name = EVTOPT_psychology_major # psychology
+		custom_tooltip = { text = TXT_psychology_specializes_intrigue }
+		set_character_flag = college_psychology
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_science
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_literature
+		}
+	}
+	
+	option = {
+		name = EVTOPT_literature_major # Literature
+		custom_tooltip = { text = TXT_literature_specializes_diplomacy }
+		set_character_flag = college_literature
+		hidden_tooltip = {
+			clr_character_flag = college_history
+			clr_character_flag = college_science
+			clr_character_flag = college_mathematics
+			clr_character_flag = college_psychology
+		}
+	}
+	
+	option = {
+		name = more_options
+		character_event = { id = univ.12 }
 	}
 }

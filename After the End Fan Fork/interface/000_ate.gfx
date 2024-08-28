@@ -252,6 +252,81 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
+		name = "GFX_trait_math_degree"
+		texturefile = "gfx/traits/math_degree.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_history_degree"
+		texturefile = "gfx/traits/history_degree.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_literature_degree"
+		texturefile = "gfx/traits/literature_degree.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_science_degree"
+		texturefile = "gfx/traits/science_degree.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_trait_psych_degree"
+		texturefile = "gfx/traits/psych_degree.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = GFX_trait_football
+		texturefile = "gfx/traits/football.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = GFX_trait_hockey
+		texturefile = "gfx/traits/hockey.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = GFX_trait_painter
+		texturefile = "gfx/traits/painter.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+		name = GFX_trait_chariot
+		texturefile = "gfx/traits/chariot.dds"
+		noOfFrames = 1
+		norefcount = yes
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+spriteType = {
+	name = "GFX_change_college_major"
+	texturefile = "gfx/interface/decision_icon_change_majors.dds"
+}
+spriteType = {
+	name = "GFX_attend_university"
+	texturefile = "gfx/interface/decision_icon_enroll_in_university.dds"
+}
+spriteType = {
+	name = "GFX_send_kid_to_university"
+	texturefile = "gfx/interface/decision_icon_send_kids_to_university.dds"
+}
+	spriteType = {
 		name = "GFX_trait_zombi"
 		texturefile = "gfx/traits/zombi.tga"
 		noOfFrames = 1

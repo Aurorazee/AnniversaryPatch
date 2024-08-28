@@ -1,0 +1,185 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+#University Events/Titles
+title_court_univ_scientist;University Scientist;;;;;;;;;;;;;x
+title_imperial_univ_superintendent;Imperial University Superintendent;;;;;;;;;;;;;x
+title_court_univ_mathematician;University Mathematician;;;;;;;;;;;;;x
+title_court_univ_mindhunter;University Psychologist;;;;;;;;;;;;;x
+title_court_univ_librarian;University Librarian;;;;;;;;;;;;;x
+title_court_univ_historian;University Historian;;;;;;;;;;;;;x
+
+EVTDESC_univ_1;Even after the Event, education still remains a priority, and some universities has survived for those with means. Which will you attend?;;;;;;;;;;;;;x
+EVTOPT_univ_cambridge;I'm off to Cambridge!;;;;;;;;;;;;;x
+EVTOPT_univ_berkeley;Berkeley, here I come!;;;;;;;;;;;;;x
+EVTOPT_univ_of_georgia;I'm off to Athens!;;;;;;;;;;;;;x
+EVTOPT_univ_colorado_boulder;I'm off to Boulder!;;;;;;;;;;;;;x
+EVTOPT_univ_chicago;Chicago bound!;;;;;;;;;;;;;x
+EVTOPT_univ_texas;College Station, here I come!;;;;;;;;;;;;;x
+EVTOPT_univ_los_alamos;Los Alamos, here I come!;;;;;;;;;;;;;x
+EVTOPT_go_local_university;I will go local...;;;;;;;;;;;;;x
+
+EVTDESC_choose_major;You may choose your major for the year at university. Which major will you choose?;;;;;;;;;;;;;x
+EVTOPT_history_major;I will study history.;;;;;;;;;;;;;x
+EVTOPT_science_major;I will study the sciences.;;;;;;;;;;;;;x
+EVTOPT_mathematics_major;I will study mathematics.;;;;;;;;;;;;;x
+EVTOPT_literature_major;I will study literature.;;;;;;;;;;;;;x
+EVTOPT_psychology_major;I will study the mind, maybe even my own.;;;;;;;;;;;;;x
+
+EVTDESC_freshman_end;Your freshman year has come to an end, and you've passed your studies. Another year down!;;;;;;;;;;;;;x
+EVTOPT_freshman_end;My freshman year is over!;;;;;;;;;;;;;x
+EVTDESC_sophomore_end;Your sophmore year has come to an end, and you've passed your studies. Another year down!;;;;;;;;;;;;;x
+EVTOPT_sophomore_end;My sophmore year is over!;;;;;;;;;;;;;x
+EVTDESC_junior_end;Your junior year has come to an end, and you've passed your studies. Another year down!;;;;;;;;;;;;;x
+EVTOPT_junior_end;My junior year is over!;;;;;;;;;;;;;x
+EVTDESC_senior_end;You senior year has drawn to a close, and graduation is nearing. Was it all worth it?;;;;;;;;;;;;;x
+EVTOPT_senior_end;Graduation here I come!;;;;;;;;;;;;;x
+
+EVTDESC_graduation_day;Graduation Day has arrived! You walk on the stage and accept your diploma, shaking hands with the dean.;;;;;;;;;;;;;x
+EVTOPT_history_diploma;History is my passion!;;;;;;;;;;;;;x
+EVTOPT_science_diploma;Science is my passion!;;;;;;;;;;;;;x
+EVTOPT_mathematics_diploma;Mathematics is my passion!;;;;;;;;;;;;;x
+EVTOPT_psychology_diploma;I read a lot of true crime.;;;;;;;;;;;;;x
+EVTOPT_literature_diploma;Literature is my passion!;;;;;;;;;;;;;x
+
+EVTDESC_becoming_alumni;You have finished your time in university, and it is time to go home.;;;;;;;;;;;;;x
+EVTOPT_cambridge_alumni;Goodbye Cambridge!;;;;;;;;;;;;;x
+EVTOPT_berkeley_alumni;Goodbye Berkeley!;;;;;;;;;;;;;x
+EVTOPT_georgia_alumni;Goodbye Athens!;;;;;;;;;;;;;x
+EVTOPT_boulder_alumni;Goodbye Boulder!;;;;;;;;;;;;;x
+EVTOPT_chicago_alumni;Goodbye Chicago!;;;;;;;;;;;;;x
+EVTOPT_texas_alumni;Goodbye Texas A&M!;;;;;;;;;;;;;x
+EVTOPT_los_alamos_alumni;Goodbye Los Alamos!;;;;;;;;;;;;;x
+EVTOPT_local_univ_alumni;Goodbye!;;;;;;;;;;;;;x
+
+sports_team_desc;There are sports teams on campus, and you have to option to join one of them. Which will you choose?;;;;;;;;;;;;;x
+EVTOPT_football_team;Football, into the Red Zone!;;;;;;;;;;;;;x
+EVTOPT_hockey_team;Hockey, the cool sport.;;;;;;;;;;;;;x
+
+EVTNAME_sports_1;The Big Game;;;;;;;;;;;;;x
+EVTDESC_football_1;Today is the Big Game. The football field has been freshly mown, and both teams are ready to play. Your team wins the coin toss, and the game begins.;;;;;;;;;;;;;x
+EVTDESC_hockey_1;Today is the Big Game. The ice rink has been prepared, and both teams are ready to play. You team loses the coin toss, and the game begins.;;;;;;;;;;;;;x
+EVTOPT_football_1;Play ball!;;;;;;;;;;;;;x
+EVTOPT_hockey_1;Got stick?;;;;;;;;;;;;;x
+
+EVTNAME_sports_2;The First Quarter;;;;;;;;;;;;;x
+EVTDESC_football_2;Your team kicks off, and the football game begins. The opposing team makes a good return, but they are stopped at the 50-yard line, forced to punt. The ball is then exchanged a few times while both sides struggle to score a touchdown.;;;;;;;;;;;;;x
+EVTDESC_hockey_2;Your team is shooting first, and the hockey game begins. Your team makes a good show, but they are stopped repeatedly before you can score, the game quickly becoming a shoot-out between both teams to score the first goal.;;;;;;;;;;;;;x
+EVTOPT_football_2;Just play!;;;;;;;;;;;;;x
+EVTOPT_hockey_2;All out!;;;;;;;;;;;;;x
+
+EVTNAME_sports_3;Good First Quarter;;;;;;;;;;;;;x
+EVTDESC_football_3;On a fourth and 10, you are chucked the football, and you barrel downfield past numerous defenders. One of them collides with you, but it's too late: you've made it to the end zone! The first quarter has ended.;;;;;;;;;;;;;x
+EVTDESC_hockey_3;You take the puck, and you glide through the rink, almost effortlessly past defenders. Faced with the goalie, you take the shot: it goes in! The first quarter has ended.;;;;;;;;;;;;;x
+EVTOPT_football_3;We smell FEAR.;;;;;;;;;;;;;x
+EVTOPT_hockey_3;Game on!;;;;;;;;;;;;;x
+
+EVTNAME_sports_4;Bad First Quarter;;;;;;;;;;;;;x
+EVTDESC_football_4;On a fourth and 10, you are chucked the football, and you barrel downfield, only to be met by a dozen defenders all on you like white on rice. You fumble the ball, and the opposing team drives up the field, scoring a touchdown and ending the first quarter.;;;;;;;;;;;;;x
+EVTDESC_hockey_4;You take the puck, and you glide through the rink only to get slammed into by a defender. The player steals the puck and goes down the rink, scoring the first goal himself. The first quarter has ended.;;;;;;;;;;;;;x
+EVTOPT_football_4;Guard the yard!;;;;;;;;;;;;;x
+EVTOPT_hockey_4;Smell my bag!;;;;;;;;;;;;;x
+
+EVTNAME_sports_5;The Second Quarter;;;;;;;;;;;;;x
+EVTDESC_football_5;The second quarter begins with your team within their own twenty five yard line, struggling to get across midfield. Your team defaults on downs, and the ball goes back to the opposing team.;;;;;;;;;;;;;x
+EVTDESC_hockey_5;Your team goes on the offensive, and the ice rink becomes a battlefield as the two teams clash, with the opposing team eventually taking back the puck.;;;;;;;;;;;;;x
+EVTOPT_football_5;One team, one goal.;;;;;;;;;;;;;x
+EVTOPT_hockey_5;Refuse to lose!;;;;;;;;;;;;;x
+
+EVTNAME_sports_6;Good Second Quarter;;;;;;;;;;;;;x
+EVTDESC_football_6;The opposing quarterback runs the ball, and you tackle him right after he breaks through the line, taking him down. The opposing team subsequently defaults on downs, and your team leads at the half.;;;;;;;;;;;;;x
+EVTDESC_hockey_6;The opposing team stumbles, and you take back the puck, passing it to another player who quickly scores a goal. By the end of the quarter, your team is leading.;;;;;;;;;;;;;x
+EVTOPT_football_6;Bring the heat!;;;;;;;;;;;;;x
+EVTOPT_hockey_6;Whatever it takes.;;;;;;;;;;;;;x
+
+EVTNAME_sports_7;Bad Second Quarter;;;;;;;;;;;;;x
+EVTDESC_football_7;The opposing quarterback runs the ball, and he breaks through the line, with you stumbling over yourself after him. He scores a touchdown, and your team is down at halftime.;;;;;;;;;;;;;x
+EVTDESC_hockey_7;The opposing team goes hard, giving you a bloody nose, and they score a fews goals, putting themselves well ahead of your team.;;;;;;;;;;;;;x
+EVTOPT_football_7;Fight on.;;;;;;;;;;;;;x
+EVTOPT_hockey_7;We came to play.;;;;;;;;;;;;;x
+
+EVTNAME_sports_8;The Third Quarter;;;;;;;;;;;;;x
+EVTDESC_football_8;After the kickoff following halftime, the two teams go back and forth. Eventually, your team is on the defense, with the opposing team marching down the field. On a second and 6, the opposing quarterback rears back and passes the ball, making a hail mary towards a running reciever.;;;;;;;;;;;;;x
+EVTDESC_hockey_8;Your team goes forth, and the two teams go back and forth across the hockey rink, with both teams scoring a goal. However, no team seems to get ahead.;;;;;;;;;;;;;x
+EVTOPT_football_8;Earn it.;;;;;;;;;;;;;x
+EVTOPT_hockey_8;We believe that we will win.;;;;;;;;;;;;;x
+
+EVTNAME_sports_9;Good Third Quarter;;;;;;;;;;;;;x
+EVTDESC_football_9;You book it down the field and intercept the football, running down the field until you are tackled. Your team eventually scores a touchdown, and the momentum is clearly in your team's favor going into the final quarter.;;;;;;;;;;;;;x
+EVTDESC_hockey_9;You manage to muscle your way through the opposing team, providing an opening for your other players to go forth and score another goal. Momentum is clearly in your team's favor.;;;;;;;;;;;;;x
+EVTOPT_football_9;Win the day!;;;;;;;;;;;;;x
+EVTOPT_hockey_9;As one!;;;;;;;;;;;;;x
+
+EVTNAME_sports_10;Bad Third Quarter;;;;;;;;;;;;;x
+EVTDESC_football_10;You book it down the field, but it is no good, the ball sails over your head and into the hands of the opposing team's reciever. He runs down the field to get a touchdown, and the game is not looking good going into the final quarter.;;;;;;;;;;;;;x
+EVTDESC_hockey_10;You try to muscle your way through the opposing team, but they stand strong, and you team is rebuffed, with the opposing team going on the offensive and scoring. Momentum is clearly in the opposing team's favor.;;;;;;;;;;;;;x
+EVTOPT_football_10;Refuse to lose.;;;;;;;;;;;;;x
+EVTOPT_hockey_10;Surrender the ME for the WE.;;;;;;;;;;;;;x
+
+EVTNAME_sports_11;The Fourth Quarter;;;;;;;;;;;;;x
+EVTDESC_football_11;It is the final quarter, and the clock is ticking. Your team is desperate for a final push to pull ahead in points, but time is of the essence.;;;;;;;;;;;;;x
+EVTDESC_hockey_11;It is the final period, and the clock is ticking. Your team is desperate for a final push to pull ahead in goals, but the time is of the essence.;;;;;;;;;;;;;x
+EVTOPT_football_11;Score more!;;;;;;;;;;;;;x
+EVTOPT_hockey_11; Now is the time.;;;;;;;;;;;;;x
+
+EVTNAME_sports_12;Good Fourth Quarter;;;;;;;;;;;;;x
+EVTDESC_football_12;In the final quarter, your team does admirably, scoring some touchdowns and dominating both the running and passing game. The opposing team barely gets twenty yards the entire quarter.;;;;;;;;;;;;;x
+EVTDESC_hockey_12;In the final period, you team does admirably, scoring some goals and dominating the rink. The opposing team struggles to hold on to the puck at all.;;;;;;;;;;;;;x
+EVTOPT_football_12;Next man up!;;;;;;;;;;;;;x
+EVTOPT_hockey_12;One team, one dream.;;;;;;;;;;;;;x
+
+EVTNAME_sports_13;Bad Fourth Quarter;;;;;;;;;;;;;x
+EVTDESC_football_13;In the final quarter, your team does miserably, scoring no touchdowns. The opposing team dominates the field and scores touchdowns unopposed, holding you to barely twenty five yards.;;;;;;;;;;;;;x
+EVTDESC_hockey_13;In the final period, your team does miserably, scoring no goals. The opposing team dominates the rink and scores goals unopposed, their goalie blocking every attempt to to score.;;;;;;;;;;;;;x
+EVTOPT_football_13;Hustle!;;;;;;;;;;;;;x
+EVTOPT_hockey_13;Well shit.;;;;;;;;;;;;;x
+
+EVTNAME_sports_15;Sweet Sweet Victory;;;;;;;;;;;;;x
+EVTDESC_football_15;The clock ticks down to zero, and your team ends up with more touchdowns and field goals. Your university storms the field, the cooler is dumped on the head coach, and you are hauled up upon the shoulders of the other players. You have won!;;;;;;;;;;;;;x
+EVTDESC_hockey_15;The clock ticks down to zero, and your teams ends up with more goals. Your team gets their head together, and they cheer at their vicory, rebuffing the opposing team as they try to start a fight. You have won!;;;;;;;;;;;;;x
+EVTOPT_football_15;Thank you [Root.Religion.GetHighGodName]!;;;;;;;;;;;;;x
+EVTOPT_hockey_15;Strong to the finish!;;;;;;;;;;;;;x
+
+EVTNAME_sports_16;Tied;;;;;;;;;;;;;x
+EVTDESC_football_16;The clock ticks down to zero, and your team ends up with the same amount of touchdowns and field goals. The two teams meet and shake, and the game is called a tie.;;;;;;;;;;;;;x
+EVTDESC_hockey_16;The clock ticks down to zero, and your team ends up with the same amount of goals, it's a time. The two teams, unsatified with the result, start brawling the middle of the rink!;;;;;;;;;;;;;x
+EVTOPT_football_16;I'll be damned.;;;;;;;;;;;;;x
+EVTOPT_hockey_16;Hit or be hit.;;;;;;;;;;;;;x
+
+EVTNAME_sports_17;Defeat, Bitter Defeat;;;;;;;;;;;;;x
+EVTDESC_football_17;The clock ticks down to zero, and your team ends up with less touchdowns and field goals with the opposing team. The other university rushes the field in celebration as your team leaves in shame. You have lost.;;;;;;;;;;;;;x
+EVTDESC_hockey_17;The clock ticks down to zero, and your team ends the game with less goals than your opponent. Your team, indignant at the disrespect shown by the opposing team, provokes a brawl that eventually consumes the entire rink! You have lost.;;;;;;;;;;;;;x
+EVTOPT_football_17;There's always another year.;;;;;;;;;;;;;x
+EVTOPT_hockey_17;Let me at them!;;;;;;;;;;;;;x
+
+#University Traits and Modifiers
+student;Student;;;;;;;;;;;;;x
+student_desc;This character is a student at university.;;;;;;;;;;;;;x
+graduate;Graduate;;;;;;;;;;;;;x
+graduate_desc;This character has graduated from university.;;;;;;;;;;;;;x
+football;Football Player;;;;;;;;;;;;;x
+football_desc;This character plays and enjoys the sport of football.;;;;;;;;;;;;;x
+hockey;Hockey Player;;;;;;;;;;;;;x
+hockey_desc;This character plays and enjoys the sport of hockey.;;;;;;;;;;;;;x
+chariot;Charioteer;;;;;;;;;;;;;x
+chariot_desc;This character races chariots in grand stadiums.;;;;;;;;;;;;;x
+
+science_degree;Science Degree;;;;;;;;;;;;;x
+science_degree_desc;This character has been educated in the natural sciences.;;;;;;;;;;;;;x
+literature_degree;Literature Degree;;;;;;;;;;;;;x
+literature_degree_desc;This character has been educated in classical literature.;;;;;;;;;;;;;x
+math_degree;Mathematics Degree;;;;;;;;;;;;;x
+math_degree_desc;This character has been educated in algebra, calculus, and arithmetic.;;;;;;;;;;;;;x
+history_degree;History Degree;;;;;;;;;;;;;x
+history_degree_desc;This character has been educated in history, from before the Event and after.;;;;;;;;;;;;;x
+psych_degree;Psychology Degree;;;;;;;;;;;;;x
+psych_degree_desc;This character has been educated in the study of the mind and behavior.;;;;;;;;;;;;;x
+
+uni_cambridge_alumni;Cambridge Alumni;;;;;;;;;;;;;x
+uni_berkeley_alumni;Berkeley Alumni;;;;;;;;;;;;;x
+uni_georgia_alumni;Georgia Alumni;;;;;;;;;;;;;x
+uni_boulder_alumni;Boulder Alumni;;;;;;;;;;;;;x
+uni_chicago_alumni;Chicago Alumni;;;;;;;;;;;;;x
+uni_texas_alumni;Texas A&M Alumni;;;;;;;;;;;;;x
+uni_los_alamos_alumni;Los Alamos Alumni;;;;;;;;;;;;;x
+local_univ_alumni;Alumni for Local University;;;;;;;;;;;;;x
+won_big_game;Won the Big Game;;;;;;;;;;;;;x

@@ -1,0 +1,42 @@
+uni_cambridge_alumni = {
+	icon = 2
+}
+
+uni_berkeley_alumni = {
+	icon = 2
+}
+
+uni_athens_alumni = {
+	icon = 2
+}
+
+uni_boulder_alumni = {
+	icon = 2
+}
+
+uni_chicago_alumni = {
+	icon = 2
+}
+
+uni_texas_alumni = {
+	icon = 2
+}
+
+uni_los_alamos_alumni = {
+	icon = 2
+}
+
+local_univ_alumni = {
+	icon = 2
+}
+
+completed_big_game = {
+	icon = 7
+	hidden = yes
+}
+
+won_big_game = {
+	icon = 7
+	football_opinion = 5
+	hockey_opinion = 5
+}
