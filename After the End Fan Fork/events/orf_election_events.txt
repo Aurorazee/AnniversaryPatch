@@ -435,7 +435,7 @@ character_event = {
 #	}
 	
 	option = {
-		Trigger = {
+		trigger = {
 			had_character_flag = {
 				flag = orf_election_running
 				days = 60
@@ -656,7 +656,7 @@ character_event = {
 	}
 	
 	option = {
-		Trigger = {
+		trigger = {
 			had_character_flag = {
 				flag = orf_election_running
 				days = 60
