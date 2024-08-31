@@ -3,11 +3,6 @@ namespace = HFP
 # Written by Joachim
 # HFP.44000 - HFP.44999 
 
-namespace = HFP
-
-# Written by Joachim
-# HFP.44000 - HFP.44999 
-
 # Knights Hospitaller wants an island
 character_event = {
 	id = HFP.44000
@@ -211,7 +206,7 @@ letter_event = {
 									tier = BARON
 									tier = COUNT
 								}
-								holding_type = CASTLE
+								holding_type = castle
 							}
 							title = d_knights_of_peter_claver
 						}
@@ -219,7 +214,7 @@ letter_event = {
 					if = {
 						limit = {
 							tier = BARON
-							holding_type = CITY
+							holding_type = city
 						}
 						create_random_steward = {
 							random_traits = yes
@@ -229,7 +224,7 @@ letter_event = {
 					else_if = {
 						limit = {
 							tier = BARON
-							holding_type = TEMPLE
+							holding_type = temple
 						}
 						create_random_priest = {
 							random_traits = yes
