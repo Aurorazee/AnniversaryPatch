@@ -722,8 +722,6 @@ narrative_event={
 character_event = {
 	id = texas.49
 	desc = EVTDESC_texas_50
-	
-	
 	is_triggered_only = yes
 	min_age = 16
 	
@@ -783,7 +781,6 @@ character_event = {
 	id = texas.50
 	desc = EVTDESC_texas_50
 	ai = no
-	#pre-triggers
 	min_age = 16
 	only_rulers = yes
 	trigger = {
@@ -872,7 +869,6 @@ character_event = {
 	id = texas.51
 	desc = EVTDESC_texas_50
 	ai = no
-	#pre-triggers
 	min_age = 16
 	has_job_title = yes
 	trigger = {

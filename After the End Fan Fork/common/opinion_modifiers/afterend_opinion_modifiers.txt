@@ -300,3 +300,7 @@ tried_to_convert_me = {
 	opinion = -15
 	months = 120
 }
+running_against = {
+	opinion = -50
+	years = 2
+}

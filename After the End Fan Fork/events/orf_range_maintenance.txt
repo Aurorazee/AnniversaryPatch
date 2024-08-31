@@ -1,0 +1,450 @@
+namespace = ORFmaint
+
+#Range Shrinkage (on_settlement_construction_completed)
+province_event = {
+	id = ORFmaint.1
+	hide_window = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		FROM = {
+			location = {
+				owner = {
+					government = open_range_feudalism_government
+				}
+				OR = {
+					AND = {
+						num_of_empty_holdings == 0
+						OR = {
+							has_building = open_range_2
+							has_building = open_range_3
+							has_building = open_range_4
+							has_building = open_range_5
+							has_building = open_range_6
+							has_building = open_range_7
+						}
+					}
+					AND = {
+						num_of_empty_holdings == 1
+						OR = {
+							has_building = open_range_3
+							has_building = open_range_4
+							has_building = open_range_5
+							has_building = open_range_6
+							has_building = open_range_7
+						}
+					}
+					AND = {
+						num_of_empty_holdings == 2
+						OR = {
+							has_building = open_range_4
+							has_building = open_range_5
+							has_building = open_range_6
+							has_building = open_range_7
+						}
+					}
+					AND = {
+						num_of_empty_holdings == 3
+						OR = {
+							has_building = open_range_5
+							has_building = open_range_6
+							has_building = open_range_7
+						}
+					}
+					AND = {
+						num_of_empty_holdings == 4
+						OR = {
+							has_building = open_range_6
+							has_building = open_range_7
+						}
+					}
+					AND = {
+						num_of_empty_holdings == 5
+						OR = {
+							has_building = open_range_7
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			location = {
+				owner = {
+					character_event = { id = ORFmaint.2 }
+				}
+			}
+		}
+	}
+}
+
+#Range Shrinkage Ping
+character_event = {
+	id = ORFmaint.2
+	picture = GFX_evt_horsemanship
+	title = EVTTITLE_ORFmaint_2
+	desc = EVTDESC_ORFmaint_2
+	is_triggered_only = yes
+
+	option = {
+		name = OPTA_ORFmaint_2
+		FROMFROM = {
+			location = {
+				capital_holding = {
+					if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 0
+							}
+						}
+						remove_building = open_range_2
+						remove_building = open_range_3
+						remove_building = open_range_4
+						remove_building = open_range_5
+						remove_building = open_range_6
+						remove_building = open_range_7
+					}
+					else_if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 1
+							}
+						}
+						remove_building = open_range_3
+						remove_building = open_range_4
+						remove_building = open_range_5
+						remove_building = open_range_6
+						remove_building = open_range_7
+					}
+					else_if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 2
+							}
+						}
+						remove_building = open_range_4
+						remove_building = open_range_5
+						remove_building = open_range_6
+						remove_building = open_range_7
+					}
+					else_if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 3
+							}
+						}
+						remove_building = open_range_5
+						remove_building = open_range_6
+						remove_building = open_range_7
+					}
+					else_if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 4
+							}
+						}
+						remove_building = open_range_6
+						remove_building = open_range_7
+					}
+					else_if = {
+						limit = {
+							PREV = {
+								num_of_empty_holdings == 5
+							}
+						}
+						remove_building = open_range_7
+					}
+				}
+			}
+		}
+	}
+}
+
+#Removes range buildings from non-ORF provinces for cleanliness' sake
+character_event = {
+	id = ORFmaint.3
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		higher_real_tier_than = BARON
+		NOR = { 
+			government = open_range_feudalism_government 
+			primary_title = {
+				has_title_flag = ORF_reject
+			}
+		}
+		any_demesne_province = {
+			OR = {
+				has_building = open_range_1
+				has_building = open_range_2
+				has_building = open_range_3
+				has_building = open_range_4
+				has_building = open_range_5
+				has_building = open_range_6
+				has_building = open_range_7
+			}
+		}
+	}
+	immediate = {
+		any_demesne_province = {
+			any_province_holding = {
+				limit = {
+					OR = {
+						has_building = open_range_1
+						has_building = open_range_2
+						has_building = open_range_3
+						has_building = open_range_4
+						has_building = open_range_5
+						has_building = open_range_6
+						has_building = open_range_7
+					}
+				}
+				remove_building = open_range_1
+				remove_building = open_range_2
+				remove_building = open_range_3
+				remove_building = open_range_4
+				remove_building = open_range_5
+				remove_building = open_range_6
+				remove_building = open_range_7
+			}
+		}
+	}
+}
+
+#Remove ORF_reject flag if you're ineligible for ORF
+character_event = {
+	id = ORFmaint.4
+	hide_window = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		NAND = {
+			capital_scope = {
+				region = custom_range_range
+			}
+			controls_religion = no
+			is_patrician = no
+			NOT = { is_government_potential = mormon_government }
+			NOT = { is_government_potential = mex_imperial_government }
+			NOT = { is_government_potential = bureaucratic_government }
+			NOT = { is_government_potential = theocratic_feudal_government }
+		}
+		any_demesne_title = {
+			has_title_flag = ORF_reject
+		}
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		any_demesne_title = {
+			clr_title_flag = ORF_reject
+		}
+	}
+}
+
+#Removes ORF_reject for equal or lower non-primary titles
+character_event = {
+	id = ORFmaint.5
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		primary_title = {
+			OR = {
+				tier = FROM
+				higher_real_tier_than = FROM
+			}
+		}
+		FROM = {
+			has_title_flag = ORF_reject
+		}
+	}
+	
+	immediate = {
+		FROM = {
+			clr_title_flag = ORF_reject
+		}
+	}
+}
+
+#ORF_reject primary title switch
+character_event = {
+	id = ORFmaint.6
+	hide_window = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		capital_scope = {
+			region = custom_range_range
+		}
+		controls_religion = no
+		is_patrician = no
+		NOT = { is_government_potential = mormon_government }
+		NOT = { is_government_potential = mex_imperial_government }
+		NOT = { is_government_potential = bureaucratic_government }
+		NOT = { is_government_potential = theocratic_feudal_government }
+		primary_title = {
+			NOT = {
+				has_title_flag = ORF_reject
+			}
+			owner = {
+				any_demesne_title = {
+					tier = PREVPREV
+					has_title_flag = ORF_reject
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		any_demesne_title = {
+			limit = {
+				has_title_flag = ORF_reject
+			}
+			clr_title_flag = ORF_reject
+		}
+		primary_title = {
+			set_title_flag = ORF_reject
+		}
+		set_government_type = open_range_feudalism_government
+	}
+}
+
+#Remove ORF_embrace flag if you're ineligible for ORF
+character_event = {
+	id = ORFmaint.7
+	hide_window = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		NOT = {
+			capital_scope = {
+				region = custom_range_range
+			}
+		}
+		any_demesne_title = {
+			has_title_flag = ORF_embrace
+		} 
+	}
+	
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		any_demesne_title = {
+			clr_title_flag = ORF_embrace
+		}
+	}
+}
+
+#Removes ORF_embrace for equal or lower non-primary titles
+character_event = {
+	id = ORFmaint.8
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		primary_title = {
+			OR = {
+				tier = FROM
+				higher_real_tier_than = FROM
+			}
+		}
+		FROM = {
+			has_title_flag = ORF_embrace
+		}
+	}
+
+	immediate = {
+		FROM = {
+			clr_title_flag = ORF_embrace
+		}
+	}
+}
+
+#ORF_embrace primary title switch
+character_event = {
+	id = ORFmaint.9
+	hide_window = yes
+	trigger = {
+		higher_real_tier_than = BARON
+		capital_scope = {
+			region = custom_range_range
+		}
+		controls_religion = no
+		is_patrician = no
+		NOT = { is_government_potential = mormon_government }
+		NOT = { is_government_potential = mex_imperial_government }
+		NOT = { is_government_potential = bureaucratic_government }
+		NOT = { is_government_potential = theocratic_feudal_government }
+		primary_title = {
+			NOT = {
+				has_title_flag = ORF_embrace
+			}
+			owner = {
+				any_demesne_title = {
+					tier = PREVPREV
+					has_title_flag = ORF_embrace
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		any_demesne_title = {
+			limit = {
+				has_title_flag = ORF_embrace
+			}
+			clr_title_flag = ORF_embrace
+		}
+		primary_title = {
+			set_title_flag = ORF_embrace
+		}
+		set_government_type = open_range_feudalism_government
+	}
+}
+
+#Removes ORF party traits from non-ORF vassals of non-ORF rulers
+character_event = {
+	id = ORFmaint.10
+	hide_window = yes
+	trigger = {
+		OR = {
+			liege = { NOT = { government = open_range_feudalism_government } }
+			independent = yes
+		}
+		NOT = { government = open_range_feudalism_government }
+		OR = {
+			trait = party_populist
+			trait = party_magnate
+			trait = party_royalist
+			trait = party_theocratic
+			trait = party_opposition
+		}
+	}
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		remove_trait = party_populist
+		remove_trait = party_magnate
+		remove_trait = party_royalist
+		remove_trait = party_theocratic
+		remove_trait = party_opposition
+	}
+}

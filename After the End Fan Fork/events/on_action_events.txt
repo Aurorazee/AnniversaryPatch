@@ -4623,7 +4623,6 @@ narrative_event = {
 					remove_intermarry = neogodbeite
 					remove_intermarry = woolleyite
 					remove_intermarry = strangite
-					remove_intermarry = reformista
 					remove_intermarry = lamanita
 					remove_intermarry = sol_invicta
 					remove_intermarry = mictlantec

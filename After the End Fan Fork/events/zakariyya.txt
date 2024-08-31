@@ -864,11 +864,11 @@ narrative_event = {
 		add_trait = sanctioned_governator
 		hidden_tooltip = {
 			character_event = { id = zakariyya.36 days = 7 }
-			e_california = {
-				holder_scope = {
-					narrative_event = { id = zakariyya.42 }
-				}
-			}
+			# e_california = {
+				# holder_scope = {
+					# narrative_event = { id = zakariyya.42 }
+				# }
+			# }
 		}
 	}
 }

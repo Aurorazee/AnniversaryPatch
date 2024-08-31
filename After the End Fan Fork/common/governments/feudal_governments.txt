@@ -78,7 +78,6 @@ feudal_governments = {
 			#NOT = { is_government_potential = colonial_government }
 			NOT = { is_government_potential = military_governorate }
 			NOT = { is_government_potential = open_range_feudalism_government }
-			NOT = { has_character_flag = ORF_embrace }
 			NOT = { is_government_potential = theocratic_feudal_government }
 			#Removed Chinese Imperial stuff
 			is_patrician = no
@@ -669,25 +668,50 @@ feudal_governments = {
 		frame_suffix = "_orf"
 		potential = {
 			OR = {
-				has_character_flag = ORF_embrace
-				OR = {
+				AND = {
 					capital_scope = {
 						region = custom_range_range
 					}
-					culture = altiplanense
-					culture = bravo
-					culture = neomexicano
-					culture_group = starfolk
-					culture = arixan
-					culture = comanche
-					culture = sioux
-					culture = crow
+					OR = {
+						culture = altiplanense
+						culture = bravo
+						culture = neomexicano
+						culture_group = starfolk
+						culture = arixan
+						culture = comanche
+						culture = sioux
+						culture = crow
+						culture = grangelander
+						culture = oklahoman
+						culture = northlander
+						culture = mountainer
+						primary_title = {
+							has_title_flag = ORF_embrace
+						}
+					}
 				}
-				AND = {
+				AND = { #ORF doesn't show up when picking character without this
 					has_game_started = no
 					is_save_game = no
 					OR = {
-						has_landed_title = d_oklahoma
+						AND = { #Altiplanense has some provinces outside of the Open Range region at game start
+							culture = altiplanense
+							any_de_jure_liege_title = {
+								NOR = {
+									title = d_comarca_lagunera
+									title = d_durango
+									title = d_zacatecas
+								}
+							}  
+						}
+						culture = bravo
+						culture = neomexicano
+						culture_group = starfolk
+						culture = arixan
+						culture = comanche
+						culture = sioux
+						culture = crow
+						culture = oklahoman
 						has_landed_title = d_chisholm
 						has_landed_title = c_panhandle
 						has_landed_title = d_verdigris
@@ -698,8 +722,13 @@ feudal_governments = {
 					}
 				}
 			}
-			NOT = { has_character_flag = ORF_reject }
+			controls_religion = no
 			is_patrician = no
+			NOT = {
+				primary_title = {
+					has_title_flag = ORF_reject
+				}
+			}
 			NOT = { is_government_potential = mormon_government }
 			NOT = { is_government_potential = mex_imperial_government }
 			NOT = { is_government_potential = bureaucratic_government }
@@ -707,7 +736,7 @@ feudal_governments = {
 		}
 		
 		character_modifier = {
-			short_reign_length = -1
+			short_reign_length = -5
 		}	
 		
 		color = { 204 79 45 }

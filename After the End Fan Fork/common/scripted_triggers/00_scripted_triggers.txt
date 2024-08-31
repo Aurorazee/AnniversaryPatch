@@ -10410,6 +10410,7 @@ espiritista_consulted_court_trigger = {
 		has_character_modifier = espiritista_malandros_court
 	}
 }
+
 has_atomicist_particle_trigger = {
 	OR = {
 		has_character_modifier = atomicist_quark
@@ -10417,3 +10418,47 @@ has_atomicist_particle_trigger = {
 		has_character_modifier = atomicist_boson
 	}
 }
+
+valid_orf_election_candidates = {
+	liege = {
+		any_voter = {
+			OR = {
+				NOT = { has_character_flag = orf_won_election }
+				had_character_flag = {
+					flag = orf_won_election
+					years = 6
+				}
+			}
+			NOR = { 
+				has_character_flag = orf_election_running
+				has_character_flag = running_for_office_defender
+			}
+		}
+	}
+}
+
+has_same_orf_party_trait = {
+	OR = {
+		AND = {
+			trait = party_populist
+			ROOT = { trait = party_populist }
+		}
+		AND = {
+			trait = party_magnate
+			ROOT = { trait = party_magnate }
+		}
+		AND = {
+			trait = party_royalist
+			ROOT = { trait = party_royalist }
+		}
+		AND = {
+			trait = party_theocratic
+			ROOT = { trait = party_theocratic }
+		}
+		AND = {
+			trait = party_opposition
+			ROOT = { trait = party_opposition }
+		}
+	}
+}
+

@@ -1,7 +1,3 @@
-recent_match_timer = { icon = 1 }
-
-declined_prestige_match_timer = { icon = 1 }
-
 orf_election_lost_cooldown = {
 	monthly_character_prestige = 0.2
 	icon = 7

@@ -1333,10 +1333,37 @@ remove_nestorian_patron_saint_effect = {
 	remove_character_modifier = nestorian_mar_abba
 }
 
-
-startup_orf = {
-	if = {
-		limit = { has_character_flag = ORF_embrace }
-		set_government_type = open_range_feudalism_government
-	}
+clear_orf_election_flags = {
+	clr_character_flag = orf_election_running
+	clr_character_flag = running_for_office_defender
+	clr_character_flag = running_for_office_attacker
+	clr_character_flag = orfelect_good_11
+	clr_character_flag = orfelect_neutral_11
+	clr_character_flag = orfelect_bad_11
+	clr_character_flag = orfelect_good_13
+	clr_character_flag = orfelect_neutral_13
+	clr_character_flag = orfelect_bad_13
+	clr_character_flag = orfelect_good_15
+	clr_character_flag = orfelect_neutral_15
+	clr_character_flag = orfelect_bad_15
+	clr_character_flag = orfelect_good_17
+	clr_character_flag = orfelect_neutral_17
+	clr_character_flag = orfelect_bad_17
+	clr_character_flag = orfelect_good_19
+	clr_character_flag = orfelect_neutral_19
+	clr_character_flag = orfelect_bad_19
+	clr_character_flag = orfelect_good_21
+	clr_character_flag = orfelect_neutral_21
+	clr_character_flag = orfelect_bad_21
+	clr_character_flag = destitute_ranger_charity
+	clr_character_flag = destitute_ranger_encourage_them
+	clr_character_flag = destitute_ranger_organize_help
+	clr_character_flag = range_squatter_charity
+	clr_character_flag = range_squatter_convince
+	clr_character_flag = range_squatter_force_out
+	clr_character_flag = range_ambush_fight
+	clr_character_flag = range_ambush_hide
+	clr_character_flag = range_ambush_organize
+	clr_character_flag = range_ambush_death
+	clr_character_flag = endorsed_by_liege
 }

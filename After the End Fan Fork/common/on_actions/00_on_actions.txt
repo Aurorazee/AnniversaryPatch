@@ -72,9 +72,6 @@ on_startup = {
 		
 		texas.1
 		NC.5000
-		
-		
-		ORFmaint.11
 
 		orientalist.5 #Landing the Grand Sultan in Tampa
 	}
@@ -2052,8 +2049,7 @@ on_death = {
 		misc.13
 		
 		orfelection.100 #reigning senator dies mid-election
-		orfelection.102 #reigning senator dies mid-election
-		#ORFmaint.12
+		orfelection.102 #election attacker dies mid-election
 	}
 	random_events = {
 		1 = RIP.29800 #reincarnation investigation
@@ -2886,9 +2882,6 @@ on_navy_returns_with_loot = {
 on_create_title = {
 	events = {	
 		CM.10021
-
-		#if sudden new character with title shows up and should be orf
-		ORFmaint.31
 	}
 }
 
@@ -2939,14 +2932,14 @@ on_new_holder = {
 		
 		#col.1 # Delete Colonizer Titles
 		
-		#preserve range
-		ORFmaint.21
-		
 		mesoamerica.400 #Granting of new bloodline
 
 		flavor.70 #Granting of new bloodline
 
 		gaian.21 #non-gaian takes a duchy in gaian core land
+		
+		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
+		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
@@ -2986,7 +2979,9 @@ on_new_holder_inheritance = {
 		#col.1 # Delete Colonizer Titles
 		
 		AMLT.1
-		ORFmaint.21
+		
+		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
+		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
@@ -3029,6 +3024,9 @@ on_new_holder_usurpation = {
 		#col.1 # Delete Colonizer Titles
 		
 		AMLT.1
+		
+		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
+		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {
@@ -3261,6 +3259,7 @@ on_settlement_construction_completed = {
 		HF.24024 # Monumental Bloodline check.
 		bank.62 # City mission check
 		SUFI.4024 #sufi built temple
+		ORFmaint.1 #Range Shrinkage
 	}
 }
 

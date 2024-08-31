@@ -34,17 +34,18 @@ decisions = {
 	run_for_senate = {
 		is_high_prio = yes
 
-
 		potential = {
 			is_playable = yes
 			OR = {
-				liege = { has_law = range_senate_size_1 }
-				liege = { has_law = range_senate_size_2 }
-				liege = { has_law = range_senate_size_3 }
-				liege = { has_law = range_senate_size_4 }
+				liege = { primary_title = { has_law = range_senate_size_1 } }
+				liege = { primary_title = { has_law = range_senate_size_2 } }
+				liege = { primary_title = { has_law = range_senate_size_3 } }
+				liege = { primary_title = { has_law = range_senate_size_4 } }
 			}
-			NOT = { has_character_flag = running_for_office_attacker }
-			is_councillor = no
+			NOT = { 
+				has_character_flag = running_for_office_attacker 
+			}
+			is_voter = no
 			independent = no
 		}
 	
@@ -52,23 +53,43 @@ decisions = {
 			prestige = 25
 			is_adult = yes
 			prisoner = no
-			liege = { 
-				any_voter = {
-					NOT = { has_character_modifier = orf_won_election }
-					NOT = { has_character_flag = temp_block_orf }
-					NOT = { has_character_flag = orf_election_running }
-					NOT = { has_character_flag = running_for_office_defender }
+			custom_tooltip = {
+				text = valid_orf_election_candidates_TT
+				hidden_tooltip = {
+					valid_orf_election_candidates = yes
 				}
 			}
-			NOT = { has_character_modifier = orf_election_lost_cooldown }
+			NOR = {
+				custom_tooltip = {
+					text = election_lost_cooldown_TT
+					hidden_tooltip = {
+						had_character_flag = {
+							flag = election_lost_cooldown
+							years < 2
+						}
+					}
+				}
+				custom_tooltip = {
+					text = running_for_office_cooldown_TT
+					hidden_tooltip = {
+						had_character_flag = {
+							flag = running_for_office_cooldown
+							years < 2
+						}
+					}
+				}
+			}
 			OR = {
-				liege = { has_law = orf_senate_type_law_2 }
+				liege = { primary_title = { has_law = orf_senate_type_law_2 } }
 				government = open_range_feudalism_government
 			}
 		}
 		
 		effect = {
 			prestige = -25
+			set_character_flag = running_for_office_attacker
+			clr_character_flag = election_lost_cooldown
+			clr_character_flag = running_for_office_cooldown
 			character_event = { id = orfelection.1 }
 		}
 		ai_will_do = {
@@ -91,23 +112,6 @@ decisions = {
 				liege = { has_character_modifier = endorsed_theocratic }
 				trait = party_theocratic
 			}
-		
-			modifier = {
-				factor = 0
-				NOT = { 
-					liege = { 
-						any_voter = {
-							limit = { 
-								NOT = { has_character_modifier = orf_won_election }
-								NOT = { has_character_flag = temp_block_orf }
-								NOT = { has_character_flag = orf_election_running }
-								NOT = { has_character_flag = running_for_office_defender }
-							}
-							count >=1
-						}
-					}
-				}
-			}	
 		} 
 	}
 	abandon_orf = {
@@ -127,20 +131,28 @@ decisions = {
 				independent = yes
 				liege = { NOT = { government = open_range_feudalism_government } }
 			}
+			NOT = {
+				primary_title = {
+					set_title_flag = ORF_reject
+				}
+			}
 			num_of_titles_in_realm <= 30
 		}
 		
 		effect = {
 			prestige = -500
-			set_character_flag = ORF_reject
-			clr_character_flag = ORF_embrace
-			set_government_type = feudal_government
+			hidden_tooltip = {
+				primary_title = {
+					set_title_flag = ORF_reject
+					clr_title_flag = ORF_embrace
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				NOT = { liege = { government = feudal_government} }
+				NOT = { liege = { government = feudal_government } }
 			}
 			modifier = {
 				factor = 0
@@ -151,25 +163,18 @@ decisions = {
 	adopt_orf = {
 		is_high_prio = no
 
-
 		potential = {
 			is_playable = yes
 			government = feudal_government
-			OR = {
-				capital_scope = {
-					region = custom_range_range
-				} 
-				has_character_flag = ORF_embrace
-				culture = altiplanense
-				culture = bravo
-				culture = neomexicano
-				culture_group = starfolk
-				culture = arixan
-				culture = comanche
-				culture = sioux
-				culture = prairielander
-				liege = { government = open_range_feudalism_government }
+			capital_scope = {
+				region = custom_range_range
 			}
+			controls_religion = no
+			is_patrician = no
+			NOT = { is_government_potential = mormon_government }
+			NOT = { is_government_potential = mex_imperial_government }
+			NOT = { is_government_potential = bureaucratic_government }
+			NOT = { is_government_potential = theocratic_feudal_government }
 		}
 	
 		allow = {
@@ -180,20 +185,29 @@ decisions = {
 				independent = yes
 				liege = { government = open_range_feudalism_government }
 			}
+			NOT = {
+				primary_title = {
+					set_title_flag = ORF_embrace
+				}
+			}
 			num_of_titles_in_realm <= 30
 		}
 		
 		effect = {
 			prestige = -500
 			set_government_type = open_range_feudalism_government
-			set_character_flag = ORF_embrace
-			clr_character_flag = ORF_reject
+			hidden_tooltip = {
+				primary_title = {
+					clr_title_flag = ORF_reject
+					set_title_flag = ORF_embrace
+				}
+			}
 		}
 		ai_will_do = {
 			factor = 1
 			modifier = {
 				factor = 0
-				liege = { NOT = { government = open_range_feudalism_government}	}		
+				liege = { NOT = { government = open_range_feudalism_government } }		
 			}
 			modifier = {
 				factor = 0

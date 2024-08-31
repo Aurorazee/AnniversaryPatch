@@ -1,215 +1,70 @@
 namespace = orfelection
 
+#ORF Senate Election Candidate Finder
 character_event = {
 	id = orfelection.1
-	
-	desc = EVTDESC_orf_candidates_to_run_against
-	
+	title = EVTTITLE_orfelection_1
+	desc = EVTDESC_orfelection_1
 	is_triggered_only = yes
 	
-	trigger = {
-		government = open_range_feudalism_government
-	}
-	
 	immediate = {
-		
-		#find member of own party set to if found set to opponent_candidate_1 and set opponent_1_found
-		if = {
-			limit = { trait = party_populist }
-			liege = { 
-				random_voter = {
-					limit = { 
-						trait = party_populist
-						NOT = { has_character_modifier = orf_election_won_cooldown }
-						NOT = {has_character_flag = orf_election_running}
-						NOT = {
-							OR = {
-								has_job_title = job_chancellor
-								has_job_title = job_marshal
-								has_job_title = job_treasurer
-								has_job_title = job_spymaster
-								has_job_title = job_spiritual
-							}
-						}
-						NOT = {
-							has_character_flag = running_for_office_defender
-						}
-					}
-					save_event_target_as = orf_opponent_candidate_party
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
-					set_character_flag = temp_block_orf
-				}
-			}
-		}
-		if = {
-			limit = { trait = party_magnate }
-			liege = { 
-				random_voter = {
-					limit = { 
-						trait = party_magnate
-						NOT = {has_character_flag = orf_election_running}
-						NOT = { has_character_modifier = orf_election_won_cooldown }
-						NOT = {
-							OR = {
-								has_job_title = job_chancellor
-								has_job_title = job_marshal
-								has_job_title = job_treasurer
-								has_job_title = job_spymaster
-								has_job_title = job_spiritual
-							}
-						}
-						NOT = {
-							has_character_flag = running_for_office_defender
-						}
-					}
-					save_event_target_as = orf_opponent_candidate_party
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
-					set_character_flag = temp_block_orf
-				}
-			}
-		}
-		if = {
-			limit = { trait = party_royalist }
-			liege = { 
-				random_voter = {
-					limit = { 
-						trait = party_royalist
-						NOT = {has_character_flag = orf_election_running}
-						NOT = { has_character_modifier = orf_election_won_cooldown }
-						NOT = {
-							OR = {
-								has_job_title = job_chancellor
-								has_job_title = job_marshal
-								has_job_title = job_treasurer
-								has_job_title = job_spymaster
-								has_job_title = job_spiritual
-							}
-						}
-						NOT = {
-							has_character_flag = running_for_office_defender
-						}
-					}
-					save_event_target_as = orf_opponent_candidate_party
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
-					set_character_flag = temp_block_orf
-				}
-			}
-		}
-		if = {
-			limit = { trait = party_theocratic }
-			liege = { 
-				random_voter = {
-					limit = { 
-						trait = party_theocratic
-						NOT = {has_character_flag = orf_election_running}
-						NOT = { has_character_modifier = orf_election_won_cooldown }
-						NOT = {
-							OR = {
-								has_job_title = job_chancellor
-								has_job_title = job_marshal
-								has_job_title = job_treasurer
-								has_job_title = job_spymaster
-								has_job_title = job_spiritual
-							}
-						}
-						NOT = {
-							has_character_flag = running_for_office_defender
-						}
-					}
-					save_event_target_as = orf_opponent_candidate_party
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
-					set_character_flag = temp_block_orf
-				}
-			}
-		}
-		if = {
-			limit = { trait = party_opposition }
-			liege = { 
-				random_voter = {
-					limit = { 
-						trait = party_opposition
-						NOT = {has_character_flag = orf_election_running}
-						NOT = { has_character_modifier = orf_election_won_cooldown }
-						NOT = {
-							OR = {
-								has_job_title = job_chancellor
-								has_job_title = job_marshal
-								has_job_title = job_treasurer
-								has_job_title = job_spymaster
-								has_job_title = job_spiritual
-							}
-						}
-						NOT = {
-							has_character_flag = running_for_office_defender
-						}
-					}
-					save_event_target_as = orf_opponent_candidate_party
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
-					set_character_flag = temp_block_orf
-				}
-			}
-		}
-		#find appointed council member to run against, if found set to opponent_candidate_1 and set opponent_1_found this is intended to overwrite the first candidate.
-		liege = {
-			random_voter = {
-				limit = { 
-					has_character_flag = unelected_senator
-					#has never been elected, this means they were appointed and can be run against immediately (maybe add cooldown of 2 years)
-					NOT = { 
-						has_character_flag = orf_won_election
-					}
-					NOT = { 
-						has_character_flag = temp_block_orf
-					}
- 
-					NOT = {has_character_flag = orf_election_running}
- 
-					NOT = {
-						has_character_flag = running_for_office_defender
-					}
- 
-				}
-				ROOT = { set_character_flag = orf_opponent_1_appointee_found }
-				save_event_target_as = orf_opponent_candidate_appointee
-				set_character_flag = temp_block_orf
-			}
-		}
-		
-		#find a ruler of a different party to run against, if found set to opponent_candidate_2 and set opponent_2_found
-		liege = {
-			random_voter = {
-				limit = { 
-					NOT = {
+		if = { #First tries to find an unelected senator to run against
+			limit = {
+				liege = {
+					any_voter = {
+						has_character_flag = unelected_senator
 						OR = {
-							AND = {
-								trait = party_populist
-								ROOT = { trait = party_populist }
-							}
-							AND = {
-								trait = party_magnate
-								ROOT = { trait = party_magnate }
-							}
-							AND = {
-								trait = party_royalist
-								ROOT = { trait = party_royalist }
-							}
-							AND = {
-								trait = party_theocratic
-								ROOT = { trait = party_theocratic }
-							}
-							AND = {
-								trait = party_opposition
-								ROOT = { trait = party_opposition }
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
 							}
 						}
+						NOR = { 
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
+						}
 					}
-					NOT = { 
-						has_character_flag = temp_block_orf
-					}
-					NOT = {has_character_flag = orf_election_running}
-					NOT = { has_character_modifier = orf_election_won_cooldown }
-					NOT = {
+				}
+			}
+			liege = {
+				random_voter = {
+					limit = {
+						has_character_flag = unelected_senator
 						OR = {
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
+							}
+						}
+						NOR = { 
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
+						}
+					}
+					save_event_target_as = orf_opponent_candidate_appointee
+					set_character_flag = orf_do_not_pick
+					ROOT = { set_character_flag = orf_opponent_1_appointee_found }
+				}
+			}
+		}
+		if = { #Then a member of a different party than yours
+			limit = {
+				liege = { 
+					any_voter = {
+						has_same_orf_party_trait = no
+						OR = {
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
+							}
+						}
+						NOR = {
+							has_character_flag = orf_do_not_pick
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
 							has_job_title = job_chancellor
 							has_job_title = job_marshal
 							has_job_title = job_treasurer
@@ -217,107 +72,482 @@ character_event = {
 							has_job_title = job_spiritual
 						}
 					}
-					NOT = {
-						has_character_flag = running_for_office_defender
+				}
+			}
+			liege = {
+				random_voter = {
+					limit = { 
+						has_same_orf_party_trait = no
+						OR = {
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
+							}
+						}
+						NOR = { 
+							has_character_flag = orf_do_not_pick
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+						}
+					}
+					save_event_target_as = orf_opponent_candidate_party
+					set_character_flag = orf_do_not_pick
+					ROOT = { set_character_flag = orf_opponent_1_party_found }
+				}
+			}
+		}		
+		if = { #Then a member of the same party
+			limit = {
+				liege = { 
+					any_voter = {
+						OR = {
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
+							}
+						}
+						has_same_orf_party_trait = yes
+						NOR = { 
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+						}
 					}
 				}
-				ROOT = { set_character_flag = orf_opponent_2_found }
-				save_event_target_as = orf_opponent_candidate_outsider		
-				set_character_flag = temp_block_orf	
+			}
+			liege = {
+				random_voter = {
+					limit = {
+						OR = {
+							NOT = { has_character_flag = orf_won_election }
+							had_character_flag = {
+								flag = orf_won_election
+								years = 5
+							}
+						}
+						has_same_orf_party_trait = yes
+						NOR = {
+							has_character_flag = orf_do_not_pick
+							has_character_flag = orf_election_running
+							has_character_flag = running_for_office_defender
+							has_job_title = job_chancellor
+							has_job_title = job_marshal
+							has_job_title = job_treasurer
+							has_job_title = job_spymaster
+							has_job_title = job_spiritual
+						}
+					}
+					save_event_target_as = orf_opponent_candidate_outsider
+					set_character_flag = orf_do_not_pick
+					ROOT = { set_character_flag = orf_opponent_2_found }
+				}
 			}
 		}
-		#remove repeat blockers
-		event_target:orf_opponent_candidate_party = { clr_character_flag = temp_block_orf }
-		event_target:orf_opponent_candidate_appointee = { clr_character_flag = temp_block_orf }
-		event_target:orf_opponent_candidate_outsider = { clr_character_flag = temp_block_orf }
 	}	
-	option = { 
-		name = EVTOPTA_orfelection_opponent_appointee
+	option = { #Run Against Unelected Senator
+		name = EVTOPTA_orfelection_1
+		show_portrait = event_target:orf_opponent_candidate_appointee
 		trigger = {
 			has_character_flag = orf_opponent_1_appointee_found
 		}
-		show_portrait = event_target:orf_opponent_candidate_appointee
-		#set this particular target as THE target and send letter
 		event_target:orf_opponent_candidate_appointee = { save_event_target_as = orf_election_opponent_defender }
-		ROOT = { save_event_target_as = orf_election_opponent_attacker }
-		set_character_flag = running_for_office_attacker
-		event_target:orf_election_opponent_defender = { set_character_flag = running_for_office_defender }
-		event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
-
-		#remove repeat blockers
-	}
-	option = { 
-		name = EVTOPTA_orfelection_opponent_party
-		#remove repeat blockers
-		trigger = {
-			has_character_flag = orf_opponent_1_party_found
-		}
-		show_portrait = event_target:orf_opponent_candidate_party
-		#set this particular target as THE target and send letter
-		event_target:orf_opponent_candidate_party = { save_event_target_as = orf_election_opponent_defender }
-		ROOT = { save_event_target_as = orf_election_opponent_attacker }
-		set_character_flag = running_for_office_attacker
-		event_target:orf_election_opponent_defender = { set_character_flag = running_for_office_defender }
-		event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
-	}
-	
-	option = {
-		name = EVTOPTA_orfelection_opponent_opponent
-		trigger = {
-			has_character_flag = orf_opponent_2_found
-		}
-		show_portrait = event_target:orf_opponent_candidate_outsider
-		#set this particular target as THE target and send letter
-		event_target:orf_opponent_candidate_outsider = { save_event_target_as = orf_election_opponent_defender }
-		ROOT = { save_event_target_as = orf_election_opponent_attacker }
-		set_character_flag = running_for_office_attacker
-		event_target:orf_election_opponent_defender = { set_character_flag = running_for_office_defender }
-		event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
-
-		#remove repeat blockers
-	}
-	after = {
+		save_event_target_as = orf_election_opponent_attacker
 		event_target:orf_election_opponent_defender = {
 			set_character_flag = orf_election_running
+			set_character_flag = running_for_office_defender
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
 		}
-		event_target:orf_election_opponent_attacker ={ #this is just ROOT
+		event_target:orf_election_opponent_attacker = {
 			set_character_flag = orf_election_running
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
 		}
 		clr_character_flag = orf_opponent_1_appointee_found
 		clr_character_flag = orf_opponent_1_party_found
 		clr_character_flag = orf_opponent_2_found
+		custom_tooltip = {
+			text = liege_may_intervene_TT
+			hidden_tooltip = {
+				if = { #If the liege has the right to make appointments, then they can intervene to stop the election
+					limit = {
+						liege = {
+							primary_title = { has_law = orf_senate_type_law_0 }
+						}
+					}
+					liege = {
+						character_event = { id = orfelection.6 }
+					}
+				}
+				else = {
+					event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
+				}
+			}
+		}
+	}
+	
+	option = { #Run Against Different Party Senator
+		name = EVTOPTB_orfelection_1
+		show_portrait = event_target:orf_opponent_candidate_party
+		trigger = {
+			has_character_flag = orf_opponent_1_party_found
+		}
+		event_target:orf_opponent_candidate_party = { save_event_target_as = orf_election_opponent_defender }
+		save_event_target_as = orf_election_opponent_attacker
+		event_target:orf_election_opponent_defender = {
+			set_character_flag = orf_election_running
+			set_character_flag = running_for_office_defender
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		event_target:orf_election_opponent_attacker = {
+			set_character_flag = orf_election_running
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		clr_character_flag = orf_opponent_1_appointee_found
+		clr_character_flag = orf_opponent_1_party_found
+		clr_character_flag = orf_opponent_2_found
+		custom_tooltip = {
+			text = liege_may_intervene_TT
+			hidden_tooltip = {
+				if = { #If the liege has the right to make appointments, then they can intervene to stop the election
+					limit = {
+						liege = {
+							primary_title = { has_law = orf_senate_type_law_0 }
+						}
+					}
+					liege = {
+						character_event = { id = orfelection.6 }
+					}
+				}
+				else = {
+					event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
+				}
+			}
+		}
+	}
+	
+	option = { #Run Against Same Party Senator
+		name = EVTOPTC_orfelection_1
+		show_portrait = event_target:orf_opponent_candidate_outsider
+		trigger = {
+			has_character_flag = orf_opponent_2_found
+		}
+		event_target:orf_opponent_candidate_outsider = { save_event_target_as = orf_election_opponent_defender }
+		ROOT = { save_event_target_as = orf_election_opponent_attacker }
+		event_target:orf_election_opponent_defender = {
+			set_character_flag = orf_election_running
+			set_character_flag = running_for_office_defender
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		event_target:orf_election_opponent_attacker = {
+			set_character_flag = orf_election_running
+			opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		clr_character_flag = orf_opponent_1_appointee_found
+		clr_character_flag = orf_opponent_1_party_found
+		clr_character_flag = orf_opponent_2_found
+		custom_tooltip = {
+			text = liege_may_intervene_TT
+			hidden_tooltip = {
+				if = { #If the liege has the right to make appointments, then they can intervene to stop the election
+					limit = {
+						liege = {
+							primary_title = { has_law = orf_senate_type_law_0 }
+						}
+					}
+					liege = {
+						character_event = { id = orfelection.6 }
+					}
+				}
+				else = {
+					event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 } }
+				}
+			}
+		}
 	}
 
 	option = {
-		name = EVTOPTA_orfelection_nevermind
+		name = EVTOPTD_orfelection_1
 		prestige = 25
+		clear_orf_election_flags = yes
+		clr_character_flag = orf_opponent_1_appointee_found
+		clr_character_flag = orf_opponent_1_party_found
+		clr_character_flag = orf_opponent_2_found
+		ai_chance =	{
+			factor = 0
+		}
+	}
+	
+	after = {
+		event_target:orf_opponent_candidate_appointee = {
+			clr_character_flag = orf_do_not_pick
+		}
+		event_target:orf_opponent_candidate_party = {
+			clr_character_flag = orf_do_not_pick
+		}
+		event_target:orf_opponent_candidate_outsider = {
+			clr_character_flag = orf_do_not_pick
+		}
 	}
 }
 
+#Liege notified
+character_event = {
+	id = orfelection.6
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+	desc = EVTDESC_orfelection_6
+	
+	option = { #Allow the election to happen
+		show_portrait = event_target:orf_election_opponent_defender
+		show_portrait = event_target:orf_election_opponent_attacker
+		name = EVTOPTA_orfelection_6
+		custom_tooltip = {
+			text = EVTOPTA_orfelection_6_TT
+			hidden_tooltip = {
+				event_target:orf_election_opponent_defender = { character_event = { id = orfelection.3 days = 5 } }
+			}
+		}
+		ai_chance = {
+			factor = 90
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_attacker = {
+					is_rival = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_defender = {
+					is_friend = ROOT
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_defender = {
+					trait = party_royalist
+				}
+				NOT = {
+					event_target:orf_election_opponent_attacker = {
+						trait = party_royalist
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_defender = {
+					trait = party_opposition
+				}
+				NOT = {
+					event_target:orf_election_opponent_attacker = {
+						trait = party_opposition
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_attacker = {
+					reverse_opinion = {
+						who = ROOT
+						value <= -100
+					}
+				}
+				event_target:orf_election_opponent_defender = {
+					reverse_opinion = {
+						who = ROOT
+						value = -25
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				event_target:orf_election_opponent_attacker = {
+					reverse_opinion = {
+						who = ROOT
+						value <= -50
+					}
+				}
+				event_target:orf_election_opponent_defender = {
+					reverse_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				OR = {
+					is_friend = event_target:orf_election_opponent_defender
+					is_lover = event_target:orf_election_opponent_defender
+					dynasty = event_target:orf_election_opponent_defender
+					likes_better_than = {
+						who = event_target:orf_election_opponent_defender
+						than = event_target:orf_election_opponent_attacker
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				event_target:orf_election_opponent_attacker = {
+					reverse_opinion = {
+						who = ROOT
+						value <= -25
+					}
+				}
+				event_target:orf_election_opponent_defender = {
+					reverse_opinion = {
+						who = ROOT
+						value = 20
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				event_target:orf_election_opponent_attacker = {
+					has_same_orf_party_trait = no
+				}
+				event_target:orf_election_opponent_defender = {
+					has_same_orf_party_trait = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				trait = proud
+			}
+			modifier = {
+				factor = 3
+				trait = craven
+			}
+			modifier = {
+				factor = 2
+				trait = content
+			}
+		}
+	}
+	option = { #Refuse to assent to the election
+		show_portrait = event_target:orf_election_opponent_defender
+		show_portrait = event_target:orf_election_opponent_attacker
+		name = EVTOPTB_orfelection_6
+		ai_chance = {
+			factor = 10
+		}
+		custom_tooltip = {
+			text = EVTOPTB_orfelection_6_TT
+			hidden_tooltip = {
+				event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.7 days = 5 } }
+				event_target:orf_election_opponent_defender = { character_event = { id = orfelection.7 days = 5 } }
+			}
+		}
+	}
+}
+
+#Ruler refused
+character_event = {
+	id = orfelection.7
+	picture = GFX_evt_emissary
+	is_triggered_only = yes
+	title = EVTTITLE_orfelection_7
+	desc = EVTDESC_orfelection_7
+	
+	option = {
+		name = {
+			text = EVTOPTA_orfelection_7_defender
+			trigger = {
+				has_character_flag = running_for_office_defender
+			}
+		}
+		name = {
+			text = EVTOPTA_orfelection_7_attacker
+			trigger = {
+				has_character_flag = running_for_office_attacker
+			}
+		}
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		if = {
+			limit = {
+				event_target:orf_election_opponent_attacker = {
+					character = ROOT
+				} 
+			}
+			set_character_flag = running_for_office_cooldown
+			opinion = {
+				name = opinion_tyrant
+				who = FROM
+				years = 2
+			}
+		}
+		else = {
+			clr_character_flag = orf_won_election
+			set_character_flag = orf_won_election
+			opinion = {
+				name = opinion_grateful
+				who = FROM
+				years = 5
+			}
+		}
+	}
+}
+
+#Incumbent notified
 character_event = {
 	id = orfelection.3
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
-	
-	trigger = {
-		has_character_flag = running_for_office_defender
-	}
-	desc = EVTDESC_orf_election_inform
+	desc = EVTDESC_orfelection_3
 	
 	option = { 
-		name = EVTOPTA_orfelection_i_resist
+		name = EVTOPTA_orfelection_3
 		ai_chance = {
 			factor = 90
 		}
-		
+		custom_tooltip = {
+			text = EVTOPTA_orfelection_3_TT
+		}
 		name = EVTOPTA_orf_election_inform_run_against
 		event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.4 days = 5 } }
 		event_target:orf_election_opponent_defender = { character_event = { id = orfelection.4 days = 5 } }
 	}
 	option = { 
-		name = EVTOPTA_orfelection_i_resign
+		name = EVTOPTB_orfelection_3
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -325,43 +555,29 @@ character_event = {
 				trait = craven
 			}
 			modifier = {
-				factor = 3
-				trait = ugly
-			}
-			modifier = {
 				factor = 2
 				trait = content
 			}
 		}
-	
-		name = EVTOPTA_orf_election_inform_resign
-		event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.5 days = 5 } }
+		custom_tooltip = {
+			text = EVTOPTB_orfelection_3_TT
+			hidden_tooltip = {
+				event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.5 days = 5 } }
+				set_character_flag = election_lost_cooldown
+			}
+		}
 	}
 }
 
+#Campaign events
 character_event = {
 	id = orfelection.4
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	desc = EVTDESC_orfelection_4
 	
-	trigger = {
- 
-		government = open_range_feudalism_government
- 
-		OR = {
-			has_character_flag = running_for_office_defender
-			has_character_flag = running_for_office_attacker
-		}
- 
-	}
-	
-	desc = {
-		text = EVTDESC_orf_election_campaign
-	}
 	option = { 
-		name = EVTOPTA_orf_election_campaign_range
+		name = EVTOPTA_orfelection_4
 		trigger = {	
 			NOT = { has_character_flag = range_campaign }
 			NOT = {
@@ -374,19 +590,25 @@ character_event = {
  
 		random_list = {
 			25 = {
-				character_event = {id = orfelection.11 days = 25}	
+				character_event = {id = orfelection.11 days = 25 }	
 			}
 			25 = {
-				character_event = {id = orfelection.19 days = 25}	
+				character_event = {id = orfelection.19 days = 25 }	
+			}
+		}
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = party_magnate
 			}
 		}
 		character_event = {id = orfelection.4 days = 40 }
 		set_character_flag = range_campaign
  
 	}
-	
 	option = {
-		name = EVTOPTA_orf_election_campaign_towns
+		name = EVTOPTB_orfelection_4
 		trigger = {	
 			NOT = { has_character_flag = towns_campaign } 
 			NOT = {
@@ -411,30 +633,67 @@ character_event = {
 		}
 		character_event = {id = orfelection.4 days = 40 }
 		set_character_flag = towns_campaign
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 2
+				trait = party_populist
+			}
+		}
 	}
-	
-#	option = {
-#		name = EVTOPTA__orf_election_campaign_ask_for_endorsement
-#		trigger = { 
-#			OR = {
-#				liege = { dynasty = ROOT }
-#				liege = { is_friend = ROOT }
-#				liege = { is_lover = ROOT }
-#
-#			}
-#			NOT = {
-#				had_character_flag = {
-#					flag = orf_election_running
-#					days = 80
-#				}
-#			}
-#			NOT = { has_character_flag = endorsed_campaign }
-#		}
-#		set_character_flag = endorsed_campaign
-#		liege = { character_event = {id = orfelection.23 days = 25} }
-#	}
-	
 	option = {
+		name = EVTOPTC_orfelection_4
+		trigger = { 
+			liege = {
+				NOR = {
+					is_rival = ROOT
+					opinion = {
+						who = ROOT
+						value < 0
+					}
+				}
+			}
+			NOT = {
+				had_character_flag = {
+					flag = orf_election_running
+					days = 80
+				}
+			}
+			NOT = { has_character_flag = endorsed_campaign }
+		}
+		set_character_flag = endorsed_campaign
+		liege = { character_event = {id = orfelection.23 days = 25} }
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0
+				OR = {
+					AND = {
+						has_character_flag = orf_election_opponent_attacker
+						likes_better_than = {
+							who = event_target:orf_election_opponent_defender
+							than = event_target:orf_election_opponent_attacker
+						}
+					}
+					AND = {
+						has_character_flag = orf_election_opponent_defender
+						likes_better_than = {
+							who = event_target:orf_election_opponent_attacker
+							than = event_target:orf_election_opponent_defender
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				liege = {
+					is_friend = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD_orfelection_4
 		trigger = {
 			had_character_flag = {
 				flag = orf_election_running
@@ -445,217 +704,241 @@ character_event = {
 		clr_character_flag = towns_campaign
 		clr_character_flag = range_campaign
 		clr_character_flag = endorsed_campaign
-		random_list = {
-			50 = {
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_11 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_neutral_11 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_11 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_great_21 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_21 }
-				}
-				mult_modifier = {
-					factor = 0.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_21 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_13 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_neutral_13 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_13 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_15 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_neutral_15 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_15 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_19 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_neutral_19 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_19 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_good_17 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_neutral_17 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_bad_17 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { trait = party_populist }
-					liege = { has_character_modifier = endorsed_populist }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { trait = party_magnate }
-					liege = { has_character_modifier = endorsed_magnate }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { trait = party_theocratic }
-					liege = { has_character_modifier = endorsed_theocratic }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_attacker = { has_character_flag = endorsed_by_liege }
-				}
-				mult_modifier = {
-					factor =0.75
-					event_target:orf_election_opponent_attacker = { has_character_modifier = rebellious_range_party }
-				}
-	
-				event_target:orf_election_opponent_attacker = { set_character_flag = election_won }
-				event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.51 days = 5} }
-				event_target:orf_election_opponent_defender = { character_event = { id = orfelection.52 days = 5} }
-			}
+			hidden_tooltip = {
+				random_list = {
+					50 = { #Attacker won
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_11 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_neutral_11 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_11 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelec_great_21 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_21 }
+						}
+						mult_modifier = {
+							factor = 0.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_21 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_13 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_neutral_13 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_13 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_15 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_neutral_15 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_15 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_19 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_neutral_19 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_19 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_good_17 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_neutral_17 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_flag = orfelect_bad_17 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { trait = party_populist }
+							liege = { has_character_modifier = endorsed_populist }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { trait = party_magnate }
+							liege = { has_character_modifier = endorsed_magnate }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { trait = party_theocratic }
+							liege = { has_character_modifier = endorsed_theocratic }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_attacker = { has_character_flag = endorsed_by_liege }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_attacker = { has_character_modifier = rebellious_range_party }
+						}
+						mult_modifier = { #So that characters who become incapable during the campaign always lose
+							factor = 0
+							event_target:orf_election_opponent_attacker = { is_incapable = yes }
+						}
+			
+						event_target:orf_election_opponent_attacker = { 
+							clr_character_flag = orf_won_election
+							set_character_flag = orf_won_election					
+						}
+						event_target:orf_election_opponent_defender = {
+							clr_character_flag = orf_won_election
+						}
+						event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.51 days = 5 } }
+						event_target:orf_election_opponent_defender = { character_event = { id = orfelection.52 days = 5 } }
+						liege = { character_event = { id = orfelection.56 } }
+					}
 
 
 
-			55 = {
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_11 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_neutral_11 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_11 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_great_21 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_21 }
-				}
-				mult_modifier = {
-					factor = 0.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_21 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_13 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_neutral_13 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_13 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_15 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_neutral_15 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_15 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_19 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_neutral_19 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_19 }
-				}
-				mult_modifier = {
-					factor = 1.5
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_good_17 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_neutral_17 }
-				}
-				mult_modifier = {
-					factor = 0.75
-					event_target:orf_election_opponent_defender = { has_character_flag = orfelec_bad_17 }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { trait = party_populist }
-					liege = { has_character_modifier = endorsed_populist }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { trait = party_magnate }
-					liege = { has_character_modifier = endorsed_magnate }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { trait = party_theocratic }
-					liege = { has_character_modifier = endorsed_theocratic }
-				}
-				mult_modifier = {
-					factor = 1.25
-					event_target:orf_election_opponent_defender = { has_character_flag = endorsed_by_liege }
-				}
-				mult_modifier = {
-					factor =0.75
-					event_target:orf_election_opponent_defender = { has_character_modifier = rebellious_range_party }
-				}
+					55 = { #Defender won
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_11 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_neutral_11 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_11 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelec_great_21 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_21 }
+						}
+						mult_modifier = {
+							factor = 0.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_21 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_13 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_neutral_13 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_13 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_15 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_neutral_15 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_15 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_19 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_neutral_19 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_19 }
+						}
+						mult_modifier = {
+							factor = 1.5
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_good_17 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_neutral_17 }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_flag = orfelect_bad_17 }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { trait = party_populist }
+							liege = { has_character_modifier = endorsed_populist }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { trait = party_magnate }
+							liege = { has_character_modifier = endorsed_magnate }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { trait = party_theocratic }
+							liege = { has_character_modifier = endorsed_theocratic }
+						}
+						mult_modifier = {
+							factor = 1.25
+							event_target:orf_election_opponent_defender = { has_character_flag = endorsed_by_liege }
+						}
+						mult_modifier = {
+							factor = 0.75
+							event_target:orf_election_opponent_defender = { has_character_modifier = rebellious_range_party }
+						}
+						mult_modifier = { #So that characters who become incapable during the campaign always lose
+							factor = 0
+							event_target:orf_election_opponent_defender = { is_incapable = yes }
+						}
 
-				event_target:orf_election_opponent_defender = { set_character_flag = election_won }
-				event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.53 days = 5} }
-				event_target:orf_election_opponent_defender = { character_event = { id = orfelection.54 days = 5} }
+						event_target:orf_election_opponent_defender = { 
+							clr_character_flag = orf_won_election
+							set_character_flag = orf_won_election
+						}
+						event_target:orf_election_opponent_attacker = {
+							clr_character_flag = orf_won_election
+						}
+						
+						event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.53 days = 5 } }
+						event_target:orf_election_opponent_defender = { character_event = { id = orfelection.54 days = 5 } }
+						liege = { character_event = { id = orfelection.57 } }
+					}
+				}
 			}
 		}
-		name = EVTOPTA_orf_election_campaign_done_campaigning
-	}
-	
 	option = {
+		name = EVTOPTE_orfelection_4
 		trigger = {
 			had_character_flag = {
 				flag = orf_election_running
@@ -666,26 +949,21 @@ character_event = {
 		clr_character_flag = towns_campaign
 		clr_character_flag = range_campaign
 		clr_character_flag = endorsed_campaign
-		name = EVTOPTA_orf_election_campaign_done_campaigning
 	}
 }
 
+#Incumbent resigns
 character_event = {
 	id = orfelection.5
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	desc = EVTDESC_orfelection_5
 	
-	trigger = {
-		has_character_flag = running_for_office_attacker
-	}
-	
-	desc = {
-		text = EVTDESC_orf_election_resigned
-	}
 	option = { 
-		name = EVTOPTA_orf_election_resigned_that_was_easy
+		name = EVTOPTA_orfelection_5
+		liege = {
+			character_event = { id = orfelection.55 }
+		}
 		if = {
 			limit = { event_target:orf_election_opponent_defender = { has_minor_title = title_senator_12 } }
 			event_target:orf_election_opponent_defender = { remove_title = title_senator_12 }
@@ -752,68 +1030,36 @@ character_event = {
 			event_target:orf_election_opponent_attacker = { give_minor_title = title_senator_1 }
 		}	
 		event_target:orf_election_opponent_attacker = { 
-			clr_character_flag = election_won
-			clr_character_flag = running_for_office_defender
-			clr_character_flag = running_for_office_attacker
-			clr_character_flag = orfelect_good_11
-			clr_character_flag = orfelect_neutral_11
-			clr_character_flag = orfelect_bad_11
-			clr_character_flag = orfelect_good_13
-			clr_character_flag = orfelect_neutral_13
-			clr_character_flag = orfelect_bad_13
-			clr_character_flag = orfelect_good_15
-			clr_character_flag = orfelect_neutral_15
-			clr_character_flag = orfelect_bad_15
-			clr_character_flag = orfelect_good_17
-			clr_character_flag = orfelect_neutral_17
-			clr_character_flag = orfelect_bad_17
-			clr_character_flag = orfelect_good_19
-			clr_character_flag = orfelect_neutral_19
-			clr_character_flag = orfelect_bad_19
-			clr_character_flag = orfelect_good_21
-			clr_character_flag = orfelect_neutral_21
-			clr_character_flag = orfelect_bad_21
+			clear_orf_election_flags = yes
 		}
 		event_target:orf_election_opponent_defender = { 
-			clr_character_flag = election_won
-			clr_character_flag = running_for_office_defender
-			clr_character_flag = running_for_office_attacker
-			clr_character_flag = orfelect_good_11
-			clr_character_flag = orfelect_neutral_11
-			clr_character_flag = orfelect_bad_11
-			clr_character_flag = orfelect_good_13
-			clr_character_flag = orfelect_neutral_13
-			clr_character_flag = orfelect_bad_13
-			clr_character_flag = orfelect_good_15
-			clr_character_flag = orfelect_neutral_15
-			clr_character_flag = orfelect_bad_15
-			clr_character_flag = orfelect_good_17
-			clr_character_flag = orfelect_neutral_17
-			clr_character_flag = orfelect_bad_17
-			clr_character_flag = orfelect_good_19
-			clr_character_flag = orfelect_neutral_19
-			clr_character_flag = orfelect_bad_19
-			clr_character_flag = orfelect_good_21
-			clr_character_flag = orfelect_neutral_21
-			clr_character_flag = orfelect_bad_21
+			clear_orf_election_flags = yes
+		}
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
 		}
 	}
 }
 
+#Attacker won - Attacker
 character_event = {
 	id = orfelection.51
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	title = EVTTITLE_orfelection_51
+	desc = EVTDESC_orfelection_51
 	
-	trigger = {
-		has_character_flag = running_for_office_attacker
-	}
-	
-	desc = EVTDESC_orf_running_for_office_attacker_won
 	option = { 
-		name = EVTOPTA_orf_running_for_office_attacker_won
+		name = EVTOPTA_orfelection_51
 		if = {
 			limit = { event_target:orf_election_opponent_defender = { has_minor_title = title_senator_12 } }
 			event_target:orf_election_opponent_defender = { remove_title = title_senator_12 }
@@ -880,169 +1126,212 @@ character_event = {
 			event_target:orf_election_opponent_attacker = { give_minor_title = title_senator_1 }
 		}	
 		event_target:orf_election_opponent_attacker = { 
-			clr_character_flag = election_won
-			clr_character_flag = running_for_office_defender
-			clr_character_flag = running_for_office_attacker
-			clr_character_flag = orfelect_good_11
-			clr_character_flag = orfelect_neutral_11
-			clr_character_flag = orfelect_bad_11
-			clr_character_flag = orfelect_good_13
-			clr_character_flag = orfelect_neutral_13
-			clr_character_flag = orfelect_bad_13
-			clr_character_flag = orfelect_good_15
-			clr_character_flag = orfelect_neutral_15
-			clr_character_flag = orfelect_bad_15
-			clr_character_flag = orfelect_good_17
-			clr_character_flag = orfelect_neutral_17
-			clr_character_flag = orfelect_bad_17
-			clr_character_flag = orfelect_good_19
-			clr_character_flag = orfelect_neutral_19
-			clr_character_flag = orfelect_bad_19
-			clr_character_flag = orfelect_good_21
-			clr_character_flag = orfelect_neutral_21
-			clr_character_flag = orfelect_bad_21
+			clear_orf_election_flags = yes
 		}
 		event_target:orf_election_opponent_defender = { 
-			clr_character_flag = election_won
-			clr_character_flag = running_for_office_defender
-			clr_character_flag = running_for_office_attacker
-			clr_character_flag = orfelect_good_11
-			clr_character_flag = orfelect_neutral_11
-			clr_character_flag = orfelect_bad_11
-			clr_character_flag = orfelect_good_13
-			clr_character_flag = orfelect_neutral_13
-			clr_character_flag = orfelect_bad_13
-			clr_character_flag = orfelect_good_15
-			clr_character_flag = orfelect_neutral_15
-			clr_character_flag = orfelect_bad_15
-			clr_character_flag = orfelect_good_17
-			clr_character_flag = orfelect_neutral_17
-			clr_character_flag = orfelect_bad_17
-			clr_character_flag = orfelect_good_19
-			clr_character_flag = orfelect_neutral_19
-			clr_character_flag = orfelect_bad_19
-			clr_character_flag = orfelect_good_21
-			clr_character_flag = orfelect_neutral_21
-			clr_character_flag = orfelect_bad_21
+			clear_orf_election_flags = yes
+		}
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
 		}
 	}
 }
 
+#Attacker won - Defender
 character_event = {
 	id = orfelection.52
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	title = EVTTITLE_orfelection_52
+	desc = EVTDESC_orfelection_52
 	
-	trigger = {
-		has_character_flag = running_for_office_defender
-	}
-	
-	desc = EVTDESC_orf_running_for_office_attacker_won_loser
 	option = { 
-		name = EVTOPTA_orf_running_for_office_defender_lost
-		clr_character_flag = election_won
-		clr_character_flag = running_for_office_defender
-		clr_character_flag = running_for_office_attacker
-		clr_character_flag = orfelect_good_11
-		clr_character_flag = orfelect_neutral_11
-		clr_character_flag = orfelect_bad_11
-		clr_character_flag = orfelect_good_13
-		clr_character_flag = orfelect_neutral_13
-		clr_character_flag = orfelect_bad_13
-		clr_character_flag = orfelect_good_15
-		clr_character_flag = orfelect_neutral_15
-		clr_character_flag = orfelect_bad_15
-		clr_character_flag = orfelect_good_17
-		clr_character_flag = orfelect_neutral_17
-		clr_character_flag = orfelect_bad_17
-		clr_character_flag = orfelect_good_19
-		clr_character_flag = orfelect_neutral_19
-		clr_character_flag = orfelect_bad_19
-		clr_character_flag = orfelect_good_21
-		clr_character_flag = orfelect_neutral_21
-		clr_character_flag = orfelect_bad_21
+		name = EVTOPTA_orfelection_52
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		custom_tooltip = {
+			text = election_lost_cooldown_event_TT
+			hidden_tooltip = {
+				set_character_flag = election_lost_cooldown
+			}
+		}
 	}
 }
 
+#Defender won - Attacker
 character_event = {
 	id = orfelection.53
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	title = EVTTITLE_orfelection_53
+	desc = EVTDESC_orfelection_53
 	
-	trigger = {
-		has_character_flag = running_for_office_attacker
-	}
-	
-	desc = EVTDESC_orf_running_for_office_defender_won_loser
 	option = { 
-		name = EVTOPTA_orf_running_for_office_attacker_lost
-		clr_character_flag = election_won
-		clr_character_flag = running_for_office_defender
-		clr_character_flag = running_for_office_attacker
-		clr_character_flag = orfelect_good_11
-		clr_character_flag = orfelect_neutral_11
-		clr_character_flag = orfelect_bad_11
-		clr_character_flag = orfelect_good_13
-		clr_character_flag = orfelect_neutral_13
-		clr_character_flag = orfelect_bad_13
-		clr_character_flag = orfelect_good_15
-		clr_character_flag = orfelect_neutral_15
-		clr_character_flag = orfelect_bad_15
-		clr_character_flag = orfelect_good_17
-		clr_character_flag = orfelect_neutral_17
-		clr_character_flag = orfelect_bad_17
-		clr_character_flag = orfelect_good_19
-		clr_character_flag = orfelect_neutral_19
-		clr_character_flag = orfelect_bad_19
-		clr_character_flag = orfelect_good_21
-		clr_character_flag = orfelect_neutral_21
-		clr_character_flag = orfelect_bad_21
+		name = EVTOPTA_orfelection_53
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		custom_tooltip = {
+			text = election_lost_cooldown_event_TT
+			hidden_tooltip = {
+				set_character_flag = election_lost_cooldown
+			}
+		}
 	}
 }
 
+#Defender won - Defender
 character_event = {
 	id = orfelection.54
-	
 	picture = GFX_evt_battle
-	
 	is_triggered_only = yes
+	title = EVTTITLE_orfelection_54
+	desc = EVTDESC_orfelection_54
 	
-	trigger = {
-		has_character_flag = running_for_office_defender
-	}
-	
-	desc = EVTDESC_orf_running_for_office_defender_won
 	option = { 
-		name = EVTOPTA_orf_running_for_office_defender_won
-		clr_character_flag = election_won
-		clr_character_flag = running_for_office_defender
-		clr_character_flag = running_for_office_attacker
-		clr_character_flag = orfelect_good_11
-		clr_character_flag = orfelect_neutral_11
-		clr_character_flag = orfelect_bad_11
-		clr_character_flag = orfelect_good_13
-		clr_character_flag = orfelect_neutral_13
-		clr_character_flag = orfelect_bad_13
-		clr_character_flag = orfelect_good_15
-		clr_character_flag = orfelect_neutral_15
-		clr_character_flag = orfelect_bad_15
-		clr_character_flag = orfelect_good_17
-		clr_character_flag = orfelect_neutral_17
-		clr_character_flag = orfelect_bad_17
-		clr_character_flag = orfelect_good_19
-		clr_character_flag = orfelect_neutral_19
-		clr_character_flag = orfelect_bad_19
-		clr_character_flag = orfelect_good_21
-		clr_character_flag = orfelect_neutral_21
-		clr_character_flag = orfelect_bad_21
+		name = EVTOPTA_orfelection_54
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
 	}
 }
 
-character_event = {#if defender dies, called from on_death
+#Informs liege incumbent has resigned
+character_event = {
+	id = orfelection.55
+	desc = EVTDESC_orfelection_55
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = event_target:orf_election_opponent_defender
+		show_portrait = event_target:orf_election_opponent_attacker
+		name = EVTOPTA_orfelection_55
+	}
+}
+
+#Informs liege attacker won
+character_event = {
+	id = orfelection.56
+	desc = EVTDESC_orfelection_56
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = event_target:orf_election_opponent_defender
+		show_portrait = event_target:orf_election_opponent_attacker
+		name = EVTOPTA_orfelection_56
+	}
+}
+
+#Informs liege defender won
+character_event = {
+	id = orfelection.57
+	desc = EVTDESC_orfelection_57
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = event_target:orf_election_opponent_defender
+		show_portrait = event_target:orf_election_opponent_attacker
+		name = EVTOPTA_orfelection_57
+	}
+}
+
+#Clears orf_won_election if no longer a voter
+character_event = {
+	id = orfelection.58
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_character_flag = orf_won_election
+		is_voter = no
+	}
+	
+	immediate = {
+		clr_character_flag = orf_won_election
+	}
+}
+
+#Clears unelected_senator if no longer a voter
+character_event = {
+	id = orfelection.59
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_character_flag = unelected_senator
+		is_voter = no
+	}
+	
+	immediate = {
+		clr_character_flag = unelected_senator
+	}
+}
+
+#Clears unelected_senator if elected
+character_event = {
+	id = orfelection.60
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_character_flag = unelected_senator
+		has_character_flag = orf_won_election
+		is_voter = no
+	}
+	
+	immediate = {
+		clr_character_flag = unelected_senator
+	}
+}
+
+#Defender dies during election
+character_event = {
 	id = orfelection.100
 	hide_window = yes
 	is_triggered_only = yes
@@ -1052,7 +1341,7 @@ character_event = {#if defender dies, called from on_death
 	immediate = {
 		liege = {
 			any_courtier_or_vassal = {
-				limit = {has_character_flag = running_for_office_attacker}
+				limit = { has_character_flag = running_for_office_attacker }
 				character_event = { id = orfelection.101 }
 				if = {
 					limit = { ROOT = { has_minor_title = title_senator_12 } }
@@ -1110,99 +1399,240 @@ character_event = {#if defender dies, called from on_death
 					give_minor_title = title_senator_3
 				}
 				if = {
-					limit = { ROOT = { has_minor_title = title_senator_base_2 } }
-					ROOT = { remove_title = title_senator_base_2 }
-					give_minor_title = title_senator_base_2
+					limit = { ROOT = { has_minor_title = title_senator_2 } }
+					ROOT = { remove_title = title_senator_2 }
+					give_minor_title = title_senator_2
 				}		
 				if = {
-					limit = { ROOT = { has_minor_title = title_senator_base_1 } }
-					ROOT = { remove_title = title_senator_base_1 }
-					give_minor_title = title_senator_base_1 
+					limit = { ROOT = { has_minor_title = title_senator_1 } }
+					ROOT = { remove_title = title_senator_1 }
+					give_minor_title = title_senator_1 
 				}
 			}
 		}
 	}
 }
 
+#Attacker informed of Defender death
 character_event = {
 	id = orfelection.101
 	is_triggered_only = yes
-	desc = EVTDESC_orfelec_101
+	desc = EVTDESC_orfelection_101
 	option = {
-		name = EVTOPTA_orfelec_101
-		clr_character_flag = running_for_office_attacker
-		clr_character_flag = orf_election_running
-		clr_character_flag = orfelec_good_11
-		clr_character_flag = orfelec_neutral_11
-		clr_character_flag = orfelec_bad_11
-		clr_character_flag = orfelec_good_13
-		clr_character_flag = orfelec_neutral_13
-		clr_character_flag = orfelec_bad_13
-		clr_character_flag = orfelec_good_15
-		clr_character_flag = orfelec_neutral_15
-		clr_character_flag = orfelec_bad_15
-		clr_character_flag = orfelec_good_17
-		clr_character_flag = orfelec_neutral_17
-		clr_character_flag = orfelec_bad_17
-		clr_character_flag = orfelec_good_19
-		clr_character_flag = orfelec_neutral_19
-		clr_character_flag = orfelec_bad_19
-		clr_character_flag = orfelec_good_21
-		clr_character_flag = orfelec_neutral_21
-		clr_character_flag = orfelec_bad_21
+		show_portrait = FROM
+		name = EVTOPTA_orfelection_101
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				character_event = { id = orfelection.106 }
+			}
+		}
 	}
 }
 
-
-character_event = {#if defender dies, called from on_death
-	id = orfelection.103
+#Attacker dies during election
+character_event = {
+	id = orfelection.102
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		has_character_flag = running_for_office_attacker
 	}
 	immediate = {
+		liege = {
+			any_courtier_or_vassal = {
+				limit = { has_character_flag = running_for_office_defender }
+				character_event = { id = orfelection.103 }
+			}
+		}
 	}
 }
 
+#Defender informed of Attacker death
 character_event = {
-	id = orfelection.104
+	id = orfelection.103
 	is_triggered_only = yes
-	desc = EVTDESC_orfelec_101
+	desc = EVTDESC_orfelection_103
+	
 	option = {
-		name = EVTOPTA_orfelec_101
-		clr_character_flag = running_for_office_defender
-		clr_character_flag = orf_election_running
-		clr_character_flag = orfelec_good_11
-		clr_character_flag = orfelec_neutral_11
-		clr_character_flag = orfelec_bad_11
-		clr_character_flag = orfelec_good_13
-		clr_character_flag = orfelec_neutral_13
-		clr_character_flag = orfelec_bad_13
-		clr_character_flag = orfelec_good_15
-		clr_character_flag = orfelec_neutral_15
-		clr_character_flag = orfelec_bad_15
-		clr_character_flag = orfelec_good_17
-		clr_character_flag = orfelec_neutral_17
-		clr_character_flag = orfelec_bad_17
-		clr_character_flag = orfelec_good_19
-		clr_character_flag = orfelec_neutral_19
-		clr_character_flag = orfelec_bad_19
-		clr_character_flag = orfelec_good_21
-		clr_character_flag = orfelec_neutral_21
-		clr_character_flag = orfelec_bad_21
+		show_portrait = FROM
+		name = EVTOPTA_orfelection_103
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_attacker = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_defender
+			}
+		}
+		event_target:orf_election_opponent_defender = {
+			remove_opinion = {
+				name = running_against
+				who = event_target:orf_election_opponent_attacker
+			}
+		}
+		hidden_tooltip = {
+			liege = {
+				character_event = { id = orfelection.107 }
+			}
+		}
 	}
 }
+
+#Event for edge cases
+character_event = {
+	id = orfelection.104
+	desc = EVTDESC_orfelection_104
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		has_character_flag = running_for_office_attacker
+		OR = {
+			independent = yes
+			is_voter = yes
+			any_character = {
+				has_character_flag = running_for_office_defender
+				has_opinion_modifier = {
+					who = ROOT
+					name = running_against
+				}
+				OR = {
+					is_voter = no
+					NOT = {
+						ROOT = {
+							liege = {
+								is_liege_of = PREVPREV
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		any_character = {
+			limit = {
+				has_character_flag = running_for_office_defender
+				has_opinion_modifier = {
+					who = ROOT
+					name = running_against
+				}
+			}
+			save_event_target_as = orf_election_opponent_defender
+		}
+		if = {
+			limit = {
+				independent = yes
+			}
+			clr_character_flag = election_lost_cooldown
+			clr_character_flag = running_for_office_cooldown
+			clr_character_flag = orf_won_election
+		}
+	}
+	
+	option = {
+		show_portrait = event_target:orf_election_opponent_defender
+		name = EVTOPTA_orfelection_104
+		clear_orf_election_flags = yes
+		event_target:orf_election_opponent_defender = {
+			character_event = { id = orfelection.105 }
+			clear_orf_election_flags = yes
+			ROOT = {
+				remove_opinion = {
+					who = PREV
+					name = running_against
+				}
+			}
+			remove_opinion = {
+				who = ROOT
+				name = running_against
+			}
+		}
+	}
+}
+
+#Informs old defender
+character_event = {
+	id = orfelection.105
+	desc = EVTDESC_orfelection_105
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = FROM
+		name = EVTOPTA_orfelection_105
+	}
+}
+
+#Informs liege of defender's death
+character_event = {
+	id = orfelection.106
+	desc = EVTDESC_orfelection_106
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = FROM
+		show_portrait = FROMFROM
+		name = EVTOPTA_orfelection_106
+	}
+}
+
+#Informs liege of attacker's death
+character_event = {
+	id = orfelection.107
+	desc = EVTDESC_orfelection_107
+	is_triggered_only = yes
+	
+	option = {
+		show_portrait = FROM
+		show_portrait = FROMFROM
+		name = EVTOPTA_orfelection_107
+	}
+}
+
+#Clears ORF election flags if independent
+character_event = {
+	id = orfelection.108
+	hide_window = yes
+	mean_time_to_happen = {
+		days =  1
+	}
+	
+	trigger = {
+		independent = yes
+		OR = {
+			has_character_flag = election_lost_cooldown
+			has_character_flag = running_for_office_cooldown
+			has_character_flag = orf_won_election
+		}
+	}
+	
+	immediate = {
+		clr_character_flag = election_lost_cooldown
+		clr_character_flag = running_for_office_cooldown
+		clr_character_flag = orf_won_election
+	}
+}
+
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event ={#local speech
+character_event = {#local speech
 	id = orfelection.11
 	desc = EVTDESC_orfelec_problem_minor_meeting
 	#picture = something
-	
-	only_playable = yes
-	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
 	
 	immediate = {
 		character_event = {id = orfelection.12 days = 7}	
@@ -1213,7 +1643,7 @@ character_event ={#local speech
 			text = ORFELECCUSTOM
 			random_list = {
 				10 = {
-					set_character_flag = orfelec_good_11
+					set_character_flag = orfelect_good_11
 					mult_modifier = {
 						factor = 0
 						diplomacy == 0
@@ -1263,10 +1693,10 @@ character_event ={#local speech
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_11
+					set_character_flag = orfelect_neutral_11
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_11
+					set_character_flag = orfelect_bad_11
 					mult_modifier = {
 						factor = 1.5
 						diplomacy == 0
@@ -1325,7 +1755,7 @@ character_event ={#local speech
 			text = ORFELECCUSTOM
 			random_list = {
 				20 = {#good
-					set_character_flag = orfelec_good_11
+					set_character_flag = orfelect_good_11
 					mult_modifier = {
 						factor = 0
 						diplomacy == 0
@@ -1374,10 +1804,10 @@ character_event ={#local speech
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_11
+					set_character_flag = orfelect_neutral_11
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_11
+					set_character_flag = orfelect_bad_11
 					mult_modifier = {
 						factor = 1.5
 						diplomacy == 0
@@ -1434,7 +1864,7 @@ character_event ={#local speech
 			text = ORFELECCUSTOM
 			random_list = {
 				10 = {
-					set_character_flag = orfelec_good_11
+					set_character_flag = orfelect_good_11
 					mult_modifier = {
 						factor = 0
 						diplomacy == 0
@@ -1484,10 +1914,10 @@ character_event ={#local speech
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_11
+					set_character_flag = orfelect_neutral_11
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_11
+					set_character_flag = orfelect_bad_11
 					mult_modifier = {
 						factor = 1.5
 						diplomacy == 0
@@ -1541,47 +1971,40 @@ character_event ={#local speech
 	}
 }
 
-character_event ={#resolved
+character_event = {#resolved
 	id = orfelection.12
+	is_triggered_only = yes
 	desc = {
-		trigger = { has_character_flag = orfelec_good_11}
-		text =EVTDESC_orfelec_resolve_good_minor_meeting
+		trigger = { has_character_flag = orfelect_good_11}
+		text = EVTDESC_orfelec_resolve_good_minor_meeting
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral_11}
-		text =EVTDESC_orfelec_resolve_neutral_minor_meeting
+		trigger = { has_character_flag = orfelect_neutral_11}
+		text = EVTDESC_orfelec_resolve_neutral_minor_meeting
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad_11}
-		text =EVTDESC_orfelec_resolve_bad_minor_meeting
+		trigger = { has_character_flag = orfelect_bad_11}
+		text = EVTDESC_orfelec_resolve_bad_minor_meeting
 	}
 	#picture = something
-	
-	only_playable = yes
-	capable_only = yes
-	is_triggered_only = yes
-	
+
 	option = {
-		trigger = { has_character_flag = orfelec_good_11}
+		trigger = { has_character_flag = orfelect_good_11}
 		name = EVTOPT_orfelec_resolve_good_minor_meeting
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_neutral_11}
+		trigger = { has_character_flag = orfelect_neutral_11}
 		name = EVTOPT_orfelec_resolve_neutral_minor_meeting
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_bad_11}
+		trigger = { has_character_flag = orfelect_bad_11}
 		name = EVTOPT_orfelec_resolve_bad_minor_meeting
 	}
 }
 
-
-character_event ={#Merchants arrive
+character_event = {#Merchants arrive
 	id = orfelection.13
 	desc = EVTDESC_orfelec_problem_merchants
-	
-	only_playable = yes
-	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	
 	
@@ -1593,7 +2016,7 @@ character_event ={#Merchants arrive
 		custom_tooltip = {
 			random_list = {
 				10 = {#good
-					set_character_flag = orfelec_good_13
+					set_character_flag = orfelect_good_13
 					mult_modifier = {
 						factor = 0
 						stewardship == 0
@@ -1620,10 +2043,10 @@ character_event ={#Merchants arrive
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_13
+					set_character_flag = orfelect_neutral_13
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_13
+					set_character_flag = orfelect_bad_13
 					mult_modifier = {
 						factor = 2
 						stewardship == 0
@@ -1659,7 +2082,7 @@ character_event ={#Merchants arrive
 		custom_tooltip = {
 			random_list = {
 				15 = {#good
-					set_character_flag = orfelec_good_13
+					set_character_flag = orfelect_good_13
 					mult_modifier = {
 						factor = 2
 						trait = groomed
@@ -1690,10 +2113,10 @@ character_event ={#Merchants arrive
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_13
+					set_character_flag = orfelect_neutral_13
 				}
 				30 = {#bad
-					set_character_flag = orfelec_bad_13
+					set_character_flag = orfelect_bad_13
 					mult_modifier = {
 						factor = 0
 						trait = groomed
@@ -1732,13 +2155,13 @@ character_event ={#Merchants arrive
 		custom_tooltip = {
 			random_list = {
 				20 = {#good
-					set_character_flag = orfelec_good_13
+					set_character_flag = orfelect_good_13
 				}
 				30 = {#neutral
-					set_character_flag = orfelec_neutral_13
+					set_character_flag = orfelect_neutral_13
 				}
 				20 = {#bad
-					set_character_flag = orfelec_bad_13
+					set_character_flag = orfelect_bad_13
 				}
 			}
 			text = ORFELECCUSTOM
@@ -1746,38 +2169,38 @@ character_event ={#Merchants arrive
 	}
 }
 
-character_event ={#resolved
+character_event = {#resolved
 	id = orfelection.14
 	desc = {
-		trigger = { has_character_flag = orfelec_good_13}
+		trigger = { has_character_flag = orfelect_good_13}
 		text =EVTDESC_orfelec_resolve_good_merchants
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral_13}
+		trigger = { has_character_flag = orfelect_neutral_13}
 		text =EVTDESC_orfelec_resolve_neutral_merchants
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad_13}
+		trigger = { has_character_flag = orfelect_bad_13}
 		text =EVTDESC_orfelec_resolve_bad_merchants
 	}
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
 	option = {
-		trigger = { has_character_flag = orfelec_good_13}
+		trigger = { has_character_flag = orfelect_good_13}
 		name = EVTOPT_orfelec_resolve_good_merchants
 	}
 	option = {
 		name = EVTOPT_orfelec_resolve_neutral_merchants
-		trigger = { has_character_flag = orfelec_neutral_13}
+		trigger = { has_character_flag = orfelect_neutral_13}
 	}
 	option = {
 		name = EVTOPT_orfelec_resolve_bad_merchants
-		trigger = { has_character_flag = orfelec_bad_13}
+		trigger = { has_character_flag = orfelect_bad_13}
 	}
 }
 
-character_event ={#a problem occurs
+character_event = {#a problem occurs
 	id = orfelection.15
 	desc = EVTDESC_orfelec_problem_rangers
 	
@@ -1795,7 +2218,7 @@ character_event ={#a problem occurs
 			text = ORFELECCUSTOM
 			random_list = {
 				10 = {#good
-					set_character_flag = orfelec_good_15
+					set_character_flag = orfelect_good_15
 					mult_modifier = {
 						factor = 0
 						diplomacy == 0
@@ -1822,10 +2245,10 @@ character_event ={#a problem occurs
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_15
+					set_character_flag = orfelect_neutral_15
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_15
+					set_character_flag = orfelect_bad_15
 					mult_modifier = {
 						factor = 2
 						diplomacy == 0
@@ -1859,7 +2282,7 @@ character_event ={#a problem occurs
 			text = ORFELECCUSTOM
 			random_list = {
 				10 = {#good
-					set_character_flag = orfelec_good_15
+					set_character_flag = orfelect_good_15
 					mult_modifier = {
 						factor = 0
 						martial == 0
@@ -1886,10 +2309,10 @@ character_event ={#a problem occurs
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_15
+					set_character_flag = orfelect_neutral_15
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_15
+					set_character_flag = orfelect_bad_15
 					mult_modifier = {
 						factor = 2
 						martial == 0
@@ -1924,7 +2347,7 @@ character_event ={#a problem occurs
 			text = ORFELECCUSTOM
 			random_list = {
 				10 = {#good
-					set_character_flag = orfelec_good_15
+					set_character_flag = orfelect_good_15
 					mult_modifier = {
 						factor = 0
 						learning == 0
@@ -1951,10 +2374,10 @@ character_event ={#a problem occurs
 					}
 				}
 				20 = {#neutral
-					set_character_flag = orfelec_neutral_15
+					set_character_flag = orfelect_neutral_15
 				}
 				40 = {#bad
-					set_character_flag = orfelec_bad_15
+					set_character_flag = orfelect_bad_15
 					mult_modifier = {
 						factor = 2
 						learning == 0
@@ -1984,47 +2407,42 @@ character_event ={#a problem occurs
 	}
 }
 
-
-character_event ={#resolved
+character_event = {#resolved
 	id = orfelection.16
 	desc = {
-		text =EVTDESC_orfelec_resolve_good_rangers
-		trigger = { has_character_flag = orfelec_good_15}
+		text = EVTDESC_orfelec_resolve_good_rangers
+		trigger = { has_character_flag = orfelect_good_15}
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral_15}
-		text =EVTDESC_orfelec_resolve_neutral_rangers
+		trigger = { has_character_flag = orfelect_neutral_15}
+		text = EVTDESC_orfelec_resolve_neutral_rangers
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad_15}
-		text =EVTDESC_orfelec_resolve_bad_rangers
+		trigger = { has_character_flag = orfelect_bad_15}
+		text = EVTDESC_orfelec_resolve_bad_rangers
 	}
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
 	option = {
 		name = EVTOPT_orfelec_resolve_good_rangers
-		trigger = { has_character_flag = orfelec_good_15}
+		trigger = { has_character_flag = orfelect_good_15}
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_neutral_15}
+		trigger = { has_character_flag = orfelect_neutral_15}
 		name = EVTOPT_orfelec_resolve_neutral_rangers
 	}
 	option = {
 		name = EVTOPT_orfelec_resolve_bad_rangers
-		trigger = { has_character_flag = orfelec_bad_15}
+		trigger = { has_character_flag = orfelect_bad_15}
 	}
 }
 
-
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event ={
-	id = orfelection.17	
+character_event = {
+	id = orfelection.17
 	desc = EVTDESC_orfelec_problem_destitute_ranger
 	#picture = something
-	
-	only_playable = yes
-	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	
 	
@@ -2051,34 +2469,31 @@ character_event ={
 	}
 }
 
-character_event ={#resolved
+character_event = {#resolved
 	id = orfelection.18
 	desc = {
-		trigger = { has_character_flag = orfelec_good}
+		trigger = { has_character_flag = orfelect_good_17 }
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_good
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral}
+		trigger = { has_character_flag = orfelect_neutral_17 }
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_neutral
 	}
 	desc = {
 		trigger = { 
-			has_character_flag = orfelec_bad_17
+			has_character_flag = orfelect_bad_17
 			NOT = { has_character_flag = destitute_ranger_encourage_them }
 		}
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_bad
 	}
 	desc = {
 		trigger = { 
-			has_character_flag = orfelec_bad_17
+			has_character_flag = orfelect_bad_17
 			has_character_flag = destitute_ranger_encourage_them
 		}
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_bad_worse
 	}
 	#picture = something
-	
-	only_playable = yes
-	capable_only = yes
 	is_triggered_only = yes
 	
 	immediate = {
@@ -2117,7 +2532,7 @@ character_event ={#resolved
 					factor = 1.25
 					has_character_flag = destitute_ranger_organize_help
 				}
-				set_character_flag = orfelec_good_17
+				set_character_flag = orfelect_good_17
 			}
 			20 = {
 				mult_modifier = {
@@ -2142,7 +2557,7 @@ character_event ={#resolved
 					factor = 1.1
 					has_character_flag = destitute_ranger_organize_help
 				}
-				set_character_flag = orfelec_neutral_17
+				set_character_flag = orfelect_neutral_17
 			}
 			30 = {
 				mult_modifier = {
@@ -2167,20 +2582,20 @@ character_event ={#resolved
 					factor = 0.85
 					has_character_flag = destitute_ranger_organize_help
 				}
-				set_character_flag = orfelec_bad_17
+				set_character_flag = orfelect_bad_17
 			}
 		}
 	}
 	
 	option = {
-		trigger = { has_character_flag = orfelec_good_17}
+		trigger = { has_character_flag = orfelect_good_17}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_good
 		clr_character_flag = destitute_ranger_organize_help
 		clr_character_flag = destitute_ranger_encourage_them
 		clr_character_flag = destitute_ranger_charity
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_neutral_17}
+		trigger = { has_character_flag = orfelect_neutral_17}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_neutral
 		clr_character_flag = destitute_ranger_organize_help
 		clr_character_flag = destitute_ranger_encourage_them
@@ -2188,7 +2603,7 @@ character_event ={#resolved
 	}
 	option = {
 		trigger = { 
-			has_character_flag = orfelec_bad_17
+			has_character_flag = orfelect_bad_17
 			NOT = { has_character_flag = destitute_ranger_encourage_them }
 		}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_bad
@@ -2198,7 +2613,7 @@ character_event ={#resolved
 	}
 	option = {
 		trigger = { 
-			has_character_flag = orfelec_bad_17
+			has_character_flag = orfelect_bad_17
 			has_character_flag = destitute_ranger_encourage_them
 		}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_bad_worse
@@ -2208,9 +2623,8 @@ character_event ={#resolved
 	}
 }
 
-
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event ={
+character_event = {
 	id = orfelection.19
 	desc = EVTDESC_orfelec_problem_range_squatters
 	#picture = something
@@ -2242,18 +2656,18 @@ character_event ={
 	}
 }
 
-character_event ={#resolved
+character_event = {#resolved
 	id = orfelection.20
 	desc = {
-		trigger = { has_character_flag = orfelec_good}
+		trigger = { has_character_flag = orfelect_good_19}
 		text = EVTDESC_orfelec_problem_range_squatters_good
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral}
+		trigger = { has_character_flag = orfelect_neutral_19}
 		text = EVTDESC_orfelec_problem_range_squatters_neutral
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad}
+		trigger = { has_character_flag = orfelect_bad_19}
 		text = EVTDESC_orfelec_problem_range_squatters_bad
 	}
 	#picture = something
@@ -2269,34 +2683,34 @@ character_event ={#resolved
 					factor = 0.25
 					has_character_flag = destitute_ranger_encourage_them
 				}
-				set_character_flag = orfelec_good_19
+				set_character_flag = orfelect_good_19
 			}
 			20 = {
 				mult_modifier = {
 					factor = 0.5
 					has_character_flag = destitute_ranger_encourage_them
 				}
-				set_character_flag = orfelec_neutral_19
+				set_character_flag = orfelect_neutral_19
 			}
 			30 = {
 				mult_modifier = {
 					factor = 0.85
 					has_character_flag = destitute_ranger_organize_help
 				}
-				set_character_flag = orfelec_bad_19
+				set_character_flag = orfelect_bad_19
 			}
 		}
 	}
 	
 	option = {
-		trigger = { has_character_flag = orfelec_good_19}
+		trigger = { has_character_flag = orfelect_good_19}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_good
 		clr_character_flag = range_squatter_force_out
 		clr_character_flag = range_squatter_convince
 		clr_character_flag = range_squatter_charity
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_neutral_19}
+		trigger = { has_character_flag = orfelect_neutral_19}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_neutral
 		clr_character_flag = range_squatter_force_out
 		clr_character_flag = range_squatter_convince
@@ -2304,7 +2718,7 @@ character_event ={#resolved
 	}
 	option = {
 		trigger = { 
-			has_character_flag = orfelec_bad_19
+			has_character_flag = orfelect_bad_19
 		}
 		name = EVTOPT_orfelec_resolve_destitute_ranger_bad
 		clr_character_flag = range_squatter_force_out
@@ -2313,15 +2727,11 @@ character_event ={#resolved
 	}
 }
 
-
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event ={
+character_event = {
 	id = orfelection.21
 	desc = EVTDESC_orfelec_problem_range_ambush
 	#picture = something
-	
-	only_playable = yes
-	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	
 	
@@ -2347,19 +2757,19 @@ character_event ={
 character_event ={#resolved
 	id = orfelection.22
 	desc = {
-		trigger = { has_character_flag = orfelec_good}
+		trigger = { has_character_flag = orfelect_good_21}
 		text = EVTDESC_orfelec_problem_range_ambush_good
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_neutral}
+		trigger = { has_character_flag = orfelect_neutral_21}
 		text = EVTDESC_orfelec_problem_range_ambush_neutral
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad}
+		trigger = { has_character_flag = orfelect_bad_21}
 		text = EVTDESC_orfelec_problem_range_ambush_cowardice
 	}
 	desc = {
-		trigger = { has_character_flag = orfelec_bad}
+		trigger = { has_character_flag = orfelect_bad_21}
 		text = EVTDESC_orfelec_problem_range_ambush_death
 	}
 	#picture = something
@@ -2442,7 +2852,7 @@ character_event ={#resolved
 					trait = strategist
 					factor = 1.5
 				}
-				set_character_flag = orfelec_good_21 #Ending event
+				set_character_flag = orfelect_good_21 #Ending event
 			}
 			20 = {
 				mult_modifier = {
@@ -2524,7 +2934,7 @@ character_event ={#resolved
 					trait = duelist
 					factor = 0.5
 				}
-				set_character_flag = orfelec_bad_21 #Ending event
+				set_character_flag = orfelect_bad_21 #Ending event
 			}
 		}
 	}
@@ -2537,7 +2947,7 @@ character_event ={#resolved
 		clr_character_flag = range_ambush_organize
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_good_21 }
+		trigger = { has_character_flag = orfelect_good_21 }
 		name = EVTOPT_orfelec_resolve_range_ambush_organized
 		clr_character_flag = range_ambush_fight
 		clr_character_flag = range_ambush_hide
@@ -2552,7 +2962,7 @@ character_event ={#resolved
 		clr_character_flag = range_ambush_organize
 	}
 	option = {
-		trigger = { has_character_flag = orfelec_bad_21 }
+		trigger = { has_character_flag = orfelect_bad_21 }
 		name = EVTOPT_orfelec_resolve_range_ambush_defeat
 		clr_character_flag = range_ambush_fight
 		clr_character_flag = range_ambush_hide
@@ -2560,6 +2970,7 @@ character_event ={#resolved
 	}
 }
 
+#Liege Endorsement
 character_event = {
 	id = orfelection.23
 	desc = EVTDESC_orfelection_23
@@ -2567,17 +2978,14 @@ character_event = {
 	is_triggered_only = yes
 	option = {
 		name = EVTOPA_orfelection_23
+		custom_tooltip = { text = EVTOPA_orfelection_23_TT }
 		FROM = {
 			hidden_tooltip = {
 				set_character_flag = endorsed_by_liege
 			}
-			opinion = {
-				modifier = opinion_grateful
-				who = ROOT
-			}
 		}
 		ai_chance = {
-			factor = 95
+			factor = 40
 			modifier = {
 				factor = 0
 				OR = {
@@ -2585,30 +2993,18 @@ character_event = {
 						FROM = {
 							has_character_flag = orf_election_opponent_attacker
 						}
-						event_target:orf_election_opponent_defender = {
-							OR = {
-								is_friend = ROOT
-								is_lover = ROOT
-								dynasty = ROOT
-								ROOT = {
-									likes_better_than = FROM
-								}
-							}
+						likes_better_than = {
+							who = event_target:orf_election_opponent_defender
+							than = event_target:orf_election_opponent_attacker
 						}
 					}
 					AND = {
 						FROM = {
 							has_character_flag = orf_election_opponent_defender
 						}
-						event_target:orf_election_opponent_attacker = {
-							OR = {
-								is_friend = ROOT
-								is_lover = ROOT
-								dynasty = ROOT
-								ROOT = {
-									likes_better_than = FROM
-								}
-							}
+						likes_better_than = {
+							who = event_target:orf_election_opponent_attacker
+							than = event_target:orf_election_opponent_defender
 						}
 					}
 				}
@@ -2618,14 +3014,9 @@ character_event = {
 	
 	option = {#don't endorse
 		name = EVTOPB_orfelection_23
-		FROM = {
-			opinion = {
-				modifier = opinion_insulted
-				who = ROOT
-			}
-		}
+		custom_tooltip = { text = EVTOPB_orfelection_23_TT }
 		ai_chance = {
-			factor = 5
+			factor = 60
 		}
 	}
 	after = {
@@ -2648,10 +3039,20 @@ character_event = {
 	option = {
 		trigger = { has_character_flag = endorsed_by_liege}
 		name = EVTOPTA_orfelection_24_endorsed
+		opinion = {
+			modifier = opinion_grateful
+			who = FROM
+			years = 10
+		}
 	}
 	option = {
 		trigger = {NOT = { has_character_flag = endorsed_by_liege}}
 		name = EVTOPTA_orfelection_24_failed
+		opinion = {
+			modifier = opinion_insulted
+			who = FROM
+			years = 10
+		}
 	}
 }
 	
@@ -2675,13 +3076,13 @@ character_event = {
 			# text = ORFELECCUSTOM
 			# random_list = {
 				# 10 = {#good
-					# set_character_flag = orfelec_good
+					# set_character_flag = orfelect_good
 				# }
 				# 20 = {#neutral
-					# set_character_flag = orfelec_neutral
+					# set_character_flag = orfelect_neutral
 				# }
 				# 10 = {#bad
-					# set_character_flag = orfelec_bad
+					# set_character_flag = orfelect_bad
 				# }
 			#}
 		# }
@@ -2692,13 +3093,13 @@ character_event = {
 			# text = ORFELECCUSTOM
 			# random_list = {
 				# 10 = {#good
-					# set_character_flag = orfelec_good
+					# set_character_flag = orfelect_good
 				# }
 				# 20 = {#neutral
-					# set_character_flag = orfelec_neutral
+					# set_character_flag = orfelect_neutral
 				# }
 				# 10 = {#bad
-					# set_character_flag = orfelec_bad
+					# set_character_flag = orfelect_bad
 				# }
 			#}
 		# }
@@ -2709,13 +3110,13 @@ character_event = {
 			# text = ORFELECCUSTOM
 			# random_list = {
 				# 10 = {#good
-					# set_character_flag = orfelec_good
+					# set_character_flag = orfelect_good
 				# }
 				# 20 = {#neutral
-					# set_character_flag = orfelec_neutral
+					# set_character_flag = orfelect_neutral
 				# }
 				# 10 = {#bad
-					# set_character_flag = orfelec_bad
+					# set_character_flag = orfelect_bad
 				# }
 			#}
 		# }
@@ -2725,15 +3126,15 @@ character_event = {
 
 # character_event ={#resolved
 	# desc = {
-		# trigger = { has_character_flag = orfelec_good}
+		# trigger = { has_character_flag = orfelect_good}
 		# text =EVTDESC_orfelec_resolve_good_example
 	# }
 	# desc = {
-		# trigger = { has_character_flag = orfelec_good}
+		# trigger = { has_character_flag = orfelect_good}
 		# text =EVTDESC_orfelec_resolve_neutral_example
 	# }
 	# desc = {
-		# trigger = { has_character_flag = orfelec_good}
+		# trigger = { has_character_flag = orfelect_good}
 		# text =EVTDESC_orfelec_resolve_bad_example
 	# }
 	# only_playable = yes
@@ -2741,17 +3142,17 @@ character_event = {
 	# is_triggered_only = yes
 	# option = {
 		# name = EVTOPT_orfelec_resolve_good_example
-		# trigger = { has_character_flag = orfelec_good}
-		# clr_character_flag = orfelec_good
+		# trigger = { has_character_flag = orfelect_good}
+		# clr_character_flag = orfelect_good
 	# }
 	# option = {
-		# trigger = { has_character_flag = orfelec_neutral}
+		# trigger = { has_character_flag = orfelect_neutral}
 		# name = EVTOPT_orfelec_resolve_neutral_example
-		# clr_character_flag = orfelec_neutral
+		# clr_character_flag = orfelect_neutral
 	# }
 	# option = {
 		# name = EVTOPT_orfelec_resolve_bad_example
-		# trigger = { has_character_flag = orfelec_bad}
-		# clr_character_flag = orfelec_bad
+		# trigger = { has_character_flag = orfelect_bad}
+		# clr_character_flag = orfelect_bad
 	# }
 # }

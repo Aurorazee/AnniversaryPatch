@@ -19,26 +19,23 @@ crown_texas;The Star Crown;;;;;;;;;;;;;x
 crown_texas;Starcrown;;;;;;;;;;;;;x
 crown_texas_desc;A winged silver star embedded with rubies and saphires. Its glorious shine represents the bright future of the Lone Star realm.;;;;;;;;;;;;;x
 
+EVTTITLE_ORFmaint_2;The Range Shrinks;;;;;;;;;;;;;x
+EVTDESC_ORFmaint_2;Due to the construction of a new city, the amount of open range accessible to your herd has shrunk.;;;;;;;;;;;;;x
+OPTA_ORFmaint_2;I see.;;;;;;;;;;;;;x
 
 adopt_orf;Adopt Open Range Feudalism;;;;;;;;;;;;;x
 adopt_orf_desc;While difficult smaller realms do sometimes adopt the ways of the range, freeing their serfs but setting aside new rights and privilegs for their nobles;;;;;;;;;;;;;x
+become_ORF_TT;Adopt §YOpen Range Feudal Government§!;;;;;;;;;;;;;x
 
 abandon_orf;Abandon Open Range Feudalism;;;;;;;;;;;;;x
 abandon_orf_desc;While difficult smaller realms do sometimes abandon the ways of the range, handing out the range as personal fiefdoms to the more powerful nobles;;;;;;;;;;;;;x
+become_feudal_TT;Adopt §YFeudal Government§!;;;;;;;;;;;;;x
 
 ca_orf_range_marshal_1;Heroic Statue;;;;;;;;;;;;;;x
 ca_orf_range_marshal_1;This heroic statue stands as a testament for the deeds of the great men who came before and that all men can achieve greatness.;;;;;;;;;;;;;;x
 range_building_only_in_capital;Is the County Capital.;;;;;;;;;;;;;;x
 ca_orf_range_marshal_2;Marshal Headquarters;;;;;;;;;;;;;x
 ca_orf_range_marshal_2_desc;From their headquarters in the county capital Marshals serve as Lawbringers and protectors. The Marshal's of the Range are what distinguish the legal range of a province from any other vast empty space.;;;;;;;;;;;;;x
-
-EVTTITLE_candidate_finder;Choosing The Battle;;;;;;;;;;;;;x
-EVTDESC_orf_candidates_to_run_against;As a direct vassal of [Root.Liege.GetTitledFirstName], and a proud [Root.GetTitle] of the [Root.Liege.PrimaryTitle.GetFullName] you have a right to run for election. Whether or not there is a senate seat valid to run for is another thing. [Root.GetLiege.GetTitledFirstName] has the right to leave senate seats unfilled, and a senate seat cannot be contested for four years after it has an election.;;;;;;;;;;;;x
-EVTDESC_orf_candidates_to_run_against;Wanting to run and having someone you want to run against are two different things. With your advisors help you review the Senate seats up for election and consider two of the options.;;;;;;;;;;;;;x
-EVTOPTA_orfelection_opponent_appointee;[orf_opponent_candidate_appointee.GetTitledFirstName] Is an appointee and thus fair game to run against.;;;;;;;;;;;;;x
-EVTOPTA_orfelection_opponent_party;Fellow Party Member [orf_opponent_candidate_party.GetTitledFirstName] is up for election.;;;;;;;;;;;;;x
-EVTOPTA_orfelection_opponent_opponent;Misguided opponent of my party [orf_opponent_candidate_outsider.GetTitledFirstName] is up for election.;;;;;;;;;;;;x
-EVTOPTA_orfelection_nevermind;Maybe I should wait a bit before I run.;;;;;;;;;;;;;x
 
 ########### format of all election campaign events ####################
 #situation
@@ -61,38 +58,100 @@ EVTOPT_orfelec_resolve_bad_x;generic;;;;;;;;;;;;x
 #this is what is shown on all options
 ORFELECCUSTOM; The results will depend on your abilities and skills;;;;;;;;;;;;x
 
-run_for_senate;Run For Senate.;;;;;;;;;;;;x
-run_for_senate_desc;By the laws of this land I have the right to run for the senate.;;;;;;;;;;;;x
+run_for_senate;Run For Senate;;;;;;;;;;;;x
+run_for_senate_desc;By the laws of this land I have the right to run for the Senate.;;;;;;;;;;;;x
+valid_orf_election_candidates_TT;At least one senator has not won an election in the past six years and is not currently defending their seat;;;;;;;;;;;;;x
+election_lost_cooldown_TT;Has lost a Senate election in the past two years;;;;;;;;;;;;;x
+running_for_office_cooldown_TT;Has run for a Senate election in the past two years;;;;;;;;;;;;;x
+running_against;Running Against;;;;;;;;;;;;;x
 
-EVTDESC_orf_election_campaign;By the very nature of the Range and the nobles that range cattle, the voter base is spread out and has sharply contrasting priorities between those in the cities and those men and women traveling between them. Where to campaign and how often can make the difference between an election for senate won or lost.;;;;;;;;;;;;x
-EVTOPTA_orf_election_campaign_range;I will spend the next month in the Range.;;;;;;;;;;;;x
-EVTOPTA_orf_election_campaign_towns;I will spend the next month in the Towns.;;;;;;;;;;;;x
-EVTOPTA_orf_election_campaign_ask_for_endorsement;I'll ask [Root.GetLiege.GetTitledFirstName] for support.;;;;;;;;;;;;x
-EVTOPTA_orf_election_campaign_done_campaigning;The election is almost over.;;;;;;;;;;;;x
-EVTTITLE_orf_election_resigned;[FROM.GetTitledFirstName] has decided to not run against you, and with this departure you quickly and easily secure the seat.;;;;;;;;;;;;x
-EVTOPTA_orf_election_resigned_that_was_easy; That wasn't so hard;;;;;;;;;;;;x
+EVTTITLE_orfelection_1;Choosing an Opponent;;;;;;;;;;;;;x
+EVTDESC_orfelection_1;As a direct vassal of [Root.Liege.GetTitledFirstName], and a proud [Root.GetTitle] of the [Root.Liege.PrimaryTitle.GetFullName] I have a right to run for a Senate seat; whether there is a Senator vulnerable enough to lose to me is another matter.;;;;;;;;;;;;x
+EVTOPTA_orfelection_1;[orf_opponent_candidate_appointee.GetTitledFirstName] is an appointee and thus fair game.;;;;;;;;;;;;;x
+EVTOPTB_orfelection_1;I've long thought that my party opponent [orf_opponent_candidate_party.GetTitledFirstName] should lose [orf_opponent_candidate_party.GetHerHis] seat.;;;;;;;;;;;;x
+EVTOPTC_orfelection_1;[orf_opponent_candidate_outsider.GetTitledFirstName] of my party is admittedly weak.;;;;;;;;;;;;;x
+EVTOPTD_orfelection_1;Maybe I should wait a bit before I run.;;;;;;;;;;;;;x
+liege_may_intervene_TT;If your liege is able to dismiss senators at will, then [Root.Liege.GetSheHe] can intervene to prevent an election from occuring.;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_6;[orf_election_opponent_attacker.GetTitledFirstName] has decided to run against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] senate seat. Since I have the power of appointment and dismissal of senators, I could intervene to stop this election before it begins.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_6;What's the harm in a bit of competition?;;;;;;;;;;;;;x
+EVTOPTA_orfelection_6_TT;You refrain from intervening and allow an election for [orf_election_opponent_defender.GetTitledFirstName]'s seat to be held.;;;;;;;;;;;;;x
+EVTOPTB_orfelection_6;Under no circumstances must this election continue!;;;;;;;;;;;;;x
+EVTOPTB_orfelection_6_TT;You inform [orf_election_opponent_defender.GetTitledFirstName] and [orf_election_opponent_attacker.GetTitledFirstName] that there will be no election.;;;;;;;;;;;;;x
+
+EVTTITLE_orfelection_7;The [Root.Liege.GetRulerTitle] Intervenes;;;;;;;;;;;;;x
+EVTDESC_orfelection_7;In accordance with the laws of [Root.Liege.PrimaryTitle.GetName], [Root.Liege.GetTitledFirstName] has invoked [Root.Liege.GetHerHis] right to decide who sits on [Root.Liege.GetHerHis] Senate.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_7_defender;I am relieved!;;;;;;;;;;;;;x
+EVTOPTA_orfelection_7_attacker;Damn the law, this is a breach of my rights!;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_3;[orf_election_opponent_attacker.GetTitledFirstName] has decided to run against me for my Senate seat!;;;;;;;;;;;;;x
+EVTOPTA_orfelection_3;I'll fight this to the bitter end!;;;;;;;;;;;;;x
+EVTOPTA_orfelection_3_TT;Accept [orf_election_opponent_attacker.GetTitledFirstName]'s challenge and run against [orf_election_opponent_attacker.GetHerHim] in an election.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_3;There's no way I'd be able to win...;;;;;;;;;;;;;x
+EVTOPTB_orfelection_3_TT;Resign your Senate seat instead of contesting the election. You will not be able to run for the Senate for two years;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_4;By the very nature of the Range and the nobles that range cattle, the voter base is spread out and has sharply contrasting priorities between those in the cities and those men and women traveling between them. Where to campaign and how often can make the difference between an election for Senate won or lost.;;;;;;;;;;;;x
+EVTOPTA_orfelection_4;I will spend the next month in the Range.;;;;;;;;;;;;x
+EVTOPTB_orfelection_4;I will spend the next month in the Towns.;;;;;;;;;;;;x
+EVTOPTC_orfelection_4;I'll ask my liege for support.;;;;;;;;;;;;x
+EVTOPTD_orfelection_4;The election is almost over, I'll wait for the results.;;;;;;;;;;;;x
+EVTOPTE_orfelection_4;There's nothing to do now but wait.;;;;;;;;;;;;x
+
+EVTDESC_orfelection_5;[From.GetTitledFirstName] has decided to not run against you, and with [From.GetHerHis] departure may assume [From.GetHerHis] seat.;;;;;;;;;;;;x
+EVTOPTA_orfelection_5; That wasn't so hard.;;;;;;;;;;;;x
+
+EVTTITLE_orfelection_51;Election Victory;;;;;;;;;;;;;x
+EVTDESC_orfelection_51;I now stand as Senator-elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election. Now all the responsibilities of being a Senator rest upon my shoulders, and I now only hope that [Root.Religion.GetHighGodName] keeps me away from any misfortune.;;;;;;;;;;;;x
+EVTOPTA_orfelection_51;I stand ready to represent my consituents.;;;;;;;;;;;;x
+
+EVTTITLE_orfelection_52;Election Loss;;;;;;;;;;;;;x
+EVTDESC_orfelection_52;Despite my best efforts, [orf_election_opponent_attacker.GetTitledFirstName] has bested me in the recent election for my Senate seat.;;;;;;;;;;;;x
+EVTOPTA_orfelection_52;These might be a long six years...;;;;;;;;;;;;x
+election_lost_cooldown_event_TT;You will not be able to run for the Senate for two years;;;;;;;;;;;;;x
+
+EVTTITLE_orfelection_53;Election Loss;;;;;;;;;;;;;x
+EVTDESC_orfelec_53;Despite my best efforts, [orf_election_opponent_defender.GetTitledFirstName] has bested me in the recent election for [orf_election_opponent_defender.GetHerHis] Senate seat.;;;;;;;;;;;;x
+EVTOPTA_orfelection_53;These might be a long six years...;;;;;;;;;;;;x
+
+EVTTITLE_orfelection_54;Election Victory;;;;;;;;;;;;;x
+EVTDESC_orfelection54;I now stand as Senator-elect, having overcome [orf_election_opponent_attacker.GetTitledFirstName] in a tight election. Now all the responsibilities of being a Senator rest upon my shoulders, and I now only hope that [Root.Religion.GetHighGodName] keeps me away from any misfortune.;;;;;;;;;;;;x
+EVTOPTA_orfelection_54;I stand ready to represent my consituents.;;;;;;;;;;;;x
+
+EVTDESC_orfelec_55;Due to [orf_election_opponent_attacker.GetTitledFirstName]'s electoral challenge against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] Senate seat, the now ex-Senator has resigned their post in favor of [orf_election_opponent_defender.GetHerHis] challenger.;;;;;;;;;;;;;x
+EVTOPTA_orfelec_55;Ignoble behavior.;;;;;;;;;;;;;x
+
+EVTDESC_orfelec_56;[orf_election_opponent_attacker.GetTitledFirstName] stands as Senator-elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
+EVTOPTA_orfelec_56;The people of the range sure are fickle.;;;;;;;;;;;;;x
+
+EVTDESC_orfelec_57;[orf_election_opponent_defender.GetTitledFirstName] defended [orf_election_opponent_defender.GetHerHis] position as Senator, having overcome [orf_election_opponent_attacker.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
+EVTOPTA_orfelec_57;Same old, same old.;;;;;;;;;;;;;x
 
 EVTDESC_orf_election_waiting_results;The election is now coming to an end. The votes are being registered and the winner will soon be announced The political manueverings have been made and now is time for the payoff.;;;;;;;;;;;;x
 EVTOPTA_orf_election_waiting_results;There's nothing to do now but wait;;;;;;;;;;;;x
-EVTDESC_orf_election_inform;A messenger arrives at the range moot as you are taking their input on recent laws proposed before the Senate. Before the assembled nobles the messenger declares that [FROM.GetTitledFirstName] intends to challenge you for your senate seat.;;;;;;;;;;;;x
-EVTOPTA_orfelection_i_resist;I will meet him on the campaign trail.;;;;;;;;;;;;x
-EVTOPTA_orfelection_i_resign;To be honest I was ready to resign anyway.;;;;;;;;;;;;x
-EVTDESC_orf_election_resigned;Rather than defend the seat [FROM.GetTitledFirstName] has resigned,clearing the path for an easy and painless election victory.;;;;;;;;;;;;x
 
-EVTDESC_orfelec_101;A grim shock travels across the range, your opponent in your senate race has passed away. While unfortunate for his family and friends the sudden death of your oponent leaves no strong opponent to run against you, within a week the election is decided.;;;;;;;;;;;;x
-EVTOPTA_orfelec_101;The realm has decided;;;;;;;;;;;;x
+EVTDESC_orfelection_101;Grim news has arrived at my ranch — my opponent [From.GetTitledFirstName] has unfortunately died. While, [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume [From.GetHerHis] vacant Senate seat as the default winner of our election.;;;;;;;;;;;;x
+EVTOPTA_orfelection_101;[Root.Religion.GetHighGodName] has decided, I guess.;;;;;;;;;;;;x
 
-EVTDESC_orf_running_for_office_attacker_won;[orf_election_opponent_attacker.GetTitledFirstName] stands as senator elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election. The politics of the senate already begin to shift with those that had dealings with [orf_election_opponent_defender.GetTitledFirstName] now having to reconsider their plans and many already considering how they will deal with this new senator.;;;;;;;;;;;;x
-EVTDESC_orf_running_for_office_defender_won;[orf_election_opponent_defender.GetTitledFirstName] stands as senator elect, having overcome [orf_election_opponent_attacker.GetTitledFirstName]'s attempt to replace them. The politics of the senate Continue as normal, with those that had dealings with [orf_election_opponent_defender.GetTitledFirstName] secure in the knowledge they will be there to fulfill them.;;;;;;;;;;;;x
-EVTDESC_orf_running_for_office_attacker_won_loser;Despite your best efforts, [orf_election_opponent_attacker.GetTitledFirstName] stands as senator elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election. The politics of the senate already begin to shift with those that had dealings with [orf_election_opponent_defender.GetTitledFirstName] now having to reconsider their plans and many already considering how they will deal with this new senator.;;;;;;;;;;;;x
-EVTDESC_orf_running_for_office_defender_won_loser;Despite your best efforts, [orf_election_opponent_defender.GetTitledFirstName] stands as senator elect, having overcome [orf_election_opponent_attacker.GetTitledFirstName]'s attempt to replace them. The politics of the senate Continue as normal, with those that had dealings with [orf_election_opponent_defender.GetTitledFirstName] secure in the knowledge they will be there to fulfill them.;;;;;;;;;;;;x
-EVTOPTA_orf_running_for_office_attacker_won;I stand ready to represent my consituents;;;;;;;;;;;;x
-EVTOPTA_orf_running_for_office_defender_won;I stand ready to represent my consituents;;;;;;;;;;;;x
-EVTOPTA_orf_running_for_office_attacker_lost;These might be a long 4 years;;;;;;;;;;;;x
-EVTOPTA_orf_running_for_office_defender_lost;These might be a long 4 years;;;;;;;;;;;;x
-EVTOPTA_orf_election_result_agnostic;The realm has spoken.;;;;;;;;;;;;x
-EVTTITLE_orf_running_for_office_won;The realm has decided;;;;;;;;;;;;x
+EVTDESC_orfelection_103;Grim news has arrived at my ranch — my opponent [From.GetTitledFirstName] has unfortunately died. While, [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume victory as the default winner of our election for my Senate seat.;;;;;;;;;;;;x
+EVTOPTA_orfelection_103;[Root.Religion.GetHighGodName] has decided, I guess.;;;;;;;;;;;;x
 
+EVTDESC_orfelection_104;Due to recent events, the election between [orf_election_opponent_defender.GetTitledFirstName] I must be canceled.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_104;I see.;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_105;Due to recent events, the Senate election between [From.GetTitledFirstName] and I must be canceled.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_105;Oh well.;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_106;Grim news has arrived at my ranch — my vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for the later Senator's seat.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_106;What a sad outcome...;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_107;Grim news has arrived at my ranch — my vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for [From.GetHerHis] Senate seat.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_107;What a sad outcome...;;;;;;;;;;;;;x
+
+EVTDESC_orfelection_23;[From.GetTitledFirstName] has asked me to endorse [From.GetHerHis] candidacy for the current Senate election. It seems that the fate of this election may rest in my hands.;;;;;;;;;;;;;x
+EVTOPA_orfelection_23;Of course I'll endorse [From.GetHerHim]!;;;;;;;;;;;;;x
+EVTOPA_orfelection_23_TT;[From.GetTitledFirstName] will be grateful;;;;;;;;;;;;;x
+EVTOPB_orfelection_23;I'd rather stay out of it...;;;;;;;;;;;;;x
+EVTOPB_orfelection_23_TT;[From.GetTitledFirstName] will be disappointed;;;;;;;;;;;;;x
 
 #situation
 EVTDESC_orfelec_problem_minor_meeting;As the hall finds itself filled by dozens of members of local nobility alongside their families it dawns upon you the barbeque has begun. You pace back and forth in a backroom, mentally preparing for the words you will inevitably have to exchange with these people, until eventually you peek out into the main hall and see that the majority of them are partaking in the merriment, generously provided on your behalf. All the pieces are set, with these fellow nobles satisfied from fine meals and fine wine your potential to maneuver the situation to your benefit is at its greatest. You enter the main room, ready to deliver a speech before the crowd...;;;;;;;;;;;;x
@@ -190,28 +249,28 @@ range_senate_size_1_option;Council;;;;;;;;;;;;;x
 range_senate_size_1_desc;While not enough to assuage the most radical of nobles, two elected advisors ensure that the nobility have some say in the running of the realm.;;;;;;;;;;;;;x
 range_senate_size_2;Chamber Senate;;;;;;;;;;;;;x
 range_senate_size_2_option;Chamber;;;;;;;;;;;;;x
-range_senate_size_2_desc;The smallest thing that could be considered a senate, a chamber of 4 senators actually means that elected representatives regularly decide council votes.;;;;;;;;;;;;;x
+range_senate_size_2_desc;The smallest thing that could be considered a Senate, a chamber of 4 senators actually means that elected representatives regularly decide council votes.;;;;;;;;;;;;;x
 range_senate_size_3;Royal Senate;;;;;;;;;;;;;x
 range_senate_size_3_option;Royal;;;;;;;;;;;;;x
-range_senate_size_3_desc;A senate fitting a royal of the Range, 8 seats means that the majority of the council's political power is held by elected senators.;;;;;;;;;;;;;x
+range_senate_size_3_desc;A Senate fitting a royal of the Range, 8 seats means that the majority of the council's political power is held by elected senators.;;;;;;;;;;;;;x
 range_senate_size_4;Grand Senate;;;;;;;;;;;;;x
 range_senate_size_4_option;Grand;;;;;;;;;;;;;x
 range_senate_size_4_desc;A gathering that can truly represent a Grand Kingdom, 12 seats represent the united will of a realm's nobility.;;;;;;;;;;;;;x
 
 orf_senate_type_law;Senate Rights;;;;;;;;;;;;;x
-orf_senate_type_law_desc;To have a senate is one thing, to give it the rights and safety to act is another.;;;;;;;;;;;;;x
+orf_senate_type_law_desc;To have a Senate is one thing, to give it the rights and safety to act is another.;;;;;;;;;;;;;x
 orf_senate_type_law_0;Royal Oversight;;;;;;;;;;;;;x
 orf_senate_type_law_0_option;Royal;;;;;;;;;;;;;x
-orf_senate_type_law_0_desc;While elected by our nobility the senate faces restrictions and can be removed by the ruler;;;;;;;;;;;;;x
+orf_senate_type_law_0_desc;While elected by our nobility the Senate faces restrictions and can be removed by the ruler;;;;;;;;;;;;;x
 TOOLTIP_orf_senate_type_law_0;Senators serve at the leisure of their liege and can be removed.;;;;;;;;;;;;;x
 orf_senate_type_law_1;Protected Senators;;;;;;;;;;;;;x
 orf_senate_type_law_1_option;Protected;;;;;;;;;;;;;x
-orf_senate_type_law_1_desc;Elected by the nobility of our realm the positions of the senate are held on behalf of that nobility and cannot be removed by the ruler;;;;;;;;;;;;;x
+orf_senate_type_law_1_desc;Elected by the nobility of our realm the positions of the Senate are held on behalf of that nobility and cannot be removed by the ruler;;;;;;;;;;;;;x
 TOOLTIP_orf_senate_type_law_1;Elected Senators serve on behalf of the vassals and cannot be arbitrarily removed from their position.;;;;;;;;;;;;;x
 orf_senate_type_law_2;Open Senate;;;;;;;;;;;;;x
 orf_senate_type_law_2_option;Open;;;;;;;;;;;;;x
-orf_senate_type_law_2_desc;A truly radical proposition where non nobles, merchants and church leaders, can run for senate but they are still elected only by nobility.;;;;;;;;;;;;;x
-TOOLTIP_orf_senate_type_law_2;Radically opens the senate to non noble vassals.;;;;;;;;;;;;;x
+orf_senate_type_law_2_desc;A truly radical proposition where non nobles, merchants and church leaders, can run for Senate but they are still elected only by nobility.;;;;;;;;;;;;;x
+TOOLTIP_orf_senate_type_law_2;Radically opens the Senate to non noble vassals.;;;;;;;;;;;;;x
 
 range_privileges_trade;Range Travel Restrictions;;;;;;;;;;;;;x
 range_privileges_trade_desc;While the exclusive rights of nobles to range their cattle on the rangeland is not in question, many merchants ask that they be allowed to travel it and enjoy its safety to travel between settlements.;;;;;;;;;;;;;x
@@ -232,7 +291,7 @@ range_privileges_church_1_option;Restricted;;;;;;;;;;;;;x
 range_privileges_church_1_desc;The temples already have their own farms and land with which to fund themselves, the range is the exclusive privilege of the nobility.;;;;;;;;;;;;;x
 
 open_range_feudalism_government;Open Range Feudalism;;;;;;;;;;;;;x
-open_range_feudalism_government_desc;Open Range Feudalism operates similarly to normal feudalism, but the freedom of the plains and the dominance of ranching over farming has resulted in a entirely different approach to rewarding and funding their noble class. Rather than fiefdoms the county holder controls and maintains the underdeveloped land as a Range, and the nobility exchange their service for the right to graze on it. Additionally the nobility's harder to tame nature has resulted in a persistence of broader power sharing. Large enough realms can implement an expanded council with elected seats, and even an entire congress for realms large enough to warrant it.;;;;;;;;;;;;;x
+open_range_feudalism_government_desc;Open Range Feudalism operates similarly to normal feudalism, but the freedom of the plains and the dominance of ranching over farming has resulted in a entirely different approach to rewarding and funding their noble class. Rather than fiefdoms the county holder controls and maintains the underdeveloped land as a Range, and the nobility exchange their service for the right to graze on it. Special buildings must be built to utilize the range, which are limited by the number of empty holdings. Additionally, the nobility's harder to tame nature has resulted in a persistence of broader power sharing. Large enough realms can implement an expanded council with elected seats, and even an entire congress for realms large enough to warrant it.;;;;;;;;;;;;;x
 gov_open_range_feudalism_base;Range Autocracy;;;;;;;;;;;;;x
 gov_americanist_open_range_feudalism_base;Range District;;;;;;;;;;;;;x
 gov_open_range_feudalism_council;Reformed Autocracy;;;;;;;;;;;;;x
@@ -256,3 +315,18 @@ title_senator_9;Senator;;;;;;;;;;;;;x
 title_senator_10;Senator;;;;;;;;;;;;;x
 title_senator_11;Senator;;;;;;;;;;;;;x
 title_senator_12;Senator;;;;;;;;;;;;;x
+
+open_range_1;Open Range;;;;;;;;;;;;;x
+open_range_1_desc;Open Range;;;;;;;;;;;;;x
+open_range_2;Open Range;;;;;;;;;;;;;x
+open_range_2_desc;Open Range;;;;;;;;;;;;;x
+open_range_3;Open Range;;;;;;;;;;;;;x
+open_range_3_desc;Open Range;;;;;;;;;;;;;x
+open_range_4;Open Range;;;;;;;;;;;;;x
+open_range_4_desc;Open Range;;;;;;;;;;;;;x
+open_range_5;Open Range;;;;;;;;;;;;;x
+open_range_5_desc;Open Range;;;;;;;;;;;;;x
+open_range_6;Open Range;;;;;;;;;;;;;x
+open_range_6_desc;Open Range;;;;;;;;;;;;;x
+open_range_7;Open Range;;;;;;;;;;;;;x
+open_range_7_desc;Open Range;;;;;;;;;;;;;x
