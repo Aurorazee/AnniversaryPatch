@@ -764,7 +764,6 @@ character_event = {
 						culture = ROOT
 						female = no
 						age = 20
-						random_traits = yes
 					}
 				}
 				50 = {
@@ -775,7 +774,6 @@ character_event = {
 						culture = ROOT
 						female = yes
 						age = 20
-						random_traits = yes
 					}
 				}
 			}

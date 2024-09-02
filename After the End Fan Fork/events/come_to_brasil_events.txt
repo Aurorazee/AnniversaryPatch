@@ -382,9 +382,6 @@ narrative_event = { # Unusually heavy rain, think of late parents.
 		trait = kow_tow_travels
 		has_character_flag = boa_vista_leg
 	}
-	
-	hide_from = yes
-	
 	is_triggered_only = yes
 	
 	immediate = {
@@ -4589,7 +4586,6 @@ narrative_event = { #Visit the market
 		has_character_flag = brazil_leg
 	}
 
-	hide_from = yes
 	immediate = {
 		set_character_flag = visited_market
 		hidden_effect = {
@@ -4886,13 +4882,6 @@ narrative_event = { # audience w/ the Emperor
 					check_variable = {	
 						which = kow_tow_emperor_impression_evaluation
 						value = 10
-					}
-				}
-				modifier = {
-					factor = 1.1
-					check_variable = {	
-						which = kow_tow_emperor_impression_evaluation
-						value = 12
 					}
 				}
 				modifier = {

@@ -760,17 +760,10 @@ narrative_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				if = {
-					limit = { 
-					OR = {
+				factor = 0
+				NOR = {
 					trait = arbitrary
 					trait = zodiac_libra
-					}
-					}
-					factor = 10
-				}
-				else = {
-					factor = 0
 				}
 			}
 		}
@@ -2912,7 +2905,7 @@ character_event = {
 		random_list = {
 			50 = { character_event = {id=gaian.309 days=2 }} 
 			25 = { character_event = {id=gaian.310 days=2}} 
-			25 = { character_event = {id=gaian.311 days=2}}
+			25 = { character_event = {id=gaian.312 days=2}}
 			}
 		}
 	}
@@ -2932,9 +2925,7 @@ character_event = {
 	option = {
 		name = EVTOPTD_hike_bear_encounter
 		prestige = 10
-		NOT = {
-			trait = craven
-		}
+		trigger = { NOT = { trait = craven } }
 		hidden_tooltip = {
 		random_list = {
 			95 = { character_event = {id=gaian.319 days=2 }} 
@@ -3130,7 +3121,7 @@ character_event = {
 		random_list = {
 			50 = { character_event = {id=gaian.309 days=2}} 
 			25 = { character_event = {id=gaian.310 days=2}} 
-			25 = { character_event = {id=gaian.311 days=2}}
+			25 = { character_event = {id=gaian.312 days=2}}
 			}
 		}	
 	}
@@ -4116,7 +4107,7 @@ letter_event = { #the court chaplain sends a letter
 
 character_event = { #the court chaplain event to screw you up
 	id = gaian.604
-	border = GFX_event_letter_frame_religion
+	border = GFX_event_normal_frame_religion
 	hide_window = yes
 	
 	is_triggered_only = yes
@@ -4232,7 +4223,6 @@ character_event = { #ping liege
 
 letter_event = {
 	id = gaian.612
-	picture = GFX_evt_courtiers_talking
 	desc = EVTDESC_GAIAN612
 	border = GFX_event_letter_frame_diplomacy
 	is_triggered_only = yes

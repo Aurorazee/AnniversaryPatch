@@ -1,4 +1,3 @@
-###ÄNSI
 party_magnate;Magnate;;;;;;;;;;;;;x
 party_magnate_desc;This Noble aligns themselves with the Magnates politically, favoring a realm where landed nobles may better rule their demesne without restrictions.;;;;;;;;;;;;;x
 party_populist;Populist;;;;;;;;;;;;;x
@@ -24,11 +23,11 @@ EVTDESC_ORFmaint_2;Due to the construction of a new city, the amount of open ran
 OPTA_ORFmaint_2;I see.;;;;;;;;;;;;;x
 
 adopt_orf;Adopt Open Range Feudalism;;;;;;;;;;;;;x
-adopt_orf_desc;While difficult smaller realms do sometimes adopt the ways of the range, freeing their serfs but setting aside new rights and privilegs for their nobles;;;;;;;;;;;;;x
+adopt_orf_desc;While difficult, smaller realms may adopt the ways of the range, freeing their serfs but setting aside new rights and privileges for their nobles.;;;;;;;;;;;;;x
 become_ORF_TT;Adopt §YOpen Range Feudal Government§!;;;;;;;;;;;;;x
 
 abandon_orf;Abandon Open Range Feudalism;;;;;;;;;;;;;x
-abandon_orf_desc;While difficult smaller realms do sometimes abandon the ways of the range, handing out the range as personal fiefdoms to the more powerful nobles;;;;;;;;;;;;;x
+abandon_orf_desc;While difficult, smaller realms may abandon the ways of the range, handing out the range as personal fiefdoms to the more powerful nobles.;;;;;;;;;;;;;x
 become_feudal_TT;Adopt §YFeudal Government§!;;;;;;;;;;;;;x
 
 ca_orf_range_marshal_1;Heroic Statue;;;;;;;;;;;;;;x
@@ -64,12 +63,13 @@ valid_orf_election_candidates_TT;At least one senator has not won an election in
 election_lost_cooldown_TT;Has lost a Senate election in the past two years;;;;;;;;;;;;;x
 running_for_office_cooldown_TT;Has run for a Senate election in the past two years;;;;;;;;;;;;;x
 running_against;Running Against;;;;;;;;;;;;;x
+orf_lost_election_to;Lost Election To;;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_1;Choosing an Opponent;;;;;;;;;;;;;x
 EVTDESC_orfelection_1;As a direct vassal of [Root.Liege.GetTitledFirstName], and a proud [Root.GetTitle] of the [Root.Liege.PrimaryTitle.GetFullName] I have a right to run for a Senate seat; whether there is a Senator vulnerable enough to lose to me is another matter.;;;;;;;;;;;;x
-EVTOPTA_orfelection_1;[orf_opponent_candidate_appointee.GetTitledFirstName] is an appointee and thus fair game.;;;;;;;;;;;;;x
-EVTOPTB_orfelection_1;I've long thought that my party opponent [orf_opponent_candidate_party.GetTitledFirstName] should lose [orf_opponent_candidate_party.GetHerHis] seat.;;;;;;;;;;;;x
-EVTOPTC_orfelection_1;[orf_opponent_candidate_outsider.GetTitledFirstName] of my party is admittedly weak.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_1;[orf_opponent_1.GetTitledFirstName] is an appointee and thus fair game.;;;;;;;;;;;;;x
+EVTOPTB_orfelection_1;I've long thought that my party opponent [orf_opponent_2.GetTitledFirstName] should lose [orf_opponent_2.GetHerHis] seat.;;;;;;;;;;;;x
+EVTOPTC_orfelection_1;[orf_opponent_3.GetTitledFirstName] of my party is admittedly weak.;;;;;;;;;;;;;x
 EVTOPTD_orfelection_1;Maybe I should wait a bit before I run.;;;;;;;;;;;;;x
 liege_may_intervene_TT;If your liege is able to dismiss senators at will, then [Root.Liege.GetSheHe] can intervene to prevent an election from occuring.;;;;;;;;;;;;;x
 
@@ -233,6 +233,7 @@ EVTOPTA_texas_50;Populist Party;;;;;;;;;;;;x
 EVTOPTB_texas_50;Magnate Party;;;;;;;;;;;;x
 EVTOPTC_texas_50;Royalist Party;;;;;;;;;;;;x
 EVTOPTD_texas_50;Theocrat Party;;;;;;;;;;;;x
+EVTOPTE_texas_50;Opposition Party;;;;;;;;;;;;x
 
 become_opposition;Join Opposition;;;;;;;;;;;;x
 

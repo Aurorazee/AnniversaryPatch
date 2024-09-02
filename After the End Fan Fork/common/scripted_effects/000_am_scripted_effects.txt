@@ -1334,6 +1334,18 @@ remove_nestorian_patron_saint_effect = {
 }
 
 clear_orf_election_flags = {
+	event_target:orf_election_opponent_attacker = {
+		remove_opinion = {
+			name = running_against
+			who = event_target:orf_election_opponent_defender
+		}
+	}
+	event_target:orf_election_opponent_defender = {
+		remove_opinion = {
+			name = running_against
+			who = event_target:orf_election_opponent_attacker
+		}
+	}
 	clr_character_flag = orf_election_running
 	clr_character_flag = running_for_office_defender
 	clr_character_flag = running_for_office_attacker
@@ -1366,4 +1378,7 @@ clear_orf_election_flags = {
 	clr_character_flag = range_ambush_organize
 	clr_character_flag = range_ambush_death
 	clr_character_flag = endorsed_by_liege
+	clr_character_flag = towns_campaign
+	clr_character_flag = range_campaign
+	clr_character_flag = endorsed_campaign
 }

@@ -548,39 +548,6 @@ character_event = {
 	}
 }
 
-# Aztec first contact
-
-character_event = {
-	id = CM.10019
-	
-	hide_window = yes
-
-	is_triggered_only = yes
-	
-	immediate = {
-		chronicle = {
-			entry = CHRONICLE_AZTECS_FIRST_CONTACT
-			portrait = [From.GetID]
-		}
-	}
-}
-
-# Aztec Invasion
-character_event = {
-	id = CM.10020
-	
-	hide_window = yes
-
-	is_triggered_only = yes
-	
-	immediate = {
-		chronicle = {
-			entry = CHRONICLE_AZTEC_INVASION
-			portrait = [From.GetID]
-		}
-	}
-}
-
 # Creates new higher level title
 	# On create title - ROOT is the creating character, FROM is the title
 character_event = {

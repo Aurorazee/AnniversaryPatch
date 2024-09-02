@@ -250,7 +250,7 @@ colonization = {
 						duchy = { grant_title = ROOT }
 						# Give them the old capital too
 						any_province_holding = {
-							limit = { same_realm = FROM }
+							limit = { owner = { same_realm = FROM } }
 							grant_title = ROOT
 						}
 					}
@@ -3598,14 +3598,6 @@ maghrebjihad = {
 			}
 		}
 	}
-
-	#is_valid = {
-	#	always = yes
-	#}
-	
-	#is_valid_title = {
-	#	always = yes
-	#}
 	
 	on_success = {
 		ROOT = { 
@@ -3645,7 +3637,7 @@ maghrebjihad = {
 						duchy = { grant_title = ROOT }
 						# Give them the old capital too
 						any_province_holding = {
-							limit = { same_realm = FROM }
+							limit = { owner = { same_realm = FROM } }
 							grant_title = ROOT
 						}
 					}

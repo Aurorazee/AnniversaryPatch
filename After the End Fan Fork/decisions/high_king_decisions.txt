@@ -32,9 +32,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_yellowrose = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_yellowrose = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_yellowrose
@@ -76,9 +78,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_westex = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_westex = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_westex
@@ -118,9 +122,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_highlands = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_highlands = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_highlands
@@ -159,9 +165,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_texarkana = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_texarkana = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_texarkana
@@ -201,9 +209,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_silvercrown = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_silvercrown = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_silvercrown
@@ -248,9 +258,11 @@ decisions = {
 		}
 	
 		effect = {
-			k_star_coast = {
-				grant_title = ROOT
-				copy_title_laws = PREV
+			primary_title = {
+				k_star_coast = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+				}
 			}
 			hidden_tooltip = {
 			set_character_flag = tex_starcoast
@@ -417,12 +429,14 @@ decisions = {
 		}
 	
 		effect = {
-			e_texas = {
-				grant_title = ROOT
-				copy_title_laws = PREV
-				add_law = succ_hre_elective
-				add_law = range_senate_size_3
-				add_law = orf_senate_type_law_1
+			primary_title = {
+				e_texas = {
+					grant_title = ROOT
+					copy_title_laws = PREV
+					add_law = succ_hre_elective
+					add_law = range_senate_size_3
+					add_law = orf_senate_type_law_1
+				}
 			}
 			add_artifact = crown_texas
 			set_global_flag = texas_restored

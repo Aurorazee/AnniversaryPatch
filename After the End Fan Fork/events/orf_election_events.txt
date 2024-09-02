@@ -43,9 +43,9 @@ character_event = {
 							has_character_flag = running_for_office_defender
 						}
 					}
-					save_event_target_as = orf_opponent_candidate_appointee
+					save_event_target_as = orf_opponent_1
 					set_character_flag = orf_do_not_pick
-					ROOT = { set_character_flag = orf_opponent_1_appointee_found }
+					ROOT = { set_character_flag = orf_opponent_1 }
 				}
 			}
 		}
@@ -96,9 +96,9 @@ character_event = {
 							has_job_title = job_spiritual
 						}
 					}
-					save_event_target_as = orf_opponent_candidate_party
+					save_event_target_as = orf_opponent_2
 					set_character_flag = orf_do_not_pick
-					ROOT = { set_character_flag = orf_opponent_1_party_found }
+					ROOT = { set_character_flag = orf_opponent_2 }
 				}
 			}
 		}		
@@ -148,9 +148,9 @@ character_event = {
 							has_job_title = job_spiritual
 						}
 					}
-					save_event_target_as = orf_opponent_candidate_outsider
+					save_event_target_as = orf_opponent_3
 					set_character_flag = orf_do_not_pick
-					ROOT = { set_character_flag = orf_opponent_2_found }
+					ROOT = { set_character_flag = orf_opponent_3 }
 				}
 			}
 		}
@@ -159,9 +159,9 @@ character_event = {
 		name = EVTOPTA_orfelection_1
 		show_portrait = event_target:orf_opponent_candidate_appointee
 		trigger = {
-			has_character_flag = orf_opponent_1_appointee_found
+			has_character_flag = orf_opponent_1
 		}
-		event_target:orf_opponent_candidate_appointee = { save_event_target_as = orf_election_opponent_defender }
+		event_target:orf_opponent_1 = { save_event_target_as = orf_election_opponent_defender }
 		save_event_target_as = orf_election_opponent_attacker
 		event_target:orf_election_opponent_defender = {
 			set_character_flag = orf_election_running
@@ -178,9 +178,6 @@ character_event = {
 				who = event_target:orf_election_opponent_defender
 			}
 		}
-		clr_character_flag = orf_opponent_1_appointee_found
-		clr_character_flag = orf_opponent_1_party_found
-		clr_character_flag = orf_opponent_2_found
 		custom_tooltip = {
 			text = liege_may_intervene_TT
 			hidden_tooltip = {
@@ -205,9 +202,9 @@ character_event = {
 		name = EVTOPTB_orfelection_1
 		show_portrait = event_target:orf_opponent_candidate_party
 		trigger = {
-			has_character_flag = orf_opponent_1_party_found
+			has_character_flag = orf_opponent_2
 		}
-		event_target:orf_opponent_candidate_party = { save_event_target_as = orf_election_opponent_defender }
+		event_target:orf_opponent_2 = { save_event_target_as = orf_election_opponent_defender }
 		save_event_target_as = orf_election_opponent_attacker
 		event_target:orf_election_opponent_defender = {
 			set_character_flag = orf_election_running
@@ -224,9 +221,6 @@ character_event = {
 				who = event_target:orf_election_opponent_defender
 			}
 		}
-		clr_character_flag = orf_opponent_1_appointee_found
-		clr_character_flag = orf_opponent_1_party_found
-		clr_character_flag = orf_opponent_2_found
 		custom_tooltip = {
 			text = liege_may_intervene_TT
 			hidden_tooltip = {
@@ -251,9 +245,9 @@ character_event = {
 		name = EVTOPTC_orfelection_1
 		show_portrait = event_target:orf_opponent_candidate_outsider
 		trigger = {
-			has_character_flag = orf_opponent_2_found
+			has_character_flag = orf_opponent_3
 		}
-		event_target:orf_opponent_candidate_outsider = { save_event_target_as = orf_election_opponent_defender }
+		event_target:orf_opponent_3 = { save_event_target_as = orf_election_opponent_defender }
 		ROOT = { save_event_target_as = orf_election_opponent_attacker }
 		event_target:orf_election_opponent_defender = {
 			set_character_flag = orf_election_running
@@ -270,9 +264,6 @@ character_event = {
 				who = event_target:orf_election_opponent_defender
 			}
 		}
-		clr_character_flag = orf_opponent_1_appointee_found
-		clr_character_flag = orf_opponent_1_party_found
-		clr_character_flag = orf_opponent_2_found
 		custom_tooltip = {
 			text = liege_may_intervene_TT
 			hidden_tooltip = {
@@ -297,22 +288,22 @@ character_event = {
 		name = EVTOPTD_orfelection_1
 		prestige = 25
 		clear_orf_election_flags = yes
-		clr_character_flag = orf_opponent_1_appointee_found
-		clr_character_flag = orf_opponent_1_party_found
-		clr_character_flag = orf_opponent_2_found
 		ai_chance =	{
 			factor = 0
 		}
 	}
 	
 	after = {
-		event_target:orf_opponent_candidate_appointee = {
+		clr_character_flag = orf_opponent_1
+		clr_character_flag = orf_opponent_2
+		clr_character_flag = orf_opponent_3
+		event_target:orf_opponent_1 = {
 			clr_character_flag = orf_do_not_pick
 		}
-		event_target:orf_opponent_candidate_party = {
+		event_target:orf_opponent_2 = {
 			clr_character_flag = orf_do_not_pick
 		}
-		event_target:orf_opponent_candidate_outsider = {
+		event_target:orf_opponent_3 = {
 			clr_character_flag = orf_do_not_pick
 		}
 	}
@@ -562,7 +553,13 @@ character_event = {
 		custom_tooltip = {
 			text = EVTOPTB_orfelection_3_TT
 			hidden_tooltip = {
-				event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.5 days = 5 } }
+				event_target:orf_election_opponent_attacker = { 
+					character_event = { id = orfelection.5 days = 5 }
+					reverse_opinion = {
+						name = orf_lost_election_to
+						who = event_target:orf_election_opponent_defender
+					}
+				}
 				set_character_flag = election_lost_cooldown
 			}
 		}
@@ -576,6 +573,10 @@ character_event = {
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_4
 	
+	trigger = {
+		has_character_flag = orf_election_running
+	}
+	
 	option = { 
 		name = EVTOPTA_orfelection_4
 		trigger = {	
@@ -587,13 +588,14 @@ character_event = {
 				}
 			}
 		}
- 
-		random_list = {
-			25 = {
-				character_event = {id = orfelection.11 days = 25 }	
-			}
-			25 = {
-				character_event = {id = orfelection.19 days = 25 }	
+		hidden_tooltip = {
+			random_list = {
+				25 = {
+					character_event = {id = orfelection.11 days = 25 }	
+				}
+				25 = {
+					character_event = {id = orfelection.19 days = 25 }	
+				}
 			}
 		}
 		ai_chance = {
@@ -618,17 +620,19 @@ character_event = {
 				}
 			}
 		}
-		random_list = {
-			20 = {
-				character_event = {id = orfelection.13 days = 25}
-			}
+		hidden_tooltip = {
+			random_list = {
+				20 = {
+					character_event = {id = orfelection.13 days = 25}
+				}
 
-			20 = {
-				character_event = {id = orfelection.15 days = 25}	
-			}
+				20 = {
+					character_event = {id = orfelection.15 days = 25}	
+				}
 
-			20 = {
-				character_event = {id = orfelection.17 days = 25}	
+				20 = {
+					character_event = {id = orfelection.17 days = 25}	
+				}
 			}
 		}
 		character_event = {id = orfelection.4 days = 40 }
@@ -806,7 +810,6 @@ character_event = {
 							factor = 0
 							event_target:orf_election_opponent_attacker = { is_incapable = yes }
 						}
-			
 						event_target:orf_election_opponent_attacker = { 
 							clr_character_flag = orf_won_election
 							set_character_flag = orf_won_election					
@@ -818,9 +821,6 @@ character_event = {
 						event_target:orf_election_opponent_defender = { character_event = { id = orfelection.52 days = 5 } }
 						liege = { character_event = { id = orfelection.56 } }
 					}
-
-
-
 					55 = { #Defender won
 						mult_modifier = {
 							factor = 1.5
@@ -921,7 +921,6 @@ character_event = {
 							factor = 0
 							event_target:orf_election_opponent_defender = { is_incapable = yes }
 						}
-
 						event_target:orf_election_opponent_defender = { 
 							clr_character_flag = orf_won_election
 							set_character_flag = orf_won_election
@@ -929,7 +928,6 @@ character_event = {
 						event_target:orf_election_opponent_attacker = {
 							clr_character_flag = orf_won_election
 						}
-						
 						event_target:orf_election_opponent_attacker = { character_event = { id = orfelection.53 days = 5 } }
 						event_target:orf_election_opponent_defender = { character_event = { id = orfelection.54 days = 5 } }
 						liege = { character_event = { id = orfelection.57 } }
@@ -1130,16 +1128,8 @@ character_event = {
 		}
 		event_target:orf_election_opponent_defender = { 
 			clear_orf_election_flags = yes
-		}
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
+			opinion = {
+				name = orf_lost_election_to
 				who = event_target:orf_election_opponent_attacker
 			}
 		}
@@ -1157,18 +1147,6 @@ character_event = {
 	option = { 
 		name = EVTOPTA_orfelection_52
 		clear_orf_election_flags = yes
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_attacker
-			}
-		}
 		custom_tooltip = {
 			text = election_lost_cooldown_event_TT
 			hidden_tooltip = {
@@ -1189,18 +1167,6 @@ character_event = {
 	option = { 
 		name = EVTOPTA_orfelection_53
 		clear_orf_election_flags = yes
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_attacker
-			}
-		}
 		custom_tooltip = {
 			text = election_lost_cooldown_event_TT
 			hidden_tooltip = {
@@ -1221,18 +1187,6 @@ character_event = {
 	option = { 
 		name = EVTOPTA_orfelection_54
 		clear_orf_election_flags = yes
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_attacker
-			}
-		}
 	}
 }
 
@@ -1422,18 +1376,6 @@ character_event = {
 		show_portrait = FROM
 		name = EVTOPTA_orfelection_101
 		clear_orf_election_flags = yes
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_attacker
-			}
-		}
 		hidden_tooltip = {
 			liege = {
 				character_event = { id = orfelection.106 }
@@ -1470,18 +1412,6 @@ character_event = {
 		show_portrait = FROM
 		name = EVTOPTA_orfelection_103
 		clear_orf_election_flags = yes
-		event_target:orf_election_opponent_attacker = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_defender
-			}
-		}
-		event_target:orf_election_opponent_defender = {
-			remove_opinion = {
-				name = running_against
-				who = event_target:orf_election_opponent_attacker
-			}
-		}
 		hidden_tooltip = {
 			liege = {
 				character_event = { id = orfelection.107 }
@@ -1542,6 +1472,7 @@ character_event = {
 			clr_character_flag = running_for_office_cooldown
 			clr_character_flag = orf_won_election
 		}
+		save_event_target_as = orf_election_opponent_attacker
 	}
 	
 	option = {
@@ -1550,16 +1481,8 @@ character_event = {
 		clear_orf_election_flags = yes
 		event_target:orf_election_opponent_defender = {
 			character_event = { id = orfelection.105 }
-			clear_orf_election_flags = yes
-			ROOT = {
-				remove_opinion = {
-					who = PREV
-					name = running_against
-				}
-			}
-			remove_opinion = {
-				who = ROOT
-				name = running_against
+			hidden_tooltip = {
+				clear_orf_election_flags = yes
 			}
 		}
 	}
@@ -1633,6 +1556,9 @@ character_event = {#local speech
 	desc = EVTDESC_orfelec_problem_minor_meeting
 	#picture = something
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.12 days = 7}	
@@ -1644,6 +1570,10 @@ character_event = {#local speech
 			random_list = {
 				10 = {
 					set_character_flag = orfelect_good_11
+					change_variable = {
+						which = orf_candidate_score
+						value = 1
+					}
 					mult_modifier = {
 						factor = 0
 						diplomacy == 0
@@ -1974,6 +1904,9 @@ character_event = {#local speech
 character_event = {#resolved
 	id = orfelection.12
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	desc = {
 		trigger = { has_character_flag = orfelect_good_11}
 		text = EVTDESC_orfelec_resolve_good_minor_meeting
@@ -2006,7 +1939,9 @@ character_event = {#Merchants arrive
 	id = orfelection.13
 	desc = EVTDESC_orfelec_problem_merchants
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.14 days = 7}
@@ -2186,6 +2121,10 @@ character_event = {#resolved
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
+	
 	option = {
 		trigger = { has_character_flag = orfelect_good_13}
 		name = EVTOPT_orfelec_resolve_good_merchants
@@ -2203,11 +2142,12 @@ character_event = {#resolved
 character_event = {#a problem occurs
 	id = orfelection.15
 	desc = EVTDESC_orfelec_problem_rangers
-	
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.16 days = 7}
@@ -2424,6 +2364,10 @@ character_event = {#resolved
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
+	
 	option = {
 		name = EVTOPT_orfelec_resolve_good_rangers
 		trigger = { has_character_flag = orfelect_good_15}
@@ -2444,7 +2388,9 @@ character_event = {
 	desc = EVTDESC_orfelec_problem_destitute_ranger
 	#picture = something
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.18 days = 7}	
@@ -2495,6 +2441,9 @@ character_event = {#resolved
 	}
 	#picture = something
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		random_list = {
@@ -2628,11 +2577,12 @@ character_event = {
 	id = orfelection.19
 	desc = EVTDESC_orfelec_problem_range_squatters
 	#picture = something
-	
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.20 days = 7}	
@@ -2671,10 +2621,12 @@ character_event = {#resolved
 		text = EVTDESC_orfelec_problem_range_squatters_bad
 	}
 	#picture = something
-	
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		random_list = {
@@ -2733,7 +2685,9 @@ character_event = {
 	desc = EVTDESC_orfelec_problem_range_ambush
 	#picture = something
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
-	
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		character_event = {id = orfelection.22 days = 7}	
@@ -2773,10 +2727,12 @@ character_event ={#resolved
 		text = EVTDESC_orfelec_problem_range_ambush_death
 	}
 	#picture = something
-	
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
 	
 	immediate = {
 		random_list = {
@@ -2976,6 +2932,12 @@ character_event = {
 	desc = EVTDESC_orfelection_23
 	picture = GFX_evt_emissary
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		FROM = {
+			has_character_flag = orf_election_running
+		}
+	}
+	
 	option = {
 		name = EVTOPA_orfelection_23
 		custom_tooltip = { text = EVTOPA_orfelection_23_TT }
@@ -3027,6 +2989,10 @@ character_event = {
 character_event = {
 	id = orfelection.24
 	is_triggered_only = yes
+	trigger = { #Insurance against edge cases
+		has_character_flag = orf_election_running
+	}
+	
 	desc ={
 		trigger = { has_character_flag = endorsed_by_liege}
 		text = EVTDESC_orfelection_24_endorsed

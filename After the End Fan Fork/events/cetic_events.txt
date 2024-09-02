@@ -145,7 +145,6 @@ character_event = {
 letter_event = {
 	id = cetic.3
 	desc = EVTDESC_cetic_claim_letter
-	picture = GFX_evt_china_diplomatic_incident
 	is_triggered_only = yes
 	
 	option = {
@@ -224,7 +223,6 @@ letter_event = {
 letter_event = {
 	id = cetic.4
 	desc = EVTDESC_cetic_claim_inform_yes
-	picture = GFX_evt_china_diplomatic_success
 	is_triggered_only = yes
 	
 	option = {
@@ -236,7 +234,6 @@ letter_event = {
 letter_event = {
 	id = cetic.5
 	desc = EVTDESC_cetic_claim_inform_no
-	picture = GFX_evt_china_diplomatic_incident
 	is_triggered_only = yes
 	
 	option = {
@@ -317,9 +314,8 @@ narrative_event = {
 			has_landed_title = e_new_california
 		}
 	}
-	
-	# same dynasty, previous holder was weak
-	option = {
+
+	option = {# same dynasty, previous holder was weak
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -334,8 +330,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was figurehead
-	option = {
+	option = {# same dynasty, previous holder was figurehead
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -350,8 +345,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was not figurehead
-	option = {
+	option = {# same dynasty, previous holder was not figurehead
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -362,8 +356,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# same dynasty, previous holder was strong
-	option = {
+	option = {# same dynasty, previous holder was strong
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
 			dynasty = FROMFROM
@@ -374,10 +367,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	
-	
-	# different dynasty, high diplo
-	option = {
+	option = {# different dynasty, high diplo
 		name = EVTOPT_cetic_usurp_diplo
 		trigger = {
 			NOT = { dynasty = FROMFROM }
@@ -393,8 +383,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# different dynasty, high learning
-	option = {
+	option = {# different dynasty, high learning
 		name = EVTOPT_cetic_usurp_learn
 		trigger = {
 			NOT = { dynasty = FROMFROM }
@@ -410,8 +399,7 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	# different dynasty
-	option = {
+	option = {# different dynasty
 		name = EVTOPT_cetic_usurp_destroy
 		trigger = {
 			NOT = { dynasty = FROMFROM }
@@ -434,60 +422,52 @@ narrative_event = {
 	}
 }
 
-character_event = {
-	id = cetic.12
-	desc = EVTDESC_bounce
-	picture = GFX_evt_china_unrest
-	is_triggered_only = yes
-	hide_window = yes
+# character_event = {
+	# id = cetic.12
+	# is_triggered_only = yes
+	# hide_window = yes
 	
-	trigger = {
-		NOT = { has_global_flag = cali_emperor_destroyed }
-		FROMFROM = {
-			religion = cetic
-			controls_religion = yes
-		}
-	}
+	# trigger = {
+		# NOT = { has_global_flag = cali_emperor_destroyed }
+		# FROMFROM = {
+			# religion = cetic
+			# controls_religion = yes
+		# }
+	# }
 	
-	immediate = {
-		character_event = { id = cetic.16 days = 2 }
-	}
+	# immediate = {
+		# character_event = { id = cetic.16 days = 2 }
+	# }
 	
-	option = {
-		name = OK
-	}
-}
+	# option = {
+		# name = OK
+	# }
+# }
 
-character_event = {
-	id = cetic.16
-	desc = EVTDESC_bounce
-	picture = GFX_evt_china_civil_war
-	is_triggered_only = yes
-	hide_window = yes
+# character_event = {
+	# id = cetic.16
+	# is_triggered_only = yes
+	# hide_window = yes
 	
-	trigger = {
-		NOT = { has_global_flag = cali_emperor_destroyed }
-		FROMFROMFROM = {
-			NOT = { demesne_size = 1 }
-		}
-	}
+	# trigger = {
+		# NOT = { has_global_flag = cali_emperor_destroyed }
+		# FROMFROMFROM = {
+			# NOT = { demesne_size = 1 }
+		# }
+	# }
 	
-	immediate = {
-		set_global_flag = cali_emperor_destroyed
-		religion_authority = { modifier = emperor_overthrown }
-		narrative_event = { id = cetic.13 }
-		any_playable_ruler = {
-			limit = {
-				religion = cetic
-			}
-			narrative_event = { id = cetic.13 }
-		}
-	}
-	
-	option = {
-		name = OK
-	}
-}
+	# immediate = {
+		# set_global_flag = cali_emperor_destroyed
+		# religion_authority = { modifier = emperor_overthrown }
+		# narrative_event = { id = cetic.13 }
+		# any_playable_ruler = {
+			# limit = {
+				# religion = cetic
+			# }
+			# narrative_event = { id = cetic.13 }
+		# }
+	# }
+# }
 
 narrative_event = {
 	id = cetic.13
@@ -624,11 +604,11 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 20
-			modifier = { factor = 5 trait = zealous }
-			modifier = { factor = 2 trait = just }
-			modifier = { factor = 2 trait = honest }
-			modifier = { factor = 2 trait = humble }
-			modifier = { factor = 2 trait = charitable }
+			modifier = { factor = 5 holder_scope = { trait = zealous } }
+			modifier = { factor = 2 holder_scope = { trait = just } }
+			modifier = { factor = 2 holder_scope = { trait = humble } }
+			modifier = { factor = 2 holder_scope = { trait = honest } }
+			modifier = { factor = 2 holder_scope = { trait = charitable } }
 		}
 	}
 	
@@ -642,8 +622,8 @@ province_event = {
 		}
 		ai_chance = {
 			factor = 5
-			modifier = { factor = 5 trait = cynical }
-			modifier = { factor = 2 trait = arbitrary }
+			modifier = { factor = 5 holder_scope = { trait = cynical } }
+			modifier = { factor = 2 holder_scope = { trait = arbitrary } }
 		}
 	}
 }
@@ -2615,7 +2595,6 @@ character_event = {
 letter_event = {
 	id = cetic.61
 	desc = EVTDESC_cetic_aid_request
-	picture = GFX_evt_china_civil_war
 	is_triggered_only = yes
 	
 	option = {
@@ -5725,7 +5704,6 @@ character_event = {
 letter_event = {
 	id = cetic.350
 	desc = EVTDESCCETIC350 
-	picture = GFX_evt_council_quarrelling
 	is_triggered_only = yes
 	
 	option = {
@@ -5778,7 +5756,6 @@ letter_event = {
 letter_event = {
 	id = cetic.351
 	desc = EVTDESCCETIC351 
-	picture = GFX_evt_council_agreement
 	is_triggered_only = yes
 	
 	immediate = {

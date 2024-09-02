@@ -1,7 +1,7 @@
 decisions = {
 	reconsider_party_allegiance = {
 		is_high_prio = no
-
+		ai_check_interval = 60 
 
 		potential = {
 			is_playable = yes
@@ -17,7 +17,7 @@ decisions = {
 		
 		effect = {
 			prestige = -50
-			character_event = {id = texas.50 }
+			character_event = {id = texas.53 }
 		}
 		ai_will_do = {
 			factor = 0

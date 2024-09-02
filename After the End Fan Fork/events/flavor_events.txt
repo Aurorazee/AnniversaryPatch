@@ -1674,7 +1674,7 @@ character_event = { # Invite the Scooby Gang to your court
 				name = "Frederick"
 				religion = ROOT
 				culture = ROOT
-				dynasty = 1788052 #Jones
+				dynasty = 1780052 #Jones
 				age = 17
 				female = no
 				random_traits = no
@@ -1699,7 +1699,7 @@ character_event = { # Invite the Scooby Gang to your court
 				name = "Laurel"
 				religion = ROOT
 				culture = ROOT
-				dynasty = 1788053 #Blake
+				dynasty = 1780053 #Blake
 				age = 17
 				female = yes
 				random_traits = no
@@ -1724,7 +1724,7 @@ character_event = { # Invite the Scooby Gang to your court
 				name = "Wilhelmina"
 				religion = ROOT
 				culture = ROOT
-				dynasty = 1788054 #Dinkley
+				dynasty = 1780054 #Dinkley
 				age = 17
 				female = yes
 				random_traits = no
@@ -1964,7 +1964,6 @@ character_event = {
 		}
 		mother_even_if_dead = {
 			clr_character_flag = issac_pregnant
-			clr_character_flag = issac_pregnant
 		}
 		true_father = {
 			clr_character_flag = king_abram
@@ -1994,14 +1993,15 @@ narrative_event = {
 	
 	is_triggered_only = yes
 	
-	culture_group = rockland
-	culture_group = plateau
-	culture = snakelander
-	culture = inlander
-	
 	trigger = {
 		has_landed_title = e_the_rockies
 		NOT = { has_global_flag = mountain_king_crowned }
+		OR = {
+			culture_group = rockland
+			culture_group = plateau
+			culture = snakelander
+			culture = inlander
+		}
 	}
 	
 	immediate = {

@@ -3126,6 +3126,123 @@ decisions = {
 		}
 	}
 	
+	vassalize_twelve_pairs_of_france = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = celeste
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_twelve_pairs_of_france }
+
+			NOT = {
+				d_twelve_pairs_of_france = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_twelve_pairs_of_france
+
+			has_landed_title = k_roraima
+
+			has_dlc = "Sons of Abraham"
+
+			d_twelve_pairs_of_france = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_twelve_pairs_of_france }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_twelve_pairs_of_france = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_twelve_pairs_of_france_opinion_TT
+
+					d_twelve_pairs_of_france = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_twelve_pairs_of_france = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.5300
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_iron_workers = {
 		only_independent = yes
 		ai = no
@@ -3383,7 +3500,7 @@ decisions = {
 					holder_scope = {
 						wealth = 500
 						character_event = {
-							id = SoAtE.5614
+							id = SoAtE.5600
 						}
 					}
 				}
@@ -3538,6 +3655,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_lightbringers = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Michoacan exists at game start
+			is_playable = yes
+
+			religion = sol_invicta
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_lightbringers }
+
+			NOT = {
+				d_lightbringers = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_lightbringers
+
+			has_landed_title = k_michoacan
+
+			has_dlc = "Sons of Abraham"
+
+			d_lightbringers = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_lightbringers }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_lightbringers = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_lightbringers_opinion_TT
+
+					d_lightbringers = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_lightbringers = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3000
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_dead_sun = {
 		only_independent = yes
 		ai = no
@@ -3592,6 +3827,123 @@ decisions = {
 		}
 	}
 	
+	vassalize_dead_sun = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = mictlantec
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_dead_sun }
+
+			NOT = {
+				d_dead_sun = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_dead_sun
+
+			has_landed_title = k_bajio
+
+			has_dlc = "Sons of Abraham"
+
+			d_dead_sun = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_dead_sun }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_dead_sun = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_dead_sun_opinion_TT
+
+					d_dead_sun = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_dead_sun = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3100
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	donate_money_to_dead_sun = {
 		only_playable = yes
 		ai_check_interval = 80
@@ -3820,6 +4172,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_golden_bears = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Franscisco exists at game start
+			is_playable = yes
+
+			religion = cetic
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_golden_bears }
+
+			NOT = {
+				d_golden_bears = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_golden_bears
+
+			has_landed_title = k_francisco
+
+			has_dlc = "Sons of Abraham"
+
+			d_golden_bears = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_golden_bears }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_golden_bears = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_golden_bears_opinion_TT
+
+					d_golden_bears = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_golden_bears = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3200
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_followers_ram = {
 		only_independent = yes
 		ai = no
@@ -3961,6 +4431,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_followers_ram = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Guyana exists at game syaty
+			is_playable = yes
+
+			religion = hindu
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_followers_ram }
+
+			NOT = {
+				d_followers_ram = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_followers_ram
+
+			has_landed_title = k_guyana
+
+			has_dlc = "Sons of Abraham"
+
+			d_followers_ram = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_followers_ram }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_followers_ram = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_followers_ram_opinion_TT
+
+					d_followers_ram = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_followers_ram = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3300
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	expel_batallon_colombia = {
 		only_independent = yes
 		ai = no
@@ -4082,7 +4670,7 @@ decisions = {
 				d_batallon_colombia = {
 					holder_scope = {
 						character_event = {
-							id = SoAtE.3307
+							id = SoAtE.3407
 						}
 					}
 				}
@@ -4102,6 +4690,123 @@ decisions = {
 		}
 	}
 	
+	vassalize_batallon_colombia = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = patria_grande
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_batallon_colombia }
+
+			NOT = {
+				d_batallon_colombia = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_batallon_colombia
+
+			has_landed_title = k_cundiboyaca
+
+			has_dlc = "Sons of Abraham"
+
+			d_batallon_colombia = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_batallon_colombia }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_batallon_colombia = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_batallon_colombia_opinion_TT
+
+					d_batallon_colombia = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_batallon_colombia = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3400
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_saint_expedit = {
 		only_independent = yes
 		ai = no
@@ -4223,7 +4928,7 @@ decisions = {
 				d_saint_expedit = {
 					holder_scope = {
 						character_event = {
-							id = SoAtE.3407
+							id = SoAtE.3507
 						}
 					}
 				}
@@ -4243,6 +4948,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_saint_expedit = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Louisiana exists at game syaty
+			is_playable = yes
+
+			religion = voodoo
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_saint_expedit }
+
+			NOT = {
+				d_saint_expedit = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_saint_expedit
+
+			has_landed_title = k_louisiana
+
+			has_dlc = "Sons of Abraham"
+
+			d_saint_expedit = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_saint_expedit }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_saint_expedit = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_saint_expedit_opinion_TT
+
+					d_saint_expedit = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_saint_expedit = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3500
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_followers_ogun = {
 		only_independent = yes
 		ai = no
@@ -4384,6 +5207,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_followers_ogun = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Cuba can exist very quickly at game start
+			is_playable = yes
+
+			religion = santeria
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_followers_ogun }
+
+			NOT = {
+				d_followers_ogun = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_followers_ogun
+
+			has_landed_title = k_cuba
+
+			has_dlc = "Sons of Abraham"
+
+			d_followers_ogun = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_followers_ogun }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_followers_ogun = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_followers_ogun_opinion_TT
+
+					d_followers_ogun = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_followers_ogun = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3600
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_warriors_guaicaipuro = {
 		only_independent = yes
 		ai = no
@@ -4522,6 +5463,123 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_warriors_guaicaipuro = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = espiritista
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_warriors_guaicaipuro }
+
+			NOT = {
+				d_warriors_guaicaipuro = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_warriors_guaicaipuro
+
+			has_landed_title = k_venezuela
+
+			has_dlc = "Sons of Abraham"
+
+			d_warriors_guaicaipuro = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_warriors_guaicaipuro }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_warriors_guaicaipuro = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_warriors_guaicaipuro_opinion_TT
+
+					d_warriors_guaicaipuro = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_warriors_guaicaipuro = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3700
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -4666,6 +5724,124 @@ decisions = {
 		}
 	}
 	
+	vassalize_all_tribes = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Lakotah exists at game start
+			is_playable = yes
+
+			religion = peyotist
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_all_tribes }
+
+			NOT = {
+				d_all_tribes = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_all_tribes
+
+			has_landed_title = k_lakotah
+
+			has_dlc = "Sons of Abraham"
+
+			d_all_tribes = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_all_tribes }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_all_tribes = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_all_tribes_opinion_TT
+
+					d_all_tribes = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_all_tribes = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3800
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_capoeiristas = {
 		only_independent = yes
 		ai = no
@@ -4807,6 +5983,123 @@ decisions = {
 		}
 	}
 	
+	vassalize_capoeiristas = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = candomble
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_capoeiristas }
+
+			NOT = {
+				d_capoeiristas = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_capoeiristas
+
+			has_landed_title = k_roraima
+
+			has_dlc = "Sons of Abraham"
+
+			d_capoeiristas = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_capoeiristas }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_capoeiristas = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_capoeiristas_opinion_TT
+
+					d_capoeiristas = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_capoeiristas = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.3900
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_code_keepers = {
 		only_independent = yes
 		ai = no
@@ -4948,6 +6241,123 @@ decisions = {
 		}
 	}
 	
+	vassalize_code_keepers = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = brethren
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_code_keepers }
+
+			NOT = {
+				d_code_keepers = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_code_keepers
+
+			has_landed_title = k_west_indies
+
+			has_dlc = "Sons of Abraham"
+
+			d_code_keepers = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_code_keepers }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_code_keepers = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_code_keepers_opinion_TT
+
+					d_code_keepers = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_code_keepers = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4000
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_golden_archers = {
 		only_independent = yes
 		ai = no
@@ -5098,6 +6508,126 @@ decisions = {
 		}
 	}
 	
+	vassalize_golden_archers = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = consumerist
+				religion = monetarist
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_golden_archers }
+
+			NOT = {
+				d_golden_archers = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_golden_archers
+
+			has_landed_title = k_chicagoland
+
+			has_dlc = "Sons of Abraham"
+
+			d_golden_archers = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_golden_archers }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_golden_archers = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_golden_archers_opinion_TT
+
+					d_golden_archers = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_golden_archers = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4100
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	expel_round_table = {
 		only_independent = yes
 		ai = no
@@ -5245,6 +6775,126 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_round_table = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = celtic_pagan_reformed
+				religion = celtic_pagan
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_round_table }
+
+			NOT = {
+				d_round_table = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_round_table
+
+			has_landed_title = k_newfoundland
+
+			has_dlc = "Sons of Abraham"
+
+			d_round_table = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_round_table }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_round_table = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_round_table_opinion_TT
+
+					d_round_table = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_round_table = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4200
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -5402,6 +7052,128 @@ decisions = {
 		}
 	}
 
+	vassalize_salvation_army = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = evangelical
+				religion = charismatic
+				religion = antinomian
+				religion = postadventist
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_salvation_army }
+
+			NOT = {
+				d_salvation_army = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_salvation_army
+
+			has_landed_title = k_columbia
+
+			has_dlc = "Sons of Abraham"
+
+			d_salvation_army = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_salvation_army }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_salvation_army = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_salvation_army_opinion_TT
+
+					d_salvation_army = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_salvation_army = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4300
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_three_fires = {
 		only_independent = yes
 		ai = no
@@ -5532,7 +7304,7 @@ decisions = {
 				d_three_fires = {
 					holder_scope = {
 						character_event = {
-							id = SoAtE.4507
+							id = SoAtE.4407
 						}
 					}
 				}
@@ -5552,6 +7324,126 @@ decisions = {
 		}
 	}
 	
+	vassalize_three_fires = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = midewiwin_reformed
+				religion = midewiwin
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_three_fires }
+
+			NOT = {
+				d_three_fires = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_three_fires
+
+			has_landed_title = k_aurora
+
+			has_dlc = "Sons of Abraham"
+
+			d_three_fires = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_three_fires }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_three_fires = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_three_fires_opinion_TT
+
+					d_three_fires = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_three_fires = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4400
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_taxet_warriors = {
 		only_independent = yes
 		ai = no
@@ -5702,6 +7594,126 @@ decisions = {
 		}
 	}
 	
+	vassalize_taxet_warriors = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = raven_tales_reformed
+				religion = raven_tales
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_taxet_warriors }
+
+			NOT = {
+				d_taxet_warriors = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_taxet_warriors
+
+			has_landed_title = k_vancouver
+
+			has_dlc = "Sons of Abraham"
+
+			d_taxet_warriors = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_taxet_warriors }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_taxet_warriors = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_taxet_warriors_opinion_TT
+
+					d_taxet_warriors = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_taxet_warriors = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4500
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_fruit_of_islam = {
 		only_independent = yes
 		ai = no
@@ -5759,7 +7771,7 @@ decisions = {
 			factor = 0
 		}
 	}
-	
+		
 	donate_money_to_fruit_of_islam = {
 		only_playable = yes
 		ai_check_interval = 80
@@ -5849,6 +7861,126 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_fruit_of_islam = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = orientalist
+				religion = misrist
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_fruit_of_islam }
+
+			NOT = {
+				d_fruit_of_islam = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_fruit_of_islam
+
+			has_landed_title = k_florida
+
+			has_dlc = "Sons of Abraham"
+
+			d_fruit_of_islam = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_fruit_of_islam }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_fruit_of_islam = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_fruit_of_islam_opinion_TT
+
+					d_fruit_of_islam = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_fruit_of_islam = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4600
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -6004,6 +8136,127 @@ decisions = {
 		}
 	}
 	
+	vassalize_guardians_of_tradition = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = traditionalist
+				religion = revivalist
+				religion = transcendentalist
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_guardians_of_tradition }
+
+			NOT = {
+				d_guardians_of_tradition = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_guardians_of_tradition
+
+			has_landed_title = k_new_york
+
+			has_dlc = "Sons of Abraham"
+
+			d_guardians_of_tradition = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_guardians_of_tradition }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_guardians_of_tradition = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_guardians_of_tradition_opinion_TT
+
+					d_guardians_of_tradition = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_guardians_of_tradition = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4700
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_coureurs_des_bois = {
 		only_independent = yes
 		ai = no
@@ -6142,6 +8395,123 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_coureurs_des_bois = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = exovedate
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_coureurs_des_bois }
+
+			NOT = {
+				d_coureurs_des_bois = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_coureurs_des_bois
+
+			has_landed_title = k_quebec
+
+			has_dlc = "Sons of Abraham"
+
+			d_coureurs_des_bois = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_coureurs_des_bois }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_coureurs_des_bois = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_coureurs_des_bois_opinion_TT
+
+					d_coureurs_des_bois = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_coureurs_des_bois = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4800
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -6295,6 +8665,126 @@ decisions = {
 		}
 	}
 	
+	vassalize_knights_st_flanelle = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = ursuline
+				religion = angeline
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_knights_st_flanelle }
+
+			NOT = {
+				d_knights_st_flanelle = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_knights_st_flanelle
+
+			has_landed_title = k_quebec
+
+			has_dlc = "Sons of Abraham"
+
+			d_knights_st_flanelle = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_knights_st_flanelle }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_knights_st_flanelle = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_knights_st_flanelle_opinion_TT
+
+					d_knights_st_flanelle = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_knights_st_flanelle = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.4900
+						}
+					}
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_cedesi = {
 		only_independent = yes
 		ai = no
@@ -6439,6 +8929,125 @@ decisions = {
 		}
 	}
 	
+	vassalize_cedesi = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			religion = aphite
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_cedesi }
+
+			NOT = {
+				d_cedesi = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_cedesi
+
+			has_landed_title = k_francisco
+
+			has_dlc = "Sons of Abraham"
+
+			d_cedesi = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_cedesi }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_cedesi = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_cedesi_opinion_TT
+
+					d_cedesi = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_cedesi = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.5000
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
 	expel_pony_express = {
 		only_independent = yes
 		ai = no
@@ -6586,6 +9195,128 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_pony_express = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = trailwalker_reformed
+				religion = trailwalker
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_pony_express }
+
+			NOT = {
+				d_pony_express = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_pony_express
+
+			has_landed_title = k_yellowstone
+
+			has_dlc = "Sons of Abraham"
+
+			d_pony_express = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_pony_express }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_pony_express = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_pony_express_opinion_TT
+
+					d_pony_express = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_pony_express = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.5100
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -6739,6 +9470,129 @@ decisions = {
 		}
 	}
 	
+	vassalize_order_of_the_golden_bunny = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			always = no #Putting this here because I do not know whether Apostolic/Celeste *should* be able to vassalize this order
+			is_playable = yes
+
+			OR = {
+				religion = apostolic
+				religion = celeste
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_order_of_the_golden_bunny }
+
+			NOT = {
+				d_order_of_the_golden_bunny = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_order_of_the_golden_bunny
+
+			has_landed_title = k_roraima
+
+			has_dlc = "Sons of Abraham"
+
+			d_order_of_the_golden_bunny = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_order_of_the_golden_bunny }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_order_of_the_golden_bunny = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_order_of_the_golden_bunny_opinion_TT
+
+					d_order_of_the_golden_bunny = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_order_of_the_golden_bunny = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.5200
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	expel_legion_infernal = {
 		only_independent = yes
 		ai = no
@@ -6796,7 +9650,7 @@ decisions = {
 			factor = 0
 		}
 	}
-	
+		
 	donate_money_to_legion_infernal = {
 		only_playable = yes
 		ai_check_interval = 80
@@ -6869,7 +9723,7 @@ decisions = {
 				d_legion_infernal = {
 					holder_scope = {
 						character_event = {
-							id = SoAtE.5307
+							id = SoAtE.5407
 						}
 					}
 				}
@@ -6886,6 +9740,128 @@ decisions = {
 			modifier = {
 				factor = 0.1 # Slow it down
 			}
+		}
+	}
+	
+	vassalize_legion_infernal = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 60
+		
+		potential = {
+			is_playable = yes
+
+			OR = {
+				religion = aria_de_machete_reformed
+				religion = aria_de_machete
+			}
+
+			is_heretic = no
+
+			NOT = { has_character_modifier = expelled_d_legion_infernal }
+
+			NOT = {
+				d_legion_infernal = {
+					owner = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = opinion_unfit_ruler
+						}
+					}
+				}
+			}
+
+			is_title_active = d_legion_infernal
+
+			has_landed_title = k_los_llanos
+
+			has_dlc = "Sons of Abraham"
+
+			d_legion_infernal = {
+				holder_scope = {
+					NOT = { has_truce = ROOT }
+					ROOT = { NOT = { has_truce = PREV } }
+					liege = {
+						NOT = { character = ROOT }
+					}
+					NOT = { num_of_count_titles = 3 }
+					independent = yes
+					primary_title = { title = d_legion_infernal }
+				}
+			}
+
+			NOT = {
+				has_alternate_start_parameter = { key = religion_names value = random }
+			}
+		}
+		
+		allow = {
+			wealth = 500
+			is_heretic = no
+			independent = yes
+
+			conditional_tooltip = {
+				trigger = {
+					NOT = {
+						d_legion_infernal = {
+							owner = {
+								opinion = {
+									who = ROOT
+									value = 25
+								}
+							}
+						}
+					}
+				}
+
+				custom_tooltip = {
+					text = vassalize_legion_infernal_opinion_TT
+
+					d_legion_infernal = {
+						owner = {
+							opinion = {
+								who = ROOT
+								value = 25
+							}
+						}
+					}
+				}
+			}
+
+			NOT = {
+				trait = excommunicated
+			}
+
+			custom_tooltip = {
+				text = only_one_vassalized_holy_order_TT
+
+				NOT = {
+					any_realm_lord = {
+						holy_order = yes
+					}
+				}
+			}
+		}
+		
+		effect = {
+			wealth = -500
+
+			hidden_tooltip = {
+				d_legion_infernal = {
+					holder_scope = {
+						wealth = 500
+						character_event = {
+							id = SoAtE.5400
+						}
+					}
+				}
+			}
+		}
+		
+		
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 	
@@ -7652,7 +10628,7 @@ decisions = {
 			}
 		}
 	}
-		
+	
 	expel_chrismon_tree = {
 		only_independent = yes
 		ai = no
@@ -7794,6 +10770,7 @@ decisions = {
 			}
 		}
 	}
+	
 	expel_order_of_baptists = {
 		only_independent = yes
 		ai = no

@@ -49,8 +49,6 @@ clean_up_after_legendary_showdown_effect = {
 		clr_character_flag = HF_legend_skull
 		clr_character_flag = HF_legend_eagle
 		clr_character_flag = HF_legend_upgrade_weapon
-		clr_character_flag = HF_legend_artifact
-		clr_character_flag = HF_legend_artifact
 
 		#Duel outcomes...
 		clr_character_flag = WL_desc_A
@@ -488,7 +486,7 @@ found_a_legendary_bloodline_effect = { #For any hero
 			10 = { #(Monks & Mystics/Jade Dragon exclusive)
 				trigger = {
 					OR = {
-						has_dlc = "Monks and Mystics"
+						has_dlc = "Monks And Mystics"
 						has_dlc = "Jade Dragon"
 					}
 				}

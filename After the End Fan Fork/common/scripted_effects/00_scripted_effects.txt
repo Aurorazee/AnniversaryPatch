@@ -5621,14 +5621,14 @@ random_accident_death_effect = {
 	tooltip = { death = { death_reason = death_accident } }
 	hidden_effect = {
 		random_list = {
-			10 = { 
-				modifier = { factor = 0 host = { capital_scope = { region = world_africa } } }
-				death = { death_reason = death_accident_drowning }
-			}
-			10 = { 
-				modifier = { factor = 0 host = { capital_scope = { region = world_africa } } }
-				death = { death_reason = death_accident_bear }
-			}
+			# 10 = { 
+				# modifier = { factor = 0 host = { capital_scope = { region = world_africa } } }
+				# death = { death_reason = death_accident_drowning }
+			# }
+			# 10 = { 
+				# modifier = { factor = 0 host = { capital_scope = { region = world_africa } } }
+				# death = { death_reason = death_accident_bear }
+			# }
 			10 = { 
 				death = { death_reason = death_accident_boar }
 			}
@@ -5641,10 +5641,10 @@ random_accident_death_effect = {
 			10 = {
 				death = { death_reason = death_accident_snakes }
 			}
-			10 = {
-				modifier = { factor = 0 host = { capital_scope = { region = world_india } } }
-				death = { death_reason = death_accident_tiger }
-			}
+			# 10 = {
+				# modifier = { factor = 0 host = { capital_scope = { region = world_india } } }
+				# death = { death_reason = death_accident_tiger }
+			# }
 		}
 	}
 }
@@ -25152,7 +25152,7 @@ move_childrens_crusade_region_effect = {
 			}
 		}
 		fallback = {
-			primary_title = { set_preferred_capital = c_new_york } #Historically traveled here.
+			primary_title = { set_preferred_capital = c_cap_diamant } #Historically traveled here.
 			clr_character_flag = flag_children_at_st_louis
 			clr_character_flag = flag_children_at_chicago
 			clr_character_flag = flag_children_at_buffalo
@@ -27108,57 +27108,10 @@ add_random_commander_trait_effect = {
 		1 = {
 			trigger = {
 				NOT = {
-					trait = war_elephant_leader
-				}
-				location = {
-					region = world_india
-				}
-			}
-			add_trait = war_elephant_leader
-		}
-		1 = {
-			trigger = {
-				NOT = {
 					trait = winter_soldier
 				}
 			}
 			add_trait = winter_soldier
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					trait = logistics_expert
-				}
-				culture_group = portuguese
-			}
-			add_trait = logistics_expert
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					trait = master_of_flame
-				}
-				culture_group = portuguese
-			}
-			add_trait = master_of_flame
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					trait = sapper
-				}
-				culture_group = portuguese
-			}
-			add_trait = sapper
-		}
-		1 = {
-			trigger = {
-				NOT = {
-					trait = levy_coordinator
-				}
-				culture_group = portuguese
-			}
-			add_trait = levy_coordinator
 		}
 	}
 }
@@ -27339,67 +27292,12 @@ add_same_commander_trait_as_FROM = {
 		if = {
 			limit = {
 				NOT = {
-					trait = war_elephant_leader
-				}
-				FROM = { trait = war_elephant_leader }
-				location = {
-					region = world_india
-				}
-			}
-			add_trait = war_elephant_leader
-		}
-		if = {
-			limit = {
-				NOT = {
 					trait = winter_soldier
 				}
 				FROM = { trait = winter_soldier }
 			}
 			add_trait = winter_soldier
 		}
-		if = {
-			limit = {
-				NOT = {
-					trait = logistics_expert
-				}
-				culture_group = portuguese
-				FROM = { trait = logistics_expert }
-			}
-			add_trait = logistics_expert
-		}
-		if = {
-			limit = {
-				NOT = {
-					trait = master_of_flame
-				}
-				culture_group = portuguese
-				FROM = { trait = master_of_flame }
-			}
-			add_trait = master_of_flame
-		}
-		if = {
-			limit = {
-				NOT = {
-					trait = sapper
-				}
-				culture_group = portuguese
-				FROM = { trait = sapper }
-			}
-			add_trait = sapper
-		}
-		if = {
-			limit = {
-				NOT = {
-					trait = levy_coordinator
-				}
-				culture_group = portuguese
-				FROM = { trait = levy_coordinator }
-			}
-			add_trait = levy_coordinator
-		}
-		#10 = {
-		#	add_trait_wounded_effect = yes
-		#}
 #	}
 }
 
@@ -27458,637 +27356,6 @@ landless_pope_effect = {
 	}
 }
 
-# Used for rains in African regions...
-remove_rain_modifiers_effect = {
-	remove_province_modifier = africa_heavy_rain
-	remove_province_modifier = africa_light_rain
-	remove_province_modifier = africa_drought_risk
-	remove_province_modifier = africa_drought
-}
-
-set_weather_change_cooldown_effect = {
-	add_province_modifier = {
-		name = africa_weather_updated
-		duration = 300 # Just for safety
-		hidden = yes
-	}
-}
-
-set_rain_flag_heavy_effect = {
-	if = {
-		limit = { NOT = { has_province_flag = africa_heavy_rain_flag } } #So it's not overwritten and can be checked for time...
-		set_province_flag = africa_heavy_rain_flag
-		clr_province_flag = africa_light_rain_flag
-		clr_province_flag = africa_drought_risk_flag
-		clr_province_flag = africa_drought_flag
-	}
-}
-set_rain_flag_light_effect = {
-	if = {
-		limit = { NOT = { has_province_flag = africa_light_rain_flag } } #So it's not overwritten and can be checked for time...
-		clr_province_flag = africa_heavy_rain_flag
-		set_province_flag = africa_light_rain_flag
-		clr_province_flag = africa_drought_risk_flag
-		clr_province_flag = africa_drought_flag
-	}
-}
-set_rain_flag_drought_risk_effect = {
-	if = {
-		limit = { NOT = { has_province_flag = africa_drought_risk_flag } } #So it's not overwritten and can be checked for time...
-		clr_province_flag = africa_heavy_rain_flag
-		clr_province_flag = africa_light_rain_flag
-		set_province_flag = africa_drought_risk_flag
-		clr_province_flag = africa_drought_flag
-	}
-}
-set_rain_flag_drought_effect = {
-	if = {
-		limit = { NOT = { has_province_flag = africa_drought_flag } } #So it's not overwritten and can be checked for time...
-		clr_province_flag = africa_heavy_rain_flag
-		clr_province_flag = africa_light_rain_flag
-		clr_province_flag = africa_drought_risk_flag
-		set_province_flag = africa_drought_flag
-	}
-}
-
-change_rain_effect = { # Needs a province scope...
-	trigger_switch = {
-		on_trigger = has_province_modifier
-		africa_heavy_rain = {
-			random_list = {
-				10 = { # Make it worse (risk for drought)...
-					modifier = { # There is no nearby light rain...
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					modifier = {
-						factor = 2 # There is more heavy rain nearby...
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2 # There is nearby dry weather...
-						any_neighbor_province_has_dry_weather_trigger = yes
-					}
-					remove_rain_modifiers_effect = yes
-					if = {
-						limit = { has_province_modifier = africa_rain_dance_successful }
-						remove_province_modifier = africa_rain_dance_successful
-					}
-					add_province_modifier = {
-						name = africa_drought_risk
-						duration = -1
-					}
-					set_rain_flag_drought_risk_effect = yes
-				}
-				10 = { # Make it better (light rain)...
-					modifier = { #There is no nearby drought...
-						factor = 2
-						any_neighbor_province_has_dry_weather_trigger = no
-					}
-					modifier = {
-						factor = 2 # There is more heavy rain nearby...
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2 # There is light rain nearby...
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					add_province_modifier = {
-						name = africa_light_rain
-						duration = -1
-					}
-					set_rain_flag_light_effect = yes
-				}
-				10 = { # Keep weather (heavy rain)...
-					set_rain_flag_heavy_effect = yes
-				}
-			}
-		}
-		africa_light_rain = {
-			random_list = {
-				10 = { # Make it worse (drought risk)...
-					modifier = { #More likely if have enjoyed it long enough...
-						factor = 2
-						had_province_flag = {
-							flag = africa_light_rain_flag
-							days = 3600 # almost 10 years...
-						}
-					}
-					modifier = { #More likely if have enjoyed it long enough...
-						factor = 2
-						had_province_flag = {
-							flag = africa_light_rain_flag
-							days = 6000 # 16,5 years...
-						}
-					}
-					modifier = { # There is no nearby great weather...
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_dry_weather_trigger = yes
-					}
-					remove_rain_modifiers_effect = yes
-					if = {
-						limit = { has_province_modifier = africa_rain_dance_successful }
-						remove_province_modifier = africa_rain_dance_successful
-					}
-					add_province_modifier = {
-						name = africa_drought_risk
-						duration = -1
-					}
-					set_rain_flag_drought_risk_effect = yes
-				}
-				10 = { # Make it better (heavy rain)...
-					modifier = { #There is no nearby drought...
-						factor = 3
-						any_neighbor_province_has_dry_weather_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					add_province_modifier = {
-						name = africa_heavy_rain
-						duration = -1
-					}
-					set_rain_flag_heavy_effect = yes
-				}
-				10 = { # Keep weather (light rain)...
-					set_rain_flag_light_effect = yes
-				}
-			}
-		}
-		africa_drought_risk = {
-			random_list = {
-				10 = { # Make it worse (actual drought)...
-					modifier = { # There is no nearby rain...
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					if = {
-						limit = { has_province_modifier = africa_rain_dance_successful }
-						remove_province_modifier = africa_rain_dance_successful
-					}
-					add_province_modifier = {
-						name = africa_drought_risk
-						duration = -1
-					}
-					set_rain_flag_drought_effect = yes
-				}
-				10 = { # Make it better (light rain)...
-					modifier = { #There is no nearby drought...
-						factor = 3
-						any_neighbor_province_has_dry_weather_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					add_province_modifier = {
-						name = africa_light_rain
-						duration = -1
-					}
-					set_rain_flag_light_effect = yes
-				}
-				10 = { # Keep weather (drought risk)...
-					set_rain_flag_drought_risk_effect = yes
-				}
-			}
-		}
-		africa_drought = {
-			random_list = {
-				10 = { # Make it better (heavy rain)...
-					modifier = { #More likely if have suffered long enough...
-						factor = 2
-						had_province_flag = {
-							flag = africa_drought_flag
-							days = 3600 # almost 10 years...
-						}
-					}
-					modifier = { #More likely if have suffered long enough...
-						factor = 2
-						had_province_flag = {
-							flag = africa_drought_flag
-							days = 6000 # 16,5 years...
-						}
-					}
-					modifier = { #There is no nearby drought...
-						factor = 3
-						any_neighbor_province_has_dry_weather_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					add_province_modifier = {
-						name = africa_heavy_rain
-						duration = -1
-					}
-					set_rain_flag_heavy_effect = yes
-				}
-				15 = { # Make it better (drought risk)...
-					modifier = { #More likely if have suffered long enough...
-						factor =2
-						had_province_flag = {
-							flag = africa_drought_flag
-							days = 3600 # almost 10 years...
-						}
-					}
-					modifier = { #More likely if have suffered long enough...
-						factor = 2
-						had_province_flag = {
-							flag = africa_drought_flag
-							days = 6000 # 16,5 years...
-						}
-					}
-					modifier = { #There is no nearby drought...
-						factor = 3
-						any_neighbor_province_has_dry_weather_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = yes
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					remove_rain_modifiers_effect = yes
-					if = {
-						limit = { has_province_modifier = africa_rain_dance_successful }
-						remove_province_modifier = africa_rain_dance_successful
-					}
-					add_province_modifier = {
-						name = africa_drought_risk
-						duration = -1
-					}
-					set_rain_flag_drought_risk_effect = yes
-				}
-				10 = { # Keep weather (actual drought)...
-					modifier = { # There is no nearby great weather...
-						factor = 2
-						any_neighbor_province_has_light_rain_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_heavy_rain_trigger = no
-					}
-					modifier = {
-						factor = 2
-						any_neighbor_province_has_dry_weather_trigger = yes
-					}
-					set_rain_flag_drought_effect = yes
-				}
-			}
-		}
-	}
-	set_weather_change_cooldown_effect = yes #sets a hidden modifier...
-}
-
-clone_weather_to_prev_effect = {
-	trigger_switch = {
-		on_trigger = has_province_modifier
-		africa_heavy_rain = {
-			PREV = {
-				remove_rain_modifiers_effect = yes
-				add_province_modifier = {
-					name = africa_heavy_rain
-					duration = -1
-				}
-				set_rain_flag_heavy_effect = yes
-			}
-		}
-		africa_light_rain = {
-			PREV = {
-				remove_rain_modifiers_effect = yes
-				add_province_modifier = {
-					name = africa_light_rain
-					duration = -1
-				}
-				set_rain_flag_light_effect = yes
-			}
-		}
-		africa_drought_risk = {
-			PREV = {
-				remove_rain_modifiers_effect = yes
-				add_province_modifier = {
-					name = africa_drought_risk
-					duration = -1
-				}
-				set_rain_flag_drought_risk_effect = yes
-			}
-		}
-		africa_drought = {
-			PREV = {
-				remove_rain_modifiers_effect = yes
-				add_province_modifier = {
-					name = africa_drought
-					duration = -1
-				}
-				set_rain_flag_drought_effect = yes
-			}
-		}
-	}
-	PREV = { set_weather_change_cooldown_effect = yes } #sets a hidden modifier...
-}
-
-calculate_weather_status_in_demesne_effect = {
-	### Find out what had the most impact...
-	set_variable = {
-		which = light_rain_count
-		value = 0
-	}
-	set_variable = {
-		which = heavy_rain_count
-		value = 0
-	}
-	set_variable = {
-		which = drought_risk_count
-		value = 0
-	}
-	set_variable = {
-		which = drought_count
-		value = 0
-	}
-	# Light rain...?
-	while = {
-		limit = {
-			any_demesne_province = {
-				has_province_modifier = africa_light_rain
-				NOT = { has_province_flag = has_been_counted }
-			}
-		}
-		random_demesne_province = {
-			limit = {
-				has_province_modifier = africa_light_rain
-				NOT = { has_province_flag = has_been_counted }
-			}
-			PREV = {
-				change_variable = {
-					which = light_rain_count
-					value = 1
-				}
-			}
-			set_province_flag = has_been_counted
-		}
-	}
-	# Heavy rain...?
-	while = {
-		limit = {
-			any_demesne_province = {
-				has_province_modifier = africa_heavy_rain
-				NOT = { has_province_flag = has_been_counted }
-			}
-		}
-		random_demesne_province = {
-			limit = {
-				has_province_modifier = africa_heavy_rain
-				NOT = { has_province_flag = has_been_counted }
-			}
-			PREV = {
-				change_variable = {
-					which = heavy_rain_count
-					value = 1
-				}
-			}
-			set_province_flag = has_been_counted
-		}
-	}
-	# Drought risk...?
-	while = {
-		limit = {
-			any_demesne_province = {
-				has_province_modifier = africa_drought_risk
-				NOT = { has_province_flag = has_been_counted }
-			}
-		}
-		random_demesne_province = {
-			limit = {
-				has_province_modifier = africa_drought_risk
-				NOT = { has_province_flag = has_been_counted }
-			}
-			PREV = {
-				change_variable = {
-					which = drought_risk_count
-					value = 1
-				}
-			}
-			set_province_flag = has_been_counted
-		}
-	}
-	# Actual drought...?
-	while = {
-		limit = {
-			any_demesne_province = {
-				has_province_modifier = africa_drought
-				NOT = { has_province_flag = has_been_counted }
-			}
-		}
-		random_demesne_province = {
-			limit = {
-				has_province_modifier = africa_drought
-				NOT = { has_province_flag = has_been_counted }
-			}
-			PREV = {
-				change_variable = {
-					which = drought_count
-					value = 1
-				}
-			}
-			set_province_flag = has_been_counted
-		}
-	}
-
-	any_demesne_province = { clr_province_flag = has_been_counted } #clean up
-
-	clr_character_flag = mostly_drought
-	clr_character_flag = mostly_drought_risk
-	clr_character_flag = mostly_light_rain
-	clr_character_flag = mostly_heavy_rain
-	clr_character_flag = one_rain_variable_is_higher_than_one_drought_variable
-	clr_character_flag = light_rain_variable_is_higher_than_drought_variable
-	clr_character_flag = light_rain_variable_is_higher_than_drought_risk_variable
-	clr_character_flag = heavy_rain_variable_is_higher_than_drought_variable
-	clr_character_flag = heavy_rain_variable_is_higher_than_drought_risk_variable
-
-
-	if = {
-		limit = {
-			check_variable = { # if actual drought is more common than the risk of it...
-				which = "drought_count"
-				which >= "drought_risk_count"
-				which = ROOT		
-			}
-			check_variable = { # and more common than heavy rain...
-				which = "drought_count"
-				which >= "heavy_rain_count"
-				which = ROOT
-			}
-			check_variable = { # and more than light rain...
-				which = "drought_count"
-				which >= "light_rain_count"
-				which = ROOT
-			}
-		}
-		set_character_flag = mostly_drought
-	}
-	if = {
-		limit = {
-			check_variable = { # if drought risk is more common than actual drought...
-				which = "drought_risk_count"
-				which >= "drought_count"
-				which = ROOT
-			}
-			check_variable = { # and more common than heavy rain...
-				which = "drought_risk_count"
-				which >= "heavy_rain_count"
-				which = ROOT
-			}
-			check_variable = { # and more than light rain...
-				which = "drought_risk_count"
-				which >= "light_rain_count"
-				which = ROOT
-			}
-		}
-		set_character_flag = mostly_drought_risk
-	}
-	if = {
-		limit = {
-			check_variable = { # if light rain is more common than drought risk...
-				which = "light_rain_count"
-				which >= "drought_risk_count"
-				which = ROOT
-			}
-			check_variable = { # and more common than heavy rain...
-				which = "light_rain_count"
-				which >= "heavy_rain_count"
-				which = ROOT
-			}
-			check_variable = { # and more than drought...
-				which = "light_rain_count"
-				which >= "drought_count"
-				which = ROOT
-			}
-		}
-		set_character_flag = mostly_light_rain
-	}
-	if = {
-		limit = {
-			check_variable = { # if heavy rain is more common than drought risk...
-				which = "heavy_rain_count"
-				which >= "drought_risk_count"
-				which = ROOT
-			}
-			check_variable = { # and more common than heavy rain...
-				which = "heavy_rain_count"
-				which >= "light_rain_count"
-				which = ROOT
-			}
-			check_variable = { # and more than drought...
-				which = "heavy_rain_count"
-				which >= "drought_count"
-				which = ROOT
-			}
-		}
-		set_character_flag = mostly_heavy_rain
-	}
-
-	if = {
-		limit = {
-			OR = {
-				check_variable = {
-					which = "light_rain_count"
-					which >= "drought_count"
-					which = ROOT
-				}
-				check_variable = {
-					which = "light_rain_count"
-					which >= "drought_risk_count"
-					which = ROOT
-				}
-				check_variable = {
-					which = "heavy_rain_count"
-					which >= "drought_count"
-					which = ROOT
-				}
-				check_variable = {
-					which = "heavy_rain_count"
-					which >= "drought_risk_count"
-					which = ROOT
-				}
-			}
-		}
-		set_character_flag = one_rain_variable_is_higher_than_one_drought_variable
-		if = {
-			limit = {
-				check_variable = {
-					which = "light_rain_count"
-					which >= "drought_count"
-					which = ROOT
-				}
-			}
-			set_character_flag = light_rain_variable_is_higher_than_drought_variable
-		}
-		if = {
-			limit = {
-				check_variable = {
-					which = "light_rain_count"
-					which >= "drought_risk_count"
-					which = ROOT
-				}
-			}
-			set_character_flag = light_rain_variable_is_higher_than_drought_risk_variable
-		}
-		if = {
-			limit = {
-				check_variable = {
-					which = "heavy_rain_count"
-					which >= "drought_count"
-					which = ROOT
-				}
-			}
-			set_character_flag = heavy_rain_variable_is_higher_than_drought_variable
-		}
-		if = {
-			limit = {
-				check_variable = {
-					which = "heavy_rain_count"
-					which >= "drought_risk_count"
-					which = ROOT
-				}
-			}
-			set_character_flag = heavy_rain_variable_is_higher_than_drought_risk_variable
-		}
-	}
-}
-
 clr_flags_introduce_heir_effect = {
 	clr_character_flag = ZE_evt_heir_1
 	clr_character_flag = ZE_evt_heir_2
@@ -28100,6 +27367,25 @@ clr_flags_introduce_heir_effect = {
 	clr_character_flag = ZE_evt_heir_6
 	clr_character_flag = ZE_evt_heir_7
 	clr_character_flag = ZE_evt_heir_8
+}
+
+princely_elective_german_elector_setup_effect = {
+	e_dixie = { 
+		#County of Koln
+		#County of Mainz
+		#County of Trier
+		#Duchy of Bohemia
+		#Duchy of Franconia
+		#Duchy of Saxony
+		#Duchy of Brandenburg
+		save_persistent_event_target = { name = hre_title_1_per scope = c_chapel_hill } #replace with chapel hill
+		save_persistent_event_target = { name = hre_title_2_per scope = d_peachtree } #replace with atlanta
+		save_persistent_event_target = { name = hre_title_3_per scope = c_charleston } #replace with charleston
+		save_persistent_event_target = { name = hre_title_4_per scope = d_black_belt } #replace with black belt
+		save_persistent_event_target = { name = hre_title_5_per scope = d_piedmont_crescent } #replace with piedmont crescent
+		save_persistent_event_target = { name = hre_title_6_per scope = d_cape_fear } #replace with cape fear
+		save_persistent_event_target = { name = hre_title_7_per scope = d_savannah } #replace with savannah
+	}
 }
 
 generate_mask_effect = {
@@ -28908,159 +28194,8 @@ murder_bloodline_check_effect = {
 	}
 }
 
-princely_elective_german_elector_setup_effect = {
 	e_hre = { 
-		#County of Koln
-		#County of Mainz
-		#County of Trier
-		#Duchy of Bohemia
-		#Duchy of Franconia
-		#Duchy of Saxony
-		#Duchy of Brandenburg
-		save_persistent_event_target = { name = hre_title_1_per scope = c_chapel_hill } #replace with chapel hill
-		save_persistent_event_target = { name = hre_title_2_per scope = d_peachtree } #replace with atlanta
-		save_persistent_event_target = { name = hre_title_3_per scope = c_charleston } #replace with charleston
-		save_persistent_event_target = { name = hre_title_4_per scope = d_black_belt } #replace with black belt
-		save_persistent_event_target = { name = hre_title_5_per scope = d_piedmont_crescent } #replace with piedmont crescent
-		save_persistent_event_target = { name = hre_title_6_per scope = d_cape_fear } #replace with cape fear
-		save_persistent_event_target = { name = hre_title_7_per scope = d_savannah } #replace with savannah
-	}
 }
-
-#princely_elective_french_elector_setup_effect = {
-#	e_hre = { 
-#		#County of Amiens
-#		#County of Reims
-#		#County of Anjou
-#		#Duchy of Aquitaine
-#		#Duchy of Burgundy
-#		#Duchy of Normandy
-#		#Duchy of Champagne
-#		save_persistent_event_target = { name = hre_title_1_per scope = c_amiens }
-#		save_persistent_event_target = { name = hre_title_2_per scope = c_reims }
-#		save_persistent_event_target = { name = hre_title_3_per scope = c_anjou }
-#		save_persistent_event_target = { name = hre_title_4_per scope = d_aquitaine }
-#		save_persistent_event_target = { name = hre_title_5_per scope = d_burgundy }
-#		save_persistent_event_target = { name = hre_title_6_per scope = d_normandy }
-#		save_persistent_event_target = { name = hre_title_7_per scope = d_champagne }
-#	}
-#}
-
-#princely_elective_italian_elector_setup_effect = {
-#	e_hre = { 
-#		#County of Rome
-#		#County of Ravenna
-#		#County of Genoa
-#		#Duchy of Latium
-#		#Duchy of Milan
-#		#Duchy of Tuscany
-#		#Duchy of Pisa
-#		save_persistent_event_target = { name = hre_title_1_per scope = c_roma }
-#		save_persistent_event_target = { name = hre_title_2_per scope = c_ravenna }
-#		save_persistent_event_target = { name = hre_title_3_per scope = c_genoa }
-#		save_persistent_event_target = { name = hre_title_4_per scope = d_latium }
-#		save_persistent_event_target = { name = hre_title_5_per scope = d_lombardia }
-#		save_persistent_event_target = { name = hre_title_6_per scope = d_toscana }
-#		save_persistent_event_target = { name = hre_title_7_per scope = d_pisa }
-#	}
-#}
-
-#princely_elective_spain_elector_setup_effect = {
-#	e_hre = { 
-#		#County of Santiago
-#		#County of Cordoba
-#		#County of Leon
-#		#Duchy of Barcelona
-#		#Duchy of Castille
-#		#Duchy of Portucale
-#		#Duchy of Seville
-#		save_persistent_event_target = { name = hre_title_1_per scope = c_santiago }
-#		save_persistent_event_target = { name = hre_title_2_per scope = c_leon }
-#		save_persistent_event_target = { name = hre_title_3_per scope = c_cordoba }
-#		save_persistent_event_target = { name = hre_title_4_per scope = d_barcelona }
-#		save_persistent_event_target = { name = hre_title_5_per scope = d_castilla }
-#		save_persistent_event_target = { name = hre_title_6_per scope = d_porto }
-#		save_persistent_event_target = { name = hre_title_7_per scope = d_sevilla }
-#	}
-#}
-
-#princely_elective_britannia_elector_setup_effect = {
-#	e_hre = { 
-#		#County of Kent
-#		#County of Worcester
-#		#County of Durham
-#		#Duchy of Mercia
-#		#Duchy of Meath
-#		#Duchy of Albany
-#		#Duchy of Gwynedd
-#		save_persistent_event_target = { name = hre_title_1_per scope = c_kent }
-#		save_persistent_event_target = { name = hre_title_2_per scope = c_worcester }
-#		save_persistent_event_target = { name = hre_title_3_per scope = c_durham }
-#		save_persistent_event_target = { name = hre_title_4_per scope = d_mercia }
-#		save_persistent_event_target = { name = hre_title_5_per scope = d_meath }
-#		save_persistent_event_target = { name = hre_title_6_per scope = d_albany }
-#		save_persistent_event_target = { name = hre_title_7_per scope = d_gwynedd }
-#	}
-#}
-
-#princely_elective_apply_elector_setup_effect = { 
-#	if = {
-#		limit = {
-#			capital_scope = {
-#				region = world_europe_south_italy
-#			}
-#		}
-#		hidden_tooltip = {
-#			princely_elective_italian_elector_setup_effect = yes
-#		}
-#	}
-#	else_if = {
-#		limit = {
-#			capital_scope = {
-#				region = world_europe_west_francia
-#			}
-#		}
-#		hidden_tooltip = {
-#			princely_elective_french_elector_setup_effect = yes
-#		}
-#	}
-#	else_if = {
-#		limit = {
-#			capital_scope = {
-#				region = world_europe_west_germania
-#			}
-#		}
-#		hidden_tooltip = {
-#			princely_elective_german_elector_setup_effect = yes
-#		}
-#	}
-#	else_if = {
-#		limit = {
-#			capital_scope = {
-#				region = world_europe_west_iberia
-#			}
-#		}
-#		hidden_tooltip = {
-#			princely_elective_spain_elector_setup_effect = yes
-#		}
-#	}
-#	else_if = {
-#		limit = {
-#			capital_scope = {
-#				region = world_europe_west_brittania
-#			}
-#		}
-#		hidden_tooltip = {
-#			princely_elective_britannia_elector_setup_effect = yes
-#		}
-#	}
-#	else = { #If outside usual borders, default to Germania.
-#		hidden_tooltip = {
-#			princely_elective_german_elector_setup_effect = yes
-#		}
-#	}
-#}
-
 give_goldsmith_artifacts_flag_okay_effect = {
 	if = {
 		limit = { 

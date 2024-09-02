@@ -2000,7 +2000,7 @@ decisions = {
 				scaled_wealth = -2
 			}
 			#Create Electors, depending on capital location:
-			princely_elective_apply_elector_setup_effect = yes
+			# princely_elective_apply_elector_setup_effect = yes
 			primary_title = {
 				show_scope_change = no
 				e_texarkana = {

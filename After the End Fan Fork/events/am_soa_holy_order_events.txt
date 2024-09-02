@@ -169,55 +169,55 @@ letter_event = {
 }
 
 # Ping event when borrowing money from the Templars
-character_event = {
-	id = SoAtE.1010
+# character_event = {
+	# id = SoAtE.1010
 	
-	hide_window = yes
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		wealth = -300
-		FROM = {
-			letter_event = {
-				id = SoAtE.1011
-			}
-		}
-		abdicate_holy_order_if_religion_changes_effect = yes
-	}
-}
+	# immediate = {
+		# wealth = -300
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.1011
+			# }
+		# }
+		# abdicate_holy_order_if_religion_changes_effect = yes
+	# }
+# }
 
 # Notification event when borrowing money from the Templars
-letter_event = {
-	id = SoAtE.1011
-	desc = {
-		text = EVTDESC_SOA_1011
-		trigger = {
-			NOT = {
-				has_alternate_start_parameter = {
-					key = religion_names
-					value = random
-				}
-			}
-		}
-	}
-	desc = {
-		text = HOLY_ORDER_BORROW_ALT
-		trigger = {
-			has_alternate_start_parameter = {
-				key = religion_names
-				value = random
-			}
-		}
-	}
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.1011
+	# desc = {
+		# text = EVTDESC_SOA_1011
+		# trigger = {
+			# NOT = {
+				# has_alternate_start_parameter = {
+					# key = religion_names
+					# value = random
+				# }
+			# }
+		# }
+	# }
+	# desc = {
+		# text = HOLY_ORDER_BORROW_ALT
+		# trigger = {
+			# has_alternate_start_parameter = {
+				# key = religion_names
+				# value = random
+			# }
+		# }
+	# }
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EXCELLENT
-	}
-}
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
 
 # Ping event when vassalizing the Templars
 character_event = {
@@ -1648,53 +1648,53 @@ letter_event = {
 }
 
 # Ping event when borrowing money from the Oppenheimer
-character_event = {
-	id = SoAtE.1210
-	hide_window = yes
+# character_event = {
+	# id = SoAtE.1210
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		wealth = -300
-		FROM = {
-			letter_event = {
-				id = SoAtE.1211
-			}
-		}
-	}
-}
+	# immediate = {
+		# wealth = -300
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.1211
+			# }
+		# }
+	# }
+# }
 
 # Notification event when borrowing money from the Oppenheimer
-letter_event = {
-	id = SoAtE.1211
-	desc = {
-		text = EVTDESC_SOA_1211
-		trigger = {
-			NOT = {
-				has_alternate_start_parameter = {
-					key = religion_names
-					value = random
-				}
-			}
-		}
-	}
-	desc = {
-		text = HOLY_ORDER_BORROW_ALT
-		trigger = {
-			has_alternate_start_parameter = {
-				key = religion_names
-				value = random
-			}
-		}
-	}
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.1211
+	# desc = {
+		# text = EVTDESC_SOA_1211
+		# trigger = {
+			# NOT = {
+				# has_alternate_start_parameter = {
+					# key = religion_names
+					# value = random
+				# }
+			# }
+		# }
+	# }
+	# desc = {
+		# text = HOLY_ORDER_BORROW_ALT
+		# trigger = {
+			# has_alternate_start_parameter = {
+				# key = religion_names
+				# value = random
+			# }
+		# }
+	# }
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EXCELLENT
-	}
-}
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
 
 
 # The Grand Master demands the right to build a castle in your demesne
@@ -2504,7 +2504,6 @@ character_event = {
 	has_dlc = "Sons of Abraham"
 	min_age = 16
 	only_playable = yes
-	is_triggered_only = yes
 	religion_group = christian
 	
 	trigger = {
@@ -2535,6 +2534,42 @@ character_event = {
 		NOT = {
 			any_liege = {
 				has_character_modifier = expelled_d_st_ursulas_chosen
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			d_st_ursulas_chosen = {
+				holder_scope = {
+					NOT = { demesne_size = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			d_st_ursulas_chosen = {
+				holder_scope = {
+					NOT = { demesne_size = 2 }
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_st_ursulas_chosen = {
+				holder_scope = {
+					num_of_count_titles = 1
+				}
+			}
+		}
+		modifier = {
+			factor = 2.0
+			d_st_ursulas_chosen = {
+				holder_scope = {
+					realm_size = 5
+				}
 			}
 		}
 	}
@@ -2891,54 +2926,54 @@ letter_event = {
 }
 
 # Ping event when borrowing money from the Men in Black
-character_event = {
-	id = SoAtE.1410
-	hide_window = yes
+# character_event = {
+	# id = SoAtE.1410
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		wealth = -300
-		FROM = {
-			letter_event = {
-				id = SoAtE.1411
-			}
-		}
-	}
-}
+	# immediate = {
+		# wealth = -300
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.1411
+			# }
+		# }
+	# }
+# }
 
 # Notification event when borrowing money from the Men in Black
-letter_event = {
-	id = SoAtE.1411
-	desc = {
-		text = EVTDESC_SOA_1411
-		trigger = {
-			NOT = {
-				has_alternate_start_parameter = {
-					key = religion_names
-					value = random
-				}
-			}
-		}
-	}
-	desc = {
-		text = HOLY_ORDER_BORROW_ALT
-		trigger = {
-			has_alternate_start_parameter = {
-				key = religion_names
-				value = random
-			}
-		}
-	}
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.1411
+	# desc = {
+		# text = EVTDESC_SOA_1411
+		# trigger = {
+			# NOT = {
+				# has_alternate_start_parameter = {
+					# key = religion_names
+					# value = random
+				# }
+			# }
+		# }
+	# }
+	# desc = {
+		# text = HOLY_ORDER_BORROW_ALT
+		# trigger = {
+			# has_alternate_start_parameter = {
+				# key = religion_names
+				# value = random
+			# }
+		# }
+	# }
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
+	# option = {
 	
-		name = EXCELLENT
-	}
-}
+		# name = EXCELLENT
+	# }
+# }
 
 # The Grand Master demands the right to build a castle in your demesne
 character_event = {
@@ -14830,7 +14865,7 @@ character_event = {
 		set_defacto_liege = FROM
 		FROM = {
 			letter_event = {
-				id = SoAtE.3201
+				id = SoAtE.3101
 			}
 		}
 	}
@@ -14979,7 +15014,7 @@ character_event = {
 	}
 }
 
-# Son or brother asks to join the d_lightbringers
+# Son or brother asks to join the d_dead_sun
 character_event = {
 	id = SoAtE.3104
 	desc = EVTDESC_SOATE_3104
@@ -15047,7 +15082,7 @@ character_event = {
 	}
 }
 
-# Liege refuses request to join the d_lightbringers
+# Liege refuses request to join the d_dead_sun
 character_event = {
 	id = SoAtE.3106
 	hide_window = yes
@@ -15062,7 +15097,7 @@ character_event = {
 	}
 }
 
-# Ping event when donating money to d_lightbringers
+# Ping event when donating money to d_dead_sun
 character_event = {
 	id = SoAtE.3107
 	hide_window = yes
@@ -15084,7 +15119,7 @@ character_event = {
 	}
 }
 
-# Notification event when donating money to the Hospitallers
+# Notification event when donating money to the Dead Sun
 letter_event = {
 	id = SoAtE.3108
 	desc = {
@@ -21609,7 +21644,7 @@ character_event = {
 	}
 }
 
-# Ping event when donating money to d_salvation_army
+# Ping event when donating money to d_three_fires
 character_event = {
 	id = SoAtE.4407
 	hide_window = yes
@@ -27010,34 +27045,34 @@ province_event = {
 ########################################
 
 # Ping event when vassalizing the d_iatse
-character_event = {
-	id = SoAtE.5500
-	hide_window = yes
+# character_event = {
+	# id = SoAtE.5500
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
-			letter_event = {
-				id = SoAtE.5501
-			}
-		}
-	}
-}
+	# immediate = {
+		# set_defacto_liege = FROM
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.5501
+			# }
+		# }
+	# }
+# }
 
 # Notification event when vassalizing the d_iatse
-letter_event = {
-	id = SoAtE.5501
-	desc = EVTDESC_SOATE_5501
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.5501
+	# desc = EVTDESC_SOATE_5501
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EXCELLENT
-	}
-}
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
 
 # The son of a ruler volunteers to join the d_iatse
 character_event = {
@@ -27544,6 +27579,7 @@ character_event = {
 				id = SoAtE.5601
 			}
 		}
+		abdicate_holy_order_if_religion_changes_effect = yes
 	}
 }
 
@@ -28047,72 +28083,39 @@ province_event = {
 	}
 }
 
-# Ping event when vassalizing the Templars
-character_event = {
-	id = SoAtE.5614
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
-			letter_event = {
-				id = SoAtE.5615
-			}
-		}
-		abdicate_holy_order_if_religion_changes_effect = yes
-	}
-}
-
-# Notification event when vassalizing the Templars
-letter_event = {
-	id = SoAtE.5615
-	desc = EVTDESC_SOATE_5615
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-	}
-}
-
-
 ########################################
 # d_teamsters
 ########################################
 
 # Ping event when vassalizing the d_teamsters
-character_event = {
-	id = SoAtE.5700
-	hide_window = yes
+# character_event = {
+	# id = SoAtE.5700
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
-			letter_event = {
-				id = SoAtE.5701
-			}
-		}
-	}
-}
+	# immediate = {
+		# set_defacto_liege = FROM
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.5701
+			# }
+		# }
+	# }
+# }
 
 # Notification event when vassalizing the d_teamsters
-letter_event = {
-	id = SoAtE.5701
-	desc = EVTDESC_SOATE_5701
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.5701
+	# desc = EVTDESC_SOATE_5701
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EXCELLENT
-	}
-}
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
 
 # The son of a ruler volunteers to join the d_teamsters
 character_event = {
@@ -28606,34 +28609,34 @@ province_event = {
 ########################################
 
 # Ping event when vassalizing the d_afl
-character_event = {
-	id = SoAtE.5800
-	hide_window = yes
+# character_event = {
+	# id = SoAtE.5800
+	# hide_window = yes
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
-			letter_event = {
-				id = SoAtE.5801
-			}
-		}
-	}
-}
+	# immediate = {
+		# set_defacto_liege = FROM
+		# FROM = {
+			# letter_event = {
+				# id = SoAtE.5801
+			# }
+		# }
+	# }
+# }
 
 # Notification event when vassalizing the d_afl
-letter_event = {
-	id = SoAtE.5801
-	desc = EVTDESC_SOATE_5801
-	border = GFX_event_letter_frame_religion
+# letter_event = {
+	# id = SoAtE.5801
+	# desc = EVTDESC_SOATE_5801
+	# border = GFX_event_letter_frame_religion
 	
-	is_triggered_only = yes
+	# is_triggered_only = yes
 	
-	option = {
-		name = EXCELLENT
-	}
-}
+	# option = {
+		# name = EXCELLENT
+	# }
+# }
 
 # The son of a ruler volunteers to join the d_afl
 character_event = {

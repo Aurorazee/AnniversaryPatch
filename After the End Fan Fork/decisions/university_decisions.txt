@@ -1,129 +1,116 @@
-decisions = {
-	attend_university = {
-		potential = {
-			is_ruler = yes
-			age = 16
-			prisoner = no
-			NOT = { trait = student }
-			NOT = { trait = graduate }
-			capital_scope = {
-					region = custom_usa
-			}
-		}
-		allow = {
-			wealth = 50
-			learning = 10
-		}
-		effect = {
-			character_event = { id = univ.1 }
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0.5
-		}
-	}
-	join_sports_team = {
-		potential = {
-			is_adult = yes
-			NOT = { age = 50 }
-			NOT = { trait = football }
-			NOT = { trait = hockey }
-		}
-		allow = {
-			NOT = { age = 50 }
-			NOT = { trait = football }
-			NOT = { trait = hockey }
-		}
-		effect = {
-			character_event = { id = sports.19 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	change_college_major = {
-		is_high_prio = yes
-		potential = {
-			trait = student
-			NOT = { trait = graduate }
-			OR = {
-				has_character_flag = college_history
-				has_character_flag = college_science
-				has_character_flag = college_mathematics
-				has_character_flag = college_psychology
-				has_character_flag = college_literature
-			}
-		}
-		allow = {
-			trait = student
-		}
-		effect = {
-			character_event = { id = univ.12 }
-		}
-	}
-	play_big_game = {
-		is_high_prio = no
-		ai_check_interval = 3
-		potential = {
-			OR = {
-				trait = football
-				trait = hockey
-			}
-			NOT = { has_character_flag = playing_big_game }
-			NOT = { has_character_modifier = completed_big_game }
-		}
-		allow = {
-			OR = {
-				trait = football
-				trait = hockey
-			}
-			prisoner = no
-			NOT = { is_inaccessible_trigger = yes }
-			custom_tooltip = {
-				text = is_not_busy_trigger_tooltip
-				hidden_tooltip = { NOT = { has_character_flag = do_not_disturb } }
-			}
-		}
-		effect = {
-			set_character_flag = playing_big_game
-			set_character_flag = recent_minor_decision
-			set_character_flag = do_not_disturb
-			hidden_tooltip = { character_event = { id = sports.18 days = 30 } } # Safety catch flag clearing
-			character_event = { id = sports.1 }
-		}
-	}	
-}
+# decisions = {
+	# attend_university = {
+		# is_high_prio = yes
+		# potential = {
+			# is_ruler = yes
+			# age = 16
+			# NOT = { age = 25 }
+			# prisoner = no
+			# only_capable = yes
+			# NOT = { trait = student }
+			# NOT = { trait = graduate }
+		# }
+		# allow = {
+			# scaled_wealth = 0.5
+			# OR = {
+				# b_new_haven_CT = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_montreal_QC = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_austin_TX = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_cleveland_OH = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_kingston_JA = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 600 } } }
+				# }
+				# b_atlanta_GA = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_st_louis_MO = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+			# }
+		# }
+		# effect = {
+			# character_event = { id = univ.1 }
+		# }
+		# revoke_allowed = {
+			# always = no
+		# }
+		# ai_will_do = {
+			# factor = 0 # for now
+		# }
+	# }
+# }
 
-targetted_decisions = {
-	send_kid_to_university = {
-		from_potential = {
-			is_ruler = yes
-			capital_scope = {
-					region = custom_usa
-			}
-		}
-		potential = {
-			is_child_of = FROM
-			is_liege_or_above = FROM
-			only_capable = yes
-			age = 16
-			NOT = { age = 25 }
-			NOT = { trait = student }
-			NOT = { trait = graduate }
-		}
-		allow = {
-			FROM = { scaled_wealth = 0.5 }
-		}
-		effect = {
-			character_event = { id = univ.1 } # should add an event to give kid a choice
-		}
-		revoke_allowed = {
-			always = no
-		}
-		ai_will_do = {
-			factor = 0 # for now
-		}
-	}
-}
+# dynasty_decisions = {
+	# send_kid_to_university = {
+		# is_high_prio = yes
+		# from_potential = {
+			# is_ruler = yes
+		# }
+		# potential = {
+			# is_child_of = FROM
+			# is_liege_or_above = FROM
+			# only_capable = yes
+			# age = 16
+			# NOT = { age = 25 }
+			# NOT = { trait = student }
+			# NOT = { trait = graduate }
+		# }
+		# allow = {
+			# FROM = { scaled_wealth = 0.5 }
+			# OR = {
+				# b_new_haven_CT = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_montreal_QC = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_austin_TX = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_cleveland_OH = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_kingston_JA = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 600 } } }
+				# }
+				# b_atlanta_GA = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+				# b_st_louis_MO = {
+					# holder_scope = { NOT = { war_with = ROOT } }
+					# location = { NOT = { distance = { where = ROOT distance = 300 } } }
+				# }
+			# }
+		# }
+		# effect = {
+			# character_event = { id = univ.1 } # should add an event to give kid a choice
+		# }
+		# revoke_allowed = {
+			# always = no
+		# }
+		# ai_will_do = {
+			# factor = 0 # for now
+		# }
+	# }
+# }

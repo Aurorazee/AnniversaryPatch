@@ -837,6 +837,9 @@ expel_twelve_pairs;Expel the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
 expel_twelve_pairs_desc; can drive the [d_twelve_pairs_of_france.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_twelve_pairs;Donate 300¤ to the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
 donate_money_to_twelve_pairs_desc;I can donate money to the [d_twelve_pairs_of_france.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect from the Church.;;;;;;;;;;;;;x
+vassalize_twelve_pairs_of_france;Vassalize the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
+vassalize_twelve_pairs_of_france_desc;As the [Root.GetTitle] of [k_roraima.GetName], it is within my power to vassalize the powerful [d_twelve_pairs_of_france.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_twelve_pairs_of_france_opinion_TT;§Y[d_twelve_pairs_of_france.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 form_the_contested_title;Form the Contested Title;;;;;;;;;;;;;x
 form_the_contested_title_desc;Restabilish a proper religious head for the Celeste faith.;;;;;;;;;;;;;x

@@ -274,15 +274,13 @@ send_duel_result_event_mexican_effect = { # Runs via the attacker/combatant_1
 				has_character_flag = poison_can_fail_against@event_target:combatant_1 #Attacker might catch the poison
 				value = -25
 			}
-			if = { #Otherwise, regular duel death for the attacker...
-				set_character_flag = someone_died
-				set_character_flag = actually_injured
-				set_character_flag = injury_kills
+			set_character_flag = someone_died
+			set_character_flag = actually_injured
+			set_character_flag = injury_kills
 
-				event_target:combatant_2 = {
-					set_character_flag = someone_died
-					character_event = { id = HFP.16011 days = 1 } #"I decapitated someone!" event sent to winner...
-				}
+			event_target:combatant_2 = {
+				set_character_flag = someone_died
+				character_event = { id = HFP.16011 days = 1 } #"I decapitated someone!" event sent to winner...
 			}
 		}
 

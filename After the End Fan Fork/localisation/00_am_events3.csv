@@ -631,8 +631,8 @@ expelled_d_taxet_warriors;Expelled the [d_taxet_warriors.GetName];;;;;;;;;;;;;x
 expelled_d_fruit_of_islam;Expelled the [d_fruit_of_islam.GetName];;;;;;;;;;;;;x
 expelled_d_guardians_of_tradition;Expelled the [d_guardians_of_tradition.GetName];;;;;;;;;;;;;x
 expelled_d_coureurs_des_bois;Expelled the [d_coureurs_des_bois.GetName];;;;;;;;;;;;;x
-expelled_d_knights_st_flanelle;Expelled the [d_knights_st_flanelle.GetName];;;;;;;;;;;;;x
 expelled_d_cedesi;Expelled the [d_cedesi.GetName];;;;;;;;;;;;;x
+expelled_d_knights_st_flanelle;Expelled the [d_knights_st_flanelle.GetName];;;;;;;;;;;;;x
 expelled_d_pony_express;Expelled the [d_pony_express.GetName];;;;;;;;;;;;;x
 expelled_d_order_of_the_golden_bunny;Expelled the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
 expelled_d_twelve_pairs_of_france;Expelled the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
@@ -649,119 +649,193 @@ expel_lightbringers;Expel the [d_lightbringers.GetName];;;;;;;;;;;;;x
 expel_lightbringers_desc; can drive the [d_lightbringers.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_lightbringers;Donate 300¤ to the [d_lightbringers.GetName];;;;;;;;;;;;;x
 donate_money_to_lightbringers_desc;I can donate money to the [d_lightbringers.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_lightbringers;Vassalize the [d_lightbringers.GetName];;;;;;;;;;;;;x
+vassalize_lightbringers_desc;As the [Root.GetTitle] of [k_michoacan.GetName], it is within my power to vassalize the powerful [d_lightbringers.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_lightbringers_opinion_TT;§Y[d_lightbringers.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
+
 expel_dead_sun;Expel the [d_dead_sun.GetName];;;;;;;;;;;;;x
 expel_dead_sun_desc; can drive the [d_dead_sun.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_dead_sun;Donate 300¤ to the [d_dead_sun.GetName];;;;;;;;;;;;;x
 donate_money_to_dead_sun_desc;I can donate money to the [d_dead_sun.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_dead_sun;Vassalize the [d_dead_sun.GetName];;;;;;;;;;;;;x
+vassalize_dead_sun_desc;As the [Root.GetTitle] of [k_bajio.GetName], it is within my power to vassalize the powerful [d_dead_sun.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_dead_sun_opinion_TT;§Y[d_dead_sun.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
+
 expel_golden_bears;Expel the [d_golden_bears.GetName];;;;;;;;;;;;;x
 expel_golden_bears_desc;I can drive the [d_golden_bears.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_golden_bears;Donate 300¤ to the [d_golden_bears.GetName];;;;;;;;;;;;;x
 donate_money_to_golden_bears_desc;I can donate money to the [d_golden_bears.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect from the scholars.;;;;;;;;;;;;;x
+vassalize_golden_bears;Vassalize the [d_golden_bears.GetName];;;;;;;;;;;;;x
+vassalize_golden_bears_desc;As the [Root.GetTitle] of [k_francisco.GetName], it is within my power to vassalize the powerful [d_golden_bears.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_golden_bears_opinion_TT;§Y[d_golden_bears.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_followers_ram;Expel the [d_followers_ram.GetName];;;;;;;;;;;;;x
 expel_followers_ram_desc;I can drive the [d_followers_ram.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_followers_ram;Donate 300¤ to the [d_followers_ram.GetName];;;;;;;;;;;;;x
 donate_money_to_followers_ram_desc;I can donate money to the [d_followers_ram.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_followers_ram;Vassalize the [d_followers_ram.GetName];;;;;;;;;;;;;x
+vassalize_followers_ram_desc;As the [Root.GetTitle] of [k_cundiboyaca.GetName], it is within my power to vassalize the powerful [d_followers_ram.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_followers_ram_opinion_TT;§Y[d_followers_ram.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_batallon_colombia;Expel the [d_batallon_colombia.GetName];;;;;;;;;;;;;x
 expel_batallon_colombia_desc;I can drive the [d_batallon_colombia.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_batallon_colombia;Donate 300¤ to the [d_batallon_colombia.GetName];;;;;;;;;;;;;x
 donate_money_to_batallon_colombia_desc;I can donate money to the [d_batallon_colombia.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_batallon_colombia;Vassalize the [d_batallon_colombia.GetName];;;;;;;;;;;;;x
+vassalize_batallon_colombia_desc;As the [Root.GetTitle] of [k_cundiboyaca.GetName], it is within my power to vassalize the powerful [d_batallon_colombia.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_batallon_colombia_opinion_TT;§Y[d_batallon_colombia.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_saint_expedit;Expel the [d_saint_expedit.GetName];;;;;;;;;;;;;x
 expel_saint_expedit_desc;I can drive the [d_saint_expedit.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_saint_expedit;Donate 300¤ to the [d_saint_expedit.GetName];;;;;;;;;;;;;x
 donate_money_to_saint_expedit_desc;I can donate money to the [d_saint_expedit.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_saint_expedit;Vassalize the [d_saint_expedit.GetName];;;;;;;;;;;;;x
+vassalize_saint_expedit_desc;As the [Root.GetTitle] of [k_louisiana.GetName], it is within my power to vassalize the powerful [d_saint_expedit.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_saint_expedit_opinion_TT;§Y[d_saint_expedit.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_followers_ogun;Expel the [d_followers_ogun.GetName];;;;;;;;;;;;;x
 expel_followers_ogun_desc;I can drive the [d_followers_ogun.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_followers_ogun;Donate 300¤ to the [d_followers_ogun.GetName];;;;;;;;;;;;;x
 donate_money_to_followers_ogun_desc;I can donate money to the [d_followers_ogun.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_followers_ogun;Vassalize the [d_followers_ogun.GetName];;;;;;;;;;;;;x
+vassalize_followers_ogun_desc;As the [Root.GetTitle] of [k_cuba.GetName], it is within my power to vassalize the powerful [d_followers_ogun.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_followers_ogun_opinion_TT;§Y[d_followers_ogun.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_warriors_guaicaipuro;Expel the [d_warriors_guaicaipuro.GetName];;;;;;;;;;;;;x
 expel_warriors_guaicaipuro_desc;I can drive the [d_warriors_guaicaipuro.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_warriors_guaicaipuro;Donate 300¤ to the [d_warriors_guaicaipuro.GetName];;;;;;;;;;;;;x
 donate_money_to_warriors_guaicaipuro_desc;I can donate money to the [d_warriors_guaicaipuro.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_warriors_guaicaipuro;Vassalize the [d_warriors_guaicaipuro.GetName];;;;;;;;;;;;;x
+vassalize_warriors_guaicaipuro_desc;As the [Root.GetTitle] of [k_venezuela.GetName], it is within my power to vassalize the powerful [d_warriors_guaicaipuro.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_warriors_guaicaipuro_opinion_TT;§Y[d_warriors_guaicaipuro.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_all_tribes;Expel the [d_all_tribes.GetName];;;;;;;;;;;;;x
 expel_all_tribes_desc;I can drive the [d_all_tribes.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_all_tribes;Donate 300¤ to the [d_all_tribes.GetName];;;;;;;;;;;;;x
 donate_money_to_all_tribes_desc;I can donate money to the [d_all_tribes.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_all_tribes;Vassalize the [d_all_tribes.GetName];;;;;;;;;;;;;x
+vassalize_all_tribes_desc;As the [Root.GetTitle] of [k_lakotah.GetName], it is within my power to vassalize the powerful [d_all_tribes.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_all_tribes_opinion_TT;§Y[d_all_tribes.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_capoeiristas;Expel the [d_capoeiristas.GetName];;;;;;;;;;;;;x
 expel_capoeiristas_desc;I can drive the [d_capoeiristas.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_capoeiristas;Donate 300¤ to the [d_capoeiristas.GetName];;;;;;;;;;;;;x
 donate_money_to_capoeiristas_desc;I can donate money to the [d_capoeiristas.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_capoeiristas;Vassalize the [d_capoeiristas.GetName];;;;;;;;;;;;;x
+vassalize_capoeiristas_desc;As the [Root.GetTitle] of [k_roraima.GetName], it is within my power to vassalize the powerful [d_capoeiristas.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_capoeiristas_opinion_TT;§Y[d_capoeiristas.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_code_keepers;Expel the [d_code_keepers.GetName];;;;;;;;;;;;;x
 expel_code_keepers_desc;I can drive the [d_code_keepers.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_code_keepers;Donate 300¤ to the [d_code_keepers.GetName];;;;;;;;;;;;;x
 donate_money_to_code_keepers_desc;I can donate money to the [d_code_keepers.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_code_keepers;Vassalize the [d_code_keepers.GetName];;;;;;;;;;;;;x
+vassalize_code_keepers_desc;As the [Root.GetTitle] of [k_west_indies.GetName], it is within my power to vassalize the powerful [d_code_keepers.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_code_keepers_opinion_TT;§Y[d_code_keepers.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_golden_archers;Expel the [d_golden_archers.GetName];;;;;;;;;;;;;x
 expel_golden_archers_desc;I can drive the [d_golden_archers.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_golden_archers;Donate 300¤ to the [d_golden_archers.GetName];;;;;;;;;;;;;x
 donate_money_to_golden_archers_desc;I can donate money to the [d_golden_archers.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_golden_archers;Vassalize the [d_golden_archers.GetName];;;;;;;;;;;;;x
+vassalize_golden_archers_desc;As the [Root.GetTitle] of [k_chicagoland.GetName], it is within my power to vassalize the powerful [d_golden_archers.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_golden_archers_opinion_TT;§Y[d_golden_archers.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_round_table;Expel the [d_round_table.GetName];;;;;;;;;;;;;x
 expel_round_table_desc;I can drive the [d_round_table.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_round_table;Donate 300¤ to the [d_round_table.GetName];;;;;;;;;;;;;x
 donate_money_to_round_table_desc;I can donate money to the [d_round_table.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_round_table;Vassalize the [d_round_table.GetName];;;;;;;;;;;;;x
+vassalize_round_table_desc;As the [Root.GetTitle] of [k_newfoundland.GetName], it is within my power to vassalize the powerful [d_round_table.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_round_table_opinion_TT;§Y[d_round_table.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_salvation_army;Expel the [d_salvation_army.GetName];;;;;;;;;;;;;x
 expel_salvation_army_desc;I can drive the [d_salvation_army.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_salvation_army;Donate 300¤ to the [d_salvation_army.GetName];;;;;;;;;;;;;x
 donate_money_to_salvation_army_desc;I can donate money to the [d_salvation_army.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_salvation_army;Vassalize the [d_salvation_army.GetName];;;;;;;;;;;;;x
+vassalize_salvation_army_desc;As the [Root.GetTitle] of [k_columbia.GetName], it is within my power to vassalize the powerful [d_salvation_army.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_salvation_army_opinion_TT;§Y[d_salvation_army.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_three_fires;Expel the [d_three_fires.GetName];;;;;;;;;;;;;x
 expel_three_fires_desc;I can drive the [d_three_fires.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_three_fires;Donate 300¤ to the [d_three_fires.GetName];;;;;;;;;;;;;x
 donate_money_to_three_fires_desc;I can donate money to the [d_three_fires.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_three_fires;Vassalize the [d_three_fires.GetName];;;;;;;;;;;;;x
+vassalize_three_fires_desc;As the [Root.GetTitle] of [k_aurora.GetName], it is within my power to vassalize the powerful [d_three_fires.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_three_fires_opinion_TT;§Y[d_three_fires.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_taxet_warriors;Expel the [d_taxet_warriors.GetName];;;;;;;;;;;;;x
 expel_taxet_warriors_desc;I can drive the [d_taxet_warriors.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_taxet_warriors;Donate 300¤ to the [d_taxet_warriors.GetName];;;;;;;;;;;;;x
 donate_money_to_taxet_warriors_desc;I can donate money to the [d_taxet_warriors.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_taxet_warriors;Vassalize the [d_taxet_warriors.GetName];;;;;;;;;;;;;x
+vassalize_taxet_warriors_desc;As the [Root.GetTitle] of [k_vancouver.GetName], it is within my power to vassalize the powerful [d_taxet_warriors.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_taxet_warriors_opinion_TT;§Y[d_taxet_warriors.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_fruit_of_islam;Expel the [d_fruit_of_islam.GetName];;;;;;;;;;;;;x
 expel_fruit_of_islam_desc;I can drive the [d_fruit_of_islam.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_fruit_of_islam;Donate 300¤ to the [d_fruit_of_islam.GetName];;;;;;;;;;;;;x
 donate_money_to_fruit_of_islam_desc;I can donate money to the [d_fruit_of_islam.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect from the Ummah.;;;;;;;;;;;;;x
+vassalize_fruit_of_islam;Vassalize the [d_fruit_of_islam.GetName];;;;;;;;;;;;;x
+vassalize_fruit_of_islam_desc;As the [Root.GetTitle] of [k_florida.GetName], it is within my power to vassalize the powerful [d_fruit_of_islam.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_fruit_of_islam_opinion_TT;§Y[d_fruit_of_islam.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_guardians_of_tradition;Expel the [d_guardians_of_tradition.GetName];;;;;;;;;;;;;x
 expel_guardians_of_tradition_desc;I can drive the [d_guardians_of_tradition.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_guardians_of_tradition;Donate 300¤ to the [d_guardians_of_tradition.GetName];;;;;;;;;;;;;x
 donate_money_to_guardians_of_tradition_desc;I can donate money to the [d_guardians_of_tradition.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect from the Ummah.;;;;;;;;;;;;;x
+vassalize_guardians_of_tradition;Vassalize the [d_guardians_of_tradition.GetName];;;;;;;;;;;;;x
+vassalize_guardians_of_tradition_desc;As the [Root.GetTitle] of [k_new_york.GetName], it is within my power to vassalize the powerful [d_guardians_of_tradition.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_guardians_of_tradition_opinion_TT;§Y[d_guardians_of_tradition.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_coureurs_des_bois;Expel the [d_coureurs_des_bois.GetName];;;;;;;;;;;;;x
 expel_coureurs_des_bois_desc;I can drive the [d_coureurs_des_bois.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_coureurs_des_bois;Donate 300¤ to the [d_coureurs_des_bois.GetName];;;;;;;;;;;;;x
 donate_money_to_coureurs_des_bois_desc;I can donate money to the [d_coureurs_des_bois.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_coureurs_des_bois;Vassalize the [d_coureurs_des_bois.GetName];;;;;;;;;;;;;x
+vassalize_coureurs_des_bois_desc;As the [Root.GetTitle] of [k_quebec.GetName], it is within my power to vassalize the powerful [d_coureurs_des_bois.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_coureurs_des_bois_opinion_TT;§Y[d_coureurs_des_bois.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_knights_st_flanelle;Expel the [d_knights_st_flanelle.GetName];;;;;;;;;;;;;x
 expel_knights_st_flanelle_desc;I can drive the [d_knights_st_flanelle.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_knights_st_flanelle;Donate 300¤ to the [d_knights_st_flanelle.GetName];;;;;;;;;;;;;x
 donate_money_to_knights_st_flanelle_desc;I can donate money to the [d_knights_st_flanelle.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_knights_st_flanelle;Vassalize the [d_knights_st_flanelle.GetName];;;;;;;;;;;;;x
+vassalize_knights_st_flanelle_desc;As the [Root.GetTitle] of [k_quebec.GetName], it is within my power to vassalize the powerful [d_knights_st_flanelle.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_knights_st_flanelle_opinion_TT;§Y[d_knights_st_flanelle.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_cedesi;Expel the [d_cedesi.GetName];;;;;;;;;;;;;x
 expel_cedesi_desc;I can drive the [d_cedesi.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_cedesi;Donate 300¤ to the [d_cedesi.GetName];;;;;;;;;;;;;x
 donate_money_to_cedesi_desc;I can donate money to the [d_cedesi.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_cedesi;Vassalize the [d_cedesi.GetName];;;;;;;;;;;;;x
+vassalize_cedesi_desc;As the [Root.GetTitle] of [k_francisco.GetName], it is within my power to vassalize the powerful [d_cedesi.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_cedesi_opinion_TT;§Y[d_cedesi.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_pony_express;Expel the [d_pony_express.GetName];;;;;;;;;;;;;x
 expel_pony_express_desc;I can drive the [d_pony_express.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_pony_express;Donate 300¤ to the [d_pony_express.GetName];;;;;;;;;;;;;x
 donate_money_to_pony_express_desc;I can donate money to the [d_pony_express.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_pony_express;Vassalize the [d_pony_express.GetName];;;;;;;;;;;;;x
+vassalize_pony_express_desc;As the [Root.GetTitle] of [k_yellowstone.GetName], it is within my power to vassalize the powerful [d_pony_express.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_pony_express_opinion_TT;§Y[d_pony_express.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_order_of_the_golden_bunny;Expel the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
 expel_order_of_the_golden_bunny_desc;I can drive the [d_order_of_the_golden_bunny.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_order_of_the_golden_bunny;Donate 300¤ to the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
 donate_money_to_order_of_the_golden_bunny_desc;I can donate money to the [d_order_of_the_golden_bunny.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_order_of_the_golden_bunny;Vassalize the [d_order_of_the_golden_bunny.GetName];;;;;;;;;;;;;x
+vassalize_order_of_the_golden_bunny_desc;As the [Root.GetTitle] of [k_roraima.GetName], it is within my power to vassalize the powerful [d_order_of_the_golden_bunny.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_order_of_the_golden_bunny_opinion_TT;§Y[d_order_of_the_golden_bunny.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 expel_legion_infernal;Expel the [d_legion_infernal.GetName];;;;;;;;;;;;;x
 expel_legion_infernal_desc;I can drive the [d_legion_infernal.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_legion_infernal;Donate 300¤ to the [d_legion_infernal.GetName];;;;;;;;;;;;;x
 donate_money_to_legion_infernal_desc;I can donate money to the [d_legion_infernal.GetName] in exchange for [Player.Religion.GetPietyName] and lifelong respect.;;;;;;;;;;;;;x
+vassalize_legion_infernal;Vassalize the [d_legion_infernal.GetName];;;;;;;;;;;;;x
+vassalize_legion_infernal_desc;As the [Root.GetTitle] of [k_los_llanos.GetName], it is within my power to vassalize the powerful [d_legion_infernal.GetName] at the cost of 500 gold.;;;;;;;;;;;;;x
+vassalize_legion_infernal_opinion_TT;§Y[d_legion_infernal.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 form_the_uaw;Form the [d_uaw.GetName];;;;;;;;;;;;;x
 form_the_uaw_desc;As the [Root.GetTitle] of Michigan, it is my power to revive the ancient holy order of the [d_uaw.GetName].;;;;;;;;;;;;;x

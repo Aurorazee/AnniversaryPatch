@@ -1600,7 +1600,7 @@ province_event = {
 		name = EVTOPTC_eva.201 #allow it to take its course
 		religion = antinomian
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -1645,7 +1645,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.202
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.203 days = 6 } } } }
+		hidden_tooltip = { FROM = { province_event = { id = eva.203 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -1699,11 +1699,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.204 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = {
 			if = {
@@ -1725,12 +1725,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.205 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = antinomian }
+		FROM = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = antinomian }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -1900,7 +1900,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.204 
@@ -2136,7 +2136,7 @@ province_event = {
 		name = EVTOPTC_eva.301 #allow it to take its course
 		religion = charismatic
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -2180,7 +2180,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.302
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.203 days = 6 } } } }
+		hidden_tooltip = { FROM = {  province_event = { id = eva.303 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -2201,9 +2201,7 @@ character_event = {
 
 province_event = {
 	id = eva.303
-	hide_window = yes
-	desc = EVTDESC_bounce
-	
+	hide_window = yes	
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -2223,8 +2221,6 @@ province_event = {
 			FROM = { character_event = { id = eva.305 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {
@@ -2234,11 +2230,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.304 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = { liege = { character_event = { id = eva.309 } } }
 	}
@@ -2251,12 +2247,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.305 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = charismatic }
+		FROM = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = charismatic }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -2425,7 +2421,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.304 
@@ -2508,7 +2504,7 @@ province_event = {
 		name = EVTOPTC_eva.401 #allow it to take its course
 		religion = postadventist
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -2552,7 +2548,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.402
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.403 days = 6 } } } }
+		hidden_tooltip = { FROM = { province_event = { id = eva.403 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -2574,7 +2570,6 @@ character_event = {
 province_event = {
 	id = eva.403
 	hide_window = yes
-	desc = EVTDESC_bounce
 	
 	is_triggered_only = yes
 	
@@ -2595,8 +2590,6 @@ province_event = {
 			FROM = { character_event = { id = eva.405 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {
@@ -2606,11 +2599,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.404 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = {
 			if = {
@@ -2632,12 +2625,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.405 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = postadventist }
+		FROM = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = postadventist }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -2806,7 +2799,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.404 
@@ -2889,7 +2882,7 @@ province_event = {
 		name = EVTOPTC_eva.501 #allow it to take its course
 		religion = anabaptist
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -2933,7 +2926,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.502
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.503 days = 6 } } } }
+		hidden_tooltip = { FROM = { province_event = { id = eva.503 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -2954,9 +2947,7 @@ character_event = {
 
 province_event = {
 	id = eva.503
-	hide_window = yes
-	desc = EVTDESC_bounce
-	
+	hide_window = yes	
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -2968,16 +2959,14 @@ province_event = {
 	
 		if = {
 			limit = { has_province_flag = revival_ends }
-			FROM = { character_event = { id = eva.504 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.504 days = 5 random = 8} }
 		}
 		
 		if = {
 			limit = { has_province_flag = revival_succeeds }
-			FROM = { character_event = { id = eva.505 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.505 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {
@@ -2987,11 +2976,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.504 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = {
 			if = {
@@ -3013,12 +3002,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.505 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = anabaptist }
+		FROM = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = anabaptist }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -3187,7 +3176,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.504 
@@ -3269,7 +3258,7 @@ province_event = {
 	option = {
 		name = EVTOPTC_eva.601 #allow it to take its course
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -3313,7 +3302,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.602
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.603 days = 6 } } } }
+		hidden_tooltip = { FROM = { province_event = { id = eva.603 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -3335,8 +3324,6 @@ character_event = {
 province_event = {
 	id = eva.603
 	hide_window = yes
-	desc = EVTDESC_bounce
-	
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -3348,16 +3335,14 @@ province_event = {
 	
 		if = {
 			limit = { has_province_flag = revival_ends }
-			FROM = { character_event = { id = eva.604 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.604 days = 5 random = 8} }
 		}
 		
 		if = {
 			limit = { has_province_flag = revival_succeeds }
-			FROM = { character_event = { id = eva.605 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.605 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {
@@ -3367,11 +3352,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.604 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = {
 			if = {
@@ -3393,12 +3378,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.605 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = mormon }
+		FROM = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = mormon }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -3567,7 +3552,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.604 
@@ -3649,7 +3634,7 @@ province_event = {
 	option = {
 		name = EVTOPTC_eva.701 #allow it to take its course
 		add_province_modifier = { name = burned_over duration = 912 }
-		piety = -25
+		holder_scope = { piety = -25 }
 		ai_chance = { factor = 5 }
 	}
 	
@@ -3693,7 +3678,7 @@ character_event = {
 	
 	option = { #resist
 		name = EVTOPTB_eva.702
-		hidden_tooltip = { FROM = { holder_scope = { character_event = { id = eva.703 days = 6 } } } }
+		hidden_tooltip = { FROM = { province_event = { id = eva.703 days = 6 } } }
 		ai_chance = {
 			factor = 10
 			modifier = { factor = 2 religion_authority = 0.8 }
@@ -3715,8 +3700,6 @@ character_event = {
 province_event = {
 	id = eva.703
 	hide_window = yes
-	desc = EVTDESC_bounce
-	
 	is_triggered_only = yes
 	
 	immediate = { 
@@ -3728,16 +3711,14 @@ province_event = {
 	
 		if = {
 			limit = { has_province_flag = revival_ends }
-			FROM = { character_event = { id = eva.704 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.704 days = 5 random = 8} }
 		}
 		
 		if = {
 			limit = { has_province_flag = revival_succeeds }
-			FROM = { character_event = { id = eva.705 days = 5 random = 8} }
+			holder_scope = { character_event = { id = eva.705 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {
@@ -3747,11 +3728,11 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.704 
-		FROMFROMFROM = { add_province_modifier = { name = resist_revival duration = 720 } }
+		FROM = { add_province_modifier = { name = resist_revival duration = 720 } }
 		piety = 25
 		hidden_tooltip = {
 			if = {
@@ -3773,12 +3754,12 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_succeeds }
+	immediate = { FROM = { clr_province_flag = revival_succeeds } }
 	
 	option = { 
 		name = EVTOPTA_eva.705 
-		FROMFROMFROM = { add_province_modifier = { name = burned_over duration = 720 } }
-		FROMFROMFROM = { religion = high_church }
+		FROM  = { add_province_modifier = { name = burned_over duration = 720 } }
+		FROM = { religion = high_church }
 		piety = -5
 		hidden_tooltip = {
 			if = {
@@ -3947,7 +3928,7 @@ character_event = {
 	
 	is_triggered_only = yes
 	
-	immediate = { clr_province_flag = revival_ends }
+	immediate = { FROMFROM = { clr_province_flag = revival_ends } }
 	
 	option = { 
 		name = EVTOPTA_eva.704 

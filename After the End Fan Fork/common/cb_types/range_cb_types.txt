@@ -123,7 +123,7 @@ liberate_texas = {
 				FROM = {		
 					any_realm_province = {
 						limit = { 
-							duchy = { title = PREVPREV }
+							duchy = { title = PREVPREVPREV }
 							holder_scope = {
 								OR = {
 									culture = texan
@@ -135,8 +135,7 @@ liberate_texas = {
 										has_landed_title = k_comancheria
 									}
 								}
-								NOT = { holder_scope = { tier = DUKE } }
-								NOT = { holder_scope = { tier = KING } }
+								NOT = { holder_scope = { higher_tier_than = COUNT } }
 							}
 						}
 						holder_scope = { set_character_flag = future_vassal }
@@ -252,10 +251,7 @@ liberate_texas = {
 			has_dlc = "Holy Fury"
 			ROOT = {
 				is_feudal = yes
-				OR = {
-					religion = catholic
-					religion = fraticelli
-				}
+				religion = catholic
 				NOR = {
 					trait = crowned_by_priest
 					trait = crowned_by_bishop

@@ -7599,7 +7599,7 @@ shepherds_crusade_invasion = {
 							capital = PREV
 						}
 						save_event_target_as = shepherds_capital
-						DUCHY = {
+						duchy = {
 							save_event_target_as = shepherds_duchy
 						}
 					}
@@ -7665,7 +7665,7 @@ shepherds_crusade_invasion = {
 						OR = {
 							NOT = {
 								location = {
-									DUCHY = {
+									duchy = {
 										title = event_target:shepherds_duchy
 									}
 								}
@@ -7883,7 +7883,7 @@ northern_crusade_war = {
 				if = {
 					limit = {
 						capital_scope = {
-							DUCHY = {
+							duchy = {
 								title = PREVPREVPREV
 							}
 						}

@@ -326,9 +326,6 @@ character_event = {
 		}
 		set_character_flag = add_duel_xp
 		clr_character_flag = punish_declining
-		ai_chance = {
-			factor = 80
-		}
 	}
 
 	option = { # [INTRIGUE OPTION]
@@ -1929,6 +1926,7 @@ character_event = {
 	option = { #Kill them anyway
 		trigger = {
 			always = no
+			is_allowed_deadly_duels_trigger = yes
 		}
 		name = { 
 			text = EVTOPTB_HFP_10105_default
@@ -2066,9 +2064,6 @@ character_event = {
 				}
 				factor = 80
 			}
-		}
-		trigger = {
-			is_allowed_deadly_duels_trigger = yes
 		}
 	}
 }

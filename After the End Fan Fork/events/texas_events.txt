@@ -89,7 +89,7 @@ narrative_event = {
 	}
 }
 
-narrative_event={
+narrative_event = {
 	id = texas.2
 	title = EVTNAME_texarkana_established
 	desc = EVTDESC_texarkana_established
@@ -177,7 +177,6 @@ narrative_event={
 		prestige = -500
 	}
 }
-
 
 narrative_event = {
 	id = texas.3
@@ -503,9 +502,7 @@ narrative_event = {
 	}
 }
 
-
-
-narrative_event={
+narrative_event = {
 	id = texas.5
 	title = EVTNAME_texas_established
 	desc = EVTDESC_texas_established
@@ -561,7 +558,7 @@ narrative_event={
 			NOT = { has_landed_title = e_texas }
 			culture_group = starfolk
 			is_tributary = {
-				SUZERAIN = FROM
+				suzerain = FROM
 			}
 			NOT = { tier = EMPEROR }
 		}
@@ -597,7 +594,7 @@ narrative_event={
 			NOT = { has_landed_title = e_texas }
 			culture_group = starfolk
 			is_tributary = {
-				SUZERAIN = FROM
+				suzerain = FROM
 			}
 			NOT = { tier = EMPEROR }
 		}
@@ -622,7 +619,7 @@ narrative_event={
 			NOT = { has_landed_title = e_texas }
 			culture_group = starfolk
 			is_tributary = {
-				SUZERAIN = FROM
+				suzerain = FROM
 			}
 			tier = EMPEROR
 		}
@@ -648,8 +645,8 @@ narrative_event={
 			religion = ROOT
 			NOT = {
 				is_tributary = {
-					SUZERAIN = FROM
-				}
+				suzerain = FROM
+			}
 			}
 		}
 		piety = 100
@@ -666,7 +663,7 @@ narrative_event={
 			religion = ROOT
 			NOT = {
 				is_tributary = {
-					SUZERAIN = FROM
+					suzerain = FROM
 				}
 			}
 		}
@@ -709,7 +706,7 @@ narrative_event={
 			culture_group = starfolk
 			NOT = {
 				is_tributary = {
-					SUZERAIN = FROM
+					suzerain = FROM
 				}
 			}
 		}
@@ -718,65 +715,7 @@ narrative_event={
 	}
 }
 
-#party events
-character_event = {
-	id = texas.49
-	desc = EVTDESC_texas_50
-	is_triggered_only = yes
-	min_age = 16
-	
-	trigger = {
-		government = open_range_feudalism_government
-		independent = yes
-	}
-	
-	option = {
-		name = EVTOPTA_texas_50
-		add_character_modifier = {
-			name = endorsed_populist
-			duration = -1
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 10 trait = party_populist }
-			modifier = { factor = 2 trait = just }
-			modifier = { factor = 1.5 trait = ambitious }
-			modifier = { factor = 5 tier = BARON }
-		}
-	}
-	option = {
-		name = EVTOPTB_texas_50
-		add_character_modifier = {
-			name = endorsed_magnate
-			duration = -1
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 10 trait = party_magnate }
-			modifier = { factor = 3 trait = ambitious }
-			modifier = { factor = 2 trait = arbitrary }
-			modifier = { factor = 1.5 trait = greedy }
-			modifier = { factor = 1.5 trait = proud }
-			modifier = { factor = 0.1 trait = content }
-			modifier = { factor = 0.1 trait = slothful }
-		}
-	}
-	option = {
-		name = EVTOPTD_texas_50
-		add_character_modifier = {
-			name = endorsed_theocratic
-			duration = -1
-		}
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 10 trait = party_theocratic }
-			modifier = { factor = 5 trait = zealous }
-			modifier = { factor = 4 trait = devout }
-			modifier = { factor = 0 trait = cynical }
-			modifier = { factor = 10 government = theocracy_government }
-		}
-	}
-}
+#Choose Party - Player
 character_event = {
 	id = texas.50
 	desc = EVTDESC_texas_50
@@ -789,12 +728,6 @@ character_event = {
 			liege = {
 				government = open_range_feudalism_government
 			}
-			AND = {
-				has_job_title = yes
-				liege = {
-					government = open_range_feudalism_government
-				}
-			}
 		}
 		NOR = {
 			trait = party_populist
@@ -812,150 +745,28 @@ character_event = {
 	option = {
 		name = EVTOPTA_texas_50
 		add_trait = party_populist
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2 trait = just }
-			modifier = { factor = 1.5 trait = ambitious }
-			modifier = { factor = 5 tier = BARON }
-			modifier = { factor = 10 government = republic_government }
-		}
 	}
 	option = {
 		name = EVTOPTB_texas_50
 		add_trait = party_magnate
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 3 trait = ambitious }
-			modifier = { factor = 2 trait = arbitrary }
-			modifier = { factor = 1.5 trait = greedy }
-			modifier = { factor = 1.5 trait = proud }
-			modifier = { factor = 0.1 trait = content }
-			modifier = { factor = 0.1 trait = slothful }
-			modifier = { factor = 10 government = merchant_republic_government }
-		}
 	}
 	option = {
 		name = EVTOPTC_texas_50
 		add_trait = party_royalist
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 4 trait = content }
-			modifier = { factor = 2 trait = humble }
-			modifier = { factor = 1.5 trait = craven }
-			modifier = { factor = 0.5 trait = ambitious }
-			modifier = {
-				factor = 2
-				opinion = { who = liege value >= 50 }
-			}
-			modifier = {
-				factor = 0
-				opinion = { who = liege value < 50 }
-			}
-		}
 	}
 	option = {
 		name = EVTOPTD_texas_50
 		add_trait = party_theocratic
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 5 trait = zealous }
-			modifier = { factor = 4 trait = devout }
-			modifier = { factor = 0 trait = cynical }
-			modifier = { factor = 10 is_theocracy = yes }
-		}
-	}
-}
-character_event = {
-	id = texas.51
-	desc = EVTDESC_texas_50
-	ai = no
-	min_age = 16
-	has_job_title = yes
-	trigger = {
-		OR = {
-			government = open_range_feudalism_government
-			liege = {
-				government = open_range_feudalism_government
-			}
-			AND = {
-				has_job_title = yes
-				liege = {
-					government = open_range_feudalism_government
-				}
-			}
-		}
-		NOR = {
-			trait = party_populist
-			trait = party_magnate
-			trait = party_royalist
-			trait = party_theocratic
-			trait = party_opposition
-		}
-	}
-	
-	mean_time_to_happen = {
-		days = 10
-	}
-	
-	option = {
-		name = EVTOPTA_texas_50
-		add_trait = party_populist
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 2 trait = just }
-			modifier = { factor = 1.5 trait = ambitious }
-			modifier = { factor = 5 tier = BARON }
-			modifier = { factor = 10 government = republic_government }
-		}
-	}
-	option = {
-		name = EVTOPTB_texas_50
-		add_trait = party_magnate
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 3 trait = ambitious }
-			modifier = { factor = 2 trait = arbitrary }
-			modifier = { factor = 1.5 trait = greedy }
-			modifier = { factor = 1.5 trait = proud }
-			modifier = { factor = 0.1 trait = content }
-			modifier = { factor = 0.1 trait = slothful }
-			modifier = { factor = 10 government = merchant_republic_government }
-		}
-	}
-	option = {
-		name = EVTOPTC_texas_50
-		add_trait = party_royalist
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 4 trait = content }
-			modifier = { factor = 2 trait = humble }
-			modifier = { factor = 1.5 trait = craven }
-			modifier = { factor = 0.5 trait = ambitious }
-			modifier = {
-				factor = 2
-				opinion = { who = liege value >= 50 }
-			}
-			modifier = {
-				factor = 0
-				opinion = { who = liege value < 50 }
-			}
-		}
 	}
 	option = {
 		name = EVTOPTD_texas_50
-		add_trait = party_theocratic
-		ai_chance = {
-			factor = 10
-			modifier = { factor = 5 trait = zealous }
-			modifier = { factor = 4 trait = devout }
-			modifier = { factor = 0 trait = cynical }
-			modifier = { factor = 10 government = theocracy_government }
-		}
+		add_trait = party_opposition
 	}
 }
 
+#Choose Pary on_startup - AI
 character_event = {
-	id = texas.75
+	id = texas.51
 	desc = EVTDESC_texas_50
 	is_triggered_only = yes
 	
@@ -990,7 +801,7 @@ character_event = {
 			modifier = { factor = 2 trait = just }
 			modifier = { factor = 1.5 trait = ambitious }
 			modifier = { factor = 3 father = { trait = party_populist } }
-			modifier = { factor = 5 tier = BARON }
+			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 10 government = republic_government }
 		}
 	}
@@ -1005,6 +816,7 @@ character_event = {
 			modifier = { factor = 1.5 trait = proud }
 			modifier = { factor = 0.1 trait = content }
 			modifier = { factor = 0.1 trait = slothful }
+			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 3 father = { trait = party_magnate } }
 			modifier = { factor = 10 government = merchant_republic_government }
 		}
@@ -1037,7 +849,304 @@ character_event = {
 			modifier = { factor = 4 trait = devout }
 			modifier = { factor = 0 trait = cynical }
 			modifier = { factor = 3 father = { trait = party_theocratic } }
-			modifier = { factor = 10 government = theocracy_government }
+			modifier = { factor = 10 is_theocracy = yes }
+		}
+	}
+	option = {
+		name = EVTOPTE_texas_50
+		add_trait = party_opposition
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				opinion = {
+					who = liege
+					value = 0
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = liege
+					value < -25
+				}
+			}
+			modifier = {
+				factor = 2
+				opinion = {
+					who = liege
+					value < -50
+				}
+			}
+			modifier = {
+				factor = 4
+				opinion = {
+					who = liege
+					value < -75
+				}
+			}
+			modifier = {
+				factor = 6
+				opinion = {
+					who = liege
+					value < -100
+				}
+			}
+			modifier = {
+				factor = 100
+				is_rival = liege
+			}
+		}
+	}
+}
+
+#Choose Pary - AI
+character_event = {
+	id = texas.52
+	desc = EVTDESC_texas_50
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	trigger = {
+		ai = yes
+		OR = {
+			government = open_range_feudalism_government
+			liege = {
+				government = open_range_feudalism_government
+			}
+			AND = {
+				has_job_title = yes
+				liege = {
+					government = open_range_feudalism_government
+				}
+			}
+		}
+		NOR = {
+			trait = party_populist
+			trait = party_magnate
+			trait = party_royalist
+			trait = party_theocratic
+			trait = party_opposition
+		}
+	}
+	
+	option = {
+		name = EVTOPTA_texas_50
+		add_trait = party_populist
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = just }
+			modifier = { factor = 1.5 trait = ambitious }
+			modifier = { factor = 3 father = { trait = party_populist } }
+			modifier = { factor = 1.5 is_feudal = yes }
+			modifier = { factor = 10 government = republic_government }
+		}
+	}
+	option = {
+		name = EVTOPTB_texas_50
+		add_trait = party_magnate
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 3 trait = ambitious }
+			modifier = { factor = 2 trait = arbitrary }
+			modifier = { factor = 1.5 trait = greedy }
+			modifier = { factor = 1.5 trait = proud }
+			modifier = { factor = 0.1 trait = content }
+			modifier = { factor = 0.1 trait = slothful }
+			modifier = { factor = 1.5 is_feudal = yes }
+			modifier = { factor = 3 father = { trait = party_magnate } }
+			modifier = { factor = 10 government = merchant_republic_government }
+		}
+	}
+	option = {
+		name = EVTOPTC_texas_50
+		add_trait = party_royalist
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 4 trait = content }
+			modifier = { factor = 2 trait = humble }
+			modifier = { factor = 1.5 trait = craven }
+			modifier = { factor = 0.5 trait = ambitious }
+			modifier = {
+				factor = 2
+				opinion = { who = liege value >= 50 }
+			}
+			modifier = {
+				factor = 0
+				opinion = { who = liege value < 50 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD_texas_50
+		add_trait = party_theocratic
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 5 trait = zealous }
+			modifier = { factor = 4 trait = devout }
+			modifier = { factor = 0 trait = cynical }
+			modifier = { factor = 3 father = { trait = party_theocratic } }
+			modifier = { factor = 10 is_theocracy = yes }
+		}
+	}
+	option = {
+		name = EVTOPTE_texas_50
+		add_trait = party_opposition
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				opinion = {
+					who = liege
+					value = 0
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = liege
+					value < -25
+				}
+			}
+			modifier = {
+				factor = 2
+				opinion = {
+					who = liege
+					value < -50
+				}
+			}
+			modifier = {
+				factor = 4
+				opinion = {
+					who = liege
+					value < -75
+				}
+			}
+			modifier = {
+				factor = 6
+				opinion = {
+					who = liege
+					value < -100
+				}
+			}
+			modifier = {
+				factor = 100
+				is_rival = liege
+			}
+		}
+	}
+}
+
+#Choose Party Decision
+character_event = {
+	id = texas.53
+	desc = EVTDESC_texas_50
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_texas_50
+		add_trait = party_populist
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 2 trait = just }
+			modifier = { factor = 1.5 trait = ambitious }
+			modifier = { factor = 3 father = { trait = party_populist } }
+			modifier = { factor = 1.5 is_feudal = yes }
+			modifier = { factor = 10 government = republic_government }
+		}
+	}
+	option = {
+		name = EVTOPTB_texas_50
+		add_trait = party_magnate
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 3 trait = ambitious }
+			modifier = { factor = 2 trait = arbitrary }
+			modifier = { factor = 1.5 trait = greedy }
+			modifier = { factor = 1.5 trait = proud }
+			modifier = { factor = 0.1 trait = content }
+			modifier = { factor = 0.1 trait = slothful }
+			modifier = { factor = 1.5 is_feudal = yes }
+			modifier = { factor = 3 father = { trait = party_magnate } }
+			modifier = { factor = 10 government = merchant_republic_government }
+		}
+	}
+	option = {
+		name = EVTOPTC_texas_50
+		add_trait = party_royalist
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 4 trait = content }
+			modifier = { factor = 2 trait = humble }
+			modifier = { factor = 1.5 trait = craven }
+			modifier = { factor = 0.5 trait = ambitious }
+			modifier = {
+				factor = 2
+				opinion = { who = liege value >= 50 }
+			}
+			modifier = {
+				factor = 0
+				opinion = { who = liege value < 50 }
+			}
+		}
+	}
+	option = {
+		name = EVTOPTD_texas_50
+		add_trait = party_theocratic
+		ai_chance = {
+			factor = 10
+			modifier = { factor = 5 trait = zealous }
+			modifier = { factor = 4 trait = devout }
+			modifier = { factor = 0 trait = cynical }
+			modifier = { factor = 3 father = { trait = party_theocratic } }
+			modifier = { factor = 10 is_theocracy = yes }
+		}
+	}
+	option = {
+		name = EVTOPTE_texas_50
+		add_trait = party_opposition
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 0
+				opinion = {
+					who = liege
+					value = 0
+				}
+			}
+			modifier = {
+				factor = 1.5
+				opinion = {
+					who = liege
+					value < -25
+				}
+			}
+			modifier = {
+				factor = 2
+				opinion = {
+					who = liege
+					value < -50
+				}
+			}
+			modifier = {
+				factor = 4
+				opinion = {
+					who = liege
+					value < -75
+				}
+			}
+			modifier = {
+				factor = 6
+				opinion = {
+					who = liege
+					value < -100
+				}
+			}
+			modifier = {
+				factor = 100
+				is_rival = liege
+			}
 		}
 	}
 }

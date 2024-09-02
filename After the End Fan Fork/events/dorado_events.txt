@@ -310,14 +310,25 @@ character_event = {
 	
 	option = {
 		name = EVTOPTADORA.107
-		tooltip = {
-		OR = {
+		if = {
+			limit = {
+				e_mexico = {
+					has_holder = yes
+				}
+			}
 			e_mexico = {
 				holder_scope = {
 					FROM = {
 						move_character = PREV
 						religion = PREV
 					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				k_mexico = {
+					has_holder = yes
 				}
 			}
 			k_mexico = {
@@ -329,8 +340,7 @@ character_event = {
 				}
 			}
 		}
-	}
-	FROM = { add_trait = dorado }
+		FROM = { add_trait = dorado }
 	}
 }
 
@@ -487,7 +497,7 @@ character_event = {
 			age = 0
 		}
 		new_character = {
-			add_father = FROM
+			set_father = FROM
 		}
 	}
 }
@@ -709,7 +719,7 @@ character_event = {
 				OR = {
 					religion_group = cult_of_saints
 					religion_group = christian
-					religion_group = mesoamerican
+					religion_group = mesoamerican_gods
 				}
 			}
 		}
@@ -719,7 +729,7 @@ character_event = {
 				OR = {
 					religion_group = cult_of_saints
 					religion_group = christian
-					religion_group = mesoamerican
+					religion_group = mesoamerican_gods
 				}
 			}
 		}
@@ -1239,7 +1249,7 @@ character_event = {
 		}
 		hidden_tooltip = {
 			FROM = { 
-				character_event = { id = dorado.13 days = 1460 }
+				character_event = { id = dorado.133 days = 1460 }
 			}
 		}
 		prestige = 100

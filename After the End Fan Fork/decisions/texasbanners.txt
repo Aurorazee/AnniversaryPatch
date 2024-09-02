@@ -387,7 +387,7 @@ decisions = {
 				}
 				d_airmen = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}
@@ -516,7 +516,7 @@ decisions = {
 				}
 				d_miners = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}
@@ -649,7 +649,7 @@ decisions = {
 				}
 				d_red_raider = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}
@@ -782,7 +782,7 @@ decisions = {
 				}
 				d_longhorns = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}
@@ -910,7 +910,7 @@ decisions = {
 				}
 				d_aggies = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}
@@ -928,17 +928,17 @@ decisions = {
 		potential = {
 			is_playable = yes
 			independent = yes
-			OR = { culture_group = starfolk
-			AND = { culture = comanche
-			has_landed_title = k_comancheria
+			OR = { 
+				culture_group = starfolk
+				AND = { 
+					culture = comanche
+					has_landed_title = k_comancheria
 				}
 			}
 			NOT = { has_global_flag = texas_restored }
-
 			d_first_cav = {
 				has_holder = no
 			}
-
 		}
 		
 		allow = {
@@ -987,7 +987,6 @@ decisions = {
 			prestige = -500
 
 			if = {
-
 				limit = {
 					any_tributary = {
 						AND = {
@@ -1021,7 +1020,6 @@ decisions = {
 
 
 			if = {
-
 				limit = {
 					any_realm_character = {
 						has_landed_title = c_centrex
@@ -1040,7 +1038,7 @@ decisions = {
 				}
 				d_first_cav = {
 					holder_scope = {
-						set_defacto_liege = FROM
+						set_defacto_liege = ROOT
 					}
 				}
 			}

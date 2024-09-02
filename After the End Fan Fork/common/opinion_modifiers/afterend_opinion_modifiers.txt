@@ -1,5 +1,3 @@
-
-
 denied_pilgrim = {
 	opinion = -10
 	months = 120
@@ -300,7 +298,15 @@ tried_to_convert_me = {
 	opinion = -15
 	months = 120
 }
+opinion_refused_bonfire = {
+	modifier = -15
+	years = 10
+}
 running_against = {
 	opinion = -50
 	years = 2
+}
+orf_lost_election_to = {
+	opinion = -25
+	years = 10
 }

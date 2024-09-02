@@ -4481,22 +4481,6 @@ new_crusade = {
 		}
 
 		hidden_tooltip = {
-		
-			#if = { # Achievement
-			#	limit = {
-			#		event_target:new_crusade_target_char = {
-			#			has_landed_title = e_byzantium
-			#			religion_group = FROM
-			#		}
-			#	}
-			#	any_attacker = {
-			#		limit = {
-			#			ai = no
-			#		}
-			#		set_character_flag = achievement_venetian_guile
-			#	}
-			#}
-
 			if = {
 				limit = {
 					ai = yes

@@ -363,183 +363,183 @@ character_event = {
 	}
 }
 
-character_event = {
-	id = bank.20
-	hide_window = yes
-	is_triggered_only = yes
+# character_event = {
+	# id = bank.20
+	# hide_window = yes
+	# is_triggered_only = yes
 	
-	immediate = {
-		#if = {
-		#	limit = {
-		#		NOT = { has_dlc = "Mystics" }
-		#		trait = banker
-		#	}
-		#	current_heir = { character_event = { id = bank.21 days = 3 } }
-		#}
-		if = {
-			limit = { has_character_flag = loan_taken }
-			current_heir = {
-				character_event = { id = bank.22 days = 3 }
-			}
-		}
-		if = {
-			limit = { has_character_flag = loan_100 }
-			current_heir = { set_character_flag = loan_100 }
-		}
-		if = {
-			limit = { has_character_flag = loan_200 }
-			current_heir = { set_character_flag = loan_200 }
-		}
-		if = {
-			limit = { has_character_flag = loan_400 }
-			current_heir = { set_character_flag = loan_400 }
-		}
-		if = {
-			limit = { has_character_flag = loan_600 }
-			current_heir = { set_character_flag = loan_600 }
-		}
-		if = {
-			limit = { has_character_flag = loan_800 }
-			current_heir = { set_character_flag = loan_800 }
-		}
-		if = {
-			limit = { has_character_flag = loan_1000 }
-			current_heir = { set_character_flag = loan_1000 }
-		}
-	}
-	option = { }
-}
+	# immediate = {
+		# if = {
+			# limit = {
+				# NOT = { has_dlc = "Mystics" }
+				# trait = banker
+			# }
+			# current_heir = { character_event = { id = bank.21 days = 3 } }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_taken }
+			# current_heir = {
+				# character_event = { id = bank.22 days = 3 }
+			# }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_100 }
+			# current_heir = { set_character_flag = loan_100 }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_200 }
+			# current_heir = { set_character_flag = loan_200 }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_400 }
+			# current_heir = { set_character_flag = loan_400 }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_600 }
+			# current_heir = { set_character_flag = loan_600 }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_800 }
+			# current_heir = { set_character_flag = loan_800 }
+		# }
+		# if = {
+			# limit = { has_character_flag = loan_1000 }
+			# current_heir = { set_character_flag = loan_1000 }
+		# }
+	# }
+	# option = { }
+# }
 
-character_event = {
-	id = bank.22
-	desc = EVTDESC_bank_liability
-	picture = GFX_evt_council
-	is_triggered_only = yes
+# character_event = {
+	# id = bank.22
+	# desc = EVTDESC_bank_liability
+	# picture = GFX_evt_council
+	# is_triggered_only = yes
 	
-	trigger = {
-		dynasty = FROM
-	}
+	# trigger = {
+		# dynasty = FROM
+	# }
 	
-	option = {
-		name = EVTOPT_liability_full
-		trigger = {
-			OR = {
-				AND = { has_character_flag = loan_100 wealth = 100 }
-				AND = {	has_character_flag = loan_200 wealth = 200 }
-				AND = { has_character_flag = loan_400 wealth = 400 }
-				AND = { has_character_flag = loan_600 wealth = 600 }
-				AND = { has_character_flag = loan_800 wealth = 800 }
-				AND = { has_character_flag = loan_1000 wealth = 1000 }
-			}
-		}
-		if = { limit = { has_character_flag = loan_100 } wealth = -100 }
-		if = { limit = { has_character_flag = loan_200 } wealth = -200 }
-		if = { limit = { has_character_flag = loan_400 } wealth = -400 }
-		if = { limit = { has_character_flag = loan_600 } wealth = -600 }
-		if = { limit = { has_character_flag = loan_800 } wealth = -800 }
-		if = { limit = { has_character_flag = loan_1000 } wealth = -1000 }
-		prestige = 100
-		piety = 50
-		random_list = {
-			40 = { add_trait = just }
-			40 = { add_trait = honest }
-			20 = { }
-		}
-		clr_character_flag = loan_taken
-		clr_character_flag = loan_100
-		clr_character_flag = loan_200
-		clr_character_flag = loan_400
-		clr_character_flag = loan_600
-		clr_character_flag = loan_800
-		clr_character_flag = loan_1000
-		ai_chance = {
-			factor = 20
-			modifier = { factor = 3	trait = just }
-			modifier = { factor = 3	trait = honest }
-			modifier = { factor = 0	trait = greedy }
-			modifier = { factor = 0	trait = arbitrary }
-		}
-	}
+	# option = {
+		# name = EVTOPT_liability_full
+		# trigger = {
+			# OR = {
+				# AND = { has_character_flag = loan_100 wealth = 100 }
+				# AND = {	has_character_flag = loan_200 wealth = 200 }
+				# AND = { has_character_flag = loan_400 wealth = 400 }
+				# AND = { has_character_flag = loan_600 wealth = 600 }
+				# AND = { has_character_flag = loan_800 wealth = 800 }
+				# AND = { has_character_flag = loan_1000 wealth = 1000 }
+			# }
+		# }
+		# if = { limit = { has_character_flag = loan_100 } wealth = -100 }
+		# if = { limit = { has_character_flag = loan_200 } wealth = -200 }
+		# if = { limit = { has_character_flag = loan_400 } wealth = -400 }
+		# if = { limit = { has_character_flag = loan_600 } wealth = -600 }
+		# if = { limit = { has_character_flag = loan_800 } wealth = -800 }
+		# if = { limit = { has_character_flag = loan_1000 } wealth = -1000 }
+		# prestige = 100
+		# piety = 50
+		# random_list = {
+			# 40 = { add_trait = just }
+			# 40 = { add_trait = honest }
+			# 20 = { }
+		# }
+		# clr_character_flag = loan_taken
+		# clr_character_flag = loan_100
+		# clr_character_flag = loan_200
+		# clr_character_flag = loan_400
+		# clr_character_flag = loan_600
+		# clr_character_flag = loan_800
+		# clr_character_flag = loan_1000
+		# ai_chance = {
+			# factor = 20
+			# modifier = { factor = 3	trait = just }
+			# modifier = { factor = 3	trait = honest }
+			# modifier = { factor = 0	trait = greedy }
+			# modifier = { factor = 0	trait = arbitrary }
+		# }
+	# }
 	
-	option = {
-		name = EVTOPT_liability_delay
-		if = { limit = { has_character_flag = loan_100 } custom_tooltip = { text = TXT_assume_100 } }
-		if = { limit = { has_character_flag = loan_200 } custom_tooltip = { text = TXT_assume_200 } }
-		if = { limit = { has_character_flag = loan_400 } custom_tooltip = { text = TXT_assume_400 } }
-		if = { limit = { has_character_flag = loan_600 } custom_tooltip = { text = TXT_assume_600 } }
-		if = { limit = { has_character_flag = loan_800 } custom_tooltip = { text = TXT_assume_800 } }
-		if = { limit = { has_character_flag = loan_1000 } custom_tooltip = { text = TXT_assume_1000 } }
-		piety = 50
-		random_list = {
-			20 = { add_trait = just }
-			20 = { add_trait = honest }
-			60 = { }
-		}
-		add_character_modifier = { name = loan_timer days = 1825 }
-		set_character_flag = loan_taken
-		ai_chance = {
-			factor = 100
-			modifier = { factor = 3	trait = just }
-			modifier = { factor = 3	trait = honest }
-		}
-	}
+	# option = {
+		# name = EVTOPT_liability_delay
+		# if = { limit = { has_character_flag = loan_100 } custom_tooltip = { text = TXT_assume_100 } }
+		# if = { limit = { has_character_flag = loan_200 } custom_tooltip = { text = TXT_assume_200 } }
+		# if = { limit = { has_character_flag = loan_400 } custom_tooltip = { text = TXT_assume_400 } }
+		# if = { limit = { has_character_flag = loan_600 } custom_tooltip = { text = TXT_assume_600 } }
+		# if = { limit = { has_character_flag = loan_800 } custom_tooltip = { text = TXT_assume_800 } }
+		# if = { limit = { has_character_flag = loan_1000 } custom_tooltip = { text = TXT_assume_1000 } }
+		# piety = 50
+		# random_list = {
+			# 20 = { add_trait = just }
+			# 20 = { add_trait = honest }
+			# 60 = { }
+		# }
+		# add_character_modifier = { name = loan_timer days = 1825 }
+		# set_character_flag = loan_taken
+		# ai_chance = {
+			# factor = 100
+			# modifier = { factor = 3	trait = just }
+			# modifier = { factor = 3	trait = honest }
+		# }
+	# }
 	
-	option = {
-		name = EVTOPT_liability_part
-		trigger = {
-			diplomacy = 8
-			OR = {
-				AND = { has_character_flag = loan_100 wealth = 25 }
-				AND = {	has_character_flag = loan_200 wealth = 50 }
-				AND = { has_character_flag = loan_400 wealth = 100 }
-				AND = { has_character_flag = loan_600 wealth = 150 }
-				AND = { has_character_flag = loan_800 wealth = 200 }
-				AND = { has_character_flag = loan_1000 wealth = 250 }
-			}
-		}
-		tooltip_info = diplomacy
-		if = { limit = { has_character_flag = loan_100 } wealth = -25 }
-		if = { limit = { has_character_flag = loan_200 } wealth = -50 }
-		if = { limit = { has_character_flag = loan_400 } wealth = -100 }
-		if = { limit = { has_character_flag = loan_600 } wealth = -150 }
-		if = { limit = { has_character_flag = loan_800 } wealth = -200 }
-		if = { limit = { has_character_flag = loan_1000 } wealth = -250 }
-		prestige = 50
-		clr_character_flag = loan_taken
-		clr_character_flag = loan_100
-		clr_character_flag = loan_200
-		clr_character_flag = loan_400
-		clr_character_flag = loan_600
-		clr_character_flag = loan_800
-		clr_character_flag = loan_1000
-		ai_chance = {
-			factor = 500
-			modifier = { factor = 3	trait = just }
-			modifier = { factor = 3	trait = honest }
-		}
-	}
+	# option = {
+		# name = EVTOPT_liability_part
+		# trigger = {
+			# diplomacy = 8
+			# OR = {
+				# AND = { has_character_flag = loan_100 wealth = 25 }
+				# AND = {	has_character_flag = loan_200 wealth = 50 }
+				# AND = { has_character_flag = loan_400 wealth = 100 }
+				# AND = { has_character_flag = loan_600 wealth = 150 }
+				# AND = { has_character_flag = loan_800 wealth = 200 }
+				# AND = { has_character_flag = loan_1000 wealth = 250 }
+			# }
+		# }
+		# tooltip_info = diplomacy
+		# if = { limit = { has_character_flag = loan_100 } wealth = -25 }
+		# if = { limit = { has_character_flag = loan_200 } wealth = -50 }
+		# if = { limit = { has_character_flag = loan_400 } wealth = -100 }
+		# if = { limit = { has_character_flag = loan_600 } wealth = -150 }
+		# if = { limit = { has_character_flag = loan_800 } wealth = -200 }
+		# if = { limit = { has_character_flag = loan_1000 } wealth = -250 }
+		# prestige = 50
+		# clr_character_flag = loan_taken
+		# clr_character_flag = loan_100
+		# clr_character_flag = loan_200
+		# clr_character_flag = loan_400
+		# clr_character_flag = loan_600
+		# clr_character_flag = loan_800
+		# clr_character_flag = loan_1000
+		# ai_chance = {
+			# factor = 500
+			# modifier = { factor = 3	trait = just }
+			# modifier = { factor = 3	trait = honest }
+		# }
+	# }
 	
-	option = {
-		name = EVTOPT_liability_refuse
-		add_character_modifier = { name = poor_credit years = 10 }
-		clr_character_flag = loan_taken
-		clr_character_flag = loan_100
-		clr_character_flag = loan_200
-		clr_character_flag = loan_400
-		clr_character_flag = loan_600
-		clr_character_flag = loan_800
-		clr_character_flag = loan_1000
-		ai_chance = {
-			factor = 30
-			modifier = { factor = 0.2 trait = just }
-			modifier = { factor = 0.2 trait = honest }
-			modifier = { factor = 2.0 trait = greedy }
-			modifier = { factor = 2.0 trait = arbitrary }
-			modifier = { factor = 2.0 trait = deceitful }
-			modifier = { factor = 2.0 trait = cynical }
-		}
-	}
-}
+	# option = {
+		# name = EVTOPT_liability_refuse
+		# add_character_modifier = { name = poor_credit years = 10 }
+		# clr_character_flag = loan_taken
+		# clr_character_flag = loan_100
+		# clr_character_flag = loan_200
+		# clr_character_flag = loan_400
+		# clr_character_flag = loan_600
+		# clr_character_flag = loan_800
+		# clr_character_flag = loan_1000
+		# ai_chance = {
+			# factor = 30
+			# modifier = { factor = 0.2 trait = just }
+			# modifier = { factor = 0.2 trait = honest }
+			# modifier = { factor = 2.0 trait = greedy }
+			# modifier = { factor = 2.0 trait = arbitrary }
+			# modifier = { factor = 2.0 trait = deceitful }
+			# modifier = { factor = 2.0 trait = cynical }
+		# }
+	# }
+# }
 
 character_event = {
 	id = bank.30
@@ -1197,7 +1197,9 @@ character_event = {
 					factor = 0
 				}
 				modifier = {
-					has_truce = yes
+					any_character = {
+						reverse_has_truce = ROOT
+					}
 					factor = 0
 				}
 				modifier = {
@@ -1391,7 +1393,9 @@ society_quest_event = {
 	trigger = {
 		NOR = {
 			war = yes
-			has_truce = yes
+			any_character = {
+				reverse_has_truce = PREV
+			}
 			has_any_quest = yes
 		}
 	}
@@ -1471,7 +1475,7 @@ letter_event = {
 letter_event = {
 	id = bank.60
 	desc = EVTDESC_debt_quest_failure
-	border = GFX_event_normal_frame_religion
+	border = GFX_event_letter_frame_religion
 
 	is_triggered_only = yes
 

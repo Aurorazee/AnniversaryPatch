@@ -6726,7 +6726,7 @@ character_event = {
 
 # Written by Patrick Marchand
 
-#[on_combat_pulse] Druidic character becomes reknowned headhunter
+#[HFP.11000] Druidic character becomes reknowned headhunter
 character_event = {
 	id = ancrel.0010
 	desc = EVTDESCancrel.0010
@@ -6741,128 +6741,6 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	religion_group = pagan_group
-
-	trigger = {
-		is_alive = yes
-		NOT = { trait = head1 }
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
-		OR = {
-			trait = brave
-			trait = fian
-			trait = wroth
-		}
-	}
-	
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			factor = 2
-			trait = brave
-		}		
-		modifier = {
-			factor = 2
-			martial = 10
-		}
-		modifier = {
-			factor = 2
-			is_strong_trigger = yes
-		}
-		modifier = {
-			factor = 2
-			trait = genius
-		}
-		modifier = {
-			factor = 5
-			is_smart_trigger = yes
-		}
-		modifier = {
-			factor = 0.1
-			trait = wounded
-		}
-		modifier = {
-			factor = 0.2
-			is_dumb_trigger = yes
-		}
-		modifier = {
-			factor = 0.1
-			trait = inbred
-		}
-		modifier = {
-			factor = 0.5
-			is_weak_trigger = yes
-		}	
-		modifier = {
-			trait = stressed
-			factor = 0.9
-		}
-		modifier = {
-			factor = 0.8
-			trait = depressed
-		}
-		modifier = {
-			factor = 0.9
-			trait = ill
-		}
-		modifier = {
-			factor = 0.8
-			trait = pneumonic
-		}
-		modifier = {
-			factor = 0.8
-			trait = syphilitic
-		}
-		modifier = {
-			factor = 0.7
-			trait = leper
-		}
-		modifier = {
-			factor = 0.8
-			is_maimed_trigger = yes
-		}
-		modifier = {
-			factor = 0.7
-			trait = infirm
-		}
-		modifier = {
-			factor = 0.6
-			is_incapable = yes
-		}
-		modifier = {
-			factor = 0.75
-			trait = drunkard
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_tuberculosis
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_typhoid_fever
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_typhus
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_bubonic_plague
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_measles
-		}		
-		modifier = {
-			factor = 0.75
-			trait = has_small_pox
-		}
-		modifier = {
-			factor = 0.75
-			trait = craven
-		}
-	}
 	
 	option = {
 		name = EVTOPTAancrel.0010
@@ -6870,7 +6748,7 @@ character_event = {
 	}
 }
 
-#[on_combat_pulse] Druidic character becomes living legend
+#[HFP.11000] Druidic character becomes living legend
 character_event = {
 	id = ancrel.0011
 	desc = EVTDESCancrel.0011
@@ -6885,132 +6763,7 @@ character_event = {
 	capable_only = yes
 	prisoner = no
 	religion_group = pagan_group
-	
-	trigger = {
-		is_alive = yes
-		trait = head1
-		trait = brave
-		OR = {
-			trait = tough_soldier
-			trait = skilled_tactician
-			trait = brilliant_strategist
-			trait = duelist
-		}
-		NOT = { trait = head2 }
-		OR = {
-			religion = celtic_pagan
-			religion = celtic_pagan_reformed
-		}
-	}
-	
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			factor = 2
-			trait = brave
-		}		
-		modifier = {
-			factor = 2
-			martial = 13
-		}
-		modifier = {
-			factor = 2
-			is_strong_trigger = yes
-		}
-		modifier = {
-			factor = 2
-			trait = genius
-		} # \/ These two /\ stack, so genius gets x10
-		modifier = {
-			factor = 5
-			is_smart_trigger = yes
-		}
-		modifier = {
-			factor = 0.1
-			trait = wounded
-		}
-		modifier = {
-			factor = 0.9
-			is_dumb_trigger = yes
-		}
-		modifier = {
-			factor = 0.1
-			trait = inbred
-		}
-		modifier = {
-			factor = 0.6
-			is_weak_trigger = yes
-		}	
-		modifier = {
-			factor = 0.9
-			trait = stressed
-		}
-		modifier = {
-			factor = 0.8
-			trait = depressed
-		}
-		modifier = {
-			factor = 0.9
-			trait = ill
-		}
-		modifier = {
-			factor = 0.2
-			trait = pneumonic
-		}
-		modifier = {
-			factor = 1.2
-			trait = syphilitic
-		}
-		modifier = {
-			factor = 0.75
-			trait = leper
-		}
-		modifier = {
-			factor = 0.8
-			is_maimed_trigger = yes
-		}
-		modifier = {
-			factor = 0.75
-			trait = infirm
-		}
-		modifier = {
-			factor = 0.6
-			is_incapable = yes
-		}
-		modifier = {
-			factor = 0.75
-			trait = drunkard
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_tuberculosis
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_typhoid_fever
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_typhus
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_bubonic_plague
-		}
-		modifier = {
-			factor = 0.75
-			trait = has_measles
-		}		
-		modifier = {
-			factor = 0.75
-			trait = has_small_pox
-		}
-		modifier = {
-			factor = 0.75
-			trait = craven
-		}
-	}
-	
+		
 	option = {
 		name = EVTOPTAancrel.0011
 		add_trait = head2
@@ -11374,36 +11127,6 @@ character_event = {
 	}
 }
 
-# Ping event when vassalizing the Fianna
-character_event = {
-	id = ancrel.0116
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		set_defacto_liege = FROM
-		FROM = {
-			letter_event = {
-				id = ancrel.0117
-			}
-		}
-	}
-}
-
-# Notification event when vassalizing the Fianna
-letter_event = {
-	id = ancrel.0117
-	desc = EVTDESCancrel.0117
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
-	}
-}
-
 #############################################
 #
 # Fianna event Series
@@ -11995,40 +11718,6 @@ character_event = {
 		}
 		prestige = -5
 		set_character_flag = hates_fianna
-	}
-}	
-	
-# Ping event when donating money to the fianna
-character_event = {
-	id = ancrel.1333
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	immediate = {
-		wealth = 300
-		FROM = {
-			letter_event = {
-				id = ancrel.1334
-			}
-		}
-		opinion = {
-			who = FROM
-			modifier = opinion_generous_donation
-		}
-	}
-}
-
-# Notification event when donating money to the fianna
-letter_event = {
-	id = ancrel.1334
-	desc = EVTDESCancrel.1334
-	border = GFX_event_letter_frame_religion
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = EXCELLENT
 	}
 }
 
