@@ -306,8 +306,9 @@ decisions = {
 			any_demesne_title = {
 				limit = {
 					tier = KING
-					NOT = {
+					NOR = {
 						title = k_columbia
+						clan = yes 
 					}
 				}
 				destroy_landed_title = THIS
@@ -2066,7 +2067,10 @@ decisions = {
 				hidden_tooltip = { activate_title = { title = THIS status = no } }
 			}
 			any_demesne_title = {
-				limit = { tier = KING }
+				limit = { 
+					tier = KING 
+					NOT = { clan = yes } 
+				}
 				destroy_landed_title = THIS
 			}
 			e_dixie = {
