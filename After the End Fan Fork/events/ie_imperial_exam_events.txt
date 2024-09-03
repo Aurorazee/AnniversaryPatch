@@ -6402,11 +6402,14 @@ character_event = {
 			trait = imp_ex3
 			trait = imp_ex4
 		}
-		NOT = { has_character_modifier = examination_nightmares }
+		NOR = { 
+			has_character_modifier = examination_nightmares 
+			has_character_flag = had_examination_nightmares
+		}
 	}
 	
 	mean_time_to_happen = {
-		years = 10
+		years = 100
 		modifier = { factor = 0.5 trait = paranoid }
 		modifier = { factor = 0.8 trait = diligent }
 		modifier = { factor = 0.8 trait = honest }
@@ -6415,6 +6418,7 @@ character_event = {
 		modifier = { factor = 1.5 trait = content }
 	}
 	immediate = {
+		set_character_flag = had_examination_nightmares
 		random_list = {
 			25 = {
 				narrative_event = { id = IE.25 }
@@ -6501,6 +6505,6 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAIE29
-		add_character_modifier = { name = examination_nightmares duration = 3650 }
+		add_character_modifier = { name = examination_nightmares duration = 365 }
 	}
 }

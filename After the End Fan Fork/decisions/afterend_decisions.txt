@@ -5332,22 +5332,22 @@ targetted_decisions = {
 			# }
 		}
 		effect = {
+			if = {
+				limit = {
+					any_character = {
+						trait = governator_heir
+					}
+				}
+				any_character = {
+					limit = {
+						trait = governator_heir
+					}
+					character_event = { id = cetic.322 }
+				}
+			}
 			ROOT = {
 				character_event = { id = cetic.321 }
 			}
-			# if = {
-				# limit = {
-					# any_character = {
-						# trait = governator_heir
-					# }
-				# }
-				# any_character = {
-					# limit = {
-						# trait = governator_heir
-					# }
-					# character_event = { id = cetic.322 }
-				# }
-			# }
 			FROM = {
 				set_character_flag = chosen_heir_gnator
 			}
@@ -5365,6 +5365,12 @@ targetted_decisions = {
 					NOT = {
 						has_character_flag = chosen_heir_gnator
 					}
+				}
+			}
+			modifier = {
+				factor = 100
+				ROOT = {
+					is_heir = FROM
 				}
 			}
 			modifier = {

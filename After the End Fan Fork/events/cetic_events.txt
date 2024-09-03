@@ -4166,7 +4166,6 @@ character_event = {
 	
 	option = {
 		name = hastalavista
-		add_trait = governator
 		clr_character_flag = chosen_heir_gnator
 	}
 }

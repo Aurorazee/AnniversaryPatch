@@ -85,6 +85,12 @@ decisions = {
 			NOT = { has_character_flag = offended_moneylenders }
 			NOT = { has_character_flag = loan_taken }
 			NOT = { society_member_of = banking_society }
+			AND = { 
+				NOT = {
+					wealth = 0
+					monthly_income = 0
+				}
+			}
 		}
 		allow = {
 			NOT = { has_character_modifier = poor_credit }
