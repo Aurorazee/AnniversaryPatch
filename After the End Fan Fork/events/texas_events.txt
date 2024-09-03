@@ -803,6 +803,10 @@ character_event = {
 			modifier = { factor = 3 father = { trait = party_populist } }
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 10 government = republic_government }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 		}
 	}
 	option = {
@@ -818,6 +822,10 @@ character_event = {
 			modifier = { factor = 0.1 trait = slothful }
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 3 father = { trait = party_magnate } }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = { factor = 10 government = merchant_republic_government }
 		}
 	}
@@ -830,6 +838,10 @@ character_event = {
 			modifier = { factor = 2 trait = humble }
 			modifier = { factor = 1.5 trait = craven }
 			modifier = { factor = 0.5 trait = ambitious }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = {
 				factor = 2
 				opinion = { who = liege value >= 50 }
@@ -849,6 +861,10 @@ character_event = {
 			modifier = { factor = 4 trait = devout }
 			modifier = { factor = 0 trait = cynical }
 			modifier = { factor = 3 father = { trait = party_theocratic } }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = { factor = 10 is_theocracy = yes }
 		}
 	}
@@ -896,6 +912,10 @@ character_event = {
 				factor = 100
 				is_rival = liege
 			}
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = glory_hound }
 		}
 	}
 }
@@ -941,6 +961,10 @@ character_event = {
 			modifier = { factor = 3 father = { trait = party_populist } }
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 10 government = republic_government }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 		}
 	}
 	option = {
@@ -957,6 +981,10 @@ character_event = {
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 3 father = { trait = party_magnate } }
 			modifier = { factor = 10 government = merchant_republic_government }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 		}
 	}
 	option = {
@@ -968,6 +996,10 @@ character_event = {
 			modifier = { factor = 2 trait = humble }
 			modifier = { factor = 1.5 trait = craven }
 			modifier = { factor = 0.5 trait = ambitious }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = {
 				factor = 2
 				opinion = { who = liege value >= 50 }
@@ -987,6 +1019,10 @@ character_event = {
 			modifier = { factor = 4 trait = devout }
 			modifier = { factor = 0 trait = cynical }
 			modifier = { factor = 3 father = { trait = party_theocratic } }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = { factor = 10 is_theocracy = yes }
 		}
 	}
@@ -1034,6 +1070,10 @@ character_event = {
 				factor = 100
 				is_rival = liege
 			}
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = glory_hound }
 		}
 	}
 }
@@ -1054,6 +1094,10 @@ character_event = {
 			modifier = { factor = 3 father = { trait = party_populist } }
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 10 government = republic_government }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 		}
 	}
 	option = {
@@ -1070,6 +1114,10 @@ character_event = {
 			modifier = { factor = 1.5 is_feudal = yes }
 			modifier = { factor = 3 father = { trait = party_magnate } }
 			modifier = { factor = 10 government = merchant_republic_government }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 		}
 	}
 	option = {
@@ -1081,6 +1129,10 @@ character_event = {
 			modifier = { factor = 2 trait = humble }
 			modifier = { factor = 1.5 trait = craven }
 			modifier = { factor = 0.5 trait = ambitious }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = {
 				factor = 2
 				opinion = { who = liege value >= 50 }
@@ -1100,6 +1152,10 @@ character_event = {
 			modifier = { factor = 4 trait = devout }
 			modifier = { factor = 0 trait = cynical }
 			modifier = { factor = 3 father = { trait = party_theocratic } }
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = glory_hound }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = malcontent }
 			modifier = { factor = 10 is_theocracy = yes }
 		}
 	}
@@ -1147,6 +1203,10 @@ character_event = {
 				factor = 100
 				is_rival = liege
 			}
+			modifier = { factor = 0 has_position = pragmatist }
+			modifier = { factor = 0 has_position = zealot }
+			modifier = { factor = 0 has_position = loyalist }
+			modifier = { factor = 0 has_position = glory_hound }
 		}
 	}
 }
