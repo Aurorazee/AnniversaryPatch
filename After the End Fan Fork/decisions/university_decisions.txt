@@ -21,15 +21,12 @@ decisions = {
 			}
 		}
 		allow = {
-			FROM = { scaled_wealth = 250 }
+			scaled_wealth = 250
 			learning = 10
 		}
 		effect = {
 			character_event = { id = univ.1 }
 			set_character_flag = choosing_university
-		}
-		revoke_allowed = {
-			always = no
 		}
 		ai_will_do = {
 			factor = 0.5
@@ -136,7 +133,7 @@ targetted_decisions = {
 		potential = {
 			is_child_of = FROM
 			is_liege_or_above = FROM
-			only_capable = yes
+			is_incapable = no
 			age = 16
 			NOT = { age = 25 }
 			NOT = { trait = student }
@@ -147,9 +144,6 @@ targetted_decisions = {
 		}
 		effect = {
 			character_event = { id = univ.1 } # should add an event to give kid a choice
-		}
-		revoke_allowed = {
-			always = no
 		}
 		ai_will_do = {
 			factor = 0 # for now

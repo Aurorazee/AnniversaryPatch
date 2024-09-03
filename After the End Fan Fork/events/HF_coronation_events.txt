@@ -297,7 +297,7 @@ character_event = {
 				NOT = { has_landed_title = k_ursuline }
 				NOT = { has_landed_title = d_quorum_of_the_twelve }
 				NOT = { has_landed_title = k_high_church }
-				not = { has_landed_title = d_cristo_rey }
+				NOT = { has_landed_title = d_cristo_rey }
 			}
 			preferred_limit = { #First search for a possible antipopes.
 				any_claim = { title = k_papal_state } 
@@ -347,6 +347,7 @@ character_event = {
 					has_landed_title = k_ursuline
 					has_landed_title = d_quorum_of_the_twelve
 					has_landed_title = k_high_church
+					has_landed_title = d_cristo_rey
 					higher_real_tier_than = BARON 
 					has_minor_title = title_cardinal
 					has_minor_title = title_ursuline_cardinal
@@ -1577,18 +1578,18 @@ letter_event = {
 							OR = {
 								religion = catholic
 								religion = ursuline
-								religion = mormon
+								# religion = mormon
 								religion = high_church
-								religion = cristo_rey
+								# religion = cristo_rey
 							}
 							rightful_religious_head_scope = {
 								is_liege_or_above = PREV
 								OR = {
 									has_claim = k_papal_state
 									has_claim = k_ursuline
-									has_claim = d_quorum_of_the_twelve
+									# has_claim = d_quorum_of_the_twelve
 									has_claim = k_high_church
-									has_claim = d_cristo_rey
+									# has_claim = d_cristo_rey
 								}
 							}
 						}
@@ -1818,6 +1819,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 
@@ -1863,6 +1865,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 	is_triggered_only = yes
@@ -1909,6 +1912,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 
@@ -1956,6 +1960,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 	is_triggered_only = yes
@@ -2002,6 +2007,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 	is_triggered_only = yes
@@ -2079,6 +2085,7 @@ letter_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 	}
 	is_triggered_only = yes
@@ -3393,8 +3400,9 @@ letter_event = {
 		OR = {
 			religion = catholic
 			religion = ursuline
-			religion = mormon
+			# religion = mormon
 			religion = high_church
+			# religion = cristo_rey
 		}
 	}
 	is_triggered_only = yes
@@ -3408,7 +3416,7 @@ letter_event = {
 				OR = {
 					religion = catholic
 					religion = ursuline
-					religion = mormon
+					# religion = mormon
 					religion = high_church
 				}
 				rightful_religious_head_scope = {
@@ -3416,8 +3424,9 @@ letter_event = {
 					OR = {
 						has_claim = k_papal_state
 						has_claim = k_ursuline
-						has_claim = d_quorum_of_the_twelve
+						# has_claim = d_quorum_of_the_twelve
 						has_claim = k_high_church
+						# has_claim = cristo_rey
 					}
 				}
 			}
@@ -3957,8 +3966,8 @@ letter_event = {
 						owner = { character = ROOT } 
 					}
 				}
+				save_event_target_as = scoped_duchy
 			}
-			save_event_target_as = scoped_duchy
 		}
 		random_playable_ruler = { 
 			limit = { 
@@ -4636,82 +4645,6 @@ character_event = {
 		set_character_flag = flag_crowned_by_pope
 		religion_head = { #otherwise the scope would have been lost.
 			save_event_target_as = coronation_priest
-				show_scope_change = no	
-			opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-			reverse_opinion = {
-				modifier = opinion_supposed_to_crown
-				months = 1
-				who = ROOT
-			}
-		}
-		hidden_tooltip = { character_event = { id = HF.20300 } } #Go to budget event
-	}
-}
-
-#unused
-
-#Emperor: Crazy Pope wants the Empire.
-letter_event = {
-	id = HF.20225
-	desc = EVTDESCHFA20225
-	border = GFX_event_letter_frame_religion
-
-	is_triggered_only = yes
-	
-	option = {
-		name = EVTOPTAHF20225
-		FROM = { make_tributary = { who = ROOT tributary_type = permanent } }
-		hidden_tooltip = { character_event = { id = HF.20226 } }
-		ai_chance = { 
-			factor = 80 
-			modifier = {
-				factor = 0.1
-				NOR = {
-					trait = zealous
-					trait = lunatic
-					trait = possessed
-				}
-			}
-		}
-	}
-	option = {	#End of the line
-		name = EVTOPTBHF20225
-		custom_tooltip = { text = coronation_canceled }
-		#clr_character_flag = flag_preparing_coronation #Replaced by timed modifier
-		# The Pope remembers what he wants, cheaty spammy player.
-		FROM = { 
-			show_scope_change = no	
-			opinion = {
-				modifier = opinion_requested_papal_land
-				years = 10
-				who = ROOT
-			}
-		}
-		ai_chance = { 
-			factor = 20 
-		}
-	}
-}
-
-#Follow-up event about Emperor bowing to the Pope.
-character_event = {
-	id = HF.20226
-	desc = EVTDESCHFA20226
-
-	picture = GFX_evt_pope
-	border = GFX_event_normal_frame_religion
-
-	is_triggered_only = yes
-
-	option = {
-		name = EVTOPTAHF20226
-		set_character_flag = flag_crowned_by_pope
-		religion_head = { #otherwise the scope would have been lost.
-			save_event_target_as = coronation_priest 
 				show_scope_change = no	
 			opinion = {
 				modifier = opinion_supposed_to_crown
@@ -8722,7 +8655,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTAHF20346
-		show_portrait = coronation_knight
+		show_portrait = event_target:coronation_knight
 		event_target:coronation_knight = { 
 			move_character = ROOT 
 			opinion = {
@@ -9200,7 +9133,7 @@ character_event = {
 		tooltip_info = learning
 		change_learning = 2
 		piety = 30
-		show_portrait = coronation_scholar
+		show_portrait = event_target:coronation_scholar
 		event_target:coronation_scholar = { 
 			move_character = ROOT 
 			opinion = {
@@ -9215,7 +9148,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTBHF20351
-		show_portrait = coronation_scholar
+		show_portrait = event_target:coronation_scholar
 		event_target:coronation_scholar = { 
 			move_character = ROOT 
 			opinion = {
@@ -10094,6 +10027,7 @@ character_event = {
 				religion = ursuline
 				religion = mormon
 				religion = high_church
+				religion = cristo_rey
 			}
 			OR = {
 				has_character_flag = flag_crowned_by_priest
@@ -11053,11 +10987,11 @@ character_event = {
 				any_claim = { title = d_quorum_of_the_twelve } #Antipope
 				any_claim = { title = k_high_church } #Antipope
 				}
-			NOT = { has_landed_title = k_papal_state }
-			NOT = { has_landed_title = k_ursuline }
-			NOT = { has_landed_title = d_quorum_of_the_twelve }
-			NOT = { has_landed_title = k_high_church }
-			NOT = { has_landed_title = d_cristo_rey }
+				NOT = { has_landed_title = k_papal_state }
+				NOT = { has_landed_title = k_ursuline }
+				NOT = { has_landed_title = d_quorum_of_the_twelve }
+				NOT = { has_landed_title = k_high_church }
+				NOT = { has_landed_title = d_cristo_rey }
 			}
 			ROOT = { save_persistent_event_target = { name = coronation_priest_per scope = PREV } }
 		}
@@ -12651,79 +12585,7 @@ character_event = {
 ################################################
 #Crown-related flavor. Triggered on_action randomly.
 
-#The nail in the Iron Cross. (this will never fire)
-character_event = {
-	id = HF.20399
-	desc = EVTDESCHFA20399
-
-	picture = GFX_evt_holy_emperor
-	border = GFX_event_normal_frame_religion
-
-	ai = no
-	min_age = 8
-
-	trigger = { 	
-		NOT = { has_dynasty_flag = flag_nail_in_crown }
-		NOT = { is_inaccessible_trigger = yes }
-		religion_group = christian
-		any_artifact = {
-			artifact_type = iron_crown_of_lombardy
-			is_artifact_equipped = yes 
-		}
-	}
-
-	is_triggered_only = yes
-
-	weight_multiplier = {
-		days = 1
-		modifier = {
-			factor = 1.5
-			trait = shrewd
-		}
-		modifier = {
-			factor = 0.5
-			trait = dull
-		}
-		modifier = {
-			factor = 1.25
-			trait = scholar
-		}
-		modifier = {
-			factor = 2
-			trait = cynical
-		}
-		modifier = {
-			factor = 2
-			NOT = { age = 16 }
-		}
-	}
-
-	immediate = { set_dynasty_flag = flag_nail_in_crown }
-
-
-	option = { #Look for it
-		name = EVTOPTAHF20399
-		change_learning = 3
-		random = {
-			chance = 10
-			piety = -100
-			custom_tooltip = { text = iron_cross_broken }
-			hidden_tooltip = { 
-				any_artifact = { 
-					limit = { artifact_type = iron_crown_of_lombardy }
-					unsafe_destroy_artifact = yes
-					add_artifact = fragment_of_true_cross
-				}
-			}
-		}
-	}
-	option = { #Better not to touch.
-		name = EVTOPTBHF20399
-		piety = 75
-	}
-}
-
-#The HRE crown and the prince. (this will also never fire)
+#The HCC crown and the prince.
 character_event = {
 	id = HF.20400
 	hide_window = yes
@@ -12935,6 +12797,7 @@ character_event = {
 			religion = ursuline
 			religion = mormon
 			religion = high_church
+			religion = cristo_rey
 		}
 		NOT = { check_variable = { which = uncrowned_count value = 30 } } #Stop at minus thirty.
 		NOR = { 

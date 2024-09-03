@@ -555,7 +555,7 @@ governator;Governatus;;;;;;;;;;;;;x
 governator_desc;The Governatus of California is a very influential title among the Imperial Court and all throughout California. As the highest ranking official within the Imperial Court, surpassing even the kings and queens of the bureaucratic realms, the Governatus has the ear of the [Root.GetCeticEmperorEmpress] at all times.;;;;;;;;;;;;;x
 
 sanctioned_governator;Anti-Governatus;;;;;;;;;;;;;x
-sanctioned_governator_desc;The [Root.GetCeticEmperorEmpress] of California has lost confidence in his Governatus, therefore, he has selected [Root.GetTitledFirstName] as his Anti-Governatus;;;;;;;;;;;;;x 
+sanctioned_governator_desc;The [Root.GetCeticEmperorEmpressCap] of California has lost confidence in his Governatus, therefore, he has selected [Root.GetTitledFirstName] as his Anti-Governatus;;;;;;;;;;;;;x 
 
 governator_heir;Governatus Heir;;;;;;;;;;;;;x
 governator_heir_desc;The Heir of the Governatus does not wield any special privileges, however what it lacks in power, it makes up in prestige. Although, in due time, one will gain both power in prestige.;;;;;;;;;;;;;x

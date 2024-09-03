@@ -5648,7 +5648,13 @@ defined_text = { #for coronation events
 		trigger = {
 			religion = falling_star
 		}
-		localisation_key = PRESIDENT
+		localisation_key = PATRIARCH
+	}
+	text = {
+		trigger = {
+			religion = cristo_rey
+		}
+		localisation_key = PRELATE
 	}
 	text = {
 		trigger = {
@@ -5657,6 +5663,7 @@ defined_text = { #for coronation events
 				religion = ursuline
 				religion = mormon
 				religion = high_church
+				religion = falling_star
 			}
 		}
 		localisation_key = PRESIDENT #fallback
