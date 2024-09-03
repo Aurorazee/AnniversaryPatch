@@ -1667,10 +1667,7 @@ character_event = {
 province_event = {
 	id = eva.203
 	hide_window = yes
-	desc = EVTDESC_bounce
-	
 	is_triggered_only = yes
-	
 	immediate = { 
 	
 		random_list = {
@@ -1688,8 +1685,6 @@ province_event = {
 			FROM = { character_event = { id = eva.205 days = 5 random = 8} }
 		}
 	}
-	
-	option = { }
 }
 
 character_event = {

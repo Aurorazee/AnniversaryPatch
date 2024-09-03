@@ -18,7 +18,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_cambridge
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -35,7 +35,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_berkeley
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -49,7 +49,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_georgia
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -66,7 +66,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_boulder
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -83,7 +83,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_chicago
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -100,7 +100,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_texas
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 	
@@ -117,7 +117,7 @@ character_event = {
 		}
 		add_trait = student
 		set_character_flag = u_los_alamos
-		FROM = { wealth = -50 }
+		wealth = -250
 		character_event = { id = univ.3 days = 1 }
 	}
 
@@ -126,11 +126,16 @@ character_event = {
 		name = EVTOPT_go_local_university
 		add_trait = student
 		set_character_flag = u_local_univ
+		wealth = -100
 	}
 	
 	option = {
 		ai_chance = { factor = 0 }
 		name = "Never mind"
+	}
+	
+	after = {
+		clr_character_flag = choosing_university
 	}
 }
 
@@ -678,6 +683,10 @@ character_event = {
 			clr_character_flag = college_mathematics
 			clr_character_flag = college_psychology
 		}
+	}
+	
+	after = {
+		clr_character_flag = changing_major
 	}
 }
 

@@ -1,21 +1,32 @@
 decisions = {
 	attend_university = {
+	
 		potential = {
 			is_ruler = yes
+			is_tribal = no
 			age = 16
+			NOT = { age = 25 }
 			prisoner = no
-			NOT = { trait = student }
-			NOT = { trait = graduate }
+			NOR = {
+				trait = student
+				trait = graduate
+				has_character_flag = choosing_university
+			}
 			capital_scope = {
 					region = custom_usa
 			}
+			has_game_rule = {
+				name = university_events
+				value = on
+			}
 		}
 		allow = {
-			wealth = 50
+			FROM = { scaled_wealth = 250 }
 			learning = 10
 		}
 		effect = {
 			character_event = { id = univ.1 }
+			set_character_flag = choosing_university
 		}
 		revoke_allowed = {
 			always = no
@@ -56,7 +67,10 @@ decisions = {
 		is_high_prio = yes
 		potential = {
 			trait = student
-			NOT = { trait = graduate }
+			NOR = { 
+				trait = graduate 
+				has_character_flag = changing_major
+			}
 			OR = {
 				has_character_flag = college_history
 				has_character_flag = college_science
@@ -67,6 +81,7 @@ decisions = {
 		}
 		allow = {
 			trait = student
+			set_character_flag = changing_major
 		}
 		effect = {
 			character_event = { id = univ.12 }
@@ -109,8 +124,13 @@ targetted_decisions = {
 	send_kid_to_university = {
 		from_potential = {
 			is_ruler = yes
+			is_tribal = no
 			capital_scope = {
 					region = custom_usa
+			}
+			has_game_rule = {
+				name = university_events
+				value = on
 			}
 		}
 		potential = {
@@ -123,7 +143,7 @@ targetted_decisions = {
 			NOT = { trait = graduate }
 		}
 		allow = {
-			FROM = { scaled_wealth = 0.5 }
+			FROM = { scaled_wealth = 250 }
 		}
 		effect = {
 			character_event = { id = univ.1 } # should add an event to give kid a choice

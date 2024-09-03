@@ -1584,3 +1584,20 @@ weather_events = {
 		desc = "RULE_WEATHER_EVENTS_OFF"
 	}
 }
+
+university_events = {
+	name = "RULE_UNIVERSITY_EVENTS"
+	group = "RULE_GROUP_ATE"
+	
+	option = {
+		name = off
+		text = "RULE_OPTION_OFF"
+		desc = "RULE_UNIVERSITY_EVENTS_OFF"
+	}
+	
+	option = {
+		name = on
+		text = "RULE_OPTION_ON"
+		desc = "RULE_UNIVERSITY_EVENTS_ON"
+	}
+}

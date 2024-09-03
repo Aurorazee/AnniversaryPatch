@@ -179,12 +179,16 @@ history_degree_desc;This character has been educated in history, from before the
 psych_degree;Psychology Degree;;;;;;;;;;;;;x
 psych_degree_desc;This character has been educated in the study of the mind and behavior.;;;;;;;;;;;;;x
 
-uni_cambridge_alumni;Cambridge Alumni;;;;;;;;;;;;;x
-uni_berkeley_alumni;Berkeley Alumni;;;;;;;;;;;;;x
-uni_georgia_alumni;Georgia Alumni;;;;;;;;;;;;;x
-uni_boulder_alumni;Boulder Alumni;;;;;;;;;;;;;x
-uni_chicago_alumni;Chicago Alumni;;;;;;;;;;;;;x
-uni_texas_alumni;Texas A&M Alumni;;;;;;;;;;;;;x
-uni_los_alamos_alumni;Los Alamos Alumni;;;;;;;;;;;;;x
-local_univ_alumni;Alumni for Local University;;;;;;;;;;;;;x
+uni_cambridge_alumni;Cambridge Alum;;;;;;;;;;;;;x
+uni_berkeley_alumni;Berkeley Alum;;;;;;;;;;;;;x
+uni_georgia_alumni;Georgia Alum;;;;;;;;;;;;;x
+uni_boulder_alumni;Boulder Alum;;;;;;;;;;;;;x
+uni_chicago_alumni;Chicago Alum;;;;;;;;;;;;;x
+uni_texas_alumni;Texas A&M Alum;;;;;;;;;;;;;x
+uni_los_alamos_alumni;Los Alamos Alum;;;;;;;;;;;;;x
+local_univ_alumni;Alum for Local University;;;;;;;;;;;;;x
 won_big_game;Won the Big Game;;;;;;;;;;;;;x
+
+RULE_UNIVERSITY_EVENTS;University Events;;;;;;;;;;;;;x
+RULE_UNIVERSITY_EVENTS_OFF;University decisions and events will be unavailable for every character.;;;;;;;;;;;;;x
+RULE_UNIVERSITY_EVENTS_ON;University decisions and events will be available for every eligible character.;;;;;;;;;;;;;x
