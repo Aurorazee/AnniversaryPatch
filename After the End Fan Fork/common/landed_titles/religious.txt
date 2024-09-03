@@ -165,7 +165,7 @@ d_consumerist = {
 		
 	creation_requires_capital = no
 	
-	capital = 3 # Manhattan
+	capital = 170 # Chicago
 	
 	dignity = 100 # Counted as having this many more counties than it does
 	
