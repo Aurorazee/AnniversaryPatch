@@ -1,4 +1,4 @@
-uni_cambridge_alumni = {
+uni_harvard_alumni = {
 	icon = 2
 }
 
