@@ -10,14 +10,14 @@ character_event = {
 	
 	option = {
 		ai_chance = { factor = 1 }
-		name = EVTOPT_univ_cambridge
+		name = EVTOPT_univ_harvard
 		trigger = {
 			capital_scope = {
 				region = world_northeast
 			}		
 		}
 		add_trait = student
-		set_character_flag = u_cambridge
+		set_character_flag = u_harvard
 		FROM = { wealth = -50 }
 		character_event = { id = univ.3 days = 1 }
 	}
@@ -510,13 +510,13 @@ character_event = { #Finally out of university!
 		character_event = { id = univ.11 days = 7 }
 	}
 
-	option = { #Cambridge Alumni
-		name = EVTOPT_stanford_alumni
+	option = { # Harvard Alumni
+		name = EVTOPT_harvard_alumni
 		trigger = {
-			has_character_flag = u_cambridge
+			has_character_flag = u_harvard
 		}
-		hidden_tooltip = { clr_character_flag = u_cambridge }
-		add_character_modifier = { name = uni_cambridge_alumni duration = -1 }
+		hidden_tooltip = { clr_character_flag = u_harvard }
+		add_character_modifier = { name = uni_harvard_alumni duration = -1 }
 	}
 	option = { #Berkeley Alumni
 		name = EVTOPT_berkeley_alumni
@@ -582,7 +582,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		clr_character_flag = u_cambridge
+		clr_character_flag = u_harvard
 		clr_character_flag = u_berkeley
 		clr_character_flag = u_georgia
 		clr_character_flag = u_boulder

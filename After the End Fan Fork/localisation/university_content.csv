@@ -9,7 +9,7 @@ title_court_univ_librarian;University Librarian;;;;;;;;;;;;;x
 title_court_univ_historian;University Historian;;;;;;;;;;;;;x
 
 EVTDESC_univ_1;Even after the Event, education still remains a priority, and some universities has survived for those with means. Which will you attend?;;;;;;;;;;;;;x
-EVTOPT_univ_cambridge;I'm off to Cambridge!;;;;;;;;;;;;;x
+EVTOPT_univ_harvard;I'm off to Harvard!;;;;;;;;;;;;;x
 EVTOPT_univ_berkeley;Berkeley, here I come!;;;;;;;;;;;;;x
 EVTOPT_univ_of_georgia;I'm off to Athens!;;;;;;;;;;;;;x
 EVTOPT_univ_colorado_boulder;I'm off to Boulder!;;;;;;;;;;;;;x
@@ -47,7 +47,7 @@ EVTOPT_psychology_diploma;I read a lot of true crime.;;;;;;;;;;;;;x
 EVTOPT_literature_diploma;Literature is my passion!;;;;;;;;;;;;;x
 
 EVTDESC_becoming_alumni;You have finished your time in university, and it is time to go home.;;;;;;;;;;;;;x
-EVTOPT_cambridge_alumni;Goodbye Cambridge!;;;;;;;;;;;;;x
+EVTOPT_harvard_alumni;Goodbye Harvard!;;;;;;;;;;;;;x
 EVTOPT_berkeley_alumni;Goodbye Berkeley!;;;;;;;;;;;;;x
 EVTOPT_georgia_alumni;Goodbye Athens!;;;;;;;;;;;;;x
 EVTOPT_boulder_alumni;Goodbye Boulder!;;;;;;;;;;;;;x
@@ -179,7 +179,7 @@ history_degree_desc;This character has been educated in history, from before the
 psych_degree;Psychology Degree;;;;;;;;;;;;;x
 psych_degree_desc;This character has been educated in the study of the mind and behavior.;;;;;;;;;;;;;x
 
-uni_cambridge_alumni;Cambridge Alumni;;;;;;;;;;;;;x
+uni_harvard_alumni;Harvard Alumni;;;;;;;;;;;;;x
 uni_berkeley_alumni;Berkeley Alumni;;;;;;;;;;;;;x
 uni_georgia_alumni;Georgia Alumni;;;;;;;;;;;;;x
 uni_boulder_alumni;Boulder Alumni;;;;;;;;;;;;;x
