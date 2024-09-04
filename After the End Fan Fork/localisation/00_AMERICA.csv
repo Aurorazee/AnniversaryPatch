@@ -638,6 +638,7 @@ EVTOPTB_edenite_1;There is some truth in the Gaians and the Trailwalkers...;;;;;
 theocratic_feudal_government_FEATURES;§Y*§! Captains can militarize the realm in case of war against people of other faiths.\n§Y*§! Zealous or devout captains can ask to inform realm direction. \n§Y*§! Zealous or devout captains can ask other captains court-chaplains to discharge them. \n§Y*§! Court-chaplains are the real rulers of the realm, and thus cant be fired. \n;;;;;;;;;;;;;x
 thelema;Thelema;;;;;;;;;;;;;x
 thelema_DESC;Thelema is a British mystic religion "spiritual philosophy" developed by Aleister Crowley, based on the law: "Do what thou wilt shall be the whole of the Law." It is a polytheistic religion that draws its pantheon of gods from the religious beliefs of Ancient Egypt.;;;;;;;;;;;;;x
+thelema_FEATURES;§Y*§! Homosexual Thelema rulers may marry other homosexual characters.\n;;;;;;;;;;;;;x
 mexicano_FEATURES;[GetIberianFeatures];[GetIberianFeatures];[GetIberianFeatures];;[GetIberianFeatures];;;;;x
 amero_syncretic;Amero-Syncretic;;;;;;;;;;;;;x
 peyotist;Peyotist;;;;;;;;;;;;;x
