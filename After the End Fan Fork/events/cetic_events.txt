@@ -8002,6 +8002,7 @@ character_event = {
 
 #Gives governator trait to sanctioned governator when there is no governator
 character_event = {
+	id = cetic.409
 	hide_window = yes
 	trigger = {
 		trait = sanctioned_governator
