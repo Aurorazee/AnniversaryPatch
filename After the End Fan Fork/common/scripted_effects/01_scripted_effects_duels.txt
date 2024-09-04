@@ -311,7 +311,12 @@ reset_duel_timers_effect = { #ROOT is combatant_1
 
 set_dueling_weapon_effect = {
 	if = { #First check if this a serious duel with real weapons or not...
-		limit = { has_character_flag = mock_duel }
+		limit = { 
+			OR = {
+				has_character_flag = mock_duel
+				has_character_flag = wrestling_match
+			} 
+		}
 
 		clear_event_target = dueling_weapon #so you don't fight a practice duel with the Staff of Moses
 		
@@ -322,14 +327,90 @@ set_dueling_weapon_effect = {
 		clr_character_flag = weapon_is_spear
 		clr_character_flag = weapon_is_staff
 		clr_character_flag = weapon_is_hand
+		clr_character_flag = weapon_is_elbow
+		clr_character_flag = weapon_is_fist
+		clr_character_flag = weapon_is_knee
+		clr_character_flag = weapon_is_body
+		clr_character_flag = weapon_is_foot
+		clr_character_flag = weapon_is_head
 		
 		random_list = { #select a weapon...
-			10 = { set_character_flag = weapon_is_sword }
-			10 = { set_character_flag = weapon_is_spear }
-			10 = { set_character_flag = weapon_is_staff }
+			10 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = wrestling_match
+					}
+				}
+				set_character_flag = weapon_is_sword 
+			}
 			10 = {
-				trigger = { NOT = { trait = one_handed } } #probably shouldn't use both hands...
+				trigger = {
+					NOT = {
+						has_character_flag = wrestling_match
+					}
+				}
+				set_character_flag = weapon_is_spear
+			}
+			10 = { 
+				trigger = {
+					NOT = {
+						has_character_flag = wrestling_match
+					}
+				}
+				set_character_flag = weapon_is_staff 
+			}
+			10 = {
+				trigger = { 
+					OR = {
+						NOT = { trait = one_handed }  #probably shouldn't use both hands...
+						society_member_of = warrior_lodge_mexican
+					}
+				}
+				modifier = {
+					factor = 5
+					trait = w_eagle
+				}
 				set_character_flag = weapon_is_hand
+			}
+			10 = {
+				trigger = { 
+					society_member_of = warrior_lodge_mexican 
+				}
+				modifier = {
+					factor = 5
+					trait = w_snake
+				}
+				set_character_flag = weapon_is_elbow
+			}
+			10 = {
+				trigger = { society_member_of = warrior_lodge_mexican }
+				set_character_flag = weapon_is_fist
+			}
+			10 = {
+				trigger = { society_member_of = warrior_lodge_mexican }
+				set_character_flag = weapon_is_knee
+			}
+			10 = {
+				trigger = { society_member_of = warrior_lodge_mexican }
+				modifier = {
+					factor = 5
+					trait = w_jaguar
+				}
+				set_character_flag = weapon_is_body
+			}
+			10 = {
+				trigger = { 
+					society_member_of = warrior_lodge_mexican 
+					trait = w_heel
+				}
+				set_character_flag = weapon_is_foot
+			}
+			5 = {
+				trigger = { 
+					society_member_of = warrior_lodge_mexican 
+					trait = w_heel
+				}
+				set_character_flag = weapon_is_head
 			}
 		}
 	}
@@ -356,6 +437,12 @@ set_dueling_weapon_effect = {
 		clr_character_flag = weapon_is_spear
 		clr_character_flag = weapon_is_staff
 		clr_character_flag = weapon_is_hand
+		clr_character_flag = weapon_is_elbow
+		clr_character_flag = weapon_is_fist
+		clr_character_flag = weapon_is_knee
+		clr_character_flag = weapon_is_body
+		clr_character_flag = weapon_is_foot
+		clr_character_flag = weapon_is_head
 	}
 
 	else_if = { #If no artifact, check that you haven't already used a real weapon before...
@@ -366,6 +453,7 @@ set_dueling_weapon_effect = {
 				has_character_flag = weapon_is_axe
 				has_character_flag = weapon_is_mace
 				has_character_flag = weapon_is_spear
+				society_member_of = warrior_lodge_mexican
 			}
 		}
 		clr_character_flag = weapon_is_staff #clear mock weapons (if any)
@@ -3038,6 +3126,7 @@ clr_duel_flags_effect = {
 		clr_character_flag = defender_using_poison@event_target:combatant_1
 		clr_character_flag = poison_can_fail_against@event_target:combatant_1
 		clr_character_flag = use_tribal_victory_pic
+		clr_character_flag = wrestling_match
 	}
 }
 

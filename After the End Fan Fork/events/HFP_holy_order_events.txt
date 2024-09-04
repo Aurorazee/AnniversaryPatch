@@ -426,6 +426,21 @@ letter_event = {
 	}
 }
 
+# Narrative event for the Knights of Peter Claver
+narrative_event = {
+    id = HFP.44004
+    desc = EVTDESC_HFP_44004
+    title = EVTTITLE_HFP_44004
+    picture = GFX_evt_magnificent_castle
+    border = GFX_event_narrative_frame_religion
+    portrait = FROMFROM
+    is_triggered_only = yes
+
+    option = {      
+        name = EVTOPTA_HFP_44004
+    }
+}
+
 # The Ursulines really want to fight off the infidels
 character_event = {
 	id = HFP.44005

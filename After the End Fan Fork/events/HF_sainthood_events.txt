@@ -3983,10 +3983,12 @@ character_event = {
 					AND = {
 						trait = lustful
 						k_papal_state = {
-							is_lover = ROOT
-							trait = lustful
-							NOT = {
-								trait = homosexual
+							holder_scope = {
+								is_lover = ROOT
+								trait = lustful
+								NOT = {
+									trait = homosexual
+								}
 							}
 						}
 					}
@@ -4069,10 +4071,12 @@ character_event = {
 					AND = {
 						trait = lustful
 						k_ursuline = {
-							is_lover = ROOT
-							trait = lustful
-							NOT = {
-								trait = homosexual
+							holder_scope = {
+								is_lover = ROOT
+								trait = lustful
+								NOT = {
+									trait = homosexual
+								}
 							}
 						}
 					}
@@ -4156,10 +4160,12 @@ character_event = {
 					AND = {
 						trait = lustful
 						k_high_church = {
-							is_lover = ROOT
-							trait = lustful
-							NOT = {
-								trait = homosexual
+							holder_scope = {
+								is_lover = ROOT
+								trait = lustful
+								NOT = {
+									trait = homosexual
+								}
 							}
 						}
 					}
@@ -4242,10 +4248,12 @@ character_event = {
 					AND = {
 						trait = lustful
 						d_quorum_of_the_twelve = {
-							is_lover = ROOT
-							trait = lustful
-							NOT = {
-								trait = homosexual
+							holder_scope = {
+								is_lover = ROOT
+								trait = lustful
+								NOT = {
+									trait = homosexual
+								}
 							}
 						}
 					}
@@ -4893,22 +4901,6 @@ narrative_event = {
 			has_character_flag = impious_papal_defender
 		}
 		clr_character_flag = impious_papal_defender
-	}
-}
-
-# TEST SCRIPT
-character_event = {
-	id = HF.40097
-	hide_window = yes
-	is_triggered_only = yes
-	trigger = {
-	
-	}
-
-	immediate = {
-		rightful_religious_head_scope = {
-			piety = 5000
-		}
 	}
 }
 

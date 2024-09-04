@@ -13,7 +13,14 @@ character_event = {
 	id = HF.500
 	picture = GFX_evt_melee
 	border = GFX_event_normal_frame_war 
-	desc = HFP_500_DESC
+	desc = {
+		text = HFP_500_DESC
+		trigger = { NOT = { society_member_of = warrior_lodge_mexican } }
+	}
+	desc = {
+		text = HFP_500_DESC_W
+		trigger = { society_member_of = warrior_lodge_mexican }
+	}
 	is_triggered_only = yes
 	
 	ai = yes
@@ -248,7 +255,14 @@ character_event = { # Win!
 	id = HFP.501
 	picture = GFX_evt_melee
 	border = GFX_event_normal_frame_war 
-	desc = HFP_501_DESC
+	desc = {
+		text = HFP_50!_DESC
+		trigger = { NOT = { society_member_of = warrior_lodge_mexican } }
+	}
+	desc = {
+		text = HFP_501_DESC_W
+		trigger = { society_member_of = warrior_lodge_mexican }
+	}
 	portrait = event_target:combatant_1
 	is_triggered_only = yes
 	
@@ -2111,7 +2125,14 @@ character_event = { # Notify when a lodge member is killed in a duel
 
 character_event = {
 	id = HF.561
-	desc = HF_561_DESC
+	desc = {
+		text = HF_561_DESC
+		trigger = { NOT = { society_member_of = warrior_lodge_mexican } }
+	}
+	desc = {
+		text = HF_561_DESC_W
+		trigger = { society_member_of = warrior_lodge_mexican }
+	}
 	picture = GFX_evt_battle
 	border = GFX_event_normal_frame_war
 	
@@ -2347,21 +2368,61 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14001_ambition
-		trigger = { has_character_flag = teaching_ambition@event_target:student }
+		trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = teaching_ambition@event_target:student 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14001_ambition_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = teaching_ambition@event_target:student 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14001_patience
-		trigger = { has_character_flag = teaching_patience@event_target:student }
+		trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = teaching_patience@event_target:student 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14001_patience_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = teaching_patience@event_target:student 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14001_diligence
-		trigger = { has_character_flag = teaching_diligence@event_target:student }
+		trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = teaching_diligence@event_target:student 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14001_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = teaching_diligence@event_target:student 
+		}
 	}
 
 	option = { # Yes, let's offer them some guidance...
 		name = {
 			text = EVTOPTA_HF_14001_bravery
-			trigger = { has_character_flag = teaching_bravery@event_target:student }
+			trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = teaching_bravery@event_target:student 
+		}
+		}
+		name = {
+			text = EVTOPTA_HF_14001_bravery_W
+			trigger = { 
+				society_member_of = warrior_lodge_mexican
+				has_character_flag = teaching_bravery@event_target:student 
+			}
 		}
 		name = {
 			text = EVTOPTA_HF_14001_ambition
@@ -2373,7 +2434,17 @@ character_event = {
 		}
 		name = {
 			text = EVTOPTA_HF_14001_diligence
-			trigger = { has_character_flag = teaching_diligence@event_target:student }
+			trigger = { 
+				NOT = { society_member_of = warrior_lodge_mexican }
+				has_character_flag = teaching_diligence@event_target:student 
+			}
+		}
+		name = {
+			text = EVTOPTA_HF_14001_diligence_W
+			trigger = { 
+				society_member_of = warrior_lodge_mexican
+				has_character_flag = teaching_diligence@event_target:student 
+			}
 		}
 
 		custom_tooltip = { text = EVTOPTA_HF_14001_TT }
@@ -2413,11 +2484,31 @@ character_event = {
 
 	desc = {
 		text = EVTDESC_HF_14002_bravery
-		trigger = { has_character_flag = learning_bravery@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_bravery@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14002_bravery_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_bravery@event_target:teacher 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14002_ambition
-		trigger = { has_character_flag = learning_ambition@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14002_ambition_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14002_patience
@@ -2425,7 +2516,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14002_diligence
-		trigger = { has_character_flag = learning_diligence@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_diligence@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14002_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_diligence@event_target:teacher 
+		}
 	}
 
 	option = { # Yes, I need help
@@ -2522,7 +2623,6 @@ character_event = {
 		}
 	}
 }
-
 
 # Event for "Teacher" - They accepted my help!
 character_event = {
@@ -2722,7 +2822,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14006_ambition
-		trigger = { has_character_flag = learning_ambition@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14006_ambition_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14006_patience
@@ -2730,7 +2840,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14006_diligence
-		trigger = { has_character_flag = learning_diligence@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_diligence@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14006_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_diligence@event_target:teacher 
+		}
 	}
 
 	
@@ -2933,7 +3053,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14007_ambition
-		trigger = { has_character_flag = learning_ambition@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14007_ambition_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
 	}
 	desc = {
 		text = EVTDESC_HF_14007_patience
@@ -2941,7 +3071,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14007_diligence
-		trigger = { has_character_flag = learning_diligence@event_target:teacher }
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14007_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_ambition@event_target:teacher 
+		}
 	}
 
 	option = { #Removes bad trait/adds good trait
@@ -3056,7 +3196,17 @@ character_event = {
 	}
 	desc = {
 		text = EVTDESC_HF_14008_diligence
-		trigger = { has_character_flag = learning_diligence@event_target:teacher }
+		trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_diligence@event_target:teacher
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14008_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_diligence@event_target:teacher
+		}
 	}
 
 	option = {	
@@ -3202,6 +3352,20 @@ character_event = {
 	desc = {
 		text = EVTDESC_HF_14009_diligence
 		trigger = { has_character_flag = teaching_diligence@event_target:student }
+	}
+	desc = {
+		text = EVTDESC_HF_14009_diligence
+		trigger = { 
+			NOT = { society_member_of = warrior_lodge_mexican }
+			has_character_flag = learning_diligence@event_target:teacher
+		}
+	}
+	desc = {
+		text = EVTDESC_HF_14009_diligence_W
+		trigger = { 
+			society_member_of = warrior_lodge_mexican
+			has_character_flag = learning_diligence@event_target:teacher
+		}
 	}
 
 	option = {	

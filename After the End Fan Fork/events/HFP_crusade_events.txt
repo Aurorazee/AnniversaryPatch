@@ -353,10 +353,10 @@ character_event = {
 				has_character_flag = fourth_crusade_recipient
 			}
 			catholic = {
-				set_official_crusade_recipient = NONE
+				set_official_crusade_recipient = none
 			}
 			ursuline = {
-				set_official_crusade_recipient = NONE
+				set_official_crusade_recipient = none
 			}
 		}
 
@@ -2418,129 +2418,6 @@ character_event = {
 						is_married = no
 						is_female = no
 					}
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 90
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 90
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 75
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 75
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 50
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
 					ROOT = {
 						opinion = {
 							who = PREV
@@ -2556,195 +2433,6 @@ character_event = {
 						is_married = no
 						is_female = no
 					}
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 25
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 25
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_female = no
-						ROOT = {
-							OR = {
-								has_law = true_cognatic_succession
-								has_law = enatic_succession
-								has_law = enatic_cognatic_succession
-							}
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 90
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 90
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 75
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 75
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 50
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 50
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 25
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 25
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
 					NOT = {
 						is_foe = ROOT
 					}
@@ -5700,17 +5388,6 @@ character_event = {
 	}
 }
 
-# Test script to add an additional Crusade Artifact to the pot
-character_event = {
-	id = HFP.41089
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		add_to_crusade_artifact_pot = 1
-	}
-}
-
 ## Post Crusade Events
 # Refill the levy, and remove the negative modifiers
 character_event = {
@@ -5962,22 +5639,6 @@ character_event = {
 	}
 }
 
-# Test script to make every Catholic ruler Ursuline
-character_event = {
-	id = HFP.41105
-	hide_window = yes
-	is_triggered_only = yes
-
-	immediate = {
-		any_character = {
-			limit = {
-				religion = catholic
-			}
-			religion = ursuline
-		}
-	}
-}
-
 ## Loss of Beneficiary Notification
 # Beneficiary message check - Player Only
 character_event = {
@@ -6210,7 +5871,6 @@ letter_event = {
 		}
 		text = EVTDESC_HFP_41120_5
 	}
-	picture = GFX_evt_throne_room
 	is_triggered_only = yes
 
 	option = {	
@@ -6257,7 +5917,6 @@ letter_event = {
 		}
 		text = EVTDESC_HFP_41121_2
 	}
-	picture = GFX_evt_throne_room
 	is_triggered_only = yes
 
 	option = {	
@@ -6331,7 +5990,6 @@ letter_event = {
 			religion = ursuline
 		}
 	}
-	picture = GFX_evt_throne_room
 	is_triggered_only = yes
 	
 	religion_group = christian
@@ -6349,8 +6007,8 @@ letter_event = {
 				modifier = {
 					factor = 0.5
 					OR = {
-						TIER = KING
-						TIER = EMPEROR
+						tier = KING
+						tier = EMPEROR
 					}
 				}
 			}
@@ -6567,7 +6225,6 @@ character_event = {
 letter_event = {
 	id = HFP.41144
 	desc = EVTDESC_HFP_41144
-	picture = GFX_evt_throne_room
 	is_triggered_only = yes
 	trigger = {
 		check_if_not_fourth_crusade_trigger = yes
@@ -6581,8 +6238,8 @@ letter_event = {
 				modifier = {
 					factor = 0.5
 					OR = {
-						TIER = KING
-						TIER = EMPEROR
+						tier = KING
+						tier = EMPEROR
 					}
 				}
 			}
@@ -6699,7 +6356,6 @@ character_event = {
 letter_event = {
 	id = HFP.41147
 	desc = EVTDESC_HFP_41147
-	picture = GFX_evt_throne_room
 	is_triggered_only = yes
 
 	trigger = {

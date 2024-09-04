@@ -9392,7 +9392,6 @@ character_event = {
 	max_age = 30
 	only_capable = yes
 	prisoner = no
-	only_women = yes
 	is_married = no
 	religion_group = christian
 	

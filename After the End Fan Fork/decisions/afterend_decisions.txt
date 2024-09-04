@@ -4670,9 +4670,19 @@ targetted_decisions = {
 				has_landed_title = e_california
 				has_landed_title = e_new_california
 			}
-			NOR = {
-				trait = figurehead
-				trait = weak_emperor
+			OR = {
+				NOR = {
+					trait = figurehead
+					trait = weak_emperor
+				}
+				NOR = { #Maybe I'll activate this one day...
+					any_character = {
+						trait = governator
+					}
+					any_character = {
+						trait = governator_heir
+					}
+				}
 			}
 			age = 16
 		}

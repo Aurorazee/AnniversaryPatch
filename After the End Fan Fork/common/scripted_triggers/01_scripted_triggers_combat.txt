@@ -34,6 +34,7 @@ is_using_blunt_weapon_trigger = { #blunt weapon!
 			}
 			artifact_owner = { character = PREVPREV }
 		}
+		society_member_of = warrior_lodge_mexican
 	}
 }
 is_using_sharp_weapon_trigger = { #Sharp weapon!

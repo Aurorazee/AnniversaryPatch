@@ -5753,9 +5753,9 @@ new_crusade = {
 					}
 				}
 				set_global_flag = ursuline_shepherds_crusade
-				# ROOT = {
-					# character_event = { id = HFATE.42300 days = 3} #Doesn't exist
-				# }
+				ROOT = {
+					character_event = { id = HFP.42300 days = 3}
+				}
 			}
 		}
 	}
@@ -14920,6 +14920,18 @@ rivalry_cb = {
 		ROOT = {
 			prestige = -250
 			imprison = FROM
+			if = {
+				limit = {
+					trait = governator
+				}
+				remove_trait = governator
+				any_character = {
+					limit = {
+						trait = governator_heir
+					}
+					remove_trait = governator_heir
+				}
+			}
 			opinion = {
 				modifier = opinion_humiliated_rival
 				who = FROM

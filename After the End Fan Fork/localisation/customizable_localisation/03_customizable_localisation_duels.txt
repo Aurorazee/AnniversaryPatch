@@ -154,6 +154,42 @@ defined_text = {
 		}
 	}
 	text = {
+		localisation_key = String_elbow
+		trigger = {
+			has_character_flag = weapon_is_elbow
+		}
+	}
+	text = {
+		localisation_key = String_fist
+		trigger = {
+			has_character_flag = weapon_is_fist
+		}
+	}
+	text = {
+		localisation_key = String_knee
+		trigger = {
+			has_character_flag = weapon_is_knee
+		}
+	}
+	text = {
+		localisation_key = String_body
+		trigger = {
+			has_character_flag = weapon_is_body
+		}
+	}
+	text = {
+		localisation_key = String_foot
+		trigger = {
+			has_character_flag = weapon_is_foot
+		}
+	}
+	text = {
+		localisation_key = String_head
+		trigger = {
+			has_character_flag = weapon_is_head
+		}
+	}
+	text = {
 		localisation_key = String_gun
 		trigger = {
 			is_using_gun_trigger = yes
@@ -227,18 +263,6 @@ defined_text = {
 	name = GetWeaponInjuringBlow #Checked on the character target of the injury (i.e wounded party)
 
 	# Severely Injured specials...
-	text = {
-		localisation_key = String_severely_tear_body_part
-		trigger = {
-			event_target:root_character = { is_using_sharp_weapon_trigger = yes }
-			NOR = {
-				has_character_flag = injury_eye
-				has_character_flag = injury_both_eyes
-			}
-			has_character_flag = severely_injured # does not add a maimed trait (only "Severely Injured")
-			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
-		}
-	}
 	text = {
 		localisation_key = String_severely_break_body_part
 		trigger = {
@@ -1170,11 +1194,11 @@ defined_text = {
 }
 
 defined_text = {
-	name = GetWrestlingInjuringBlowOnMe
+	name = GetWrestlingInjuringBlow #Checked on the character target of the injury (i.e wounded party)
 
 	# Severely Injured specials...
 	text = {
-		localisation_key = String_severely_tear_my_body_part
+		localisation_key = String_severely_break_body_part
 		trigger = {
 			NOR = {
 				has_character_flag = injury_eye
@@ -1184,6 +1208,207 @@ defined_text = {
 			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
 		}
 	}
+	text = {
+		localisation_key = String_severely_injure_eye
+		trigger = {
+			OR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}
+			has_character_flag = severely_injured # does not add a maimed trait (only "Severely Injured")
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_crush_their_body_part
+		trigger = {
+			NOR = { # can't be "crushed" without *death*
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+				has_character_flag = injury_face
+			}
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = severely_injured } # does not add a maimed trait (only "Severely Injured")
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_crack_bones_of_body_part
+		trigger = {
+			NOR = { #have no bones to break
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+				has_character_flag = injury_face
+			}
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_slam_into_their_face
+		trigger = {
+			OR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+				has_character_flag = injury_face
+			}
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_smack_hard_across_body_part
+		trigger = {
+			NOR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}	
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = { #Gun version
+		localisation_key = String_shot_not_lethal
+		trigger = {
+			NOR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}
+			event_target:root_character = { is_using_gun_trigger = yes }
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = severely_injured } # does not add a maimed trait (only "Severely Injured")
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = { #Gun version (eyes)
+		localisation_key = String_shot_not_lethal_eyes
+		trigger = {
+			OR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}
+			event_target:root_character = { is_using_gun_trigger = yes }
+			NOT = { has_character_flag = mildly_injured } # this is *not* a mild injury
+			NOT = { has_character_flag = severely_injured } # does not add a maimed trait (only "Severely Injured")
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+
+	# Mild injuries...
+	text = {
+		localisation_key = String_slam_their_head
+		trigger = {
+			NOR = {
+				has_character_flag = injury_mangled_body
+				has_character_flag = injury_maimed
+				has_character_flag = injury_leg
+				has_character_flag = injury_hand
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_slam_their_limb #"whack"
+		trigger = {
+			OR = {
+				has_character_flag = injury_leg
+				has_character_flag = injury_hand
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_slam_their_body
+		trigger = {
+			OR = {
+				has_character_flag = injury_mangled_body
+				has_character_flag = injury_maimed
+				has_character_flag = injury_could_be_lethal
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_crack_ribs
+		trigger = {
+			OR = {
+				has_character_flag = injury_mangled_body
+				has_character_flag = injury_maimed
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_smack_across_body_part
+		trigger = {
+			event_target:root_character = { has_character_flag = weapon_is_staff }
+			NOR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_trip_them
+		trigger = {
+			event_target:root_character = {
+				has_character_flag = weapon_is_foot
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_hit_them_in_body_part
+		trigger = {
+			event_target:root_character = { has_character_flag = weapon_is_hand }
+			NOR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_hit_them_in_the_face
+		trigger = {
+			event_target:root_character = { has_character_flag = weapon_is_hand }
+			OR = {
+				has_character_flag = injury_eye
+				has_character_flag = injury_both_eyes
+				has_character_flag = injury_face
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	text = {
+		localisation_key = String_knock_them_out
+		trigger = {
+			OR = {
+				has_character_flag = injury_mangled_body
+				has_character_flag = injury_maimed
+			}
+			has_character_flag = mildly_injured # only adds some kind of bruises
+			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
+		}
+	}
+	fallback_text = {
+		localisation_key = String_injure_them #String_hit_them_in_body_part if you don't find problem?
+	}
+}
+
+defined_text = {
+	name = GetWrestlingInjuringBlowOnMe
+
+	# Severely Injured specials...
 	text = {
 		localisation_key = String_severely_break_my_body_part
 		trigger = {
@@ -1222,7 +1447,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_slam_into_my_face_w
+		localisation_key = String_slam_into_my_face
 		trigger = {
 			OR = {
 				has_character_flag = injury_eye
@@ -1234,7 +1459,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_smack_hard_across_my_body_part_w
+		localisation_key = String_smack_hard_across_my_body_part
 		trigger = {
 			event_target:other_combatant = { has_character_flag = weapon_is_staff }
 			NOR = {
@@ -1260,7 +1485,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_slam_my_limb_w #"whack"
+		localisation_key = String_slam_my_limb #"whack"
 		trigger = {
 			event_target:other_combatant = {
 				trait = w_eagle
@@ -1275,7 +1500,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_slam_my_head_w
+		localisation_key = String_slam_my_head
 		trigger = {
 			event_target:other_combatant = {
 				trait = w_jaguar
@@ -1291,7 +1516,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_slam_my_body_w
+		localisation_key = String_slam_my_body
 		trigger = {
 			OR = {
 				has_character_flag = injury_mangled_body
@@ -1314,7 +1539,7 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_smack_across_my_body_part_w
+		localisation_key = String_smack_across_my_body_part
 		trigger = {
 			NOR = {
 				has_character_flag = injury_eye
@@ -1325,10 +1550,11 @@ defined_text = {
 		}
 	}
 	text = {
-		localisation_key = String_trip_me_w
+		localisation_key = String_trip_me
 		trigger = {
 			event_target:other_combatant = {
 				trait = w_heel
+				has_character_flag = weapon_is_foot
 			}
 			has_character_flag = mildly_injured # only adds some kind of bruises
 			NOT = { has_character_flag = injury_kills } # don't trigger if this char is set to *die*
@@ -2215,7 +2441,7 @@ defined_text = {
 		localisation_key = string_duel_in_on_the_terrain
 		trigger = {
 			has_character_flag = is_battlefield_duel
-			NOT = { society_member_of = warrior_lodge_mexican }
+			NOT = { has_character_flag = wrestling_match }
 			NOT = { has_character_flag = fighting_to_rank_up }
 			NOT = { has_character_flag = is_legendary_duel }
 		}
@@ -2224,7 +2450,7 @@ defined_text = {
 		localisation_key = string_heroic_duel
 		trigger = {
 			has_character_flag = fighting_to_rank_up
-			NOT = { society_member_of = warrior_lodge_mexican }
+			NOT = { has_character_flag = wrestling_match }
 			NOT = { has_character_flag = is_battlefield_duel }
 			NOT = { has_character_flag = is_legendary_duel }
 		}
@@ -2233,7 +2459,7 @@ defined_text = {
 		localisation_key = string_legendary_duel
 		trigger = {
 			has_character_flag = is_legendary_duel
-			NOT = { society_member_of = warrior_lodge_mexican }
+			NOT = { has_character_flag = wrestling_match }
 			NOT = { has_character_flag = is_battlefield_duel }
 			NOT = { has_character_flag = fighting_to_rank_up }
 		}
@@ -2247,7 +2473,7 @@ defined_text = {
 	text = {
 		localisation_key = string_heroic_wrestle
 		trigger = {
-			society_member_of = warrior_lodge_mexican
+			has_character_flag = wrestling_match
 			has_character_flag = fighting_to_rank_up
 			NOT = { has_character_flag = is_battlefield_duel }
 			NOT = { has_character_flag = is_legendary_duel }
@@ -2256,7 +2482,7 @@ defined_text = {
 	text = {
 		localisation_key = string_legendary_wrestle
 		trigger = {
-			society_member_of = warrior_lodge_mexican
+			has_character_flag = wrestling_match
 			has_character_flag = is_legendary_duel
 			NOT = { has_character_flag = is_battlefield_duel }
 			NOT = { has_character_flag = fighting_to_rank_up }
@@ -2265,7 +2491,7 @@ defined_text = {
 	text = {
 		localisation_key = wrestle_title
 		trigger = {
-			society_member_of = warrior_lodge_mexican
+			has_character_flag = wrestling_match
 		}
 	}
 	fallback_text = {

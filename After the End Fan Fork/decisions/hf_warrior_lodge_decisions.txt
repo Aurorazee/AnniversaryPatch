@@ -507,10 +507,10 @@ targeted_decisions = {
 
 			####### You won't want to fight someone who is badly injured, and if you are hurt yourself, you will want to wait...
 			custom_tooltip = {
-				text = duel_tooltip_recent_duel
+				text = duel_tooltip_recent_match
 				hidden_tooltip = {
-					FROM = { NOT = { has_character_modifier = recent_duel_timer } }
-					NOT = { has_character_modifier = recent_duel_timer }
+					FROM = { NOT = { has_character_modifier = recent_match_timer } }
+					NOT = { has_character_modifier = recent_match_timer }
 				}
 			}
 
@@ -562,7 +562,7 @@ targeted_decisions = {
 					has_character_modifier = has_recently_declined_duel_cooldown
 				}
 				custom_tooltip = {
-					text = opinion_duel_decline_cooldown_tt
+					text = opinion_match_decline_cooldown_tt
 					NOT = { 
 						has_character_modifier = has_recently_declined_duel_cooldown
 					}
@@ -596,7 +596,7 @@ targeted_decisions = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_character_modifier = declined_prestige_duel_timer #if the target has already declined a duel, AI's won't attempt to duel them while the timer is still
+				has_character_modifier = declined_prestige_match_timer #if the target has already declined a duel, AI's won't attempt to duel them while the timer is still
 			}
 			modifier = {
 				factor = 0.1
@@ -1562,31 +1562,21 @@ society_decisions = {
 		}
 
 		allow = {
-			OR = {
-				custom_tooltip = {
-					text = lodge_allow_training_TT
-					OR = {
-						NOT = { has_character_flag = w_training_flag }
-						had_character_flag = { flag = w_training_flag days = 730 }
-					}
-				}
-				AND = {
-					has_quest = quest_warrior_lodge_mexican_train
-					custom_tooltip = {
-						text = lodge_allow_training_TT
-						OR = {
-							NOT = { has_character_flag = w_training_flag }
-							had_character_flag = { flag = w_training_flag days = 730 }
-						}
-					}
+			custom_tooltip = {
+				text = lodge_allow_training_TT
+				OR = {
+					NOT = { has_character_flag = w_training_flag }
+					had_character_flag = { flag = w_training_flag days = 730 }
 				}
 			}
 		}
 
 		effect = {
-			clr_character_flag = w_training_flag
-			set_character_flag = w_training_flag
-			character_event = { id = WR.3 }
+			hidden_tooltip = {
+				clr_character_flag = w_training_flag
+				set_character_flag = w_training_flag
+				character_event = { id = WR.3 }
+			}
 		}
 
 		

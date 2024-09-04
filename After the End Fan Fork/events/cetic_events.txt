@@ -8000,6 +8000,29 @@ character_event = {
 	}
 }
 
+#Gives governator trait to sanctioned governator when there is no governator
+character_event = {
+	hide_window = yes
+	trigger = {
+		trait = sanctioned_governator
+		NOR = {
+			any_character = {
+				trait = governator
+			}
+			any_character = {
+				trait = governator_heir
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		character_event = { id = cetic.300 }
+	}
+}
 # ************************** Bureaucracy Events***********************
 
 #Variable for bureaucracy (on_startup)

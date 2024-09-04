@@ -766,7 +766,7 @@ character_event = {
 			}
 		}
 		random = {
-			Chance = 50
+			chance = 50
 			if = {
 				limit = {
 					trait = gregarious

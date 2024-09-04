@@ -160,7 +160,7 @@ narrative_event = {
 				tier = KING
 			}
 			preferred_limit = {
-				TIER = DUKE
+				tier = DUKE
 			}
 			preferred_limit = {
 				NOT = {
@@ -959,42 +959,6 @@ character_event = {
 					limit = {
 						higher_tier_than = COUNT
 						region = custom_great_lakes
-					}
-					preferred_limit = {
-						ROOT = {
-							capital_scope = {
-								location = {
-									title = PREVPREVPREV
-								}
-							}
-						}
-					}
-					preferred_limit = {
-						ROOT = {
-							capital_scope = {
-								location = {
-									title = PREVPREVPREV
-								}
-							}
-						}
-					}
-					preferred_limit = {
-						ROOT = {
-							capital_scope = {
-								location = {
-									title = PREVPREVPREV
-								}
-							}
-						}
-					}
-					preferred_limit = {
-						ROOT = {
-							capital_scope = {
-								location = {
-									title = PREVPREVPREV
-								}
-							}
-						}
 					}
 					preferred_limit = {
 						ROOT = {

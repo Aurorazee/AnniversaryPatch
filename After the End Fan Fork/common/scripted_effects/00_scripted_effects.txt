@@ -24641,7 +24641,7 @@ apply_cosmopolian_on_start_effect = {
 }
 apply_dogmatic_on_start_effect = {
 	religion_authority = {
-		modifier = religion_dogmatic
+		modifier = dogmatic_religion
 		years = 1000
 	}
 	remove_intermarry = afro_syncretic

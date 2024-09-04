@@ -26,6 +26,20 @@ society_quest_event = {
 		text = EVTDESCHF10523_B #if target is also the person giving you the quest...
 		trigger = { event_target:duel_target = { character = event_target:lodge_hero } }
 	}
+	desc = {
+		text = EVTDESCHF16523_A #default
+		trigger = { 
+			event_target:duel_target = { NOT = { character = event_target:lodge_hero } } 
+			society_member_of = warrior_lodge_mexican
+		}
+	}
+	desc = {
+		text = EVTDESCHF16523_B #if target is also the person giving you the quest...
+		trigger = { 
+			event_target:duel_target = { character = event_target:lodge_hero } 
+			society_member_of = warrior_lodge_mexican
+		}
+	}
 
 	trigger = {
 		FROM = { is_alive = yes }
@@ -561,6 +575,12 @@ character_event = {
 		text = EVTDESC_HFP_16004_bloodline #Initiation duel as special bloodline owner
 	}
 
+	immediate = {
+		set_character_flag = wrestling_match
+		event_target:combatant_2 = {
+			set_character_flag = wrestling_match
+		}
+	}
 	
 	option = {
 		name = {
@@ -890,9 +910,9 @@ character_event = {
 		### Room for any existing pre-conditions (is this an initiation duel? Is this a Challenge for a title?):
 		# -- set here, or in previous event/decision...
 		
-		#Chooses a weapon for mainly loc purposes (but has a tiny effect on outcomes, too)...
-		#set_dueling_weapon_effect = yes #You get a weapon!
-		#event_target:combatant_2 = { set_dueling_weapon_effect = yes } #and YOU get a weapon!
+		# Chooses a weapon for mainly loc purposes (but has a tiny effect on outcomes, too)...
+		set_dueling_weapon_effect = yes #You get a weapon!
+		event_target:combatant_2 = { set_dueling_weapon_effect = yes } #and YOU get a weapon!
 		
 		#Chooses a body part for injury (if it occurs), also for loc purposes (effect handles both characters)
 		set_potential_injury_flag_mexican_effect = yes #Luchadors are special snowflakes and do not kill each other... well regularly kill each other

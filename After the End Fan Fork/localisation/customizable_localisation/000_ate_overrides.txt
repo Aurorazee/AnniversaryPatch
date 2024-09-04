@@ -11470,3 +11470,125 @@ defined_text = {
 		# localisation_key = String_Empress
 	# }
 # }
+
+
+defined_text = { #Used to refer to a type of "warrior", initial cap...
+	name = GetTeachingMomentActivity
+	
+	text = {
+		localisation_key = String_bravery_lesson
+		trigger = {
+			OR = {
+				has_character_flag = learning_bravery@event_target:teacher
+				has_character_flag = teaching_bravery@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_ambition_lesson
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			OR = {
+				has_character_flag = learning_ambition@event_target:teacher
+				has_character_flag = teaching_ambition@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_ambition_lesson_W
+		trigger = {
+			society_member_of = warrior_lodge_mexican
+			OR = {
+				has_character_flag = learning_ambition@event_target:teacher
+				has_character_flag = teaching_ambition@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_patience_lesson
+		trigger = {
+			OR = {
+				has_character_flag = learning_patience@event_target:teacher
+				has_character_flag = teaching_patience@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_diligence_lesson
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			OR = {
+				has_character_flag = learning_diligence@event_target:teacher
+				has_character_flag = teaching_diligence@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_diligence_lesson_W
+		trigger = {
+			society_member_of = warrior_lodge_mexican
+			OR = {
+				has_character_flag = learning_diligence@event_target:teacher
+				has_character_flag = teaching_diligence@event_target:student
+			}
+		}
+	}
+	fallback_text = {
+		localisation_key = String_bravery_lesson # Fallback, in case it fails to find relevant info
+	}
+}
+
+defined_text = { #Used to refer to a type of "warrior", initial cap...
+	name = GetTeachingMomentTool
+	
+	text = {
+		localisation_key = String_bravery_tool
+		trigger = {
+			OR = {
+				has_character_flag = learning_bravery@event_target:teacher
+				has_character_flag = teaching_bravery@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_ambition_tool
+		trigger = {
+			OR = {
+				has_character_flag = learning_ambition@event_target:teacher
+				has_character_flag = teaching_ambition@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_patience_tool
+		trigger = {
+			OR = {
+				has_character_flag = learning_patience@event_target:teacher
+				has_character_flag = teaching_patience@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_diligence_tool
+		trigger = {
+			NOT = { society_member_of = warrior_lodge_mexican }
+			OR = {
+				has_character_flag = learning_diligence@event_target:teacher
+				has_character_flag = teaching_diligence@event_target:student
+			}
+		}
+	}
+	text = {
+		localisation_key = String_diligence_tool_W
+		trigger = {
+			society_member_of = warrior_lodge_mexican
+			OR = {
+				has_character_flag = learning_diligence@event_target:teacher
+				has_character_flag = teaching_diligence@event_target:student
+			}
+		}
+	}
+	fallback_text = {
+		localisation_key = String_bravery_tool # Fallback, in case it fails to find relevant info
+	}
+}
