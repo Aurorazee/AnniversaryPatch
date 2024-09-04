@@ -1063,7 +1063,7 @@ decisions = {
 					de_jure_liege = k_georgia
 				}
 				primary_title = {
-					k_tuskegee = {
+					k_georgia = {
 						copy_title_laws = PREV
 					}
 				}
@@ -1248,7 +1248,7 @@ decisions = {
 					de_jure_liege = k_tarheel
 				}
 				d_cape_fear = {
-					de_jure_liege = k_tarheel_grand_duchy
+					de_jure_liege = k_tarheel
 				}
 				if = {
 					limit = {
@@ -1257,7 +1257,7 @@ decisions = {
 							completely_controls = d_blue_ridge
 						}
 					}
-					d_mobile = {
+					d_blue_ridge = {
 						show_scope_change = no
 						de_jure_liege = k_tarheel
 					}
@@ -1340,19 +1340,19 @@ decisions = {
 			grant_title_no_opinion = k_magnolia
 			hidden_tooltip = {
 				d_pine_belt = {
-					de_jure_liege = k_magnolia_archduchy
+					de_jure_liege = k_magnolia
 				}
 				d_natchez = {
-					de_jure_liege = k_magnolia_archduchy
+					de_jure_liege = k_magnolia
 				}
 				d_yazoo = {
-					de_jure_liege = k_magnolia_archduchy
+					de_jure_liege = k_magnolia
 				}
 				d_chickasaw = {
-					de_jure_liege = k_magnolia_archduchy
+					de_jure_liege = k_magnolia
 				}
 				d_choctaw = {
-					de_jure_liege = k_magnolia_archduchy
+					de_jure_liege = k_magnolia
 				}
 			}
 		}
