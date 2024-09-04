@@ -8021,7 +8021,27 @@ character_event = {
 	}
 	
 	immediate = {
-		character_event = { id = cetic.300 }
+		remove_trait = sanctioned_governator
+		add_trait = governator
+		any_character = {
+			limit = {
+				OR = {
+					has_landed_title = e_california
+					has_landed_title = e_new_california
+				}
+			}
+			character_event = { id = cetic.410 } #Ping event
+		}
+	}
+}
+
+character_event = {
+	id = cetic.410
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		FROM = { character_event = { id = cetic.300 } }
 	}
 }
 # ************************** Bureaucracy Events***********************
