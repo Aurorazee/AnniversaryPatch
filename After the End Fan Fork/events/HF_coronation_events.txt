@@ -1862,24 +1862,7 @@ letter_event = {
 						who = FROM
 					}
 				}
-				if = { 
-					limit = { 
-						NOR = { 
-							trait = lunatic 
-							trait = possessed
-						}
-					} 
 					FROM = { letter_event = { id = HF.20216 } } #I want a piece of Italy.
-				}
-				# if = { 
-					# limit = { 
-						# OR = { 
-							# trait = lunatic 
-							# trait = possessed
-						# }
-					# } 
-					# FROM = { letter_event = { id = HF.20225 } } #Calls for Donation of Constantine.
-				# }
 			}
 			10 = { 
 				trigger = {
