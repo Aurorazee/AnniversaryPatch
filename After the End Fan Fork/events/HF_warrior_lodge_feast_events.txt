@@ -466,18 +466,6 @@ character_event = {
 			preferred_limit = { 
 				is_ill = no
 				has_education_martial_trigger = yes
-				combat_rating = 25
-			}
-			preferred_limit = { 
-				has_education_martial_trigger = yes
-				combat_rating = 25
-			}
-			preferred_limit = { 
-				combat_rating = 25
-			}
-			preferred_limit = { 
-				is_ill = no
-				has_education_martial_trigger = yes
 				combat_rating = 0
 			}
 			preferred_limit = { 

@@ -4182,8 +4182,8 @@ province_event = {
 						}
 						attrition = 0
 					}
-					limit = {
-						if = {
+					if = {
+						limit = {
 							FROMFROM = {
 								religion = catholic
 							}

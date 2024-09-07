@@ -20,7 +20,7 @@ character_event = {
 		e_california = {
 			has_holder = yes
 		}
-		total_years_played = 20
+		total_years_played = 100 #Give the player some time, good Lord
 	}
 	
 	mean_time_to_happen = {
@@ -63,12 +63,12 @@ character_event = {
 		
 		modifier = {
 			factor = 0.5
-			year = 2700
+			year = 2760
 		}
 		
 		modifier = {
 			factor = 0.5
-			year = 2720
+			year = 2800
 		}
 	}
 	

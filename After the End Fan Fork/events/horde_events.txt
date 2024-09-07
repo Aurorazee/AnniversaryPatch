@@ -1624,7 +1624,12 @@ province_event = {
 					primary_title = { holy_order = yes }
 				}
 			}
-			clr_character_flag = renovator_himself
+			any_character = {
+				limit = {
+					has_character_flag = renovator_himself
+				}
+				clr_character_flag = renovator_himself
+			}
 			clr_global_flag = seljuk_spawned
 			clr_global_flag = seljuk_spawned_by_event
 		}
@@ -2054,7 +2059,7 @@ narrative_event = {
 		}		
 		
 		prestige = 1000
-		give_nickname = RENOVATOR_NICKNAME
+		give_nickname = nick_renovator
 		capital_scope = {
 			ROOT = {
 				spawn_unit = {

@@ -298,6 +298,10 @@ tried_to_convert_me = {
 	opinion = -15
 	months = 120
 }
+left_me_to_die = {
+	opinion = -25
+	years = 20
+}
 opinion_refused_bonfire = {
 	modifier = -15
 	years = 10

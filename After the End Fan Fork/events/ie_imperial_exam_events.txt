@@ -16,8 +16,20 @@ character_event = {
 	option = { #Accept application
 		name = EVTOPTAIE1
 		hidden_effect = {
-			FROM = {
-				letter_event = { id = IE.2 }
+			if = {
+				limit = {
+					FROM = {
+						is_landed = no
+					}
+				}
+				event_target:test_taker = {
+					letter_event = { id = IE.2 }
+				}
+			}
+			else = {
+				FROM = {
+					letter_event = { id = IE.2 }
+				}
 			}
 		}
 		ai_chance = {
@@ -27,12 +39,24 @@ character_event = {
 	option = { #Deny application
 		name = EVTOPTBIE1
 		hidden_effect = {
-			FROM = {
-				letter_event = { id = IE.3 }
+			if = {
+				limit = {
+					FROM = {
+						is_landed = no
+					}
+				}
+				event_target:test_taker = {
+					letter_event = { id = IE.3 }
+				}
+			}
+			else = {
+				FROM = {
+					letter_event = { id = IE.3 }
+				}
 			}
 		}
 		ai_chance = {
-			factor = 5
+			factor = 0 #I do not recall why I had this melodramatic event about rejecting you from the exam...
 			modifier = {
 				FROM = { has_character_flag = tributary_scholar_application }
 				factor = 0
@@ -311,10 +335,6 @@ character_event = {
 							factor = 0
 							stewardship <= 5
 						}
-						modifier = {
-							factor = 0
-							stewardship <= 5
-						}
 						change_variable = { which = "test_score" value = 20 }
 					}
 					4 = {
@@ -369,10 +389,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							stewardship <= 5
 						}
 						modifier = {
 							factor = 0
@@ -437,10 +453,6 @@ character_event = {
 							factor = 0
 							stewardship <= 5
 						}
-						modifier = {
-							factor = 0
-							stewardship <= 5
-						}
 						change_variable = { which = "test_score" value = 18 }
 					}
 					4 = {
@@ -495,10 +507,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							stewardship <= 5
 						}
 						modifier = {
 							factor = 0
@@ -1312,7 +1320,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0.1
-				stewardship = 8
+				stewardship < 8
 			}
 			modifier = {
 				factor = 2
@@ -2485,10 +2493,6 @@ character_event = {
 							factor = 0
 							learning <= 5
 						}
-						modifier = {
-							factor = 0
-							learning <= 5
-						}
 						change_variable = { which = "test_score" value = 20 }
 					}
 					4 = {
@@ -2614,10 +2618,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							learning <= 5
 						}
 						modifier = {
 							factor = 0
@@ -3812,10 +3812,6 @@ character_event = {
 							factor = 0
 							learning <= 5
 						}
-						modifier = {
-							factor = 0
-							learning <= 5
-						}
 						change_variable = { which = "test_score" value = 19 }
 					}
 					4 = {
@@ -3874,10 +3870,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							learning <= 5
 						}
 						modifier = {
 							factor = 0
@@ -3942,10 +3934,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							learning <= 5
 						}
 						modifier = {
 							factor = 0

@@ -1057,3 +1057,64 @@ character_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+character_event = {
+	id = machete.41
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		OR = {
+			AND = {
+				trait = machete_male
+				primary_title = {
+					NOR = {
+						has_law = cognatic_succession
+						has_law = agnatic_succession
+					}
+				}
+			}
+			AND = {
+				trait = machete_female
+				primary_title = {
+					NOR = {
+						has_law = cognatic_succession
+						has_law = enatic_succession
+					}
+				}
+			}
+		}
+	}
+	immediate = {
+		if = {
+			limit = {
+				AND = {
+					trait = machete_male
+					primary_title = {
+						NOR = {
+							has_law = cognatic_succession
+							has_law = agnatic_succession
+						}
+					}
+				}
+			}
+			primary_title = {
+				add_law = {
+					law = agnatic_succession
+					cooldown = no
+					opinion_effect = no
+				}
+			}
+		}
+		else = {
+			primary_title = {
+				add_law = {
+					law = enatic_succession
+					cooldown = no
+					opinion_effect = no
+				}
+			}
+		}
+	}
+}

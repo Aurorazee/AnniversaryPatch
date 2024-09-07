@@ -1,6 +1,8 @@
 #Decisions
 take_imp_exam;Take Imperial Exam;;;;;;;;;;;;;x
-take_imp_exam_desc;The Imperial Exam — or the Esadian — is the most prestigious test in all of antedivulian America. As a [Root.Government.GetName] ruler, it is your right and duty to have yourself certified by a Evaluator of Merit.;;;;;;;;;;;;;x
+take_imp_exam_desc;The Imperial Exam — or the Esadian — is the most prestigious test in all of antedivulian America. As a [Root.Government.GetName] ruler, it is your right and duty to have yourself certified by an Evaluator of Merit.;;;;;;;;;;;;;x
+request_take_imp_exam;Request [Root.GetFirstName] Take Imperial Exam;;;;;;;;;;;;;x
+request_take_imp_exam_desc;The Imperial Exam — or the Esadian — is the most prestigious test in all of antedivulian America. As a [Root.Government.GetName] ruler, it is your right and duty to have your vassals certified by an Evaluator of Merit.;;;;;;;;;;;;;x
 ie_applied_TT;Has not already applied;;;;;;;;;;;;;x
 need_retest_TT;Needs a retest;;;;;;;;;;;;;x
 cheated_expelled_TT;Was expelled for cheating;;;;;;;;;;;;;x

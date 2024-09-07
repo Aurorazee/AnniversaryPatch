@@ -2052,7 +2052,6 @@ character_event = { # Warrior Lodge members with high PCS might go out and duel 
 					any_realm_character = {
 						limit = {
 							is_inaccessible_or_incapable_trigger = no
-							is_inaccessible_or_incapable_trigger = no
 							ai = yes
 							is_adult = yes
 							liege = { ai = yes }
@@ -3722,7 +3721,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 			}
@@ -3759,8 +3757,15 @@ character_event = {
 
 	immediate = {
 		if = {
+			limit = {
+				FROM = {
+					any_close_relative = {
+						is_alive = yes
+					}
+				}
+			}
 			FROM = {
-				any_close_relative = {
+				random_close_relative = {
 					limit = {
 						is_alive = yes
 					}
@@ -3770,7 +3775,22 @@ character_event = {
 		}
 
 		if = {
-			any_courtier = {
+			limit = {
+				any_courtier = {
+					OR = {
+						is_learned_trigger = yes
+						has_character_flag = is_court_physician
+						has_minor_title = title_court_physician
+						has_minor_title = title_teacher
+						has_minor_title = title_volva
+						has_minor_title = title_lawspeaker
+						has_minor_title = title_court_skald
+						has_minor_title = title_venerable_elder
+						learning = 18
+					}
+				}
+			}
+			random_courtier = {
 				limit = {
 					OR = {
 						is_learned_trigger = yes
@@ -3781,7 +3801,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}
@@ -3999,16 +4018,30 @@ character_event = {
 
 	immediate = {
 		if = {
-			any_courtier = {
+			limit = {
+				any_courtier = {
+					block_general_event_trigger = no
+				}
+			}
+			random_courtier = {
 				limit = {
 					block_general_event_trigger = no
 				}
 				save_event_target_as = witness1
+				set_character_flag = HF_51003
 			}
 		}
 
 		if = {
-			any_courtier = {
+			limit = {
+				any_courtier = {
+					block_general_event_trigger = no
+					NOT = {
+						has_character_flag = HF_51003
+					}
+				}
+			}
+			random_courtier = {
 				limit = {
 					block_general_event_trigger = no
 					NOT= { character = event_target:witness1} 
@@ -4049,6 +4082,9 @@ character_event = {
 
 		clr_character_flag = decided_to_kidnap
 		clr_character_flag = decided_to_dig_up
+		event_target:witness1 = {
+			clr_character_flag = HF_51003
+		}
 	}
 }
 
@@ -4075,7 +4111,6 @@ character_event = {
 					has_minor_title = title_lawspeaker
 					has_minor_title = title_court_skald
 					has_minor_title = title_venerable_elder
-					has_minor_title = title_lawspeaker
 					learning = 18
 				}
 			}
@@ -4100,7 +4135,6 @@ character_event = {
 							has_minor_title = title_lawspeaker
 							has_minor_title = title_court_skald
 							has_minor_title = title_venerable_elder
-							has_minor_title = title_lawspeaker
 							learning = 18
 						}
 					}
@@ -4212,7 +4246,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}
@@ -4528,7 +4561,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}
@@ -4626,7 +4658,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}
@@ -4709,7 +4740,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}

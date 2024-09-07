@@ -2130,7 +2130,7 @@ character_event = {
 
 ### Notification event for increase in mercenary size
 character_event = {
-	id = HL.10700
+	id = 10700
 	desc = EVTDESC_HL_10700
 	picture = GFX_evt_steppe_mercenaries
 	
@@ -2146,7 +2146,7 @@ character_event = {
 
 ### Notification event for wasting money on debauchery
 character_event = {
-	id = HL.10701
+	id = 10701
 	desc = EVTDESC_HL_10701
 	picture = GFX_evt_steppe_mercenaries
 	

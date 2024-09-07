@@ -227,7 +227,7 @@ character_event = {
 					}
 				}
 			}
-			set_official_crusade_recipient = NONE
+			set_official_crusade_recipient = none
 			any_crusade_participant = {
 				limit = {
 					NOT = {

@@ -5586,7 +5586,598 @@ truebelievers_bid_for_independence = {
 	}
 }
 
-#Pepin holy war (unused)
+
+# Event-tied cb for Papal Holy War (that is, holy war on behalf of the Papacy)
+pepin_religious = {
+	name = CB_NAME_PAPAL_RELIGIOUS
+	war_name = WAR_NAME_PAPAL_RELIGIOUS
+	sprite = 9
+	truce_days = 3650
+	is_permanent = yes
+	is_holy_war = yes
+	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
+
+	allowed_to_target_tributaries = yes
+	attacker_rel_head_is_ally = yes # The attacker can call his (main) Pope into the war
+	
+	sort_priority = 790
+	
+	on_add = {
+		hidden_tooltip = { fire_haruspicy_event_effect = yes }
+		if = {
+			limit = { defender = { is_offmap_governor = offmap_china } }
+			attacker = {  
+				sound_effect = china_angered_emperor
+				detract_grace_super_huge_effect = yes 
+			}
+		}
+	}
+
+	can_use_gui = {
+		check_if_crusader_trigger = yes
+	}
+
+	can_use = {
+		ROOT = { #The cb is either available due to Coronation dealings, or as any King or Emperor ruler who has a Pope for Religious Head.
+			has_dlc = "Holy Fury"
+			higher_tier_than = DUKE 
+			has_character_flag = flag_pepin_for_coronation 
+			OR = { 
+				AND = {
+					religion = catholic
+					rightful_religious_head_scope = { has_landed_title = k_papal_state }
+				}
+				AND = {
+					religion = ursuline
+					rightful_religious_head_scope = { has_landed_title = k_ursuline }
+				}
+			}
+			#war = no 
+			is_feudal = yes
+			independent = yes
+			religion = catholic
+			NOT = { same_realm = FROM }
+		#	OR = {
+		#		NOT = { religion_group = FROM }
+		#		is_parent_religion = FROM
+		#	}
+		}
+		FROM = { 
+			is_within_diplo_range = ROOT
+			NOR = { 
+				AND = {
+					ROOT = {
+						religion = catholic
+					}
+					has_landed_title = k_papal_state
+				}
+				AND = {
+					ROOT = {
+						religion = ursuline
+					}
+					has_landed_title = k_ursuline
+				}
+			}
+			OR = { 		#Target must either be a pagan or heretic of any government form, or it must be a disliked Catholic/Fraticelli who is not a bishop.
+				AND = { 
+					is_theocracy = no 
+					religion = ROOT
+					ROOT = { 
+						religion_head = { 
+							NOT = { 
+								opinion = { 
+									who = FROM
+									value = -50
+								}
+							}
+						} 
+					} 
+				}
+				excommunicated_for = ROOT
+				NOT = { religion_group = ROOT } 
+				is_heresy_of = ROOT
+			}
+		}
+	}
+	
+	can_use_title = {
+		# The attacker needs to be within diplo range of the target, and the target title must be one of the historical Papal Duchies.
+		OR = {
+			AND = {
+				ROOT = {
+					religion = catholic
+				}
+				any_de_jure_vassal_title = {
+					location = {
+						region = world_great_plains
+					}
+				}
+				OR = { 
+					title = d_gateway
+					title = d_twain
+					title = d_great_river
+					title = d_lead_belt
+
+					d_gateway = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_twain = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_great_river = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_lead_belt = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+				}
+			}
+			AND = {
+				ROOT = {
+					religion = ursuline
+				}
+				any_de_jure_vassal_title = {
+					location = {
+						OR = {
+							region = world_eastern_canada
+							region = world_central_canada
+						}
+					}
+				}
+				OR = { 
+					title = d_quebec
+					title = d_mauricia
+					title = d_montreal
+					title = d_estrie
+					title = d_chaudiere_appalaches
+					d_quebec = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_mauricia = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_montreal = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_estrie = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+					d_chaudiere_appalaches = {
+						any_de_jure_vassal_title = { title = PREVPREV }
+					}
+				}
+			}
+		}
+	}
+
+	is_valid = {
+		ROOT = {
+			OR = {
+				AND = { 
+					religion = catholic
+					rightful_religious_head_scope = { has_landed_title = k_papal_state }
+				}
+				AND = { 
+					religion = ursuline
+					rightful_religious_head_scope = { has_landed_title = k_ursuline }
+				}
+			}
+			NOT = { religion_group = pagan_group }
+			NOT = { pacifist = yes }
+			NOT = { same_realm = FROM }
+		}
+	}
+
+	on_invalidation = {
+		ROOT = { 
+			clr_character_flag = flag_pepin_for_coronation
+		} 
+	}
+	
+	on_success = {
+		ROOT = {
+			if = { 
+				limit = { 
+					religion_head = { 
+						any_artifact = { 
+							has_artifact_flag = christian
+							NOR =  { 
+								has_artifact_flag = very_rare
+								has_artifact_flag = unique #Won't give the holiest ones away.
+							}
+						} 
+					} 
+				}
+				random_list = { 
+					20 = { 
+						modifier = { 
+							factor = 0
+							NOT = { 
+								religion_head = { 
+									opinion = { 
+										who = ROOT 
+										value = 30
+									} 
+								} 
+							}
+						}
+						modifier = { 
+							factor = 1.5
+							religion_head = { 
+								opinion = { 
+									who = ROOT 
+									value = 50
+								} 
+							}
+						}
+						modifier = { 
+							factor = 1.5
+							religion_head = { 
+								opinion = { 
+									who = ROOT 
+									value = 70
+								} 
+							}
+						}
+						modifier = { 
+							factor = 1.5
+							religion_head = { 
+								opinion = { 
+									who = ROOT 
+									value = 90
+								} 
+							}
+						}
+						set_character_flag = flag_pope_gifts_artifact #Effect happens in event. 
+					}
+					80 = { #Nothing happens
+					}
+				}
+			}
+			character_event = { id = HF.20224 } #Congratulations\ Papal Coronation may proceed if flagged.
+		}
+		any_attacker = {
+			limit = { NOT = { character = ROOT } }
+			hidden_tooltip = { 
+				participation_scaled_piety = 75
+				participation_scaled_prestige = 50
+				if = {
+					limit = {
+						uses_decadence = yes
+					}
+					participation_scaled_decadence = -10
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
+					}
+				}
+			}
+		}
+		
+		ROOT = { 
+			participation_scaled_piety = 150
+			participation_scaled_prestige = 75
+
+			rightful_religious_head_scope = {
+				opinion = {
+					who = ROOT
+					modifier = opinion_papal_land_donation
+				}
+			}
+			religion_authority = {
+				modifier = won_holy_war
+				years = 20
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					NOT = {
+						has_character_modifier = known_satanist
+					}
+				}
+				religion_authority = {
+					modifier = lost_holy_war
+					years = 20
+				}		
+			}
+		}
+		FROM = { piety = -100 }
+		FROM = { prestige = -50 }
+	}
+
+	on_success_title = {
+		custom_tooltip = {
+			text = pepin_religious_cb_succ_tip
+			hidden_tooltip = {
+				ROOT = {
+					religion_head = { 
+						vassalize_or_take_under_title = {
+							title = PREVPREV
+							enemy = FROM
+							same_religion = yes # Only vassalize rulers of my religion
+							is_religious = yes
+							type = holy_war
+						}
+					}
+				}
+			}
+		}
+	}
+
+	on_fail = {
+		ROOT = { 
+			clr_character_flag = flag_pepin_for_coronation
+		}
+		ROOT = { 
+			piety = -50 
+			prestige = -100
+		}
+	}
+
+	on_reverse_demand = {
+		ROOT = { 
+			clr_character_flag = flag_pepin_for_coronation
+		}
+		ROOT = {
+			transfer_scaled_wealth = {
+				to = FROM
+				value = 4.0
+			}
+			piety = -75
+			prestige = -150
+		}
+		FROM = {
+			participation_scaled_piety = 100
+			participation_scaled_prestige = 75
+			if = {
+				limit = {
+					uses_decadence = yes
+				}
+				participation_scaled_decadence = -10
+			}
+		}
+		any_defender = {
+			limit = { NOT = { character = FROM } }
+			hidden_tooltip = { 
+				participation_scaled_piety = 75
+				participation_scaled_prestige = 50
+				if = {
+					limit = {
+						uses_decadence = yes
+					}
+					participation_scaled_decadence = -10
+				}
+				hidden_tooltip = {
+					if = {
+						limit = {
+							has_ambition = obj_strengthen_religion
+						}
+						change_variable = { which = strengthen_religion value = 1 }
+					}
+				}
+			}
+		}
+		any_attacker = {
+			limit = {
+				character = ROOT
+				uses_decadence = yes
+			}
+			participation_scaled_decadence = 20
+		}
+		any_attacker = {
+			limit = {
+				NOT = { character = ROOT }
+				uses_decadence = yes
+			}
+			hidden_tooltip = { 
+				participation_scaled_decadence = 20
+			}
+		}
+		ROOT = { 
+			religion_authority = {
+				modifier = lost_holy_war
+				years = 20
+			}
+		}
+		FROM = { 
+			religion_authority = {
+				modifier = won_holy_war
+				years = 20
+			}
+			hidden_tooltip = {
+				if = {
+					limit = {
+						has_ambition = obj_strengthen_religion
+					}
+					change_variable = { which = strengthen_religion value = 1 }
+				}
+			}
+		}
+	}
+
+	attacker_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	attacker_ai_defeat_worth = {
+		factor = 100
+	}
+
+	defender_ai_victory_worth = {
+		factor = -1 # always accept
+	}
+	
+	defender_ai_defeat_worth = {
+		factor = 100
+	}
+	
+	ai_will_do = { 
+		factor = 1 
+		modifier = { #Focus on Coronation first.
+			factor = 0.1
+			has_dlc = "Holy Fury"
+			ROOT = {
+				is_feudal = yes
+				religion = catholic
+				NOR = {
+					trait = crowned_by_priest
+					trait = crowned_by_bishop
+					trait = crowned_by_pope
+					trait = crowned_by_myself
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			ROOT = {
+				has_landed_title = e_heartland
+			}
+		}
+		modifier = { 
+			factor = 0.25
+			ROOT = {
+				NOT = {
+					trait = zealous
+				}
+			}
+		}
+		modifier = { #I like the Pope and I will help him.
+			factor = 1.5
+			religion_head = {
+				reverse_opinion = { 
+					who = ROOT 
+					value = 50 
+				}
+			}
+		}
+		modifier = { #I like the Pope and I will help him.
+			factor = 1.5
+			religion_head = {
+				reverse_opinion = { 
+					who = ROOT 
+					value = 60 
+				}
+			}
+		}
+		modifier = { #I like the Pope and I will help him.
+			factor = 1.5
+			religion_head = {
+				reverse_opinion = { 
+					who = ROOT 
+					value = 70 
+				}
+			}
+		}
+		modifier = { #I like the Pope and I will help him.
+			factor = 2
+			religion_head = {
+				reverse_opinion = { 
+					who = ROOT 
+					value = 80 
+				}
+			}
+		}
+		modifier = { #I like the Pope and I will help him.
+			factor = 2
+			religion_head = {
+				reverse_opinion = { 
+					who = ROOT 
+					value = 90 
+				}
+			}
+		}
+		modifier = { #Heathens are holding Italy, take action!
+			factor = 5
+			ROOT = {
+				NOT = {
+					trait = cynical
+				}
+			}
+			FROM = {
+				NOT = { religion = ROOT }
+			}
+		}
+		modifier = { #The Papacy doesn't hold Rome, take action!
+			factor = 5
+			FROM = {
+				OR = {
+					has_landed_title = d_gateway
+					any_vassal = { has_landed_title = d_gateway }
+					d_gateway = {
+						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
+					}
+				}
+			}
+		}
+		modifier = { 
+			factor = 2
+			FROM = {
+				OR = {
+					has_landed_title = d_twain
+					any_vassal = { has_landed_title = d_twain }
+					d_spoleto = {
+						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
+					}
+				}
+			}
+		}
+		modifier = { #Historical tweaking
+			factor = 0.25
+			FROM = {
+				OR = {
+					has_landed_title = d_great_river
+					any_vassal = { has_landed_title = d_great_river }
+					d_great_river = {
+						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.8
+			ROOT = {
+				distance_from_realm = { who = FROM value = 40 }
+			}
+		}
+		modifier = {
+			factor = 0.8
+			ROOT = {
+				distance_from_realm = { who = FROM value = 80 }
+			}
+		}		
+		modifier = {
+			factor = 0.75
+			ROOT = {
+				distance_from_realm = { who = FROM value = 120 }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			ROOT = {
+				distance_from_realm = { who = FROM value = 150 }
+			}
+		}
+		modifier = {
+			factor = 0.25
+			ROOT = {
+				distance_from_realm = { who = FROM value = 200 }
+			}
+		}
+	}
+}
 
 #Roman Christian revolt is not used.
 

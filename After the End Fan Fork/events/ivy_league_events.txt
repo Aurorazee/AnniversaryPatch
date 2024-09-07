@@ -642,6 +642,9 @@ character_event = {
 		
 		clr_quest = { 
 			id = quest_faculty_quest_1 #remove the quest
+			failure = yes	
+		}
+		clr_quest = { 
 			id = quest_faculty_quest_2 #remove the quest
 			failure = yes	
 		}
@@ -664,6 +667,9 @@ character_event = {
 		change_society_currency = 200 #reward	
 		clr_quest = { 
 			id = quest_faculty_quest_1 #remove the quest
+			failure = no
+		}
+		clr_quest = { 
 			id = quest_faculty_quest_2 #remove the quest
 			failure = no
 		}

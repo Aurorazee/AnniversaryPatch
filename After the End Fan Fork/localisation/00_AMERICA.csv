@@ -2038,8 +2038,8 @@ heartbreaker_female_bloodline;Heartbreaker Blood;;;;;;;;;;;;;x
 heartbreaker_female_bloodline_desc;[This.GetFirstName]seized control of the Holy Columbian Confederacy from the Emperor after they were deamed unfit to rule. Her reign ushered in a new age for the Holy Columbian Confederacy.;;;;;;;;;;;;;x
 heartbreaker_male_bloodline_desc;Heartbreaker Blood;;;;;;;;;;;;;x
 heartbreaker_male_bloodline_desc;[This.GetFirstName]seized control of the Holy Columbian Confederacy from the Emperor after they were deamed unfit to rule. His reign ushered in a new age for the Holy Columbian Confederacy.;;;;;;;;;;;;;x
-disinherited_trait;Disinherited;;;;;;;;;;;;;x
-disinherited_trait_desc;This character has been disinherited.;;;;;;;;;;;;;x
+disinherited;Disinherited;;;;;;;;;;;;;x
+disinherited _desc;This character has been disinherited.;;;;;;;;;;;;;x
 bushart_bloodline;Cyclical-Blood of [This.GetFirstName];;;;;;;;;;;;;x
 bushart_bloodline_desc;The Busharts were the most sucessful of the Empresses of Vancouver, descendants of the original Haleys. They saw their downfall under the Haida deluge.;;;;;;;;;;;;;x
 knight;Knight;;;;;;;;;;;;;x

@@ -160,7 +160,7 @@ narrative_event = {
 		}
 		custom_tooltip = { text = TXT_choose_sac }
 		ai_chance = { factor = 10 }
-		cash = -100
+		wealth = -100
 	}
 	
 	option = {

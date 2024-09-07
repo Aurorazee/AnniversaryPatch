@@ -579,7 +579,6 @@ character_event = { #Hero character's reaction, who then sends acceptance/refusa
 
 letter_event = { #SUCCESS: Welcome to the society!
 	id = HF.10009
-	picture = GFX_evt_melee
 	border = GFX_event_letter_frame_war
 	is_triggered_only = yes
 	
@@ -712,7 +711,6 @@ letter_event = { #SUCCESS: Welcome to the society!
 letter_event = { #FAILURE: You can't sit with us
 	id = HF.10010
 	desc = EVTDESC_HF_10010
-	picture = GFX_evt_melee
 	border = GFX_event_letter_frame_war
 	is_triggered_only = yes
 	trigger = {

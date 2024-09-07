@@ -1867,3 +1867,4 @@ nick_pendragon = {}
 nick_boudica = {}
 nick_the_gaul = {}
 nick_the_mighty_and_strong = {}
+nick_renovator = {}

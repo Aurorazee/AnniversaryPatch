@@ -566,7 +566,7 @@ character_event = {
 character_event = {
 	id = HF.25006
 	desc = EVTDESCHF25006
-	picture = GFX_evt_sun_temple
+	picture = GFX_evt_mysterious_forest
 	border = GFX_event_normal_frame_war
 	
 	is_triggered_only = yes
@@ -615,7 +615,7 @@ character_event = {
 		name = EVTOPTDHF25006
 	hidden_tooltip = {
 			if = { 
-				limit = { society_member_of = warrior_lodge_zun } #Safety check for sneaky players.
+				limit = { society_member_of = warrior_lodge_revelationist } #Safety check for sneaky players.
 				add_society_currency_minor_effect = yes 
 			}
 		}
