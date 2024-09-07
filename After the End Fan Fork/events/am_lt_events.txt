@@ -2,16 +2,6 @@ namespace = AMLT
 
 # Center of Islam conversion event
 
-#character_event = {
-#	id = AMLT.1
-#	is_triggered_only = yes
-#	hide_window = yes
-#	
-#	immediate = {
-#		character_event = { id = AMLT.3 days = 7 }
-#	}
-#}
-
 character_event = {
 	id = AMLT.2
 	is_triggered_only = yes
@@ -35,182 +25,192 @@ character_event = {
 	id = AMLT.3
 	title = wonder_mosque_center_islam
 	picture = GFX_evt_jerusalem_captured_muslims
-	desc = {
-		trigger = { event_target:target_chaplain = { always = yes } }
-		text = EVTDESC_LT_20900_chaplain
-	}
-	desc = {
-		trigger = { NOT = { event_target:target_chaplain = { always = yes } } }
-		text = EVTDESC_LT_20900
-	}
-
-	trigger = {
-		OR = {
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Center_rust_cult }
-					OR = {
-						has_wonder_flag = Center_muslim_cult
-						has_wonder_flag = Center_norse_cult
-						has_wonder_flag = Center_ursuline_cult
-					}
-				}
-				religion = rust_cultist
-			}
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Center_muslim_cult }
-					OR = {
-						has_wonder_flag = Center_rust_cult
-						has_wonder_flag = Center_norse_cult
-						has_wonder_flag = Center_ursuline_cult
-					}
-				}
-				religion_group = muslim
-			}
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Center_norse_cult }
-					OR = {
-						has_wonder_flag = Center_rust_cult
-						has_wonder_flag = Center_muslim_cult
-						has_wonder_flag = Center_ursuline_cult
-					}
-				}
-				religion_openly_norse_or_reformed_trigger = yes
-			}
-			AND = {
-				any_realm_wonder = {
-					NOT = { has_wonder_flag = Center_ursuline_cult }
-					OR = {
-						has_wonder_flag = Center_rust_cult
-						has_wonder_flag = Center_muslim_cult
-						has_wonder_flag = Center_norse_cult
-					}
-				}
-				religion = ursuline
-			}
-		}
- 	}
 	border = GFX_event_normal_frame_religion
 
-	is_triggered_only = yes
+	desc = {
+		text = EVTDESC_LT_20900_chaplain
+		trigger = { job_spiritual = { always = yes } }
+	}
+	desc = {
+		text = EVTDESC_LT_20900
+		trigger = { NOT = { job_spiritual = { always = yes } } }
+	}
+
+	is_triggered_only = yes # on_new_holder(_inheritance/usurpation)
 
 	only_independent = yes
 
-	immediate = {
-		random_realm_wonder = {
-			limit = {
-				has_wonder = wonder_mosque_center_islam
-			}
-			save_event_target_as = target_wonder
-		}
-		job_spiritual = {
-			save_event_target_as = target_chaplain
-		}
-		if = {
-			limit = {
+	trigger = {
+		trigger_if = {
+			limit = { religion = rust_cultist }
+
+			any_realm_wonder = {
+				NOT = { has_wonder_flag = Center_rust_cult }
+
 				OR = {
-					event_target:target_wonder = {
-						has_wonder_flag = Center_rust_cult
-						location = { religion = rust_cultist }
-					}
-					event_target:target_wonder = {
-						has_wonder_flag = Center_muslim_cult
-						location = { religion_group = muslim }
-					}
-					event_target:target_wonder = {
-						has_wonder_flag = Center_norse_cult
-						location = {
-							OR = {
-								religion = norse_pagan
-								religion = norse_pagan_reformed
-							}
-						}
-					}
-					event_target:target_wonder = {
-						has_wonder_flag = Center_ursuline_cult
-						location = { religion = ursuline }
-					}
+					has_wonder_flag = Center_muslim_cult
+					has_wonder_flag = Center_norse_cult
+					has_wonder_flag = Center_ursuline_cult
 				}
 			}
-			event_target:target_wonder = { location = { set_province_flag = people_had_center_islam } }
+		}
+		trigger_else_if = {
+			limit = { religion_openly_norse_or_reformed_trigger = yes }
+
+			any_realm_wonder = {
+				NOT = { has_wonder_flag = Center_norse_cult }
+
+				OR = {
+					has_wonder_flag = Center_rust_cult
+					has_wonder_flag = Center_muslim_cult
+					has_wonder_flag = Center_ursuline_cult
+				}
+			}
+		}
+		trigger_else_if = {
+			limit = { religion = ursuline }
+
+			any_realm_wonder = {
+				NOT = { has_wonder_flag = Center_ursuline_cult }
+
+				OR = {
+					has_wonder_flag = Center_rust_cult
+					has_wonder_flag = Center_muslim_cult
+					has_wonder_flag = Center_norse_cult
+				}
+			}
+		}
+		trigger_else = {
+			limit = { religion_group = muslim }
+
+			any_realm_wonder = {
+				NOT = { has_wonder_flag = Center_muslim_cult }
+
+				OR = {
+					has_wonder_flag = Center_rust_cult
+					has_wonder_flag = Center_norse_cult
+					has_wonder_flag = Center_ursuline_cult
+				}
+			}
 		}
 	}
 
-	option = { #Convert
+	immediate = {
+		random_realm_wonder = {
+			limit = { has_wonder = wonder_mosque_center_islam }
+			save_event_target_as = target_wonder
+
+			if = {
+				limit = {
+					trigger_if = {
+						limit = { has_wonder_flag = Center_rust_cult }
+						location = { religion = rust_cultist }
+					}
+					trigger_else_if = {
+						limit = { has_wonder_flag = Center_norse_cult }
+						location = { religion_openly_norse_or_reformed_trigger = yes }
+					}
+					trigger_else_if = {
+						limit = { has_wonder_flag = Center_ursuline_cult }
+						location = { religion = ursuline }
+					}
+					trigger_else = {
+						has_wonder_flag = Center_muslim_cult
+						location = { religion_group = muslim }
+					}
+				}
+
+				location = { set_province_flag = people_had_center_islam }
+			}
+		}
+	}
+
+	option = { # Convert
 		name = EVTOPTA_LT_20900
-		event_target:target_wonder = { clr_wonder_flag = Center_rust_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_muslim_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_ursuline_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_norse_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_norse_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_norse_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_norse_cult }
-		event_target:target_wonder = { clr_wonder_flag = Center_norse_cult }
-		
+
+		event_target:target_wonder = { clear_flags_with_prefix = Center_ }
+
 		if = {
 			limit = { religion = rust_cultist }
+
 			event_target:target_wonder = {
 				set_wonder_flag = Center_rust_cult
 			}
+		}
+		else_if = {
+			limit = { religion_openly_norse_or_reformed_trigger = yes }
 
-		}
-		else_if = {
-			limit = { religion_group = muslim }
-			event_target:target_wonder = {
-				set_wonder_flag = Center_muslim_cult
-			}
-		}
-		else_if = {
-			limit = {
-				religion_openly_norse_or_reformed_trigger = yes
-			}
 			event_target:target_wonder = {
 				set_wonder_flag = Center_norse_cult
 			}
 		}
 		else_if = {
 			limit = { religion = ursuline }
+
 			event_target:target_wonder = {
 				set_wonder_flag = Center_ursuline_cult
 			}
 		}
+		else_if = {
+			limit = { religion_group = muslim }
+
+			event_target:target_wonder = {
+				set_wonder_flag = Center_muslim_cult
+			}
+		}
+
 		piety = 200
+
 		reverse_opinion = {
-			modifier = opinion_religious_tract
-			who = event_target:target_chaplain
+			name = opinion_religious_tract
+			who = job_spiritual
 			years = 5
 		}
+
 		event_target:target_wonder = {
 			show_scope_change = no
+
 			location = {
 				show_scope_change = no
+
 				if = {
 					limit = { has_province_flag = people_had_center_islam }
+
+					add_province_modifier = {
+						name = religious_tension
+						years = 5
+					}
 				}
-				add_province_modifier = { modifier = religious_tension years = 5 }
 			}
 		}
 	}
-	option = { #Not Convert
+
+	option = { # Don't Convert
 		name = EVTOPTB_LT_20900
+
 		piety = -50
+
 		reverse_opinion = {
-			modifier = opinion_angry
-			who = event_target:target_chaplain
+			name = opinion_angry
+			who = job_spiritual
 			years = 5
 		}
+
 		event_target:target_wonder = {
 			show_scope_change = no
+
 			location = {
 				show_scope_change = no
+
 				if = {
 					limit = { has_province_flag = people_had_center_islam }
-				}
-				add_province_modifier = { modifier = religious_tolerance years = 10 }
-			}
 
+					add_province_modifier = {
+						name = religious_tolerance
+						years = 10
+					}
+				}
+			}
 		}
 	}
 }
