@@ -363,9 +363,13 @@ decisions = {
 				AND = {
 					k_evangelical = {
 						holder_scope = {
-							has_landed_title = {
-								b_atlanta_GA
-							}
+							has_landed_title = b_atlanta_GA
+						}
+					}
+					OR = {
+						has_landed_title = c_atlanta
+						any_realm_character = {
+							has_landed_title = c_atlanta
 						}
 					}
 					completely_controls = c_chattahoochee
