@@ -431,7 +431,7 @@ change_moravian_branch_desc;Moravians may change their religious branch once per
 TXT_change_moravian_branch;Switch between pastoral or parochial.;;;;;;;;;;;;;x
 EVTDESC_unitasfratrum_710;The Unitas fratrum faith is split into two main theological groups the pastorals who focus on personal faith and the authority of the scriptures while maintaing a decentralized church structure focused on local communities and the parochials who focus on the traditions and theology of the universal church held by such saints as San Oscar Romero and on a hierarchical church structure.;;;;;;;;;;;;;x
 EVTOPTA_unitasfratrum_710;Focus on personal faith and decentralized authority.;;;;;;;;;;;;;x
-EVTOPTB_unitasfratrum_710;Focus on tradition and the church heirarchy.;;;;;;;;;;;;;x
+EVTOPTB_unitasfratrum_710;Focus on tradition and the church hierarchy.;;;;;;;;;;;;;x
 
 sagrado_mystic;Delve into Mysticism;;;;;;;;;;;;;x
 sagrado_mystic_desc;With your hefty knowledge of all things, you can choose to delve into the more esoteric aspects of faith.;;;;;;;;;;;;;x
