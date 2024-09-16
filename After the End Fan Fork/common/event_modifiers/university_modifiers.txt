@@ -22,6 +22,14 @@ uni_texas_alumni = {
 	icon = 2
 }
 
+uni_georgia_alumni = {
+	icon = 2
+}
+
+uni_seattle_alumni = {
+	icon = 2
+}
+
 uni_los_alamos_alumni = {
 	icon = 2
 }

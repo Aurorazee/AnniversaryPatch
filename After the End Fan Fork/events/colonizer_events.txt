@@ -25,7 +25,7 @@ character_event = {
 				war = no
 				NOT = { trait = incapable }
 			}
-			character_event = { id = pacific.1 days = 2 tooltip = EVTTOOLTIP_pacific_1 }
+			character_event = { id = pacific.2 days = 2 tooltip = EVTTOOLTIP_pacific_1 }
 		}
 		hidden_tooltip = { character_event = { id = pacific.4 days = 10 } }
 		hidden_tooltip = { character_event = { id = pacific.5 days = 11 } }

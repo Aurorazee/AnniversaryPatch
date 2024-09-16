@@ -5,9 +5,9 @@ law_groups = {
 	revoke_title_law = {
 		law_type = realm
 	}
-	ze_gaian_vassal_wars = {
-		law_type = realm
-	}
+	#ze_gaian_vassal_wars = {
+	#	law_type = realm
+	#}
 	ze_administration_laws = {
 		law_type = realm
 	}
