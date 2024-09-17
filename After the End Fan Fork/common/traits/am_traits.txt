@@ -195,21 +195,6 @@ zombi = {
 	child_insult_adj = INSULT_STUPID
 }
 
-student = {
-	learning = 1
-	pilgrimage = yes
-	customizer = no
-	random = no
-	cached = yes
-}
-
-graduate = {
-	learning = 2
-	same_opinion = 5
-	customizer = no
-	random = no
-}
-
 banker = {
 	cached = yes
 	customizer = no

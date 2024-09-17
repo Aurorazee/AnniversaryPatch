@@ -16,7 +16,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_nazarene_1
 		hidden_tooltip = {
-			remove_trait = nz_presbyters
+			remove_trait = nz_presbyter
 			remove_trait = nz_acolyte
 
 		}
@@ -29,7 +29,7 @@ character_event = {
 	option = {
 		name = EVTOPTB_nazarene_1
 		hidden_tooltip = {
-			remove_trait = nz_presbyters
+			remove_trait = nz_presbyter
 			remove_trait = nz_seraph
 
 		}

@@ -5,6 +5,8 @@ student = {
 	potential = { age = 16 }
 	customizer = no
 	random = no
+	
+	learning = 1
 
 	male_compliment_adj = COMPL_LEARNED
 	female_compliment_adj = COMPL_LEARNED
@@ -19,7 +21,7 @@ graduate = {
 	opposites = {
 		student
 	}
-	learning = 1
+	learning = 2
 	same_opinion = 5
 	potential = { age = 16 }
 	customizer = no

@@ -125,7 +125,7 @@ character_event = {
 			culture_group = west_anglo
 			culture_group = plateau
 		}
-		NOT = { 
+		NOR = { 
 			trait = dorado
 			has_character_flag = wants_dorado
 			has_character_flag = denied_dorado
@@ -244,17 +244,15 @@ character_event = {
 	is_married = no
 	
 	trigger = {
-		NOT = {
-			OR = {
-				father = {
-					primary_title = {
-						current_heir = { character = ROOT }
-					}
+		NOR = {
+			father = {
+				primary_title = {
+					current_heir = { character = ROOT }
 				}
-				mother = {
-					primary_title = {
-						current_heir = { character = ROOT }
-					}
+			}
+			mother = {
+				primary_title = {
+					current_heir = { character = ROOT }
 				}
 			}
 		}
@@ -1147,7 +1145,7 @@ character_event = {
 			culture_group = west_anglo
 			culture_group = plateau
 		}
-		NOT = { 
+		NOR = { 
 			trait = dorado
 			has_character_flag = wants_dorado
 			has_character_flag = denied_dorado
