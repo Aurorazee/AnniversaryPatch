@@ -4573,7 +4573,7 @@ narrative_event = {
 				}
 				ROOT = { 	
 					religion_authority = {
-						modifier = religion_dogmatic
+						modifier = dogmatic_religion
 						years = 1000
 					}
 					#WHAT THE FUCK PDOX, THIS IS LITERALLY EVERY RELIGION AND RELIGION GROUP IN THE GAME

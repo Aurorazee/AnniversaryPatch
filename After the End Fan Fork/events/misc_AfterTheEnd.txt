@@ -606,7 +606,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -1369,7 +1369,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 90
@@ -2132,7 +2132,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 10
@@ -2895,7 +2895,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -3650,7 +3650,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 10
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -4413,7 +4413,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -5172,7 +5172,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -5935,7 +5935,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -6694,7 +6694,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -7457,7 +7457,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -8216,7 +8216,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 80
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -8979,7 +8979,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 10
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -9742,7 +9742,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -10481,7 +10481,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -11240,7 +11240,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -11999,7 +11999,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -12762,7 +12762,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -13525,7 +13525,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0
@@ -14288,7 +14288,7 @@ character_event = {
 			}
 			modifier = {
 				factor = 0
-				culture = novorusskiy
+				culture_group = novorusskiy
 			}
 			modifier = {
 				factor = 0

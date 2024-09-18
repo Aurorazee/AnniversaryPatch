@@ -282,7 +282,7 @@ narrative_event = {
 				liege = { 
 					NOR = { 
 						location = { region = custom_childrens_crusade_south }
-						location = { region = custom_childrens_crusade_center }
+						location = { region = custom_childrens_crusade_central }
 						location = { region = custom_childrens_crusade_east }
 					}
 				}
@@ -304,7 +304,7 @@ narrative_event = {
 		}
 		else_if = {
 			limit = {
-				liege = { location = { region = custom_childrens_crusade_center } }
+				liege = { location = { region = custom_childrens_crusade_central } }
 			}
 			clr_character_flag = flag_children_at_st_louis
 			clr_character_flag = flag_children_at_chicago
@@ -1098,7 +1098,7 @@ narrative_event = {
 							region = custom_usa
 							NOT = {
 								region = custom_childrens_crusade_south
-								region = custom_childrens_crusade_center
+								region = custom_childrens_crusade_central
 								region = custom_childrens_crusade_east
 							}
 						}
@@ -1169,7 +1169,7 @@ narrative_event = {
 				random_playable_ruler = { 
 					limit = { 
 						religion_group = christian
-						capital_scope = { region = custom_childrens_crusade_center }
+						capital_scope = { region = custom_childrens_crusade_central }
 						NOT = { has_character_flag = flag_visited_by_childrens_crusade }
 					}
 					preferred_limit = { 

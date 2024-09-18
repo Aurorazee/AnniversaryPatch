@@ -670,12 +670,12 @@ character_event = {
 					NOT = { trait = wounded }
 				}
 				random_list = {
-					50 = { character_event = { id = ceticpilgrim.18 } }
-					50 = { character_event = { id = ceticpilgrim.19 } }
+					50 = { character_event = { id = nazarene.18 } }
+					50 = { character_event = { id = nazarene.19 } }
 				}
 			}
 			else = {
-				character_event = { id = ceticpilgrim.19 }
+				character_event = { id = nazarene.19 }
 			}
 		}
 	}
@@ -695,12 +695,12 @@ character_event = {
 					NOT = { trait = wounded }
 				}
 				random_list = {
-					25 = { character_event = { id = ceticpilgrim.18 } }
-					75 = { character_event = { id = ceticpilgrim.19 } }
+					25 = { character_event = { id = nazarene.18 } }
+					75 = { character_event = { id = nazarene.19 } }
 				}
 			}
 			else = {
-				character_event = { id = ceticpilgrim.19 }
+				character_event = { id = nazarene.19 }
 			}
 		}
 	}
@@ -1316,7 +1316,7 @@ character_event = {
 		name = EVTOPTA_nazarene_38
 		piety = 100
 		prestige = 50
-		add_character_modifier = { name = studied_gregory_palamas duration = -1 }
+		add_character_modifier = { name = studied_gregory_palmas duration = -1 }
 	}
 	
 	after = {
