@@ -139,8 +139,8 @@ letter_event = {
 		FROM = { 
 			letter_event = { id = MSI.05 days = 3 tooltip = EVTTOOLTIP_MSI_05 }
 		}
-		remove_trait = muntaqiyun
-		add_trait = salimi
+		remove_trait = jadidi
+		add_trait = ansari
 	}
 	option = {
 		name = EVTOPTB_MSI_04

@@ -7,10 +7,6 @@
 	liege=d_alexander
 }
 2651.3.12={
-	holder=1200123
-	liege=d_alexander
-}
-2651.3.12={
 	holder=1200112
 	liege=d_alexander
 }
