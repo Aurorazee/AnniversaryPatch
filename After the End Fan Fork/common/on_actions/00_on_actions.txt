@@ -18,7 +18,7 @@ on_startup = {
 		689 # scripted default elective token setup
 		HFP.24025 #Enable Eldership for appropriate religions/Doctrines.
 		GR.30 # Generate random families for characters without
-		HF.15099 # Setup rain in African regions
+		#HF.15099 # Setup rain in African regions
 		HF.23776 #Assign African tattoos.
 		HFP.20804 #Clear Byzantine commander variables on the Emperor.
 		HF.23778 #Setting up god-emperors on Altstart.
@@ -554,7 +554,7 @@ on_yearly_pulse = {
 		30 = MNM.7829 # AI-only disciple recruitment
 
 		#Artifact events
-		500 = MNM.9816 # Blessed Mantle allows you to make Water of the Blessed Mantle (-> logic)
+		#500 = MNM.9816 # Blessed Mantle allows you to make Water of the Blessed Mantle (-> logic)
 
 		#Jade Dragon events 
 		150 = JD.20000 # Visit by Chinese councilor
@@ -2985,7 +2985,7 @@ on_new_holder_inheritance = {
 		
 		#col.1 # Delete Colonizer Titles
 		
-		AMLT.1
+		#AMLT.1
 		
 		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
 		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
@@ -3032,7 +3032,7 @@ on_new_holder_usurpation = {
 		
 		#col.1 # Delete Colonizer Titles
 		
-		AMLT.1
+		#AMLT.1
 		
 		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
 		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
