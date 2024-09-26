@@ -78,7 +78,7 @@ decisions = {
 		}
 		allow = {
 			trait = student
-			set_character_flag = changing_major
+			has_character_flag = changing_major
 		}
 		effect = {
 			character_event = { id = univ.12 }

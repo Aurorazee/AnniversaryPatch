@@ -133,7 +133,7 @@ decisions = {
 			}
 			NOT = {
 				primary_title = {
-					set_title_flag = ORF_reject
+					has_title_flag = ORF_reject
 				}
 			}
 			num_of_titles_in_realm <= 30
@@ -187,7 +187,7 @@ decisions = {
 			}
 			NOT = {
 				primary_title = {
-					set_title_flag = ORF_embrace
+					has_title_flag = ORF_embrace
 				}
 			}
 			num_of_titles_in_realm <= 30
