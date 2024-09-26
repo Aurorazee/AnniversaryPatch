@@ -19,7 +19,7 @@ decisions = {
 
 			custom_tooltip = {
 				text = monastic_orders_invite_ascetic_tt
-				character_event = { id = FIDE.120 days = 7 }
+				character_event = { id = fide.120 days = 7 }
 			}
 			add_character_modifier = {
 				name = recently_invited_ascetic
