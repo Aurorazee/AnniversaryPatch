@@ -303,7 +303,7 @@ left_me_to_die = {
 	years = 20
 }
 opinion_refused_bonfire = {
-	modifier = -15
+	opinion = -15
 	years = 10
 }
 running_against = {

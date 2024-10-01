@@ -3423,18 +3423,7 @@ character_event = {
 	after = { clear_event_target = thunder_target }
 }
 
-#Lover
-character_event = {
-	id = TOG.7509
-
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	option = {
-		FROM = { character_event = { id = TOG.7510 } }
-	}
-}
+#TOG.7509-10 removed for AtE
 
 ###
 
