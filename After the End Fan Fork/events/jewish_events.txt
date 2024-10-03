@@ -1322,7 +1322,7 @@ character_event = {
 				trait = avrach
 			}
 			new_character = {
-				character_event = { id = maintenance.4 } #diversity
+				character_event = { id = misc.4 } #diversity
 				ROOT = {
 					save_persistent_event_target = {
 						name = chevruta_partner
