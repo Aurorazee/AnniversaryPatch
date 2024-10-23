@@ -987,7 +987,7 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPT_anabloodline
-		limit = {has_character_flag = anastasia_war}
+		#limit = {has_character_flag = anastasia_war}
 		if = { 
 			limit = { 
 				this_has_cool_nickname_trigger = no
@@ -1001,7 +1001,7 @@ narrative_event = {
 				type = true_anastasia_bloodline
 			}
 			clr_character_flag = anastasia_war
-			add_character_flag = anastasia_win
+			set_character_flag = anastasia_win
 		}
 		else_if = {
 			limit = { is_female = yes } 
@@ -1009,7 +1009,7 @@ narrative_event = {
 				type = heartbreaker_female_bloodline
 			}
 			clr_character_flag = anastasia_war
-			add_character_flag = anastasia_win
+			set_character_flag = anastasia_win
 		}
 		else_if = {
 			limit = { is_female = no }
@@ -1017,7 +1017,7 @@ narrative_event = {
 				type = heartbreaker_male_bloodline
 			}
 			clr_character_flag = anastasia_war
-			add_character_flag = anastasia_win
+			set_character_flag = anastasia_win
 		}
 		ai_chance = {
 			factor = 100
