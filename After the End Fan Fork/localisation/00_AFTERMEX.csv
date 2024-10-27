@@ -92,7 +92,7 @@ reformista;Reformista;;;;;;;;;;;;;x
 reformista_DESC;The Reformista faith has its origins in the idea that belief should not be controlled by a strict Church. Beneméritos of old have tried to bring these ideals to fruition, the latest being Benemérito José Elías, who liberalized the structure of belief, opening up the Church to popular devotions without restriction. The fate of people's souls is far too important to be decided by priests who know not their flock. Thus, it is imperative that the Church have a protector who knows the needs of its people well and is not distracted by lofty pursuits and rigid hierarchies. By God and Liberty, the Benemérito is the one who must lead as only through respecting the various beliefs of others, can there be peace.;;;;;;;;;;;;;x
  
 purificador;Purificador;;;;;;;;;;;;;x
-purificador_DESC;Purificadores — Purifiers — are a loosely organized christian doctrine that has its roots in pentecostal missions established not long before the Event. They believe that the faith's arrival to Central America was the first seal of the Apocalypse being broken. Such is their eschatology, that they identify even their fellow Christians as the prophesied Whore of Babylon. Their fundamentalist views on the Bible make them reject all other faiths as idolatrous and satanic, and they are willing to make them see their error, by force if needed — For those who are taken into the family of God, shall be gifted.;;;;;;;;;;;;;x
+purificador_DESC;Purificadores — Purifiers — are a loosely organized Christian doctrine that has its roots in Pentecostal missions established not long before the Event. They believe that the faith's arrival to Central America was the first seal of the Apocalypse being broken. Such is their eschatology, that they identify even their fellow Christians as the prophesied Whore of Babylon. Their fundamentalist views on the Bible make them reject all other faiths as idolatrous and satanic, and they are willing to make them see their error, by force if needed — For those who are taken into the family of God, shall be gifted.;;;;;;;;;;;;;x
  
 penitente;Penitente;;;;;;;;;;;;;x
 penitente_DESC;Penitentes — Penitents — are so called because they believe that after the Event, the world was given a second chance at redemption — which must be atoned for with sorrowful and extenuant rituals that were once reserved for the holiest of weeks — as now every week must be Holy. The Penance that must be performed can be as little as praying, face to the floor, to being honored pallbearers of enormous images from the Passion of Christ. These traditions make them a disciplined people, capable of doing anything for their brothers in sacrifice.;;;;;;;;;;;;;x
@@ -110,7 +110,7 @@ mictlantec_DESC;Mictlanteca is a continuation of ancient indigenous traditions a
 mictlantec_FEATURES;§Y*§! May go on vision quests with the aid of sacramental herbs.;;;;;;;;;;;;;x
  
 sol_invicta;Sol Invicto;;;;;;;;;;;;;x
-sol_invicta_DESC;Sol Invictistas believe that at the end of the second era, the Serpent covered the world in darkness and chaos. To combat this evil, the Sun clothed his wife, the Moon, in his fiery raiment as she gave birth to a son who would be sent to vanquish the evil. Like the instruction and final great sacrifice of the second Messiah, this Messiah of the third era, the Son of the Sun, devoted his life to creating the Seven Seals and rituals that trap the Serpent in the underworld and keep the darkness at bay. As successor of this final Messiah, the Gran Hijo del Sol and his Guardians must keep ever viligant and maintain the seals through proper worship of God the Sun - the Sol Invicto - lest the Serpent return.;;;;;;;;;;;;;x
+sol_invicta_DESC;Sol Invictistas believe that at the end of the second era, the Serpent covered the world in darkness and chaos. To combat this evil, the Sun clothed his wife, the Moon, in his fiery raiment as she gave birth to a son who would be sent to vanquish the evil. Like the instruction and final great sacrifice of the second Messiah, this Messiah of the third era, the Son of the Sun, devoted his life to creating the Seven Seals and rituals that trap the Serpent in the underworld and keep the darkness at bay. As successor of this final Messiah, the Gran Hijo del Sol and his Guardians must keep ever vigilant and maintain the seals through proper worship of God the Sun - the Sol Invicto - lest the Serpent return.;;;;;;;;;;;;;x
 sol_invicta_FEATURES;§Y*§! The The Sword of Eréndira is elected using the same mechanics as the Pope.;;;;;;;;;;;;;x
  
 lamanita;Lamanita;;;;;;;;;;;;x
@@ -306,7 +306,7 @@ marian_santa_muerte;Santa Muerte;;;;;;;;;;;;;x
 marian_guadalupe;Our Lady of Guadalupe;;;;Nuestra Señora de Guadalupe;;;;;;;;;x
 marian_guadalupe_desc;This disciple of the Sagrado Corazón has a devotion to the patroness and mother of all Mexico, Our Lady of Guadalupe, who has been the most popular figure in the pantheon of el Sagrado Corazón since ancient times.;;;;;;;;;;;;;x
 marian_san_charbel;San Charbel;;;;San Charbel;;;;;;;;;x
-marian_san_charbel_desc;Among the most popular saints among the sagrado faithful San Charbel was a monk and a hermit of the faith from a land far across the sea whose countrymen brought the veneration of the saint to the land of mexico. Charbel was known even after death to have remained incorruptible and he is called upon by devotees to intercede on behalf of the sick and chapels dedicated to him are seeen throughput the land.;;;;;;;;;;;;;x
+marian_san_charbel_desc;Among the most popular saints among the sagrado faithful San Charbel was a monk and a hermit of the faith from a land far across the sea whose countrymen brought the veneration of the saint to the land of mexico. Charbel was known even after death to have remained incorruptible and he is called upon by devotees to intercede on behalf of the sick and chapels dedicated to him are seen throughput the land.;;;;;;;;;;;;;x
 marian_san_juditas;San Juditas;;;;San Juditas;;;;;;;;;x
 marian_san_juditas_desc;St. Jude the patron saint of lost causes, also known as San Judas Tadeo or San Juditas to his devotees, is one of the most popular saints to the sagrado faithful and is one of the original 12 apostles of Christ. Though beloved by all social classes San Juditas has a huge following among the poor to whom he is seen as a powerful protector and benefactor as well as a direct intercessor to Jesus Christ himself in his prayers.;;;;;;;;;;;;;x
  
@@ -357,7 +357,7 @@ image_of_virgin_desc;This most venerable image of the Virgin of Guadalupe was im
 campana_de_dolores;La Campana de Dolores;;;;;;;;;;;;;x
 campana_de_dolores_desc;Although details have been lost to the passage of time and The Event itself, it is still known that this bell rang when the idea of a free México was conceived. Flanked by ornate cherubs and with the names of legendary heroic figures of ancient times carved in it, this resplendent brass bell exudes an aura of patriotic mysticism, and when it chimes everyone hears: "Mexicans, to the cry for war!".;;;;;;;;;;;;;x
 santa_ana_leg;Santianna's Leg;;;;;;;;;;;;;x
-santa_ana_leg_desc;Meticulously preserved for countless generations, legends say this prosthetic leg once belonged to a tyrant king who had made war in the Lone Star. Now it adorns a wall as a conversation piece and ocasionally serves as the club of choice when recieving the ceremonial first pitch of a strike-ball game.;;;;;;;;;;;;;x
+santa_ana_leg_desc;Meticulously preserved for countless generations, legends say this prosthetic leg once belonged to a tyrant king who had made war in the Lone Star. Now it adorns a wall as a conversation piece and occasionally serves as the club of choice when receiving the ceremonial first pitch of a strike-ball game.;;;;;;;;;;;;;x
 golden_lance;Matarinches;;;;;;;;;;;;;x
 golden_lance_desc;This ancient Golden lance adorned with scenes of long lost myths and legends, was inherited by Paleo's ancestral house. Said to have been a weapon of great hero's blessed by Saint George to slay both man and beasts, with its greatest foe being a Texan Goliath from elder days before the event. However, The previous holders of the artifact have been lost to history.;;;;;;;;;;;;;x
  
@@ -414,7 +414,7 @@ RETTYPE_CUL_PUREPECHA;Purépecha Marksmen;;;;;;;;;;;;;x
  
 ###########BUILDINGS########### 
  
-ca_culture_mexican_1_desc;The agile light cavalry of the old Mexican tradition are raised here. These gallant horsemen are masters of the saddle, full of daring and bravado. When they aren't skirmishing and harrassing the enemy in battle, they can be found in the many equestrian competitions of the charrería;;;;;;;;;;;;;x
+ca_culture_mexican_1_desc;The agile light cavalry of the old Mexican tradition are raised here. These gallant horsemen are masters of the saddle, full of daring and bravado. When they aren't skirmishing and harassing the enemy in battle, they can be found in the many equestrian competitions of the charrería;;;;;;;;;;;;;x
  
 ca_culture_purepecha_1;Marksmen Training Ground;;;;;;;;;;;;;x
 ca_culture_purepecha_2;Marksmen Training Ground;;;;;;;;;;;;;x
@@ -429,7 +429,7 @@ COMPL_CAUL_BORN;caul-born;;;;;;;;;;;;;x
 change_moravian_branch;Change Moravian Branch;;;;;;;;;;;;;x
 change_moravian_branch_desc;Moravians may change their religious branch once per lifetime.;;;;;;;;;;;;;x
 TXT_change_moravian_branch;Switch between pastoral or parochial.;;;;;;;;;;;;;x
-EVTDESC_unitasfratrum_710;The Unitas fratrum faith is split into two main theological groups the pastorals who focus on personal faith and the authority of the scriptures while maintaing a decentralized church structure focused on local communities and the parochials who focus on the traditions and theology of the universal church held by such saints as San Oscar Romero and on a hierarchical church structure.;;;;;;;;;;;;;x
+EVTDESC_unitasfratrum_710;The Unitas fratrum faith is split into two main theological groups the pastorals who focus on personal faith and the authority of the scriptures while maintaining a decentralized church structure focused on local communities and the parochials who focus on the traditions and theology of the universal church held by such saints as San Oscar Romero and on a hierarchical church structure.;;;;;;;;;;;;;x
 EVTOPTA_unitasfratrum_710;Focus on personal faith and decentralized authority.;;;;;;;;;;;;;x
 EVTOPTB_unitasfratrum_710;Focus on tradition and the church hierarchy.;;;;;;;;;;;;;x
 
