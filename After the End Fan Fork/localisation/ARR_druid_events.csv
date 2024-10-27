@@ -139,7 +139,7 @@ EVTDESCancrel.0064;The druids have divined the messages of the gods in the sacri
 EVTOPTAancrel.0064;Glory to the Gods!;;;;;;;;;;;;;x
 EVTDESCancrel.0065;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn of a loss that will affect us deeply.;;;;;;;;;;;;;x
 EVTOPTAancrel.0065;Woe to me!;;;;;;;;;;;;;x
-EVTDESCancrel.0066;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn of the disapointment of the gods with our dynasty.;;;;;;;;;;;;;x
+EVTDESCancrel.0066;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn of the disappointment of the gods with our dynasty.;;;;;;;;;;;;;x
 EVTOPTAancrel.0066;Woe to me!;;;;;;;;;;;;;x
 EVTDESCancrel.0067;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids sing of the glory which awaits our lords dynasty.;;;;;;;;;;;;;x
 EVTOPTAancrel.0067;Glory to the Gods!;;;;;;;;;;;;;x
@@ -149,7 +149,7 @@ EVTDESCancrel.0069;The druids have divined the messages of the gods in the sacri
 EVTOPTAancrel.0069;Glory to the Gods!;;;;;;;;;;;;;x
 EVTDESCancrel.0070;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn our lord that he will lose something dear to him.;;;;;;;;;;;;;x
 EVTOPTAancrel.0070;The Gods are angry;;;;;;;;;;;;;x
-EVTDESCancrel.0071;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn of the disapointment of the gods with our lord.;;;;;;;;;;;;;x
+EVTDESCancrel.0071;The druids have divined the messages of the gods in the sacrifices we made, the whole assembly is attentive while the druids warn of the disappointment of the gods with our lord.;;;;;;;;;;;;;x
 EVTOPTAancrel.0071;The Gods are angry;;;;;;;;;;;;;x
 opinion_held_divination;Held divination;Blót tenu;Hat Blót veranstaltet;;Mancha Realizada;;;;;;;;;x
 opinion_held_bad_divination;Angered the gods;Blót tenu;Hat Blót veranstaltet;;Mancha Realizada;;;;;;;;;x
@@ -276,13 +276,13 @@ EVTOPTCancrel.0238;You have my thanks... it had to be done.;Je vous remercie... 
 EVTDESCancrel.0239;The chanting from the grove comes closer and [From.GetTitledName] appears together with [FromFrom.GetFirstName], flanked on either side by singing maidens. The child looks shaken, but otherwise unharmed. It is done, [From.GetFirstName] announces. The child has been saved.;Les chants qui proviennent du bosquet se rapprochent et [From.GetTitledName] apparaît en compagnie de [FromFrom.GetFirstName] et entouré des jeunes filles qui chantent. L'enfant semble secoué mais sain et sauf. 'C'est fait, annonce [From.GetFirstName]. Le démon n'est plus. [FromFrom.GetFirstName] est de nouveau [FromFrom.GetHerselfHimself].';Die Gesänge aus dem Hain kommen näher und [From.GetTitledName] erscheint zusammen mit [FromFrom.GetFirstName], flankiert von singenden Mädchen. Das Kind wirkt verwirrt, aber unverletzt. 'Es ist vollbracht,' ruft [From.GetFirstName] aus. 'Der Dämon ist hinfort. [FromFrom.GetFirstName] ist wieder [FromFrom.GetHerselfHimself].';;Los cantos de la arboleda se oyen más cerca y [From.GetTitledName] aparece junto a [FromFrom.GetFirstName], flanqueado a ambos lados por doncellas cantando. El niño se ve sacudido, pero por lo demás sano y salvo. Ya está hecho, anuncia [From.GetFirstName]. El demonio ya no existe. [FromFrom.GetFirstName] es [FromFrom.GetHerselfHimself] de nuevo.;;;;;;;;;x
 EVTOPTAancrel.0239;Thank the gods!;Les dieux soient loués !;Den Göttern sei gedankt!;;¡Gracias a los dioses!;;;;;;;;;x
 EVTDESCancrel.0240;The chanting from the grove comes closer and [From.GetTitledName] appears together with [FromFrom.GetFirstName], flanked on either side by singing maidens. The child's vacant stare hints that something is wrong. It is done, [From.GetFirstName] announces. The changeling has been sent back, but the struggle was great. I fear it has left scars on [FromFrom.GetFirstName] that may never heal...;Les chants qui proviennent du boisé se rapprochent et [From.GetTitledName] apparaît avec [FromFrom.GetFirstName], entourés de jeunes filles qui chantent. Le regard fixe et vide de votre enfant indique que quelque chose ne tourne pas rond. 'C'est fait, annonce [From.GetFirstName]. Le démon n'est plus, mais ce fut une dure bataille. Je crains que [FromFrom.GetFirstName] n'ait subi d'incurables séquelles.';Die Gesänge aus dem Hain kommen näher und [From.GetTitledName] erscheint zusammen mit [FromFrom.GetFirstName], flankiert von singenden Mädchen. Der starre Blick des Kindes zeigt, dass etwas nicht stimmt. 'Es ist vollbracht,' ruft [From.GetFirstName] aus. 'Der Dämon ist hinfort, doch der Kampf war schwer. Ich fürchte, er hat bei [FromFrom.GetFirstName] Narben hinterlassen, die vielleicht niemals heilen werden...';;Los cantos de la arboleda se oyen más cerca y [From.GetTitledName] aparece junto a [FromFrom.GetFirstName], flanqueado a ambos lados por doncellas cantando. La vacante mirada del niño revela que algo anda mal. Ya está hecho, anuncia [From.GetFirstName]. El demonio ya no existe, pero la lucha fue enorme. Me temo que ha dejado cicatrices en [FromFrom.GetFirstName] que quizá nunca curen...;;;;;;;;;x
-EVTDESCancrel.0241;You have known since you were a child that you were not fully.. normal. The druids say that you were switched at birth and that your strange temperament and short fuse are due to yor otherworldy nature, for you are a changeling, half human, half sidhe or maybe... half fomorian?;;;;;;;;;;;;;x
+EVTDESCancrel.0241;You have known since you were a child that you were not fully.. normal. The druids say that you were switched at birth and that your strange temperament and short fuse are due to your otherworldly nature, for you are a changeling, half human, half Sidhe or maybe... half fomorian?;;;;;;;;;;;;;x
 EVTOPTAancrel.0241;It is my time now;;;;;;;;;;;;;x
 changeling;Changeling;;;;;;;;;;;;;x
 changeling_desc;This character is thought to be a changeling, switched at birth by fairies;;;;;;;;;;;;;x
 give_offerings_sidhe;Offerings to the Sidhe;;;;;;;;;;;;;x
 give_offerings_sidhe_desc;The spirits and minor gods of the land must also be appeased.;;;;;;;;;;;;;x
-prepare_offerings;Prepare a ceremony to appease the sidhe.\n;;;;;;;;;;;;;x
+prepare_offerings;Prepare a ceremony to appease the Sidhe.\n;;;;;;;;;;;;;x
 ancrel.0244.desc;A happy day! It seems like your worthy rule has turned the attention of the gods to your lands and the discovery of a symbol sacred to your people bodes well for your continued rule.;;;;;;;;;;;;;x
 ancrel.0244.a;Glory to the gods!;;;;;;;;;;;;;x
 ancrel.0245.desc;A happy day! A sacred place has been returned to the rightful rule of your people!;;;;;;;;;;;;;x
@@ -384,9 +384,9 @@ EVTDESCancrel.1201;The Ollamh, aided by other members of the bardic caste, has g
 EVTOPTAancrel.1201;Very Well;;;;;;;;;;;;;x
 EVTDESCancrel.1202;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: Trade is of the utmost importance and thus..."\nThe new laws seem heavily biased towards the merchant castes.;;;;;;;;;;;;;x
 EVTOPTAancrel.1202;Very Well;;;;;;;;;;;;;x
-EVTDESCancrel.1203;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: In the interest of the commong good, every free man of the realm will..."\nThe new laws seem to treat everyone fairly.;;;;;;;;;;;;;x
+EVTDESCancrel.1203;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: In the interest of the common good, every free man of the realm will..."\nThe new laws seem to treat everyone fairly.;;;;;;;;;;;;;x
 EVTOPTAancrel.1203;Very Well;;;;;;;;;;;;;x
-EVTDESCancrel.1204;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: For the Gaels to be great, their King must be great as well..."\nThe new laws seem to favor centralisation of the crowns powers.;;;;;;;;;;;;;x
+EVTDESCancrel.1204;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: For the Gaels to be great, their King must be great as well..."\nThe new laws seem to favor centralisation of the crown's powers.;;;;;;;;;;;;;x
 EVTOPTAancrel.1204;Very Well;;;;;;;;;;;;;x
 EVTDESCancrel.1205;The Ollamh, aided by other members of the bardic caste, has given out the new laws that will mark [From.GetTitledFirstName]'s reign. "By royal decree, I, [From.GetTitledFirstName], have decided to implement the following laws: The free men of the Round Table are the most valorous warriors of the realm, thus their..."\nThe new laws seem heavily biased towards the roaming Round Table.;;;;;;;;;;;;;x
 EVTOPTAancrel.1205;Very Well;;;;;;;;;;;;;x
@@ -621,7 +621,7 @@ EVTDESCancrel.1321;Your [GetFromRelation], [From.GetTitledFirstName], has decide
 EVTOPTAancrel.1321;Go to the Dragons and make me proud, [GetFromRelation].;;;;;;;;;;;;;x
 EVTOPTBancrel.1321;I will not allow it!;Je ne permettrai pas !;Das werde ich nicht erlauben!;;¡No lo permitiré!;;;;;;;;;x
 EVTTOOLTIPancrel.1322;[From.GetFirstName] joins The Red Dragon Knights.;;;;;;;;;;;;;x
-EVTTOOLTIPancrel.1323;[From.GetFirstName] is dissapointed...;;;;;;;;;;;;;x
+EVTTOOLTIPancrel.1323;[From.GetFirstName] is disappointed...;;;;;;;;;;;;;x
 EVTDESCancrel.1322;[From.GetTitledFirstName] has granted your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
 EVTDESCancrel.1323;[From.GetTitledFirstName] has denied your request to join The Red Dragon Knights!;;;;;;;;;;;;;x
 EVTOPTAancrel.1323;That jerk!;;;;;;;;;;;;;x
@@ -635,7 +635,7 @@ EVTOPTAancrel.1330;Good riddance!;;;;;;;;;;;;;x
 EVTDESCancrel.1331;[From.GetTitledFirstName] has sent a generous donation to your order, to help you in the fight against the infidels!;;;;;;;;;;;;;x
 EVTDESCancrel.1332;[From.GetTitledFirstName] has graciously accepted your donation and has assured you it will be put to good use.;;;;;;;;;;;;;x
 EVTNAMEancrel.0256;The First Druidist Emperor;;;;;;;;;;;;;x
-EVTDESCancrel.0256;Long have the Druidists stood divided, easy pickings for conquerors over the millenia. Since the great Event, the land has been constantly ravaged by warfare. Worse still, most Druidists had been robbed of their faith, taught the ways of Canada's dead god. But the faith of the Druids has been brought back from the brink of destruction! Now, [Root.GetFullName], [Root.GetTitle] of the North Atlantic, loyal adherent to [Root.Religion.GetScriptureName], has united much of Labradar and declared [Root.GetReflexivePronoun] the rightful ruler of all Ceanada! Henceforth, [Root.GetSheHe] shall be known as 'Pendragon'!;;;;;;;;;;;;;x
+EVTDESCancrel.0256;Long have the Druidists stood divided, easy pickings for conquerors over the millennia. Since the great Event, the land has been constantly ravaged by warfare. Worse still, most Druidists had been robbed of their faith, taught the ways of Canada's dead god. But the faith of the Druids has been brought back from the brink of destruction! Now, [Root.GetFullName], [Root.GetTitle] of the North Atlantic, loyal adherent to [Root.Religion.GetScriptureName], has united much of Labrador and declared [Root.GetReflexivePronoun] the rightful ruler of all Ceanada! Henceforth, [Root.GetSheHe] shall be known as 'Pendragon'!;;;;;;;;;;;;;x
 EVTOPTAancrel.0256;Long may [Root.GetSheHe] reign!;;;;;;;;;;;;;x
 EVTOPTBancrel.0256;Just another trumped up savage pretending at imperium.;;;;;;;;;;;;;x
 EVTOPTCancrel.0256;What's a Druidist?;;;;;;;;;;;;;x

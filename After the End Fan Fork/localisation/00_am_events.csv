@@ -36,7 +36,7 @@ renovator.6.desc;The forces of the foreign warlord are victorious. As the news o
 renovator.6.optA;And there will be no world beyond my rule...;;;;;;;;;;;;;x
 renovator.6.optB;None can stop the crusade of the righteous!;;;;;;;;;;;;;x
 renovator.6.optC;He's not coming here! Is he?;;;;;;;;;;;;;x
-renovator.6.optD;I acknowledge the Renovator's suzerainity.;;;;;;;;;;;;;x
+renovator.6.optD;I acknowledge the Renovator's suzerainty.;;;;;;;;;;;;;x
 RENOVATOR_NICKNAME;the Renovator;;;;;;;;;;;;;x
 EVTNAMECONSUMER1;The Rise of Consumerism;;;;;;;;;;;;;x
 EVTDESCCONSUMER1;A prophet has arisen, proclaiming that the Old World was struck down, not by Jesus, the Atom, or the Founding Fathers, but by the Almighty Dollar for neglecting the temples they called Malls, improperly performing the ritual of the Shopping, and not giving Him tribute for every new Product he created, and that He will soon destroy the world again unless all Americans follow these rites. Many have come before him, preaching similar doctrines but attracting few followers, for the ruins of Old America are littered with books and signs advertising marvelous products that will cure all ills and bring true happiness. But this prophet's oratory has given him tens of thousands of followers, who are now spreading their faith across America by his words and by the sword.;;;;;;;;;;;;;x
@@ -461,7 +461,7 @@ EVTOPTB_MB_creation;Damned heathens!;;;;;;;;;;;;;x
 EVTOPTC_MB_creation;We shall be wary of them.;;;;;;;;;;;;;x
 
 EVTNAME_FS_creation;The Flaming Sword;;;;;;;;;;;;;x
-EVTDESC_FS_creation;As the reformation of the Revelationist faith spread, something peculiar occured at a celebratory revival in Mammoth. There, a soft-spoken yet determined preacher spoke to the crowd of the need to defend the new order from the unbelievers and heretics who threaten it, whipping them into a frenzied mass. From this sprang the group that now calls itself the Order of the Flaming Sword, named after the very blade carried in the mouth of the Serpentine God and used to defend the Garden of Life and Death itself!;;;;;;;;;;;;;x
+EVTDESC_FS_creation;As the reformation of the Revelationist faith spread, something peculiar occurred at a celebratory revival in Mammoth. There, a soft-spoken yet determined preacher spoke to the crowd of the need to defend the new order from the unbelievers and heretics who threaten it, whipping them into a frenzied mass. From this sprang the group that now calls itself the Order of the Flaming Sword, named after the very blade carried in the mouth of the Serpentine God and used to defend the Garden of Life and Death itself!;;;;;;;;;;;;;x
 EVTOPTA_FS_creation;Praise [Root.Religion.GetRandomGodName]!;;;;;;;;;;;;;x
 EVTOPTB_FS_creation;Pretentious Heathens!;;;;;;;;;;;;;x
 EVTOPTC_FS_creation;A worrying development?;;;;;;;;;;;;;x
@@ -628,7 +628,7 @@ EVTDESC_eva.102;With the city back under Holy Columbian control, the Patriarchat
 EVTOPTA_eva.102;Celebrate and give praise in the Chapel of the Cross!;;;;;;;;;;;;x
 EVTDESC_eva.103;With the city back under Holy Columbian control, the Patriarchate of Chicago has been restored. Once guiding the faithful in the Kingdoms of the Great Lakes, the city fell long ago to the heathens of the Rust Cult. Those days, now, are over...;;;;;;;;;;;;x
 EVTOPTA_eva.103;The Creator cannot be found in some rusted scrap...;;;;;;;;;;;;x
-EVTDESC_eva.104;The city of New Orleans has always been the entrance to the Mississipi. As communion with other faithful in the west slipped betwen our fingers, it was partly the fault of the Catholics and Voodoo of this city. Now with it under our grasp, the Patriarchate can once again find its footing in the west!;;;;;;;;;;;;x
+EVTDESC_eva.104;The city of New Orleans has always been the entrance to the Mississippi. As communion with other faithful in the west slipped betwen our fingers, it was partly the fault of the Catholics and Voodoo of this city. Now with it under our grasp, the Patriarchate can once again find its footing in the west!;;;;;;;;;;;;x
 EVTOPTA_eva.104;God is bigger then any Zombi Boogie man!;;;;;;;;;;;;x
 EVTDESC_eva.105;With the city back under Holy Columbian control, the Patriarchate of Washington has been restored. The capital of ancient America, and the religious center of the Kingdoms of Atlantica, the city long ago fell to the heathens who call Washington and Jefferson 'gods'.;;;;;;;;;;;;x
 EVTOPTA_eva.105;Christ prevails over the mortal Founders!;;;;;;;;;;;;x
@@ -832,7 +832,7 @@ donate_money_to_st_pats_desc;I can donate money to the Knights of St. Patrick in
 form_st_pats;Form the Knights of St. Patrick;;;;;;;;;;;;;x
 form_st_pats_desc;Call forth warriors to defend the Anglican faith.;;;;;;;;;;;;;x
 expand_twelve_pairs;Expand the Twelve Pairs of France;;;;;;;;;;;;;x
-expand_twelve_pairs_desc;Help estabilish a foothold for the Celeste faith warriors in the north.;;;;;;;;;;;;;x
+expand_twelve_pairs_desc;Help estabilsh a foothold for the Celeste faith warriors in the north.;;;;;;;;;;;;;x
 expel_twelve_pairs;Expel the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
 expel_twelve_pairs_desc; can drive the [d_twelve_pairs_of_france.GetName] from my realm and seize their castles. However, it is a very impious thing to do...;;;;;;;;;;;;;x
 donate_money_to_twelve_pairs;Donate 300¤ to the [d_twelve_pairs_of_france.GetName];;;;;;;;;;;;;x
@@ -842,7 +842,7 @@ vassalize_twelve_pairs_of_france_desc;As the [Root.GetTitle] of [k_roraima.GetNa
 vassalize_twelve_pairs_of_france_opinion_TT;§Y[d_twelve_pairs_of_france.Holder.GetTitledName]§! have an opinion of §G25§! or higher of §Y[Root.GetTitledName]§!;;;;;;;;;;;;;x
 
 form_the_contested_title;Form the Contested Title;;;;;;;;;;;;;x
-form_the_contested_title_desc;Restabilish a proper religious head for the Celeste faith.;;;;;;;;;;;;;x
+form_the_contested_title_desc;Re-estabilsh a proper religious head for the Celeste faith.;;;;;;;;;;;;;x
 
 e_mexico_allow_TT;No de jure Kingdom title is held by a non-[Root.Religion.GetGroupName];;;;;;;;;;;;;x
 
@@ -997,7 +997,7 @@ EVTOPTA_consumer_9;[d_monetarist.Holder.GetBestName] speaks the truth!;;;;;;;;;;
 EVTOPTB_consumer_9;I will not betray [d_consumerist.Holder.GetBestName]!;;;;;;;;;;;;;x
 
 celebrate_halloween;Celebrate Halloween;;;;;;;;;;;;;x
-celebrate_halloween_desc;The thirty-first night of October is said to be the time when the boundary between our world and the spirit world is at its weakest. Since time immemorial, people have commemmorated this night by stalking the streets in frightening costumes. Be careful on the walk back home...;;;;;;;;;;;;;x
+celebrate_halloween_desc;The thirty-first night of October is said to be the time when the boundary between our world and the spirit world is at its weakest. Since time immemorial, people have commemorated this night by stalking the streets in frightening costumes. Be careful on the walk back home...;;;;;;;;;;;;;x
 halloween_timer;Recently Celebrated Halloween;;;;;;;;;;;;;x
 TXT_halloween_decision;Halloween begins...;;;;;;;;;;;;;x
 EVTDESC_halloween_1;The sun has set, marking the start of Halloween. Many celebrate it by putting on terrifying costumes and going door to door, trying to scare people in their own homes. If you genuinely frighten someone, the "tricked" person is forced to give you a "treat" in the form of food or gold. You should select your costume carefully...;;;;;;;;;;;;;x
@@ -1111,7 +1111,7 @@ EVTOPTA_fallingstar_22;A likely excuse...;;;;;;;;;;;;;x
 EVTDESC_fallingstar_23;The Agape feast begins, as it always does, with the singing of traditional hymns. The entire congregation is encouraged to take part, even though some members have more musical talent than others...;;;;;;;;;;;;;x
 EVTOPTA_fallingstar_23;It is pleasing to hear many voices come together as one.;;;;;;;;;;;;;x
 EVTOPTB_fallingstar_23;I will lead the congregation in their singing!;;;;;;;;;;;;;x
-EVTOPTC_fallingstar_23;Ugh, such cacophany...;;;;;;;;;;;;;x
+EVTOPTC_fallingstar_23;Ugh, such cacophony...;;;;;;;;;;;;;x
 EVTDESC_fallingstar_24;The singing has ended for tonight, and the actual feast has begun. Attendees are free to take as much food as they like — this is way for poorer guests to take charity while preserving their pride, although it could be exploited by a greedy guest...;;;;;;;;;;;;;x
 EVTOPTA_fallingstar_24;I do not require much.;;;;;;;;;;;;;x
 EVTOPTB_fallingstar_24;I will eat as much as I usually do.;;;;;;;;;;;;;x
@@ -1203,7 +1203,7 @@ EVTDESC_northwest_1;You must decide what the purpose of your totem pole will be 
 EVTOPTA_northwest_1;I will carve a pole to commemorate my own deeds.;;;;;;;;;;;;;x
 TXT_EVTOPTA_northwest_1;You begin the process of carving a pole based on your life story.;;;;;;;;;;;;;x
 EVTOPTB_northwest_1;I will honor my dead father.;;;;;;;;;;;;;x
-TXT_EVTOPTB_northwest_1;You begin the process of carving a pole that commemmorates the life of your father.;;;;;;;;;;;;;x
+TXT_EVTOPTB_northwest_1;You begin the process of carving a pole that commemorates the life of your father.;;;;;;;;;;;;;x
 EVTOPTC_northwest_1;I will commemorate an important historical event.;;;;;;;;;;;;;x
 TXT_EVTOPTC_northwest_1;You begin the process of carving a pole that recounts an ancient story.;;;;;;;;;;;;;x
 EVTTITLE_northwest_3;The Totem Pole;;;;;;;;;;;;;x
@@ -1290,7 +1290,7 @@ EVTDESC_northwest_40;Before you begin creating your icon, you must decide which 
 EVTOPTA_northwest_40;I will create a traditional icon.;;;;;;;;;;;;;x
 TXT_EVTOPTA_northwest_40;You will recreate an artifact from the past.;;;;;;;;;;;;;x
 EVTOPTB_northwest_40;I will create an original icon.;;;;;;;;;;;;;x
-TXT_EVTOPTB_northwest_40;You incorproate non-traditional elements to make a wholly traditional icon.;;;;;;;;;;;;;x
+TXT_EVTOPTB_northwest_40;You incorporate non-traditional elements to make a wholly traditional icon.;;;;;;;;;;;;;x
 EVTDESC_northwest_42;After a week of hard work, you stand back and admire the icon you have created. You can hardly distinguish your creation from the one you were copying — except, of course, for the fact that yours is much less weathered.;;;;;;;;;;;;;x
 EVTOPTA_northwest_42;I will be remembered for this for generations!;;;;;;;;;;;;;x
 EVTDESC_northwest_43;After a week of hard work, you stand back and admire the icon you have created. Your icon cannot hope to match the subtle genius of the original, but it is an admirable attempt at recreation — and, of course, your icon is brand-new.;;;;;;;;;;;;;x
