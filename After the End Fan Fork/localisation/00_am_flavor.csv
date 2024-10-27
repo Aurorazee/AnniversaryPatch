@@ -22,19 +22,19 @@ baron_americanist;Sergeant;;;;;;;;;;;;;x
 baron_hamiltonian;Sergeant;;;;;;;;;;;;;x
 baron_jeffersonian;Sergeant;;;;;;;;;;;;;x
 baron_libertarian;Sergeant;;;;;;;;;;;;;x
-baron_andino;Patrï¿½n;;;;;;;;;;;;;x
+baron_andino;Patrón;;;;;;;;;;;;;x
 baron_antillais;Bawon;;;;;;;;;;;;;x
 baron_brethren;Lieutenant;;;;;;;;;;;;;x
 baron_britannic;Viscount;;;;;;;;;;;;;x
 baron_canuck;Viscount;;;;;;;;;;;;;x
 baron_caribbanglo;Viscount;;;;;;;;;;;;;x
-baron_caribeno;Patrï¿½n;;;;;;;;;;;;;x
-baron_centrolatino;Patrï¿½n;;;;;;;;;;;;;x
+baron_caribeno;Patrón;;;;;;;;;;;;;x
+baron_centrolatino;Patrón;;;;;;;;;;;;;x
 baron_consumerist;Supervisor;;;;;;;;;;;;;x
-baron_costero;Patrï¿½n;;;;;;;;;;;;;x
+baron_costero;Patrón;;;;;;;;;;;;;x
 baron_edokko;Danshaku;;;;;;;;;;;;;x
 baron_gaian;Forester;;;;;;;;;;;;;x
-baron_female_acadien;Chevaliï¿½re;;;;;;;;;x
+baron_female_acadien;Chevalière;;;;;;;;;x
 baron_dixie;Sir;;;;;;;;;x
 count_dixie;Esquire;;;;;;;;;x
 duke_dixie;Colonel;;;;;;;;;x
@@ -76,7 +76,7 @@ baron_female_petropavlovskiy;Boyar;;;;;;;;;;;;;x
 baron_female_portuguese;Baronesa;;;;;;;;;;;;;x
 baron_female_portunhol;Baronesa;;;;;;;;;;;;;x
 baron_female_prairielander;Viscountess;;;;;;;;;;;;;x
-baron_female_quebecois;Chevaliï¿½re;;;;;;;;;x
+baron_female_quebecois;Chevalière;;;;;;;;;x
 baron_female_primorsky;Boyar;;;;;;;;;;;;;x
 baron_gothamite;Patroon;;;;;;;;;;;;;x
 baron_hudsonian;Patroon;;;;;;;;;;;;;x
@@ -84,11 +84,11 @@ baron_mayan;Tupil;;;;;;;;;;;;;x
 baron_metis;Tipayhtum;;;;;;;;;;;;;x
 baron_mikmaq;Autmoin;;;;;;;;;x
 baron_ontarian;Viscount;;;;;;;;;;;;;x
-baron_orinocense;Patrï¿½n;;;;;;;;;;;;;x
+baron_orinocense;Patrón;;;;;;;;;;;;;x
 baron_ozzi;Viscount;;;;;;;;;;;;;x
 baron_petropavlovskiy;Boyar;;;;;;;;;;;;;x
-baron_portuguese;Barï¿½o;;;;;;;;;;;;;x
-baron_portunhol;Barï¿½o;;;;;;;;;;;;;x
+baron_portuguese;Barão;;;;;;;;;;;;;x
+baron_portunhol;Barão;;;;;;;;;;;;;x
 baron_quebecois;Chevalier;;;;;;;;;x
 baron_primorsky;Boyar;;;;;;;;;;;;;x
 barony_americanist;Garrison;;;;;;;;;;;;;x
@@ -122,16 +122,16 @@ barony_of_hudsonian;Patroonship of;;;;;;;;;;;;;x
 barony_of_ontarian;Viscountship of;;;;;;;;;;;;;x
 barony_of_orinocense;Patronato of;;;;;;;;;;;;;x
 barony_of_ozzi;Viscountship of;;;;;;;;;;;;;x
-barony_of_petropavlovskiy;Bojï¿½rynja of;;;;;;;;;;;;;x
+barony_of_petropavlovskiy;Bojárynja of;;;;;;;;;;;;;x
 barony_of_prairielander;Viscountship of;;;;;;;;;;;;;x
-barony_of_primorsky;Bojï¿½rynja of;;;;;;;;;;;;;x
+barony_of_primorsky;Bojárynja of;;;;;;;;;;;;;x
 barony_ontarian;Viscountship;;;;;;;;;;;;;x
 barony_orinocense;Patronato;;;;;;;;;;;;;x
 barony_ozzi;Viscountship;;;;;;;;;;;;;x
-barony_petropavlovskiy;Bojï¿½rynja;;;;;;;;;;;;;x
+barony_petropavlovskiy;Bojárynja;;;;;;;;;;;;;x
 barony_prairielander;Viscountship;;;;;;;;;;;;;x
 barony_purepecha;Ireta of;;;;;;;;;;;;;x
-barony_primorsky;Bojï¿½rynja;;;;;;;;;;;;;x
+barony_primorsky;Bojárynja;;;;;;;;;;;;;x
 barony_zapotec;Guidxihuiini;Guidxihuiini;Guidxihuiini;;Guidxihuiini;;;;;;;;;x
 city_baron_andino;Alcalde;;;;;;;;;;;;;x
 city_baron_brethren;Landsman;;;;;;;;;;;;;x
@@ -211,7 +211,7 @@ city_count_metis;Saaygnyur-Mayr;;;;;;;;;;;;;x
 city_count_orinocense;Gran Alcalde;;;;;;;;;;;;;x
 city_count_rust_cultist;Foreman;;;;;;;;;;;;;x
 city_count_primorsky;Rektor;;;;;;;;;;;;;x
-city_count;Lord Mayor;Seigneur-Maire;Oberbï¿½rgermeister;;Gran Alcalde;;;;;;;;;x
+city_count;Lord Mayor;Seigneur-Maire;Oberbürgermeister;;Gran Alcalde;;;;;;;;;x
 city_county_brethren;Harbor;;;;;;;;;;;;;x
 city_county_chrome_cultist;Shop;;;;;;;;;;;;;x
 city_county_consumerist;Franchise;;;;;;;;;;;;;x
@@ -227,7 +227,7 @@ city_county_of_novorusskiy;Okrug of;;;;;;;;;;;;;x
 city_county_of_petropavlovskiy;Raion of;;;;;;;;;;;;;x
 city_county_of_rust_cultist;Shop of;;;;;;;;;;;;;x
 city_county_of_primorsky;Raion of;;;;;;;;;;;;;x
-city_county_of;Grand City of;Grande Citï¿½ de;Groï¿½stadt;;Ciudad de;;;;;;;;;x
+city_county_of;Grand City of;Grande Cité de;Großstadt;;Ciudad de;;;;;;;;;x
 city_county_petropavlovskiy;Raion;;;;;;;;;;;;;x
 city_county_rust_cultist;Shop;;;;;;;;;;;;;x
 city_county_primorsky;Raion;;;;;;;;;;;;;x
@@ -455,9 +455,9 @@ county_edokko;Hakukoku;;;;;;;;;;;;;x
 county_gaian;Habitat;;;;;;;;;;;;;x
 county_maritimer;Lordship;;;;;;;;;;;;;x
 county_metis;La Tayr di;;;;;;;;;;;;;x
-county_mixtec;ï¿½uu ka'nu;ï¿½uu ka'nu;ï¿½uu ka'nu;;ï¿½uu ka'nu;;;;;;;;;x
+county_mixtec;Ñuu ka'nu;Ñuu ka'nu;Ñuu ka'nu;;Ñuu ka'nu;;;;;;;;;x
 county_nahua;Ueyikalpan;Ueyikalpan;Ueyikalpan;;Ueyikalpan;;;;;;;;;x
-county_raramuri;Walï¿½lachi;Walï¿½lachi;Walï¿½lachi;;Walï¿½lachi;;;;;;;;;x
+county_raramuri;Walúlachi;Walúlachi;Walúlachi;;Walúlachi;;;;;;;;;x
 county_newfie;Lordship;;;;;;;;;;;;;x
 county_novorusskiy;Raion;;;;;;;;;;;;;x
 county_of_alaskan;Borough of;;;;;;;;;;;;;x
@@ -553,7 +553,7 @@ duke_americanist;Colonel;;;;;;;;;;;;;x
 duke_hamiltonian;Colonel;;;;;;;;;;;;;x
 duke_jeffersonian;Colonel;;;;;;;;;;;;;x
 duke_libertarian;Colonel;;;;;;;;;;;;;x
-duke_antillais;Chï¿½f;;;;;;;;;;;;;x
+duke_antillais;Chèf;;;;;;;;;;;;;x
 duke_appalachian;Grand Duke;;;;;;;;;;;;;x
 duke_brethren;Commodore;;;;;;;;;;;;;x
 duke_canuck;Marquis;;;;;;;;;;;;;x
@@ -623,7 +623,7 @@ emperor_americanist;Supreme Commander;;;;;;;;;;;;;x
 emperor_hamiltonian;Supreme Commander;;;;;;;;;;;;;x
 emperor_jeffersonian;Supreme Commander;;;;;;;;;;;;;x
 emperor_libertarian;Supreme Commander;;;;;;;;;;;;;x
-emperor_antillais;Anperï¿½;;;;;;;;;;;;;x
+emperor_antillais;Anperè;;;;;;;;;;;;;x
 emperor_brethren;Grand Admiral;;;;;;;;;;;;;x
 emperor_consumerist;Chairman;;;;;;;;;;;;;x
 emperor_edokko;Tenno;;;;;;;;;;;;;x
@@ -662,7 +662,7 @@ empire_consumerist;Conglomerate;;;;;;;;;;;;;x
 empire_edokko;Teikoku;;;;;;;;;;;;;x
 empire_gaian;Bioregion;;;;;;;;;;;;;x
 empire_female_americanist;Command;;;;;;;;;;;;;x
-empire_raramuri;Napawï¿½kami Pobï¿½ro;Napawï¿½kami Pobï¿½ro;Napawï¿½kami Pobï¿½ro;;Napawï¿½kami Pobï¿½ro;;;;;;;;;x
+empire_raramuri;Napawíkami Pobóro;Napawíkami Pobóro;Napawíkami Pobóro;;Napawíkami Pobóro;;;;;;;;;x
 empire_novorusskiy;Tsardom;;;;;;;;;;;;;x
 empire_of_americanist;Command of;;;;;;;;;;;;;x
 empire_of_hamiltonian;Command of;;;;;;;;;;;;;x
@@ -679,7 +679,7 @@ empire_of_edokko;Teikoku of;;;;;;;;;;;;;x
 empire_of_gaian;Bioregion of;;;;;;;;;;;;;x
 empire_of_novorusskiy;Tsardom of;;;;;;;;;;;;;x
 empire_of_petropavlovskiy;Imperiya of;;;;;;;;;;;;;x
-empire_of_purepecha;Camï¿½caten of;;;;;;;;;;;;;x
+empire_of_purepecha;Camácaten of;;;;;;;;;;;;;x
 empire_of_rust_cultist;Autarchy of;;;;;;;;;;;;;x
 empire_of_primorskiy;Tsardom of;;;;;;;;;;;;;x
 empire_petropavlovskiy;Imperiya;;;;;;;;;;;;;x
@@ -716,7 +716,7 @@ job_chancellor_purepecha;Cihuacoatl;Cihuacoatl;Cihuacoatl;;Cihuacoatl;;;;;;;;;x 
 job_chancellor_quebecois;Gouverneur;;;;;;;;;;;;;x
 job_chancellor_primorskiy;Upravlyayushchiy Soveta;;;;;;;;;;;;;x
 job_chancellor_zapotec;Cihuacoatl;Cihuacoatl;Cihuacoatl;;Cihuacoatl;;;;;;;;;x #this is really more of a prime minister, need to find a different thing for chancellor
-job_marshal_acadien;Lieutenant-gï¿½nï¿½ral;;;;;;;;;;;;;x
+job_marshal_acadien;Lieutenant-général;;;;;;;;;;;;;x
 job_marshal_americanist;Secretary of Defense;;;;;;;;;;;;;x
 job_marshal_antillais;Minister of Defence;;;;;;;;;;;;;x
 job_marshal_brethren;Captain of Marines;;;;;;;;;;;;;x
@@ -736,11 +736,11 @@ job_marshal_nahua;Tlacateccatl;Tlacateccatl;Tlacateccatl;;Tlacateccatl;;;;;;;;;x
 job_marshal_newfie;Minister of Defence;;;;;;;;;;;;;x
 job_marshal_novorusskiy;Narkomvoyenmor;;;;;;;;;;;;;x
 job_marshal_ontarian;Minister of Defence;;;;;;;;;;;;;x
-job_marshal_ontarois;Lieutenant-gï¿½nï¿½ral;;;;;;;;;;;;;x
+job_marshal_ontarois;Lieutenant-général;;;;;;;;;;;;;x
 job_marshal_petropavlovskiy;Narkomvoyenmor;;;;;;;;;;;;;x
 job_marshal_prairielander;Minister of Defence;;;;;;;;;;;;;x
 job_marshal_purepecha;Tlacateccatl;Tlacateccatl;Tlacateccatl;;Tlacateccatl;;;;;;;;;x
-job_marshal_quebecois; Lieutenant-gï¿½nï¿½ral;;;;;;;;;;;;;x
+job_marshal_quebecois; Lieutenant-général;;;;;;;;;;;;;x
 job_marshal_primorskiy;Narkomvoyenmor;;;;;;;;;;;;;x
 job_marshal_zapotec;Tlacateccatl;Tlacateccatl;Tlacateccatl;;Tlacateccatl;;;;;;;;;x
 job_marshal_gaian;Second-Hand;;;;;;;;;;;;;x
@@ -758,14 +758,14 @@ job_spiritual_hamiltonian;Attorney General;;;;;;;;;;;;;x
 job_spiritual_jeffersonian;Attorney General;;;;;;;;;;;;;x
 job_spiritual_libertarian;Attorney General;;;;;;;;;;;;;x
 job_spiritual_mixtec;Sutu;Sutu;Sutu;;Sutu;;;;;;;;;x
-job_spiritual_nahua;Sahagun;Sahagï¿½n;Sahagun;;Sahagun;;;;;;;;;x
+job_spiritual_nahua;Sahagun;Sahagún;Sahagun;;Sahagun;;;;;;;;;x
 job_spiritual_peyotist;First Roadman;;;;;;;;;;;;;x
-job_spiritual_purepecha;Petï¿½muti;Petï¿½muti;Petï¿½muti;;Petï¿½muti;;;;;;;;;x
-job_spiritual_purepecha;Owirï¿½ame;Owirï¿½ame;Owirï¿½ame;;Owirï¿½ame;;;;;;;;;x
+job_spiritual_purepecha;Petámuti;Petámuti;Petámuti;;Petámuti;;;;;;;;;x
+job_spiritual_purepecha;Owirúame;Owirúame;Owirúame;;Owirúame;;;;;;;;;x
 job_spiritual_trailwalker_reformed;Trailblazer;;;;;;;;;;;;;x
 job_spiritual_trailwalker;Trailblazer;;;;;;;;;;;;;x
 job_spiritual_voodoo;Court Houngan;;;;;;;;;;;;;x
-job_spiritual_zapotec;Sahagun;Sahagï¿½n;Sahagun;;Sahagun;;;;;;;;;x
+job_spiritual_zapotec;Sahagun;Sahagún;Sahagun;;Sahagun;;;;;;;;;x
 job_spiritual_evangelical;Pastor;;;;;;;;;;;;;x
 job_spiritual_charismatic;Preacher;;;;;;;;;;;;;x
 job_spiritual_antinomian;Pastor;;;;;;;;;;;;;x
@@ -855,9 +855,9 @@ king_female_jewish_group;Malcah;;;;;;;;;;;;;x
 king_female_lacandon;Ix Halach Uinic;;;;;;;;;;;;;x
 king_female_metis;Renn;;;;;;;;;;;;;x
 king_female_mikmaq;Sakmow;;;;;;;;;x
-king_female_mixtec;ï¿½a'a Tï¿½tnuni;ï¿½a'a Tï¿½tnuni;ï¿½a'a Tï¿½tnuni;;ï¿½a'a Tï¿½tnuni;;;;;;;;;x
+king_female_mixtec;Ña'a Tátnuni;Ña'a Tátnuni;Ña'a Tátnuni;;Ña'a Tátnuni;;;;;;;;;x
 king_female_nahua;Ueyisiuatekiuajketl;Ueyisiuatekiuajketl;Ueyisiuatekiuajketl;;Ueyisiuatekiuajketl;;;;;;;;;x
-king_female_raramuri;Walï¿½ Silï¿½ame;Walï¿½ Silï¿½ame;Walï¿½ Silï¿½ame;;Walï¿½ Silï¿½ame;;;;;;;;;x
+king_female_raramuri;Walú Silíame;Walú Silíame;Walú Silíame;;Walú Silíame;;;;;;;;;x
 king_female_neogodbeite;High Judge;;;;;;;;;;;;;x
 king_female_novorusskiy;Velikaya Knyaginya;;;;;;;;;;;;;x
 king_female_ojibwe;Gichi-Ogimaakwe;;;;;;;;;x
@@ -879,16 +879,16 @@ king_jewish_group;Melech;;;;;;;;;;;;;x
 king_lacandon;Halach Uinic;;;;;;;;;;;;;x
 king_metis;Rway;;;;;;;;;;;;;x
 king_mikmaq;Sakmow;;;;;;;;;x
-king_mixtec;Tee Tï¿½tnuni;Tee Tï¿½tnuni;Tee Tï¿½tnuni;;Tee Tï¿½tnuni;;;;;;;;;x
+king_mixtec;Tee Tátnuni;Tee Tátnuni;Tee Tátnuni;;Tee Tátnuni;;;;;;;;;x
 king_nahua;Ueyitekiuajketl;Ueyitekiuajketl;Ueyitekiuajketl;;Ueyitekiuajketl;;;;;;;;;x
-king_raramuri;Walï¿½ Silï¿½ame;Walï¿½ Silï¿½ame;Walï¿½ Silï¿½ame;;Walï¿½ Silï¿½ame;;;;;;;;;x
+king_raramuri;Walú Silíame;Walú Silíame;Walú Silíame;;Walú Silíame;;;;;;;;;x
 king_neogodbeite;High Judge;;;;;;;;;;;;;x
 king_novorusskiy;Velikiy Knyaz;;;;;;;;;;;;;x
 king_ojibwe;Gichi-Ogimaa;;;;;;;;;x
 king_petropavlovskiy;Velikiy Printseps;;;;;;;;;;;;;x
 king_portuguese;Rei;;;;;;;;;;;;;x
 king_portunhol;Rei;;;;;;;;;;;;;x
-king_purepecha;Irï¿½cha;Irï¿½cha;Irï¿½cha;;Irï¿½cha;;;;;;;;;x
+king_purepecha;Irécha;Irécha;Irécha;;Irécha;;;;;;;;;x
 king_quebecois;Roi;;;;;;;;;;;;;x
 king_quichean;Ajawal;;;;;;;;;;;;;x
 king_rust_cultist;Tycoon;;;;;;;;;;;;;x
@@ -900,7 +900,7 @@ kingdom_americanist;Department;;;;;;;;;;;;;x
 kingdom_hamiltonian;Department;;;;;;;;;;;;;x
 kingdom_jeffersonian;Department;;;;;;;;;;;;;x
 kingdom_libertarian;Department;;;;;;;;;;;;;x
-kingdom_antillais;Wayï¿½m;;;;;;;;;;;;;x
+kingdom_antillais;Wayòm;;;;;;;;;;;;;x
 kingdom_brethren;Admiralty;;;;;;;;;;;;;x
 kingdom_cholano;K'uhul Ajawil;;;;;;;;;;;;;x
 kingdom_chrome_cultist;Tycoonship;;;;;;;;;;;;;x
@@ -911,13 +911,13 @@ kingdom_jewish_group;Mamlachah;;;;;;;;;;;;;x
 kingdom_lacandon;K'uhul Ajawil;;;;;;;;;;;;;x
 kingdom_mixtec;Yuu teyu;Yuu teyu;Yuu teyu;;Yuu teyu;;;;;;;;;x
 kingdom_nahua;Ueyitekiuajyotl;Ueyitekiuajyotl;Ueyitekiuajyotl;;Ueyitekiuajyotl;;;;;;;;;x
-kingdom_raramuri;Walï¿½ Tisola;Walï¿½ Tisola;Walï¿½ Tisola;;Walï¿½ Tisola;;;;;;;;;x
+kingdom_raramuri;Walú Tisola;Walú Tisola;Walú Tisola;;Walú Tisola;;;;;;;;;x
 kingdom_novorusskiy;Grand Principality;;;;;;;;;;;;;x
 kingdom_of_americanist;Department of;;;;;;;;;;;;;x
 kingdom_of_hamiltonian;Department of;;;;;;;;;;;;;x
 kingdom_of_jeffersonian;Department of;;;;;;;;;;;;;x
 kingdom_of_libertarian;Department of;;;;;;;;;;;;;x
-kingdom_of_antillais;Wayï¿½m of;;;;;;;;;;;;;x
+kingdom_of_antillais;Wayòm of;;;;;;;;;;;;;x
 kingdom_of_brethren;Admiralty of;;;;;;;;;;;;;x
 kingdom_of_cholano;Tayrayn di;;;;;;;;;;;;;x
 kingdom_of_chrome_cultist;Tycoonship of;;;;;;;;;;;;;x
@@ -928,92 +928,92 @@ kingdom_of_jewish_group;Mamlachah of;;;;;;;;;;;;;x
 kingdom_of_lacandon;Tayrayn di;;;;;;;;;;;;;x
 kingdom_of_mixtec;Yuu teyu of;;;;;;;;;;;;;x #bedmat-seat. Historical name implying pairing between two or more lordships
 kingdom_of_nahua;Ueyitekiuajyotl of;;;;;;;;;;;;;x
-kingdom_of_raramuri;Walï¿½ Tisola of;;;;;;;;;;;;;x
+kingdom_of_raramuri;Walú Tisola of;;;;;;;;;;;;;x
 kingdom_of_novorusskiy;Grand Principality of;;;;;;;;;;;;;x
 kingdom_of_ontarian;Province of;;;;;;;;;;;;;x
 kingdom_of_petropavlovskiy;Grand Principality of;;;;;;;;;;;;;x
-kingdom_of_purepecha;Irï¿½chekwa of;;;;;;;;;;;;;x
+kingdom_of_purepecha;Iréchekwa of;;;;;;;;;;;;;x
 kingdom_of_quichean;Tayrayn di;;;;;;;;;;;;;x
 kingdom_of_rust_cultist;Tycoonship of;;;;;;;;;;;;;x
 kingdom_of_primorskiy;Grand Principality of;;;;;;;;;;;;;x
 kingdom_of_zapotec;Guidxi of;;;;;;;;;;;;;x
 kingdom_petropavlovskiy;Grand Principality;;;;;;;;;;;;;x
-kingdom_purepecha;Irï¿½chekwa;Irï¿½chekwa;Irï¿½chekwa;;Irï¿½chekwa;;;;;;;;;x
+kingdom_purepecha;Iréchekwa;Iréchekwa;Iréchekwa;;Iréchekwa;;;;;;;;;x
 kingdom_quichean;K'uhul Ajawil;;;;;;;;;;;;;x
 kingdom_rust_cultist;Tycoonship;;;;;;;;;;;;;x
 kingdom_primorskiy;Grand Principality;;;;;;;;;;;;;x
 kingdom_zapotec;Guidxi;Guidxi;Guidxi;;Guidxi;;;;;;;;;x
 nomadic_emperor_blackfoot;Ohkinniinaa;;;;;;;;;;;;;x
 nomadic_emperor_cree;Kihchi Okimahkan;;;;;;;;;;;;;x
-nomadic_emperor_crow;ï¿½ipche akeï¿½;;;;;;;;;;;;;x
-nomadic_emperor_cheyenne;Vï¿½ho;;;;;;;;;;;;;x
+nomadic_emperor_crow;Íipche akeé;;;;;;;;;;;;;x
+nomadic_emperor_cheyenne;Vého;;;;;;;;;;;;;x
 nomadic_emperor_female_blackfoot;Ohkiimaan;;;;;;;;;;;;;x
-nomadic_emperor_female_cree;Wï¿½wimï¿½w;;;;;;;;;;;;;x
-nomadic_emperor_female_crow;Bï¿½asshee;;;;;;;;;;;;;x
-nomadic_emperor_female_cheyenne;Vï¿½hï¿½nï¿½'e;;;;;;;;;;;;;x
+nomadic_emperor_female_cree;Wîwimâw;;;;;;;;;;;;;x
+nomadic_emperor_female_crow;Bíasshee;;;;;;;;;;;;;x
+nomadic_emperor_female_cheyenne;Véhóná'e;;;;;;;;;;;;;x
 nomadic_emperor_female_llanero;Gran Cabecilla;;;;;;;;;;;;;x
 nomadic_emperor_female_metis;Chef Faam;;;;;;;;;;;;;x
 nomadic_emperor_female_prairielander;Hetmaness;;;;;;;;;;;;;x
-nomadic_emperor_female_sioux;Tawiï¿½u;;;;;;;;;;;;;x
+nomadic_emperor_female_sioux;Tawiçu;;;;;;;;;;;;;x
 nomadic_emperor_female;Ma'am;;;;;;;;;;;;;x
 nomadic_emperor_llanero;Gran Cabecilla;;;;;;;;;;;;;x
 nomadic_emperor_metis;Prizidaan Exovede;;;;;;;;;;;;;x
 nomadic_emperor_prairielander;Hetman;;;;;;;;;;;;;x
-nomadic_emperor_sioux;Itaï¿½ï¿½aï¿½;;;;;;;;;;;;;x
+nomadic_emperor_sioux;Itaåçaå;;;;;;;;;;;;;x
 nomadic_emperor;Sheriff;;;;;;;;;;;;;x
 nomadic_empire_blackfoot;Awahsin;;;;;;;;;;;;;x
-nomadic_empire_cree;Paskwï¿½w;;;;;;;;;;;;;x
-nomadic_empire_crow;Ashkootï¿½a;;;;;;;;;;;;;x
-nomadic_empire_cheyenne;Manahï¿½ho'e;;;;;;;;;;;;;x
+nomadic_empire_cree;Paskwâw;;;;;;;;;;;;;x
+nomadic_empire_crow;Ashkootáa;;;;;;;;;;;;;x
+nomadic_empire_cheyenne;Manahého'e;;;;;;;;;;;;;x
 nomadic_empire_llanero;Llano;;;;;;;;;;;;;x
 nomadic_empire_metis;Mishchaytowuk;;;;;;;;;;;;;x
 nomadic_empire_of_blackfoot;Awahsin of;;;;;;;;;;;;;x
-nomadic_empire_of_cree;Paskwï¿½w of;;;;;;;;;;;;;x
-nomadic_empire_of_crow;Ashkootï¿½a of;;;;;;;;;;;;;x
-nomadic_empire_of_cheyenne;Manahï¿½ho'e of;;;;;;;;;;;;;x
+nomadic_empire_of_cree;Paskwâw of;;;;;;;;;;;;;x
+nomadic_empire_of_crow;Ashkootáa of;;;;;;;;;;;;;x
+nomadic_empire_of_cheyenne;Manahého'e of;;;;;;;;;;;;;x
 nomadic_empire_of_llanero;Llano of;;;;;;;;;;;;;x
 nomadic_empire_of_metis;Mishchaytowuk di;;;;;;;;;;;;;x
 nomadic_empire_of_prairielander;Hetmanate of;;;;;;;;;;;;;x
-nomadic_empire_of_sioux;Oblï¿½ye of;;;;;;;;;;;;;x
+nomadic_empire_of_sioux;Obláye of;;;;;;;;;;;;;x
 nomadic_empire_of;Department of;;;;;;;;;;;;;x
 nomadic_empire_prairielander;Hetmanate;;;;;;;;;;;;;x
-nomadic_empire_sioux;Oblï¿½ye;;;;;;;;;;;;;x
+nomadic_empire_sioux;Obláye;;;;;;;;;;;;;x
 nomadic_empire;Department;;;;;;;;;;;;;x
-nomadic_king_blackfoot;Nï¿½naa;;;;;;;;;;;;;x
-nomadic_king_cree;Okimahkï¿½n;;;;;;;;;;;;;x
-nomadic_king_crow;Ashakeï¿½;;;;;;;;;;;;;x
-nomadic_king_cheyenne;Vï¿½hï¿½ï¿½so;;;;;;;;;;;;;x
+nomadic_king_blackfoot;Nínaa;;;;;;;;;;;;;x
+nomadic_king_cree;Okimahkân;;;;;;;;;;;;;x
+nomadic_king_crow;Ashakeé;;;;;;;;;;;;;x
+nomadic_king_cheyenne;Véhóéso;;;;;;;;;;;;;x
 nomadic_king_female_blackfoot;Issohkiimaan;;;;;;;;;;;;;x
 nomadic_king_female_cree;Owikimakana;;;;;;;;;;;;;x
-nomadic_king_female_crow;Uï¿½;;;;;;;;;;;;;x
-nomadic_king_female_cheyenne;Vï¿½hï¿½nï¿½'e;;;;;;;;;;;;;x
+nomadic_king_female_crow;Uá;;;;;;;;;;;;;x
+nomadic_king_female_cheyenne;Véhóná'e;;;;;;;;;;;;;x
 nomadic_king_female_llanero;Cabecilla;;;;;;;;;;;;;x
 nomadic_king_female_metis;Ahkwatishiw;;;;;;;;;;;;;x
 nomadic_king_female_prairielander;Atamaness;;;;;;;;;;;;;x
-nomadic_king_female_sioux;Wiï¿½yaï¿½;;;;;;;;;;;;;x
+nomadic_king_female_sioux;Wiåyaå;;;;;;;;;;;;;x
 nomadic_king_female;Missus;;;;;;;;;;;;;x
 nomadic_king_llanero;Cabecilla;;;;;;;;;;;;;x
 nomadic_king_metis;Rway Exovede;;;;;;;;;;;;;x
 nomadic_king_prairielander;Ataman;;;;;;;;;;;;;x
-nomadic_king_sioux;Akiï¿½ita;;;;;;;;;;;;;x
+nomadic_king_sioux;Akiçita;;;;;;;;;;;;;x
 nomadic_king;Deputy;;;;;;;;;;;;;x
-nomadic_kingdom_blackfoot;Ksï¿½ï¿½hko;;;;;;;;;;;;;x
-nomadic_kingdom_cree;ï¿½cï¿½nï¿½s;;;;;;;;;;;;;x
-nomadic_kingdom_crow;Awï¿½;;;;;;;;;;;;;x
+nomadic_kingdom_blackfoot;Ksááhko;;;;;;;;;;;;;x
+nomadic_kingdom_cree;Ôcênâs;;;;;;;;;;;;;x
+nomadic_kingdom_crow;Awé;;;;;;;;;;;;;x
 nomadic_kingdom_cheyenne;Ho'e;;;;;;;;;;;;;x
 nomadic_kingdom_llanero;Llanito;;;;;;;;;;;;;x
 nomadic_kingdom_metis;Naasyoon;;;;;;;;;;;;;x
-nomadic_kingdom_of_blackfoot;Ksï¿½ï¿½hko of;;;;;;;;;;;;;x
-nomadic_kingdom_of_cree;ï¿½cï¿½nï¿½s of;;;;;;;;;;;;;x
-nomadic_kingdom_of_crow;Awï¿½ of;;;;;;;;;;;;;x
+nomadic_kingdom_of_blackfoot;Ksááhko of;;;;;;;;;;;;;x
+nomadic_kingdom_of_cree;Ôcênâs of;;;;;;;;;;;;;x
+nomadic_kingdom_of_crow;Awé of;;;;;;;;;;;;;x
 nomadic_kingdom_of_cheyenne;Ho'e of;;;;;;;;;;;;;x
 nomadic_kingdom_of_llanero;Llanito of;;;;;;;;;;;;;x
 nomadic_kingdom_of_metis;Naasyon di;;;;;;;;;;;;;x
 nomadic_kingdom_of_prairielander;Host of;;;;;;;;;;;;;x
-nomadic_kingdom_of_sioux;Wichï¿½thi of;;;;;;;;;;;;;x
+nomadic_kingdom_of_sioux;Wichóthi of;;;;;;;;;;;;;x
 nomadic_kingdom_of;Range of;;;;;;;;;;;;;x
 nomadic_kingdom_prairielander;Host;;;;;;;;;;;;;x
-nomadic_kingdom_sioux;Wichï¿½thi;;;;;;;;;;;;;x
+nomadic_kingdom_sioux;Wichóthi;;;;;;;;;;;;;x
 nomadic_kingdom;Range;;;;;;;;;;;;;x
 POTENCIA_FOA;Your Benevolence;;;;;;;;;;;;;x
 POTENCIA;Potencia;;;;;;;;;;;;;x
@@ -1044,7 +1044,7 @@ temple_baron_female_afro_syncretic;Priestess;;;;;;;;;;;;;x
 temple_baron_female_americanist;Judge;;;;;;;;;;;;;x
 temple_baron_female_aphite;Adjunct;;;;;;;;;;;;;x
 temple_baron_female_atomicist;Adjunct;;;;;;;;;;;;;x
-temple_baron_female_candomble;Mï¿½e-de-santo;;;;;;;;;;;;;x
+temple_baron_female_candomble;Mãe-de-santo;;;;;;;;;;;;;x
 temple_baron_female_cetic;Teacher;;;;;;;;;;;;;x
 temple_baron_female_chrome_cultist;Stationmaster;;;;;;;;;;;;;x
 temple_baron_female_consumerist;Manager;;;;;;;;;;;;;x
@@ -1109,7 +1109,7 @@ temple_baron_peyotist;Roadman;;;;;;;;;;;;;x
 temple_baron_peyotists;Roadmen;;;;;;;;;;;;;x
 temple_baron_reform;Rabbi;;;;;;;;;;;;;x
 temple_baron_reforms;Rabbis;;;;;;;;;;;;;x
-temple_baron_aria_de_machete_reformeds;Priest;Prï¿½tre;Priester;;Sacerdote;;;;;;;;;x
+temple_baron_aria_de_machete_reformeds;Priest;Prêtre;Priester;;Sacerdote;;;;;;;;;x
 temple_baron_revelationist_reformed;Tonguetalker;;;;;;;;;;;;;x
 temple_baron_revelationist_reformeds;Tonguetalkers;;;;;;;;;;;;;x
 temple_baron_revelationist;Tonguetalker;;;;;;;;;;;;;x
@@ -1188,7 +1188,7 @@ temple_barony_of_trailwalker_reformed;Camp of;;;;;;;;;;;;;x
 temple_barony_trailwalker_reformed;Camp;;;;;;;;;;;;;x
 temple_barony_of_trailwalker;Camp of;;;;;;;;;;;;;x
 temple_barony_trailwalker;Camp;;;;;;;;;;;;;x
-temple_barony_of_ursuline;Prieurï¿½ de;;;;;;;;;;;;;x
+temple_barony_of_ursuline;Prieuré de;;;;;;;;;;;;;x
 temple_barony_of_voodoo;Hounfor of;;;;;;;;;;;;;x
 temple_barony_orthodox;Temple;;;;;;;;;;;;;x
 temple_barony_pacific;Temple;;;;;;;;;;;;;x
@@ -1197,14 +1197,14 @@ temple_barony_reform;Temple;;;;;;;;;;;;;x
 temple_barony_rust_cultist;Station;;;;;;;;;;;;;x
 temple_barony_santeria;Cabildo;;;;;;;;;;;;;x
 temple_barony_shinto;Shrine;;;;;;;;;;;;;x
-temple_barony_ursuline;Prieurï¿½;;;;;;;;;;;;;x
+temple_barony_ursuline;Prieuré;;;;;;;;;;;;;x
 temple_barony_voodoo;Hounfor;;;;;;;;;;;;;x
 temple_count_afro_syncretic;High Priest;;;;;;;;;;;;;x
 temple_count_american_native;Shaman-Chief;;;;;;;;;;;;;x
 temple_count_americanist;County Judge;;;;;;;;;;;;;x
 temple_count_aphite;Professor;;;;;;;;;;;;;x
 temple_count_atomicist;Professor;;;;;;;;;;;;;x
-temple_count_catholic;Prince-Bishop;Prince-ï¿½vï¿½que;Prinz-Bischof;;Prï¿½ncipe obispo;;;;;;;;;x
+temple_count_catholic;Prince-Bishop;Prince-évêque;Prinz-Bischof;;Príncipe obispo;;;;;;;;;x
 temple_count_cetic;Master;;;;;;;;;;;;;x
 temple_count_christian;Canon;;;;;;;;;;;;;x
 temple_count_chrome_cultist;Conductor;;;;;;;;;;;;;x
@@ -1218,7 +1218,7 @@ temple_count_female_afro_syncretic;High Priestess;;;;;;;;;;;;;x
 temple_count_female_americanist;County Judge;;;;;;;;;;;;;x
 temple_count_female_aphite;Professor;;;;;;;;;;;;;x
 temple_count_female_atomicist;Professor;;;;;;;;;;;;;x
-temple_count_female_catholic;Princess-Bishop;Prince-ï¿½vï¿½que;Prinz-Bischof;;Prï¿½ncipe obispo;;;;;;;;;x
+temple_count_female_catholic;Princess-Bishop;Prince-évêque;Prinz-Bischof;;Príncipe obispo;;;;;;;;;x
 temple_count_female_celtic;Mistress;;;;;;;;;;;;;x
 temple_count_female_christian;Canoness;;;;;;;;;;;;;x
 temple_count_female_chrome_cultist;Conductor;;;;;;;;;;;;;x
@@ -1268,14 +1268,14 @@ temple_count_glorian;Chairman;;;;;;;;;;;;;x
 temple_count_thelema;Philosophus;;;;;;;;;;;;;x
 temple_count_trailwalker_reformed;Explorer;;;;;;;;;;;;;x
 temple_count_trailwalker;Explorer;;;;;;;;;;;;;x
-temple_count_ursuline;Abbï¿½;;;;;;;;;;;;;x
+temple_count_ursuline;Abbé;;;;;;;;;;;;;x
 temple_count_voodoo;Houngan Sur Pwen;;;;;;;;;;;;;x
-temple_county_afro_syncretic;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_county_afro_syncretic;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_county_american_native;Shaman-Chiefdom;;;;;;;;;;;;;x
 temple_county_americanist;County Court;;;;;;;;;;;;;x
 temple_county_aphite;College;;;;;;;;;;;;;x
 temple_county_atomicist;College;;;;;;;;;;;;;x
-temple_county_catholic;Prince-Bishopric;ï¿½vï¿½chï¿½ princier;Prinzen-Bistum;;Obispado;;;;;;;;;x
+temple_county_catholic;Prince-Bishopric;Évêché princier;Prinzen-Bistum;;Obispado;;;;;;;;;x
 temple_county_cetic;School;;;;;;;;;;;;;x
 temple_county_christian;Canonate;;;;;;;;;;;;;x;
 temple_county_chrome_cultist;Conductorship;;;;;;;;;;;;;x
@@ -1289,7 +1289,7 @@ temple_county_hamiltonian;County Court;;;;;;;;;;;;;x
 temple_county_jeffersonian;County Court;;;;;;;;;;;;;x
 temple_county_latter_day_saints;Stake;;;;;;;;;;;;;x
 temple_county_libertarian;County Court;;;;;;;;;;;;;x
-temple_county_mesoamerican_gods;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_county_mesoamerican_gods;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_county_nautical;Lighthouse;;;;;;;;;;;;;x
 temple_county_glorian;Council;;;;;;;;;;;;;x
 temple_county_thelema;Great Temple;;;;;;;;;;;;;x
@@ -1300,7 +1300,7 @@ temple_county_of_american_native;Shaman-Chiefdom of;;;;;;;;;;;;;x
 temple_county_of_americanist;County Court of;;;;;;;;;;;;;x
 temple_county_of_aphite;College of;;;;;;;;;;;;;x
 temple_county_of_atomicist;College of;;;;;;;;;;;;;x
-temple_county_of_catholic;Prince-Bishopric of;ï¿½vï¿½chï¿½ Princier de;Prinz-Bistum von;;Arzobispado Prï¿½ncipe de;;;;;;;;;x
+temple_county_of_catholic;Prince-Bishopric of;Évêché Princier de;Prinz-Bistum von;;Arzobispado Príncipe de;;;;;;;;;x
 temple_county_of_cetic;School of;;;;;;;;;;;;;x
 temple_county_of_christian;Canonate of;;;;;;;;;;;;;x
 temple_county_of_chrome_cultist;Conductorship of;;;;;;;;;;;;;x
@@ -1336,12 +1336,12 @@ temple_county_peyotist;Roadman-Chiefdom;;;;;;;;;;;;;x
 temple_county_rust_cultist;Conductorship;;;;;;;;;;;;;x
 temple_county_ursuline;Abbaye;;;;;;;;;;;;;x
 temple_county_voodoo;Peristil;;;;;;;;;;;;;x
-temple_duchy_afro_syncretic;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_duchy_afro_syncretic;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_duchy_american_native;Shaman-Lordship;;;;;;;;;;;;;x
 temple_duchy_americanist;High Court;;;;;;;;;;;;;x
 temple_duchy_aphite;University;;;;;;;;;;;;;x
 temple_duchy_atomicist;University;;;;;;;;;;;;;x
-temple_duchy_catholic;Prince-Archbishopric;Archevï¿½chï¿½ princier;Prinzen-Erzbistum;;Arzobispado;;;;;;;;;x
+temple_duchy_catholic;Prince-Archbishopric;Archevêché princier;Prinzen-Erzbistum;;Arzobispado;;;;;;;;;x
 temple_duchy_cetic;Lamate;;;;;;;;;;;;;x
 temple_duchy_christian;Metropolis;;;;;;;;;;;;;x
 temple_duchy_chrome_cultist;Inspectorate;;;;;;;;;;;;;x
@@ -1355,7 +1355,7 @@ temple_duchy_hamiltonian;High Court;;;;;;;;;;;;;x
 temple_duchy_jeffersonian;High Court;;;;;;;;;;;;;x
 temple_duchy_latter_day_saints;Area;;;;;;;;;;;;;x
 temple_duchy_libertarian;High Court;;;;;;;;;;;;;x
-temple_duchy_mesoamerican_gods;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_duchy_mesoamerican_gods;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_duchy_nautical;Course;;;;;;;;;;;;;x
 temple_duchy_glorian;Grand Council;;;;;;;;;;;;;x
 temple_duchy_thelema;Theurgy;;;;;;;;;;;;;x
@@ -1366,7 +1366,7 @@ temple_duchy_of_american_native;Shaman-Lordship of;;;;;;;;;;;;;x
 temple_duchy_of_americanist;District Court of;;;;;;;;;;;;;x
 temple_duchy_of_aphite;University of;;;;;;;;;;;;;x
 temple_duchy_of_atomicist;University of;;;;;;;;;;;;;x
-temple_duchy_of_catholic;Prince-Archbishopric of;Archevï¿½chï¿½ Princier de;Prinz-Erzbistum von;;Arzobispado Prï¿½ncipe de;;;;;;;;;x
+temple_duchy_of_catholic;Prince-Archbishopric of;Archevêché Princier de;Prinz-Erzbistum von;;Arzobispado Príncipe de;;;;;;;;;x
 temple_duchy_of_cetic;Lamate;;;;;;;;;;;;;x
 temple_duchy_of_christian;Metropolis of;;;;;;;;;;;;;x
 temple_duchy_of_chrome_cultist;Inspectorate of;;;;;;;;;;;;;x
@@ -1406,13 +1406,13 @@ temple_duke_american_native;Shaman-Lord;;;;;;;;;;;;;x
 temple_duke_americanist;District Judge;;;;;;;;;;;;;x
 temple_duke_aphite;Lord Provost;;;;;;;;;;;;;x
 temple_duke_atomicist;Lord Provost;;;;;;;;;;;;;x
-temple_duke_catholic;Prince-Archbishop;Prince Archevï¿½que;Prinz-Erzbischof;;Prï¿½ncipe arzobispo;;;;;;;;;x
+temple_duke_catholic;Prince-Archbishop;Prince Archevêque;Prinz-Erzbischof;;Príncipe arzobispo;;;;;;;;;x
 temple_duke_cetic;Lama;;;;;;;;;;;;;x
 temple_duke_christian;Metropolitan;;;;;;;;;;;;;x
 temple_duke_chrome_cultist;Inspector;;;;;;;;;;;;;x
 temple_duke_consumerist;Managing Director;;;;;;;;;;;;;x
 temple_duke_cult_of_saints;Prince-Padre;;;;;;;;;;;;;x
-temple_duke_espiritista;Orï¿½culo;;;;;;;;;;;;;x
+temple_duke_espiritista;Oráculo;;;;;;;;;;;;;x
 temple_duke_exovedate;Aarshivayk;;;;;;;;;;;;;x
 temple_duke_falling_star;Presbyter;;;;;;;;;;;;;x
 temple_duke_falling_stars;Presbyters;;;;;;;;;;;;;x
@@ -1420,7 +1420,7 @@ temple_duke_female_afro_syncretic;Archpriestess;;;;;;;;;;;;;x
 temple_duke_female_americanist;District Judge;;;;;;;;;;;;;x
 temple_duke_female_aphite;Lord Provost;;;;;;;;;;;;;x
 temple_duke_female_atomicist;Lord Provost;;;;;;;;;;;;;x
-temple_duke_female_catholic;Princess-Archbishop;Prince Archevï¿½que;Prinz-Erzbischof;;Prï¿½ncipe arzobispo;;;;;;;;;x
+temple_duke_female_catholic;Princess-Archbishop;Prince Archevêque;Prinz-Erzbischof;;Príncipe arzobispo;;;;;;;;;x
 temple_duke_female_celtic;Lama;;;;;;;;;;;;;x
 temple_duke_female_christian;Metropolitan;;;;;;;;;;;;;x
 temple_duke_female_chrome_cultist;Inspector;;;;;;;;;;;;;x
@@ -1445,7 +1445,7 @@ temple_duke_female_glorian;First Secretary;;;;;;;;;;;;;x
 temple_duke_female_thelema;Dominus Liminis;;;;;;;;;;;;;x
 temple_duke_female_trailwalker_reformed;Pioneer;;;;;;;;;;;;;x
 temple_duke_female_trailwalker;Pioneer;;;;;;;;;;;;;x
-temple_duke_female_ursuline;Mï¿½re Supï¿½rieure;;;;;;;;;;;;;x
+temple_duke_female_ursuline;Mère Supérieure;;;;;;;;;;;;;x
 temple_duke_female_voodoo;Mambo Asogwe;;;;;;;;;;;;;x
 temple_duke_gaian;Grand Dryad;;;;;;;;;;;;;x
 temple_duke_hamiltonian;High Judge;;;;;;;;;;;;;x
@@ -1466,14 +1466,14 @@ temple_duke_thelema;First Secretary;;;;;;;;;;;;;x
 temple_duke_thelema_reformed;Dominus Liminis;;;;;;;;;;;;;x
 temple_duke_trailwalker_reformed;Pioneer;;;;;;;;;;;;;x
 temple_duke_trailwalker;Pioneer;;;;;;;;;;;;;x
-temple_duke_ursuline;Pï¿½re Supï¿½rieur;;;;;;;;;;;;;x
+temple_duke_ursuline;Père Supérieur;;;;;;;;;;;;;x
 temple_duke_voodoo;Houngan Asogwe;;;;;;;;;;;;;x
 temple_emperor_afro_syncretic;Emperor-Priest;;;;;;;;;;;;;x
 temple_emperor_american_native;Celestial Shaman;;;;;;;;;;;;;x
 temple_emperor_americanist;Chief Justice;;;;;;;;;;;;;x
 temple_emperor_aphite;Academy President;;;;;;;;;;;;;x
 temple_emperor_atomicist;Academy President;;;;;;;;;;;;;x
-temple_emperor_catholic;Emperor-Bishop;Empereur trï¿½s Chrï¿½tien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+temple_emperor_catholic;Emperor-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
 temple_emperor_celtic_pagan;Myrdynn;Myrdynn;;;;;;;;;;;;x
 temple_emperor_cetic;Exalted Master;;;;;;;;;;;;;x
 temple_emperor_christian;Primarch;;;;;;;;;;;;;x
@@ -1485,7 +1485,7 @@ temple_emperor_female_afro_syncretic;Empress-Priestess;;;;;;;;;;;;;x
 temple_emperor_female_americanist;Chief Justice;;;;;;;;;;;;;x
 temple_emperor_female_aphite;Academy President;;;;;;;;;;;;;x
 temple_emperor_female_atomicist;Academy President;;;;;;;;;;;;;x
-temple_emperor_female_catholic;Empress-Bishop;Empereur trï¿½s Chrï¿½tien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
+temple_emperor_female_catholic;Empress-Bishop;Empereur très Chrétien;Kaiser-Bischof;;Emperador-obispo;;;;;;;;;x
 temple_emperor_female_cetic;Exalted Mistress;;;;;;;;;;;;;x
 temple_emperor_female_gaian;Exalted Empress;;;;;;;;;;;;;x
 temple_emperor_female_christian;Primarch;;;;;;;;;;;;;x
@@ -1506,7 +1506,7 @@ temple_emperor_female_glorian;Prime-Chancellor;;;;;;;;;;;;;x
 temple_emperor_female_thelema;Magus;;;;;;;;;;;;;x
 temple_emperor_female_trailwalker_reformed;Manifester;;;;;;;;;;;;;x
 temple_emperor_female_trailwalker;Manifester;;;;;;;;;;;;;x
-temple_emperor_female_ursuline;Supï¿½rieure Gï¿½nï¿½ral;;;;;;;;;;;;;x
+temple_emperor_female_ursuline;Supérieure Général;;;;;;;;;;;;;x
 temple_emperor_female_voodoo;Voodoo Empress;;;;;;;;;;;;;x
 temple_emperor_hamiltonian;Chief Justice;;;;;;;;;;;;;x
 temple_emperor_jeffersonian;Chief Justice;;;;;;;;;;;;;x
@@ -1523,10 +1523,10 @@ temple_emperor_glorian;Prime-Chancellor;;;;;;;;;;;;;x
 temple_emperor_thelema;Magus;;;;;;;;;;;;;x
 temple_emperor_trailwalker_reformed;Manifester;;;;;;;;;;;;;x
 temple_emperor_trailwalker;Manifester;;;;;;;;;;;;;x
-temple_emperor_ursuline;Supï¿½rieur Gï¿½nï¿½ral;;;;;;;;;;;;;x
+temple_emperor_ursuline;Supérieur Général;;;;;;;;;;;;;x
 temple_emperor_voodoo;Voodoo Emperor;;;;;;;;;;;;;x
 temple_emperors_falling_star;Elders;;;;;;;;;;;;;x
-temple_empire_afro_syncretic;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_empire_afro_syncretic;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_empire_american_native;Shaman-Empire;;;;;;;;;;;;;x
 temple_empire_americanist;Supreme Court;;;;;;;;;;;;;x
 temple_empire_aphite;Academy of Sciences;;;;;;;;;;;;;x
@@ -1543,7 +1543,7 @@ temple_empire_hamiltonian;Supreme Court;;;;;;;;;;;;;x
 temple_empire_jeffersonian;Supreme Court;;;;;;;;;;;;;x
 temple_empire_latter_day_saints;Kingdom of God upon the Earth;;;;;;;;;;;;;x
 temple_empire_libertarian;Supreme Court;;;;;;;;;;;;;x
-temple_empire_mesoamerican_gods;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_empire_mesoamerican_gods;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_empire_nautical;Pirate Empire;;;;;;;;;;;;;x
 temple_empire_of_afro_syncretic;Theocracy of;;;;;;;;;;;;;x
 temple_empire_of_american_native;Shaman-Empire of;;;;;;;;;;;;;x
@@ -1583,7 +1583,7 @@ temple_king_american_native;Shaman-King;;;;;;;;;;;;;x
 temple_king_americanist;Circuit Judge;;;;;;;;;;;;;x
 temple_king_aphite;King-Provost;;;;;;;;;;;;;x
 temple_king_atomicist;King-Provost;;;;;;;;;;;;;x
-temple_king_catholic;King-Bishop;Roi trï¿½s Catholique;Kï¿½nig-Bischof;;Rey-obispo;;;;;;;;;x
+temple_king_catholic;King-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
 temple_king_cetic;Grand Master;;;;;;;;;;;;;x
 temple_king_christian;Exarch;;;;;;;;;;;;;x
 temple_king_chrome_cultist;Engineer;;;;;;;;;;;;;x
@@ -1595,7 +1595,7 @@ temple_king_female_afro_syncretic;Queen-Priestess;;;;;;;;;;;;;x
 temple_king_female_americanist;Circuit Judge;;;;;;;;;;;;;x
 temple_king_female_aphite;Queen-Provost;;;;;;;;;;;;;x
 temple_king_female_atomicist;Queen-Provost;;;;;;;;;;;;;x
-temple_king_female_catholic;Queen-Bishop;Roi trï¿½s Catholique;Kï¿½nig-Bischof;;Rey-obispo;;;;;;;;;x
+temple_king_female_catholic;Queen-Bishop;Roi très Catholique;König-Bischof;;Rey-obispo;;;;;;;;;x
 temple_king_female_cetic;Grand Mistress;;;;;;;;;;;;;x
 temple_king_female_christian;Exarch;;;;;;;;;;;;;x
 temple_king_female_chrome_cultist;Engineer;;;;;;;;;;;;;x
@@ -1620,7 +1620,7 @@ temple_king_female_glorian;Chancellor;;;;;;;;;;;;;x
 temple_king_female_thelema;Magister Templi;;;;;;;;;;;;;x
 temple_king_female_trailwalker_reformed;King-Pioneer;;;;;;;;;;;;;x
 temple_king_female_trailwalker;King-Pioneer;;;;;;;;;;;;;x
-temple_king_female_ursuline;Mï¿½re Gï¿½nï¿½rale;;;;;;;;;;;;;x
+temple_king_female_ursuline;Mère Générale;;;;;;;;;;;;;x
 temple_king_female_voodoo;Voodoo Queen;;;;;;;;;;;;;x
 temple_king_hamiltonian;General Judge;;;;;;;;;;;;;x
 temple_king_jeffersonian;General Judge;;;;;;;;;;;;;x
@@ -1641,15 +1641,15 @@ temple_king_glorian;Chancellor;;;;;;;;;;;;;x
 temple_king_thelema;Magister Templi;;;;;;;;;;;;;x
 temple_king_trailwalker_reformed;King-Pioneer;;;;;;;;;;;;;x
 temple_king_trailwalker;King-Pioneer;;;;;;;;;;;;;x
-temple_king_ursuline;Pï¿½re Gï¿½nï¿½ral;;;;;;;;;;;;;x
+temple_king_ursuline;Père Général;;;;;;;;;;;;;x
 temple_king_voodoo;Voodoo King;;;;;;;;;;;;;x
-temple_kingdom_afro_syncretic;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_kingdom_afro_syncretic;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_kingdom_american_native;Shaman-Kingdom;;;;;;;;;;;;;x
 temple_kingdom_americanist;General Court;;;;;;;;;;;;;x
 temple_kingdom_aphite;Grand University;;;;;;;;;;;;;x
 temple_kingdom_atomicist;Grand University;;;;;;;;;;;;;x
-temple_kingdom_catholic;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
-temple_kingdom_celtic_pagan;Federation;Fï¿½dï¿½ration;;;;;;;;;;;;x
+temple_kingdom_catholic;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_kingdom_celtic_pagan;Federation;Fédération;;;;;;;;;;;;x
 temple_kingdom_cetic;Academy;;;;;;;;;;;;;x
 temple_kingdom_christian;Exarchate;;;;;;;;;;;;;x
 temple_kingdom_chrome_cultist;Railroad;;;;;;;;;;;;;x
@@ -1660,7 +1660,7 @@ temple_kingdom_hamiltonian;General Court;;;;;;;;;;;;;x
 temple_kingdom_jeffersonian;General Court;;;;;;;;;;;;;x
 temple_kingdom_latter_day_saints;Kingdom of God;;;;;;;;;;;;;x
 temple_kingdom_libertarian;General Court;;;;;;;;;;;;;x
-temple_kingdom_mesoamerican_gods;Theocracy;Thï¿½ocratie;Theokratie;;Teocracia;;;;;;;;;x
+temple_kingdom_mesoamerican_gods;Theocracy;Théocratie;Theokratie;;Teocracia;;;;;;;;;x
 temple_kingdom_nautical;Pirate Kingdom;;;;;;;;;;;;;x
 temple_kingdom_glorian;Chancellorship;;;;;;;;;;;;;x
 temple_kingdom_thelema;Hierophancy;;;;;;;;;;;;;x
@@ -1671,8 +1671,8 @@ temple_kingdom_of_american_native;Shaman-Kingdom of;;;;;;;;;;;;;x
 temple_kingdom_of_americanist;Circuit Court of;;;;;;;;;;;;;x
 temple_kingdom_of_aphite;Grand University of;;;;;;;;;;;;;x
 temple_kingdom_of_atomicist;Grand University of;;;;;;;;;;;;;x
-temple_kingdom_of_catholic;Theocracy of;Thï¿½ocratie de;Theokratie von;;Teocracia de;;;;;;;;;x
-temple_kingdom_of_celtic_pagan;Federation of;Fï¿½dï¿½ration de;;;;;;;;;;;;x
+temple_kingdom_of_catholic;Theocracy of;Théocratie de;Theokratie von;;Teocracia de;;;;;;;;;x
+temple_kingdom_of_celtic_pagan;Federation of;Fédération de;;;;;;;;;;;;x
 temple_kingdom_of_cetic;Academy of;;;;;;;;;;;;;x
 temple_kingdom_of_christian;Exarchate of;;;;;;;;;;;;;x
 temple_kingdom_of_chrome_cultist;Railroad of;;;;;;;;;;;;;x
@@ -1733,12 +1733,12 @@ tribal_duke_norse_pagan;Jarl;;;;;;;;;;;;;x
 tribal_king_female_gaian;Warden-Chieftess;;;;;;;;;;;;;x
 tribal_king_gaian;Warden-Chief;;;;;;;;;;;;;x
 
-count_andino;Seï¿½or;;;;;;;;;;;;;x
-count_female_andino;Seï¿½ora;;;;;;;;;;;;;x
-county_of_andino;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-county_andino;Seï¿½orï¿½o;;;;;;;;;;;;;x
-duke_andino;Marquï¿½s;;;;;;;;;;;;;x
-duke_female_andino;Marquï¿½sa;;;;;;;;;;;;;x
+count_andino;Señor;;;;;;;;;;;;;x
+count_female_andino;Señora;;;;;;;;;;;;;x
+county_of_andino;Señorío of;;;;;;;;;;;;;x
+county_andino;Señorío;;;;;;;;;;;;;x
+duke_andino;Marqués;;;;;;;;;;;;;x
+duke_female_andino;Marquésa;;;;;;;;;;;;;x
 duchy_of_andino;Marquesado of;;;;;;;;;;;;;x
 duchy_andino;Marquesado;;;;;;;;;;;;;x
 king_andino;Rey;;;;;;;;;;;;;x
@@ -1750,12 +1750,12 @@ emperor_female_andino;Emperadora;;;;;;;;;;;;;x
 empire_of_andino;Imperio of;;;;;;;;;;;;;x
 empire_andino;Imperio;;;;;;;;;;;;;x
 
-count_caribeno;Seï¿½or;;;;;;;;;;;;;x
-count_female_caribeno;Seï¿½ora;;;;;;;;;;;;;x
-county_of_caribeno;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-county_caribeno;Seï¿½orï¿½o;;;;;;;;;;;;;x
-duke_caribeno;Marquï¿½s;;;;;;;;;;;;;x
-duke_female_caribeno;Marquï¿½sa;;;;;;;;;;;;;x
+count_caribeno;Señor;;;;;;;;;;;;;x
+count_female_caribeno;Señora;;;;;;;;;;;;;x
+county_of_caribeno;Señorío of;;;;;;;;;;;;;x
+county_caribeno;Señorío;;;;;;;;;;;;;x
+duke_caribeno;Marqués;;;;;;;;;;;;;x
+duke_female_caribeno;Marquésa;;;;;;;;;;;;;x
 duchy_of_caribeno;Marquesado of;;;;;;;;;;;;;x
 duchy_caribeno;Marquesado;;;;;;;;;;;;;x
 king_caribeno;Rey;;;;;;;;;;;;;x
@@ -1767,12 +1767,12 @@ emperor_female_caribeno;Emperadora;;;;;;;;;;;;;x
 empire_of_caribeno;Imperio of;;;;;;;;;;;;;x
 empire_caribeno;Imperio;;;;;;;;;;;;;x
 
-count_centrolatino;Seï¿½or;;;;;;;;;;;;;x
-count_female_centrolatino;Seï¿½ora;;;;;;;;;;;;;x
-county_of_centrolatino;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-county_centrolatino;Seï¿½orï¿½o;;;;;;;;;;;;;x
-duke_centrolatino;Marquï¿½s;;;;;;;;;;;;;x
-duke_female_centrolatino;Marquï¿½sa;;;;;;;;;;;;;x
+count_centrolatino;Señor;;;;;;;;;;;;;x
+count_female_centrolatino;Señora;;;;;;;;;;;;;x
+county_of_centrolatino;Señorío of;;;;;;;;;;;;;x
+county_centrolatino;Señorío;;;;;;;;;;;;;x
+duke_centrolatino;Marqués;;;;;;;;;;;;;x
+duke_female_centrolatino;Marquésa;;;;;;;;;;;;;x
 duchy_of_centrolatino;Marquesado of;;;;;;;;;;;;;x
 duchy_centrolatino;Marquesado;;;;;;;;;;;;;x
 king_centrolatino;Rey;;;;;;;;;;;;;x
@@ -1784,12 +1784,12 @@ emperor_female_centrolatino;Emperadora;;;;;;;;;;;;;x
 empire_of_centrolatino;Imperio of;;;;;;;;;;;;;x
 empire_centrolatino;Imperio;;;;;;;;;;;;;x
 
-count_costero;Seï¿½or;;;;;;;;;;;;;x
-count_female_costero;Seï¿½ora;;;;;;;;;;;;;x
-county_of_costero;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-county_costero;Seï¿½orï¿½o;;;;;;;;;;;;;x
-duke_costero;Marquï¿½s;;;;;;;;;;;;;x
-duke_female_costero;Marquï¿½sa;;;;;;;;;;;;;x
+count_costero;Señor;;;;;;;;;;;;;x
+count_female_costero;Señora;;;;;;;;;;;;;x
+county_of_costero;Señorío of;;;;;;;;;;;;;x
+county_costero;Señorío;;;;;;;;;;;;;x
+duke_costero;Marqués;;;;;;;;;;;;;x
+duke_female_costero;Marquésa;;;;;;;;;;;;;x
 duchy_of_costero;Marquesado of;;;;;;;;;;;;;x
 duchy_costero;Marquesado;;;;;;;;;;;;;x
 king_costero;Rey;;;;;;;;;;;;;x
@@ -1800,15 +1800,15 @@ emperor_costero;Emperador;;;;;;;;;;;;;x
 emperor_female_costero;Emperadora;;;;;;;;;;;;;x
 empire_of_costero;Imperio of;;;;;;;;;;;;;x
 empire_costero;Imperio;;;;;;;;;;;;;x
-king_caraqueno;Sultï¿½n;;;;;;;;;;;;;x
+king_caraqueno;Sultán;;;;;;;;;;;;;x
 king_female_caraqueno;Sultana;;;;;;;;;;;;;x
 
-# count_mexicano;Seï¿½or;;;;;;;;;;;;;x
-# count_female_mexicano;Seï¿½ora;;;;;;;;;;;;;x
-# county_of_mexicano;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-# county_mexicano;Seï¿½orï¿½o;;;;;;;;;;;;;x
-# duke_mexicano;Marquï¿½s;;;;;;;;;;;;;x
-# duke_female_mexicano;Marquï¿½sa;;;;;;;;;;;;;x
+# count_mexicano;Señor;;;;;;;;;;;;;x
+# count_female_mexicano;Señora;;;;;;;;;;;;;x
+# county_of_mexicano;Señorío of;;;;;;;;;;;;;x
+# county_mexicano;Señorío;;;;;;;;;;;;;x
+# duke_mexicano;Marqués;;;;;;;;;;;;;x
+# duke_female_mexicano;Marquésa;;;;;;;;;;;;;x
 # duchy_of_mexicano;Marquesado of;;;;;;;;;;;;;x
 # duchy_mexicano;Marquesado;;;;;;;;;;;;;x
 # king_mexicano;Rey;;;;;;;;;;;;;x
@@ -1820,12 +1820,12 @@ king_female_caraqueno;Sultana;;;;;;;;;;;;;x
 # empire_of_mexicano;Imperio of;;;;;;;;;;;;;x
 # empire_mexicano;Imperio;;;;;;;;;;;;;x
 
-count_orinocense;Seï¿½or;;;;;;;;;;;;;x
-count_female_orinocense;Seï¿½ora;;;;;;;;;;;;;x
-county_of_orinocense;Seï¿½orï¿½o of;;;;;;;;;;;;;x
-county_orinocense;Seï¿½orï¿½o;;;;;;;;;;;;;x
-duke_orinocense;Marquï¿½s;;;;;;;;;;;;;x
-duke_female_orinocense;Marquï¿½sa;;;;;;;;;;;;;x
+count_orinocense;Señor;;;;;;;;;;;;;x
+count_female_orinocense;Señora;;;;;;;;;;;;;x
+county_of_orinocense;Señorío of;;;;;;;;;;;;;x
+county_orinocense;Señorío;;;;;;;;;;;;;x
+duke_orinocense;Marqués;;;;;;;;;;;;;x
+duke_female_orinocense;Marquésa;;;;;;;;;;;;;x
 duchy_of_orinocense;Marquesado of;;;;;;;;;;;;;x
 duchy_orinocense;Marquesado;;;;;;;;;;;;;x
 king_orinocense;Rey;;;;;;;;;;;;;x
@@ -1859,17 +1859,17 @@ baron_female_texaner;Freifrau;;;;;;;;;;;;;x
 barony_of_texaner;Baronie of;;;;;;;;;;;;;x
 barony_texaner;Baronie;;;;;;;;;;;;;x
 count_texaner;Graf;;;;;;;;;;;;;x
-count_female_texaner;Grï¿½fin;;;;;;;;;;;;;x
+count_female_texaner;Gräfin;;;;;;;;;;;;;x
 county_of_texaner;Grafschaft of;;;;;;;;;;;;;x
 county_texaner;Grafschaft;;;;;;;;;;;;;x
 duke_texaner;Herzog;;;;;;;;;;;;;x
 duke_female_texaner;Herzogin;;;;;;;;;;;;;x
 duchy_of_texaner;Herzogtum of;;;;;;;;;;;;;x
 duchy_texaner;Herzogtum;;;;;;;;;;;;;x
-king_texaner;Kï¿½nig;;;;;;;;;;;;;x
-king_female_texaner;Kï¿½nigin;;;;;;;;;;;;;x
-kingdom_of_texaner;Kï¿½nigreich of;;;;;;;;;;;;;x
-kingdom_texaner;Kï¿½nigreich;;;;;;;;;;;;;x
+king_texaner;König;;;;;;;;;;;;;x
+king_female_texaner;Königin;;;;;;;;;;;;;x
+kingdom_of_texaner;Königreich of;;;;;;;;;;;;;x
+kingdom_texaner;Königreich;;;;;;;;;;;;;x
 emperor_texaner;Kaiser;;;;;;;;;;;;;x
 emperor_female_texaner;Kaiserin;;;;;;;;;;;;;x
 empire_of_texaner;Kaiserreich of;;;;;;;;;;;;;x
@@ -1891,15 +1891,15 @@ vice_royalty_king;Governor;;;;;;;;;;;;;x
 vice_royalty_kingdom_of;Territory of;;;;;;;;;;;;;x
 vice_royalty_kingdom;Territory;;;;;;;;;;;;;x
 
-expected_next_title_ursuline_cardinal;Expected Next Cardinal;Prochain cardinal prï¿½vu;Erwarteter neuer Kardinal;;Presunto prï¿½ximo cardenal;;;;;;;;;x
-expected_next_title_ursuline_cardinal_tooltip;This bishop is probably next in line for a Cardinalship when one becomes available.;Cet ï¿½vï¿½que sera probablement le prochain cardinal dï¿½s qu'une place se libï¿½rera.;Dieser Bischof wird wahrscheinlich als nï¿½chster zum Kardinal ernannt, wenn ein Sitz im Kollegium frei wird.;;Este obispo serï¿½, probablemente, el prï¿½ximo Cardenal cuando haya una vacante.;;;;;;;;;x
+expected_next_title_ursuline_cardinal;Expected Next Cardinal;Prochain cardinal prévu;Erwarteter neuer Kardinal;;Presunto próximo cardenal;;;;;;;;;x
+expected_next_title_ursuline_cardinal_tooltip;This bishop is probably next in line for a Cardinalship when one becomes available.;Cet évêque sera probablement le prochain cardinal dès qu'une place se libérera.;Dieser Bischof wird wahrscheinlich als nächster zum Kardinal ernannt, wenn ein Sitz im Kollegium frei wird.;;Este obispo será, probablemente, el próximo Cardenal cuando haya una vacante.;;;;;;;;;x
 best_candidate_title_ursuline_cardinal;My Best Cardinal Candidate;Mes meilleurs cardinaux potentiels;Mein bester Kardinalskandidat;;Mi mejor candidato a Cardenal;;;;;;;;;x
-best_candidate_title_ursuline_cardinal_tooltip;Of all the bishops in my realm, this one is the likeliest to get appointed Cardinal by the Abbess-General.;De tous les ï¿½vï¿½ques de mon royaume, celui-ci est le plus susceptible d'ï¿½tre nommï¿½ cardinal par le pape.;Von allen Bischï¿½fen in meinem Reich wird dieser wahrscheinlich am ehesten vom Papst zum Kardinal ernannt.;;De todos los obispos de mi Reino, este es el que tiene mï¿½s probabilidades de que el Papa lo nombre Cardenal.;;;;;;;;;x
+best_candidate_title_ursuline_cardinal_tooltip;Of all the bishops in my realm, this one is the likeliest to get appointed Cardinal by the Abbess-General.;De tous les évêques de mon royaume, celui-ci est le plus susceptible d'être nommé cardinal par le pape.;Von allen Bischöfen in meinem Reich wird dieser wahrscheinlich am ehesten vom Papst zum Kardinal ernannt.;;De todos los obispos de mi Reino, este es el que tiene más probabilidades de que el Papa lo nombre Cardenal.;;;;;;;;;x
 title_high_church_cardinal;Cardinal;Cardinal;Kardinal;;Cardenal;;;;;;;;;x
-expected_next_title_high_church_cardinal;Expected Next Cardinal;Prochain cardinal prï¿½vu;Erwarteter neuer Kardinal;;Presunto prï¿½ximo cardenal;;;;;;;;;x
-expected_next_title_high_church_cardinal_tooltip;This bishop is probably next in line for a Cardinalship when one becomes available.;Cet ï¿½vï¿½que sera probablement le prochain cardinal dï¿½s qu'une place se libï¿½rera.;Dieser Bischof wird wahrscheinlich als nï¿½chster zum Kardinal ernannt, wenn ein Sitz im Kollegium frei wird.;;Este obispo serï¿½, probablemente, el prï¿½ximo Cardenal cuando haya una vacante.;;;;;;;;;x
+expected_next_title_high_church_cardinal;Expected Next Cardinal;Prochain cardinal prévu;Erwarteter neuer Kardinal;;Presunto próximo cardenal;;;;;;;;;x
+expected_next_title_high_church_cardinal_tooltip;This bishop is probably next in line for a Cardinalship when one becomes available.;Cet évêque sera probablement le prochain cardinal dès qu'une place se libérera.;Dieser Bischof wird wahrscheinlich als nächster zum Kardinal ernannt, wenn ein Sitz im Kollegium frei wird.;;Este obispo será, probablemente, el próximo Cardenal cuando haya una vacante.;;;;;;;;;x
 best_candidate_title_high_church_cardinal;My Best Cardinal Candidate;Mes meilleurs cardinaux potentiels;Mein bester Kardinalskandidat;;Mi mejor candidato a Cardenal;;;;;;;;;x
-best_candidate_title_high_church_cardinal_tooltip;Of all the bishops in my realm, this one is the likeliest to get appointed Cardinal by the Pope.;De tous les ï¿½vï¿½ques de mon royaume, celui-ci est le plus susceptible d'ï¿½tre nommï¿½ cardinal par le pape.;Von allen Bischï¿½fen in meinem Reich wird dieser wahrscheinlich am ehesten vom Papst zum Kardinal ernannt.;;De todos los obispos de mi Reino, este es el que tiene mï¿½s probabilidades de que el Papa lo nombre Cardenal.;;;;;;;;;x
+best_candidate_title_high_church_cardinal_tooltip;Of all the bishops in my realm, this one is the likeliest to get appointed Cardinal by the Pope.;De tous les évêques de mon royaume, celui-ci est le plus susceptible d'être nommé cardinal par le pape.;Von allen Bischöfen in meinem Reich wird dieser wahrscheinlich am ehesten vom Papst zum Kardinal ernannt.;;De todos los obispos de mi Reino, este es el que tiene más probabilidades de que el Papa lo nombre Cardenal.;;;;;;;;;x
 
 oficial_stewardship_authorization;Has Stewardship Mandate;;;;;;;;;x
 lost_oficial_diplomacy_authorization;Lost Diplomatic Mandate;;;;;;;;;x
@@ -1958,13 +1958,13 @@ colonial_government;Colonial;;;;;;;;;;;;;x
 colonial_government_desc;The closest American equivalent to the government of the Japanese and Russian colonies is the merchant republic. However, unlike American merchant republics, the Japanese and Russian colonies do not have a tradition of religious freedom. The viceroyalty changes between the five major colonial families through special elections. Colonists can also build a network of Trade Posts, even in the counties of other powers.;;;;;;;;;;;;;x
 
 bureaucratic_government;Bureaucratic;;;;;;;;;;;;;x;
-bureaucratic_government_desc;The bureaucracy of California is similar to the Feudal system ï¿½ rulers must rely on land holding vassals or varying loyalty and ambition. Rulers are allowed to reorganize their realm, revoking Prefectural titles and retracting vassals, but otherwise are not allowed to imprison vassals or revoke their titles unless they have broken the law. The maximum number of vassals and the number of Holdings you can directly own are controlled by the Centralization Law. If you should convert to a non-Cetic religion, your government form will change to Feudal.;Le systï¿½me arabe de l'Iqtï¿½ est similaire au systï¿½me fï¿½odal ï¿½ les souverains doivent faire appel ï¿½ des vassaux pour tenir leurs fiefs et leur degrï¿½ d'ambition ou de loyautï¿½ peut varier. Le nombre maximal de vassaux et le nombre de fiefs que vous pouvez directement possï¿½der sont contrï¿½lï¿½s par la loi de centralisation. Cependant, il n'y a qu'une seule forme de succession disponible ï¿½ la succession ï¿½ï¿½ouverteï¿½ï¿½ chaotique, selon laquelle le fils qui dï¿½tient le plus de terres est en droit d'hï¿½riter. Si vous vous convertissez ï¿½ une religion de type non musulman, votre gouvernement sera de type fï¿½odal.;Das arabische Iqtasystem ï¿½hnelt dem Feudalsystem. Auch hier muss der Herrscher auf mï¿½glicherweise unzuverlï¿½ssige Vasallen vertrauen. In den Zentralisierungsgesetzen ist festgelegt, wie viele Liegenschaften und wie viele Vasallen Ihr maximal haben kï¿½nnt. Allerdings gibt es bei der Erbfolge nur eine einzige Variante: das chaotische 'offene' System, bei dem immer der Sohn mit dem grï¿½ï¿½ten Landbesitz erbt. Wenn Ihr zu einer nicht-islamischen Religion konvertiert, wechselt Eure Staatsform zum Feudalsystem.;;El sistema ï¿½rabe del Iqta es similar al sistema feudal ï¿½ los gobernantes deben depender de vasallos con posesiones territoriales de variable lealtad y ambiciï¿½n. El nï¿½mero mï¿½ximo nï¿½mero de vasallos y de posesiones que puedes poseer directamente puedes poseer estï¿½n controlados por la ley de centralizaciï¿½n. Sin embargo, sï¿½lo existe una forma de sucesiï¿½n: la caï¿½tica 'abierta', donde hereda el hijo con mï¿½s tierras. Si te conviertes a una religiï¿½n no musulmana tu forma de gobierno cambiarï¿½ a feudal.;;;;;x;;;;;
-CHRONICLE_ADOPTED_BUREAUCRACY;[Root.GetDynName] adopted a Bureaucratic system in [Root.GetHerHis] domains, abandoning the old tribal ways.;[Root.GetDynName] a adoptï¿½ un systï¿½me d'iqta dans son domaine, abandonnant les anciennes coutumes tribales.;[Root.GetDynName] gab das Leben als Stamm auf und ï¿½bernahm das Iqtasystem in [Root.GetHerHis] Gebiet.;;[Root.GetDynName] adoptï¿½ un sistema Iqta en [Root.GetHerHis] dominios, abandonando las viejas costumbres tribales.;;;;;;;;;x
-CHRONICLE_NOMAD_ADOPTED_BUREAUCRACY;[Root.GetDynName] adopted a Bureaucratic system in [Root.GetHerHis] domains, leaving their old nomad life behind them.;[Root.GetDynName] a adoptï¿½ un systï¿½me d'iqta dans son domaine, abandonnant son mode de vie nomade.;[Root.GetDynName] gab das Nomadendasein auf und ï¿½bernahm das Iqtasystem in [Root.GetHerHis] Gebiet.;;[Root.GetDynName] adoptï¿½ un sistema Iqta en dominios de [Root.GetHerHis], dejando atrï¿½s su vida nï¿½mada.;;;;;;;;;x
+bureaucratic_government_desc;The bureaucracy of California is similar to the Feudal system — rulers must rely on land holding vassals or varying loyalty and ambition. Rulers are allowed to reorganize their realm, revoking Prefectural titles and retracting vassals, but otherwise are not allowed to imprison vassals or revoke their titles unless they have broken the law. The maximum number of vassals and the number of Holdings you can directly own are controlled by the Centralization Law. If you should convert to a non-Cetic religion, your government form will change to Feudal.;Le système arabe de l'Iqtâ est similaire au système féodal – les souverains doivent faire appel à des vassaux pour tenir leurs fiefs et leur degré d'ambition ou de loyauté peut varier. Le nombre maximal de vassaux et le nombre de fiefs que vous pouvez directement posséder sont contrôlés par la loi de centralisation. Cependant, il n'y a qu'une seule forme de succession disponible – la succession « ouverte » chaotique, selon laquelle le fils qui détient le plus de terres est en droit d'hériter. Si vous vous convertissez à une religion de type non musulman, votre gouvernement sera de type féodal.;Das arabische Iqtasystem ähnelt dem Feudalsystem. Auch hier muss der Herrscher auf möglicherweise unzuverlässige Vasallen vertrauen. In den Zentralisierungsgesetzen ist festgelegt, wie viele Liegenschaften und wie viele Vasallen Ihr maximal haben könnt. Allerdings gibt es bei der Erbfolge nur eine einzige Variante: das chaotische 'offene' System, bei dem immer der Sohn mit dem größten Landbesitz erbt. Wenn Ihr zu einer nicht-islamischen Religion konvertiert, wechselt Eure Staatsform zum Feudalsystem.;;El sistema árabe del Iqta es similar al sistema feudal — los gobernantes deben depender de vasallos con posesiones territoriales de variable lealtad y ambición. El número máximo número de vasallos y de posesiones que puedes poseer directamente puedes poseer están controlados por la ley de centralización. Sin embargo, sólo existe una forma de sucesión: la caótica 'abierta', donde hereda el hijo con más tierras. Si te conviertes a una religión no musulmana tu forma de gobierno cambiará a feudal.;;;;;x;;;;;
+CHRONICLE_ADOPTED_BUREAUCRACY;[Root.GetDynName] adopted a Bureaucratic system in [Root.GetHerHis] domains, abandoning the old tribal ways.;[Root.GetDynName] a adopté un système d'iqta dans son domaine, abandonnant les anciennes coutumes tribales.;[Root.GetDynName] gab das Leben als Stamm auf und übernahm das Iqtasystem in [Root.GetHerHis] Gebiet.;;[Root.GetDynName] adoptó un sistema Iqta en [Root.GetHerHis] dominios, abandonando las viejas costumbres tribales.;;;;;;;;;x
+CHRONICLE_NOMAD_ADOPTED_BUREAUCRACY;[Root.GetDynName] adopted a Bureaucratic system in [Root.GetHerHis] domains, leaving their old nomad life behind them.;[Root.GetDynName] a adopté un système d'iqta dans son domaine, abandonnant son mode de vie nomade.;[Root.GetDynName] gab das Nomadendasein auf und übernahm das Iqtasystem in [Root.GetHerHis] Gebiet.;;[Root.GetDynName] adoptó un sistema Iqta en dominios de [Root.GetHerHis], dejando atrás su vida nómada.;;;;;;;;;x
 californian_imperial_government;Californian Imperialism;;;;;;;;;;;;;x;
 californian_imperial_government_desc;Californian Imperialism, much like the ordinary Feudal government, revolves around vassals owing fealty to their liege who in this case is considered to be the divine Child of Heaven, and ruler of all. The Imperial government is unique to those who claim they are the true Emperor of California, and can only be implemented by an Emperor capable of backing this claim with force...;;;;;;;;;x
 adopt_californian_imperialism_tt;You will reform the Imperial bureaucracy of the Californian Empire.;;;;;;;;;x
-adopt_californian_imperialism_gov_tt;Under Chinese Imperialism you:\nï¿½Y*ï¿½! Can hold cities\nï¿½Y*ï¿½! Do not care if others do not follow your religion nor can you demand their conversion\nï¿½Y*ï¿½! Do not get opinion penalties with vassals of other government types\nï¿½Y*ï¿½! Can not create or usurp Empires\nï¿½Y*ï¿½! Are limited to non-elective succession laws;;;;;;;;;;;;;x
+adopt_californian_imperialism_gov_tt;Under Chinese Imperialism you:\n§Y*§! Can hold cities\n§Y*§! Do not care if others do not follow your religion nor can you demand their conversion\n§Y*§! Do not get opinion penalties with vassals of other government types\n§Y*§! Can not create or usurp Empires\n§Y*§! Are limited to non-elective succession laws;;;;;;;;;;;;;x
 
 
 gov_bureaucratic;Bureaucratic [PrimaryTitle.GetTier];;;;;;;;;;;;;x
@@ -1975,12 +1975,12 @@ gov_figurehead_empire;Imperial Figurehead;;;;;;;;;;;;;x
 gov_colonial_jap;Edokko Trading Company;;;;;;;;;;;;;x
 gov_colonial_rus;Colonial Oblast;;;;;;;;;;;;;x
 gov_americanist_constitutional;Constitutional [PrimaryTitle.GetTier];;;;;;;;;;;;;x
-gov_aristocratic_electorial_hcc;Elective Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime ï¿½lectoral et aristocratique);[PrimaryTitle.GetTier] (Aristokratisch und mit Elektorat);;[PrimaryTitle.GetTier] aristocrï¿½tico electivo;;;;;;;;;;;;;x
-gov_aristocratic_hereditary_hcc;Hereditary Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime hï¿½rï¿½ditaire et aristocratique);[PrimaryTitle.GetTier] (Aristokratisch und mit Erbfolge);;[PrimaryTitle.GetTier] aristocrï¿½tico hereditario;;;;;;;;;;;;;x
-gov_electorial_despotic_hcc;Elective Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime ï¿½lectoral et despotique);[PrimaryTitle.GetTier] (Despotisch und mit Elektorat);;[PrimaryTitle.GetTier] despï¿½tico electivo;;;;;;;;;;;;;x
-gov_hereditary_despotic_hcc;Hereditary Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime hï¿½rï¿½ditaire et despotique);[PrimaryTitle.GetTier] (Despotisch und mit Erbfolge);;[PrimaryTitle.GetTier] despï¿½tico hereditario;;;;;;;;;;;;;x
-gov_electorial_absolute_hcc;Elective Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime ï¿½lectoral et absolu);[PrimaryTitle.GetTier] (Absolut und mit Elektorat);;[PrimaryTitle.GetTier] absoluto electivo;;;;;;;;;;;;;x
-gov_hereditary_absolute_hcc;Hereditary Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime hï¿½rï¿½ditaire et absolu);[PrimaryTitle.GetTier] (Absolut und mit Erbfolge);;[PrimaryTitle.GetTier] absoluto hereditario;;;;;;;;;;;;;x
+gov_aristocratic_electorial_hcc;Elective Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime électoral et aristocratique);[PrimaryTitle.GetTier] (Aristokratisch und mit Elektorat);;[PrimaryTitle.GetTier] aristocrático electivo;;;;;;;;;;;;;x
+gov_aristocratic_hereditary_hcc;Hereditary Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime héréditaire et aristocratique);[PrimaryTitle.GetTier] (Aristokratisch und mit Erbfolge);;[PrimaryTitle.GetTier] aristocrático hereditario;;;;;;;;;;;;;x
+gov_electorial_despotic_hcc;Elective Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime électoral et despotique);[PrimaryTitle.GetTier] (Despotisch und mit Elektorat);;[PrimaryTitle.GetTier] despótico electivo;;;;;;;;;;;;;x
+gov_hereditary_despotic_hcc;Hereditary Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime héréditaire et despotique);[PrimaryTitle.GetTier] (Despotisch und mit Erbfolge);;[PrimaryTitle.GetTier] despótico hereditario;;;;;;;;;;;;;x
+gov_electorial_absolute_hcc;Elective Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime électoral et absolu);[PrimaryTitle.GetTier] (Absolut und mit Elektorat);;[PrimaryTitle.GetTier] absoluto electivo;;;;;;;;;;;;;x
+gov_hereditary_absolute_hcc;Hereditary Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime héréditaire et absolu);[PrimaryTitle.GetTier] (Absolut und mit Erbfolge);;[PrimaryTitle.GetTier] absoluto hereditario;;;;;;;;;;;;;x
 gov_duchy_viceroy_cali;[Liege.PrimaryTitle.GetAdjective] Prefecture;;;;;;;;;;;;;x
 gov_king_viceroy_cali;[Liege.PrimaryTitle.GetAdjective] Governorate;;;;;;;;;;;;;x
 gov_afro_chiefdom;[Religion.GetGroupName] [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] ([Religion.GetGroupName]);[Religion.GetGroupName]es [PrimaryTitle.GetTier];;[PrimaryTitle.GetTier] [Religion.GetName];;;;;;;;;x
@@ -1988,27 +1988,27 @@ gov_noble_afro_chiefdom;Noble [Religion.GetGroupName] [PrimaryTitle.GetTier];[Pr
 gov_afro_feudal;Feudal [Religion.GetGroupName] [PrimaryTitle.GetTier];;;;;;;;;;;;;x
 gov_hereditary_yanklaw;Hereditary Yanklaw;;;;;;;;;;;;;x
 gov_electorial_yanklaw;Elective Yanklaw;;;;;;;;;;;;;x
-gov_afro_aristocratic_monarchy;Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime aristocratique);[PrimaryTitle.GetTier] (Aristokratisch);;[PrimaryTitle.GetTier] aristocrï¿½tico;;;;;;;;;;;;;x
+gov_afro_aristocratic_monarchy;Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime aristocratique);[PrimaryTitle.GetTier] (Aristokratisch);;[PrimaryTitle.GetTier] aristocrático;;;;;;;;;;;;;x
 gov_elective_afro_aristocratic_monarchy;Elective Aristocratic [PrimaryTitle.GetTier];;;;;;;;;x
-gov_afro_despotic_monarchy;Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime despotique);[PrimaryTitle.GetTier] (Despotisch);;[PrimaryTitle.GetTier] despï¿½tico;;;;;;;;;;;;;x
+gov_afro_despotic_monarchy;Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime despotique);[PrimaryTitle.GetTier] (Despotisch);;[PrimaryTitle.GetTier] despótico;;;;;;;;;;;;;x
 gov_elective_afro_despotic_monarchy;Elective Despotic [PrimaryTitle.GetTier];;;;;;;;;x
-gov_afro_absolute_monarchy;Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime absolu);[PrimaryTitle.GetTier] (Absolut);;[PrimaryTitle.GetTier] absoluto;;;;;;;;;;;;;x
+gov_afro_absolute_monarchy;Absolute [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime absolu);[PrimaryTitle.GetTier] (Absolut);;[PrimaryTitle.GetTier] absoluto;;;;;;;;;;;;;x
 gov_elective_afro_absolute_monarchy;Elective Absolute [PrimaryTitle.GetTier];;;;;;;;;x
-gov_afro_absolute_autocracy;Absolute Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime absolu);Absolute Kaiserliche Autokratie;;Autocracia imperial absoluta;;;;;;;;;;;;;x
+gov_afro_absolute_autocracy;Absolute Imperial Autocracy;Autocratie impériale (régime absolu);Absolute Kaiserliche Autokratie;;Autocracia imperial absoluta;;;;;;;;;;;;;x
 gov_elective_afro_absolute_autocracy;Elective Absolute Imperial Autocracy;;;;;;;;;;;;;x
-gov_afro_despotic_autocracy;Despotic Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime despotique);Despotische Kaiserliche Autokratie;;Autocracia imperial despï¿½tica;;;;;;;;;;;;;x
+gov_afro_despotic_autocracy;Despotic Imperial Autocracy;Autocratie impériale (régime despotique);Despotische Kaiserliche Autokratie;;Autocracia imperial despótica;;;;;;;;;;;;;x
 gov_elective_afro_despotic_autocracy;Elective Despotic Imperial Autocracy;;;;;;;;;;;;;x
-gov_afro_aristocratic_autocracy;Aristocratic Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime aristocratique);Aristokratische Kaiserliche Autokratie;;Autocracia imperial aristocrï¿½tica;;;;;;;;;;;;;x
+gov_afro_aristocratic_autocracy;Aristocratic Imperial Autocracy;Autocratie impériale (régime aristocratique);Aristokratische Kaiserliche Autokratie;;Autocracia imperial aristocrática;;;;;;;;;;;;;x
 gov_elective_afro_aristocratic_autocracy;Elective Aristocratic Imperial Autocracy;;;;;;;;;;;;;x
-gov_hereditary_aristocratic_monarchy_guyanese;Hereditary Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime aristocratique);[PrimaryTitle.GetTier] (Aristokratisch);;[PrimaryTitle.GetTier] aristocrï¿½tico;;;;;;;;;;;;;x
-gov_hereditary_despotic_monarchy_guyanese;Hereditary Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (rï¿½gime despotique);[PrimaryTitle.GetTier] (Despotisch);;[PrimaryTitle.GetTier] despï¿½tico;;;;;;;;;;;;;x
-gov_hereditary_absolute_autocracy_guyanese;Hereditary Absolute Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime absolu);Absolute Kaiserliche Autokratie;;Autocracia imperial absoluta;;;;;;;;;;;;;x
-gov_hereditary_despotic_autocracy_guyanese;Hereditary Despotic Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime despotique);Despotische Kaiserliche Autokratie;;Autocracia imperial despï¿½tica;;;;;;;;;;;;;x
-gov_hereditary_aristocratic_autocracy_guyanese;Hereditary Aristocratic Imperial Autocracy;Autocratie impï¿½riale (rï¿½gime aristocratique);Aristokratische Kaiserliche Autokratie;;Autocracia imperial aristocrï¿½tica;;;;;;;;;;;;;x
-gov_hereditary_sol;Hereditary [PrimaryTitle.GetTier] of Erï¿½ndira;;;;;;;;;;;;;x
-gov_electorial_sol;Elective [PrimaryTitle.GetTier] of Erï¿½ndira;;;;;;;;;;;;;x
-gov_native_eldership;[Religion.GetName] Eldership;Conseil des anciens ([Religion.GetName]);[Religion.GetName]e-ï¿½ltestenherrschaft;;Anciano [Religion.GetName];;;;;;;;;x
-gov_noble_native_eldership;Noble [Religion.GetName] Eldership;Conseil noble des anciens ([Religion.GetName]);Aristokratische [Religion.GetName]e-ï¿½ltestenherrschaft;;Noble anciano [Religion.GetName];;;;;;;;;x
+gov_hereditary_aristocratic_monarchy_guyanese;Hereditary Aristocratic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime aristocratique);[PrimaryTitle.GetTier] (Aristokratisch);;[PrimaryTitle.GetTier] aristocrático;;;;;;;;;;;;;x
+gov_hereditary_despotic_monarchy_guyanese;Hereditary Despotic [PrimaryTitle.GetTier];[PrimaryTitle.GetTier] (régime despotique);[PrimaryTitle.GetTier] (Despotisch);;[PrimaryTitle.GetTier] despótico;;;;;;;;;;;;;x
+gov_hereditary_absolute_autocracy_guyanese;Hereditary Absolute Imperial Autocracy;Autocratie impériale (régime absolu);Absolute Kaiserliche Autokratie;;Autocracia imperial absoluta;;;;;;;;;;;;;x
+gov_hereditary_despotic_autocracy_guyanese;Hereditary Despotic Imperial Autocracy;Autocratie impériale (régime despotique);Despotische Kaiserliche Autokratie;;Autocracia imperial despótica;;;;;;;;;;;;;x
+gov_hereditary_aristocratic_autocracy_guyanese;Hereditary Aristocratic Imperial Autocracy;Autocratie impériale (régime aristocratique);Aristokratische Kaiserliche Autokratie;;Autocracia imperial aristocrática;;;;;;;;;;;;;x
+gov_hereditary_sol;Hereditary [PrimaryTitle.GetTier] of Eréndira;;;;;;;;;;;;;x
+gov_electorial_sol;Elective [PrimaryTitle.GetTier] of Eréndira;;;;;;;;;;;;;x
+gov_native_eldership;[Religion.GetName] Eldership;Conseil des anciens ([Religion.GetName]);[Religion.GetName]e-Ältestenherrschaft;;Anciano [Religion.GetName];;;;;;;;;x
+gov_noble_native_eldership;Noble [Religion.GetName] Eldership;Conseil noble des anciens ([Religion.GetName]);Aristokratische [Religion.GetName]e-Ältestenherrschaft;;Noble anciano [Religion.GetName];;;;;;;;;x
 gov_ecumenical;[Religion.GetName] Council Seat;;;;;;;;;;;;;x
 gov_reformed_californian_empire;Reformed Californian Empire;;;;;;;;;;;;;x
 gov_afro_eldership;[Religion.GetGroupName] Eldership;;;;;;;;;;;;;x
@@ -2075,8 +2075,8 @@ Holy_Order_Ursuline;St. Ursula's Chosen;;;;;;;;;;;;;x
 Holy_Order_High_Church;the Knights of Saint Patrick;;;;;;;;;;;;;x
 Holy_Order_Falling_Star;the Order of Brotherhood;;;;;;;;;;;;;x
 Holy_Order_Confederated;the United Empire Loyalists;;;;;;;;;;;;;x
-Holy_Order_Sacred_Heart;La Orden de la Mï¿½scara;;;;;;;;;;;;;x
-Holy_Order_patria_grande;El Batallï¿½n Colombia;;;;;;;;;;;;;x
+Holy_Order_Sacred_Heart;La Orden de la Máscara;;;;;;;;;;;;;x
+Holy_Order_patria_grande;El Batallón Colombia;;;;;;;;;;;;;x
 Holy_Order_Mormon;the Nauvoo Legion;;;;;;;;;;;;;x
 Holy_Order_Cetic;the Golden Bears;;;;;;;;;;;;;x
 Holy_Order_Gaian;the Keepers of the Green Peace;;;;;;;;;;;;;x
@@ -2086,7 +2086,7 @@ Holy_Order_Atomicist;the Sons of Oppenheimer;;;;;;;;;;;;;x
 Holy_Order_Sol_Invicta;the Lightbringers;;;;;;;;;;;;;x
 Holy_Order_Jewish;the Shomrim;;;;;;;;;;;;;x
 Holy_Order_Rastafarian;the Lions of Judah;;;;;;;;;;;;;x
-Holy_Order_Voodoo;the Order of Saint Expï¿½dit;;;;;;;;;;;;;x
+Holy_Order_Voodoo;the Order of Saint Expédit;;;;;;;;;;;;;x
 Holy_Order_Santeria;the Followers of Ogun;;;;;;;;;;;;;x
 Holy_Order_Tres_Potencias;the Warriors of Guaicaipuro;;;;;;;;;;;;;x
 Holy_Order_Norse;the Axes of Bunyan;;;;;;;;;;;;;x
@@ -2116,8 +2116,8 @@ founder_bust;Marble Bust;;;;;;;;;;;;;x
 founder_bust_desc;An ancient bust of a Founder.;;;;;;;;;;;;;x
 old_world_glass;Old World Glass;;;;;;;;;;;;;x
 old_world_glass_desc;Glassware from the ancient world, finer than anything modern glassblowers can produce.;;;;;;;;;;;;;x
-old_world_jewelry;Old World Jewelry;;;;;;;;;;;;;x
-old_world_jewelry_desc;Jewelry from the ancient world, more intricate than anything modern artisans can produce.;;;;;;;;;;;;;x
+old_world_jewelry;Old World Jewelery;;;;;;;;;;;;;x
+old_world_jewelry_desc;Jewelery from the ancient world, more intricate than anything modern artisans can produce.;;;;;;;;;;;;;x
 old_world_money;Old World Money;;;;;;;;;;;;;x
 old_world_money_desc;Icons of the Almighty Dollar.;;;;;;;;;;;;;x
 old_world_musicbox;Old World Music Box;;;;;;;;;;;;;x
@@ -2156,7 +2156,7 @@ obsidian_crown;The Obsidian Crown;;;;;;;;;;;;;x
 obsidian_crown_desc;The only piece of the raiment of Mictlantecuhtli left on Earth when he ascended from the underworld to assume his current place in the sky.;;;;;;;;;;;;;x
 hope_diamond;The Hope Diamond;;;;;;;;;;;;;x
 hope_diamond_desc;An enormous, steely-blue diamond. Some of its owners have met unfortunate ends, leading to rumors that it is cursed.;;;;;;;;;;;;;x
-gachala_skull;The Gachalï¿½ Skull;;;;;;;;;;;;;x
+gachala_skull;The Gachalá Skull;;;;;;;;;;;;;x
 gachala_skull_desc;An egg-sized skull carved from a single enormous, flawless emerald. Some claim that it is imbued with divine power that wards its owner against harm.;;;;;;;;;;;;;x
 midnight_star;The Midnight Star;;;;;;;;;;;;;x
 midnight_star_desc;A massive, smoothly polished star sapphire. It possesses a vivid blue color with a strikingly clear star, and is reputed to bring its owner vast wealth.;;;;;;;;;;;;;x
@@ -2214,9 +2214,9 @@ ancient_torah_desc;This handwritten Torah scroll, containing all 304,805 letters
 papal_tiara;Papal Tiara;;;;;;;;;;;;;x
 papal_tiara_desc;This elaborate, jewel-encrusted crown was used by the antediluvian Catholic Church in their coronation ceremonies. It was rumored that a papal tiara was sent to Washington for safekeeping before the Deluge. These rumors have been confirmed.;;;;;;;;;;;;;x
 ate_sampo;Sampo;Sampo;Sampo;;Sampo;;;;;;;;;;;;;x
-ate_sampo_desc;A strangely well-crafted quern, bearing a striking resemblance to the Mill of Fortune. It is said to be able to produce gold, flour and salt from nothing at all.;Un moulin ï¿½ bras ï¿½trangement bien travaillï¿½, ressemblant de faï¿½on frappante au Moulin de la Fortune. On dit qu'il est capable de produire de l'or, de la farine et du sel ï¿½ partir de rien.;Ein ungewï¿½hnlich sorgfï¿½ltig gearbeiteter Mï¿½hlstein mit einer verblï¿½ffenden ï¿½hnlichkeit zur Zaubermï¿½hle. Wie es heiï¿½t, kann sie Gold, Mehl und Salz mahlen, ohne dass man sie jemals fï¿½llen mï¿½sste.;;Un molinillo de mano sumamente bien elaborado, con un parecido sorprendente al molinillo de la fortuna. Se dice que es capaz de fabricar oro, harina y sal de la nada.;;;;;;;;;x
-ate_fetish_of_souls;The Fetish of Souls;Le Fï¿½tiche des ï¿½mes;Der Seelenfetisch;;El fetiche de almas;;;;;;;;;;;;;x
-ate_fetish_of_souls_desc;A piece of bark that has grown into the shape of a trio of visages. The trio's unsettling gazes pierce one's soul, almost as if some form of spirit still remains behind their eyes...;Un morceau d'ï¿½corce qui a pris la forme de plusieurs visages. Les trois regards troublants transpercent l'ï¿½me, presque comme si une certaine forme d'esprit restait derriï¿½re leurs yeux...;Ein Stï¿½ck Rinde, das so gewachsen ist, dass seine Form ein Trio aus Gesichtern bildet. Der unheimliche Blick der Drei dringt dem Betrachter bis tief in die Seele, ganz so als ob hinter den Augen noch immer ein Fï¿½nkchen Leben wohnte.;;Un pedazo de corteza con la forma de tres rostros. Las inquietantes miradas del trï¿½o penetran en tu alma, casi como si existiera alguna clase de espï¿½ritu tras sus ojos...;;;;;;;;;x
+ate_sampo_desc;A strangely well-crafted quern, bearing a striking resemblance to the Mill of Fortune. It is said to be able to produce gold, flour and salt from nothing at all.;Un moulin à bras étrangement bien travaillé, ressemblant de façon frappante au Moulin de la Fortune. On dit qu'il est capable de produire de l'or, de la farine et du sel à partir de rien.;Ein ungewöhnlich sorgfältig gearbeiteter Mühlstein mit einer verblüffenden Ähnlichkeit zur Zaubermühle. Wie es heißt, kann sie Gold, Mehl und Salz mahlen, ohne dass man sie jemals füllen müsste.;;Un molinillo de mano sumamente bien elaborado, con un parecido sorprendente al molinillo de la fortuna. Se dice que es capaz de fabricar oro, harina y sal de la nada.;;;;;;;;;x
+ate_fetish_of_souls;The Fetish of Souls;Le Fétiche des Âmes;Der Seelenfetisch;;El fetiche de almas;;;;;;;;;;;;;x
+ate_fetish_of_souls_desc;A piece of bark that has grown into the shape of a trio of visages. The trio's unsettling gazes pierce one's soul, almost as if some form of spirit still remains behind their eyes...;Un morceau d'écorce qui a pris la forme de plusieurs visages. Les trois regards troublants transpercent l'âme, presque comme si une certaine forme d'esprit restait derrière leurs yeux...;Ein Stück Rinde, das so gewachsen ist, dass seine Form ein Trio aus Gesichtern bildet. Der unheimliche Blick der Drei dringt dem Betrachter bis tief in die Seele, ganz so als ob hinter den Augen noch immer ein Fünkchen Leben wohnte.;;Un pedazo de corteza con la forma de tres rostros. Las inquietantes miradas del trío penetran en tu alma, casi como si existiera alguna clase de espíritu tras sus ojos...;;;;;;;;;x
 king_james_bible;King James Bible;;;;;;;;;;;;;x
 king_james_bible_desc;The King James Bible has been the gold standard of all High American bibles for over a millennium. However, only twelve complete pre-Event copies of the King James Bible are known to exist today, and the text is indecipherable without special training.;;;;;;;;;;;;;x
 ate_mardi_gras_beads;Mardi Gras Beads;;;;;;;;;;;;;x
@@ -2234,11 +2234,11 @@ old_world_shades_desc;Tinted glasses from the ancient world, clearer than anythi
 liberator_relic;Liberator Relic;;;;;;;;;;;;;x
 liberator_relic_desc;This little bone is said to have come from one of the ancient liberators of South America.;;;;;;;;;x
 ate_ark_of_the_covenant;Ark of the Covenant;L'Arche d'Alliance;Bundeslade;;Arca de la alianza;;;;;;;;;;;;;x
-ate_ark_of_the_covenant_desc;The Ark, crafted out of shittim wood at God's direction, containing the stone tablets of the Ten Commandments and a pot of manna.;L'Arche, fabriquï¿½e en bois d'acacia sur les instructions de Dieu, contenant les tablettes en pierre des Dix Commandements et un pot de manne.;Die Bundeslade, die nach Gottes Anweisungen aus Shittim-Holz gefertigt wurde, enthï¿½lt die Steintafeln mit den Zehn Geboten und einen Krug mit Manna.;;Esta arca, hecha con madera de acacia bajo la direcciï¿½n de Dios, contiene una jarra de manï¿½ y las tablillas de piedra en las que se grabaron los diez mandamientos.;;;;;;;;;x
+ate_ark_of_the_covenant_desc;The Ark, crafted out of shittim wood at God's direction, containing the stone tablets of the Ten Commandments and a pot of manna.;L'Arche, fabriquée en bois d'acacia sur les instructions de Dieu, contenant les tablettes en pierre des Dix Commandements et un pot de manne.;Die Bundeslade, die nach Gottes Anweisungen aus Shittim-Holz gefertigt wurde, enthält die Steintafeln mit den Zehn Geboten und einen Krug mit Manna.;;Esta arca, hecha con madera de acacia bajo la dirección de Dios, contiene una jarra de maná y las tablillas de piedra en las que se grabaron los diez mandamientos.;;;;;;;;;x
 ate_yad_of_rabbi;Yad of a Rabbi;;;;;;;;;;;;;x
 ate_yad_of_rabbi_desc;This little pointer is said to have belonged to an incredibly wise and knowledgeable rabbi.;;;;;;;;;;;;;x
 ate_shofar_lubavitcher_rebbe;Shofar of the Lubavitcher Rebbe;;;;;;;;;;;;;x
-ate_shofar_lubavitcher_rebbe_desc;A Shofar once owned by the Lubavitcher Rebbe, the last great pre-Event Chabad Rebbe. While he was alive, some believed he could have been the Moshiach ï¿½ and some still believe that he is.;;;;;;;;;;;;;x
+ate_shofar_lubavitcher_rebbe_desc;A Shofar once owned by the Lubavitcher Rebbe, the last great pre-Event Chabad Rebbe. While he was alive, some believed he could have been the Moshiach — and some still believe that he is.;;;;;;;;;;;;;x
 old_tefillah;Old Tefillin;;;;;;;;;;;;;x
 old_tefillah_desc;These small black leather boxes contain scrolls of parchment with Torah verses inscribed on them. This tefillin dates to before the Event, and, although it is too fragile for everyday use, it is still a valuable item.;;;;;;;;;;;;;x
 ate_ileke;Ileke;;Ileke;;;;;;;;;;;;;x
@@ -2268,15 +2268,15 @@ treasury_bond_desc;Issued by the Holy Mint during the days of old America, this 
 platinum_chip;Platinum Chip;;;;;;;;;;;;;x
 platinum_chip_desc;Issued by a temple of the Almighty Dollar in the American Southwest shortly before the Event, this ordinary-looking disc is actually made of highly precious and valuable metals.;;;;;;;;;;;;;x
 ate_fragment_of_true_cross;Fragment of the True Cross;Fragment de la Vraie Croix;Splitter des Heiligen Kreuzes;;Fragmento de la santa cruz;;;;;;;;;;;;;x
-ate_fragment_of_true_cross_desc;A fragment of the Cross Jesus was crucified upon;Un fragment de la Croix sur laquelle Jï¿½sus a ï¿½tï¿½ crucifiï¿½.;Ein Teil des Kreuzes, auf dem Jesus gekreuzigt wurde.;;Una parte de la cruz en la que se crucificï¿½ a Jesï¿½s.;;;;;;;;;x
+ate_fragment_of_true_cross_desc;A fragment of the Cross Jesus was crucified upon;Un fragment de la Croix sur laquelle Jésus a été crucifié.;Ein Teil des Kreuzes, auf dem Jesus gekreuzigt wurde.;;Una parte de la cruz en la que se crucificó a Jesús.;;;;;;;;;x
 ate_finger_of_st_john;Finger of St. John;Le doigt de saint Jean;Finger des hl. Johannes;;Dedo de san Juan;;;;;;;;;;;;;x
-ate_finger_of_st_john_desc;A finger belonging to St. John the Baptist. St. John was a prophet of the Messiah, and was also the one to baptize Jesus.;Un doigt appartenant ï¿½ saint Jean-Baptiste. Saint Jean ï¿½tait un prophï¿½te du Messie, et fut aussi celui qui devait baptiser Jï¿½sus.;Ein Finger des hl. Johannes des Tï¿½ufers. Johannes der Tï¿½ufer war ein Jï¿½nger des Messias, von dem Jesus getauft wurde.;;Un dedo perteneciente a san Juan Bautista. San Juan fue un profeta del Mesï¿½as, y tambiï¿½n fue quien bautizï¿½ a Jesï¿½s.;;;;;;;;;x
+ate_finger_of_st_john_desc;A finger belonging to St. John the Baptist. St. John was a prophet of the Messiah, and was also the one to baptize Jesus.;Un doigt appartenant à saint Jean-Baptiste. Saint Jean était un prophète du Messie, et fut aussi celui qui devait baptiser Jésus.;Ein Finger des hl. Johannes des Täufers. Johannes der Täufer war ein Jünger des Messias, von dem Jesus getauft wurde.;;Un dedo perteneciente a san Juan Bautista. San Juan fue un profeta del Mesías, y también fue quien bautizó a Jesús.;;;;;;;;;x
 gutenberg_bible;Gutenberg Bible;;;;;;;;;;;;;x
 gutenberg_bible_desc;This massively ornate tome was one of the first Bibles to be manufactured without papal oversight, and it is therefore holy to those denominations of Christendom that do not recognize papal authority.;;;;;;;;;;;;;x
 stone_of_golgotha;Stone of Golgotha;;;;;;;;;;;;;x
 stone_of_golgotha_desc;This ordinary-looking piece of limestone is said to be the very stone upon which the Holy Cross was raised during Jesus's execution.;;;;;;;;;x
 bell_of_batoche;Bell of Batoche;;;;;;;;;;;;;x
-bell_of_batoche_desc;This silver-plated church bell is holy to both Anglicans and Mï¿½tis, and these two groups have warred over its possession for centuries. It is no longer possible to tell who possessed it first or how its current owner came to hold it.;;;;;;;;;;;;;x
+bell_of_batoche_desc;This silver-plated church bell is holy to both Anglicans and Métis, and these two groups have warred over its possession for centuries. It is no longer possible to tell who possessed it first or how its current owner came to hold it.;;;;;;;;;;;;;x
 blackbeards_beard;Blackbeard's Black Beard;;;;;;;;;;;;;x
 blackbeards_beard_desc;This glass case contains a single rugged black hair. Pirates from Haiti to Newfoundland will recognize it as being part of the legendary Black Beard of Edward Teach, and will treat it with the reverence it deserves.;;;;;;;;;;;;;x
 treasure_map;Treasure Map;;;;;;;;;;;;;x
@@ -2292,7 +2292,7 @@ aztec_codex_desc;This codex was compiled by the ancestors of the Nahua in the da
 idol_of_america_kami;Idol of America Kokudo Kunitama-no-Kami;;;;;;;;;;;;;x
 idol_of_america_kami_desc;This idol depicts America Kokudo Kunitama-no-Kami, divine protector of the North American continent. Although not originally Californian in origin, it has been part of the Cetic pantheon since the days of Emperor Elton.;;;;;;;;;;;;;x
 ruby_slipper;Ruby Slipper;;;;;;;;;;;;;x
-ruby_slipper_desc;This dazzling jewel-encrusted slipper is said to possess supernatural qualities ï¿½ if one manages to find both shoes, they can can be used to instantly transport someone "home" by clicking their heels thrice.;;;;;;;;;;;;;x
+ruby_slipper_desc;This dazzling jewel-encrusted slipper is said to possess supernatural qualities — if one manages to find both shoes, they can can be used to instantly transport someone "home" by clicking their heels thrice.;;;;;;;;;;;;;x
 maltese_falcon;Maltese Falcon;;;;;;;;;;;;;x
 maltese_falcon_desc;This golden falcon is said to have been crafted on a mythical island in the Old World, and was thought to be lost to time. People can and have gone to great lengths to get their hands on this priceless treasure.;;;;;;;;;;;;;x
 emperors_sword;Harmony;;;;;;;;;;;;;x
@@ -2306,7 +2306,7 @@ healing_crystal_desc;This crystal glows with an otherworldly energy, and can war
 everlasting_flower_wreath;Everlasting Flower Wreath;;;;;;;;;;;;;x
 everlasting_flower_wreath_desc;Although this wreath of flowers appears to be normal at first glance, none of the flowers decorating it have ever so much as wilted.;;;;;;;;;;;;;x
 core_of_methuselah;Core of Methuselah;;;;;;;;;;;;;x
-core_of_methuselah_desc;This wooden core is no ordinary cross-section ï¿½ it is part of the legendary tree Methuselah, and is thus older than any religion on this continent.;;;;;;;;;;;;;x
+core_of_methuselah_desc;This wooden core is no ordinary cross-section — it is part of the legendary tree Methuselah, and is thus older than any religion on this continent.;;;;;;;;;;;;;x
 heart_of_the_oasis;Heart of the Oasis;;;;;;;;;;;;;x
 heart_of_the_oasis_desc;This peculiar-looking artifact is said to be supercharged with healing energy, allowing its wearer to heal injuries and recover from illness with ease.;;;;;;;;;;;;;x
 ancient_war_bonnet;Ancient War Bonnet;;;;;;;;;;;;;x
@@ -2336,7 +2336,7 @@ roadrunner_feathers_desc;These feathers were stolen by Sly Coyote when Roadrunne
 golden_stake;Golden Stake;;;;;;;;;;;;;x
 golden_stake_desc;This stake was put down by Iron Horse when he crossed the world, gifting mankind an immovable road to gird the earth. With the help of his servant, the Mancho, he forged this stake as a sign of the gods' covenants with humanity.;;;;;;;;;;;;;x
 lucky_horseshoe;Lucky Horseshoe;;;;;;;;;;;;;x
-lucky_horseshoe_desc;This horseshoe is said to bring good fortune to anyone who possesses it and hangs it up right side up. Beware ï¿½ accidentally hanging it the other way will cause one's fortune to vanish...;;;;;;;;;;;;;x
+lucky_horseshoe_desc;This horseshoe is said to bring good fortune to anyone who possesses it and hangs it up right side up. Beware — accidentally hanging it the other way will cause one's fortune to vanish...;;;;;;;;;;;;;x
 dinosaur;Skull of a Terrible Lizard;;;;;;;;;;;;;x
 dinosaur_desc;This intimidating skull once belonged to a Terrible Lizard, a type of beast that roamed the Earth alongside man in the days before the Event. The tales about them seem far-fetched, but this skull proves that they really existed.;;;;;;;;;;;;;x
 
@@ -2420,9 +2420,9 @@ carved_totem_raven_tales_1;Carved Totem;;;;;;;;;;;;;x
 carved_totem_raven_tales_1_desc;An priceless totem representing Raven, the trickster god of the Haida.;;;;;;;;;;;;;x
 carved_totem_raven_tales_2;Elktooth Totem;;;;;;;;;;;;;x
 carved_totem_raven_tales_2_desc;An elktooth totem representing Ta'xet, the Haida god of violent death.;;;;;;;;;;;;;x
-carved_totem_raven_tales_3;Rainstick;Bï¿½ton de pluie;Regenstab;;Palo de lluvia;;;;;;;;;x
-carved_totem_raven_tales_3_desc;A wooden tube filled with small pebbles and enchanted with ancient spirit-magic.;Un tube de bois rempli de petits cailloux et enchantï¿½ par de la magie ancienne.;Ein Holzrohr, dass mit kleinen Kieselsteinen gefï¿½llt und alter Geistermagie verzaubert ist.;;Un tubo de madera lleno de guijarros y encantado con antigua magia espiritual.;;;;;;;;;x
-necronomicon_occultist;The True Necronomicon;Le Nï¿½cronomicon;Das Necronomicon;;El Necronomicï¿½n;;;;;;;;;x
+carved_totem_raven_tales_3;Rainstick;Bâton de pluie;Regenstab;;Palo de lluvia;;;;;;;;;x
+carved_totem_raven_tales_3_desc;A wooden tube filled with small pebbles and enchanted with ancient spirit-magic.;Un tube de bois rempli de petits cailloux et enchanté par de la magie ancienne.;Ein Holzrohr, dass mit kleinen Kieselsteinen gefüllt und alter Geistermagie verzaubert ist.;;Un tubo de madera lleno de guijarros y encantado con antigua magia espiritual.;;;;;;;;;x
+necronomicon_occultist;The True Necronomicon;Le Nécronomicon;Das Necronomicon;;El Necronomicón;;;;;;;;;x
 necronomicon_occultist_desc;A mysterious book dealing about the strange spheres beyond. Although most shun this book, those of the [occultist_reformed.GetName] faith know its true value...;;;;;;;;;;;;;x
 sureshot_bow;Bow of Sure Shooting;;;;;;;;;;;;;x
 sureshot_bow_desc;It is said that anyone who wields this bow will never miss a shot, so long as their intentions are pure. Some speculate it may have once belonged to Missus Sureshot herself...;;;;;;;;;;;;;x
@@ -2439,31 +2439,31 @@ ate_syncretic_icon_desc;This religious icon masterfully blends traditional and n
 sword_of_the_states;Sword of the States;;;;;;;;;;;;;x
 sword_of_the_states_desc;This antediluvian sword was rediscovered by Leonidas I and now serves as a symbol of the Holy Columbian Confederacy's divine authority.;;;;;;;;;;;;;x
 mjolnir;Remnants of Mjolnir;Mjolnir;Mjolnir;;Mjolnir;;;;;;;;;x
-mjolnir_desc;When Thor was killed during Ragnarok, his hammer shattered and pieces of it fell to earth. Its remnants were gathered and used to repair a legendary pre-Ragnarok trophy given to only the most worthy warriors. It can no longer be used as a weapon, but it still holds great power...;Un marteau ï¿½trangement court dont on pourrait croire que sa crï¿½ation a ï¿½tï¿½ dï¿½fectueuse. Il a une ressemblance frappante avec le marteau de Thor, le Dieu du Tonnerre, comme dit dans le mythe.;Ein Hammer mit ungewï¿½hnlich kurzem Stiel, der beinahe so wirkt, als handele es sich um einen Fehler bei der Fertigung. Er weist eine unverkennbare ï¿½hnlichkeit mit dem Hammer auf, den der Donnergott Thor den Mythen zufolge verwendet.;;Un martillo extraï¿½amente corto que da la sensaciï¿½n de ser defectuoso. Tiene un parecido sorprendente con el martillo manejado por Thor, el dios del trueno, tal y como lo describe la leyenda.;;;;;;;;;x
+mjolnir_desc;When Thor was killed during Ragnarok, his hammer shattered and pieces of it fell to earth. Its remnants were gathered and used to repair a legendary pre-Ragnarok trophy given to only the most worthy warriors. It can no longer be used as a weapon, but it still holds great power...;Un marteau étrangement court dont on pourrait croire que sa création a été défectueuse. Il a une ressemblance frappante avec le marteau de Thor, le Dieu du Tonnerre, comme dit dans le mythe.;Ein Hammer mit ungewöhnlich kurzem Stiel, der beinahe so wirkt, als handele es sich um einen Fehler bei der Fertigung. Er weist eine unverkennbare Ähnlichkeit mit dem Hammer auf, den der Donnergott Thor den Mythen zufolge verwendet.;;Un martillo extrañamente corto que da la sensación de ser defectuoso. Tiene un parecido sorprendente con el martillo manejado por Thor, el dios del trueno, tal y como lo describe la leyenda.;;;;;;;;;x
 ate_juans_machete;Juan's Machete;;;;;;;;;;;;;x
 ate_juans_machete_desc;The weapon of choice of the undead Juan Machete. One of the many treasures hidden by him before taking his spectral form.;;;;;;;;;;;;;x
 ate_harp_of_florentino;Harp of Florentino;;;;;;;;;;;;;x
-ate_harp_of_florentino_desc;The harp used by Florentino in his legendary musical duel against Satï¿½n. The sound of the harp is said to reach all victorious commanders.;;;;;;;;;;;;;x
+ate_harp_of_florentino_desc;The harp used by Florentino in his legendary musical duel against Satán. The sound of the harp is said to reach all victorious commanders.;;;;;;;;;;;;;x
 ate_mantle_of_la_sayona;Mantle of La Sayona;;;;;;;;;;;;;x
 ate_mantle_of_la_sayona_desc;The mantle used by La Sayona. The fabric seems to be the only physical aspect of the mysterious apparition.;;;;;;;;;;;;;x
 ate_nasar_dagger;Nasar Dagger;;;;;;;;;;;;;x
 ate_nasar_dagger_desc;Old relic of the Nasar family. It was stolen by the Vicario brothers and used to murder the last Nasar Duke as revenge for defiling their sister.;;;;;;;;;;;;;x
 ate_nasar_crown;Nasar Crown;;;;;;;;;;;;;x
-ate_nasar_crown_desc;Taken by Duke Ibrahim Nasar during the sack of Bogotï¿½. The sacking marked the end of the Kingdom of Andina.;;;;;;;;;;;;;x
+ate_nasar_crown_desc;Taken by Duke Ibrahim Nasar during the sack of Bogotá. The sacking marked the end of the Kingdom of Andina.;;;;;;;;;;;;;x
 ate_skull_falso_libertador;Skull of the Falso Libertador;;;;;;;;;;;;;x
-ate_skull_falso_libertador_desc;Taken from the burned body of Zacarï¿½as I by his killer, king Santiago of Venezuela.;;;;;;;;;;;;;x
+ate_skull_falso_libertador_desc;Taken from the burned body of Zacarías I by his killer, king Santiago of Venezuela.;;;;;;;;;;;;;x
 ate_seal_of_issacs;Seal of Isaacs;;;;;;;;;;;;;x
 ate_seal_of_issacs_desc;Personal seal of Jorge Isaacs, founder and only ruler of the Republic of Antioquia. It has a mysterious star engraved on it.;;;;;;;;;;;;;x
 ate_sword_of_st_peter;Sword of Saint Peter;;;;;;;;;;;;;x
-ate_sword_of_st_peter_desc;The sword used by Simï¿½n Bolï¿½var, known as Saint Peter, to cut the ear of one of the men who tried to arrest the Divino Niï¿½o.;;;;;;;;;;;;;x
+ate_sword_of_st_peter_desc;The sword used by Simón Bolívar, known as Saint Peter, to cut the ear of one of the men who tried to arrest the Divino Niño.;;;;;;;;;;;;;x
 ate_stone_of_st_francis;Kidney Stone of Saint Francis;;;;;;;;;;;;;x
 ate_stone_of_st_francis_desc;The kidney stone that killed Francisco Santander's mortal body. His physical dead allowed him to transcend as Saint Francis.;;;;;;;;;;;;;x
 ate_pearls_of_magdalene;Pearls of The Magdalene;;;;;;;;;;;;;x
-ate_pearls_of_magdalene_desc;Collar that Manuelita Sï¿½enz wore when she was saved by the Divino Niï¿½o from an angry crowd who tried to stone her.;;;;;;;;;;;;;x
+ate_pearls_of_magdalene_desc;Collar that Manuelita Sáenz wore when she was saved by the Divino Niño from an angry crowd who tried to stone her.;;;;;;;;;;;;;x
 ate_llorente_flower_vase;Llorente's Flower Vase;;;;;;;;;;;;;x
-ate_llorente_flower_vase_desc;The day on which the prï¿½ceres stole this relic from the perfidious demon Pepe Botella marks the beginning of the Golden Age of the Patria Grande.;;;;;;;;;;;;;x
-ate_garcia_pig_tail;Marquees of Garcï¿½a's Tail;;;;;;;;;;;;;x
-ate_garcia_pig_tail_desc;This mummified piece of skin that resembles a pig tail is said to come from the lower back of the Marquees of Garcï¿½a, the mad prophet from the Golden Age.;;;;;;;;;;;;;x
+ate_llorente_flower_vase_desc;The day on which the próceres stole this relic from the perfidious demon Pepe Botella marks the beginning of the Golden Age of the Patria Grande.;;;;;;;;;;;;;x
+ate_garcia_pig_tail;Marquees of García's Tail;;;;;;;;;;;;;x
+ate_garcia_pig_tail_desc;This mummified piece of skin that resembles a pig tail is said to come from the lower back of the Marquees of García, the mad prophet from the Golden Age.;;;;;;;;;;;;;x
 
 ##Wonder Books##
 String_american;American;;;;;;;;;;;;;x
@@ -2655,7 +2655,7 @@ title_shipwright_desc;The shipwright is in charge of keeping all vessels is ship
 title_first_mate;First Mate;;;;;;;;;;;;;x
 title_first_mate_desc;The first mate is the captain's closest confidante, and is typically given to a nautical realm's designated regent.;;;;;;;;;;;;;x
 title_second_mate;Second Mate;;;;;;;;;;;;;x
-title_second_mate_desc;The second mate keeps watch while the captain sleeps and is responsible for ensuring that the ship remains safe.;;;;;;;;;;;;;x
+title_second_mate_desc;The second mate keeps watch while the captain sleeps and is reponsible for ensuring that the ship remains safe.;;;;;;;;;;;;;x
 title_third_mate;Third Mate;;;;;;;;;;;;;x
 title_third_mate_desc;The third mate is responsible for keeping the ship's cargo and crew safe in the event of an emergency.;;;;;;;;;;;;;x
 title_colonial_overseer;Colonial Overseer;;;;;;;;;;;;;x
@@ -2663,7 +2663,7 @@ title_colonial_overseer_desc;Maintaining contact with a mother empire several th
 title_sei_i_taishogun;Sei-i Taishougun;;;;;;;;;;;;;x
 title_sei_i_taishogun_desc;A title stemming back since before the event, the Sei-i Taishogun is a martial position usually delegated to a skilled commander. Directly translated as "General of the Expeditionary Force against the Barbarians", the commander is tasked with researching the New World and combatting the strange people of this land.;;;;;;;;;;;;;x
 title_evoker_of_will;Evoker of Will;;;;;;;;;;;;;x
-title_evoker_of_will_desc;The Nousthreskeia philosophy heavily revolves around the belief of the Noosphere ï¿½ and believing that people possess a strong mental power that can alter the reality around them. The Evoker of the Will is usually a philosopher of talent who possesses great mastery of this art, and is highly respected in Nousthreskeia tradition.;;;;;;;;;;;;;x
+title_evoker_of_will_desc;The Nousthreskeia philosophy heavily revolves around the belief of the Noosphere — and believing that people possess a strong mental power that can alter the reality around them. The Evoker of the Will is usually a philosopher of talent who possesses great mastery of this art, and is highly respected in Nousthreskeia tradition.;;;;;;;;;;;;;x
 title_venerated_elder;Venerated Elder;;;;;;;;;;;;;x
 title_venerated_elder_desc;The Gaian faith places great importance and stress on the woman's contribution to society, believing their role to be of proeminance and preservation. Therefore, to be appointed a Venerable Elder is an honor to Gaian women.;;;;;;;;;;;;;x
 title_mistress_of_the_gardens;Mistress of the Gardens;;;;;;;;;;;;;x

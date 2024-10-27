@@ -1,5 +1,5 @@
 warrior_lodge_mexican;The Luchadores;;;;;;;;;;;;;x
-warrior_lodge_mexican_desc;The Luchadores of Mexico are a proud group of wrestlers ï¿½ or "luchadores" ï¿½ who regularly participate in "lucha libre" matches. This antediluvian tradition, which experienced a revival during the golden age of the Mexican Empire, now is practiced by Mexicanos and Mesoamericans alike.;;;;;;;;;;;;;x
+warrior_lodge_mexican_desc;The Luchadores of Mexico are a proud group of wrestlers — or "luchadores" — who regularly participate in "lucha libre" matches. This antediluvian tradition, which experienced a revival during the golden age of the Mexican Empire, now is practiced by Mexicanos and Mesoamericans alike.;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_1_female;Peso Pluma;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_2_female;Peso Medio;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_3_female;Peso Completo;;;;;;;;;;;;;x
@@ -8,7 +8,7 @@ warrior_lodge_mexican_rank_1_male;Peso Pluma;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_2_male;Peso Medio;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_3_male;Peso Completo;;;;;;;;;;;;;x
 warrior_lodge_mexican_rank_4_male;Capitan;;;;;;;;;;;;;x
-does_not_publicly_follow_mictlantec_religion_TT;Does NOT publicly follow the ï¿½YMictlantecaï¿½! religion.;;;;;;;;;;;;;x
+does_not_publicly_follow_mictlantec_religion_TT;Does NOT publicly follow the §YMictlanteca§! religion.;;;;;;;;;;;;;x
 warrior_lodge_wrestle_duel;Wrestle;;;;;;;;;;;;;x
 warrior_lodge_wrestle_duel_power_desc;Members of the Luchadores can wrestle other members and enemies.;;;;;;;;;;;;;x
 warrior_lodge_wrestler_training;Complete a Training Regimen;;;;;;;;;;;;;x
@@ -44,7 +44,7 @@ warrior_lodge_mexican_style_desc;As a luchador, special moves are critical to pe
 
 HFP_500_DESC_W;[combatant_1.GetFirstNameWithNick], a [combatant_1.GetSocietyRank] in my lodge, is [combatant_1.GetNegativeDuelSkillTerm] wrestler at best. It is shameful for someone like [combatant_1.GetHerHim] to be so woefully unready should [Root.Society.GetName] call upon [combatant_1.GetHerHis] aid! Perhaps I should encourage [combatant_1.GetHerHim] to spar with another member?;;;;;;;;;;;;;x
 HFP_501_DESC_W;[combatant_1.GetFirstNameWithNick] managed to best [combatant_2.GetFirstNameWithNick] handily after a short match. A cheering crowd heaved [combatant_1.GetFirstName] up on their shoulders after the victory, hoisting [combatant_1.GetHerHim] over to the lodge to celebrate. [combatant_1.GetSheHeCap] will become a renowned wrestler yet...;;;;;;;;;;;;;x
-HF_561_DESC_W;A fellow member of [Root.Society.GetName], ï¿½Y[lodge_member_killed.GetFirstNameWithNick]ï¿½!, has been killed in a match by ï¿½Y[lodge_member_killer.GetFirstNameWithNick]ï¿½!!;;;;;;;;;;;;;x
+HF_561_DESC_W;A fellow member of [Root.Society.GetName], §Y[lodge_member_killed.GetFirstNameWithNick]§!, has been killed in a match by §Y[lodge_member_killer.GetFirstNameWithNick]§!!;;;;;;;;;;;;;x
 EVTDESC_HF_14001_ambition_W;Upon returning from a local bout, I have been talking to [student.GetBestName]. The [student.GetManWoman] does not understand the urge for adrenaline, whatsoever. "What about the fame it brings your family?", I argue, recounting the swarms of admirers I had to fight through to get here. [student.GetSheHeCap] sighs, seemingly unimpressed.;;;;;;;;;;;;;x
 EVTDESC_HF_14001_patience_W;Observing yet another game of [Root.GetWarriorLodgeCompetitionType], and [student.GetTitledFirstName] storming off with a sullen expression on [student.GetHerHis] face, it occurs to me how my [student.GetRootRelation] sorely lacks patience. "It is useful in ring as well", I mumble, scratching my chin, contemplating offering [student.GetHerHim] some guidance.;;;;;;;;;;;;;x
 EVTDESC_HF_14001_diligence_W;Watching [student.GetBestName] in the training grounds is always interesting. There is something about [student.GetHerHis] fighting technique that comes off as half-hearted, and [student.GetHerHis] cape, as well as the mask, seem like they could use a little more caring for... "[student.GetFirstName], could I have a word?", I interrupt the sparring.;;;;;;;;;;;;;x
@@ -63,7 +63,7 @@ EVTDESC_HF_14007_diligence_W;"Surely, your costume room must already be in order
 EVTDESC_HF_14008_diligence_W;[teacher.GetTitledFirstName] put me to cleaning [teacher.GetHerHis] costume room. And everything I did was wrong...! The [teacher.GetManWoman] kept giving me counter-effective instructions and muttering under [teacher.GetHerHis] breath about "impossible", and "why do I even try". If there was a lesson in this, I do not think I understood it.;;;;;;;;;;;;;x
 EVTDESC_HF_14009_diligence_W;My [student.GetRootRelation] and I are finally done organizing my costume room. [teacher.GetTeachingMomentResult];;;;;;;;;;;;;x
 
-EVTDESCHF16523_A;Hail, [Root.GetSocietyRank]! \n\nAs members of [Root.Society.GetName] we strive to better ourselves and each other! One way is the occasional sparring match, for practice and honor.\nSeek out and wrestle the [duel_target.GetSocietyRank] [duel_target.GetFirstName] ï¿½ you will find [duel_target.GetHerHim] in [duel_target.Location.GetName].\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
+EVTDESCHF16523_A;Hail, [Root.GetSocietyRank]! \n\nAs members of [Root.Society.GetName] we strive to better ourselves and each other! One way is the occasional sparring match, for practice and honor.\nSeek out and wrestle the [duel_target.GetSocietyRank] [duel_target.GetFirstName] – you will find [duel_target.GetHerHim] in [duel_target.Location.GetName].\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
 EVTDESCHF16523_B;Hail, [Root.GetSocietyRank]! \n\n[Root.Society.GetNameCap] have been watching you, and I believe it is time for us to meet in the ring. A [duel_target.GetSocietyRank] cannot afford to get rusty! What say you? Will you seek me out for an honorable match?\nI will be waiting for you in [duel_target.Location.GetName].\n\nSigned, [From.GetTitledFirstName];;;;;;;;;;;;;x
 EVTDESC_HFP_16003_default;[combatant_1.GetBestName] has challenged you to a [combatant_1.GetDuelType]. The only respectable response would be to accept the challenge.;;;;;;;;;;;;;x
 EVTDESC_HFP_16003_mock_duel;My [hero_character.GetSisterBrother] in [Root.Society.GetName], [hero_character.GetTitledName], informs me that [combatant_1.GetBestName] needs someone to partake in a [combatant_1.GetDuelType], in an attempt for the eager recruit to prove [combatant_1.GetHerselfHimself] to us. The only respectable response would be to agree to help out.;;;;;;;;;;;;;x
@@ -77,7 +77,7 @@ EVTOPTA_HFP_16004_TT;The match will take place within the next few days.\n;;;;;;
 EVTDESC_HFP_16006;"Not so fast", a voice whispers in my ear, as I'm preparing to turn in for the night. I turn around, but something stings my throat. A dagger? "We WILL wrestle, dear [Root.GetFirstName], do you understand? Nod if you understand." Panic pounding in my chest, I nod, carefully as to not hurt myself further. "Good", the [From.GetManWoman] says, and pulls away into the dark.;;;;;;;;;;;;;x
 EVTOPTA_HFP_16006_TT;You gulp, as it seems you have no choice. You will wrestle [From.GetTitledName]!, in a few days time.\n;;;;;;;;;;;;;x
 EVTDESC_HFP_16007;While attempting to talk some sense into [combatant_2.GetTitledFirstName], in regards to [combatant_2.GetHerHim] declining my challenge, I have decided to sneak into [combatant_2.GetHerHis] [combatant_2.GetCapitalHolding]. Fidgeting with the dagger in my sleeve, I have a good feeling about this, when suddenly I hear people shouting. "Who goes there?" they demand, and I am surrounded by guards.;;;;;;;;;;;;;x
-EVTDESC_HFP_16009_default;As the match goes on, [combatant_2.GetTitledFirstName] and I get more and more desperate with grapples and finishing moves. I finally grab him and attempt to land a final blow, but [combatant_2.GetSheHe] overpowers me and flings us out of the ring, with both of our heads landing... awkwardly on the floor.;;;;;;;;;;;;;x
+EVTDESC_HFP_16009_default;As the match goes on, [combatant_2.GetTitledFirstName] and I get more and more desparate with grapples and finishing moves. I finally grab him and attempt to land a final blow, but [combatant_2.GetSheHe] overpowers me and flings us out of the ring, with both of our heads landing... awkwardly on the floor.;;;;;;;;;;;;;x
 EVTDESC_HF_16011_intrigue_default;[other_combatant.GetTitledFirstName] is moving sluggishly. Perhaps it's due to the special breakfast I had my agents prepare for [other_combatant.GetHerHim], but it is clear that the [other_combatant.GetManWoman] is not in [other_combatant.GetHerHis] best form. Before anyone catches on, I attack with full force. It feels almost too easy.;;;;;;;;;;;;;x
 EVTDESC_HFP_16011_A;My body is cramping, as [other_combatant.GetTitledFirstName] braces for another attack. The following moments are a blur, blood suddenly everywhere, somebody shouting. "Did [Root.GetTitledFirstName] just kill [other_combatant.GetHerHim]?!";;;;;;;;;;;;;x
 EVTDESC_HFP_16011_B;[other_combatant.GetTitledFirstName] throws out [other_combatant.GetHerHis] moves [other_combatant.GetClumsilyElegantly]. The fight has gone on forever, and my muscles are beginning to ache. With the remainder of my strength I kill [other_combatant.GetHerHim].;;;;;;;;;;;;;x
@@ -87,7 +87,7 @@ EVTDESC_HFP_16011_B_W;[other_combatant.GetBestName] and I are starting to grab w
 EVTDESC_HFP_16011_C_W;[other_combatant.GetBestName] is quickly becoming an equal in my mind as my unrelenting fury of blows seemingly do not land. However, I spot a hole in [other_combatant.GetHerHis] defense, and I land a series of hard blows against [other_combatant.GetHerHis] body. I step back when I realize that blood is seeping out of [other_combatant.GetFirstName]'s mouth.;;;;;;;;;;;;;x
 EVTDESC_HFP_16011_D_W;I am running out of options as [other_combatant.GetBestName] does not fall prey to my style. I decide to go all in and attempt to incapacitate [other_combatant.GetHerHim]. I extend my foot, trip my foe, and give [other_combatant.GetHerHim] a series of blows. It is not long until I realize [other_combatant.GetHerHim] stopped breathing.;;;;;;;;;;;;;x
 EVTDESC_HF_16011_intrigue_A_attacker;My [other_combatant.GetRootRelation] seems unaware that the little wound I inflicted is what is causing [other_combatant.GetHerHis] limbs to slowly go numb... "Valiant effort!" I proclaim, watching [other_combatant.GetHerHis] sluggish movements. When [other_combatant.GetSheHe] lunges at me, I carefully step aside, letting [other_combatant.GetHerHis] subsequent collapse look like a failed attack. The poison must have reached [other_combatant.GetHerHis] heart.;;;;;;;;;;;;;x
-EVTDESC_HF_16011_intrigue_A_defender_spymaster;I'm not sure why my [Root.GetMySpymasterName] wants to inspect my equipment prior to the duel ï¿½ surely, [job_spymaster.GetHerHis] comment about poison were in jest! Later, my performance in the fight is not my greatest accomplishment, but I honestly expected my [other_combatant.GetRootRelation] to put up more resistance. I barely have a scratch!;;;;;;;;;;;;;x
+EVTDESC_HF_16011_intrigue_A_defender_spymaster;I'm not sure why my [Root.GetMySpymasterName] wants to inspect my equipment prior to the duel – surely, [job_spymaster.GetHerHis] comment about poison were in jest! Later, my performance in the fight is not my greatest accomplishment, but I honestly expected my [other_combatant.GetRootRelation] to put up more resistance. I barely have a scratch!;;;;;;;;;;;;;x
 EVTDESC_HF_16011_intrigue_A_defender_self;"Impressive!" [other_combatant.GetTitledFirstName] splutters, on [other_combatant.GetHerHis] knees in the [Root.Capital.GetGroundDesc]. Finally, I let the anger fill me. "I had your 'solution' switched", I hiss, as I take my fist to [other_combatant.GetHerHis] throat. "I have eyes and ears everywhere", I explain to the bewildered [other_combatant.GetManWoman]. "You thought I'd let you *poison* me?";;;;;;;;;;;;;x
 you_win_the_match_tt;You win the match.\n;;;;;;;;;;;;;x
 EVTDESC_HFP_16012_A;Just as I begin to think that I am wearing my opponent down, [other_combatant.GetTitledFirstName] lunges at me, with more force than so far displayed. Sweat drips down my forehead, when suddenly, I hear someone shouting, describing the scene incredulously. [other_combatant.GetSheHeCap] has managed to [Root.GetWrestlingInjuringBlowOnMe].;;;;;;;;;;;;;x
@@ -98,7 +98,7 @@ EVTDESC_HFP_16012_A_W;Ages have seemingly passed as [other_combatant.GetTitledFi
 EVTDESC_HFP_16012_B_W;[other_combatant.GetBestName] and I are starting to throw out any move that comes to the top of our heads. [other_combatant.GetBestName] rips [other_combatant.GetHerselfHimself] out of my grasp, and punches me in the throat. I collapse attempting to take in air with no luck.;;;;;;;;;;;;;x
 EVTDESC_HFP_16012_C_W;In both speed and strength I am matching my foe [other_combatant.GetBestName]. However, I left a hole in my defense, and [other_combatant.GetBestName] quickly takes advantage in this, and lands multiple devastating blows.;;;;;;;;;;;;;x
 you_lose_the_match_tt;You lose the match.\n;;;;;;;;;;;;;x
-EVTDESC_HFP_16013_mock_duel_A;The match has gone on for what feels like hours ï¿½ the initial confidence I felt has begun to wane, and my movements are getting sloppy. Then, just as my knees are about to give way under me, I [other_combatant.GetWrestlingInjuringBlow].;;;;;;;;;;;;;x
+EVTDESC_HFP_16013_mock_duel_A;The match has gone on for what feels like hours – the initial confidence I felt has begun to wane, and my movements are getting sloppy. Then, just as my knees are about to give way under me, I [other_combatant.GetWrestlingInjuringBlow].;;;;;;;;;;;;;x
 EVTDESC_HFP_16013_mock_duel_B;As the match begins, [other_combatant.GetTitledName] comes at me slowly. I offer [other_combatant.GetHerHim] my best taunting smile, and it does not take long before I have seen to [other_combatant.GetWrestlingInjuringBlow].;;;;;;;;;;;;;x
 EVTDESC_HFP_16013_mock_duel_C;The onlookers are cheering for me, as I swing my fists with increasing enthusiasm. When it's over, [other_combatant.GetTitledName] is on the ground, [other_combatant.GetHerHis] face red with embarrassment. I shrug, smiling to the crowd, and at my opponent.;;;;;;;;;;;;;x
 EVTDESC_HFP_16013_intrigue_default;For a moment I am worried that [other_combatant.GetTitledFirstName] is going to fall, but [other_combatant.GetTitledFirstName] does not appear to notice my sabotage. All I need to do is land a blow in the right area and... There! The [other_combatant.GetManWoman] is spinning, clutching [other_combatant.GetHerHis] [other_combatant.GetBodyPartInjured], screaming in pain.;;;;;;;;;;;;;x
@@ -112,14 +112,14 @@ EVTDESC_HFP_16013_default_E;I am swinging my arms wildly, when suddenly, [other_
 EVTDESC_HFP_16014_mock_duel_A;A simple [combatant_1.GetDuelType] or not, [other_combatant.GetTitledFirstName] has an air of unquestioned confidence about [other_combatant.GetHerHim]. When I charge, [other_combatant.GetSheHe] snickers. At the end of it all, I am lying on the ground, after my opponent made sure to [Root.GetWrestlingInjuringBlowOnMe].;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_mock_duel_B;[other_combatant.GetTitledFirstName] charges at me, and has soon managed to [Root.GetWrestlingInjuringBlowOnMe]. The crowd does not seem impressed by my effort.;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_mock_duel_C;The onlookers are cheering for [other_combatant.GetTitledName], as [other_combatant.GetSheHe] is swinging [other_combatant.GetHerHis] fists with increasing enthusiasm. When it's over, the [other_combatant.GetManWoman] looks at me with pity.;;;;;;;;;;;;;x
-EVTDESC_HFP_16014_intrigue_default;I instructed the squire to weaken one of my opponent's body parts, but I am having trouble spotting the sabotage. "Are you making a wish?" [other_combatant.GetTitledFirstName] asks, impatiently ï¿½ we have been at this for hours, and my scheming has lead nowhere. I back away, clutching my [GetBodyPartInjured]. [GetSeverityOfInjuryCap].;;;;;;;;;;;;;x
+EVTDESC_HFP_16014_intrigue_default;I instructed the squire to weaken one of my opponent's body parts, but I am having trouble spotting the sabotage. "Are you making a wish?" [other_combatant.GetTitledFirstName] asks, impatiently – we have been at this for hours, and my scheming has lead nowhere. I back away, clutching my [GetBodyPartInjured]. [GetSeverityOfInjuryCap].;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_default_A;"Don't look so glum", [other_combatant.GetTitledName] offers. [other_combatant.GetSheHeCap] has me on the ground, *again*, and I am losing any patience I ever had. "You oaf-" I begin, but I collapse from the pain. The [other_combatant.GetManWoman] has managed to [Root.GetWrestlingInjuringBlowOnMe], and the clear scent of blood has me dizzy.;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_default_B;I am not sure what is wrong with me, but nothing I do has any effect on [other_combatant.GetTitledFirstName]. "Come on, don't give up already!" [other_combatant.GetSheHe] commands, disgruntlement clear in [other_combatant.GetHerHis] voice. I try to rise, but I can't. My [Root.GetBodyPartInjured] hurts like it never has before. "I am just going to rest a little, here in the [Root.Capital.GetGroundDesc]", I mumble.;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_default_C;Pain is throbbing in my [GetBodyPartInjured], and I clench my jaw, trying not to cry. "It's not over!" I growl, but my opponent is lowering [other_combatant.GetHerHis] fists. The last rays of the evening sun envelops [other_combatant.GetHerHim], and suddenly, [other_combatant.GetSheHe] looks like a warrior sent by the heavens themselves...! In an attempt to say something about it, I pass out.;;;;;;;;;;;;;x
-EVTDESC_HFP_16014_default_E;[other_combatant.GetTitledName] is swinging [other_combatant.GetHerHis] fists wildly, when suddenly, a shriek of pain cuts through the air. Staggering, I realize that the voice is my own ï¿½ my opponent has managed to [Root.GetWrestlingInjuringBlowOnMe].;;;;;;;;;;;;;x
+EVTDESC_HFP_16014_default_E;[other_combatant.GetTitledName] is swinging [other_combatant.GetHerHis] fists wildly, when suddenly, a shriek of pain cuts through the air. Staggering, I realize that the voice is my own – my opponent has managed to [Root.GetWrestlingInjuringBlowOnMe].;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_A_W;[other_combatant.GetBestName] and I were duking it out pretty evenly over the course of our match until [other_combatant.GetSheHe] ripped [other_combatant.GetHerselfHimself] out of my grasp. All of a sudden, [other_combatant.GetFirstName] did an Aguila move, and it was over. Although I was defeated, I saw [other_combatant.GetFirstName] stumble away from me, grasping [other_combatant.GetHerHis] [other_combatant.GetBodyPartInjured].;;;;;;;;;;;;;x
 EVTDESC_HFP_16014_B_W;The match between [other_combatant.GetBestName] and I soon devolved into a grappling mess, with the chances of victory ebbing and flowing. After I caught [other_combatant.GetFirstName] off-guard, I had my blow returned to be tenfold.;;;;;;;;;;;;;x
-EVTDESC_HFP_16014_C_W;My defensive strategy seemed to be working against [other_combatant.GetBestName]'s aggressive style, until I left myself wide open. Even though in my struggle I landed some blows, I was soon pinned and defeated.;;;;;;;;;;;;;x
+EVTDESC_HFP_16014_C_W;My defensive strategy seemed to be working against [other_combatant.GetBestName]'s aggresive style, until I left myself wide open. Even though in my struggle I landed some blows, I was soon pinned and defeated.;;;;;;;;;;;;;x
 EVTDESC_HFP_16015;I was in a defensive stance, locking eyes with [other_combatant.GetTitledFirstName]. The crowd began to whisper, as my opponent fidgeted awkwardly, [other_combatant.GetHerHis] face growing paler. I thought [other_combatant.GetSheHe] was about to faint, when the [other_combatant.GetManWoman] started running, away from me.;;;;;;;;;;;;;x
 EVTDESC_HFP_16016;Still shivering, I cannot explain what happened. When it all came down to it, my legs gave way and I simply... I fled the match! I am such a coward! Why did I ever agree to this in the first place?;;;;;;;;;;;;;x
 EVTDESC_HFP_16017;Just as I [other_combatant.GetWrestlingInjuringBlow], [other_combatant.GetTitledFirstName] manages to [Root.GetWrestlingInjuringBlowOnMe]. However, the crowd is chanting MY name!;;;;;;;;;;;;;x
@@ -141,7 +141,7 @@ EVTDESC_HFP_16021_incapable;There are noises. Metal, clanging. A fight? Are thos
 EVTDESC_HFP_16021_default;Sometimes, when I see my soldiers practicing their wrestling skills in the training grounds, the face of [other_combatant.GetTitledFirstName] flashes before my mind's eye, and I relive the match we fought. It sends my heart racing, how I failed to defend my honor. Some days, the shame is overwhelming.;;;;;;;;;;;;;x
 EVTDESC_HFP_16022_incapable;[From.GetTitledFirstName] has apparently slipped into a deep slumber, and does not show any signs of waking. However, I am told that the last thing anyone heard [From.GetHerHim] talking about was our match and how [From.GetSheHe] would find a way to take revenge on me...;;;;;;;;;;;;;x
 EVTDESC_HFP_16023_mock_duel;Since the match, I have been practicing a bit with [other_combatant.GetTitledFirstName]. The [other_combatant.GetManWoman] did best me, and I was quick to ask for any pointers. [other_combatant.GetSheHeCap] seemed surprised at first, but today I am proud to tell [other_combatant.GetHerHim] that [other_combatant.GetSheHe]'s a good teacher. "And friend!" I add.;;;;;;;;;;;;;x
-EVTDESC_HFP_16023_default;I have recently found myself talking with [other_combatant.GetTitledFirstName] for hours, about [other_combatant.GetRootMatchingPersonalityStreak]. I have to laugh, however, when the [other_combatant.GetManWoman] attempts to compliment my wrestling technique ï¿½ we both know that I didn't do very well, last time we sparred.;;;;;;;;;;;;;x
+EVTDESC_HFP_16023_default;I have recently found myself talking with [other_combatant.GetTitledFirstName] for hours, about [other_combatant.GetRootMatchingPersonalityStreak]. I have to laugh, however, when the [other_combatant.GetManWoman] attempts to compliment my wrestling technique – we both know that I didn't do very well, last time we sparred.;;;;;;;;;;;;;x
 EVTDESC_HFP_16024_mock_duel;After the match, [From.GetTitledName] asked me for advice on fighting. A little taken aback, I happily offered to train with [From.GetHerHim], on occasion. Today, [From.GetSheHe] thanks me, for being a good teacher. "And friend," [From.GetSheHe] adds, dunking me on the back, before [From.GetSheHe] cocks [From.GetHerHis] head, in direction of the ring.;;;;;;;;;;;;;x
 EVTDESC_HFP_16024_default;I have recently found myself becoming friendly with [From.GetTitledFirstName]. [From.GetSheHeCap] chuckles heartily, however, when I attempt to compliment the [From.GetManWoman] on [From.GetHerHis] wrestling technique. "My [Root.GetLordLady], we both know that I did not do very well, last time we sparred", [From.GetSheHe] says.;;;;;;;;;;;;;x
 EVTDESC_HFP_16025_new_crush_A;Ever since we wrestled, I have been having daydreams, about [other_combatant.GetFirstName]. I keep seeing [other_combatant.GetHerHim] in my mind's eye, and my heart flutters. I can't tell [other_combatant.GetHerHim] though... [other_combatant.GetRootRomanticWorry];;;;;;;;;;;;;x
@@ -151,8 +151,8 @@ EVTDESC_HFP_16025_crushing_already;Ever since [other_combatant.GetFirstName] bes
 EVTDESC_HFP_16025_crush_past;I've had trouble sleeping, ever since the match with [other_combatant.GetFirstName], and it's affecting my temper. When my councilors begged me to clarify my thoughts on a matter, I simply blurted out that "[other_combatant.GetRootRomanticWorry]";;;;;;;;;;;;;x
 EVTDESC_HF_16029_A;My [craven_ruler.GetRootRelation] confesses that [craven_ruler.GetSheHe] has recently turned down another match [craven_ruler.GetSheHe] was challenged to. I am not sure what words of comfort I can offer, but I understand [craven_ruler.GetHerHis] feelings of guilt and shame. Is this the ruler [craven_ruler.PrimaryTitle.GetName] should have?;;;;;;;;;;;;;x
 EVTDESC_HF_16029_B;[craven_ruler.GetTitledFirstName] recently turned down another match [craven_ruler.GetSheHe] was challenged to. At first I was embarrassed, on behalf of all [craven_ruler.GetHerHis] subjects, but who am I to say I would not react the same way? Perhaps there is value in choosing your battles...?;;;;;;;;;;;;;x
-HF_561_DESC;A fellow member of [Root.Society.GetName], ï¿½Y[lodge_member_killed.GetFirstNameWithNick]ï¿½!, has been killed in combat by ï¿½Y[lodge_member_killer.GetFirstNameWithNick]ï¿½!!;;;;;;;;;;;;;x
-you_succeeding_to_corner_wrestling_tt;you succeeding to force ï¿½Y[From.GetTitledFirstName]ï¿½! into accepting your challenge\n;;;;;;;;;;;;;x
+HF_561_DESC;A fellow member of [Root.Society.GetName], §Y[lodge_member_killed.GetFirstNameWithNick]§!, has been killed in combat by §Y[lodge_member_killer.GetFirstNameWithNick]§!!;;;;;;;;;;;;;x
+you_succeeding_to_corner_wrestling_tt;you succeeding to force §Y[From.GetTitledFirstName]§! into accepting your challenge\n;;;;;;;;;;;;;x
 EVTDESC_HFP_10196;[FromFrom.GetTitledName] suffered an untimely death before we could see to our match. I'll have to approach [warrior_lodge_to_join.GetName] anew.;;;;;;;;;;;;;x
 EVTDESCWR2;Hail, [Root.GetSocietyRank]!\n\nIt has come to our attention that you have not been training in the recent months. To be a successful luchador, you must be in prime fitness at all times. Go to one of our training stations to get yourself in shape!\n\nSigned, [From.GetTitledFirstName].;;;;;;;;;;;;;x
 EVTDESCWR3;Arriving at my local training center, I am met with the sight of men and women, some of them my brothers and sisters in the Luchadores. All I hope is that I do not do anything stupid in front of them.;;;;;;;;;;;;;x
@@ -162,16 +162,16 @@ EVTDESCWR5_A;Partway into my training regimen, as I am pressing a particularly h
 EVTDESCWR5_B;As I was lifting a heavy set of weights, one of my legs gives way. The next few second feel like hours as I witness my leg flop awkwardly.;;;;;;;;;;;;;x
 EVTOPTAWR5;AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH;;;;;;;;;;;;;x
 no_improve_skills_TT;Your skills do not improve after this session.;;;;;;;;;;;;;x
-EVTDESCWR6;After a few days of graceless exercise and the burn of stares from more experienced people, I have finally completed my mandated training regimen.;;;;;;;;;;;;;x
+EVTDESCWR6;After a few days of graceless excercise and the burn of stares from more experienced people, I have finally completed my mandated training regimen.;;;;;;;;;;;;;x
 EVTOPTAWR6;I... don't feel much stronger.;;;;;;;;;;;;;x
 barely_improve_skills_TT;Your skills barely improve.;;;;;;;;;;;;;x
 somewhat_injured;You suffer a slight injury;;;;;;;;;;;;;x
-EVTDESCWR7;Several days of workout later, and I feel as if I am finally getting somewhere with this exercise stuff!;;;;;;;;;;;;;x
+EVTDESCWR7;Several days of workout later, and I feel as if I am finally getting somewhere with this excercise stuff!;;;;;;;;;;;;;x
 EVTOPTAWR7;I feel great!;;;;;;;;;;;;;x
 improve_skills_TT;Your skills improve.;;;;;;;;;;;;;x
 EVTDESCWR8;After finishing the last of my reps, I instantly feel a change. Working out is starting to become easy!;;;;;;;;;;;;;x
 EVTOPTAWR8;I could go for a couple more rounds of this stuff.;;;;;;;;;;;;;x
-EVTDESCWR9;Wrapping up the last of my workouts, it feels easier and easier to do this stuff after each exercise I go through.;;;;;;;;;;;;;x
+EVTDESCWR9;Wrapping up the last of my workouts, it feels easier and easier to do this stuff after each excercise I go through.;;;;;;;;;;;;;x
 EVTOPTAWR9;Absolute lightwork!;;;;;;;;;;;;;x
 greatly_improve_skills_TT; Your skills greatly improve.;;;;;;;;;;;;;x
 EVTDESCWR11;Hail, [Root.GetSocietyRank] [Root.GetFirstName]\nWe are pleased with your progress. During the time you spent training you have taken a great steps in improving yourself within the ring. Hereby I declare your mission completed.\n\nSigned, [From.GetSocietyRank] [From.GetFirstName].;;;;;;;;;;;;;x
@@ -185,7 +185,7 @@ EVTDESCWR101;Now that I am a [Root.GetSocietyRank], I must choose a luchador per
 EVTOPTAWR101;I shall become a tecnico, defender of the good.;;;;;;;;;;;;;x
 become_face_TT;Become a tecnico, the heroes of Lucha Libre.;;;;;;;;;;;;;x
 EVTOPTBWR101;I shall become a rudo, defeater of the good.;;;;;;;;;;;;;x
-become_heel_TT;Become a rudo, the villains of Lucha Libre.;;;;;;;;;;;;;x
+become_heel_TT;Become a rudo, the villians of Lucha Libre.;;;;;;;;;;;;;x
 EVTDESCWR103;Hail, [Root.GetSocietyRank]!\n\nWe are pleased that you have chosen to honor the traditions of Lucha Libre! Now you are *truly* a luchador!\n\nSigned, [From.GetSocietyRank] [From.GetFirstName].;;;;;;;;;;;;;x
 EVTOPTAWR103;You honor me [From.GetSocietyRank];;;;;;;;;;;;;x
 EVTDESCWR104;Now that I am properly acquainted with the way of Lucha Libre, I should choose a lucha style.;;;;;;;;;;;;;x
@@ -202,10 +202,10 @@ EVTOPTAWR301;If it makes my vassals happy, I am all for this!;;;;;;;;;;;;;x
 EVTDESCWR302;After adopting a rudo persona, the traits normally attributed to them have begun to bleed into everyday life. I find myself flying into blind rages when a vassal disagrees with me and being all around ruder than I was before.;;;;;;;;;;;;;x
 EVTOPTAWR302;If my vassals don't like it they can GET OUT.;;;;;;;;;;;;;x
 EVTOPTAWR401_TT;You'll approach the [new_recruit.GetManWoman] to explain the initiation match.;;;;;;;;;;;;;x
-EVTOPTAWR402_TT;You agree to wrestle whoever it is that ï¿½Y[hero_character.Society.GetNameCap]ï¿½! has chosen for you.;;;;;;;;;;;;;x
+EVTOPTAWR402_TT;You agree to wrestle whoever it is that §Y[hero_character.Society.GetNameCap]§! has chosen for you.;;;;;;;;;;;;;x
 EVTDESCWR403_yes;[new_recruit.GetTitledFirstName] offered no protests when I explained our traditions, eyes all aglitter at the thought of an initiation match. After some inquiry, [duel_target.GetTitledName] has kindly volunteered.;;;;;;;;;;;;;x
 EVTDESCWR403_no;[new_recruit.GetTitledFirstName] listened while I explained our tradition of one-on-one matches, but then rolled [new_recruit.GetHerHis] eyes and walked off. "I would rather not get involved with barbarians.";;;;;;;;;;;;;x
-EVTOPTAWR403_TT_1;A sparring match will take place between ï¿½Y[new_recruit.GetTitledName]ï¿½! and ï¿½Y[duel_target.GetTitledName]ï¿½!;;;;;;;;;;;;;x
+EVTOPTAWR403_TT_1;A sparring match will take place between §Y[new_recruit.GetTitledName]§! and §Y[duel_target.GetTitledName]§!;;;;;;;;;;;;;x
 EVTDESCWR405_they_fled;Just as [combatant_2.GetTitledName] was about to show [From.GetTitledName] what wrestling match should look like, the [From.GetAgeAdjective] [From.GetManWoman] ran away...;;;;;;;;;;;;;x
 EVTDESCWR406_was_seriously_injured;To the brave [Root.GetTitledName],\n\nI understand you were seriously injured during your initiation, but that you remained standing. To reward this display of strength in the match, I hereby officially invite you into our ranks.\n\nSigned,\n[From.GetTitledName];;;;;;;;;;;;;x
 EVTDESCWR413;My [recruiting_parent.GetRootRelation] is making some less than subtle remarks over dinner tonight, commenting on my wrestling skills and asking how interested I am in luchadors. "Honestly, [Root.GetFirstName]... When are you going to become a member of [recruiting_parent.Society.GetName]?";;;;;;;;;;;;;x
@@ -218,7 +218,7 @@ w_snake_desc;This character's wrestling style is the "Serpiente", which values p
 w_jaguar;Jaguar;;;;;;;;;;;;;x
 w_jaguar_desc;This character's wrestling style is the "Jaguar", a relentless style and pushes its adherents to go all out on their opponents.;;;;;;;;;;;;;x
 w_heel;Rudo;;;;;;;;;;;;;x
-w_heel_desc;This character is a "rudo", a villain of sorts in Lucha Libre;;;;;;;;;;;;;x
+w_heel_desc;This character is a "rudo", a villian of sorts in Lucha Libre;;;;;;;;;;;;;x
 w_face;Tecnico;;;;;;;;;;;;;x
 w_face_desc;This character is a "tecnico," a hero of some kind in Lucha Libre;;;;;;;;;;;;;x
 #Modifiers
@@ -240,7 +240,7 @@ String_knee;knee;;;;;;;;;;;;;x
 String_foot;foot;;;;;;;;;;;;;x
 String_head;head;;;;;;;;;;;;;x
 #Miscellaneous
-religion_openly_sacred_heart_tooltip;Publicly follows the ï¿½Y[sacred_heart.GetName]ï¿½! religion;;;;;;;;;;;;;x
+religion_openly_sacred_heart_tooltip;Publicly follows the §Y[sacred_heart.GetName]§! religion;;;;;;;;;;;;;x
 DEATH_WRESTLE;was slain by $KILLER$ in a wrestling match;;;;;;;;;;;;;x
 DEATH_MISSION_WRESTLE;was slain by $KILLER$ in a dramatic wrestling match for blood;;;;;;;;;;;;;x
 string_heroic_wrestle;A Heroic Match;;;;;;;;;;;;;x
@@ -249,7 +249,7 @@ wrestle_title;The Match;;;;;;;;;;;;;x
 
 
 warrior_lodge_mictlantec;The Cuauhocelomeh;;;;;;;;;;;;;x
-warrior_lodge_mictlantec_desc;The Cuauhocelomeh ï¿½ or Eagle Jaguar Knights ï¿½ is based on an ancient Nahua military order of elite warriors that dressed as eagles and jaguars in battle. This lodge, formed during the turbulent times of the Mexican Empire's twilight years, values the capturing of enemies first and foremost among members.;;;;;;;;;;;;;x
+warrior_lodge_mictlantec_desc;The Cuauhocelomeh — or Eagle Jaguar Knights — is based on an ancient Nahua military order of elite warriors that dressed as eagles and jaguars in battle. This lodge, formed during the turbulent times of the Mexican Empire's twilight years, values the capturing of enemies first and foremost among members.;;;;;;;;;;;;;x
 warrior_lodge_mictlantec_rank_1_female;Tlamanih;;;;;;;;;;;;;x
 warrior_lodge_mictlantec_rank_2_female;Cuextecatl;;;;;;;;;;;;;x
 warrior_lodge_mictlantec_rank_3_female;Tlacateccatl;;;;;;;;;;;;;x
@@ -269,4 +269,4 @@ EVTDESCHF19001;After months of training, I have finally proven myself worthy to 
 mictlantec_leader;Tlamanih;;;;;;;;;;;;;x
 mictlantec_leader_desc;This character is a tlamanih, a trained [mictlantec.GetName] captor.;;;;;;;;;;;;;x
 has_liege_vassal_or_neighbor_of_mictlantec_religion_tt;Has a Liege, Vassal, or neighboring ruler who follows the [mictlantec.GetName] religion.;;;;;;;;;;;;;x
-religion_openly_mictlantec_tooltip;Publicly follows the ï¿½Y[mictlantec.GetName]ï¿½! religion;;;;;;;;;;;;;x
+religion_openly_mictlantec_tooltip;Publicly follows the §Y[mictlantec.GetName]§! religion;;;;;;;;;;;;;x
