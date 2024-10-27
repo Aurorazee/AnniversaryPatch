@@ -165,7 +165,7 @@ expected_next_title_druid_circle_member_tooltip;This druid is probably the next 
 secret_religious_society_celtic_pagan;the Hidden Circle;;;;;;;;x
 secret_religious_society_celtic_pagan_desc;The followers of the Druidic faith have long known persecution, especially from Christian hands. As always, they persevere, even if they must use deception. Though they utter empty prayers to foreign gods, they secretly meet in private chambers and secluded groves to offer devotion and sacrifice to Danu, the Mother and source of life. They keep their faith knowing that some day mighty Taranis the Thunderer will strike down those who have persecuted the faithful.;;;;;;;;x
 secret_religious_society_celtic_pagan_reformed;Danu's Faithfull;;;;;;;;x
-secret_religious_society_celtic_pagan_reformed_desc;The new Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against the might of Lug of the Long Spear, and those that opress them will get what they deserve.;;;;;;;;x
+secret_religious_society_celtic_pagan_reformed_desc;The new Druidic faith may be young, but it's followers are no less devout than any other. Even when they must publicly profess faith in false gods, the children of Danu plan and prepare for the day when they might worship the gods in the light of day. They know that none can long stand against the might of Lug of the Long Spear, and those that oppress them will get what they deserve.;;;;;;;;x
 secretly_convert_to_celtic_pagan_holy_site;Secretly Convert to Druidic;;;;;;;;;;;;;x
 secretly_convert_to_celtic_pagan_holy_site_desc;The §YDruidic§! shrine in §Y[Root.Location.GetName]§! has drawn my attention of late. It feels ancient, patient, and powerful. It seems to be waiting to reveal it's secrets. I am tempted to listen...;;;;;;;;;;;;;x
 secretly_convert_to_celtic_pagan_reformed_holy_site;Secretly Convert to Druidic;;;;;;;;;;;;;x
@@ -250,13 +250,13 @@ ancrel.damn;Damn!;;;;;;;;;;;;;x
 ancrel.horrible;This is horrible!;;;;;;;;;;;;;x
 ancrel.troublesome;Troublesome indeed...;;;;;;;;;;;;;x
 ancrel.that_bastard;Bastard...;;;;;;;;;;;;;x
-ancrel.bummer;That's dissapointing...;;;;;;;;;;;;;x
+ancrel.bummer;That's dissappointing...;;;;;;;;;;;;;x
 ancrel.fantastic;That's fantastic!;;;;;;;;;;;;;x
 province_loses_prosperity_custom_tooltip;[Root.GetName] loses some of it's prosperity!;;;;;;;;;;;;;x
 province_prospers_custom_tooltip;[Root.GetName] becomes more prosperous!;;;;;;;;;;;;;x
 ###### Misc opinion modifiers;;;;;;;;;;;;;x
 ancrel_honored_me;Honored Me;;;;;;;;;;;;;x
-ancrel_dissapointed;Dissapointed;;;;;;;;;;;;;x
+ancrel_dissapointed;Dissappointed;;;;;;;;;;;;;x
 ancrel_jealous;Jealous;;;;;;;;;;;;;x
 ancrel_pleased;Pleased;;;;;;;;;;;;;x
 paganify_the_world;Lets. Get. PAGAN!;;;;;;;;;;;;;x
@@ -286,7 +286,7 @@ wine_left_1_desc;This wine is weak, both in flavor and alcohol. It is good for c
 wine_left_2;Common Wine;;;;;;;;;;;;x
 wine_left_2_desc;These bottles contain average wine. It won't offend anyone, but it won't impress either.;;;;;;;;;;;;x
 wine_left_3;Fine Wine;;;;;;;;;;;;x
-wine_left_3_desc;This wine is of a good quality, something all but the most particular pallete would enjoy.;;;;;;;;;;;;x
+wine_left_3_desc;This wine is of a good quality, something all but the most particular palate would enjoy.;;;;;;;;;;;;x
 wine_left_4;Exquisite Wine;;;;;;;;;;;;x
 wine_left_4_desc;This batch of wine is of surpassing quality, very few ever experience the pleasure of drinking a wine like this.;;;;;;;;;;;;x
 wine_left_5;Perfect Wine;;;;;;;;;;;;x
@@ -298,7 +298,7 @@ wine_right_3;Tart Wine;;;;;;;;;;;;x
 wine_right_4;Potent Wine;;;;;;;;;;;;x
 wine_right_5;Spirited Wine;;;;;;;;;;;;x
 oil_left_0;Poisoned Oil;;;;;;;;;;;;x
-oil_left_1;Annointing Oil;;;;;;;;;;;;x
+oil_left_1;Anointing Oil;;;;;;;;;;;;x
 oil_left_2;Cleansing Oil;;;;;;;;;;;;x
 oil_left_3;Perfumed Oil;;;;;;;;;;;;x
 oil_left_4;Delicate Oil;;;;;;;;;;;;x
