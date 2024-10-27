@@ -27,7 +27,7 @@ EVTDESC_heavenlykingdom_debt;The missionary Stephen Edwins arrives at your court
 
 EVTOPT_heavenlykingdom_acceptdebt;Excellent news.;;;;;;;;;;;;;;x
 
-EVTDESC_heavenlykingdom_mormons_strikeback;You hear reports of unrest in the province of [Root.GetName] — a would-be bureaucrat named Karen who has failed the imperial examination four times has been stirring trouble after her conversion to the Neogodbeite faith. Armed with a giant sword she has been traveling across the province, destroying imperial statuary, burning Cetic texts, and spreading the Neogodbeite faith. After a failed arrest attempt she has fled to the east, leaving her followers behind.;;;;;;;;;;;;;;x
+EVTDESC_heavenlykingdom_mormons_strikeback;You hear reports of unrest in the province of [Root.GetName] ï¿½ a would-be bureaucrat named Karen who has failed the imperial examination four times has been stirring trouble after her conversion to the Neogodbeite faith. Armed with a giant sword she has been traveling across the province, destroying imperial statuary, burning Cetic texts, and spreading the Neogodbeite faith. After a failed arrest attempt she has fled to the east, leaving her followers behind.;;;;;;;;;;;;;;x
 
 EVTOPT_heavenlykingdom_ignoredmormons;Perhaps it was a mistake to ignore the Neogodbeite problem...;;;;;;;;;;;;;;x
 EVTOPT_heavenlykingdom_expelledmormons;It's a good thing we banned their congregation, but it is clear that we missed a few.;;;;;;;;;;;;;;x
@@ -48,7 +48,7 @@ EVTDESCB_heavenlykingdom_war;Neogodbeite unrest in California climaxes as an arm
 
 EVTOPTA_heavenlykingdom_war_A;These Mormon snakes! The Empire is eternal!;;;;;;;;;;;;;;x
 EVTOPTB_heavenlykingdom_war_A;The Lord truly works in mysterious ways...;;;;;;;;;;;;;;x
-EVTOPTC_heavenlykingdom_war_A;The bickering of fools does not co — the church did what?!;;;;;;;;;;;;;;x
+EVTOPTC_heavenlykingdom_war_A;The bickering of fools does not co ï¿½ the church did what?!;;;;;;;;;;;;;;x
 EVTOPTD_heavenlykingdom_war_A;Who could have foreseen this?!;;;;;;;;;;;;;;x
 
 EVTOPTA_heavenlykingdom_war_B;Rebels come and go. The Empire is eternal!;;;;;;;;;;;;;;x
@@ -81,13 +81,13 @@ EVTOPT_heavenlykingdom_conversion;This religious fervor cannot last forever.;;;;
 
 nick_the_heresiarch;the Heresiarch;;;;;;;;;;;;;x
 nick_moroni_reborn;the Sword of Eden;;;;;;;;;;;;;x
-EVTDESCIE25;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, are greeted by the Evaluator of Merit, and are given a test packet and a place to sit.\nHowever, as you pore over page after page of the examination, you come to a harrowing conclusion — you don't know a single answer. How is this possible?! You studied so hard! The pressure builds up in your head as you come to understand just how pathetically stupid you truly are, until you can no longer take it, and begin to scream and cry.;;;;;;;;;;;;;x
+EVTDESCIE25;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, are greeted by the Evaluator of Merit, and are given a test packet and a place to sit.\nHowever, as you pore over page after page of the examination, you come to a harrowing conclusion ï¿½ you don't know a single answer. How is this possible?! You studied so hard! The pressure builds up in your head as you come to understand just how pathetically stupid you truly are, until you can no longer take it, and begin to scream and cry.;;;;;;;;;;;;;x
 EVTOPTAIE25;I'm such a failure. I'm such a failure. I'm such a failure...;;;;;;;;;;;;;x
 
-EVTDESCIE26;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, and are shocked by how crowded the corridors are with people, all of them seemingly walking in the opposition direction that you are...\nYou push your way through the mass of people, and approach the Evaluator of Merit, who sits behind a massive stack of papers. The Evaluator gives you a strange look as you stand expectantly, waiting for your test. Finally, they speak up — "I'm sorry, [Root.GetName], but the examination has already ended. You are late. You failed.";;;;;;;;;;;;;x
+EVTDESCIE26;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, and are shocked by how crowded the corridors are with people, all of them seemingly walking in the opposition direction that you are...\nYou push your way through the mass of people, and approach the Evaluator of Merit, who sits behind a massive stack of papers. The Evaluator gives you a strange look as you stand expectantly, waiting for your test. Finally, they speak up ï¿½ "I'm sorry, [Root.GetName], but the examination has already ended. You are late. You failed.";;;;;;;;;;;;;x
 EVTOPTAIE26;Late... no... this isn't possible!;;;;;;;;;;;;;x
 
-EVTDESCIE27;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, are greeted by the Evaluator of Merit, and are given a test packet and a place to sit.\nAs you pore over page after page of the examination, you come to a harrowing conclusion — you don't know a single answer. How is this possible?! You quickly check the examination's date, and your mind immediately goes numb as you realize that all this time you had been studying for last year's examination... All those hours of studying were now wasted.;;;;;;;;;;;;;x
+EVTDESCIE27;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, are greeted by the Evaluator of Merit, and are given a test packet and a place to sit.\nAs you pore over page after page of the examination, you come to a harrowing conclusion ï¿½ you don't know a single answer. How is this possible?! You quickly check the examination's date, and your mind immediately goes numb as you realize that all this time you had been studying for last year's examination... All those hours of studying were now wasted.;;;;;;;;;;;;;x
 EVTOPTAIE27;L-last year's examination... hahahahAHAHAHA;;;;;;;;;;;;;x
 
 EVTDESCIE28;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, pick up a test packet, and find a place to sit.\nAs you begin going through the exam at a steady pace, you can feel the heavy stare of the Evaluator of Merit, along with several of your fellow test-takers. At first you were determined not to let it bother you, but it soon becomes too much and you snap. As you look around in anger, however, you quickly realize why they are staring at you... you are completely nude! The room erupts in laughter as you feebly attempt to cover yourself...;;;;;;;;;;;;;x
@@ -96,17 +96,17 @@ EVTOPTAIE28;Naked...? How is this possible... my life, it's ruined!;;;;;;;;;;;;;
 EVTDESCIE29;You shoot upright, cold sweat caking your body. You are in a delirium, and do not know where you are. As you struggle in the dark, however, you quickly come to realize that you're just in bed. Your bed? Oh... so it had all been a dream. Of course, you passed the imperial exam long ago! There is no cause to worry about it now.;;;;;;;;;;;;;x
 EVTOPTAIE29;Even so, what a nightmare...;;;;;;;;;;;;;x
 
-TT_fake_exam_01;Lose §Rall§! prestige.\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YFailed Exam§!'\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YHopeless Failure§!';;;;;;;;;;;;;x
-TT_fake_exam_02;Lose §Rall§! prestige.\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YFailed Exam§!'\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YTardy Loser§!';;;;;;;;;;;;;x
-TT_fake_exam_03;Lose §Rall§! prestige.\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YFailed Exam§!'\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YAlmost Passed§!';;;;;;;;;;;;;x
-TT_fake_exam_04;Lose §Rall§! prestige.\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YFailed Exam§!'\n§Y[Root.GetTitledNameWithNick]§! gains the trait '§YCreepy Pervert§!';;;;;;;;;;;;;x
+TT_fake_exam_01;Lose ï¿½Rallï¿½! prestige.\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YFailed Examï¿½!'\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YHopeless Failureï¿½!';;;;;;;;;;;;;x
+TT_fake_exam_02;Lose ï¿½Rallï¿½! prestige.\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YFailed Examï¿½!'\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YTardy Loserï¿½!';;;;;;;;;;;;;x
+TT_fake_exam_03;Lose ï¿½Rallï¿½! prestige.\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YFailed Examï¿½!'\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YAlmost Passedï¿½!';;;;;;;;;;;;;x
+TT_fake_exam_04;Lose ï¿½Rallï¿½! prestige.\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YFailed Examï¿½!'\nï¿½Y[Root.GetTitledNameWithNick]ï¿½! gains the trait 'ï¿½YCreepy Pervertï¿½!';;;;;;;;;;;;;x
 
-impauth_decrease_1_TT;§YImperial Authority§! will §Rdecrease§! by 1%;;;;;;;;;;;;;x
-impauth_decrease_2_TT;§YImperial Authority§! will §Rdecrease§! by 2%;;;;;;;;;;;;;x
-impauth_decrease_7_TT;§YImperial Authority§! will §Rdecrease§! by 7%;;;;;;;;;;;;;x
+impauth_decrease_1_TT;ï¿½YImperial Authorityï¿½! will ï¿½Rdecreaseï¿½! by 1%;;;;;;;;;;;;;x
+impauth_decrease_2_TT;ï¿½YImperial Authorityï¿½! will ï¿½Rdecreaseï¿½! by 2%;;;;;;;;;;;;;x
+impauth_decrease_7_TT;ï¿½YImperial Authorityï¿½! will ï¿½Rdecreaseï¿½! by 7%;;;;;;;;;;;;;x
 
 TITLE_northern_campaign;The Grand Coalition Resumes!;;;;;;;;;;;;;x
-EVTDESC_northern_campaign;In the twentieth year of the Brave and Sixth Filial Emperor, a momentous declaration was made – the Gaian heretics in the north had too long tested imperial benevolence, and thus the grand coalition to pacify the North was declared. This decision would prove disastrous for the Celestial Empire of California, resulting in the eventual death of Emperor Hetch Yudkow the First and a great period of ensuing civil unrest that shattered imperial authority. \nYet, this dark age of imperial history is now but a memory! Imperial authority is restored, and none live now who recall those terrible days. The Celestial Empire has made known a new declaration: the time has come for a reckoning upon the unenlightened barbarians that have so long defied imperial authority – the Campaign to Pacify the North has been resumed!;;;;;;;;;;;;;x
+EVTDESC_northern_campaign;In the twentieth year of the Brave and Sixth Filial Emperor, a momentous declaration was made ï¿½ the Gaian heretics in the north had too long tested imperial benevolence, and thus the grand coalition to pacify the North was declared. This decision would prove disastrous for the Celestial Empire of California, resulting in the eventual death of Emperor Hetch Yudkow the First and a great period of ensuing civil unrest that shattered imperial authority. \nYet, this dark age of imperial history is now but a memory! Imperial authority is restored, and none live now who recall those terrible days. The Celestial Empire has made known a new declaration: the time has come for a reckoning upon the unenlightened barbarians that have so long defied imperial authority ï¿½ the Campaign to Pacify the North has been resumed!;;;;;;;;;;;;;x
 
 northern_campaign_emperor;These savages shall rage against the heavens no longer!;;;;;;;;;;;;;x
 northern_campaign_elsewhere;Better them than us...;;;;;;;;;;;;;x
@@ -114,25 +114,25 @@ northern_campaign_targets;Foreboding news. War is on the horizon.;;;;;;;;;;;;;x
 northern_campaign_cetics;A thousand years of glory to the Empire!;;;;;;;;;;;;;x
 
 greatwall_started_TT;Begin planning of the Wall. This promises to be a lengthy and costly endeavor.;;;;;;;;;;;;;x
-greatwall_phase2_TT;Begin construction of the Wall. This will be a three-stage process, and the last brick shall be laid in San Francisco §Y90 years§! from now, heavens willing.;;;;;;;;;;;;;x
+greatwall_phase2_TT;Begin construction of the Wall. This will be a three-stage process, and the last brick shall be laid in San Francisco ï¿½Y90 yearsï¿½! from now, heavens willing.;;;;;;;;;;;;;x
 
-greatwall_increase_3_TT;Progress on the Wall will §Bincrease§! by 3%;;;;;;;;;;;;;x
-greatwall_increase_6_TT;Progress on the Wall will §Bincrease§! by 6%;;;;;;;;;;;;;x
-greatwall_increase_15_TT;Progress on the Wall will §Bincrease§! by 15%;;;;;;;;;;;;;x
-greatwall_increase_30_TT;Progress on the Wall will §Bincrease§! by 30%;;;;;;;;;;;;;x
-greatwall_decrease_3_TT;Progress on the Wall will §Rdecrease§! by 3%;;;;;;;;;;;;;x
-greatwall_decrease_6_TT;Progress on the Wall will §Rdecrease§! by 6%;;;;;;;;;;;;;x
-greatwall_decrease_15_TT;Progress on the Wall will §Rdecrease§! by 15%;;;;;;;;;;;;;x
-greatwall_decrease_30_TT;Progress on the Wall will §Rdecrease§! by 30%;;;;;;;;;;;;;x
+greatwall_increase_3_TT;Progress on the Wall will ï¿½Bincreaseï¿½! by 3%;;;;;;;;;;;;;x
+greatwall_increase_6_TT;Progress on the Wall will ï¿½Bincreaseï¿½! by 6%;;;;;;;;;;;;;x
+greatwall_increase_15_TT;Progress on the Wall will ï¿½Bincreaseï¿½! by 15%;;;;;;;;;;;;;x
+greatwall_increase_30_TT;Progress on the Wall will ï¿½Bincreaseï¿½! by 30%;;;;;;;;;;;;;x
+greatwall_decrease_3_TT;Progress on the Wall will ï¿½Rdecreaseï¿½! by 3%;;;;;;;;;;;;;x
+greatwall_decrease_6_TT;Progress on the Wall will ï¿½Rdecreaseï¿½! by 6%;;;;;;;;;;;;;x
+greatwall_decrease_15_TT;Progress on the Wall will ï¿½Rdecreaseï¿½! by 15%;;;;;;;;;;;;;x
+greatwall_decrease_30_TT;Progress on the Wall will ï¿½Rdecreaseï¿½! by 30%;;;;;;;;;;;;;x
 greatwall_nochange_TT;Progress on the Wall will be unaffected.;;;;;;;;;;;;;x
 
 greatwall_casusbelli_TT;You will gain a special one-time-use CB, to be used on raiding nations to collect reparations for the wall.;;;;;;;;;;;;;x
-greatwall_greattaxation_TT;All provinces throughout the heartland will suffer the effects of overtaxation for §Y10 years§!.;;;;;;;;;;;;;x
+greatwall_greattaxation_TT;All provinces throughout the heartland will suffer the effects of overtaxation for ï¿½Y10 yearsï¿½!.;;;;;;;;;;;;;x
 
-greatwall_localmaterials_TT;Peasants throughout §Y[k_francisco.GetName]§! will suffer the effects of §YRepurposed Homes§!, increasing revolt risk for 20 years.;;;;;;;;;;;;;x
-greatwall_overworkquarries_TT;The provinces of §Y[c_joshua_tree.GetName]§!, §Y[c_riverside.GetName]§!, §Y[c_yuba.GetName]§!, and §Y[c_tahoe.GetName]§! will suffer the effects of §YLocal Quarries Drained§!, decreasing output for 30 years.;;;;;;;;;;;;;x
-greatwall_newquarry_TT;A new imperial quarry will be built within the provinces of §Y[d_east_bay.GetName]§!, improving local productivity and prosperity.;;;;;;;;;;;;;x
-greatwall_museum_TT;Museums preserving the §YAncient Walls§! will be erected in the provinces of §Y[c_san_francisco.GetName]§!, §Y[c_bragg.GetName]§!, §Y[c_napa.GetName]§!, and §Y[c_obispo.GetName]§!, increasing local prosperity.;;;;;;;;;;;;;x
+greatwall_localmaterials_TT;Peasants throughout ï¿½Y[k_francisco.GetName]ï¿½! will suffer the effects of ï¿½YRepurposed Homesï¿½!, increasing revolt risk for 20 years.;;;;;;;;;;;;;x
+greatwall_overworkquarries_TT;The provinces of ï¿½Y[c_joshua_tree.GetName]ï¿½!, ï¿½Y[c_riverside.GetName]ï¿½!, ï¿½Y[c_yuba.GetName]ï¿½!, and ï¿½Y[c_tahoe.GetName]ï¿½! will suffer the effects of ï¿½YLocal Quarries Drainedï¿½!, decreasing output for 30 years.;;;;;;;;;;;;;x
+greatwall_newquarry_TT;A new imperial quarry will be built within the provinces of ï¿½Y[d_east_bay.GetName]ï¿½!, improving local productivity and prosperity.;;;;;;;;;;;;;x
+greatwall_museum_TT;Museums preserving the ï¿½YAncient Wallsï¿½! will be erected in the provinces of ï¿½Y[c_san_francisco.GetName]ï¿½!, ï¿½Y[c_bragg.GetName]ï¿½!, ï¿½Y[c_napa.GetName]ï¿½!, and ï¿½Y[c_obispo.GetName]ï¿½!, increasing local prosperity.;;;;;;;;;;;;;x
 
 TITLE_greatwall_start;A Curtain of Stone;;;;;;;;;;;;;x
 EVTDESC_greatwall_start;Though the empire now stands united, raiders and pirates continue to savage the natural beauty of the Californian coasts. These insolent fools who despoil your heavenly lands pay no respect to the righteousness of the empire, and while they deserve nothing more than to be crushed by the imperial army, a more permanent solution is required. After countless weeks of tireless study, you believe you have found this solution. Ancient legends speak of a sprawling empire not unlike our own that dominated the old world. Most singular of this legendary empire's wonders was a magnificent and impenetrable wall that divided the lands, keeping the empire's enemies out in the cold. This wall, the 'Iron Curtain', was said to have been visible from the heavens themselves, and to your mind seemed expressly designed to ward off raiders like those that plague your coasts today. Perhaps the time has come to construct a great wall of our own!;;;;;;;;;;;;;x
@@ -143,7 +143,7 @@ greatwall_dontbegin;A curious legend, but a legend nonetheless. We have no need 
 EVTDESC_greatwall_startvassal;The [From.GetCeticEmperorEmpressCap] has announced in a bold declaration to the realm the construction of a grand sea wall, designed to repel the raider and foil the pirate. This wall promises to defend the natural bounty of the Californian coasts, thereby increasing the wealth and security of the realm. It shall be a costly endeavor, however, that will surely tax both us and the whole of the empire...;;;;;;;;;;;;;x
 greatwall_beginvassal;Only time shall tell whether this was wisdom or folly.;;;;;;;;;;;;;x
 
-EVTDESC_greatwall_phase1;The proclamation declaring the construction of a great wall has by now reached all corners of the empire yet, despite the investments you initially made, no progress has occurred. The project promises to be a pricely endeavor, and your scribes estimate a cost far beyond your initial investment. A simple question remains: who will pay for this wall?;;;;;;;;;;;;;x
+EVTDESC_greatwall_phase1;The proclamation declaring the construction of a great wall has by now reached all corners of the empire yet, despite the investments you initially made, no progress has occurred. The project promises to be a pricey endeavor, and your scribes estimate a cost far beyond your initial investment. A simple question remains: who will pay for this wall?;;;;;;;;;;;;;x
 greatwall_phase1_peasants;The wall is for the peasants, so let them pay for it!;;;;;;;;;;;;;x
 greatwall_phase1_nobles;The nobles have ample treasuries: let them shoulder the cost!;;;;;;;;;;;;;x
 greatwall_phase1_enemies;Who better to pay than the raiders the wall shall defend against?!;;;;;;;;;;;;;x
@@ -208,12 +208,12 @@ EVTOPTA_greatwall_phase2;Let this brick be immortalized.;;;;;;;;;;;;;x
 EVTDESC_greatwall_navalbarriers;After thirty years of labor, your architects report that the first stage of the Wall's construction has been completed. The workers are readily paving their way towards [c_san_francisco] itself at a steady pace, and naval barriers have been constructed along the entire coast, along with ramparts and watchtowers at the very fringes.;;;;;;;;;;;;;x
 EVTOPT_greatwall_navalbarriers;Excellent news, but there is still a long way to go.;;;;;;;;;;;;;x
 
-EVTDESC_greatwall_watchtowers;Sixty years of labor have passed, and your architects — many of whom were born after the Wall began construction — report that the second stage of construction has been completed. Watchtowers and ramparts now stand high along the entirety of the southern Californian coast, and the bay of [c_san_francisco.GetName] itself is nearly in sight of the weary workers.;;;;;;;;;;;;;x
+EVTDESC_greatwall_watchtowers;Sixty years of labor have passed, and your architects ï¿½ many of whom were born after the Wall began construction ï¿½ report that the second stage of construction has been completed. Watchtowers and ramparts now stand high along the entirety of the southern Californian coast, and the bay of [c_san_francisco.GetName] itself is nearly in sight of the weary workers.;;;;;;;;;;;;;x
 EVTOPT_greatwall_watchtowers;Excellent news. Construction is almost at an end!;;;;;;;;;;;;;x
 
 TITLE_greatwall_finished;The Californian Wall;;;;;;;;;;;;;x
 EVTDESC_greatwall_finished_emperor;Over ninety years have passed since planning of the Long Sea Wall began under the rule of [first_greatwall_emperor.GetBestName], and few live now who remember the day construction began. Yet, history shall record forever the momentous occasion the final brick of the Wall was laid in the heart of [c_san_francisco.GetName], completing the greatest feat of engineering ever witnessed in this post-Event world. At its highest point measuring forty-five feet tall and protecting over eight hundred miles of Californian coast, the Long Sea Wall shall surely serve as California's mightiest shield for generations to come, and you, [Root.GetBestName], under whose reign it was completed, shall be remembered forevermore as California's protector.;;;;;;;;;;;;;x
-EVTDESC_greatwall_finished;All of California celebrates as a project over ninety years in the making reaches fruition — from the hills of [c_humboldt.GetName] to the beaches of [c_santa_barbara.GetName] now stretches a mighty rampart: the Long Sea Wall of California, which serves to protect the Gran Franciscan coasts and the Valleyan heartland from raider and naval invader. At its highest point the wall measures forty-five feet tall and it protects over eight hundred miles of Californian coast, causing many to consider it the largest man-made structure ever built. Though construction of the wall began over ninety years ago under the reign of [first_greatwall_emperor.GetBestName], it will surely be [last_greatwall_emperor.GetBestName] who is immortalized for guiding its construction to the end!;;;;;;;;;;;;;x
+EVTDESC_greatwall_finished;All of California celebrates as a project over ninety years in the making reaches fruition ï¿½ from the hills of [c_humboldt.GetName] to the beaches of [c_santa_barbara.GetName] now stretches a mighty rampart: the Long Sea Wall of California, which serves to protect the Gran Franciscan coasts and the Valleyan heartland from raider and naval invader. At its highest point the wall measures forty-five feet tall and it protects over eight hundred miles of Californian coast, causing many to consider it the largest man-made structure ever built. Though construction of the wall began over ninety years ago under the reign of [first_greatwall_emperor.GetBestName], it will surely be [last_greatwall_emperor.GetBestName] who is immortalized for guiding its construction to the end!;;;;;;;;;;;;;x
 EVTOPTA_greatwall_finished;Let my legacy be as immortal as this wall!;;;;;;;;;;;;;x
 EVTOPTB_greatwall_finished;An impressive feat, to be sure.;;;;;;;;;;;;;x
 
@@ -236,7 +236,7 @@ EVTDESC_warbike_chain;Last, but not least, the function of a velocipede is relia
 EVTOPT_warbike_customchain;The velocicraftsmen are wise, and I would be foolish to defy them.;;;;;;;;;;;;;x
 EVTOPT_warbike_badchain;What nonsense! A chain is a simple task for a local blacksmith!;;;;;;;;;;;;;x
 
-EVTDESC_warbike_finished;The day has finally arrived. After many long days of planning and a number of costly investments towards its construction, the craftsmen gather to present to you a prized artifact of Californian culture — your very own velocipede! Even the crudest velocipede would outshine a horse, and yours is no different. All that's left to do is name it.;;;;;;;;;;;;;x
+EVTDESC_warbike_finished;The day has finally arrived. After many long days of planning and a number of costly investments towards its construction, the craftsmen gather to present to you a prized artifact of Californian culture ï¿½ your very own velocipede! Even the crudest velocipede would outshine a horse, and yours is no different. All that's left to do is name it.;;;;;;;;;;;;;x
 EVTOPT_warbike_redracer;'Red Racer', after its striking color.;;;;;;;;;;;;;x
 EVTOPT_warbike_amelia;'Amelia Earhart', after the mythical explorer.;;;;;;;;;;;;;x
 EVTOPT_warbike_rosebud;'Rosebud'... such nostalgia...;;;;;;;;;;;;;x
@@ -263,12 +263,12 @@ greatwall_reparations;Crippled by Reparations;;;;;;;;;;;;;x
 greatwall_selflessliege;Selfless Liege;;;;;;;;;;;;;x
 selffunded_greatwall;Self-funded the Wall;;;;;;;;;;;;;x
 greatwall_architect;Grand-Architect of the Wall;;;;;;;;;;;;;x
-wall_museum;§YAncient Walls§!\nBefore the Celestial Empire, California was divided by various warlord states who fought amongst each other for territory and resources in a dire post-Event world. These ancient walls are a relic of this savage age, constructed by wealthy coastal warlords to defend against other neighboring warlords. Nowadays, all they defend is grass and moss from the trampling feet of cattle.;;;;;;;;;;;;;x
+wall_museum;ï¿½YAncient Wallsï¿½!\nBefore the Celestial Empire, California was divided by various warlord states who fought amongst each other for territory and resources in a dire post-Event world. These ancient walls are a relic of this savage age, constructed by wealthy coastal warlords to defend against other neighboring warlords. Nowadays, all they defend is grass and moss from the trampling feet of cattle.;;;;;;;;;;;;;x
 greatwall_construction;Long Wall Construction;;;;;;;;;;;;;x
 greatwall_navalbarriers;Long Wall Naval Barriers;;;;;;;;;;;;;x
 greatwall_watchtowers;Long Wall Watchtowers;;;;;;;;;;;;;x
 greatwall_ramparts;Long Wall Ramparts;;;;;;;;;;;;;x
-californian_great_wall;§YThe Long Sea Wall§!\nConstruction of the Long Sea Wall of California took over ninety years to complete, beginning in the reign of [event_target:first_greatwall_emperor.GetBestName] and ending in the reign of [event_target:last_greatwall_emperor.GetBestName]. The Wall protects over eight hundred miles of Californian coast and its highest point in [c_san_francisco.GetName] is over forty-five feet tall, causing most to consider it to be the largest man-made structure ever built, a testament to the might of California. The Wall itself consists of massive ramparts which serve to deter climbing, along with a series of evenly spaced watchtowers along its entire length and a net of stone naval barriers along important shorelines to deter landing. It remains to be seen whether or not the wall can be seen from the heavens.;;;;;;;;;;;;;x
+californian_great_wall;ï¿½YThe Long Sea Wallï¿½!\nConstruction of the Long Sea Wall of California took over ninety years to complete, beginning in the reign of [event_target:first_greatwall_emperor.GetBestName] and ending in the reign of [event_target:last_greatwall_emperor.GetBestName]. The Wall protects over eight hundred miles of Californian coast and its highest point in [c_san_francisco.GetName] is over forty-five feet tall, causing most to consider it to be the largest man-made structure ever built, a testament to the might of California. The Wall itself consists of massive ramparts which serve to deter climbing, along with a series of evenly spaced watchtowers along its entire length and a net of stone naval barriers along important shorelines to deter landing. It remains to be seen whether or not the wall can be seen from the heavens.;;;;;;;;;;;;;x
 emperor_ofthe_wall;[last_greatwall_emperor.GetCeticEmperorEmpressCap] of the Wall;;;;;;;;;;;;;x
 greatwall_progresscheck;Planning the Wall ([Root.global_greatwall_progress.GetValue]% Complete);;;;;;;;;;;;;x
 
@@ -279,14 +279,14 @@ appointed_grand_architect;Appointed Me Grand-Architect;;;;;;;;;;;;;x
 
 CB_NAME_GREATWALL;Collect Raiding Reparations;;;;;;;;;;;;;x
 WAR_NAME_GREATWALL;$ORDER$ War to Collect Reparations for Damages Done;;;;;;;;;;;;;x
-greatwall_cb_desc;For too long California has been subject to all manner of vile depravations at the hand of savage raiders who pour in from the north and from the sea. No longer! We shall reclaim the wealth that is rightfull ours from §Y$TARGET$§!!;;;;;;;;;;;;;x
+greatwall_cb_desc;For too long California has been subject to all manner of vile depravations at the hand of savage raiders who pour in from the north and from the sea. No longer! We shall reclaim the wealth that is rightfully ours from ï¿½Y$TARGET$ï¿½!!;;;;;;;;;;;;;x
 
 high_quality_bike;High Quality Velocipede;;;;;;;;;;;;;x
-high_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness — the very embodiments of what it means to be Californian. This one, especially, is a model example of their design.;;;;;;;;;;;;;x
+high_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness ï¿½ the very embodiments of what it means to be Californian. This one, especially, is a model example of their design.;;;;;;;;;;;;;x
 normal_quality_bike;Velocipede;;;;;;;;;;;;;x
-normal_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness — the very embodiments of what it means to be Californian.;;;;;;;;;;;;;x
+normal_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness ï¿½ the very embodiments of what it means to be Californian.;;;;;;;;;;;;;x
 low_quality_bike;Low Quality Velocipede;;;;;;;;;;;;;x
-low_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness — the very embodiments of what it means to be Californian. This one, however, is a poor example of their design.;;;;;;;;;;;;;x
+low_quality_bike_desc;A two-wheeled human-propelled vehicle operated via pedals, the velocipede is most commonly associated with the elite Wheeler retinues who train in its military applications. It is an iconic artifact of Californian culture, embodying grace, speed, and deadliness ï¿½ the very embodiments of what it means to be Californian. This one, however, is a poor example of their design.;;;;;;;;;;;;;x
 
 cetic_syncretize;Syncretize Philosophy;;;;;;;;;;;;;x
 cetic_syncretize_desc;The wisdom of [Root.GetTitledFirstName]'s gurus are not so opposed to that of my own. Perhaps it would be beneficial to open my mind and incorporate this wisdom into my daily life.;;;;;;;;;;;;;x
