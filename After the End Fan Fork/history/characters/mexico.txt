@@ -1169,8 +1169,8 @@
 	trait=gregarious
 	trait=honest
 	trait=brave
-	father=6900500
-	mother=6900501
+	father=6900501
+	mother=6900500
 	2581.9.6={birth=yes}
 	2599.9.29={add_spouse=1810066}
 	2635.8.7={death=yes}
@@ -2387,7 +2387,7 @@
 	2610.1.8={birth=yes
 	effect={
 		add_claim=d_queretaro
-		add_claim=d_baijo_occidente
+		add_claim=d_bajio_occidente
 	}
 	}
 	2635.1.31={add_spouse=1810162}

@@ -1,13 +1,13 @@
 party_magnate;Magnate;;;;;;;;;;;;;x
-party_magnate_desc;This Noble aligns themselves with the Magnates politically, favoring a realm where landed nobles may better rule their demesne without restrictions.;;;;;;;;;;;;;x
+party_magnate_desc;This person is politically aligned with the Magnates, who vow to protect the exclusive rights of the nobility.;;;;;;;;;;;;;x
 party_populist;Populist;;;;;;;;;;;;;x
-party_populist_desc;This Noble aligns themselves with the Populists politically, favoring empowering their monarch and the Range Congress.;;;;;;;;;;;;;x
+party_populist_desc;This person is politically aligned with the Populists, who support empowering the monarch and the Senate.;;;;;;;;;;;;;x
 party_theocratic;Theocrat;;;;;;;;;;;;;x
-party_theocratic_desc;This Noble aligns themselves with the Theocrats politically, favoring promoting their faith at the cost of other faiths.;;;;;;;;;;;;;x
+party_theocratic_desc;This person is politically aligned with the Theocrats, who promote the interests of the clergy.;;;;;;;;;;;;;x
 party_royalist;Royalist;;;;;;;;;;;;;x
-party_royalist_desc;This Noble aligns themselves with their liege politically, whether for dynastic or personal reasons they will follow their liege politically and vote as they wish.;;;;;;;;;;;;;x
+party_royalist_desc;Whether for dynastic or personal reasons, this person is politically aligned with [Root.GetHerHis] liege and will promote their interests.;;;;;;;;;;;;;x
 party_opposition;Opposition;;;;;;;;;;;;;x
-party_opposition_desc;This Noble openly opposes their liege, whether for dynastic or personal reasons they will oppose their liege politically and vote against their wishes.;;;;;;;;;;;;;x
+party_opposition_desc;This person openly opposes their liege and will vote against their interests.;;;;;;;;;;;;;x
 
 party_magnate_loc;Magnate;;;;;;;;;;;;;x
 party_populist_loc;Populist;;;;;;;;;;;;;x
@@ -31,10 +31,10 @@ abandon_orf_desc;While difficult, smaller realms may abandon the ways of the ran
 become_feudal_TT;Adopt §YFeudal Government§!;;;;;;;;;;;;;x
 
 ca_orf_range_marshal_1;Heroic Statue;;;;;;;;;;;;;;x
-ca_orf_range_marshal_1;This heroic statue stands as a testament for the deeds of the great men who came before and that all men can achieve greatness.;;;;;;;;;;;;;;x
-range_building_only_in_capital;Is the County Capital.;;;;;;;;;;;;;;x
+ca_orf_range_marshal_1;This heroic statue stands as a testament of the deeds of the great men who came before.;;;;;;;;;;;;;;x
+range_building_only_in_capital;Is the capital of the province.;;;;;;;;;;;;;;x
 ca_orf_range_marshal_2;Marshal Headquarters;;;;;;;;;;;;;x
-ca_orf_range_marshal_2_desc;From their headquarters in the county capital Marshals serve as Lawbringers and protectors. The Marshal's of the Range are what distinguish the legal range of a province from any other vast empty space.;;;;;;;;;;;;;x
+ca_orf_range_marshal_2_desc;Marshals are the backbone of justice on the open range. With a sharp eye and a loyal deputies, they prevent all crimes from murder to cattle rustling.;;;;;;;;;;;;;x
 
 ########### format of all election campaign events ####################
 #situation
@@ -66,14 +66,14 @@ running_against;Running Against;;;;;;;;;;;;;x
 orf_lost_election_to;Lost Election To;;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_1;Choosing an Opponent;;;;;;;;;;;;;x
-EVTDESC_orfelection_1;As a direct vassal of [Root.Liege.GetTitledFirstName], and a proud [Root.GetTitle] of the [Root.Liege.PrimaryTitle.GetFullName] I have a right to run for a Senate seat; whether there is a Senator vulnerable enough to lose to me is another matter.;;;;;;;;;;;;x
+EVTDESC_orfelection_1;As a direct vassal of [Root.Liege.GetTitledFirstName] and a proud [Root.GetTitle] of the [Root.Liege.PrimaryTitle.GetFullName], I have a right to run for a Senate seat; whether there is a Senator vulnerable enough to lose to me is another matter.;;;;;;;;;;;;x
 EVTOPTA_orfelection_1;[orf_opponent_1.GetTitledFirstName] is an appointee and thus fair game.;;;;;;;;;;;;;x
 EVTOPTB_orfelection_1;I've long thought that my party opponent [orf_opponent_2.GetTitledFirstName] should lose [orf_opponent_2.GetHerHis] seat.;;;;;;;;;;;;x
-EVTOPTC_orfelection_1;[orf_opponent_3.GetTitledFirstName] of my party is admittedly weak.;;;;;;;;;;;;;x
+EVTOPTC_orfelection_1;[orf_opponent_3.GetTitledFirstName] of my party is admittedly a weak legislator.;;;;;;;;;;;;;x
 EVTOPTD_orfelection_1;Maybe I should wait a bit before I run.;;;;;;;;;;;;;x
 liege_may_intervene_TT;If your liege is able to dismiss senators at will, then [Root.Liege.GetSheHe] can intervene to prevent an election from occuring.;;;;;;;;;;;;;x
 
-EVTDESC_orfelection_6;[orf_election_opponent_attacker.GetTitledFirstName] has decided to run against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] senate seat. Since I have the power of appointment and dismissal of senators, I could intervene to stop this election before it begins.;;;;;;;;;;;;;x
+EVTDESC_orfelection_6;[orf_election_opponent_attacker.GetTitledFirstName] has decided to run against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] Senate seat. Since I have the power of appointment and dismissal of senators, I could intervene to stop this election before it begins.;;;;;;;;;;;;;x
 EVTOPTA_orfelection_6;What's the harm in a bit of competition?;;;;;;;;;;;;;x
 EVTOPTA_orfelection_6_TT;You refrain from intervening and allow an election for [orf_election_opponent_defender.GetTitledFirstName]'s seat to be held.;;;;;;;;;;;;;x
 EVTOPTB_orfelection_6;Under no circumstances must this election continue!;;;;;;;;;;;;;x
@@ -90,14 +90,14 @@ EVTOPTA_orfelection_3_TT;Accept [orf_election_opponent_attacker.GetTitledFirstNa
 EVTOPTA_orfelection_3;There's no way I'd be able to win...;;;;;;;;;;;;;x
 EVTOPTB_orfelection_3_TT;Resign your Senate seat instead of contesting the election. You will not be able to run for the Senate for two years;;;;;;;;;;;;;x
 
-EVTDESC_orfelection_4;By the very nature of the Range and the nobles that range cattle, the voter base is spread out and has sharply contrasting priorities between those in the cities and those men and women traveling between them. Where to campaign and how often can make the difference between an election for Senate won or lost.;;;;;;;;;;;;x
-EVTOPTA_orfelection_4;I will spend the next month in the Range.;;;;;;;;;;;;x
-EVTOPTB_orfelection_4;I will spend the next month in the Towns.;;;;;;;;;;;;x
-EVTOPTC_orfelection_4;I'll ask my liege for support.;;;;;;;;;;;;x
+EVTDESC_orfelection_4;It is customary for senatorial candidates to criss-cross the realm campaigning and rubbing elbows with the electors. While it would be great to be able to visit every corner of the [Root.Liege.PrimaryTitle.GetTier], it is best to focus on getting the most out of my effort.;;;;;;;;;;;;x
+EVTOPTA_orfelection_4;I will spend the next month in the range.;;;;;;;;;;;;x
+EVTOPTB_orfelection_4;I will spend the next month in the towns.;;;;;;;;;;;;x
+EVTOPTC_orfelection_4;To hell with the voters, I'll ask my liege for support!;;;;;;;;;;;;x
 EVTOPTD_orfelection_4;The election is almost over, I'll wait for the results.;;;;;;;;;;;;x
 EVTOPTE_orfelection_4;There's nothing to do now but wait.;;;;;;;;;;;;x
 
-EVTDESC_orfelection_5;[From.GetTitledFirstName] has decided to not run against you, and with [From.GetHerHis] departure may assume [From.GetHerHis] seat.;;;;;;;;;;;;x
+EVTDESC_orfelection_5;[From.GetTitledFirstName] has decided to not run against you, and with [From.GetHerHis] departure you may assume [From.GetHerHis] seat.;;;;;;;;;;;;x
 EVTOPTA_orfelection_5; That wasn't so hard.;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_51;Election Victory;;;;;;;;;;;;;x
@@ -106,33 +106,33 @@ EVTOPTA_orfelection_51;I stand ready to represent my constituents.;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_52;Election Loss;;;;;;;;;;;;;x
 EVTDESC_orfelection_52;Despite my best efforts, [orf_election_opponent_attacker.GetTitledFirstName] has bested me in the recent election for my Senate seat.;;;;;;;;;;;;x
-EVTOPTA_orfelection_52;These might be a long six years...;;;;;;;;;;;;x
+EVTOPTA_orfelection_52;These may be some long years...;;;;;;;;;;;;x
 election_lost_cooldown_event_TT;You will not be able to run for the Senate for two years;;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_53;Election Loss;;;;;;;;;;;;;x
-EVTDESC_orfelec_53;Despite my best efforts, [orf_election_opponent_defender.GetTitledFirstName] has bested me in the recent election for [orf_election_opponent_defender.GetHerHis] Senate seat.;;;;;;;;;;;;x
-EVTOPTA_orfelection_53;These might be a long six years...;;;;;;;;;;;;x
+EVTDESC_orfelection_53;Despite my best efforts, [orf_election_opponent_defender.GetTitledFirstName] has bested me in the recent election for [orf_election_opponent_defender.GetHerHis] Senate seat.;;;;;;;;;;;;x
+EVTOPTA_orfelection_53;These may be some long years...;;;;;;;;;;;;x
 
 EVTTITLE_orfelection_54;Election Victory;;;;;;;;;;;;;x
 EVTDESC_orfelection54;I now stand as Senator-elect, having overcome [orf_election_opponent_attacker.GetTitledFirstName] in a tight election. Now all the responsibilities of being a Senator rest upon my shoulders, and I now only hope that [Root.Religion.GetHighGodName] keeps me away from any misfortune.;;;;;;;;;;;;x
 EVTOPTA_orfelection_54;I stand ready to represent my constituents.;;;;;;;;;;;;x
 
-EVTDESC_orfelec_55;Due to [orf_election_opponent_attacker.GetTitledFirstName]'s electoral challenge against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] Senate seat, the now ex-Senator has resigned their post in favor of [orf_election_opponent_defender.GetHerHis] challenger.;;;;;;;;;;;;;x
-EVTOPTA_orfelec_55;Ignoble behavior.;;;;;;;;;;;;;x
+EVTDESC_orfelection_55;Due to [orf_election_opponent_attacker.GetTitledFirstName]'s electoral challenge against [orf_election_opponent_defender.GetTitledFirstName] for [orf_election_opponent_defender.GetHerHis] Senate seat, the now ex-Senator has resigned their post in favor of [orf_election_opponent_defender.GetHerHis] challenger.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_55;Ignoble behavior.;;;;;;;;;;;;;x
 
-EVTDESC_orfelec_56;[orf_election_opponent_attacker.GetTitledFirstName] stands as Senator-elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
-EVTOPTA_orfelec_56;The people of the range sure are fickle.;;;;;;;;;;;;;x
+EVTDESC_orfelection_56;[orf_election_opponent_attacker.GetTitledFirstName] stands as Senator-elect, having overcome [orf_election_opponent_defender.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
+EVTOPTA_orfelection_56;The people of the range sure are fickle.;;;;;;;;;;;;;x
 
-EVTDESC_orfelec_57;[orf_election_opponent_defender.GetTitledFirstName] defended [orf_election_opponent_defender.GetHerHis] position as Senator, having overcome [orf_election_opponent_attacker.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
-EVTOPTA_orfelec_57;Same old, same old.;;;;;;;;;;;;;x
+EVTDESC_orfelection_57;[orf_election_opponent_defender.GetTitledFirstName] defended [orf_election_opponent_defender.GetHerHis] position as Senator, having overcome [orf_election_opponent_attacker.GetTitledFirstName] in a tight election.;;;;;;;;;;;;;x
+EVTOPTA_orfelectionc_57;Same old, same old.;;;;;;;;;;;;;x
 
-EVTDESC_orf_election_waiting_results;The election is now coming to an end. The votes are being registered and the winner will soon be announced The political maneuverings have been made and now is time for the payoff.;;;;;;;;;;;;x
+EVTDESC_orf_election_waiting_results;The election is now coming to an end. The votes are being registered and the winner will soon be announced.;;;;;;;;;;;;x
 EVTOPTA_orf_election_waiting_results;There's nothing to do now but wait;;;;;;;;;;;;x
 
-EVTDESC_orfelection_101;Grim news has arrived at my ranch — my opponent [From.GetTitledFirstName] has unfortunately died. While, [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume [From.GetHerHis] vacant Senate seat as the default winner of our election.;;;;;;;;;;;;x
+EVTDESC_orfelection_101;Grim news has arrived at my ranch. My opponent [From.GetTitledFirstName] has unfortunately died. While [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume [From.GetHerHis] vacant Senate seat as the default winner of our election.;;;;;;;;;;;;x
 EVTOPTA_orfelection_101;[Root.Religion.GetHighGodName] has decided, I guess.;;;;;;;;;;;;x
 
-EVTDESC_orfelection_103;Grim news has arrived at my ranch — my opponent [From.GetTitledFirstName] has unfortunately died. While, [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume victory as the default winner of our election for my Senate seat.;;;;;;;;;;;;x
+EVTDESC_orfelection_103;Grim news has arrived at my ranch. My opponent [From.GetTitledFirstName] has unfortunately died. While [From.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for me to assume victory as the default winner of our election for my Senate seat.;;;;;;;;;;;;x
 EVTOPTA_orfelection_103;[Root.Religion.GetHighGodName] has decided, I guess.;;;;;;;;;;;;x
 
 EVTDESC_orfelection_104;Due to recent events, the election between [orf_election_opponent_defender.GetTitledFirstName] I must be canceled.;;;;;;;;;;;;;x
@@ -141,10 +141,10 @@ EVTOPTA_orfelection_104;I see.;;;;;;;;;;;;;x
 EVTDESC_orfelection_105;Due to recent events, the Senate election between [From.GetTitledFirstName] and I must be canceled.;;;;;;;;;;;;;x
 EVTOPTA_orfelection_105;Oh well.;;;;;;;;;;;;;x
 
-EVTDESC_orfelection_106;Grim news has arrived at my ranch — my vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for the later Senator's seat.;;;;;;;;;;;;;x
+EVTDESC_orfelection_106;Grim news has arrived at my ranch. My vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for the later Senator's seat.;;;;;;;;;;;;;x
 EVTOPTA_orfelection_106;What a sad outcome...;;;;;;;;;;;;;x
 
-EVTDESC_orfelection_107;Grim news has arrived at my ranch — my vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for [From.GetHerHis] Senate seat.;;;;;;;;;;;;;x
+EVTDESC_orfelection_107;Grim news has arrived at my ranch. My vassal [FromFrom.GetTitledFirstName] has unfortunately died. While, [FromFrom.GetHerHis] family and friends must gather and mourn their death, it has left an opportunity for [From.GetTitledFirstName] to assume victory as the default winner of the election for [From.GetHerHis] Senate seat.;;;;;;;;;;;;;x
 EVTOPTA_orfelection_107;What a sad outcome...;;;;;;;;;;;;;x
 
 EVTDESC_orfelection_23;[From.GetTitledFirstName] has asked me to endorse [From.GetHerHis] candidacy for the current Senate election. It seems that the fate of this election may rest in my hands.;;;;;;;;;;;;;x
@@ -154,78 +154,78 @@ EVTOPB_orfelection_23;I'd rather stay out of it...;;;;;;;;;;;;;x
 EVTOPB_orfelection_23_TT;[From.GetTitledFirstName] will be disappointed;;;;;;;;;;;;;x
 
 #situation
-EVTDESC_orfelec_problem_minor_meeting;As the hall finds itself filled by dozens of members of local nobility alongside their families it dawns upon you the barbeque has begun. You pace back and forth in a backroom, mentally preparing for the words you will inevitably have to exchange with these people, until eventually you peek out into the main hall and see that the majority of them are partaking in the merriment, generously provided on your behalf. All the pieces are set, with these fellow nobles satisfied from fine meals and fine wine your potential to maneuver the situation to your benefit is at its greatest. You enter the main room, ready to deliver a speech before the crowd...;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_minor_meeting;A clamor has arisen in the great hall as throngs of nobles and their families jostle to find their seats and servants file in with trays of meat, the smell of barbecue not far behind. After pacing back and forth in the antechamber preparing your speech for what seems like an eternity, you steel yourself and enter the room filled with lords and ladies enjoying the largesse of you and your cattle. Merriment transforms into hushed silence once your entranced is announced. Now's the time to make an impression.;;;;;;;;;;;;;x
 EVTOPTA_orfelec_problem_minor_meeting;Move the crowd with an emotional personal story;;;;;;;;;;;;x
 EVTOPTB_orfelec_problem_minor_meeting;Flatter yourself before the crowd;;;;;;;;;;;;x
 EVTOPTC_orfelec_problem_minor_meeting;Try to say whatever they want to hear, however they want to hear it.;;;;;;;;;;;;x
 
 #result
-EVTDESC_orfelec_resolve_good_minor_meeting;You draw the crowd's attention from your reserved seat at the feast table's head, and instantly every eye in the room is on you. Your nerve nearly slips, but you go right into your prepared speech. Minutes pass, and the crowd remains silent as they hang on every syllable that exits your mouth as you speak about yourself and what they now believe to be your almost countless qualifications for the prestigious title of Senator. Finally, as you finish your speech with an ancient and famous quote, there is a silence, and then an applause!;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_neutral_minor_meeting;You draw the crowd's attention from your reserved seat at the feast table's head, and instantly every eye in the room is on you. Your nerve nearly slips, and then it does. Your thoughts become inconsistent and you forget large parts of the speech you had memorized beforehand, but you substitute those parts well enough so as to not seem insane. Your speech ends on a fairly forgettable note. Your scalp begins to burn in embarrassment but quickly cools when you realize most of the barbeques attendees had either stopped paying attention at this point or never started, more interested in their drinks, meals, or prior conversations than whatever it is you stumbled through.;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_bad_minor_meeting;You draw the crowd's attention from your reserved seat at the feast table's head, and instantly every eye in the room is on you. Your nerve slips so fast you don't even realize how wildly you're jumping between the handful of bullet points you had memorized beforehand. The sheer pressure from both the utter silence of the hall and seeing everyone's eyes upon you causes you to stutter several times. You think you hear muffled laughter during one of your pauses. You manage to conclude your speech in a way you only realize afterwards sounds like a dirty joke. The silent room stays silent for multiple seconds too long, and you can see the previously lively room drain of color.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_good_minor_meeting;Every eye in the room is on you once you take your seat at the head of the table. After a series of customary, perfunctory greetings and acknowledgements, you leap into your speech. Leaping from topic to topic, the crowd remains silent as they hang on to every word that falls from your mouth. Finally, as you finish your speech with an ancient and famous quote, there is a silence, and then an applause!;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_neutral_minor_meeting;Every eye in the room is on you once you take your seat at the head of the table. After a series of customary, perfunctory greetings and acknowledgements, you begin reciting your prepared speech. However, your tongue seems to have twisted itself into knots as you stumble over anecdotes and fail to maintain your once captive audience. Your face becomes almost scarlet with embarrassment as you scan the table and realize that most of the barbecue's attendees have either stopped paying attention or never started, more interested in their drinks, meals, or prior conversations than whatever it is you rambled about.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_bad_minor_meeting;Sitting at the head of the table, you have now taken the place of the barbecue as the center of the attention. This is certainly not to your benefit, as you almost immediately are overcome by the pressure. The crowd is unable to hide its secondhand embarrassment while you stutter through your speech. You switch between topics without subtlety — let alone grace — and you begin to question why you even began this campaign. Murmurs and muffled laughter can be heard as your speech mercifully comes to an end, the result being that the mood resembles more a funeral than a party.;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_good_minor_meeting;My cause has sway!;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_neutral_minor_meeting;Could have been worse!;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_bad_minor_meeting;By [Root.Religion.GetHighGodNameCap] the embarrassment might just kill me!;;;;;;;;;;;;x
 
-
 #situation
-EVTDESC_orfelec_problem_merchants;As you begin your day, you hear word that a small group of traveling merchants of trinkets and oddities have arrived in your territory, looking for new locations to ply their goods. They seem to have already set up a stall in the nearest market, selling whatever it is that they've carried with them. There could be quite the benefit from speaking with them personally, not only would a good deal with these wanderers bring some small amount of prosperity, but if you play your cards right they may even spread word of you and impress some voters. Of course that also runs the risk of merely annoying them, you know nothing of these people but perhaps they won't take kindly to you bothering them. Nevertheless you are presented with an opportunity and ponder what exactly to do with it.;;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_merchants;Pay them a visit, see if you can't arrange some sort of deal with them;;;;;;;;;;;;x
-EVTOPTB_orfelec_problem_merchants;Dress finely to impress them and welcome them to [Root.Capital.GetName];;;;;;;;;;;;x
-EVTOPTC_orfelec_problem_merchants;Best to not interfere with their dealings, leave them to sell their goods.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_merchants;As you begin your day, you hear word that a small group of traveling merchants from exotic lands have arrived in your territory looking for new locations to ply their goods. They seem to have already set up a stall in the market square and a crowd has formed, jostling both to purchase their wares and catch a glimpse of the foreigners. Your campaign could benefit from speaking with them personally. Not only would a good deal with these wanderers bring some small amount of prosperity, but if you play your cards right they may even spread word of you and impress some voters. Of course, it is possible you may offend them.;;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_merchants;I must pay them a visit and see if I can arrange some sort of deal with them.;;;;;;;;;;;;x
+EVTOPTB_orfelec_problem_merchants; I shall dress finely to impress them and welcome them to [Root.Capital.GetName].;;;;;;;;;;;;x
+EVTOPTC_orfelec_problem_merchants;Best to not interfere with their dealings, I'll leave them to sell their goods.;;;;;;;;;;;;x
 
 #result
-EVTDESC_orfelec_resolve_good_merchants;Evidently, the traveling merchants are quite impressed with your lands, they've sold out their stock and your business-minded courtiers are abuzz with the possibility of attracting more of their kind. The people of [Root.Capital.GetName] proudly show off the various trinkets they've purchased. Their leader even stops by your court, wishing to speak with you. He compliments your people and promises that he'll be back someday, and adds that he'll make sure to recommend your lands to any of his friends he comes across. Not only do your people benefit from such an arrangement, but you also look quite good in the eyes of the voters for attracting new business. ;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_neutral_merchants;The merchants who recently have come to your lands seem to have made a decent enough profit, though by all reports they were very eager to leave [Root.Capital.GetName] and get back onto the roads. Your citizens have enjoyed the visit and those who made some purchases are in good enough cheer, but nothing especially notable happened during their short stay. You suppose there wasn't much else you could have hoped for, they've been through dozens of places just like yours and have moved on from each one, why would [Root.Capital.GetName] be any different? While you didn't manage to impress the merchants in the process, you still managed to come off as at least somewhat business minded, perhaps that will be enough to sway some voters.;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_bad_merchants;Evidently, the traveling merchants who've come into town find [Root.Capital.GetName] rather disagreeable. After several incidents in town including a particularly nasty bar fight involving two of the merchants and a local troublemaker, the whole caravan has packed up their goods and left town, cursing your name and threatening to warn others to avoid these accursed lands. It may not harm your existing prosperity, but you're left with nothing to show for the whole situation other than a few broken barstools and disappointment. You can already imagine some amongst your rivals laughing at your expense, both at your inability to provide proper hospitality and the wild tales being told of your people's misconduct, which reflects rather poorly on you as their ruler, and as an extension, your electability.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_good_merchants;Evidently, the traveling merchants are quite impressed with your realm. They've sold out their stock and the people of [Root.Capital.GetName] proudly show off the various trinkets they've purchased as local artisans look on in envy. The leader of the merchant caravan even stops by your court seeking an audience. He compliments the market savvy of your people and promises that he'll make sure to return and to recommend your lands to any of his friends he comes across. Not only will your people benefit from such an arrangement, but you also look quite good in the eyes of the voters for attracting new business. ;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_neutral_merchants;The merchants who have recently  come to your lands seem to have made a decent enough profit, though by all reports they were eager to continue their travels. You suppose there wasn't much else you could have hoped for: they've been through dozens of places just like yours and have moved on from each one, why would [Root.Capital.GetName] be any different? While you didn't manage to impress the merchants in the process, you at least managed to come off as somewhat business-minded. Perhaps that will be enough to sway some voters.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_bad_merchants;Evidently, the traveling merchants who've come into town find [Root.Capital.GetName] rather disagreeable. After several incidents including a particularly nasty bar fight, the whole caravan has packed up their goods and left town, cursing your name and threatening to warn others to avoid these barbaric lands. You can already imagine your rivals laughing both at your inability to provide proper hospitality and the wild tales being told of your people's misconduct. This will certainly reflect rather poorly on you as a ruler, and as an extension, your electability.;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_good_merchants;A vote for me is a vote for prosperity!;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_neutral_merchants;Business as usual on the campaign trail then...;;;;;;;;;;;;x
-EVTOPT_orfelec_resolve_bad_merchants;You suppose it was all a rather poor investment.;;;;;;;;;;;;x
+EVTOPT_orfelec_resolve_bad_merchants;They just could not behave could they.;;;;;;;;;;;;x
 
 #situation
-EVTDESC_orfelec_problem_rangers;It seems some rangers have come into town, which is not an entirely unusual or noteworthy event in and of itself, and one you may have ignored to better focus on your campaign but these particular rangers have already made quite a reputation for themselves amongst the people of [Root.Capital.GetName], and not a pleasant one. You're presented with a string of complaints about their conduct ranging from claims they cheat at cards or refuse to pay for drinks to plots to seduce various young ladies and even one story about a missing pig that they supposedly killed and cooked. You can't say for sure what is true and what is only imagined, but one thing is very clear, the people of [Root.Capital.GetName] are sick and tired of these troublemakers and turn to you to deal with them. It also presents an opportunity to look like a strong ruler, a reputation that would help your chances at election. Luckily for you, several of them were arrested last night after threatening a shopkeeper, giving you a good opportunity to deal with them.;;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_rangers;I'll have to speak to these rangers, hopefully they can be calmed down.;;;;;;;;;;;;x
-EVTOPTB_orfelec_problem_rangers;Make an example out of them, to show everyone who's in charge here.;;;;;;;;;;;;x
-EVTOPTC_orfelec_problem_rangers;I go with the local [Root.GetPriestTitle], and try to convince them of the duties to civilization and to [Root.GetHighGodName].;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_rangers;Some rangers have recently come into town. Such an occurance is typical, but these particular men have made quite a reputation for themselves over the past few days. A stream of reports have arrived at your desk recounting the rougish exploits of these men, ranging from cheating at cards to pig stealing. You cannot say for certain what is true and what is embellished, but it is very clear that the people of [Root.Capital.GetName] expect you to deal with them. Although the rangers are certainly no good for your realm, they also presents an opportunity to strengthen your electoral chances by looking like a strong ruler.;;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_rangers;I'll have to speak to these rangers, hopefully they can be reasoned with.;;;;;;;;;;;;x
+EVTOPTB_orfelec_problem_rangers;An example should be made out of them to show everyone who's in charge here.;;;;;;;;;;;;x
+EVTOPTC_orfelec_problem_rangers;They will heed the wise words of the local [Root.Religion.GetPriestTitle].;;;;;;;;;;;;x
 
 #result
-EVTDESC_orfelec_resolve_good_rangers;It seems your efforts have paid off, no more complaints from that town come in. Whether from absence of the troublemakers or a change of spirits the rangers in town now are acting much more civilized, some even make quick apologies to various people they've offended. There still is a case or two of public drunkenness but the people of [Root.Capital.GetName] breathe a sigh of relief that the worst trouble is over from those rowdy rangers. Having so quickly and effectively dealt with them both makes your people happy with you, but also makes you look like a strong leader who is capable of making sure the law is obeyed, something you make sure to make clear to any prospective voters.;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_neutral_rangers;Evidently not much can be done with the group of rowdy rangers from out of town. You had hoped to dissuade them from further antics but they hadn't cared much, continuing their troublemaking until your people had enough. Some local men, fed up with these outsiders, gathered a posse and ran them out of town. It does solve the problem, but not through any of your efforts, which your people don't seem to exactly blame you for but it doesn't reflect well on you to not be able to deal with such matters personally. Eventually things return to normal and the incident is mostly forgotten about. Your reputation amongst the voters remains more or less unchanged, but you haven't exactly impressed anyone with your rulership.;;;;;;;;;;;;x
-EVTDESC_orfelec_resolve_bad_rangers;Things don't go nearly as well as you had hoped, instead of toning down their escapades, they escalate them. It started with a drunken duel with one of your citizens that night, the ranger beat the other man half to death for no reason other than the man looked at him funny. From there, the rest of their little gang turned their antics into a reign of terror. What followed was a night of bar fights, a prison break to free their friends, two robberies, and an incident involving a guardsman's horse with women's undergarments on it's head. Eventually your guardsmen were able to regain control and arrest the troublemakers once and for all, but the entire night left a deep mark on the minds of your people, who saw your attempts to fix things completely fail and make things worse. It will take a long time for you to live this down, and until then the story of the Rowdy Rangers has become the laughingstock of the land. Unfortunately, that means plenty of people who might have voted for you also hear about the incident, making you look weaker as a candidate.;;;;;;;;;;;;x
-EVTOPT_orfelec_resolve_good_rangers;Vote [Root.GetBestName] for peace and quiet!;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_good_rangers;It seems your efforts have paid off. Whether from the absence of the troublemakers among their ranks or a change of spirits within the group, the rangers in town now are acting much more civilized and some even make quick apologies to various people they've offended. There still is a case or two of public drunkenness but the people of [Root.Capital.GetName] breathe a sigh of relief that the worst trouble is over from those rowdy rangers. Having so quickly and effectively dealt with them has reflected well on your reputation as a strong and capable leader, something you make sure to make clear to any prospective voters.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_neutral_rangers;Evidently not much can be done with the group of rangers from out of town. You had hoped to dissuade them from further antics but they seem to have brushed you off, continuing their troublemaking until your people had enough. A group of local men, fed up with these outsiders, gathered a posse and ran them out of town. This instance of vigilante justice does solve the problem, but your inability to manage it yourself does not reflect well on your abilities. Your reputation amongst the voters remains more or less unchanged, which possibly is for the best.;;;;;;;;;;;;x
+EVTDESC_orfelec_resolve_bad_rangers;Things have not gone nearly as well as you had hoped. Instead of toning down their escapades, the rangers resolved to escalate their antics into a reign of terror. What followed was a night of bar fights, robberies, a prison break, and unfortunately a few deaths. Eventually your deputies were able to arrest the troublemakers, but the damage was already done. It will take a long time for you to live this down, and until then the story of the Rowdy Rangers of [Root.Capital.GetName] has spread to other settlements. Plenty of nobles have heard this tale during their feasts, harming your chances as being elected Senator.;;;;;;;;;;;;x
+EVTOPT_orfelec_resolve_good_rangers;Vote [Root.GetBestName] for peace and order!;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_neutral_rangers;Keeping the peace is hard work...;;;;;;;;;;;;x
-EVTOPT_orfelec_resolve_bad_rangers;You can already hear your opponent shouting "[Root.GetTitledFirstName] is weak on crime";;;;;;;;;;;;x
+EVTOPT_orfelec_resolve_bad_rangers;I can already hear my opponent shouting "[Root.GetTitledFirstName] is weak on crime";;;;;;;;;;;;x
 
 #situation
-EVTDESC_orfelec_problem_destitute_ranger;Recently, there's been talk of a once-proud ranger family that have fallen on hard times, their debts have caught up to them and the family patriarch had to sell most of the family’s property to stay afloat, now after what was left of their herd died of sickness they’re on the verge of losing everything. truly a sorry state of affairs, but perhaps you can do something about it. While most people at court merely shake their heads in pity, you see the chance to help these people and, perhaps more cynically, potentially look very electable in the process. Even if they get back on their feet, it’s unlikely this one family would be able to do too much to help you win the election, but if you’re seen as generous and helpful to those who’ve fallen on bad times, it may win you some support.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_destitute_ranger;Recently, there has been talk of a once-proud ranger family that has since fallen on hard times — their debts have caught up to them and the family patriarch has had to sell most of their property to stay afloat. And after nearly all of their herd died of sickness, they’re on the verge of losing everything. It's truly a sorry state of affairs, but perhaps you can do something about it. While most people at court merely shake their heads in pity, you have the resources to help these people and, perhaps more cynically, the potential to look very electable in the process.;;;;;;;;;;;;x
 EVTOPTA_orfelec_problem_destitute_rangers_help;I'll show generosity, this family is in desperate need of charity.;;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_destitute_rangers_encourage;Offer some public words of encouragement, motivate them to keep going.;;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_destitute_rangers_organize;Perhaps I can inspire others at court to help, and make myself look like a leader in the process.;;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_destitute_rangers_encourage;I shall offer some public words of encouragement.;;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_destitute_rangers_organize;Perhaps I can inspire others at court to help .;;;;;;;;;;;;x
 
 #resolution
-EVTDESC_orfelec_problem_destitute_ranger_resolve_good;Your methods pays off, and the family slowly begins to recover. They have managed to pay off most of their debt and purchased the start of what will be a new herd of cattle, finally regaining their dignity as rangers. It may take them some time to fully regain their former status, but it's more than just a forlorn hope now. The family patriarch personally thanks you and promises to spread word of the kindness and generosity you've shown him and his family. He even tells you that he'll be sure to spread word of the help you've given them. You can't help but notice that the story tugs at the heartstrings of many at court, and will hopefully show the voters of the realm that you're a generous leader worthy of their votes.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_destitute_ranger_resolve_good;Your methods have paid off! The once destitute ranger family has slowly begun to recover. They have managed to pay off most of their debts and were able to set aside enough money to purchase cattle for their dwindling herd. It may take some time for them to fully regain their former status, but it's now a much more achieveable goal. The patriarch has personally thanked you and promised to spread word of your kindness and generosity. During the last few days you cannot help but notice that the story is on the lips of many in court and your household, certainly helping your electoral chances.;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_destitute_ranger_good;Help [Root.GetTitledFirstName] help yourself! Vote [Root.GetTitledFirstName]!;;;;;;;;;;;;x
 
-EVTDESC_orfelec_problem_destitute_ranger_resolve_neutral;The ranger family manages to more or less stay afloat thanks to what token help they've received after you took an interest in them. They manage to at least pay the interest on their debt but little more than that, their hopes of purchasing new cattle to make up for their lost herd is at the moment nothing more than a dream. They may be saved from complete ruin but the next few years will be hard indeed, and with no cattle to call their own they can barely call themselves rangers anymore. You've done what you can, and the family is thankful enough, but there is not much hope for them at present and you doubt any voters will be especially impressed, but you have kept a once proud family off of the streets and that is worth something.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_destitute_ranger_resolve_neutral;The ranger family manages to more or less stay afloat thanks to the token help they've received after you took an interest in them. They have managed to at least pay the interest on their debt but little more than that, and they're still unable to set aside enough money to purchase cattle to make up for their lost herd. They may be saved from complete ruin but the next few years will be hard indeed, and with little cattle to call their own they can barely call themselves rangers anymore. You've done what you can, and the family is thankful enough, but there is not much hope for them at present and you doubt any voters will be especially impressed.;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_destitute_ranger_neutral;How will they financially recover from this?;;;;;;;;;;;;x
 
-EVTDESC_orfelec_problem_destitute_ranger_resolve_bad;Perhaps you overestimated how much help you could provide the ranger family down on their luck, or perhaps their debt was just too high, and their income too low. Nevertheless your efforts to help this once proud family have come to naught, just yesterday they were forced to sell the last of their possessions, including the old estate that every single one of the family was born and raised in, in order to appease the debt collectors. Stripped of their land, their cattle, and anything else that was worth something to them, the family all but falls apart in their grief. You had sought to help these people, but now you watch them walk away into the horizon with their heads hung low in shame and defeat. Even more unfortunate is how people have been looking at you since, it seems some among your peers see your failure to help these people as disqualifying to the position you've been campaigning for, and the voters you tried to impress with your generosity have only been disappointed.;;;;;;;;;;;;x
-EVTDESC_orfelec_problem_destitute_ranger_resolve_bad_worse;It seems your words of encouragement were worse than useless. Your token efforts to help this once proud family have come to naught, just yesterday they were forced to sell the last of their possessions, including the old estate that every single one of the family was born and raised in, in order to appease the debt collectors. Stripped of their land, their cattle, and anything else that was worth something to them, the family all but falls apart in their grief. You had sought to help these people, but now you watch them walk away into the horizon with their heads hung low in shame and defeat. Even more unfortunate is how people have been looking at you since, it seems some among your peers see your failure to help these people as disqualifying to the position you've been campaigning for, and the voters you tried to impress with your generosity have only been disappointed.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_destitute_ranger_resolve_bad;Perhaps you overestimated how much help you could provide the ranger family down on their luck, or perhaps their debt was just too high, and their income too low. In any case your efforts to help this once proud family have come to naught. Just yesterday they were forced to sell the last of their possessions, including the estate which housed their family for generations, just to keep the collectors at bay. It seems some among your peers see your failure to help these people as disqualifying for a candidate, and the voters you tried to impress with your generosity have only been disappointed.;;;;;;;;;;;;x
+EVTDESC_orfelec_problem_destitute_ranger_resolve_bad_worse;It seems your words of encouragement were useless. Yesterday they were forced to sell the last of their possessions, including the estate which had housed the family for generations, in order to appease the debt collectors. What is more tragic is the effect this has had on your reputation. The many among the nobility now sees your so-called advocacy as the cause of the family's destitution and shuder to think what you would mismanage in the Senate if given the opportunity. It probably would have been best to stay out of it.;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_destitute_ranger_bad;What a shame...;;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_destitute_ranger_bad_worse;They should have pulled themselves up by their bootstraps... if they had any.;;;;;;;;;;;;x
 
 
-EVTDESC_orfelec_problem_range_squatters;While normally you employ a number of men to patrol the range in your name, as you cannot exactly be everywhere at once, you have decided that it would be good to devote some time to riding around your territory yourself to show your attentiveness as a ruler to those who may yet vote for you. It is on one of these patrols that you encounter something that you didn't expect. It's not exactly unheard of for squatters, outlaws, and various other vagrants to set up small hideouts or even the occasional house in the lesser used portions of the range, but you hadn't expected to come across what seems to a ramshackle home built only a few days ride from [Root.Capital.GetName] nor did you expect the sheer size or evident poverty of the family living inside. A family which by all rights is here illegally. You are the legal lord of this land and these folks, no matter how desperate, are living off of and likely hunting game from land which does not belong to them. You are well within your rights to evict this family. It is in fact likely what is expected of you to do, you'd look weak if you simply let these people continue to evade the law, something that would no doubt be used by your detractors to slander you. You must do something, so you ponder your options.;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_range_squatters_cash_help;These people can't stay here, but I can make sure they can afford a home elsewhere.;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_range_squatters_convince_unsafe;Perhaps I can convince them it's not safe to stay here.;;;;;;;;;;;x
-EVTOPTA_orfelec_problem_range_squatters_force_out;Why should I care for squatters, call my men to throw them out and tear down the home.;;;;;;;;;;;x
+EVTDESC_orfelec_problem_range_squatters;While normally your marshals patrol the range and keep the peace in your name, you have decided that it would benefit your campaign to devote some time toward administering range justice. It is on one of these patrols that you encounter a small squatters' settlement. Squatting on the range is not uncommon, but you hadn't expected to come across what seems to a ramshackle home built only a few days' ride from [Root.Capital.GetName]. While squatters have certainly been heroicized by commoners, your noble electorate has no tolerance for a violation of range rights. You must do something, so you ponder your options.;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_range_squatters_cash_help;These people cannot stay here, but I can make sure they can afford a home elsewhere.;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_range_squatters_convince_unsafe;Perhaps I can convince them it's not safe to stay.;;;;;;;;;;;x
+EVTOPTA_orfelec_problem_range_squatters_force_out;Call my men to throw them out and tear down the home.;;;;;;;;;;;x
 
-EVTDESC_orfelec_problem_range_squatters_good;The whole matter proves to be less troublesome than you hoped. The family, perhaps expecting to have to leave eventually, do not offer much resistance. They gather their possessions and begin heading off, perhaps to some other lord's lands, but they are no longer squatting in yours and when word spreads on how decisively you dealt with the issue, your reputation much improves. You seem to have impressed many of your peers, who likely also have dealt with squatters, and respect how you dealt with them. Regardless, you've likely won a few votes from this little incident, which to you is a happy enough ending as any.;;;;;;;;;;;x
-EVTOPT_orfelec_resolve_destitute_ranger_good;Vote [Root.GetTitledFirstName] to solve the realm's problems!;;;;;;;;;;;x
-EVTDESC_orfelec_problem_range_squatters_neutral;It requires a bit more effort than expected, the family are attached to their little home, and are reluctant to leave. It takes almost half a day before they finally give up and begin to pack up their belongings and various kinsmen, and even longer for them to actually leave. But they do leave, mournfully and slowly they go down the road out of your lands, seeking a life in greener pastures perhaps. As you return you hear whispers about the incident, and your conduct. Opinions are mixed, some think you could have done more while others seem to blame you for throwing them out, but it seems your decision was somewhat controversial. Luckily none of your courtiers can exactly agree on why they disagree and the mutterings don't escalate. You haven't exactly won any new respect as a ruler but beyond that not much has changed.;;;;;;;;;;;x
-EVTOPT_orfelec_resolve_destitute_ranger_neutral;Who would have known dealing with vagrants would be so complicated.;;;;;;;;;;;x
-EVTDESC_orfelec_problem_range_squatters_bad;The family takes your efforts to send them away very poorly. When they hear of your decision, one of the elder sons of the family approaches you and all but begs you to let them stay, when that doesn't work he comes at you with his fists but one of your guardsmen knocks him down before he can reach you. From there matters quickly devolved. A half dozen of the menfolk, and two women, rush to grab whatever they can use as weapons to protect their home, pitchforks, improvised spears and even a rusty old saber are brandished at you and your men, daring you to come and drag them out by force. Not wanting to cause a massacre during the election, you order your men to disperse them non-lethally, but even that leads to a brawl that leaves three of your soldiers injured and one of the women who took up arms dead. The remaining squatters left conscious stare at you with hate in their eyes as they're led out at saberpoint by your guardsmen and arrested. When you return home the tales your guardsmen tell don't exactly paint you favorably, and word spreads of your brutality. To make matters worse later that week you hear the incident used as a reason why you're unfit as a candidate, and it seems many voters seem to agree with the sentiment.;;;;;;;;;;;x
+EVTDESC_orfelec_problem_range_squatters_good;The whole matter surprisingly proves to be less trouble than you expected. The family, perhaps knowing that they would have to leave eventually, do not offer much resistance. They gather their possessions and begin heading off, perhaps to some other lord's lands, but at least they are no longer squatting in yours. When word spreads on how decisively you dealt with the issue, your reputation among the nobles improved greatly. You seem to have impressed many of your peers, who also have dealt with squatters, and gained their respect. You've likely won a few votes from this little incident.;;;;;;;;;;;x
+EVTOPT_orfelec_resolve_destitute_ranger_good;Vote [Root.GetTitledFirstName] to stop squatters!;;;;;;;;;;;x
+EVTDESC_orfelec_problem_range_squatters_neutral;Evicting the squatters requires a bit more effort than expected. The family is attached to their little home and reluctant to leave. It takes almost half a day before they finally give up and begin to pack up their belongings and even longer for them to actually leave. But they do eventually leave. When you return home you hear whispers about the incident and your conduct, but overall the event has shifted the minds of your court very little. You haven't exactly won any new respect as a ruler, but no change is better than a poor one.;;;;;;;;;;;x
+EVTOPT_orfelec_resolve_destitute_ranger_neutral;Who would have thought that dealing with vagrants would be so complicated.;;;;;;;;;;;x
+EVTDESC_orfelec_problem_range_squatters_bad;The squatter family took your eviction efforts very poorly. When they were informed of your decision, one of the sons approaches your posse and begs you to let them stay. From there matters quickly escalated. After a short standoff your deputies eventually managed to arrest the squatters, setting the shack on fire once the area was clear. On your return home the tales your deputies tell don't exactly paint you favorably, and word spreads of your callousness and ineffectiveness. This surely has harmed your changes at being elected.;;;;;;;;;;;x
 EVTOPT_orfelec_resolve_destitute_ranger_bad;It's not land to freely build an estate on, I couldn't have just let them stay!;;;;;;;;;;;x
+
 reconsider_party_allegiance;Reconsider Party Allegiance;;;;;;;;;;;;x
 reconsider_party_allegiance_desc;Who you align yourself with isn't something to change on a whim, but to change is sometimes to survive.;;;;;;;;;;;;x
 EVTDESC_texas_50;The movements and allegiances of the ranges stretch back hundreds of years, the groups and causes entrenched in their ways. Ultimately however the allegiance to those parties shifts with time and politics. Who will you support?;;;;;;;;;;;;x
@@ -241,58 +241,58 @@ WAR_NAME_LIBERATE_TEXAS;$ORDER$Liberation of $OTHER_TITLE$;;;;;;;;;;;;;x
 CB_NAME_LIBERATE_TEXAS;Liberation of [Title.GetBaseName];;;;;;;;;;;;;x
 
 range_senate_size;Noble Representation;;;;;;;;;;;;;x
-range_senate_size_desc;The more common and more powerful noble class of the Range demand to be represented.;;;;;;;;;;;;;x
+range_senate_size_desc;These laws determine the size of the realm's government.;;;;;;;;;;;;;x
 range_senate_size_0;Rule In Trust;;;;;;;;;;;;;x
 range_senate_size_0_option;Trust;;;;;;;;;;;;;x
-range_senate_size_0_desc;The council and ruler are already the trusted guiders of the realm and do not need anyone standing in their way.;;;;;;;;;;;;;x
+range_senate_size_0_desc;Exercise of the powers of the realm is limited to the ruler and the council.;;;;;;;;;;;;;x
 range_senate_size_1;Council Representatives;;;;;;;;;;;;;x
 range_senate_size_1_option;Council;;;;;;;;;;;;;x
 range_senate_size_1_desc;While not enough to assuage the most radical of nobles, two elected advisors ensure that the nobility have some say in the running of the realm.;;;;;;;;;;;;;x
 range_senate_size_2;Chamber Senate;;;;;;;;;;;;;x
 range_senate_size_2_option;Chamber;;;;;;;;;;;;;x
-range_senate_size_2_desc;The smallest thing that could be considered a Senate, a chamber of 4 senators actually means that elected representatives regularly decide council votes.;;;;;;;;;;;;;x
+range_senate_size_2_desc;The smallest thing that could be considered a Senate: a chamber of four senators which votes alongside the council.;;;;;;;;;;;;;x
 range_senate_size_3;Royal Senate;;;;;;;;;;;;;x
 range_senate_size_3_option;Royal;;;;;;;;;;;;;x
-range_senate_size_3_desc;A Senate fitting a royal of the Range, 8 seats means that the majority of the council's political power is held by elected senators.;;;;;;;;;;;;;x
+range_senate_size_3_desc;A Senate befitting the expanse of the range, eight seats means that the majority of the council's power is exercised by senators.;;;;;;;;;;;;;x
 range_senate_size_4;Grand Senate;;;;;;;;;;;;;x
 range_senate_size_4_option;Grand;;;;;;;;;;;;;x
-range_senate_size_4_desc;A gathering that can truly represent a Grand Kingdom, 12 seats represent the united will of a realm's nobility.;;;;;;;;;;;;;x
+range_senate_size_4_desc;Twelve senators to represent the interests of the whole nobility, appropriate for a vast realm.;;;;;;;;;;;;;x
 
 orf_senate_type_law;Senate Rights;;;;;;;;;;;;;x
-orf_senate_type_law_desc;To have a Senate is one thing, to give it the rights and safety to act is another.;;;;;;;;;;;;;x
-orf_senate_type_law_0;Royal Oversight;;;;;;;;;;;;;x
+orf_senate_type_law_desc;Laws governing the protections afforded to senators and the character of their electorates.;;;;;;;;;;;;;x
+orf_senate_type_law_0;Royal Prerogative;;;;;;;;;;;;;x
 orf_senate_type_law_0_option;Royal;;;;;;;;;;;;;x
-orf_senate_type_law_0_desc;While elected by our nobility the Senate faces restrictions and can be removed by the ruler;;;;;;;;;;;;;x
+orf_senate_type_law_0_desc;The ruler has the prerogative to dismiss senators for any reason.;;;;;;;;;;;;;x
 TOOLTIP_orf_senate_type_law_0;Senators serve at the leisure of their liege and can be removed.;;;;;;;;;;;;;x
 orf_senate_type_law_1;Protected Senators;;;;;;;;;;;;;x
 orf_senate_type_law_1_option;Protected;;;;;;;;;;;;;x
-orf_senate_type_law_1_desc;Elected by the nobility of our realm the positions of the Senate are held on behalf of that nobility and cannot be removed by the ruler;;;;;;;;;;;;;x
+orf_senate_type_law_1_desc;The nobility has the right to elect representatives to the Senate who cannot be removed from office without their express consent.;;;;;;;;;;;;;x
 TOOLTIP_orf_senate_type_law_1;Elected Senators serve on behalf of the vassals and cannot be arbitrarily removed from their position.;;;;;;;;;;;;;x
 orf_senate_type_law_2;Open Senate;;;;;;;;;;;;;x
 orf_senate_type_law_2_option;Open;;;;;;;;;;;;;x
-orf_senate_type_law_2_desc;A truly radical proposition where non nobles, merchants and church leaders, can run for Senate but they are still elected only by nobility.;;;;;;;;;;;;;x
-TOOLTIP_orf_senate_type_law_2;Radically opens the Senate to non noble vassals.;;;;;;;;;;;;;x
+orf_senate_type_law_2_desc;A radical system where nonfeudal vassals, merchants and church leaders, can run for Senate. Senators however are still elected only by the nobility.;;;;;;;;;;;;;x
+TOOLTIP_orf_senate_type_law_2;Nonfeudal vassals may run for Senate. Senators remained chosen and dismissed by nobles alone.;;;;;;;;;;;;;x
 
 range_privileges_trade;Range Travel Restrictions;;;;;;;;;;;;;x
-range_privileges_trade_desc;While the exclusive rights of nobles to range their cattle on the rangeland is not in question, many merchants ask that they be allowed to travel it and enjoy its safety to travel between settlements.;;;;;;;;;;;;;x
-range_privileges_trade_0;Range Travel Allowances;;;;;;;;;;;;;x
-range_privileges_trade_0_option;Allowances;;;;;;;;;;;;;x
-range_privileges_trade_0_desc;Merchants may travel the range but must pay dues and fines for any grazing their horses and cattle do.;;;;;;;;;;;;;x
+range_privileges_trade_desc;Because nobles traditionally hold the exclusive right to range their cattle on the rangeland and defend that right by any means necessary, the right to free and safe travel of merchants between settlements has never been expected.;;;;;;;;;;;;;x
+range_privileges_trade_0;Range Travel Allowed;;;;;;;;;;;;;x
+range_privileges_trade_0_option;Allowed;;;;;;;;;;;;;x
+range_privileges_trade_0_desc;Merchants may travel the range but must pay a fine for any grazing done by their pack animals or cattle.;;;;;;;;;;;;;x
 range_privileges_trade_1;Restricted Range Traveling;;;;;;;;;;;;;x
 range_privileges_trade_1_option;Restricted;;;;;;;;;;;;;x
-range_privileges_trade_1_desc;No one but the nobility may travel the range with purpose, whatever trade that inhibits can be profited on by the rangers to better equip themselves.;;;;;;;;;;;;;x
+range_privileges_trade_1_desc;The nobility is the only group allowed to freely traverse the range. Merchants and any other travelers must request documents from nobles for safe passage — an arduous task considering the jealousy with which the nobility holds their grazing rights. As a consequence of the range being constantly guarded, range soliders are more experienced in realms that restrict travel.;;;;;;;;;;;;;x
 
-range_privileges_church;Range Temple Exemptions;;;;;;;;;;;;;x
-range_privileges_church_desc;While many holy temples have devoted landsmen to support them, the nobles of the range are more moneypoor then their fief having compatriots, and churches ask that they be allowed on the range to help support themselves and to enforce holy will.;;;;;;;;;;;;;x
-range_privileges_church_0;Church Range Allowances;;;;;;;;;;;;;x
-range_privileges_church_0_option;Allowances;;;;;;;;;;;;;x
-range_privileges_church_0_desc;The church has nobility among its clergy and it serves the spirit of the nobility, so its range access serves the nobility.;;;;;;;;;;;;;x
-range_privileges_church_1;Restricted Grazing Privileges;;;;;;;;;;;;;x
-range_privileges_church_1_option;Restricted;;;;;;;;;;;;;x
-range_privileges_church_1_desc;The temples already have their own farms and land with which to fund themselves, the range is the exclusive privilege of the nobility.;;;;;;;;;;;;;x
+range_privileges_church;Range Temple Grazing;;;;;;;;;;;;;x
+range_privileges_church_desc;Although many places of worship receive tithes or other forms of support from devoted landsmen, many holy men have sought the right to graze cattle on the range for supplementary incomes, intruding on the nobility's exclusive grazing rights.;;;;;;;;;;;;;x
+range_privileges_church_0;Church Grazing Allowed;;;;;;;;;;;;;x
+range_privileges_church_0_option;Allowed;;;;;;;;;;;;;x
+range_privileges_church_0_desc;The clergy may graze their animals on the range.;;;;;;;;;;;;;x
+range_privileges_church_1;Church Grazing Prohibited;;;;;;;;;;;;;x
+range_privileges_church_1_option;Prohibited;;;;;;;;;;;;;x
+range_privileges_church_1_desc;The clergy is completely prohibited from interfering with the nobles' exclusive grazing rights.;;;;;;;;;;;;;x
 
 open_range_feudalism_government;Open Range Feudalism;;;;;;;;;;;;;x
-open_range_feudalism_government_desc;Open Range Feudalism operates similarly to normal feudalism, but the freedom of the plains and the dominance of ranching over farming has resulted in a entirely different approach to rewarding and funding their noble class. Rather than fiefdoms the county holder controls and maintains the underdeveloped land as a Range, and the nobility exchange their service for the right to graze on it. Special buildings must be built to utilize the range, which are limited by the number of empty holdings. Additionally, the nobility's harder to tame nature has resulted in a persistence of broader power sharing. Large enough realms can implement an expanded council with elected seats, and even an entire congress for realms large enough to warrant it.;;;;;;;;;;;;;x
+open_range_feudalism_government_desc;Open Range Feudalism operates similarly to normal feudalism, although the economics of the praire has resulted in an entirely different relationship between rulers and their vassals. Nobles make their profits through cattle ranching and exchange services to their lord for exclusive grazing rights. A special building in the provincial capital represents the expanse of the grazable range in a certain province, which is determined by the number of empty holdings. Additionally, the freedom of the range has bred an independence streak into the nobility and has caused an increased demand participation in governance. As a consequence, it is customary for Open Range rulers to maintain a Senate which may either be chosen by the ruler or elected by the nobles.;;;;;;;;;;;;;x
 gov_open_range_feudalism_base;Range Autocracy;;;;;;;;;;;;;x
 gov_americanist_open_range_feudalism_base;Range District;;;;;;;;;;;;;x
 gov_open_range_feudalism_council;Reformed Autocracy;;;;;;;;;;;;;x
@@ -318,16 +318,16 @@ title_senator_11;Senator;;;;;;;;;;;;;x
 title_senator_12;Senator;;;;;;;;;;;;;x
 
 open_range_1;Open Range;;;;;;;;;;;;;x
-open_range_1_desc;Open Range;;;;;;;;;;;;;x
+open_range_1_desc;With the lack of undeveloped range, this province is only able to provide a meager retinue of cowboys.;;;;;;;;;;;;;x
 open_range_2;Open Range;;;;;;;;;;;;;x
-open_range_2_desc;Open Range;;;;;;;;;;;;;x
+open_range_2_desc;With just a plot of open range, this province provides a small retinue of cowboys.;;;;;;;;;;;;;x
 open_range_3;Open Range;;;;;;;;;;;;;x
-open_range_3_desc;Open Range;;;;;;;;;;;;;x
+open_range_3_desc;A couple plots of range is enough for this province to supply a serviceable retinue of cowboys.;;;;;;;;;;;;;x
 open_range_4;Open Range;;;;;;;;;;;;;x
-open_range_4_desc;Open Range;;;;;;;;;;;;;x
+open_range_4_desc;Three plots of open range in this province yields an impressive retinue of cowboys.;;;;;;;;;;;;;x
 open_range_5;Open Range;;;;;;;;;;;;;x
-open_range_5_desc;Open Range;;;;;;;;;;;;;x
+open_range_5_desc;The majesty of the range in this province allows for a sizeable retinue of cowboys to be raised.;;;;;;;;;;;;;x
 open_range_6;Open Range;;;;;;;;;;;;;x
-open_range_6_desc;Open Range;;;;;;;;;;;;;x
+open_range_6_desc;The wide open range in this province permits the gathering of a staggering retinue of cowboys.;;;;;;;;;;;;;x
 open_range_7;Open Range;;;;;;;;;;;;;x
-open_range_7_desc;Open Range;;;;;;;;;;;;;x
+open_range_7_desc;The grand expanse of the range in this province means plenty of happy cattle and an astounding retinue of cowboys at the suzerain's disposal.;;;;;;;;;;;;;x

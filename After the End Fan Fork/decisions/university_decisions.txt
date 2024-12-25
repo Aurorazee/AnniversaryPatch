@@ -32,34 +32,34 @@ decisions = {
 			factor = 0.5
 		}
 	}
-	join_sports_team = {
-		is_high_prio = no
-		potential = {
-			is_adult = yes
-			NOT = { age = 50 }
-			OR = {
-				trait = student
-				trait = graduate
-			}
-			NOT = { trait = football }
-			NOT = { trait = hockey }
-		}
-		allow = {
-			NOT = { age = 50 }
-			OR = {
-				trait = student
-				trait = graduate
-			}
-			NOT = { trait = football }
-			NOT = { trait = hockey }
-		}
-		effect = {
-			character_event = { id = univ.2 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	# join_sports_team = {
+		# is_high_prio = no
+		# potential = {
+			# is_adult = yes
+			# NOT = { age = 50 }
+			# OR = {
+				# trait = student
+				# trait = graduate
+			# }
+			# NOT = { trait = football }
+			# NOT = { trait = hockey }
+		# }
+		# allow = {
+			# NOT = { age = 50 }
+			# OR = {
+				# trait = student
+				# trait = graduate
+			# }
+			# NOT = { trait = football }
+			# NOT = { trait = hockey }
+		# }
+		# effect = {
+			# character_event = { id = univ.2 }
+		# }
+		# ai_will_do = {
+			# factor = 1
+		# }
+	# }
 	change_college_major = {
 		is_high_prio = yes
 		potential = {

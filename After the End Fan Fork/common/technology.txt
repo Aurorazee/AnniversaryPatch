@@ -581,7 +581,6 @@ TECH_GROUP_CULTURE = {
 		5 = {
 			add_decision = imperial_administration
 			add_decision = ze_administration_laws_2
-			add_decision = orf_senate_type_law_2
 		}
 	}
 	TECH_CULTURE_FLEX = {
@@ -615,7 +614,6 @@ TECH_GROUP_CULTURE = {
 			add_decision = crown_authority_3
 			add_decision = centralization_3
 			add_decision = ze_administration_laws_1
-			add_decision = orf_senate_type_law_1
 			add_decision = out_of_realm_inheritance_law_1
 		}
 		4 = {
@@ -630,6 +628,7 @@ TECH_GROUP_CULTURE = {
 			add_decision = tax_levy_law_republic_7
 			add_decision = tax_levy_law_theocracy_1
 			add_decision = tax_levy_law_theocracy_7
+			add_decision = orf_senate_type_law_2
 		}
 		6 = {
 			add_decision = feudal_tax_3

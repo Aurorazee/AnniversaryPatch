@@ -312,7 +312,7 @@ character_event = {
 #Liege notified
 character_event = {
 	id = orfelection.6
-	picture = GFX_evt_battle
+	picture = GFX_evt_scandal
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_6
 	
@@ -521,7 +521,7 @@ character_event = {
 #Incumbent notified
 character_event = {
 	id = orfelection.3
-	picture = GFX_evt_battle
+	picture = GFX_evt_emissary
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_3
 	
@@ -569,7 +569,7 @@ character_event = {
 #Campaign events
 character_event = {
 	id = orfelection.4
-	picture = GFX_evt_battle
+	picture = GFX_evt_stone_church
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_4
 	
@@ -591,10 +591,10 @@ character_event = {
 		hidden_tooltip = {
 			random_list = {
 				25 = {
-					character_event = {id = orfelection.11 days = 25 }	
+					long_character_event = {id = orfelection.11 days = 25 }	
 				}
 				25 = {
-					character_event = {id = orfelection.19 days = 25 }	
+					long_character_event = {id = orfelection.19 days = 25 }	
 				}
 			}
 		}
@@ -605,7 +605,7 @@ character_event = {
 				trait = party_magnate
 			}
 		}
-		character_event = {id = orfelection.4 days = 40 }
+		long_character_event = {id = orfelection.4 days = 40 }
 		set_character_flag = range_campaign
  
 	}
@@ -623,15 +623,15 @@ character_event = {
 		hidden_tooltip = {
 			random_list = {
 				20 = {
-					character_event = {id = orfelection.13 days = 25}
+					long_character_event = {id = orfelection.13 days = 25}
 				}
 
 				20 = {
-					character_event = {id = orfelection.15 days = 25}	
+					long_character_event = {id = orfelection.15 days = 25}	
 				}
 
 				20 = {
-					character_event = {id = orfelection.17 days = 25}	
+					long_character_event = {id = orfelection.17 days = 25}	
 				}
 			}
 		}
@@ -953,7 +953,7 @@ character_event = {
 #Incumbent resigns
 character_event = {
 	id = orfelection.5
-	picture = GFX_evt_battle
+	picture = GFX_evt_council
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_5
 	
@@ -1051,7 +1051,7 @@ character_event = {
 #Attacker won - Attacker
 character_event = {
 	id = orfelection.51
-	picture = GFX_evt_battle
+	picture = GFX_evt_council
 	is_triggered_only = yes
 	title = EVTTITLE_orfelection_51
 	desc = EVTDESC_orfelection_51
@@ -1139,7 +1139,7 @@ character_event = {
 #Attacker won - Defender
 character_event = {
 	id = orfelection.52
-	picture = GFX_evt_battle
+	picture = GFX_evt_bad_news
 	is_triggered_only = yes
 	title = EVTTITLE_orfelection_52
 	desc = EVTDESC_orfelection_52
@@ -1159,7 +1159,7 @@ character_event = {
 #Defender won - Attacker
 character_event = {
 	id = orfelection.53
-	picture = GFX_evt_battle
+	picture = GFX_evt_bad_news
 	is_triggered_only = yes
 	title = EVTTITLE_orfelection_53
 	desc = EVTDESC_orfelection_53
@@ -1179,7 +1179,7 @@ character_event = {
 #Defender won - Defender
 character_event = {
 	id = orfelection.54
-	picture = GFX_evt_battle
+	picture = GFX_evt_council
 	is_triggered_only = yes
 	title = EVTTITLE_orfelection_54
 	desc = EVTDESC_orfelection_54
@@ -1370,6 +1370,7 @@ character_event = {
 #Attacker informed of Defender death
 character_event = {
 	id = orfelection.101
+	picture = GFX_evt_bad_news
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_101
 	option = {
@@ -1405,6 +1406,7 @@ character_event = {
 #Defender informed of Attacker death
 character_event = {
 	id = orfelection.103
+	picture = GFX_evt_bad_news
 	is_triggered_only = yes
 	desc = EVTDESC_orfelection_103
 	
@@ -1551,17 +1553,18 @@ character_event = {
 }
 
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event = {#local speech
+long_character_event = {#local speech
 	id = orfelection.11
 	desc = EVTDESC_orfelec_problem_minor_meeting
-	#picture = something
+	picture = GFX_evt_feast
+	portrait = none
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.12 days = 7}	
+		long_character_event = {id = orfelection.12 days = 7}	
 	}
 	option = {
 		name = EVTOPTA_orfelec_problem_minor_meeting
@@ -1901,25 +1904,28 @@ character_event = {#local speech
 	}
 }
 
-character_event = {#resolved
+long_character_event = {#resolved
 	id = orfelection.12
 	is_triggered_only = yes
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_good_11}
 		text = EVTDESC_orfelec_resolve_good_minor_meeting
+		picture = GFX_evt_feast
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_11}
 		text = EVTDESC_orfelec_resolve_neutral_minor_meeting
+		picture = GFX_evt_brothel
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_11}
 		text = EVTDESC_orfelec_resolve_bad_minor_meeting
+		picture = GFX_evt_scandal
 	}
-	#picture = something
 
 	option = {
 		trigger = { has_character_flag = orfelect_good_11}
@@ -1935,16 +1941,18 @@ character_event = {#resolved
 	}
 }
 
-character_event = {#Merchants arrive
+long_character_event = {#Merchants arrive
 	id = orfelection.13
+	picture = GFX_evt_carriage
 	desc = EVTDESC_orfelec_problem_merchants
+	portrait = none
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.14 days = 7}
+		long_character_event = {id = orfelection.14 days = 7}
 	}
 	option = {
 		name = EVTOPTA_orfelec_problem_merchants
@@ -2104,23 +2112,27 @@ character_event = {#Merchants arrive
 	}
 }
 
-character_event = {#resolved
+long_character_event = {#resolved
 	id = orfelection.14
 	desc = {
 		trigger = { has_character_flag = orfelect_good_13}
-		text =EVTDESC_orfelec_resolve_good_merchants
+		text = EVTDESC_orfelec_resolve_good_merchants
+		picture = GFX_evt_market
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_13}
-		text =EVTDESC_orfelec_resolve_neutral_merchants
+		text = EVTDESC_orfelec_resolve_neutral_merchants
+		picture = GFX_evt_merchant_caravan
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_13}
-		text =EVTDESC_orfelec_resolve_bad_merchants
+		text = EVTDESC_orfelec_resolve_bad_merchants
+		picture = GFX_evt_market_hf
 	}
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
@@ -2139,18 +2151,20 @@ character_event = {#resolved
 	}
 }
 
-character_event = {#a problem occurs
+long_character_event = {#a problem occurs
 	id = orfelection.15
 	desc = EVTDESC_orfelec_problem_rangers
+	picture = GFX_evt_family_feud_republic
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.16 days = 7}
+		long_character_event = {id = orfelection.16 days = 7}
 	}
 	option = {#skill one
 		name = EVTOPTA_orfelec_problem_rangers
@@ -2347,23 +2361,27 @@ character_event = {#a problem occurs
 	}
 }
 
-character_event = {#resolved
+long_character_event = {#resolved
 	id = orfelection.16
 	desc = {
 		text = EVTDESC_orfelec_resolve_good_rangers
 		trigger = { has_character_flag = orfelect_good_15}
+		picture = GFX_evt_outside_tavern_hf
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_15}
 		text = EVTDESC_orfelec_resolve_neutral_rangers
+		picture = GFX_evt_peasants
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_15}
 		text = EVTDESC_orfelec_resolve_bad_rangers
+		picture = GFX_evt_drunk
 	}
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
@@ -2383,17 +2401,18 @@ character_event = {#resolved
 }
 
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event = {
+long_character_event = {
 	id = orfelection.17
 	desc = EVTDESC_orfelec_problem_destitute_ranger
-	#picture = something
+	picture = GFX_evt_family
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.18 days = 7}	
+		long_character_event = {id = orfelection.18 days = 7}	
 	}
 	option = {
 		name = EVTOPTA_orfelec_problem_destitute_rangers_help
@@ -2415,15 +2434,17 @@ character_event = {
 	}
 }
 
-character_event = {#resolved
+long_character_event = {#resolved
 	id = orfelection.18
 	desc = {
 		trigger = { has_character_flag = orfelect_good_17 }
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_good
+		picture = GFX_evt_idyllic_fishing_wol
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_17 }
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_neutral
+		picture = GFX_evt_sleeping_town_hf
 	}
 	desc = {
 		trigger = { 
@@ -2431,16 +2452,18 @@ character_event = {#resolved
 			NOT = { has_character_flag = destitute_ranger_encourage_them }
 		}
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_bad
+		picture = GFX_evt_culture_change
 	}
 	desc = {
 		trigger = { 
 			has_character_flag = orfelect_bad_17
 			has_character_flag = destitute_ranger_encourage_them
 		}
+		picture = GFX_evt_culture_change
 		text = EVTDESC_orfelec_problem_destitute_ranger_resolve_bad_worse
 	}
-	#picture = something
 	is_triggered_only = yes
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
@@ -2573,19 +2596,20 @@ character_event = {#resolved
 }
 
 #TODO AI_will_do, and connect it to the rest of the chain
-character_event = {
+long_character_event = {
 	id = orfelection.19
 	desc = EVTDESC_orfelec_problem_range_squatters
-	#picture = something
+	picture = GFX_evt_construction_site
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
+	portrait = none
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.20 days = 7}	
+		long_character_event = {id = orfelection.20 days = 7}	
 	}
 	option = {
 		name = EVTOPTA_orfelec_problem_range_squatters_cash_help
@@ -2606,21 +2630,24 @@ character_event = {
 	}
 }
 
-character_event = {#resolved
+long_character_event = {#resolved
 	id = orfelection.20
 	desc = {
 		trigger = { has_character_flag = orfelect_good_19}
 		text = EVTDESC_orfelec_problem_range_squatters_good
+		picture = GFX_evt_culture_change
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_19}
 		text = EVTDESC_orfelec_problem_range_squatters_neutral
+		picture = GFX_evt_noble_haughty_talking_to_peasants
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_19}
 		text = EVTDESC_orfelec_problem_range_squatters_bad
+		picture = GFX_evt_burning_house
 	}
-	#picture = something
+	portrait = none
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes
@@ -2690,7 +2717,7 @@ character_event = {
 	}
 	
 	immediate = {
-		character_event = {id = orfelection.22 days = 7}	
+		long_character_event = {id = orfelection.22 days = 7}	
 	}
 	option = {
 		name = EVTOPTA_orfelec_problem_range_ambush_fight

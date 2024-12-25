@@ -8091,6 +8091,18 @@ faction_increase_council_power = {
 		primary_title = { holy_order = no }
 		OR = {
 			is_voter = no
+			has_minor_title = title_senator_1
+			has_minor_title = title_senator_2
+			has_minor_title = title_senator_3
+			has_minor_title = title_senator_4
+			has_minor_title = title_senator_5
+			has_minor_title = title_senator_6
+			has_minor_title = title_senator_7
+			has_minor_title = title_senator_8
+			has_minor_title = title_senator_9
+			has_minor_title = title_senator_10
+			has_minor_title = title_senator_11
+			has_minor_title = title_senator_12
 			is_tribal = yes
 			liege = { 
 				OR = {
@@ -8154,6 +8166,14 @@ faction_increase_council_power = {
 					has_law = grant_title_voting_power_0
 					has_law = imprison_voting_power_0
 					has_law = war_voting_power_0
+					AND = {
+						OR = {
+							has_law = range_senate_size_2
+							has_law = range_senate_size_3
+							has_law = range_senate_size_4
+						}
+						has_law = orf_senate_type_law_0
+					}
 				}
 			}
 			NOT = {
@@ -8184,6 +8204,18 @@ faction_increase_council_power = {
 			NOT = { has_character_modifier = faction_council_power_ultimatum_timer }
 			OR = {
 				is_voter = no
+				has_minor_title = title_senator_1
+				has_minor_title = title_senator_2
+				has_minor_title = title_senator_3
+				has_minor_title = title_senator_4
+				has_minor_title = title_senator_5
+				has_minor_title = title_senator_6
+				has_minor_title = title_senator_7
+				has_minor_title = title_senator_8
+				has_minor_title = title_senator_9
+				has_minor_title = title_senator_10
+				has_minor_title = title_senator_11
+				has_minor_title = title_senator_12
 				is_tribal = yes
 				liege = { 
 					OR = {
@@ -8336,6 +8368,28 @@ faction_increase_council_power = {
 				is_voter = yes
 				has_position = malcontent
 			}
+		}
+		
+		modifier = {
+			factor = 2
+			FROM = {
+				OR = {
+					has_minor_title = title_senator_1
+					has_minor_title = title_senator_2
+					has_minor_title = title_senator_3
+					has_minor_title = title_senator_4
+					has_minor_title = title_senator_5
+					has_minor_title = title_senator_6
+					has_minor_title = title_senator_7
+					has_minor_title = title_senator_8
+					has_minor_title = title_senator_9
+					has_minor_title = title_senator_10
+					has_minor_title = title_senator_11
+					has_minor_title = title_senator_12
+
+				}
+			}
+			has_law = orf_senate_type_law_0
 		}
 		
 		modifier = {
@@ -8633,6 +8687,28 @@ faction_increase_council_power = {
 					NOT = { has_law = imprison_voting_power_1 }
 					NOT = { has_law = war_voting_power_1 }
 				}
+			}
+		}
+		
+		modifier = {
+			factor = 2
+			OR = {
+				has_minor_title = title_senator_1
+				has_minor_title = title_senator_2
+				has_minor_title = title_senator_3
+				has_minor_title = title_senator_4
+				has_minor_title = title_senator_5
+				has_minor_title = title_senator_6
+				has_minor_title = title_senator_7
+				has_minor_title = title_senator_8
+				has_minor_title = title_senator_9
+				has_minor_title = title_senator_10
+				has_minor_title = title_senator_11
+				has_minor_title = title_senator_12
+
+			}
+			FROMFROM = {
+				has_law = orf_senate_type_law_0
 			}
 		}
 

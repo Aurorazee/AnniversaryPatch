@@ -9,7 +9,7 @@ cheated_expelled_TT;Was expelled for cheating;;;;;;;;;;;;;x
 has_eval_merit_TT;Has an available Evaluator of Merit or Guru;;;;;;;;;;;;;x
 
 failed_exam_abdicate;Abdicate as [Root.GetTitle] of [Root.PrimaryTitle.GetName];;;;;;;;;;;;;x
-failed_exam_abdicate_desc;As a [Root.Government.GetName] ruler, failing your Imperial Exam is a major blow to both your prestige and legitimacy. Although you are under no obligation to renounce the throne, it may be what is best for the realm.;;;;;;;;;;;;;x
+failed_exam_abdicate_desc;Failing your Imperial Exam is a major blow to both your prestige and legitimacy as a [Root.Government.GetName] ruler. Although you are under no obligation to renounce your position, it may be what is best for the realm to do so.;;;;;;;;;;;;;x
 
 reschedule_exam;Reschedule Imperial Exam;;;;;;;;;;;;;x
 reschedule_exam_desc;For one reason or another, the evaluators have yet to come back to you. At this point, it's easier to cut your losses and reschedule.;;;;;;;;;;;;;x
@@ -18,7 +18,7 @@ claim_realm_exam;Claim Liege Realm;;;;;;;;;;;;;x
 claim_realm_exam_desc;Your liege has done poorly on their Imperial Exam. As a ruler who has passed, you have a right to claim your lord's realm and replace them.;;;;;;;;;;;;;x
 
 appoint_governator;Appoint Governatus;;;;;;;;;;;;;x
-appoint_governator_desc;The Governatus of California is a very important and influential title within the Imperial Court of California and across the entire realm. A person who holds this title may be able to garner enough support to displace the [Root.GetCeticEmperorEmpress], so one must be careful of who they pick.;;;;;;;;;;;;;x
+appoint_governator_desc;The Governatus of California is a very important and influential title within the Imperial Court of California and across the entire realm. The holder this office may be able to garner enough support to displace the [Root.GetCeticEmperorEmpress], so one must be careful of who they pick.;;;;;;;;;;;;;x
 
 sanction_governator;Sanction Anti-Governatus;;;;;;;;;;;;;x
 sanction_governator_desc;With the Governatus seizing more and more power for themselves, it is necessary to declare an "anti-Governatus" to combat this unjust power grab.;;;;;;;;;;;;;x
@@ -42,12 +42,12 @@ ask_governator_heir_desc;Although you are a fine candidate for Governatus, the c
 has_not_asked_5yrs_TT;Has not asked for five years.;;;;;;;;;;;;;x
 
 slander_character;Slander [Root.GetCeticTitle];;;;;;;;;;;;;x
-slander_character_desc;The sensibilities of the Californian nobility mandate that allegations of improper behavior must be taken with the utmost seriousness. Although there is a possibility of getting caught in a lie, pulling it off can lead an improvement in stature among the Imperial Court.;;;;;;;;;;;;;x
+slander_character_desc;The Californian Imperial Court is notoriously ruthless and unforgiving toward impropriety. Although there is a possibility of getting caught in a lie, successfully slandering [Root.GetBestName] may improve my stature in the palace.;;;;;;;;;;;;;x
 has_not_action_2ys_TT;Has not attempted to change Imperial Authority for two years;;;;;;;;;;;;;x
 has_not_action_7ys_TT;Has not attempted to change Imperial Authority for seven years;;;;;;;;;;;;;x
 
 grain_to_masses;Distribute Grain in Imperial Capital;;;;;;;;;;;;;x
-grain_to_masses_desc;The will of the people is influential in the politics of the Imperial Court, and so, controlling it is vital to controlling the empire. By feeding the many starving peasants of the capital, one may be able to gain favor among the populace, and cement their influence over the Imperial Court.;;;;;;;;;;;;;x
+grain_to_masses_desc;The will of the people is influential in the politics of the Imperial Court, thus controlling the people is vital to controlling the empire. By feeding the hungry peasants of the capital, one may be able to gain favor among the populace, and cement their influence over the Imperial Court.;;;;;;;;;;;;;x
 
 grain_to_masses_humble;Distribute Grain in [Root.GetCeticEmperorEmpressCap]'s Name;;;;;;;;;;;;;x
 grain_to_masses_humble_desc;As a loyal subject of the [Root.GetCeticEmperorEmpress], I must bow to his will. However, I currently have more sway over the Imperial Court than he has. If I distribute grain in his name, it may turn the tides towards him instead.;;;;;;;;;;;;;x
@@ -59,7 +59,7 @@ gain_favor_cetic;Gain Favor of [Root.GetJobTitle];;;;;;;;;;;;;x
 gain_favor_cetic_desc;Influence over the Imperial Court requires the favor of the ones who are a part of it. By gaining a councilor as an ally, one can further cement control over the council.;;;;;;;;;;;;;x
 
 bureaucratic_inspection;Perform a Bureaucratic Inspection;;;;;;;;;;;;;x
-bureaucratic_inspection_desc;One of the many duties of the [From.GetCeticTitle] is to ensure that the many bureaucratic realms are running smoothly. Although this power has fallen out of use in recent years, the resurgence in bureaucratic norms necessitates inspections once again.;;;;;;;;;;;;;x
+bureaucratic_inspection_desc;One of the many duties of the [From.GetCeticTitle] is to ensure that the many bureaucratic realms are running smoothly. Although these inspections had once fallen out practice, the resurgence in bureaucratic norms necessitates inspections once again.;;;;;;;;;;;;;x
 has_not_inspected_2ys_TT;Has not conducted an inspection in two years.;;;;;;;;;;;;;
 has_not_been_inspected_5yrs_TT;Has not been inspected for five years.;;;;;;;;;;;;;x
 
@@ -72,7 +72,7 @@ sell_positions_desc;As a Bureaucratic ruler, there are many positions within the
 has_not_sold_7ys_TT;Has not sold any positions for seven years.;;;;;;;;;;;;;x
 
 bureaucratic_building;Construct a Bureaucratic Structure;;;;;;;;;;;;;x
-bureaucratic_building_desc;In order to properly function, a bureaucracy requires things such as local offices and a road system. Currently, our realm lacks both, and as a bureaucratic ruler, it's my duty to foster a well-running bureaucracy.;;;;;;;;;;;;;x
+bureaucratic_building_desc;A bureaucracy requires things such as local offices and a road system to function smoothly and effectively. Currently, our realm lacks both, and as a bureaucratic ruler, it is my responsibility to foster a well-running bureaucracy.;;;;;;;;;;;;;x
 is_not_currently_building_TT;Is not currently building anything.;;;;;;;;;;;;;x
 
 #Events
@@ -86,42 +86,42 @@ EVTOPTAIE2;Excellent.;;;;;;;;;;;;;x
 EVTDESCIE3;I have just finished reading your application to take the Imperial Exam, and I regret to inform your that it is not up to the high standards of the Imperial Exam. You are welcome to write another application at any time, granted that you are prepared.;;;;;;;;;;;;;x
 EVTOPTAIE3;Disappointing...;;;;;;;;;;;;;x
 
-EVTDESCIE4;Now that I am set to take the Imperial Exam, I need to get myself prepared through rigorous study. I can start by choosing which subject I am to focus on.;;;;;;;;;;;;;x
+EVTDESCIE4;Now that I am set to take the Imperial Exam, I must get myself prepared through rigorous study. I can start by choosing which subject I am to focus on.;;;;;;;;;;;;;x
 EVTOPTAIE4;Math — numbers seem to elude me when I'm dealing with the realm.;;;;;;;;;;;;;x
 EVTOPTBIE4;Language Arts — I am unable to read a book without slipping off.;;;;;;;;;;;;;x
 EVTOPTCIE4;Science — I cannot grasp all the calculations and long-winded essays.;;;;;;;;;;;;;x
 EVTOPTDIE4;History — Reading about the old and gone bores me so.;;;;;;;;;;;;;x
 
-EVTDESCIE5;Now that I know what I am to focus on, I can now plan out how much time I will study.;;;;;;;;;;;;;x
+EVTDESCIE5;Now that I know what I am to focus on, I should decide how much time I will devote to my efforts.;;;;;;;;;;;;;x
 EVTOPTAIE5;Reading a few passages before bed will do enough for me.;;;;;;;;;;;;;x
-EVTOPTBIE5;I shall take to the book instead of to the hunt.;;;;;;;;;;;;;x
+EVTOPTBIE5;I shall take to the book instead of the hunt.;;;;;;;;;;;;;x
 study_well_TT;Take your studies serious, though you may get strained.;;;;;;;;;;;;;x
 EVTOPTCIE5;Every free second I have must be used to put my nose in a book!;;;;;;;;;;;;;x
-study_hard_TT;Drown yourself in studies. A noble goal, however it might put unnecessary strain on your body and mind.;;;;;;;;;;;;;x
+study_hard_TT;Drown yourself in studies. A noble goal, however it may place unnecessary strain on your body and mind.;;;;;;;;;;;;;x
 
 EVTDESCIE6;I have finally finished my studies. Now I am ready to take the Exam.;;;;;;;;;;;;;x
 EVTOPTAIE6;...I hope.;;;;;;;;;;;;;x
 
 EVTTITLEIE7;The Examination Center;;;;;;;;;;;;;x
-EVTDESCIE7;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. You enter, are greeted by the Evaluator of Merit, and are given a test packet and a place to sit.;;;;;;;;;;;;;x
+EVTDESCIE7;You arrive at the massive examination center, where [Root.Government.GetName] lords from all walks of life come to receive their certification. The Evaluator of Merit greets you as you enter and an attendant leads you to a room filled with desks, each with a set of writing utensils and an intimidating stack of papers.;;;;;;;;;;;;;x
 EVTOPTAIE7;Let me leave with the smile of a coyote, and not one of a lark.;;;;;;;;;;;;;x
 
 EVTTITLEIE8;Math Section;;;;;;;;;;;;;x
 EVTDESCIE8;You open to the first section and see the equations pile up as you start to flip ahead. The numbers jump out at you like a cougar.;;;;;;;;;;;;;x
-EVTOPTAIE8;Lets hope I remember the formula to this one...;;;;;;;;;;;;;x
+EVTOPTAIE8;Let us hope I remember the formula to this one...;;;;;;;;;;;;;x
 ie_skills_TT;Your skills will determine how many points you receive.;;;;;;;;;;;;;x
-EVTOPTBIE8;I think I wrote some equations inside my hanfu.;;;;;;;;;;;;;x
-cheat_TT;Attempt to cheat to get a passing grade this section. This is a very high risk move.;;;;;;;;;;;;;x
+EVTOPTBIE8;I think I wrote some equations on the inside of my sleeve...;;;;;;;;;;;;;x
+cheat_TT;Attempt to cheat to get a passing grade this section. This is a very risky move.;;;;;;;;;;;;;x
 ie_caught_TT;getting caught cheating;;;;;;;;;;;;;x
 ie_suceed_TT;slipping past the eyes of the evaluators;;;;;;;;;;;;;x
 
 EVTTITLEIE9;Language Arts;;;;;;;;;;;;;x
-EVTDESCIE9;You finally finish the Math portion, and get to Language Arts. Eyeing the syntax, grammar, and general style, it's obvious this was written by a Sacramentan.;;;;;;;;;;;;;x
+EVTDESCIE9;You finally finish the Math portion and proceed to Language Arts. Eyeing the syntax, grammar, and general style, it's obvious this was written by a Sacramentan.;;;;;;;;;;;;;x
 EVTOPTAIE9;Valleyan Grammars, don't fail me now!;;;;;;;;;;;;;x
 EVTOPTBIE9;I believe I still have some lose notes in my garments.;;;;;;;;;;;;;x
 
 EVTTITLEIE10;Science;;;;;;;;;;;;;x
-EVTDESCIE10;You get to the Science section of the Exam, and you skim over all the questions. Some of these terms you could have sworn to be names in a fantasy novel you read.;;;;;;;;;;;;;x
+EVTDESCIE10;You get to the Science section of the Exam and skim over all the questions. Some of these terms you could have sworn to be names in a fantasy novel you read.;;;;;;;;;;;;;x
 EVTOPTAIE10;I just need to get my head straight and see past the confusion.;;;;;;;;;;;;;x
 EVTOPTBIE10;Do I still have that theorem sheet in my inside pocket?;;;;;;;;;;;;;x
 
@@ -135,12 +135,12 @@ EVTDESCIE12;Your days of recalling histories are over, at least for now. You hav
 EVTOPTAIE12;I am the ruler of this realm, I should know this! Do I know this?;;;;;;;;;;;;;x
 EVTOPTBIE12;Maybe I can take some "inspiration" from a paper I read.;;;;;;;;;;;;;x
 
-EVTDESCIE13;One of the evaluators in the room glanced over to your table and caught you red-handed. They has asked you to leave the premises, and has failed you.;;;;;;;;;;;;;x
+EVTDESCIE13;One of the evaluators in the room glanced toward your table and caught you red-handed. They asked you to leave the premises, and have failed you.;;;;;;;;;;;;;x
 EVTOPTAIE13;Very disappointing...;;;;;;;;;;;;;x
 EVTOPTBIE13;I am not one to take no for an answer.;;;;;;;;;;;;;x
 attempttobribe_TT;Attempt to bribe the test taker into passing you.;;;;;;;;;;;;;x
 
-EVTDESCIE14;As I write the last few words in my treatise, anxiety washes over me. One of the evaluators takes my Exam and informs me that it will take a few days for them to get back to me with my score. I am almost unable to wait that long.;;;;;;;;;;;;;x
+EVTDESCIE14;As I write the last few words in my treatise I realize that I do not have much time left. I hurriedly proofread my essay and signal that I have finished the Esadian. An evaluator takes the stack of papers and informs me that it will take a few days for them to get back to me with my score. I am almost unable to wait that long.;;;;;;;;;;;;;x
 EVTOPTAIE14;It will be finished in due time.;;;;;;;;;;;;;x
 
 EVTDESCIE15;I have received the exam of [From.GetTitledFirstName], and now must go through and score it.;;;;;;;;;;;;;x
@@ -613,13 +613,13 @@ sanc_governator_war_desc;The Anti-Governatus has the authority to invade the Gov
 bureaucratic_war_declaration;Bureaucratic War Declaration;;;;;;;;;;;;;x
 bureaucratic_war_declaration_desc;These laws govern if the ruler is or is not allowed to wage war.;;;;;;;;;;;;;x
 
-bureaucratic_war_declaration_0;Allowed Declaration;;;;;;;;;;;;;x
+bureaucratic_war_declaration_0;War Allowed;;;;;;;;;;;;;x
 bureaucratic_war_declaration_0_desc;Bureaucratic lords are under no obligation to refrain from waging war.;;;;;;;;;;;;;x
-bureaucratic_war_declaration_0_option;War;;;;;;;;;;;;;x
+bureaucratic_war_declaration_0_option;Allowed;;;;;;;;;;;;;x
 
-bureaucratic_war_declaration_1;Disallowed Declaration;;;;;;;;;;;;;x
+bureaucratic_war_declaration_1;War Prohibited;;;;;;;;;;;;;x
 bureaucratic_war_declaration_1_desc;By the [Root.GetCeticEmperorEmpressCap]'s orders, bureaucratic lords must not wage any war.;;;;;;;;;;;;;x
-bureaucratic_war_declaration_1_option;No War;;;;;;;;;;;;;x
+bureaucratic_war_declaration_1_option;Prohibited;;;;;;;;;;;;;x
 
 succ_bureaucratic_elective;Bureaucratic Elective;;;;;;;;;;;;;x
 succ_bureaucratic_elective_desc;The ruler and council of a bureaucratic realm choose who they believe to be the most qualified candidate.;;;;;;;;;;;;;x

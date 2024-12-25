@@ -14932,6 +14932,16 @@ increase_council_power_effect = {
 			}
 			if = {
 				limit = {
+					has_law = orf_senate_type_law_0
+					NOT = {
+						check_variable = { which = "laws" value = 2 }
+					}
+				}
+				add_law_w_cooldown = orf_senate_type_law_1
+				change_variable = { which = "laws" value = 1 }
+			}
+			if = {
+				limit = {
 					has_law = revoke_title_voting_power_0
 					NOT = {
 						check_variable = { which = "laws" value = 2 }

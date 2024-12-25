@@ -493,7 +493,7 @@ decisions = {
 				d_amarillo = {
 					de_jure_liege = k_highlands
 				}
-				c_caddo = {
+				c_cypress = {
 					de_jure_liege = d_ouachita
 				}
 	
@@ -547,7 +547,7 @@ decisions = {
 				d_amarillo = {
 					de_jure_liege = k_panhandle
 				}
-				c_caddo = {
+				c_cypress = {
 					de_jure_liege = d_ouachita
 				}
 	

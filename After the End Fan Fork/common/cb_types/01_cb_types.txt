@@ -6128,7 +6128,7 @@ pepin_religious = {
 				OR = {
 					has_landed_title = d_twain
 					any_vassal = { has_landed_title = d_twain }
-					d_spoleto = {
+					d_twain = {
 						any_de_jure_vassal_title = { owner = { character = PREVPREVPREV } }
 					}
 				}

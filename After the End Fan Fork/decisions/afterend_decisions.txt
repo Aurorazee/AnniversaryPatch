@@ -3292,7 +3292,7 @@ decisions = {
 		
 		potential = {
 			NOT = {
-				dejure_liege_title = {
+				defacto_liege_title = {
 					has_strong_claim = THIS
 				}
 			}
@@ -3362,7 +3362,7 @@ decisions = {
 				modifier = opinion_claimed_my_title
 				who = liege
 			}
-			dejure_liege_title = {
+			defacto_liege_title = {
 				add_claim = ROOT
 			}
 			set_character_flag = claim_realm_ex
