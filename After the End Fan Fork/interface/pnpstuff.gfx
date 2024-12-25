@@ -1,0 +1,22 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_trade_on_stock_market"
+		texturefile = "gfx\\interface\\trade_on_stock_market.dds"
+	}
+	spriteType = {
+		name = "GFX_celebrate_black_friday"
+		texturefile = "gfx\\interface\\celebrate_black_friday.dds"
+	}
+	spriteType = {
+		name = "GFX_embark_on_shore_leave"
+		texturefile = "gfx\\interface\\embark_on_shore_leave.dds"
+	}
+	spriteType = {
+		name = "GFX_raid_sailing_ship"
+		texturefile = "gfx\\interface\\raid_sailing_ship.dds"
+	}
+	spriteType = {
+		name = "GFX_gamble_at_casino"
+		texturefile = "gfx\\interface\\gamble_at_casino.dds"
+	}
+}

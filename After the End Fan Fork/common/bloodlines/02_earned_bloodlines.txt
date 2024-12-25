@@ -1558,3 +1558,41 @@ john_wayne = {
 	picture = GFX_bloodlines_symbol_horse
 	flags = { historical_bloodline bloodline_mercenary_traditions }
 }
+
+seven_seas_male = {
+	monthly_character_prestige = 1
+	nautical_opinion = 5
+	navegante_opinion = 5
+	ambitious_opinion = 5
+	days_of_supply = 30
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	flags = { created_bloodline }
+	picture = GFX_bloodlines_symbol_longship
+	active = {
+		OR = {
+			religion_group = nautical
+			religion = navegante
+		}
+	}
+}
+
+seven_seas_female = {
+	monthly_character_prestige = 1
+	nautical_opinion = 5
+	navegante_opinion = 5
+	ambitious_opinion = 5
+	days_of_supply = 30
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = matrilineal
+	allow_bastards = yes
+	flags = { created_bloodline }
+	picture = GFX_bloodlines_symbol_longship
+	active = {
+		OR = {
+			religion_group = nautical
+			religion = navegante
+		}
+	}
+}

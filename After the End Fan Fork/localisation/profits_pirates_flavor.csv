@@ -1,0 +1,189 @@
+#CODE;ENGLISH;FRENCH;GERMAN;;SPANISH;;;;;;;;;x
+
+IMAGINEER;Imagineer;;;;;;;;;;;;;x
+GRAND_PARK_OF;Grand Park of;;;;;;;;;;;;;x
+
+EVTNAMECONSUMER21;The Victorious Prophet;;;;;;;;;;;;;x
+EVTDESCCONSUMER21;The Consumerist prophet Adam has successfully led his followers against their enemies, guaranteeing a foothold for his new religion with an army at his back. While many realms react with mockery or horror at this victory, the Prophet has declared that he shall spread his faith as far as the Almighty Dollar will allow, so that he may save the world from another collapse.;;;;;;;;;;;;;x
+EVTOPTACONSUMER21;America shall prosper as it once did!;;;;;;;;;;;;;x
+EVTOPTBCONSUMER21;How far will these money-worshipers spread?;;;;;;;;;;;;;x
+EVTOPTCCONSUMER21;I wonder how the Prophet's success feels...;;;;;;;;;;;;;x
+player_character_consumerprophet_TT;You will switch over to playing Adam the Prophet.;;;;;;;;;;;;;x
+EVTNAME_disneyconsumer1;The Mouse and The Prophet;;;;;;;;;;;;;x
+EVTDESC_disneyconsumer1;A Consumerist diplomat has arrived at my court for an audience. He explains that the National Mall has taken interest in the affairs of The Mouse, as our predecessors once corporatized America's greatest artists and stories. If I accept a conversion to Consumerism, the Prophet will send an investment to back any of our future conquests in Florida and restore our former glory.;;;;;;;;;;;;;x
+EVTOPTA_disneyconsumer1;The House of Mouse accepts your deal!;;;;;;;;;;;;;x
+EVTOPTB_disneyconsumer1;I must refuse the Prophet's offer.;;;;;;;;;;;;;x
+
+CODEKEEPER;Codekeeper;;;;;;;;;;;;;x
+
+EVTOPT_pirate_treasure_prosperity;I seek treasure and prosperity for my crew!;;;;;;;;;;;;;x
+EVTOPT_pirate_fearsome;I will become the most fearsome fighter on the seven seas!;;;;;;;;;;;;;x
+EVTOPT_pirate_socialization;I want to have a good time and enjoy all I can!;;;;;;;;;;;;;x
+EVTOPT_pirate_everything;Wherever the winds take me!;;;;;;;;;;;;;x
+
+celebrate_black_friday;Celebrate Black Friday;;;;;;;;;;;;;x
+celebrate_black_friday_desc;Black Friday is our most sacred holiday, and I can engage in its Shopping rituals to bring prosperity before the New Year.;;;;;;;;;;;;;x
+trade_on_stock_market;Trade in the Stock Market;;;;;;;;;;;;;x
+trade_on_stock_market_desc;Corporate leaders are able to trade shares on the stock market, praying to Dow Jones for success.;;;;;;;;;;;;;x
+gamble_at_casino;Gamble at the Casino;;;;;;;;;;;;;x
+gamble_at_casino_desc;Games of chance are commonly played among Consumerists at casino venues, and I can try my hand at a game for Lady Luck to bless me with fortune.;;;;;;;;;;;;;x
+
+embark_on_shore_leave;Embark on Shore Leave;;;;;;;;;;;;;x
+embark_on_shore_leave_desc;Pirates and sailors will occasionally take a break from sea life and vacation on land, engaging in revelry and debauchery.;;;;;;;;;;;;;x
+raid_sailing_ship;Raid a Sailing Ship;;;;;;;;;;;;;x
+raid_sailing_ship_desc;One cannot call themselves a pirate without raiding enemy ships, and now you can have your crew attack a vessel for treasure!;;;;;;;;;;;;;x
+pirate_raid;You set out with your crew...;;;;;;;;;;;;;x
+vassalize_code_keepers;Vassalize the Keepers of the Code;;;;;;;;;;;;;x
+vassalize_code_keepers_desc;As the rightful Pirate King, I can recruit the Keepers of the Code into my service.;;;;;;;;;;;;;x
+
+TXT_black_friday_decision;You head to your nearest Mall or store the night before Black Friday...;;;;;;;;;;;;;x
+EVTTITLE_black_friday_1;Black Friday;;;;;;;;;;;;;x
+EVTDESC_black_friday_1;I joined a mass of faithful Consumerists at the tent encampment that had been set up outside the Market doors, setting up my own tent alongside them. It has been customary since pre-Event times for adherents of the Almighty Dollar to camp together outside on the night before Black Friday, so that they can share camradery before the following day-long spree of competitive Shopping. Night eventually turned to morning, and I made my way towards the market doors, heading inside to begin my Shopping.;;;;;;;;;;;;;x
+EVTOPTA_black_friday_1;May the Almighty Dollar bless me with a quick cart and excellent savings.;;;;;;;;;;;;;x
+EVTDESC_black_friday_2;I wander through the halls and aisles in a rush, reminding myself that I must not slow down lest others win the Dollar's favor first. What was it that I needed to buy?;;;;;;;;;;;;;x
+EVTOPTA_black_friday_2;A fun toy!;;;;;;;;;;;;;x
+EVTOPTB_black_friday_2;A useful gadget.;;;;;;;;;;;;;x
+EVTOPTC_black_friday_2;A fashionable attire.;;;;;;;;;;;;;x
+EVTDESC_black_friday_3;I head towards the toy aisles on the other end of the store, browsing their collection of playthings while other parents do the same. What sort of toy should I get my children this Black Friday?;;;;;;;;;;;;;x
+EVTOPTA_black_friday_3;Any old toy will do.;;;;;;;;;;;;;x
+EVTOPTB_black_friday_3;I want to get them a decent toy.;;;;;;;;;;;;;x
+EVTOPTC_black_friday_3;An expensive toy worthy for my children!;;;;;;;;;;;;;x
+EVTOPTD_black_friday_3;The rarest and most valuable toy in the store!;;;;;;;;;;;;;x
+EVTDESC_black_friday_4;Gadgets are where I head to, scanning the various doohickies and Old World antiques on the shelves. Most of them either don't work anymore or are cheap replacements, but owning one anyway wouldn't hurt.;;;;;;;;;;;;;x
+EVTOPTA_black_friday_4;A basic gadget will be fine.;;;;;;;;;;;;;x
+EVTOPTB_black_friday_4;I want a more sophisticated device.;;;;;;;;;;;;;x
+EVTOPTC_black_friday_4;I seek a truly expensive relic of creation.;;;;;;;;;;;;;x
+EVTOPTD_black_friday_4;A fully functioning or truly invaluable gadget, of the highest quality!;;;;;;;;;;;;;x
+EVTDESC_black_friday_5;I make my way towards the Clothing section, seeking attire that I can show off or at least comfortably wear. New apparel is the most common and obvious method for a Consumerist to express their Shopping expertise, and now I should decide what sort of clothes I want.;;;;;;;;;;;;;x
+EVTOPTA_black_friday_5;Basic robes are fine for me.;;;;;;;;;;;;;x
+EVTOPTB_black_friday_5;Those suits over there look rather nice.;;;;;;;;;;;;;x
+EVTOPTC_black_friday_5;I want something truly elegant.;;;;;;;;;;;;;x
+EVTOPTD_black_friday_5;I shall buy only the most unique attire, fit for my station!;;;;;;;;;;;;;x
+EVTDESC_black_friday_6;Black Friday has come to an end as Consumerist mobs shuffle their way out of the store, carts of items as far as the eye can see. I load my purchases up in a wagon, and make my way back home.;;;;;;;;;;;;;x
+EVTOPTA_black_friday_6;A successful Shopping day!;;;;;;;;;;;;;x
+TXT_black_friday_end;Black Friday comes to an end.;;;;;;;;;;;;;x
+black_friday_timer;Black Friday Timer;;;;;;;;;;;;;x
+shopped_black_friday;Recently Celebrated Black Friday;;;;;;;;;;;;;x
+
+TXT_stock_market_decision;You head down to make your stock market investment...;;;;;;;;;;;;;x
+EVTTITLE_stock_market_1;The Stock Market;;;;;;;;;;;;;x
+EVTDESC_stock_market_1;Investments and trading stocks make the Corporate world go round, and I intend to play my hand by investing into businesses or corporations. It is my choice on if I want to play it safe or be risky with my investment.;;;;;;;;;;;;;x
+EVTOPTA_stock_market_1;Invest in Low-Risk;;;;;;;;;;;;;x
+EVTOPTB_stock_market_1;Invest in Medium-Risk;;;;;;;;;;;;;x
+EVTOPTC_stock_market_1;Invest in High Risk;;;;;;;;;;;;;x
+EVTDESC_stock_market_2;Your low risk investment has bore fruit, and you have made money back.;;;;;;;;;;;;;x
+EVTOPTA_stock_market_2;Excellent.;;;;;;;;;;;;;x
+EVTDESC_stock_market_3;Your low risk investment unfortunately backfired, and you have lost the money that you invested.;;;;;;;;;;;;;x
+EVTOPTA_stock_market_3;Curses!;;;;;;;;;;;;;x
+EVTDESC_stock_market_4;Your medium risk investment has bore fruit, and you have made money back.;;;;;;;;;;;;;x
+EVTOPTA_stock_market_4;Excellent.;;;;;;;;;;;;;x
+EVTDESC_stock_market_5;Your medium risk investment unfortunately backfired, and you have lost the money that you invested.;;;;;;;;;;;;;x
+EVTOPTA_stock_market_5;Curses!;;;;;;;;;;;;;x
+EVTDESC_stock_market_6;Your high risk investment has bore fruit, and you have made a great deal of money back!;;;;;;;;;;;;;x
+EVTOPTA_stock_market_6;Dow Jones has blessed me!;;;;;;;;;;;;;x
+EVTDESC_stock_market_7;Your high risk investment unfortunately backfired, and you have lost the money that you invested!;;;;;;;;;;;;;x
+EVTOPTA_stock_market_7;This is the work of the Bear!;;;;;;;;;;;;;
+stock_market_timer;Stock Market Timer;;;;;;;;;;;;;x
+recently_traded_stock;Recently Traded Stock;;;;;;;;;;;;;x
+
+TXT_casino_decision;You make your way to the casino.;;;;;;;;;;;;;x
+EVTTITLE_casino_1;Casino Night;;;;;;;;;;;;;
+EVTDESC_casino_1;You pass by the flickering lanterns as dusk turns to night, entering the casino with an intent to win big tonight. Tables are filled with guests having their shot at games of chance and skill, hoping to also be blessed by Lady Luck. You sit down at such a game, deciding how much you will bet as the dealer begins shuffling cards.;;;;;;;;;;;;;
+EVTOPTA_casino_1;I will play it safe.;;;;;;;;;;;;;
+EVTOPTB_casino_1;We can raise the stakes here.;;;;;;;;;;;;;
+EVTOPTC_casino_1;Go big or go home!;;;;;;;;;;;;;
+EVTDESC_casino_2;Hands are played around the table, a grin across your face as you reveal your own winning hand and rake in the money.;;;;;;;;;;;;;
+EVTOPTA_casino_2;Not too bad at all!;;;;;;;;;;;;;
+EVTDESC_casino_3;While initially confident in the hand you play, your smile is wiped off your face as one of your opponents reveals a royal flush, winning the match at your expense.;;;;;;;;;;;;;
+EVTOPTA_casino_3;At least I played it safe...;;;;;;;;;;;;;
+EVTDESC_casino_4;Hands are played around the table, a grin across your face as you reveal your own winning hand and rake in the money.;;;;;;;;;;;;;
+EVTOPTA_casino_4;Thank you, Lady Luck!;;;;;;;;;;;;;
+EVTDESC_casino_5;While initially confident in the hand you play, your smile is wiped off your face as one of your opponents reveals a royal flush, winning the match at your expense.;;;;;;;;;;;;;
+EVTOPTA_casino_5;A damn shame...;;;;;;;;;;;;;
+EVTDESC_casino_6;Hands are played around the table, a grin across your face as you reveal your own winning hand and rake in the money.;;;;;;;;;;;;;
+EVTOPTA_casino_6;Read 'em and weep!;;;;;;;;;;;;;
+EVTDESC_casino_7;While initially confident in the hand you play, your smile is wiped off your face as one of your opponents reveals a royal flush, winning the match at your expense.;;;;;;;;;;;;;
+EVTOPTA_casino_7;How did this happen?!;;;;;;;;;;;;;
+casino_timer;Casino Timer;;;;;;;;;;;;;
+recently_gambled;Recently Gambled;;;;;;;;;;;;;
+
+found_s_mart_first_coast;Found S-Mart in First Coast;;;;;;;;;;;;;
+found_s_mart_chicago;Found S-Mart in Chicago;;;;;;;;;;;;;
+found_s_mart_seattle;Found S-Mart in Seattle;;;;;;;;;;;;;
+found_s_mart_alameda;Found S-Mart in Alameda;;;;;;;;;;;;;
+found_s_mart_merrimack;Found S-Mart in Merrimack;;;;;;;;;;;;;
+
+TXT_shore_leave_decision;You decide to take shore leave.;;;;;;;;;;;;;
+EVTDESC_shore_leave_1;The dock can be seen from your ship, and as you finally sail into port with your crew, you step onto dry land with a feeling of relief. You intend to make the most of your Shore Leave, and party like only a pirate can!;;;;;;;;;;;;;
+EVTOPTA_shore_leave_1;Let's get to it!;;;;;;;;;;;;;
+EVTDESC_shore_leave_2;You spend time at the markets and taverns over the next few days, even taking the chance to see performers and fools parade down the streets.;;;;;;;;;;;;;
+EVTOPTA_shore_leave_2;A grand time, this is!;;;;;;;;;;;;;
+EVTDESC_shore_leave_3;The final night of Shore Leave is often the one filled with the most debauchery and insanity, as many pirates bar-hop across local taverns.;;;;;;;;;;;;;
+EVTOPTA_shore_leave_3;A night on the town wouldn't do us any harm!;;;;;;;;;;;;;
+EVTOPTB_shore_leave_3;I'll sit this one out.;;;;;;;;;;;;;
+EVTDESC_shore_leave_4;You wake up the next morning with a nasty hangover and laying down next to the pigpen. This night of drinking was not kind to you.;;;;;;;;;;;;;
+EVTOPTA_shore_leave_4;I look like a damn fool.;;;;;;;;;;;;;
+EVTOPTB_shore_leave_4;I've had worse.;;;;;;;;;;;;;
+EVTDESC_shore_leave_5;Heavy drinking can whittle down short fuses, and all it took was some insults and scuffling for a barfight to break out. You wake up in the aftermath of said fight, worse for wear.;;;;;;;;;;;;;
+EVTOPTA_shore_leave_5;They got what was coming to them.;;;;;;;;;;;;;
+EVTDESC_shore_leave_6;You wake up the next morning surrounded by strangers, remembering that you had been the life of the party the night before. Stories were exchanged, songs were sung, and you made some new buddies thanks to the charismatic properties of alcohol.;;;;;;;;;;;;;
+EVTOPTA_shore_leave_6;A fantastic night!;;;;;;;;;;;;;
+EVTDESC_shore_leave_7;You wake up in an unfamiliar bed, in an unfamiliar room... next to an unfamiliar person. As you struggle to remember what you did last night, you hear a crude-sounding, alcohol-scented voice from the other side of the bed. "Morning there, [Root.GetLadLass]. You wanna go again? I haven't had a tumble that good in ages, and that's really saying something.";;;;;;;;;;;;;x
+EVTOPTA_shore_leave_7;A wonderful idea.;;;;;;;;;;;;;
+TXT_shore_leave_drunk;You drink and party into the night...;;;;;;;;;;;;;
+TXT_shore_leave_end;You eventually return to your ship.;;;;;;;;;;;;;
+shore_leave_timer;Embarked on Shore Leave;;;;;;;;;;;;;
+
+EVTDESC_pirate_raid_1;Your ship sails across the waters as it seeks a vessel to hunt, and you are left to decide what sort of ship that will be. Post-Event ships don't have cannons anymore, but larger crews can put up fiercer fights.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_1;Schooner;;;;;;;;;;;;;
+EVTOPTB_pirate_raid_1;Brig;;;;;;;;;;;;;
+EVTOPTC_pirate_raid_1;Galleon;;;;;;;;;;;;;
+EVTOPTD_pirate_raid_1;Man-O-War;;;;;;;;;;;;;
+EVTDESC_pirate_raid_2;The crow's nest eventually catches a glimpse of a passing schooner, and you immediately steer your ship in its direction. The black flag is raised and you approach within earshot of the schooner's crew, drawing your weapon.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_2;Surrender or die, the choice is yours.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_3;The crow's nest eventually catches a glimpse of a passing brig, and you immediately steer your ship in its direction. The black flag is raised and you approach within earshot of the brig's crew, drawing your weapon.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_3;Surrender or die, the choice is yours.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_4;The crow's nest eventually catches a glimpse of a passing galleon, and you immediately steer your ship in its direction. The black flag is raised and you approach within earshot of the galleon's crew, drawing your weapon.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_4;Surrender or die, the choice is yours.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_5;The crow's nest eventually catches a glimpse of a passing man-o-war, and you immediately steer your ship in its direction. The black flag is raised and you approach within earshot of the man-o-war's crew, drawing your weapon.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_5;Surrender or die, the choice is yours.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_6;The schooner's crew make the wise choice of surrendering immediately, guaranteeing their safety under the Code. They hand you whatever valuables they have on board, and your crew eventually sails away with treasure.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_6;A successful raid, this was!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_7;The schooner's crew make the foolish decision to resist, drawing their own weapons to confront your crew. They will not surrender their valuables without a fight.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_7;Crewmen, strike them down!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_8;The brig's crew make the wise choice of surrendering immediately, guaranteeing their safety under the Code. They hand you whatever valuables they have on board, and your crew eventually sails away with treasure.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_8;A successful raid, this was!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_9;The brig's crew make the foolish decision to resist, drawing their own weapons to confront your crew. They will not surrender their valuables without a fight.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_9;Crewmen, strike them down!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_10;The galleon's crew make the wise choice of surrendering immediately, guaranteeing their safety under the Code. They hand you whatever valuables they have on board, and your crew eventually sails away with treasure.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_10;A successful raid, this was!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_11;The galleon's crew make the foolish decision to resist, drawing their own weapons to confront your crew. They will not surrender their valuables without a fight.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_11;Crewmen, strike them down!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_12;The man-o-war's crew make the wise choice of surrendering immediately, guaranteeing their safety under the Code. They hand you whatever valuables they have on board, and your crew eventually sails away with treasure.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_12;A successful raid, this was!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_13;The man-o-war's crew make the foolish decision to resist, drawing their own weapons to confront your crew. They will not surrender their valuables without a fight.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_13;Crewmen, strike them down!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_14;After a brief struggle, you cut down the remnants of the schooner's foolhardy crew, taking their valuables before sinking their ship with torches.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_14;The sea shall be their grave.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_15;The schooner's crew put up too fierce of a resistance, driving your men back and forcing you to cut your losses by retreating.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_15;An accursed day, this is!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_16;After a prolonged struggle, you cut down the remnants of the brig's foolhardy crew, taking their valuables before sinking their ship with torches.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_16;The sea shall be their grave.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_17;The brig's crew put up too fierce of a resistance, driving your men back and forcing you to cut your losses by retreating.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_17;An accursed day, this is!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_18;After a prolonged struggle, you cut down the remnants of the galleon's foolhardy crew, taking their valuables before sinking their ship with torches.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_18;The sea shall be their grave.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_19;The galleon's crew put up too fierce of a resistance, driving your men back and forcing you to cut your losses by retreating.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_19;An accursed day, this is!;;;;;;;;;;;;;
+EVTDESC_pirate_raid_20;After an epic struggle, you cut down the remnants of the man-o-war's foolhardy crew, taking their valuables before sinking their ship with torches.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_20;The sea shall be their grave.;;;;;;;;;;;;;
+EVTDESC_pirate_raid_21;The man-o-war's crew put up too fierce of a resistance, driving your men back and forcing you to cut your losses by retreating.;;;;;;;;;;;;;
+EVTOPTA_pirate_raid_21;An accursed day, this is!;;;;;;;;;;;;;
+recent_pirate_raid;Recent Pirate Raid;;;;;;;;;;;;;
+
+EVTTITLE_seven_seas;Lord of the Seven Seas;;;;;;;;;;;;;
+EVTDESC_seven_seas;While merchants and other sailors have traveled great distances on their voyages, you have made history by being the first to circumnavigate the Americas via conquest. You have earned your place as among the greatest sailors since the Event, having your reach from Bermuda in the East to the Equinox Isles in the West. The Seven Seas are at your command, and poets will sing of your travels in taverns and aboard ships for generations to come.;;;;;;;;;;;;;
+EVTOPTA_seven_seas;The ocean is my domain.;;;;;;;;;;;;;
+seven_seas_male;Sailor's Blood of the Seven Seas;;;;;;;;;;;;;
+seven_seas_female;Sailor's Blood of the Seven Seas;;;;;;;;;;;;;
+bloodline_desc_seven_seas;This ruler did the impossible and mastered the Seven Seas, becoming the greatest navigator in the Americas!;;;;;;;;;;;;;

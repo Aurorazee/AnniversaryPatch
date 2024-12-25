@@ -2947,6 +2947,8 @@ on_new_holder = {
 		
 		ORFmaint.5 #Removes ORF_reject for equal or lower non-primary titles
 		ORFmaint.8 #Removes ORF_embrace for equal or lower non-primary titles
+
+		swashbuckling.31 #Grants the bloodline for creating Seven Seas
 	}
 	random_events = {
 		delayed_hagia_sophia_conversion = {

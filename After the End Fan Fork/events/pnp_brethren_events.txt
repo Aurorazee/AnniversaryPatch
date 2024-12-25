@@ -997,4 +997,57 @@ character_event = {
 		clr_character_flag = recent_minor_decision
 	}
 }
+
+
+##Seven Seas Bloodline Event##
+
+narrative_event = {
+	id = swashbuckling.31
+	title = EVTTITLE_seven_seas
+	desc = EVTDESC_seven_seas
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	border = GFX_event_narrative_frame_diplomacy
 	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_landed_title = e_seven_seas
+		NOT = { has_global_flag = seven_seas_navigated }
+	}
+	
+	immediate = {
+		set_global_flag = seven_seas_navigated
+	}
+	
+	option = {
+		name = EVTOPTA_seven_seas
+		prestige = 3000
+		give_nickname = nick_the_navigator
+		if = {
+			limit = { 
+				has_dlc = "Holy Fury" 
+				is_female = no
+			}
+			create_bloodline = {
+				type = seven_seas_male
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_seven_seas"
+			}	
+			sound_effect = bloodline_added
+		}
+		else_if = {
+			limit = { 
+				has_dlc = "Holy Fury" 
+				is_female = yes
+			}
+			create_bloodline = {
+				type = seven_seas_female
+			}
+			new_bloodline = {
+				set_description = "bloodline_desc_seven_seas"
+			}	
+			sound_effect = bloodline_added
+		}
+	}
+}
