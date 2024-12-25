@@ -61,7 +61,7 @@ narrative_event = {
 						same_realm = ROOT
 					}
 				}
-				c_minneapolis = {
+				c_twin_cities = {
 					holder_scope = {
 						same_realm = ROOT
 					}
@@ -95,7 +95,7 @@ narrative_event = {
 	immediate = {
 		set_character_flag = consumerist_revolt
 		set_global_flag = consumerist_revolt_ongoing
-		clear_global_event_target = consumerist_prophet
+		clr_global_event_target = consumerist_prophet
 		
 		activate_title = { title = d_consumerist status = yes }
 		
@@ -1334,5 +1334,52 @@ narrative_event = {
 			religion = ROOT
 		}
 		set_global_flag = consumerist_revolt_successful
+	}
+}
+
+narrative_event = {
+	id = consumer.21
+	title = EVTNAMECONSUMER21
+	desc = EVTDESCCONSUMER21
+	picture = GFX_evt_consumerist_uprising
+	border = GFX_event_narrative_frame_religion
+
+	is_triggered_only = yes
+	major = yes
+
+	only_independent = yes
+	only_playable = yes
+
+	immediate = {
+		set_global_flag = consumerist_revolt_successful
+		character_event = { id = disneyconsumer.1 days = 30 }
+	}
+
+	option = {
+		name = "EVTOPTACONSUMER21"
+		trigger = {
+			religion = consumerist 
+		}
+	}
+	
+	option = {
+		name = "EVTOPTBCONSUMER21"
+		trigger = {
+			NOT = { religion = consumerist } 
+		}
+	}
+
+	option = {
+		name = "EVTOPTCCONSUMER21"
+		trigger = {
+			NOT = { religion = consumerist } 
+		}
+		custom_tooltip = {
+			text = player_character_consumerprophet_TT
+			set_player_character = ROOT
+		}
+		after = {
+			clr_character_flag = consumerist_prophet_potential_player_character
+		}
 	}
 }

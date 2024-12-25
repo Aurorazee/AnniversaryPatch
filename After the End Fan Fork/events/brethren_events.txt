@@ -1,34 +1,207 @@
 namespace = pirate
 
+#Pirate Raider Trait Gained
 character_event = {
-	id = pirate.1
-	desc = EVTDESC_pirate_unrest
-	picture = GFX_evt_peasants
+	id = pirate.3
+	desc = EVTDESC_pirate_3
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+
+	has_dlc = "The Old Gods"
+	min_age = 16
+	capable_only = yes
+	prisoner = no
 	
 	trigger = {
-		any_demesne_province = {
-								port = no
-							   }
-		religion = brethren
-		NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-	}
-	
-	mean_time_to_happen = {
-		years = 10
-	}
-
-	option = {
-		name = EVTOPT_pirate_unrest_diplo
-		trigger = { owner = { diplomacy = 12 } }
-		tooltip_info = diplomacy
-	}
-	
-	option = {
-		name = EVTOPT_pirate_unrest_ok
-		any_demesne_province = {
-				limit = {port = no}
-			add_province_modifier = { name = religious_unrest duration = 2000 }
+		OR = {
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
 		}
+		NOR = { 
+			trait = viking
+			trait = pirate
+			trait = ravager
+			trait = seaking
+			trait = sea_queen
+			trait = freebooter
+			trait = buccaneer
+			trait = corsair
+		}
+		OR = {
+			religion = brethren
+			religion = pelagic
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+		}
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = EVTOPTA_pirate_3
+		if = {
+			limit = { 
+				OR = { 
+					religion = brethren
+					religion = pelagic
+				} 
+			}
+			add_trait = freebooter
+		}
+		hidden_tooltip = {
+			set_variable = { which = viking_raids value = 0 }
+		}
+	}
+}
+
+#Ravager 
+character_event = {
+	id = pirate.4
+	desc = EVTDESC_pirate_4
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	has_dlc = "The Old Gods"
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			trait = freebooter
+			trait = pirate
+		}
+		NOR = { 
+			trait = ravager
+			trait = seaking
+			trait = sea_queen
+			trait = buccaneer
+			trait = corsair
+		}
+		check_variable = { which = viking_raids value = 50 }
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = EVTOPTA_pirate_4
+		if = {
+			limit = { 
+				trait = freebooter
+			}
+			remove_trait = freebooter
+		}
+		if = {
+			limit = { 
+				trait = pirate
+			}
+			remove_trait = pirate
+		}
+		add_trait = buccaneer
+	}
+}
+
+#Sea King
+character_event = {
+	id = pirate.5
+	desc = EVTDESC_pirate_5
+	picture = { 
+		trigger = { is_female = no } 
+		picture = GFX_evt_vikings_arriving_oldgods
+	}
+	picture = { 
+		trigger = { is_female = yes } 
+		picture = GFX_evt_norse_tempest
+	}
+	border = GFX_event_normal_frame_war
+	
+	hide_from = yes
+	
+	is_triggered_only = yes
+	
+	has_dlc = "The Old Gods"
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		trait = buccaneer
+		NOR = { 
+			trait = seaking
+			trait = sea_queen
+			trait = corsair
+		}
+		check_variable = { which = viking_raids value = 100 }
+		FROM = { always = yes }
+	}
+	
+	option = {
+		name = EVTOPTA_pirate_5
+		remove_trait = buccaneer
+		add_trait = corsair
+	}
+}
+
+character_event = {
+	id = TGF.3323
+	
+	hide_window = yes
+	
+	is_triggered_only = yes
+	
+	has_dlc = "The Old Gods"
+	min_age = 16
+	capable_only = yes
+	prisoner = no
+	
+	trigger = {
+		OR = {
+			any_owned_bloodline = {
+				has_bloodline_flag = bloodline_viking
+			}
+			AND = {
+				has_religion_feature = religion_adventuring
+				has_religion_feature = religion_seafaring
+			}
+			has_religion_feature = religion_feature_norse
+		}
+		OR = {
+			trait = pirate
+			trait = viking
+			trait = ravager
+			trait = seaking #Top trait, but there's still chance of gaining a Bloodline if variable goes high enough.
+			trait = sea_queen
+			trait = freebooter
+			trait = buccaneer
+			trait = corsair
+		}
+		FROM = { always = yes }
+	}
+	
+	immediate = {
+		change_variable = { which = viking_raids value = 1 }
 	}
 }
 
@@ -41,8 +214,7 @@ character_event = {
 	
 	trigger = {
 		NOT = { has_alternate_start_parameter = { key = religion_names value = random } }
-		NOT = { lifestyle_traits = 1 }
-		NOT = {has_character_flag = pirate_yarr}
+		NOT = { has_character_flag = pirate_yarr }
 	}
 	
 	mean_time_to_happen = {
@@ -55,28 +227,43 @@ character_event = {
 	}
 	
 	option = {
-		name = EVTOPT_pirate_yarr_kill
-		add_trait = impaler
-		add_trait = cruel
-		add_trait = arbitrary
-	}
-	
-	option = {
-		name = EVTOPT_pirate_yarr_swash
-		add_trait = duelist
-		add_trait = wroth
-		add_trait = greedy
-	}
-	
-	option = {
-		name = EVTOPT_pirate_yarr_drink
+		name = EVTOPT_pirate_treasure_prosperity
 		trigger = {
 			NOT = { lifestyle_traits = 1 }
 		}
-		add_trait = hedonist
-		add_trait = drunkard
-		add_trait = lustful
+		add_trait = administrator
+		random = { chance = 50 add_trait = greedy }
+		random = { chance = 50 add_trait = ambitious }
+	}
+	
+	option = {
+		name = EVTOPT_pirate_fearsome
+		trigger = {
+			NOT = { lifestyle_traits = 1 }
+		}
+		add_trait = duelist
+		random = { chance = 50 add_trait = brave }
+		random = { chance = 50 add_trait = cruel }
+	}
+	
+	option = {
+		name = EVTOPT_pirate_socialization
+		trigger = {
+			NOT = { lifestyle_traits = 1 }
+		}
+		add_trait = socializer
+		random = { chance = 50 add_trait = gregarious }
+		random = { chance = 50 add_trait = lustful }
+	}
+	
+	option = {
+		name = EVTOPT_pirate_everything
+		random = { chance = 50 add_trait = greedy }
+		random = { chance = 50 add_trait = ambitious }
+		random = { chance = 50 add_trait = brave }
+		random = { chance = 50 add_trait = cruel }
+		random = { chance = 50 add_trait = gregarious }
+		random = { chance = 50 add_trait = lustful }
 	}
 }
-
 #Removed these events - conflict with HF pirate trait

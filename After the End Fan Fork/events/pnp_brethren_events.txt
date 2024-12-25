@@ -1,0 +1,1000 @@
+namespace = swashbuckling
+
+character_event = {
+	id = swashbuckling.1
+	desc = EVTDESC_shore_leave_1
+	picture = GFX_evt_feast
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		character_event = { id = swashbuckling.2 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_1
+		piety = 30
+	}
+}
+
+character_event = {
+	id = swashbuckling.2
+	desc = EVTDESC_shore_leave_2
+	picture = GFX_evt_jugglers
+	border = GFX_event_normal_frame_religion
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		character_event = { id = swashbuckling.3 days = 1 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_2
+		prestige = 50
+	}
+}
+
+character_event = {
+	id = swashbuckling.3
+	desc = EVTDESC_shore_leave_3
+	picture = GFX_evt_feast_hf
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_3
+		prestige = 30
+		custom_tooltip = { text = TXT_shore_leave_drunk }
+		hidden_tooltip = {
+			random_list = {
+				50 = { #wake up hungover with a random negative effect
+					character_event = { id = swashbuckling.4 days = 1 }
+				}
+				20 = { #wake up injured from a barfight
+					character_event = { id = swashbuckling.5 days = 1 }
+				}
+				20 = { #wake up remembering that you were the life of the party
+					character_event = { id = swashbuckling.6 days = 1 }
+				}
+				10 = { #wake up in bed next to someone else...
+					character_event = { id = swashbuckling.7 days = 1 }
+				}
+			}
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				trait = temperate
+				factor = 0
+			}
+		}
+	}
+
+	
+	option = {
+		name = EVTOPTB_shore_leave_3
+		trigger = { NOT = { trait = drunkard } }
+		prestige = -30
+		custom_tooltip = { text = TXT_shore_leave_end }
+		hidden_tooltip = { clr_character_flag = on_shore_leave }
+		hidden_tooltip = { clr_character_flag = recent_minor_decision }
+		hidden_tooltip = { clr_character_flag = do_not_disturb }
+		hidden_tooltip = { add_character_modifier = { name = shore_leave_timer years = 3 } }
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+character_event = {
+	id = swashbuckling.4
+	desc = EVTDESC_shore_leave_4
+	picture = GFX_evt_outside_tavern_hf
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		clr_character_flag = on_shore_leave
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = shore_leave_timer years = 3 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_4
+		trigger = { NOT = { trait = drunkard } }
+		prestige = -15
+		custom_tooltip = { text = TXT_shore_leave_end }
+		hidden_tooltip = {
+			random_list = {
+				10 = {
+					add_trait = drunkard
+					gain_weight_small_effect = yes
+				}
+				30 = {
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Reapers"
+							}
+						}
+						add_trait = ill
+					}
+					if = {
+						limit = {
+							has_dlc = "Reapers"
+						}
+						add_symptom_effect = yes
+					}
+				}
+				10 = {
+					add_trait = gluttonous
+					gain_weight_small_effect = yes
+				}
+				20 = {
+					wealth = -20
+				}
+				30 = { }
+			}
+		}	
+	}
+	
+	option = {
+		name = EVTOPTB_shore_leave_4
+		trigger = { trait = drunkard }
+		prestige = 10
+	}
+}
+
+character_event = {
+	id = swashbuckling.5
+	desc = EVTDESC_shore_leave_5
+	picture = GFX_evt_bad_news
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		clr_character_flag = on_shore_leave
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = shore_leave_timer years = 3 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_5
+		if = {
+			limit = {
+				trait = patient
+			}
+			remove_trait = patient
+			prestige = -10
+		}
+		else_if = {
+			limit = {
+				NOT = { trait = patient }
+				NOT = { trait = wroth }
+			}
+			add_trait = wroth
+			prestige = -10
+		}
+		else_if = {
+			limit = {
+				trait = wroth
+			}
+			prestige = 5
+		}
+		random_list = {
+			30 = { }
+			60 = { add_trait = wounded }
+			10 = { add_severely_injured_effect = yes }
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+}
+
+character_event = {
+	id = swashbuckling.6
+	desc = EVTDESC_shore_leave_6
+	picture = GFX_evt_feast_hf
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		clr_character_flag = on_shore_leave
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = shore_leave_timer years = 3 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_6
+		prestige = 30
+		if = {
+			limit = {
+				trait = shy
+			}
+			remove_trait = shy
+		}
+		else_if = {
+			limit = {
+				NOT = { trait = gregarious }
+			}
+			add_trait = gregarious
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+}
+
+character_event = {
+	id = swashbuckling.7
+	desc = EVTDESC_shore_leave_7
+	picture = GFX_evt_lovers
+	border = GFX_event_normal_frame_diplomacy
+	is_triggered_only = yes
+	
+	trigger = {
+		has_character_flag = on_shore_leave
+	}
+	
+	immediate = {
+		clr_character_flag = on_shore_leave
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = shore_leave_timer years = 3 }
+	}
+	
+	option = {
+		name = EVTOPTA_shore_leave_7
+		trigger = {
+			is_female = no
+			NOT = { trait = homosexual }
+		}
+		piety = -10
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = proud
+			trait = gluttonous
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = distractible
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+	
+	option = {
+		name = EVTOPTB_shore_leave_7
+		trigger = {
+			is_female = yes
+			NOT = { trait = homosexual }
+		}
+		piety = -10
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = no
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = proud
+			trait = drunkard
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+	
+	option = {
+		name = EVTOPTC_shore_leave_7
+		trigger = {
+			is_female = no
+			trait = homosexual
+		}
+		piety = -15
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = no
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = drunkard
+			trait = proud
+			trait = homosexual
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+	
+	option = {
+		name = EVTOPTD_shore_leave_7
+		trigger = {
+			is_female = yes
+			trait = homosexual
+		}
+		piety = -15
+		prestige = 10
+		if = {
+			limit = {
+				trait = chaste
+			}
+			remove_trait = chaste
+		}
+		create_character = {
+			random_traits = no
+			dynasty = NONE
+			religion = ROOT
+			culture = ROOT
+			female = yes
+			age = 17
+			trait = intricate_webweaver
+			trait = fair
+			trait = uncouth
+			trait = quick
+			trait = lustful
+			trait = gluttonous
+			trait = proud
+			trait = homosexual
+			attributes = {
+				diplomacy = 3
+				intrigue = 10
+			}
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			gain_weight_medium_effect = yes
+			add_lover = ROOT
+			remove_trait = genius
+			remove_trait = imbecile
+			remove_trait = ugly
+			remove_trait = slow
+			remove_trait = chaste
+		}
+		custom_tooltip = { text = TXT_shore_leave_end }
+	}
+}
+
+character_event = {
+	id = swashbuckling.8
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = on_shore_leave
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+
+character_event = {
+	id = swashbuckling.9
+	desc = EVTDESC_pirate_raid_1
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = { #Schooner
+		name = EVTOPTA_pirate_raid_1
+		hidden_tooltip = {
+			character_event = { id = swashbuckling.10 days = 1 }
+		}
+	}
+
+	option = { #Brig
+		name = EVTOPTB_pirate_raid_1
+		hidden_tooltip = {
+			character_event = { id = swashbuckling.11 days = 1 }
+		}
+	}
+
+	option = { #Galleon
+		name = EVTOPTC_pirate_raid_1
+		hidden_tooltip = {
+			character_event = { id = swashbuckling.12 days = 1 }
+		}
+	}
+
+	option = { #Man-O-War
+		name = EVTOPTD_pirate_raid_1
+		hidden_tooltip = {
+			character_event = { id = swashbuckling.13 days = 1 }
+		}
+	}
+}
+
+###Approaching the Ship###
+
+character_event = { #Schooner Raid
+	id = swashbuckling.10
+	desc = EVTDESC_pirate_raid_2
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_2
+		hidden_tooltip = {
+			random_list = {
+				80 = {
+					character_event = { id = swashbuckling.14 days = 1 }
+				}
+				20 = {
+					character_event = { id = swashbuckling.15 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Brig Raid
+	id = swashbuckling.11
+	desc = EVTDESC_pirate_raid_3
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_3
+		hidden_tooltip = {
+			random_list = {
+				65 = {
+					character_event = { id = swashbuckling.16 days = 1 }
+				}
+				35 = {
+					character_event = { id = swashbuckling.17 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Galleon Raid
+	id = swashbuckling.12
+	desc = EVTDESC_pirate_raid_4
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_4
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					character_event = { id = swashbuckling.18 days = 1 }
+				}
+				50 = {
+					character_event = { id = swashbuckling.19 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Man-O-War Raid
+	id = swashbuckling.13
+	desc = EVTDESC_pirate_raid_5
+	picture = GFX_evt_merchant_ship_at_sea_republic
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_5
+		hidden_tooltip = {
+			random_list = {
+				35 = {
+					character_event = { id = swashbuckling.20 days = 1 }
+				}
+				65 = {
+					character_event = { id = swashbuckling.21 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+###Raided Ship Response###
+
+character_event = { #Schooner surrendered without fight
+	id = swashbuckling.14
+	desc = EVTDESC_pirate_raid_6
+	picture = GFX_evt_feast
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_6
+		wealth = 50
+	}
+}
+
+character_event = { #Schooner chose violence
+	id = swashbuckling.15
+	desc = EVTDESC_pirate_raid_7
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_7
+		hidden_tooltip = {
+			random_list = {
+				75 = {
+					character_event = { id = swashbuckling.22 days = 1 }
+				}
+				25 = {
+					character_event = { id = swashbuckling.23 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Brig surrendered without fight
+	id = swashbuckling.16
+	desc = EVTDESC_pirate_raid_8
+	picture = GFX_evt_feast
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_8
+		wealth = 100
+	}
+}
+
+character_event = { #Brig chose violence
+	id = swashbuckling.17
+	desc = EVTDESC_pirate_raid_9
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_9
+		hidden_tooltip = {
+			random_list = {
+				65 = {
+					character_event = { id = swashbuckling.24 days = 1 }
+				}
+				35 = {
+					character_event = { id = swashbuckling.25 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Galleon surrendered without fight
+	id = swashbuckling.18
+	desc = EVTDESC_pirate_raid_10
+	picture = GFX_evt_feast
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_10
+		wealth = 250
+	}
+}
+
+character_event = { #Galleon chose violence
+	id = swashbuckling.19
+	desc = EVTDESC_pirate_raid_11
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_11
+		hidden_tooltip = {
+			random_list = {
+				50 = {
+					character_event = { id = swashbuckling.26 days = 1 }
+				}
+				50 = {
+					character_event = { id = swashbuckling.27 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+character_event = { #Man-O-War surrendered without fight
+	id = swashbuckling.20
+	desc = EVTDESC_pirate_raid_12
+	picture = GFX_evt_feast
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_12
+		wealth = 500
+	}
+}
+
+character_event = { #Man-O-War chose violence
+	id = swashbuckling.21
+	desc = EVTDESC_pirate_raid_13
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_13
+		hidden_tooltip = {
+			random_list = {
+				40 = {
+					character_event = { id = swashbuckling.28 days = 1 }
+				}
+				60 = {
+					character_event = { id = swashbuckling.29 days = 1 }
+				}
+			}
+		}
+	}
+}
+
+###Ship Battle Results###
+
+character_event = { #Schooner Battle Victory
+	id = swashbuckling.22
+	desc = EVTDESC_pirate_raid_14
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_14
+		wealth = 50
+	}
+}
+
+character_event = { #Schooner Battle Defeat
+	id = swashbuckling.23
+	desc = EVTDESC_pirate_raid_15
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_15	
+	}
+}
+
+character_event = { #Brig Battle Victory
+	id = swashbuckling.24
+	desc = EVTDESC_pirate_raid_16
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_16
+		wealth = 100
+	}
+}
+
+character_event = { #Brig Battle Defeat
+	id = swashbuckling.25
+	desc = EVTDESC_pirate_raid_17
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_17	
+	}
+}
+
+character_event = { #Galleon Battle Victory
+	id = swashbuckling.26
+	desc = EVTDESC_pirate_raid_18
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_18
+		wealth = 200
+	}
+}
+
+character_event = { #Galleon Battle Defeat
+	id = swashbuckling.27
+	desc = EVTDESC_pirate_raid_19
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_19	
+	}
+}
+
+character_event = { #Man-O-War Battle Victory
+	id = swashbuckling.28
+	desc = EVTDESC_pirate_raid_20
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_20
+		wealth = 500
+	}
+}
+
+character_event = { #Man-O-War Battle Defeat
+	id = swashbuckling.29
+	desc = EVTDESC_pirate_raid_21
+	picture = GFX_evt_battle
+	is_triggered_only = yes
+
+	trigger = {
+		has_character_flag = on_pirate_raid
+	}
+
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+		add_character_modifier = { name = recent_pirate_raid years = 3 }
+	}
+
+	option = {
+		name = EVTOPTA_pirate_raid_21
+	}
+}
+
+###Flag and Cache Clearing###
+
+character_event = {
+	id = swashbuckling.30
+	hide_window = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		clr_character_flag = on_pirate_raid
+		clr_character_flag = do_not_disturb
+		clr_character_flag = recent_minor_decision
+	}
+}
+	
