@@ -25,15 +25,3 @@ shopped_black_friday = {
 	icon = 6
 	consumerist_opinion = 5
 }
-recent_prosperist_sermon = {
-	icon = 17
-}
-prosperist_revival = {
-	icon = 26
-}
-secret_prosperist_community = {
-	icon = 18
-	is_visible = {
-		society_member_of = secret_religious_society_prosperist
-	}
-}
