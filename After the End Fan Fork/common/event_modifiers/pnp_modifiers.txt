@@ -1,0 +1,39 @@
+recent_pirate_raid = {
+	icon = 61
+	nautical_opinion = 5
+}
+shore_leave_timer = {
+	icon = 61
+}
+casino_timer = {
+	icon = 6
+}
+recently_gambled = {
+	icon = 6
+}
+stock_market_timer = {
+	icon = 6
+}
+recently_traded_stock = {
+	icon = 6
+	monetarist_opinion = 5
+}
+black_friday_timer = {
+	icon = 6
+}
+shopped_black_friday = {
+	icon = 6
+	consumerist_opinion = 5
+}
+recent_prosperist_sermon = {
+	icon = 17
+}
+prosperist_revival = {
+	icon = 26
+}
+secret_prosperist_community = {
+	icon = 18
+	is_visible = {
+		society_member_of = secret_religious_society_prosperist
+	}
+}
