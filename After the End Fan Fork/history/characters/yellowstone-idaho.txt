@@ -510,7 +510,7 @@
 	dna=dfaieuiegbq
 	culture=snakelander
 	religion=gaian
-	secret_religion=nazarene
+	secret_religion=edenite
 	diplomacy=5
 	martial=5
 	stewardship=4
