@@ -9,7 +9,7 @@ cheated_expelled_TT;Was expelled for cheating;;;;;;;;;;;;;x
 has_eval_merit_TT;Has an available Evaluator of Merit or Guru;;;;;;;;;;;;;x
 
 failed_exam_abdicate;Abdicate as [Root.GetTitle] of [Root.PrimaryTitle.GetName];;;;;;;;;;;;;x
-failed_exam_abdicate_desc;Failing your Imperial Exam is a major blow to both your prestige and legitimacy as a [Root.Government.GetName] ruler. Although you are under no obligation to renounce your position, it may be what is best for the realm to do so.;;;;;;;;;;;;;x
+failed_exam_abdicate_desc;Failing your Imperial Exam is a major blow to both your prestige and legitimacy as a [Root.Government.GetName] ruler. Although you are under no obligation to renounce your position, it may be best for the realm to do so.;;;;;;;;;;;;;x
 
 reschedule_exam;Reschedule Imperial Exam;;;;;;;;;;;;;x
 reschedule_exam_desc;For one reason or another, the evaluators have yet to come back to you. At this point, it's easier to cut your losses and reschedule.;;;;;;;;;;;;;x
@@ -18,7 +18,7 @@ claim_realm_exam;Claim Liege Realm;;;;;;;;;;;;;x
 claim_realm_exam_desc;Your liege has done poorly on their Imperial Exam. As a ruler who has passed, you have a right to claim your lord's realm and replace them.;;;;;;;;;;;;;x
 
 appoint_governator;Appoint Governatus;;;;;;;;;;;;;x
-appoint_governator_desc;The Governatus of California is a very important and influential title within the Imperial Court of California and across the entire realm. The holder this office may be able to garner enough support to displace the [Root.GetCeticEmperorEmpress], so one must be careful of who they pick.;;;;;;;;;;;;;x
+appoint_governator_desc;The Governatus of California is a very important and influential title within the Imperial Court of California and across the entire realm. The holder of this office may be able to garner enough support to displace the [Root.GetCeticEmperorEmpress], so one must be careful of who they pick.;;;;;;;;;;;;;x
 
 sanction_governator;Sanction Anti-Governatus;;;;;;;;;;;;;x
 sanction_governator_desc;With the Governatus seizing more and more power for themselves, it is necessary to declare an "anti-Governatus" to combat this unjust power grab.;;;;;;;;;;;;;x
@@ -72,7 +72,7 @@ sell_positions_desc;As a Bureaucratic ruler, there are many positions within the
 has_not_sold_7ys_TT;Has not sold any positions for seven years.;;;;;;;;;;;;;x
 
 bureaucratic_building;Construct a Bureaucratic Structure;;;;;;;;;;;;;x
-bureaucratic_building_desc;A bureaucracy requires things such as local offices and a road system to function smoothly and effectively. Currently, our realm lacks both, and as a bureaucratic ruler, it is my responsibility to foster a well-running bureaucracy.;;;;;;;;;;;;;x
+bureaucratic_building_desc;A bureaucracy cannot be effective without swift communication and a developed hierarchy. Currently, our realm lacks both, and as a bureaucratic ruler it is my responsibility to foster this system.;;;;;;;;;;;;;x
 is_not_currently_building_TT;Is not currently building anything.;;;;;;;;;;;;;x
 
 #Events
