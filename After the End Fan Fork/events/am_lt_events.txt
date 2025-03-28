@@ -3,25 +3,6 @@ namespace = AMLT
 # Center of Islam conversion event
 
 character_event = {
-	id = AMLT.2
-	is_triggered_only = yes
-	hide_window = yes
-	
-	trigger = {
-		is_save_game = no
-	}
-	
-	immediate = {
-		any_wonder = {
-			if = {
-				limit = { has_wonder = wonder_mosque_center_islam }
-				set_wonder_flag = Center_rust_cult
-			}
-		}
-	}
-}
-
-character_event = {
 	id = AMLT.3
 	title = wonder_mosque_center_islam
 	picture = GFX_evt_jerusalem_captured_muslims
@@ -36,62 +17,59 @@ character_event = {
 		trigger = { NOT = { job_spiritual = { always = yes } } }
 	}
 
-	is_triggered_only = yes # on_new_holder(_inheritance/usurpation)
+	is_triggered_only = yes # on_new_holder(_inheritance/usurpation) and on_character_convert_religion
 
 	only_independent = yes
 
 	trigger = {
-		trigger_if = {
-			limit = { religion = rust_cultist }
-
-			any_realm_wonder = {
-				NOT = { has_wonder_flag = Center_rust_cult }
-
-				OR = {
-					has_wonder_flag = Center_muslim_cult
-					has_wonder_flag = Center_norse_cult
-					has_wonder_flag = Center_ursuline_cult
+		OR = {
+			AND = {
+				any_realm_wonder = {
+					NOT = { has_wonder_flag = Center_rust_cult }
+					OR = {
+						has_wonder_flag = Center_muslim_cult
+						has_wonder_flag = Center_norse_cult
+						has_wonder_flag = Center_ursuline_cult
+					}
 				}
+				religion = rust_cultist
+			}
+			AND = {
+				any_realm_wonder = {
+					NOT = { has_wonder_flag = Center_muslim_cult }
+					OR = {
+						has_wonder_flag = Center_rust_cult
+						has_wonder_flag = Center_norse_cult
+						has_wonder_flag = Center_ursuline_cult
+					}
+				}
+				religion_group = muslim
+			}
+			AND = {
+				any_realm_wonder = {
+					NOT = { has_wonder_flag = Center_norse_cult }
+					OR = {
+						has_wonder_flag = Center_rust_cult
+						has_wonder_flag = Center_muslim_cult
+						has_wonder_flag = Center_ursuline_cult
+					}
+				}
+				religion_openly_norse_or_reformed_trigger = yes
+			}
+			AND = {
+				any_realm_wonder = {
+					NOT = { has_wonder_flag = Center_ursuline_cult }
+					OR = {
+						has_wonder_flag = Center_rust_cult
+						has_wonder_flag = Center_muslim_cult
+						has_wonder_flag = Center_norse_cult
+					}
+				}
+				religion = ursuline
 			}
 		}
-		trigger_else_if = {
-			limit = { religion_openly_norse_or_reformed_trigger = yes }
-
-			any_realm_wonder = {
-				NOT = { has_wonder_flag = Center_norse_cult }
-
-				OR = {
-					has_wonder_flag = Center_rust_cult
-					has_wonder_flag = Center_muslim_cult
-					has_wonder_flag = Center_ursuline_cult
-				}
-			}
-		}
-		trigger_else_if = {
-			limit = { religion = ursuline }
-
-			any_realm_wonder = {
-				NOT = { has_wonder_flag = Center_ursuline_cult }
-
-				OR = {
-					has_wonder_flag = Center_rust_cult
-					has_wonder_flag = Center_muslim_cult
-					has_wonder_flag = Center_norse_cult
-				}
-			}
-		}
-		trigger_else = {
-			limit = { religion_group = muslim }
-
-			any_realm_wonder = {
-				NOT = { has_wonder_flag = Center_muslim_cult }
-
-				OR = {
-					has_wonder_flag = Center_rust_cult
-					has_wonder_flag = Center_norse_cult
-					has_wonder_flag = Center_ursuline_cult
-				}
-			}
+		NOT = {
+			has_character_flag = considered_hub_conversion
 		}
 	}
 
@@ -99,29 +77,33 @@ character_event = {
 		random_realm_wonder = {
 			limit = { has_wonder = wonder_mosque_center_islam }
 			save_event_target_as = target_wonder
-
-			if = {
-				limit = {
-					trigger_if = {
-						limit = { has_wonder_flag = Center_rust_cult }
+		}
+		job_spiritual = {
+    		save_event_target_as = target_chaplain
+    	}
+		set_character_flag = considered_hub_conversion
+		if = {
+			limit = {
+				OR = {
+					event_target:target_wonder = {
+						has_wonder_flag = Center_rust_cult
 						location = { religion = rust_cultist }
 					}
-					trigger_else_if = {
-						limit = { has_wonder_flag = Center_norse_cult }
+					event_target:target_wonder = {
+						has_wonder_flag = Center_norse_cult
 						location = { religion_openly_norse_or_reformed_trigger = yes }
 					}
-					trigger_else_if = {
-						limit = { has_wonder_flag = Center_ursuline_cult }
+					event_target:target_wonder = {
+						has_wonder_flag = Center_ursuline_cult
 						location = { religion = ursuline }
 					}
-					trigger_else = {
+					event_target:target_wonder = {
 						has_wonder_flag = Center_muslim_cult
 						location = { religion_group = muslim }
 					}
 				}
-
-				location = { set_province_flag = people_had_center_islam }
 			}
+			event_target:target_wonder = { location = { set_province_flag = people_had_center_islam } }
 		}
 	}
 
@@ -135,6 +117,9 @@ character_event = {
 
 			event_target:target_wonder = {
 				set_wonder_flag = Center_rust_cult
+				clr_wonder_flag = Center_muslim_cult
+				clr_wonder_flag = Center_norse_cult
+				clr_wonder_flag = Center_ursuline_cult
 			}
 		}
 		else_if = {
@@ -142,6 +127,9 @@ character_event = {
 
 			event_target:target_wonder = {
 				set_wonder_flag = Center_norse_cult
+				clr_wonder_flag = Center_rust_cult
+				clr_wonder_flag = Center_muslim_cult
+				clr_wonder_flag = Center_ursuline_cult
 			}
 		}
 		else_if = {
@@ -149,6 +137,9 @@ character_event = {
 
 			event_target:target_wonder = {
 				set_wonder_flag = Center_ursuline_cult
+				clr_wonder_flag = Center_rust_cult
+				clr_wonder_flag = Center_muslim_cult
+				clr_wonder_flag = Center_norse_cult
 			}
 		}
 		else_if = {
@@ -156,26 +147,26 @@ character_event = {
 
 			event_target:target_wonder = {
 				set_wonder_flag = Center_muslim_cult
+				clr_wonder_flag = Center_rust_cult
+				clr_wonder_flag = Center_muslim_cult
+				clr_wonder_flag = Center_norse_cult
 			}
 		}
 
 		piety = 200
 
 		reverse_opinion = {
-			name = opinion_religious_tract
-			who = job_spiritual
+			modifier = opinion_religious_tract
+			who = event_target:target_chaplain
 			years = 5
 		}
 
 		event_target:target_wonder = {
 			show_scope_change = no
-
 			location = {
 				show_scope_change = no
-
 				if = {
 					limit = { has_province_flag = people_had_center_islam }
-
 					add_province_modifier = {
 						name = religious_tension
 						years = 5
@@ -191,17 +182,15 @@ character_event = {
 		piety = -50
 
 		reverse_opinion = {
-			name = opinion_angry
-			who = job_spiritual
+			modifier = opinion_angry
+			who = event_target:target_chaplain
 			years = 5
 		}
 
 		event_target:target_wonder = {
 			show_scope_change = no
-
 			location = {
 				show_scope_change = no
-
 				if = {
 					limit = { has_province_flag = people_had_center_islam }
 

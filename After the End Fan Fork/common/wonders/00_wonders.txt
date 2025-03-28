@@ -4065,6 +4065,7 @@ wonder_mosque_center_islam = {
 		is_destructible
 		cost_medium
 		is_historical
+		Center_rust_cult
 	}
 	available_upgrades = {
 		# UNIQUE:
