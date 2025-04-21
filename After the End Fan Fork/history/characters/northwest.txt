@@ -2419,7 +2419,7 @@
 	female=yes
 	mother=1845121
 	2611.7.10={birth=yes}
-	2631.7.22={add_spouse=1890040}
+	2629.7.22={add_spouse=1890040}
 	2651.1.1={death=yes}
 }
 

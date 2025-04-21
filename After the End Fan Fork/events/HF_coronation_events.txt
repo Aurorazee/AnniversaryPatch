@@ -464,6 +464,7 @@ character_event = {
 					has_landed_title = k_ursuline
 					has_landed_title = d_quorum_of_the_twelve
 					has_landed_title = k_high_church
+					has_landed_title = d_cristo_rey
 					higher_real_tier_than = BARON 
 					has_minor_title = title_cardinal
 					has_minor_title = title_ursuline_cardinal
@@ -7530,7 +7531,6 @@ letter_event = {
 	}
 	desc = {
 		text = EVTDESCHFA20225_ursuline
-		picture = GFX_evt_ursuline_crusade
 		trigger = {
 			religion = ursuline
 		}

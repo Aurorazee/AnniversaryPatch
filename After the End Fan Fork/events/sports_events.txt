@@ -1058,7 +1058,7 @@ narrative_event = { #Game Victory
 		clr_character_flag = playing_big_game
 		clr_character_flag = do_not_disturb
 		clr_character_flag = recent_minor_decision
-		add_character_modifier = { name = completed_big_game years = 10 }
+		add_character_modifier = { name = completed_big_game years = 10 hidden = yes }
 	}
 
 	option = {

@@ -3367,5 +3367,6 @@
 	trait=just
 	trait=erudite
 	trait=mastermind_theologian
+	father=6900527
 	2618.6.19={birth=yes}
 }

@@ -66,7 +66,6 @@
 
 1875006={
 	name="Samuel"
-	dynasty=0
 	culture=comanche
 	religion=catholic
 	2627.1.1={birth=yes}
@@ -105,7 +104,7 @@
 	trait=craven
 	father=1875018
 	2621.1.1={birth=yes}
-	2638.1.1={add_spouse=1875010}
+	2648.1.1={add_spouse=1875010}
 	2700.1.1={death=yes}
 }
 
@@ -117,7 +116,7 @@
 	female=yes
 	culture=comanche
 	religion=catholic
-	2622.4.1={birth=yes}
+	2631.4.1={birth=yes}
 	2700.1.1={death=yes}
 }
 
@@ -128,7 +127,7 @@
 	mother=1875010
 	culture=cherokee
 	religion=catholic
-	2641.1.1={birth=yes}
+	2649.1.1={birth=yes}
 	2700.1.1={death=yes}
 }
 
@@ -166,7 +165,7 @@
 	culture=comanche
 	religion=catholic
 	2602.1.1={birth=yes}
-	2620.1.1={add_spouse=1875024}
+	2630.1.1={add_spouse=1875024}
 	2662.1.1={death=yes}
 }
 
@@ -284,6 +283,7 @@
 	female=yes
 	culture=texan
 	religion=catholic
+	father=1836089
 	trait=fair
 	trait=tough_soldier
 	trait=duelist
@@ -382,8 +382,8 @@
 	trait=greedy
 	trait=craven
 	disallow_random_traits=yes
-	2607.1.12={birth=yes}
-	2620.1.1={add_spouse=1875013}
+	2610.1.12={birth=yes}
+	2630.1.1={add_spouse=1875013}
 }
 
 1875025={

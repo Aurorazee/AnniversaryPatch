@@ -106,6 +106,7 @@
 1933007={
 	name="Cincinnatus"
 	dynasty=1785022
+	father=1933077
 	martial=6
 	diplomacy=5
 	intrigue=3
@@ -136,6 +137,18 @@
 	religion=evangelical
 	2652.1.1={birth=yes}
 	2700.1.1={death=yes}
+}
+
+1933077={ #placeholder so the dynasty isn't disconnected
+	name=""
+	dynasty=1785022
+	father=1861426
+	occluded=yes
+	trait=legendary
+	culture=tuskegean
+	religion=revelationist
+	2360.1.1={birth=yes}
+	2625.1.2={death=yes}
 }
 
 1933010={

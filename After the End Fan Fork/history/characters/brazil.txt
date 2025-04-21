@@ -257,7 +257,6 @@
 
 2100010={
 	name="Marco"
-	dynasty=0
 	culture=brazilian
 	religion=apostolic
 	trait=midas_touched

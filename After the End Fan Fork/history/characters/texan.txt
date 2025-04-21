@@ -1653,6 +1653,8 @@
 	trait=proud
 	trait=cynical
 	2565.6.16={birth=yes}
+	2607.9.3={add_spouse=1836076}
+	2614.2.11={remove_spouse=1836076}
 	2614.7.16={give_nickname=nick_silverplate}
 	2619.10.28={
 		death={

@@ -150,6 +150,7 @@
 	trait=duelist
 	trait=wroth
 	2522.3.12={birth=yes}
+	2545.4.11={add_spouse=4190713}
 	2559.12.30={death=yes}
 }
 
@@ -196,11 +197,10 @@
 
 4190713={
 	name="Waya"
-	dynasty=1491207
 	female=yes
 	culture=cherokee
 	religion=catholic
-	2526.1.1={birth=yes effect= { dynasty=none } }
+	2526.1.1={birth=yes}
 	2578.1.1={death=yes}
 }
 

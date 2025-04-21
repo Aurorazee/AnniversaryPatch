@@ -285,7 +285,7 @@
 	}
 }
 	
-#Domingo Carvajal	
+#Benemérito Domingo Carvajal	
 6900420={
 	name="Domingo"
 	religion=cristo_rey
@@ -1198,7 +1198,7 @@
 	name="Selena"
 	female=yes
 	dna="00ffb00bbc0"
-	dynasty=5001153
+	# dynasty=5001153
 	religion=catholic
 	trait=fair
 	trait=musician
@@ -1769,7 +1769,7 @@
 	trait=shy
 	trait=gluttonous
 	trait=lustful
-	
+	father=6900527
 	2628.6.27={birth=yes}
 	2645.10.20={add_spouse=6900515}
 }
@@ -1900,7 +1900,8 @@
 	trait=stubborn
 	trait=just
 	trait=charitable
-	2638.2.11={birth=yes}
+	father=72377901
+	2635.2.11={birth=yes}
 }
 6900524={ 
 	name="Miguel"
@@ -1943,6 +1944,20 @@
 	trait=lustful
 	trait=temperate
 	2642.5.15={birth=yes}
+}
+
+6900527={
+	name="Eusebio"
+	dynasty=4600131 # Campero
+	culture=trifinio
+	religion=moravian
+	trait=tough_soldier
+	trait=zealous
+	trait=cruel
+	trait=gregarious
+	trait=stubborn
+	2586.12.14={birth=yes}
+	2647.6.30={death=yes}
 }
 
 14450485={

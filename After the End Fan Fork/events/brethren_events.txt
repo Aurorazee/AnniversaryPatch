@@ -165,47 +165,6 @@ character_event = {
 }
 
 character_event = {
-	id = TGF.3323
-	
-	hide_window = yes
-	
-	is_triggered_only = yes
-	
-	has_dlc = "The Old Gods"
-	min_age = 16
-	capable_only = yes
-	prisoner = no
-	
-	trigger = {
-		OR = {
-			any_owned_bloodline = {
-				has_bloodline_flag = bloodline_viking
-			}
-			AND = {
-				has_religion_feature = religion_adventuring
-				has_religion_feature = religion_seafaring
-			}
-			has_religion_feature = religion_feature_norse
-		}
-		OR = {
-			trait = pirate
-			trait = viking
-			trait = ravager
-			trait = seaking #Top trait, but there's still chance of gaining a Bloodline if variable goes high enough.
-			trait = sea_queen
-			trait = freebooter
-			trait = buccaneer
-			trait = corsair
-		}
-		FROM = { always = yes }
-	}
-	
-	immediate = {
-		change_variable = { which = viking_raids value = 1 }
-	}
-}
-
-character_event = {
 	id = pirate.10
 	desc = EVTDESC_pirate_yarr
 	picture = GFX_evt_merchant_ship_at_sea_republic

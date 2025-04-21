@@ -1412,7 +1412,6 @@
 }
 1200081={
 	name="Carl Joseph"
-	dynasty=0
 	culture=plautdietsch
 	religion=anabaptist
 	trait=tough_soldier

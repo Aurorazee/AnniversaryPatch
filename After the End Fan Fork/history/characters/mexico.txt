@@ -2494,7 +2494,7 @@
 	2645.1.8={birth=yes
 	effect={
 		add_claim=d_guanajuato
-		add_claim=d_baijo_occidente
+		add_claim=d_bajio_occidente
 	}
 	}
 	2703.7.13={death=yes}

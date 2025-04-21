@@ -1234,7 +1234,6 @@
 1898070={
 	name="Dulcinea"
 	female=yes
-	dynasty=0
 	culture=cubano
 	religion=santeria
 	trait=fair

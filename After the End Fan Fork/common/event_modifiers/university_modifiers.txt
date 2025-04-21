@@ -40,7 +40,6 @@ local_univ_alumni = {
 
 completed_big_game = {
 	icon = 7
-	hidden = yes
 }
 
 won_big_game = {

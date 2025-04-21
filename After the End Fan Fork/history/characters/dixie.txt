@@ -1475,6 +1475,7 @@
 	dynasty=1491207
 	culture=cherokee
 	religion=charismatic
+	father=4190716
 	martial=4
 	diplomacy=6
 	stewardship=5
@@ -6081,7 +6082,7 @@
 }
 1861349={
 	name="Martin" # First Council President
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	trait=brave
@@ -6096,7 +6097,7 @@
 }
 1861350={
 	name="John" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2357.1.1={birth=yes}
@@ -6104,7 +6105,7 @@
 }
 1861351={
 	name="Calvin" 
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	2370.1.1={birth=yes}
@@ -6112,7 +6113,7 @@
 }
 1861352={
 	name="Solomon" 
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	2375.1.1={birth=yes}
@@ -6120,7 +6121,7 @@
 }
 1861353={
 	name="Luther" 
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	2390.1.1={birth=yes}
@@ -6128,7 +6129,7 @@
 }
 1861354={
 	name="James" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	trait=ambitious
@@ -6138,7 +6139,7 @@
 }
 1861355={
 	name="Edward" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2410.1.1={birth=yes}
@@ -6146,7 +6147,7 @@
 }
 1861356={
 	name="Stephanus" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2420.1.1={birth=yes}
@@ -6154,7 +6155,7 @@
 }
 1861357={
 	name="Knox" 
-	dynasty=0
+	#dynasty=0
 	culture=tuskegean
 	religion=evangelical
 	2430.1.1={birth=yes}
@@ -6162,7 +6163,7 @@
 }
 1861358={
 	name="Jonathan" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	trait=fortune_builder
@@ -6174,7 +6175,7 @@
 }
 1861359={
 	name="James" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2460.1.1={birth=yes}
@@ -6182,7 +6183,7 @@
 }
 1861360={
 	name="Marcus" 
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	2470.1.1={birth=yes}
@@ -6190,7 +6191,7 @@
 }
 1861361={
 	name="Lee" 
-	dynasty=0
+	#dynasty=0
 	culture=appalachian
 	religion=evangelical
 	2480.1.1={birth=yes}
@@ -6198,7 +6199,7 @@
 }
 1861362={
 	name="Absalom" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2490.1.1={birth=yes}
@@ -6206,7 +6207,7 @@
 }
 1861363={
 	name="Martin" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2500.1.1={birth=yes}
@@ -6214,7 +6215,7 @@
 }
 1861364={
 	name="Aaron" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2530.1.1={birth=yes}
@@ -6222,7 +6223,7 @@
 }
 1861365={
 	name="Stephanus" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2540.1.1={birth=yes}
@@ -6230,7 +6231,7 @@
 }
 1861366={
 	name="Jefferson" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2550.1.1={birth=yes}
@@ -6238,7 +6239,7 @@
 }
 1861367={
 	name="Tiberius" 
-	dynasty=0
+	#dynasty=0
 	culture=gulfard
 	religion=evangelical
 	2570.1.1={birth=yes}
@@ -6246,7 +6247,7 @@
 }
 1861368={
 	name="Jonathan" 
-	dynasty=0
+	#dynasty=0
 	culture=dixie
 	religion=evangelical
 	2580.1.1={birth=yes}
@@ -6254,7 +6255,7 @@
 }
 1861369={
 	name="John" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2590.1.1={birth=yes}
@@ -6262,7 +6263,7 @@
 }
 1861370={
 	name="Nathaniel" 
-	dynasty=0
+	#dynasty=0
 	culture=southron
 	religion=evangelical
 	2601.1.1={birth=yes}
@@ -7481,7 +7482,7 @@
 	disallow_random_traits=yes
 	2156.7.11={birth=yes}
 	2192.12.1={add_spouse=1861462}
-	2184.5.1={death=yes}
+	2194.5.1={death=yes}
 }
 1861460={
 	name="Anastasia"
@@ -8962,7 +8963,7 @@
 	father=1861560
 	mother=1861561
 	2427.7.27={birth=yes}
-	2445.5.14={add_spouse=1861565}
+	2444.5.14={add_spouse=1861565}
 	2485.6.12={death={death_reason=death_battle killer=666107}}
 }
 1861563={
@@ -8993,7 +8994,7 @@
 	culture=southron
 	religion=evangelical
 	2425.11.6={birth=yes}
-	2445.5.14={add_spouse=1861562}
+	2444.5.14={add_spouse=1861562}
 	2485.6.13={death={death_reason=death_firing_squad killer=666107}}
 }
 1861566={
@@ -9089,7 +9090,7 @@
 	religion=evangelical
 	mother=1861574
 	2628.10.16={birth=yes}
-	2642.5.31={add_spouse=1861576}
+	2645.5.31={add_spouse=1861576}
 	2665.10.21={death=yes}
 }
 1861576={
@@ -9097,7 +9098,7 @@
 	culture=southron
 	religion=evangelical
 	2628.6.24={birth=yes}
-	2642.5.31={add_spouse=1861575}
+	2645.5.31={add_spouse=1861575}
 	2667.1.1={death=yes}
 }
 1861577={

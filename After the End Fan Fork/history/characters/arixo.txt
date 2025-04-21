@@ -649,7 +649,6 @@
 
 1491047={
 	name="Paloma"
-	dynasty=0
 	culture=neomexicano
 	female=yes
 	religion=atomicist

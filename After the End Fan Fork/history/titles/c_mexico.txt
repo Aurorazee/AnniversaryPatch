@@ -53,7 +53,7 @@
 	holder=6900419 #Benemérito Aureliano II Hernández
 }
 2380.10.2={
-	holder=6900409 ##Benemérito Salim Clarencio
+	holder=6900420 ##Benemérito Domingo Carvajal
 }
 2388.5.14={
 	holder=6900421 #Benemérito Epifanio el Falso

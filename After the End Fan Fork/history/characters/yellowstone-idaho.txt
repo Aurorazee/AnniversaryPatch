@@ -187,6 +187,7 @@
 	dynasty=1876034
 	culture=coloradan
 	religion=trailwalker
+	father=1890082
 	2642.1.1={birth=yes}
 	2710.1.1={death=yes}
 }
@@ -672,7 +673,7 @@
 	religion=trailwalker
 	father=1890055
 	give_nickname=nick_pickaxe
-	2523.1.4={birth=yes}
+	2527.1.4={birth=yes}
 	2568.11.16={death=yes}
 }
 
@@ -790,7 +791,7 @@
 	culture=inlander
 	religion=trailwalker
 	father=1890057
-	2516.3.17={birth=yes}
+	2508.3.17={birth=yes}
 	2549.4.6={death={
 			death_reason=death_battle
 			killer=1845131 #Tasha Silvermount
@@ -830,7 +831,7 @@
 	culture=inlander
 	religion=trailwalker
 	mother=1890058
-	2498.2.7={birth=yes}
+	2490.2.7={birth=yes}
 	2542.5.23={death=yes}
 }
 
@@ -841,7 +842,7 @@
 	religion=trailwalker
 	female=yes
 	father=1890059
-	2482.7.17={birth=yes}
+	2469.7.17={birth=yes}
 	2521.8.18={death=yes}
 }
 
@@ -853,7 +854,7 @@
 	trait=drunkard
 	trait=dysentery
 	father=1890062
-	2466.4.12={birth=yes}
+	2448.4.12={birth=yes}
 	2500.2.23={death={death_reason=death_trait}}
 }
 
@@ -897,7 +898,7 @@
 	culture=inlander
 	religion=trailwalker
 	father=1890060
-	2448.7.28={birth=yes}
+	2428.7.28={birth=yes}
 	2480.9.27={death={death_reason=death_battle}}
 }
 
@@ -922,6 +923,16 @@
 	father=1890063
 	2426.1.12={birth=yes}
 	2484.4.2={death=yes}
+}
+
+1890082={ #placeholder to connect dynasty
+	name=""
+	dynasty=1876034
+	culture=coloradan
+	religion=trailwalker
+	father=1890064
+	2446.1.12={birth=yes}
+	2642.1.2={death=yes}
 }
 
 1890065={

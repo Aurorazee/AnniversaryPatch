@@ -2550,7 +2550,6 @@
 1867164={
 	name="Lacey"
 	female=yes
-	dynasty=0
 	culture=ontarian
 	religion=high_church
 	2585.1.1={birth=yes}
@@ -2574,7 +2573,6 @@
 1867166={
 	name="Jane"
 	female=yes
-	dynasty=0
 	culture=ontarian
 	religion=high_church
 	2609.1.1={birth=yes}

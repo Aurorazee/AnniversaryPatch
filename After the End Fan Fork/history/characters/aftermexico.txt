@@ -2045,7 +2045,7 @@
 	trait=vomiting
 	father=6900104
 	2560.10.17={birth=yes}
-	2580.10.30={death={
+	2585.6.26={death={
 			death_reason=death_poor_health 
 		}
 	}
@@ -2516,6 +2516,7 @@
 	dynasty=5001149
 	culture=purepecha
 	religion=cristo_rey
+	father=6900132
 	trait=socializer
 	trait=brave
 	trait=greedy
@@ -2527,23 +2528,35 @@
 }
 
 6900130={ 
-	name="Eleuterio "
+	name="Eleuterio"
 	dynasty=5001149
 	culture=chilango
 	religion=sacred_heart
 	trait=socializer
 	trait=deceitful
 	trait=greedy
-	trait=eunuch
 	trait=diligent
 	trait=musician
 	trait=elusive_shadow
 	2561.11.3={birth=yes}
-	2616.5.28={death={
+	2616.5.28={
+		add_trait=eunuch
+		death={
 			death_reason=death_execution
 		}
 	}
 }
+
+6900132={ 
+	name="Alfonso"
+	dynasty=5001149
+	culture=chilango
+	religion=sacred_heart
+	father=6900130
+	2597.3.12={birth=yes}
+	2655.5.28={death=yes}
+}
+
 
 6900131={ # Nicaragua Merchant Republic holder
 	name="Tomás"
@@ -2622,7 +2635,7 @@
 	trait=cruel
 	trait=flamboyant_schemer
 	father=72377901
-	2640.9.2={birth=yes}
+	2643.9.2={birth=yes}
 	2660.7.12={add_spouse=72377910}
 }
 

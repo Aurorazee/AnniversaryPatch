@@ -2010,7 +2010,6 @@
 	female=yes
 	culture=acadien
 	religion=ursuline
-	dynasty=0
 	trait=fair
 	trait=diligent
 	trait=gregarious
@@ -2111,7 +2110,6 @@
 	female=yes
 	culture=acadien
 	religion=ursuline
-	dynasty=0
 	2592.6.4={birth=yes}
 	2615.1.1={add_spouse=1899139}
 	2650.6.8={death=yes}
@@ -2129,7 +2127,6 @@
 1899142={
 	name="Oighrig"
 	female=yes
-	dynasty=0
 	culture=maritimer
 	religion=high_church
 	2619.2.4={birth=yes}
@@ -2202,7 +2199,6 @@
 1899149={
 	name="Monique"
 	female=yes
-	dynasty=0
 	culture=acadien
 	trait=fair
 	religion=high_church
@@ -2212,7 +2208,6 @@
 1899150={
 	name="Karla"
 	female=yes
-	dynasty=0
 	culture=maritimer
 	religion=high_church
 	2635.7.3={birth=yes}
@@ -2230,7 +2225,6 @@
 }
 1899152={
 	name="Jeanne"
-	dynasty=0
 	female=yes
 	culture=acadien
 	religion=ursuline

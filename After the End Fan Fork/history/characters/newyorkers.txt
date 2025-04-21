@@ -1107,7 +1107,6 @@
 
 1788207={
 	name="Roger"
-	dynasty=0
 	martial=4
 	diplomacy=5
 	intrigue=2
@@ -1398,7 +1397,6 @@
 1788226={
 	name="Fiorina"
 	female=yes
-	dynasty=0
 	culture=gothamite
 	religion=americanist
 	2603.1.1={birth=yes}
@@ -1407,7 +1405,6 @@
 1788227={
 	name="Annalise"
 	female=yes
-	dynasty=0
 	culture=gothamite
 	religion=americanist
 	2630.1.1={birth=yes}
@@ -1416,7 +1413,6 @@
 1788228={
 	name="Carmen"
 	female=yes
-	dynasty=0
 	culture=gothamite
 	religion=americanist
 	2630.9.2={birth=yes}
@@ -1426,7 +1422,6 @@
 1788229={
 	name="Mercedes"
 	female=yes
-	dynasty=0
 	culture=gothamite
 	religion=americanist
 	2625.1.1={birth=yes}

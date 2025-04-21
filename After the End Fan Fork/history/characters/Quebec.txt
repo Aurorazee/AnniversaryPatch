@@ -76,7 +76,6 @@
 1763005={
 	name="Mathilde"
 	female=yes
-	dynasty=0
 	martial=5
 	diplomacy=4
 	intrigue=6
@@ -2320,7 +2319,6 @@
 }
 1763139={
 	name="Gilles"
-	dynasty=0
 	culture=quebecois
 	religion=ursuline
 	trait=strong
@@ -2700,7 +2698,6 @@
 1763168={
 	name="Florence"
 	female=yes
-	dynasty=0
 	culture=quebecois
 	religion=ursuline
 	trait=hunter
@@ -2755,7 +2752,6 @@
 1763173={
 	name="Julie"
 	female=yes
-	dynasty=0
 	culture=quebecois
 	religion=ursuline
 	trait=elusive_shadow
@@ -2797,7 +2793,6 @@
 1763177={
 	name="Germaine"
 	female=yes
-	dynasty=0
 	culture=quebecois
 	religion=ursuline
 	trait=ill
@@ -2843,7 +2838,6 @@
 1763181={
 	name="Arlette"
 	female=yes
-	dynasty=0
 	culture=ontarois
 	religion=ursuline
 	2612.2.3={birth=yes}

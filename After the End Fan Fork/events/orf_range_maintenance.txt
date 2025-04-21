@@ -1,7 +1,7 @@
 namespace = ORFmaint
 
 #Range Shrinkage (on_settlement_construction_completed)
-province_event = {
+character_event = {
 	id = ORFmaint.1
 	hide_window = yes
 	is_triggered_only = yes

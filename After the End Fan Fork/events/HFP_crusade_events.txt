@@ -2348,21 +2348,6 @@ character_event = {
 					}
 				}
 				preferred_limit = {
-					OR = {
-						is_married = no
-						is_female = no
-					}
-					ROOT = {
-						opinion = {
-							who = PREV
-							value = 50
-						}
-					}
-					NOT = {
-						is_foe = ROOT
-					}
-				}
-				preferred_limit = {
 					ROOT = {
 						opinion = {
 							who = PREV

@@ -1060,7 +1060,6 @@
 }
 2200053={
 	name="Sigfried" 
-	dynasty=0
 	female=no
 	martial=9
 	diplomacy=4
@@ -1081,7 +1080,6 @@
 }
 2200054={
 	name="Irasvel"
-	dynasty=0
 	dna="ccbjdjbdibg"
 	father=2200051
 	mother=2200052

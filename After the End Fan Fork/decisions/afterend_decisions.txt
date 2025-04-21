@@ -3293,7 +3293,7 @@ decisions = {
 		potential = {
 			NOT = {
 				defacto_liege_title = {
-					has_strong_claim = THIS
+					claimed_by = ROOT
 				}
 			}
 			NOT = {

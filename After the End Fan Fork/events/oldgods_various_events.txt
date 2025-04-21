@@ -1916,6 +1916,9 @@ character_event = {
 			trait = ravager
 			trait = seaking #Top trait, but there's still chance of gaining a Bloodline if variable goes high enough.
 			trait = sea_queen
+			trait = freebooter
+			trait = buccaneer
+			trait = corsair
 		}
 		OR = {
 			religion = norse_pagan

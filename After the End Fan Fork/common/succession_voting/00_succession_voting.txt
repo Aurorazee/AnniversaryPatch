@@ -15349,18 +15349,6 @@ eldership_rules = {
 			has_elector_stance = { stance = elder_pleased title = FROMFROM }
 		}
 		additive_modifier = {
-			value = 5
-			localisation_key = tooltip_feudal_elector_vote_strong
-			NOT = { character = FROM } #Do not judge yourself.
-			this_is_warrior_culture_trigger = no
-			FROM = { 
-				trait = strong
-			}
-			FROMFROM = { 
-				holder_scope = { character = ROOT } 
-			}
-		}
-		additive_modifier = {
 			value = 10
 			localisation_key = tooltip_feudal_elector_vote_strong_warrior
 			NOT = { character = FROM } #Do not judge yourself.
@@ -15924,18 +15912,6 @@ eldership_rules = {
 				trait = greedy
 			}
 			has_elector_stance = { stance = elder_pleased title = FROMFROM }
-		}
-		additive_modifier = { #Praised for being Slothful
-			value = 15
-			localisation_key = tooltip_feudal_elector_vote_slothful_positive
-			NOT = { character = FROM } #Do not judge yourself.
-			trait = slothful
-			FROM = { 
-				trait = slothful
-			}
-			FROMFROM = { 
-				holder_scope = { character = ROOT } 
-			}
 		}
 		additive_modifier = { #Shunned for being Slothful
 			value = -15
