@@ -5200,10 +5200,6 @@ join_prev_devil_worshiper_society_effect = {
 		join_society = the_satanists
 	}
 	if = {
-		limit = { PREV = { society_member_of = the_cold_ones } }
-		join_society = the_cold_ones
-	}
-	if = {
 		limit = { PREV = { society_member_of = the_plaguebringers } }
 		join_society = the_plaguebringers
 	}
@@ -5214,14 +5210,6 @@ join_prev_devil_worshiper_society_effect = {
 	if = {
 		limit = { PREV = { society_member_of = the_trollcrafters } }
 		join_society = the_trollcrafters
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_bacchants } }
-		join_society = the_bacchants
-	}
-	if = {
-		limit = { PREV = { society_member_of = the_vodouns } }
-		join_society = the_vodouns
 	}
 }
 join_prev_warrior_lodge_society_effect = {

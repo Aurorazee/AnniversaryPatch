@@ -1116,12 +1116,12 @@ character_event = {
 	}
 	immediate = {
 		set_global_flag = gaianism_under_threat	#set flag for CB
-		any_playable_ruler = {
-			limit = {
-				religion = gaian
-			}
-			narrative_event = {id = gaian.22}
-		}
+		# any_playable_ruler = {
+			# limit = {
+				# religion = gaian
+			# }
+			# narrative_event = {id = gaian.22}
+		# }
 	}
 }
 

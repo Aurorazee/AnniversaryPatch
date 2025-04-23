@@ -897,30 +897,6 @@ character_event = { # Alternate Start general maintenance
 				adjective="ALT_MERC_BAND_ADJ"
 				set_random_coa_effect = yes
 			}
-			d_tonton_macoutes = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_BAND"
-				adjective="ALT_MERC_BAND_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_shower_posse = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_BAND"
-				adjective="ALT_MERC_BAND_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_spanglers_posse = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_BAND"
-				adjective="ALT_MERC_BAND_ADJ"
-				set_random_coa_effect = yes
-			}
 			d_shaolin_company = {
 				holder_scope = {
 					save_event_target_as = renaming_target
@@ -946,14 +922,6 @@ character_event = { # Alternate Start general maintenance
 				set_random_coa_effect = yes
 			}
 			d_minutemen = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_BAND"
-				adjective="ALT_MERC_BAND_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_shiner_company = {
 				holder_scope = {
 					save_event_target_as = renaming_target
 				}
@@ -1026,14 +994,6 @@ character_event = { # Alternate Start general maintenance
 				set_random_coa_effect = yes
 			}
 			d_catrachos = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_COMPANY"
-				adjective="ALT_MERC_COMPANY_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_centranoes = {
 				holder_scope = {
 					save_event_target_as = renaming_target
 				}
@@ -1121,14 +1081,6 @@ character_event = { # Alternate Start general maintenance
 				adjective="ALT_MERC_COMPANY_ADJ"
 				set_random_coa_effect = yes
 			}
-			d_palace_guard = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_COMPANY"
-				adjective="ALT_MERC_COMPANY_ADJ"
-				set_random_coa_effect = yes
-			}
 			d_plumed_archers = {
 				holder_scope = {
 					save_event_target_as = renaming_target
@@ -1186,14 +1138,6 @@ character_event = { # Alternate Start general maintenance
 				set_random_coa_effect = yes
 			}
 			d_prowling_jaguars = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_BROTHERS"
-				adjective="ALT_MERC_BROTHERS_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_mounted_men = {
 				holder_scope = {
 					save_event_target_as = renaming_target
 				}
@@ -1282,22 +1226,6 @@ character_event = { # Alternate Start general maintenance
 				set_random_coa_effect = yes
 			}
 			d_hawaiian_guard = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_COMPANY_ALT"
-				adjective="ALT_MERC_COMPANY_ALT_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_han_mid = {
-				holder_scope = {
-					save_event_target_as = renaming_target
-				}
-				set_name="ALT_MERC_COMPANY_ALT"
-				adjective="ALT_MERC_COMPANY_ALT_ADJ"
-				set_random_coa_effect = yes
-			}
-			d_han_mid_low = {
 				holder_scope = {
 					save_event_target_as = renaming_target
 				}

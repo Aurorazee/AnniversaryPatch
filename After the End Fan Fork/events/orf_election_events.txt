@@ -802,10 +802,10 @@ character_event = {
 							factor = 1.25
 							event_target:orf_election_opponent_attacker = { has_character_flag = endorsed_by_liege }
 						}
-						mult_modifier = {
-							factor = 0.75
-							event_target:orf_election_opponent_attacker = { has_character_modifier = rebellious_range_party }
-						}
+						# mult_modifier = {
+							# factor = 0.75
+							# event_target:orf_election_opponent_attacker = { has_character_modifier = rebellious_range_party }
+						# }
 						mult_modifier = { #So that characters who become incapable during the campaign always lose
 							factor = 0
 							event_target:orf_election_opponent_attacker = { is_incapable = yes }
@@ -913,10 +913,10 @@ character_event = {
 							factor = 1.25
 							event_target:orf_election_opponent_defender = { has_character_flag = endorsed_by_liege }
 						}
-						mult_modifier = {
-							factor = 0.75
-							event_target:orf_election_opponent_defender = { has_character_modifier = rebellious_range_party }
-						}
+						# mult_modifier = {
+							# factor = 0.75
+							# event_target:orf_election_opponent_defender = { has_character_modifier = rebellious_range_party }
+						# }
 						mult_modifier = { #So that characters who become incapable during the campaign always lose
 							factor = 0
 							event_target:orf_election_opponent_defender = { is_incapable = yes }

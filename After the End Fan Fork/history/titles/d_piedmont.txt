@@ -52,11 +52,11 @@
 2401.6.12={
 	holder=1861552 #Charles VII Hanover
 }
-2419.1.1={
-	liege=0
-}
 2416.11.5={
 	holder=1861558 #Charles VIII Hanover
+}
+2419.1.1={
+	liege=0
 }
 2440.3.7={
 	holder=1861560 #Charles IX Hanover

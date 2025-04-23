@@ -2399,7 +2399,7 @@ character_event = {
 											ROOT = {
 												unsafe_war = {
 													target = PREV
-													casus_belli = reconquista_beja
+													casus_belli = reconquista_jalisco
 												}
 											}
 										}

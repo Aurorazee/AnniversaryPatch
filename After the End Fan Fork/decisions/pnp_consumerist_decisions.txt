@@ -182,10 +182,7 @@ decisions = {
 			is_playable = yes
 			is_adult = yes
 			prisoner = no
-			OR = {
-				religion = consumerist
-				religion = prosperist
-			}
+			religion = consumerist
 			NOT = { has_character_modifier = casino_timer }
 			NOT = { has_character_modifier = recently_gambled }
 			NOT = {
