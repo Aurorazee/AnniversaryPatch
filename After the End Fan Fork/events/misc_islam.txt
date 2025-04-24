@@ -2915,7 +2915,7 @@ character_event = {
 	}
 	option = {
 		trigger = {
-			b_tusuyan_AZ = {
+			b_tusayan_AZ = {
 				holder_scope = {
 					ai = no #Culls AI colonizers.
 				}
@@ -2969,7 +2969,7 @@ character_event = {
 	}
 	option = {
 		trigger = {
-			b_tusuyan_AZ = {
+			b_tusayan_AZ = {
 				holder_scope = {
 					ai = no #Culls AI colonizers.
 				}

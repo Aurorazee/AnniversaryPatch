@@ -4254,8 +4254,8 @@ character_event = {
 		trigger = {
 			any_realm_province = {
 				OR = {
-					province_id = 3178 #Trinidad
-					province_id = 3189 #Panama
+					province_id = 1878 #Trinidad
+					province_id = 1889 #Panama
 					province_id = 1124 #New Orleans
 				}
 			}

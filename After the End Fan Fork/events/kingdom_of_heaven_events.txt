@@ -1084,6 +1084,6 @@ narrative_event = {
 	immediate = {
 		save_event_target_as = mormon_gf
 		set_character_flag = mormon_gf
-		narrative_event = { id = heavenlykingdom.12 }
+		#narrative_event = { id = heavenlykingdom.12 }
 	}
 }

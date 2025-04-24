@@ -250,7 +250,7 @@ character_event = {
 	immediate = {
 		offmap_china = {
 			governor = {
-				set_government_type = confucian_bureaucracy
+				set_government_type = brazilian_empire
 			}
 			set_government_type = feudal_government
 		}
