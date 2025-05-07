@@ -186,7 +186,7 @@ decisions = {
 			custom_tooltip = {
 				text = rome_capital
 				hidden_tooltip = {
-					b_tivoli = { province_capital = yes }
+					b_chapultepec_MX = { province_capital = yes }
 					ROOT = {
 						b_chapultepec_MX = {
 							usurp_title = PREV

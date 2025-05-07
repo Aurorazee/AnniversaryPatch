@@ -907,7 +907,7 @@ character_event = {
 			tier = DUKE
 			landless = yes
 			temporary = yes
-			culture = khalfi
+			culture = moroccan
 			name = "Abbas Loyalists"
 			holder = ROOT
 		}

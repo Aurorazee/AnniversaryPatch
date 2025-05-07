@@ -2846,7 +2846,6 @@ character_event = {
 	hide_window = yes
 
 	religion_group = muslim
-	is_triggered_only = yes
 	
 	trigger = {
 		has_quest = quest_monastic_order_theology_focus_sufi
