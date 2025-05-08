@@ -562,7 +562,7 @@ narrative_event = {
 		}
 		NAND = {
 			trait = on_pilgrimage
-			religion = rust_cultist
+			NOT = {religion = rust_cultist}
 		}
 		NOT = { trait = kow_tow_travels }
 		NOT = { trait = travelling }

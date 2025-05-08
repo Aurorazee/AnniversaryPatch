@@ -82,7 +82,7 @@ character_event = {
 		}
 		
 		new_character = {
-			set_character_flag = john_wayne_himself
+			set_character_flag = wayne_himself
 			if = {
 				limit = {
 					has_dlc = "Holy Fury"
