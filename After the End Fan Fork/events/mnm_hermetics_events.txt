@@ -245,6 +245,72 @@ character_event = {
 				}
 				event_target:hermetic_collaborator = { character_event = { id = MNM.1430 days = 7 random = 7 } }
 			}
+			10 = { #Make Donation
+				trigger = {
+					is_landed = yes
+					wealth = 150
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_society_grandmaster = no
+					}
+					random_society_member = {
+						limit = {
+							is_society_grandmaster = yes
+							same_society_as = ROOT
+						}
+						character_event = { id = faculty.140 }
+					}
+				}
+				else = {
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = { id = faculty.140 }
+					}
+				}
+			}
+			10 = { #Build Library
+				trigger = {
+					is_landed = yes
+					wealth = 200
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				if = {
+					limit = {
+						is_society_grandmaster = no
+					}
+					random_society_member = {
+						limit = {
+							is_society_grandmaster = yes
+							same_society_as = ROOT
+						}
+						character_event = { id = faculty.160 }
+					}
+				}
+				else = {
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = { id = faculty.160 }
+					}
+				}
+			}
 			10 = { #Observe stars
 				event_target:hermetic_collaborator = { character_event = { id = MNM.1828 days = 7 random = 7 } } 
 			}
@@ -7913,11 +7979,7 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	
 	is_triggered_only = yes
-	
-	desc = {
-		trigger = { }
-		text = EVTDESC_MNM_1903
-	}
+
 	option = {
 		name = EVTOPTA_MNM_1903
 		
@@ -13535,10 +13597,6 @@ character_event = {
 		
 		ai_chance = {
 			factor = 10
-			modifier = {
-				factor = 2
-				trait = gardener
-			}
 			modifier = {
 				factor = 2
 				trait = gardener

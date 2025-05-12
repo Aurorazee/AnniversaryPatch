@@ -2068,6 +2068,8 @@ String_Bishop;Bishop;;;;;;;;;;;;;x
 String_Abbot;Abbot;;;;;;;;;;;;;x
 String_Guru;Guru;;;;;;;;;;;;;x
 String_Rebbe;Rebbe;;;;;;;;;;;;;x
+string_dread_pirate;dread pirate;;;;;;;;;;;;;x
+string_dread_pirate_cap;Dread Pirate;;;;;;;;;;;;;x
 Holy_Order_Catholic;the Knights of Columbus, and Knights of Peter Claver;;;;;;;;;;;;;x
 Holy_Order_Evangelical;the National Cathedral Association;;;;;;;;;;;;;x
 Holy_Order_Anabaptist;the Lebanon Brethren;;;;;;;;;;;;;x

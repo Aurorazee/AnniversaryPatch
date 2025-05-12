@@ -1,0 +1,78 @@
+###ÄNSI
+
+old_world = {
+	graphical_cultures = { englishgfx normangfx dixiegfx westerngfx andalusiangfx tuskegeangfx africangfx muslimgfx }
+
+	american = {
+		graphical_cultures = { englishgfx normangfx dixiegfx westerngfx andalusiangfx }
+
+		color = { 0.2 0.2 0.9 }
+
+		male_names = {
+			Arthur_Arthur Albert_Albert Arnold_Arnold Alphonse_Alphons Alexander_Alexander Amery Antoine_Anthony Ali Arnaud_Arnold Armstrong Aaron_Aaron Alain_Alan Avery Avon Anthony_Anthony Aloysius Andrew_Andrew Abraham_Abraham Abner August Adam_Adam Abel Allen Aston Algernon Archibald Adrian_Adrian Aurelian_Aurelius
+			Benning Burleith Booker Barnaby Burke Bergstrom Benjamin_Benjamin Benedict_Benedict Bernard_Bernard Bannister Brutus Braylon Boies Bigelow Bernard Browne Barton Bevil Baynham Barclay Baxter
+			Charles_Charles Chase Clark Cloture Calvin Cornelius_Cornelius Coleman Chris_Christopher Caleb Carver Cassius Claudius_Claudius Clarence Clay Chandler Columbus Cal Cab Carroll_Charles Christopher_Christopher Cameron Caesar_Caesar Coplestone Christian_Christian Cade Cale Canby Callaway Cahoon
+			Douglass_Doug Dewey_David Dupont Darnell Denzel Dave_David Darius Deangelo Deandre Dennis Dubois Douglass Darryl Dennis_Dionysus Daniel_Daniel Donald_Donald David_David Dudd Danrick Dyre Dunlap
+			Eugene_Eugene Elliot Emerson Edgar Elias_Elijah Evan Eldridge Elgin Elijah_Elijah Edmond Edward_Edward Edwin Ethan Eusebius Eleazar Endymion Ephraim
+			Franklin_Franklin Filibuster Farragut Freeman Frederick_Frederick Francis_Francis Fitzwilliam_William Fletcher Fenwick
+			Garfield Golias George_George Grady Garvey Grant Gerald Gary Gregory_Gregory Gunning Gallagher Giles_Gilles Gilbert_Gilbert Gervase Gove Gregg_Gregory
+			Hawthorne Hamilton Harrison Hancock Henry_Henry Hasker Hassan Huey Hendrick Hugh Herbert_Herbert Horace Harold Howard Humphrey Hamon
+			Ignatius Isaac_Isaac Ian_Ian
+			Jefferson John_John Jackson Jussolis Justus_Justin Julian_Julian Jason Jaylon Jordan_Jordan Joshua_Joshua Josiah_Josiah Julius_Julius Jamie_James James_James Joel Jonas_Jonah Joseph_Joseph Jerome Jeremiah_Jeremiah Jeffrey_Jeff Jasper Justinian_Justin
+			Kent Knox Kevin Kobe Keith Kenrick Kensey
+			Lincoln Lamond Langston Lawrence_Lawrence Logan Lewis_Louis Locke Luther Lamar Lucius_Lucius Leroy Louis_Louis Levi Leslie Ludovic_Louis Luke_Luke Lambert Lockhart Lionel_Lionel Luff
+			Monroe Myer Morgan Meriweather Mason Maxwell Michael_Michael Mark_Mark Maurice_Maurice Marcus_Mark Mosiah Moses_Moses Malcolm Morton Marlo Martin_Martin Matthew_Matthew Milton Marmaduke
+			Naylor Nicholas_Nicholas Nathan_Nathan Noah Nathaniel_Nathan Norman_Norman
+			Omar Ossian Oliver_Oliver Outerbridge Ogilvy
+			Petworth Penn Prentice Pershing Patton Preamble Patricius_Patrick Paul_Paul Peter_Peter Philander Phineas Philip_Phillip Philadelphus Percy Philemon Preston
+			Quincy Quorum Quentin Quantell Quint
+			Rexford Ronald Rutherford Robert_Robert Rutledge Ray_Raymond Rufus_Red Reginald Riley Richard_Richard Rupert_Robert Ronald_Ronald Rowland_Roland Ralph_Ralph Reginald Reorus
+			Shaw Shipley Smith Seymour Stephen_Stephen Samuel_Samuel Sherman Sidney Silvan_Silvanus Sam_Samuel Scipio Scott Sheridan Sterling Severin Simon_Simon Stansbury Saul Summerset Spencer Stanley
+			Truxton Totten Tenley Thaddeus_Thaddeus Theodore_Theodore Truman Thomas_Thomas Tecumseh Tyrone Terrell Terrance Tom_Thomas Tim_Timothy Terry Timothy_Timothy Theobald Truesdell
+			Ulysses_Odysseus
+			Vernon Victor_Victor Virgil Vincent_Vincent Voshell
+			Washington Wesley Woodrow Walter_Walter William_William Willie_William Wilson_William Wallis Wilbur Willard_William Wingfield Winston Warwick Wayne Warren
+			Xavier_Xavier
+			Zachary_Zachary Zeus
+		}
+
+		female_names = {
+			Anacostia Alice_Alice Athena Alexandra Alexa_Alexandra Alyssa Angel_Angela Angela_Angela Amanda Ariel Anita_Anna Angelina_Angela Adina Adrienne Aubrey Anna_Anna Allison Ashley Angelica_Angela Abigail Amelia_Amelia
+			Benefactia Beatrice Bianca Brianna Billie Blanche_Blance Belle Barbara_Barbara Brilliana
+			Concordia Chelsea Columbia Catharine_Katherine Carolyn_Carol Cleo Chloe Charlotte_Charlotte Calpurnia Christine_Christine Cynthia
+			Diana Declara Donata Divina Diot_Dionysia Donda Diamond Destiny Dorothea_Dorothea
+			Emma Eleanor_Eleanor Eleutheria Elizabeth_Elizabeth Emma_Emma Eleanora Eloise Eula Estelle Erin Eve
+			Frances Felicity
+			Gloriana Gabrielle_Gabriela Georgine
+			Hilary Hannah Helen Henriette_Henriette
+			Ivy Invicta Interdicta Industria Ivory Indiana
+			Justina Justice Julia Joyce Jade Jasmine Jayla Jean_Joana Josephine Jessie Jessica Jennifer_Jennfer Jane_Jane Janet Josephine_Josepha Joanne_Joana Junie Julie Judith
+			Kayla Katharine_Catherine
+			Libertas Liberalitas Loretta Lichelle Linda Layla Lennis Lilian Lula Laura_Laura Lois Livia
+			Majority Martha Miranda Merces Millicent_Millicent Melissa_Melissa Mary_Mary Marisa Michelle May_May Martha Madison Marceline Melanie Melody
+			Nullabona Nongrata Nia Nichole Natalie Nancy Nicole
+			Olympia Olivia Octavia
+			Prudence Petra Purity Prosperity Precedenta Pamela_Pam Parris Patrice Precious Petunia Petra Paula_Pauline Patricia
+			Respublia Rosa Raven Ruth Roalie Rosemary Roberta Rachel
+			Subpoena Stella Sola Sarah_Sarah Susanna_Susan Sierra Sara_Sarah Susan_Susan
+			Teayonna Theresa_Theresa Tierra Tituba
+			Virginia Victory Vindicta Virtue Valerie Violet Valerie
+			Wilmot_Wilhelmina
+			Zenia
+		}
+
+		from_dynasty_prefix = ""
+
+		modifier = default_culture_modifier
+
+
+		pat_grf_name_chance = 60
+		mat_grf_name_chance = 10
+		father_name_chance = 10
+
+
+		pat_grm_name_chance = 10
+		mat_grm_name_chance = 60
+		mother_name_chance = 10
+	}
+}

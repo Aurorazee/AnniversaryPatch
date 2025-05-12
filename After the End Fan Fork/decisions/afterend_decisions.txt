@@ -4659,6 +4659,258 @@ decisions = {
 		}
 	}
 	
+	american_renaissance = {
+		only_playable = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			has_landed_title = e_usa
+			NOT = { has_global_flag = flag_started_american_renaissance }
+			#NOT = { has_alternate_start_parameter = { key = culture_names value = random } }
+		}
+		allow = {
+			#show_only_failed_conditions = yes
+			capital_scope = { province = 63 }
+			ruled_years = 10
+			war = no
+		}
+		effect = {
+			set_global_flag = flag_started_american_renaissance
+			culture = american
+			hidden_tooltip = {
+				any_courtier_or_vassal = { 
+					limit = { lower_tier_than = COUNT }
+					culture = american
+				}
+			}
+			capital_scope = { culture = american }
+			custom_tooltip = {
+				text = tooltip_american_culture_starts_spreading
+				hidden_tooltip = {
+					any_realm_province = {
+						if = {
+							limit = { any_neighbor_province = { province = 63 } }
+							culture = american
+						}
+						if = {
+							limit = { 
+								culture = beltway
+								NOT = { distance = { where = 63 distance = 100 } } 
+							}
+							random = { 
+								chance = 40 
+								culture = american 
+							}
+						}
+						if = {
+							limit = { 
+								culture_group = beltway
+								NOT = { distance = { where = 63 distance = 200 } } 
+							}
+							random = { 
+								chance = 20 
+								culture = american 
+							}
+						}
+						if = {
+							limit = { 
+								culture_group = beltway
+								NOT = { distance = { where = 63 distance = 400 } } 
+							}
+							random = { 
+								chance = 5
+								culture = american 
+							}
+						}
+					}
+				}
+			}
+			hidden_tooltip = {
+				if = { 
+					limit = { 
+						OR = { 
+							religion = americanist
+							religion_group = christian
+						} 
+					}
+					any_realm_province = {
+						if = {
+							limit = { any_neighbor_province = { province = 63 } }
+							religion = ROOT
+						}
+						if = {
+							limit = { 
+								culture = american
+								NOT = { distance = { where = 63 distance = 100 } } 
+							}
+							random = { 
+								chance = 10 
+								religion = ROOT
+							}
+						}
+						if = {
+							limit = { 
+								culture = american
+								NOT = { distance = { where = 63 distance = 200 } } 
+							}
+							random = { 
+								chance = 5 
+								religion = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = .3
+			modifier = {
+				factor = 1.2
+				religion = americanist
+			}
+			modifier = {
+				factor = 0 #Would consider it a step down.
+				culture = southron
+			}
+		}
+	}
+	
+	embrace_american_culture = {
+		ai_check_interval = 120 #check only once every 120 months.
+		only_playable = yes
+		
+		potential = {
+			is_playable = yes
+			NOT = { culture = american }
+			OR = { 
+				culture_group = south_anglo 
+				culture_group = north_atlantic
+				culture_group = mid_atlantic
+			}
+			has_global_flag = flag_started_american_renaissance
+			NOT = {
+				has_alternate_start_parameter = { key = culture_names value = random }
+			}
+			top_liege = { has_landed_title = e_usa }
+		}
+		allow = {
+			#show_only_failed_conditions = yes
+			OR = { 
+				culture_group = south_anglo 
+				culture_group = north_atlantic
+				culture_group = mid_atlantic
+			}
+		}
+		effect = {
+			culture = american
+			hidden_tooltip = {
+				any_courtier_or_vassal = { 
+					limit = { lower_tier_than = COUNT }
+					culture = american
+				}
+			}
+			capital_scope = { culture = american }
+			custom_tooltip = {
+				text = tooltip_american_culture_spreads
+				hidden_tooltip = {
+					any_demesne_province = {
+						if = {
+							limit = { any_neighbor_province = { province = 63 } }
+							culture = american
+						}
+						if = {
+							limit = { 
+								culture = beltway
+								capital_scope = { NOT = { distance = { where = PREV distance = 100 } } } 
+							}
+							random = { 
+								chance = 40 
+								culture = american 
+							}
+						}
+						if = {
+							limit = { 
+								culture_group = beltway
+								capital_scope = { NOT = { distance = { where = PREV distance = 200 } } } 
+							}
+							random = { 
+								chance = 20 
+								culture = american 
+							}
+						}
+						if = {
+							limit = { 
+								culture_group = beltway
+								capital_scope = { NOT = { distance = { where = PREV distance = 400 } } } 
+							}
+							random = { 
+								chance = 5
+								culture = american 
+							}
+						}
+					}
+				}
+			}
+			if = {
+				limit = { 
+					OR = { 
+						religion = americanist 
+						religion_group = christian 
+					}
+				}
+				hidden_tooltip = {
+					any_demesne_province = {
+						if = {
+							limit = { any_neighbor_province = { province = 63 } }
+							religion = ROOT
+						}
+						if = {
+							limit = { 
+								culture = american
+								capital_scope = { NOT = { distance = { where = PREV distance = 100 } } } 
+							}
+							random = { 
+								chance = 10 
+								religion = ROOT
+							}
+						}
+						if = {
+							limit = { 
+								culture = american
+								capital_scope = { NOT = { distance = { where = PREV distance = 200 } } } 
+							}
+							random = { 
+								chance = 5 
+								religion = ROOT
+							}
+						}
+					}
+				}
+			}
+		}
+		revoke_allowed = {
+			always = no
+		}
+		ai_will_do = {
+			factor = .3
+			modifier = {
+				factor = 1.2
+				religion = americanist
+			}
+			modifier = {
+				factor = 1.2
+				capital_scope = { culture = american } 
+			}
+			modifier = {
+				factor = 0 #Would consider it a step down.
+				culture = southron
+			}
+		}
+	}
 }
 
 targetted_decisions = {

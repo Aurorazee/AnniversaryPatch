@@ -1,15 +1,33 @@
 castle = {
 	trigger = {
+		conditional_tooltip = {
+			trigger = {
+				FROM = { government = open_range_feudalism_government }
+			}
+			FROM = { NOT = { government = open_range_feudalism_government } }
+		}
 	}
 }
 
 city = {
 	trigger = {
+		conditional_tooltip = {
+			trigger = {
+				FROM = { government = open_range_feudalism_government }
+			}
+			FROM = { NOT = { government = open_range_feudalism_government } }
+		}
 	}
 }
 
 temple = {
 	trigger = {
+		conditional_tooltip = {
+			trigger = {
+				FROM = { government = open_range_feudalism_government }
+			}
+			FROM = { NOT = { government = open_range_feudalism_government } }
+		}
 	}
 }
 

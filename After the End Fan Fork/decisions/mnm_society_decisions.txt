@@ -342,6 +342,125 @@ society_decisions = {
 			}
 		}
 	}
+	donate_to_ivy_league = {
+		only_playable = yes
+		is_high_prio = yes
+		ai_check_interval = 12
+		
+		potential = {
+			has_dlc = "Mystics"
+			society_member_of = hermetics
+			is_playable = yes
+			block_general_event_trigger = no
+		}
+		allow = {
+			wealth = 150
+			OR = {
+				custom_tooltip = {
+					text = faculty_request_donation_TT
+					hidden_tooltip = {
+						has_quest = quest_faculty_quest_1
+					}
+				}
+				custom_tooltip = {
+					text = not_donated_to_ivy_league_five_years_TT
+					hidden_tooltip = {
+						NOT = { has_character_modifier = donated_to_ivy_league }
+					}
+				}
+			}
+		}
+		effect = {
+			wealth = -150
+			add_character_modifier = {
+				modifier = donated_to_ivy_league
+				years = 5
+			}
+			if = {
+				limit = {
+					has_quest = quest_faculty_quest_1
+				}
+				if = { #If YOU are the leader of the society, find someone random...
+					limit = {
+						is_society_grandmaster = yes
+					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+						}
+						character_event = {
+							id = faculty.498
+						}
+					}
+				}
+				else_if = { #Else, find the leader (provided they are available)...
+					limit = {
+						any_society_member = {
+							same_society_as = ROOT
+							is_society_grandmaster = yes
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							is_society_grandmaster = yes
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = {
+							id = faculty.498
+						}
+					}		
+				}
+				else_if = { #If not, find someone who is...
+					limit = {
+						any_society_member = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = {
+							id = faculty.498
+						}
+					}		
+				}
+				else = { #Else, send it to yourself ...
+					character_event = {
+						id = faculty.498
+					}
+				}
+			}
+			else = {
+				change_society_currency = 100
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0.25
+			modifier = {
+				factor = 10
+				has_quest = quest_faculty_quest_1
+			}
+			modifier = {
+				factor = 0
+				NOT = { wealth = 200 }
+			}
+			modifier = {
+				factor = 0.1
+				trait = greedy
+			}
+		}
+	}
 }
 
 #Monastic orders

@@ -11116,9 +11116,7 @@ character_event = {
 	
 	immediate = {
 		d_round_table = {
-			unsafe_religion = celtic_pagan_reformed # This Holy Order now changes religion
-		}
-		d_round_table = {
+			religion = celtic_pagan_reformed # This Holy Order now changes religion
 			holder_scope = {
 				unsafe_religion = celtic_pagan_reformed
 			}

@@ -506,6 +506,18 @@ e_dixie = {
 				b_hugurley_AL = {}
 				b_seale_AL = {}
 			}
+			c_early = {
+				color={ 111 85 52 }
+				color2={ 220 220 0 }
+
+				b_fort_gaines_GA = {}
+				b_cuthbert_GA = {}
+				b_blakely_GA = {}
+				b_zetto_GA = {}
+				b_morris_GA = {}
+				b_morgan_GA = {}
+				b_lumpkin_GA = {}
+			}
 		}
 	}
 	k_tuskegee = { #Potential stem duchy, placed here to avoid gaps in de jure map once formed
@@ -612,18 +624,6 @@ e_dixie = {
 				b_haleburg_AL = {}
 				b_louisville_AL = {}
 				b_clio_AL = {}
-			}
-			c_early = {
-				color={ 111 85 52 }
-				color2={ 220 220 0 }
-
-				b_fort_gaines_GA = {}
-				b_cuthbert_GA = {}
-				b_blakely_GA = {}
-				b_zetto_GA = {}
-				b_morris_GA = {}
-				b_morgan_GA = {}
-				b_lumpkin_GA = {}
 			}
 			c_dothan = {
 				color={ 70 77 6 }

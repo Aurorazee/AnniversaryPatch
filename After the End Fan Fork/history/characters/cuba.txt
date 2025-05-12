@@ -1175,16 +1175,7 @@
 	trait=skilled_tactician
 	2605.6.25={birth=yes}
 	2626.1.1={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1898075
 	}
 	2659.8.2={death=yes}
 }
@@ -1290,6 +1281,6 @@
 	trait=ambitious
 	trait=fortune_builder
 	2601.6.15={birth=yes}
-	2625.1.1={add_spouse=1898066}
+	2625.1.1={add_matrilineal_spouse=1898066}
 	2655.5.6={death=yes}
 }

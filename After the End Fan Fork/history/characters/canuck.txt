@@ -369,18 +369,7 @@
 	mother=1886126
 	2643.6.10={birth=yes}
 	2661.5.14={
-		add_spouse=1886012
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-			prestige=250
-		}
+		add_matrilineal_spouse=1886012
 	}
 	2703.7.7={death=yes}
 }
@@ -496,18 +485,7 @@
 	trait=strong
 	2630.11.12={birth=yes}
 	2651.6.19={
-		add_spouse=1886023
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-			prestige=250
-		}
+		add_matrilineal_spouse=1886023
 	}
 	2691.1.1={death=yes}
 }

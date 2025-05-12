@@ -287,7 +287,6 @@ defined_text = {
 			has_wonder_upgrade_flag = is_singular
 			OR = {
 				has_wonder_upgrade = upgrade_moat_water
-				has_wonder_upgrade = upgrade_moat_water
 			}
 		}
 		localisation_key = String_keeps_people_on_their_toes

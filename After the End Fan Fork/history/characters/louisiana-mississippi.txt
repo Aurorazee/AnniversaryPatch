@@ -334,16 +334,7 @@
 	mother=1803021
 	2640.7.19={birth=yes}
 	2662.5.18={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1803023
 	}
 	2698.8.15={death=yes}
 }
@@ -363,7 +354,7 @@
 	trait=envious
 	trait=zealous
 	2645.3.29={birth=yes}
-	2662.5.18={add_spouse=1803022}
+	2662.5.18={add_matrilineal_spouse=1803022}
 	2717.6.26={death=yes}
 }
 
@@ -950,18 +941,6 @@
 		culture=cajun
 		add_claim=k_louisiana
 	}
-	2629.7.31={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2668.11.11={death=yes}
 }
 
@@ -1217,18 +1196,6 @@
 	father=1803057
 	mother=1803059
 	2626.5.30={birth=yes}
-	2648.7.17={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2668.7.27={death=yes}
 }
 
@@ -1349,7 +1316,7 @@
 	trait=brave
 	trait=zealous
 	2612.4.8={birth=yes}
-	2629.7.31={add_spouse=1803050}
+	2629.7.31={add_matrilineal_spouse=1803050}
 	2662.11.8={death=yes}
 }
 
@@ -1475,7 +1442,7 @@
 	trait=chaste
 	trait=cynical
 	2628.10.7={birth=yes}
-	2648.7.17={add_spouse=1803061}
+	2648.7.17={add_matrilineal_spouse=1803061}
 	2686.10.25={death=yes}
 }
 

@@ -331,18 +331,6 @@
 	2623.9.4={birth=yes
 		culture=riverlander
 	}
-	2645.8.16={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2684.9.20={death=yes}
 }
 
@@ -363,7 +351,7 @@
 	2626.2.27={birth=yes
 		culture=riverlander
 	}
-	2645.8.16={add_spouse=1821018}
+	2645.8.16={add_matrilineal_spouse=1821018}
 	2675.4.8={death=yes}
 }
 

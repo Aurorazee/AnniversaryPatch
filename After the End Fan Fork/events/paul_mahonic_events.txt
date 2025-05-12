@@ -110,7 +110,7 @@ character_event = { #something suspicious happening in Boston (Miskatons)
 				}
 			}
 			c_boston = {
-				holder = {
+				owner = {
 					character_event = {
 						id = paul_mahonic.5
 						days = 15
@@ -125,7 +125,6 @@ character_event = { #something suspicious happening in Boston (Miskatons)
 letter_event = { #investigating Boston
 	id = paul_mahonic.4
 	desc = EVTDESC_mahonic4
-	picture = GFX_evt_spymaster
 	#border = GFX_event_normal_frame
 	#Conditions
 	is_triggered_only = yes
@@ -194,7 +193,6 @@ character_event = { #spymaster spotted in Boston
 letter_event = { #report on Boston troops
 	id = paul_mahonic.6
 	desc = EVTDESC_mahonic6
-	picture = GFX_evt_recieve_letter
 	#border = GFX_event_normal_frame
 	#Conditions
 	is_triggered_only = yes
@@ -273,7 +271,7 @@ character_event = { #MAHONIC >:(
 	option = { #War
 		name = EVTOPTA_mahonic9
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -286,7 +284,6 @@ character_event = { #MAHONIC >:(
 letter_event = { #MAHONIC >:(
 	id = paul_mahonic.10
 	desc = EVTDESC_mahonic10
-	picture = GFX_evt_throne_room
 	#border = GFX_event_normal_frame
 	#Conditions
 	is_triggered_only = yes
@@ -294,7 +291,7 @@ letter_event = { #MAHONIC >:(
 	option = { #War
 		name = EVTOPTA_mahonic10
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -318,7 +315,7 @@ character_event = { #Event to attack over troop buildup
 	option = { #War
 		name = EVTOPTA_mahonic11
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -429,7 +426,7 @@ character_event = { #Offer from land-wanting guy noticed
 		}
 		hidden_tooltip = {
 			c_boston = {
-				holder = {
+				owner = {
 					character_event = {
 						id = paul_mahonic.14 #Another offer (saboteur)
 						days = 10
@@ -530,7 +527,7 @@ character_event = { #Evidence used
 	option = { #War
 		name = EVTOPTA_mahonic15
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -588,7 +585,7 @@ character_event = { #Miskaton start- want to get Boston for themselves
 			random_list = {
 				50 = {
 					c_boston = {
-						holder = {
+						owner = {
 							liege = {
 								character_event = {
 									id = paul_mahonic.18 #Claim uncovered
@@ -601,7 +598,7 @@ character_event = { #Miskaton start- want to get Boston for themselves
 				}
 				50 = {
 					c_boston = {
-						holder = {
+						owner = {
 							liege = {
 								character_event = {
 									id = paul_mahonic.19 #Compromising evidence found
@@ -632,7 +629,7 @@ character_event = { #Gets a claim
 		name = EVTOPTA_mahonic18
 		add_claim = c_boston
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -659,7 +656,7 @@ character_event = { #Find compromising evidence
 		name = EVTOPTA_mahonic19
 		hidden_tooltip = {
 			c_boston = {
-				holder = {
+				owner = {
 					any_courtier_or_vassal = {
 						limit = {
 							OR = {
@@ -678,7 +675,7 @@ character_event = { #Find compromising evidence
 							}
 							10 = {
 								c_boston = {
-									holder = {
+									owner = {
 										character_event = {
 											id = paul_mahonic.21 #Leak of compromising evidence
 										}
@@ -721,7 +718,7 @@ character_event = { #Shown compromising evidence
 		}
 		hidden_tooltip = {
 			c_boston = {
-				holder = {
+				owner = {
 					if = {
 						limit = {
 							NOT = { has_character_flag = paul_mahonic_shown_evidence_flag }
@@ -757,7 +754,7 @@ character_event = { #Shown compromising evidence
 		}
 		hidden_tooltip = {
 			c_boston = {
-				holder = {
+				owner = {
 					if = {
 						limit = {
 							NOT = { has_character_flag = paul_mahonic_shown_evidence_flag }
@@ -805,7 +802,7 @@ character_event = { #Demands Boston
 	option = { #Horrible! (war)
 		name = EVTOPTA_mahonic22
 		c_boston = {
-			holder = {
+			owner = {
 				letter_event = {
 					id = paul_mahonic.23
 					days = 1
@@ -818,7 +815,6 @@ character_event = { #Demands Boston
 letter_event = { #(Mahonic) Miskatons demand Boston
 	id = paul_mahonic.23
 	desc = EVTDESC_mahonic23
-	picture = GFX_evt_throne_room
 	#border = GFX_event_normal_frame
 	#Conditions
 	is_triggered_only = yes
@@ -862,7 +858,6 @@ letter_event = { #(Mahonic) Miskatons demand Boston
 letter_event = { #(Miskaton) Mahonic demands independence
 	id = paul_mahonic.24
 	desc = EVTDESC_mahonic24
-	picture = GFX_evt_throne_room
 	#border = GFX_event_normal_frame
 	#Conditions
 	is_triggered_only = yes
@@ -873,7 +868,7 @@ letter_event = { #(Miskaton) Mahonic demands independence
 			factor = 90
 		}
 		c_boston = {
-			holder = {
+			owner = {
 				war = {
 					target = liege
 					casus_belli = bid_for_independence
@@ -893,7 +888,7 @@ letter_event = { #(Miskaton) Mahonic demands independence
 			factor = 10
 		}
 		c_boston = {
-			holder = {
+			owner = {
 				set_defacto_liege = THIS
 			}
 		}
@@ -924,7 +919,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 800 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -941,7 +936,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 700 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -958,7 +953,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 600 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -975,7 +970,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 500 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -992,7 +987,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 400 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -1009,7 +1004,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 300 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -1026,7 +1021,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 200 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -1043,7 +1038,7 @@ character_event = { #Mahonic event troops
 				is_variable_equal = { which = paul_mahonic_troops_var value = 100 }
 			}
 			spawn_unit = {
-				character = ROOT
+				owner = THIS
 				province = c_boston
 				home = c_boston
 				troops = {
@@ -1057,7 +1052,7 @@ character_event = { #Mahonic event troops
 		}
 		#else = {
 		#	spawn_unit = {
-		#		character = ROOT
+		#		owner = THIS
 		#		province = c_boston
 		#		home = c_boston
 		#		troops = {
@@ -1092,7 +1087,7 @@ character_event = { #Mahonic event troops
 #				has_character_flag = paul_mahonic_accepted_guy
 #			}
 #			spawn_unit = {
-#				character = ROOT
+#				owner = THIS
 #				province = c_boston
 #				home = c_boston
 #				troops = {
@@ -1106,7 +1101,7 @@ character_event = { #Mahonic event troops
 #		}
 #		else = {
 #			spawn_unit = {
-#				character = ROOT
+#				owner = THIS
 #				province = c_boston
 #				home = c_boston
 #				troops = {

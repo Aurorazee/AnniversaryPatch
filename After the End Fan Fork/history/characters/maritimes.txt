@@ -236,20 +236,9 @@
 	learning=4
 	trait=grey_eminence
 	trait=broad_anglican
-	2609.1.1={birth=yes
+	2609.1.1={
+		birth=yes
 		prestige=100
-	}
-	2627.6.9={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
 	}
 	2674.11.26={death=yes}
 }
@@ -269,7 +258,7 @@
 	trait=trusting
 	trait=low_anglican
 	2610.5.30={birth=yes}
-	2627.6.9={add_spouse=1899010}
+	2627.6.9={add_matrilineal_spouse=1899010}
 	2671.7.13={death=yes}
 }
 
@@ -793,18 +782,6 @@
 	trait=stubborn
 	trait=thrifty_clerk
 	2641.3.1={birth=yes}
-	2662.1.1={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2700.1.1={death=yes}
 }
 
@@ -855,18 +832,7 @@
 	trait=charitable
 	2643.2.14={birth=yes}
 	2659.8.26={
-		add_spouse=1899042
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-			prestige=250
-		}
+		add_matrilineal_spouse=1899042
 	}
 	2710.4.11={death=yes}
 }
@@ -1145,18 +1111,6 @@
 	trait=proud
 	give_nickname=nick_the_fearless
 	2503.1.1={birth=yes}
-	2525.1.1={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2575.1.1={death=yes}
 }
 1899062={
@@ -1199,7 +1153,7 @@
 	culture=maritimer
 	religion=high_church
 	2639.1.1={birth=yes}
-	2661.1.1={add_spouse=1899035}
+	2661.1.1={add_matrilineal_spouse=1899035}
 	2700.1.2={death=yes}
 }
 1899065={
@@ -1827,7 +1781,7 @@
 	trait=brave
 	trait=scarred
 	2490.1.1={birth=yes}
-	2525.1.1={add_spouse=1899061}
+	2525.1.1={add_matrilineal_spouse=1899061}
 	2550.1.1={death=yes}
 }
 1899123={

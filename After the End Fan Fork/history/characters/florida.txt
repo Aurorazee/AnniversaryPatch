@@ -1190,18 +1190,6 @@
 	father=3000031
 	mother=3000030
 	2648.5.2={birth=yes}
-	2665.1.1={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2698.3.19={death=yes}
 }
 
@@ -1221,7 +1209,7 @@
 	trait=greedy
 	mother=1513070
 	2650.8.4={birth=yes}
-	2669.12.20={add_spouse=3000038}
+	2669.12.20={add_matrilineal_spouse=3000038}
 	2698.1.21={death=yes}
 }
 

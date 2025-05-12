@@ -226,8 +226,8 @@ send_duel_result_event_mexican_effect = { # Runs via the attacker/combatant_1
 				set_character_flag = injury_kills
 			}
 
-			character_event = { id = HFP.10101 } #double death event (attacker)
-			event_target:combatant_2 = { character_event = { id = HFP.10102 days = 1 } } #double death event (defender)
+			character_event = { id = HFP.16009 } #double death event (attacker)
+			event_target:combatant_2 = { character_event = { id = HFP.16010 days = 1 } } #double death event (defender)
 		}
 
 		1 = { #LETHAL for attacker...

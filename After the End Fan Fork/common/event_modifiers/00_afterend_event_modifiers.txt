@@ -2335,7 +2335,16 @@ cristero_raised_peasants={
 	monthly_character_prestige = -0.1
 	icon = 13
 }
+destape_cooldown = {
+	icon = 1
+}
+holding_destape_ceremony = {
+	icon = 1
+}
 expelled_rangers = {
 	global_revolt_risk = 0.02
 	icon = 31
+}
+donated_to_ivy_league = {
+	icon = 97
 }

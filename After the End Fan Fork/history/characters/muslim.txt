@@ -517,7 +517,7 @@
 }
 
 2200027={
-	name="Sophia" #Countess of Joshua
+	name="Sofia" #Countess of Joshua
 	dynasty=1850068 #Hayek
 	father=2500066
 	female=yes
@@ -543,6 +543,7 @@
 		effect={
 			set_character_flag=diversity
 			set_character_flag=physique
+			add_trait = no_marriage #For the Zak marriage event
 		}
 	}
 	2690.11.7={death=yes}
@@ -2994,18 +2995,6 @@
 	2487.7.2={birth=yes
 		culture=valleyan
 	}
-	2510.6.21={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2561.2.14={employer=1845035}
 	2563.2.14={death=yes}
 }
@@ -3045,7 +3034,7 @@
 	father=1845000
 	mother=1845001
 	2520.7.2={birth=yes}
-	2550.6.21={add_spouse=2500105}
+	2550.6.21={add_matrilineal_spouse=2500105}
 	2583.2.14={death=yes}
 }
 2500104={
@@ -3063,7 +3052,7 @@
 	disallow_random_traits=yes
 	father=2200011
 	2485.7.2={birth=yes}
-	2510.6.21={add_spouse=2500101}
+	2510.6.21={add_matrilineal_spouse=2500101}
 	2573.2.14={death=yes}
 	
 }
@@ -3083,18 +3072,6 @@
 	mother=2500101
 	2520.7.2={birth=yes
 		culture=valleyan
-	}
-	2538.6.21={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
 	}
 	2583.2.14={death=yes}
 }
@@ -3724,18 +3701,6 @@ name="Elfie"
 	father=2500143
 	mother=2500128
 	2391.1.1={birth=yes}
-	2420.6.21={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2459.1.1={death=yes}
 }
 2500145={
@@ -3751,7 +3716,7 @@ name="Elfie"
 	trait=gregarious
 	trait=just
 	2391.1.1={birth=yes}
-	2420.6.21={add_spouse=2500144}
+	2420.6.21={add_matrilineal_spouse=2500144}
 	2459.1.1={death=yes} #blocking out numbers 45-55 for linking to current TJ lord
 }
 2500155={

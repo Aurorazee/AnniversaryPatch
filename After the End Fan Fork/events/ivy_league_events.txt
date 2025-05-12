@@ -56,22 +56,77 @@ character_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 5
+		months = 30
 	}
 	
 	# Give them money
 	option = { 
-		name = EVTOPTA_faculty_142		
-		FROM = {
-			character_event = {
-				id = faculty.501
-			}		
-		}
+		name = EVTOPTA_faculty_142	
+		wealth = -150
 		hidden_tooltip = {
 			add_character_modifier = {
 				name = decided_on_uni_contribution
 				hidden = yes
 				duration = 2000
+			}
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.498
+				}
 			}
 		}
 		ai_chance = {
@@ -91,28 +146,79 @@ character_event = {
 			}
 			modifier = {
 				factor = 50
-				opinion = { who = ROOT value = 70 }
 			}
 			modifier = {
 				factor = 150
-				opinion = { who = ROOT value = 90 }
 			}
 		}
-		wealth = -150
 	}
 	# Nope
 	option = {
-		name = EVTOPTB_faculty_142		
-		FROMFROM = {
-			character_event = {
-				id = faculty.500
-			}
-		}
+		name = EVTOPTB_faculty_142
 		hidden_tooltip = {
 			add_character_modifier = {
 				name = decided_on_uni_contribution
 				hidden = yes
 				duration = 2000
+			}
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.499
+				}
 			}
 		}
 		ai_chance = {
@@ -363,8 +469,66 @@ character_event = {
 	option = {
 		name = EVTOPTD_faculty_162		
 		prestige = -100
-		character_event = {
-				id = faculty.500
+		hidden_tooltip = {
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.499
+				}
+			}
 		}
 		ROOT = {
 			set_variable = { which = projectprogress value = 0 }
@@ -457,8 +621,66 @@ character_event = {
 	option = {
 		name = EVTOPTD_faculty_163		
 		prestige = -100
-		character_event = {
-			id = faculty.500
+		hidden_tooltip = {
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.499
+				}
+			}
 		}
 		ROOT = {
 			set_variable = { which = projectprogress value = 0 }
@@ -581,8 +803,66 @@ character_event = {
 		trigger = {
 			check_variable = { which = projectprogress value = 9}
 		}
-		character_event = {
-			id = faculty.501
+		hidden_tooltip = {
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.498
+				}
+			}
 		}
 		prestige = 500
 		# Increased rewards
@@ -599,8 +879,66 @@ character_event = {
 			NOT = {	check_variable = { which = projectprogress value = 9} }
 			check_variable = { which = projectprogress value = 6}
 		}
-		character_event = {
-			id = faculty.501
+		hidden_tooltip = {
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.498
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.498
+				}
+			}
 		}
 		# Increased rewards
 		change_society_currency = 100 #reward	
@@ -622,8 +960,66 @@ character_event = {
 		ROOT = {
 			set_variable = { which = projectprogress value = 0 }
 		}
-		character_event = {
-			id = faculty.500
+		hidden_tooltip = {
+			if = { #If YOU are the leader of the society, find someone random...
+				limit = {
+					is_society_grandmaster = yes
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}
+			}
+			else_if = { #Else, find the leader (provided they are available)...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						is_society_grandmaster = yes
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else_if = { #If not, find someone who is...
+				limit = {
+					any_society_member = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+				}
+				random_society_member = {
+					limit = {
+						same_society_as = ROOT
+						NOT = { character = ROOT }
+						block_general_event_trigger = no
+					}
+					character_event = {
+						id = faculty.499
+					}
+				}		
+			}
+			else = { #Else, send it to yourself ...
+				character_event = {
+					id = faculty.499
+				}
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -631,19 +1027,173 @@ character_event = {
 	}
 }
 
-# General quest failure 
+#Grandmaster Ping Succeed (for FROM purposes)
 character_event = {
-	id = faculty.500
+	id = faculty.498
 	is_triggered_only = yes
 	hide_window = yes
 	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					has_quest = quest_faculty_quest_1
+				}
+			}
+			FROM = {
+				letter_event = { id = faculty.500 }
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_quest = quest_faculty_quest_2
+				}
+			}
+			FROM = {
+				letter_event = { id = faculty.502 }
+			}
+		}
+	}
+}
+
+#Grandmaster Ping Fail (for FROM purposes)
+character_event = {
+	id = faculty.499
+	is_triggered_only = yes
+	hide_window = yes
+	immediate = {
+		if = {
+			limit = {
+				FROM = {
+					has_quest = quest_faculty_quest_1
+				}
+			}
+			FROM = {
+				letter_event = { id = faculty.501 }
+			}
+		}
+		else_if = {
+			limit = {
+				FROM = {
+					has_quest = quest_faculty_quest_2
+				}
+			}
+			FROM = {
+				letter_event = { id = faculty.503 }
+			}
+		}	
+	}
+}
+
+# Donation quest success
+letter_event = {
+	id = faculty.500
+	desc = {
+		trigger = { FROM = { NOT = { character = ROOT } } }
+		text = EVTDESC_faculty_500
+	}
+	desc = {
+		trigger = { FROM = { character = ROOT } } #Added in case everyone is in prison or something...!
+		text = EVTDESC_faculty_500_fallback
+	}
+	is_triggered_only = yes
+	immediate = {
+		add_mission_succeed_influence_effect = yes #quest add society influence
+		change_society_currency = 200 #reward	
+		clr_quest = { 
+			id = quest_faculty_quest_1 #remove the quest
+			failure = no
+		}
+		clr_character_flag = donated_to_ivy_league
+		log = "[Root.GetBestName] succeeded in their mission for the Ivy League."
+		add_character_modifier = { #will delay the next quest for a while
+			name = quest_cooldown_timer
+			hidden = yes
+			days = 800
+		}
+	}
+	option = {
+		text = EVTOPTA_faculty_500
+	}
+}
+
+# Donation quest failure 
+letter_event = {
+	id = faculty.501
+	desc = {
+		trigger = { FROM = { NOT = { character = ROOT } } }
+		text = EVTDESC_faculty_501
+	}
+	desc = {
+		trigger = { FROM = { character = ROOT } } #Added in case everyone is in prison or something...!
+		text = EVTDESC_faculty_501_fallback
+	}
+	is_triggered_only = yes
+	immediate = {
 		add_mission_fail_influence_effect = yes #quest remove society influence
 		change_society_currency = -100 #penalty
-		
 		clr_quest = { 
 			id = quest_faculty_quest_1 #remove the quest
 			failure = yes	
 		}
+		log = " [Root.GetBestName] failed in their mission for the Ivy League."
+		add_character_modifier = { #will delay the next quest for a while
+			name = quest_cooldown_timer
+			hidden = yes
+			days = 1000
+		}		
+	}
+	option = {
+		text = EVTOPTA_faculty_501
+	}
+}
+
+# Library quest success
+letter_event = {
+	id = faculty.502
+	desc = {
+		trigger = { FROM = { NOT = { character = ROOT } } }
+		text = EVTDESC_faculty_502
+	}
+	desc = {
+		trigger = { FROM = { character = ROOT } } #Added in case everyone is in prison or something...!
+		text = EVTDESC_faculty_502_fallback
+	}
+	is_triggered_only = yes
+	immediate = {
+		add_mission_succeed_influence_effect = yes #quest add society influence
+		change_society_currency = 200 #reward	
+		clr_quest = { 
+			id = quest_faculty_quest_2 #remove the quest
+			failure = no
+		}
+		log = "[Root.GetBestName] succeeded in their mission for the Ivy League."
+		add_character_modifier = { #will delay the next quest for a while
+			name = quest_cooldown_timer
+			hidden = yes
+			days = 800
+		}
+	}
+	option = {
+		text = EVTOPTA_faculty_502
+	}
+}
+
+# Library quest failure 
+letter_event = {
+	id = faculty.503
+	desc = {
+		trigger = { FROM = { NOT = { character = ROOT } } }
+		text = EVTDESC_faculty_503
+	}
+	desc = {
+		trigger = { FROM = { character = ROOT } } #Added in case everyone is in prison or something...!
+		text = EVTDESC_faculty_503_fallback
+	}
+	is_triggered_only = yes
+	immediate = {
+		add_mission_fail_influence_effect = yes #quest remove society influence
+		change_society_currency = -100 #penalty
 		clr_quest = { 
 			id = quest_faculty_quest_2 #remove the quest
 			failure = yes	
@@ -655,29 +1205,7 @@ character_event = {
 			days = 1000
 		}		
 	}
-}
-
-# General quest success 
-character_event = {
-	id = faculty.501
-	hide_window = yes
-	is_triggered_only = yes
-	immediate = {
-		add_mission_succeed_influence_effect = yes #quest add society influence
-		change_society_currency = 200 #reward	
-		clr_quest = { 
-			id = quest_faculty_quest_1 #remove the quest
-			failure = no
-		}
-		clr_quest = { 
-			id = quest_faculty_quest_2 #remove the quest
-			failure = no
-		}
-		log = "[Root.GetBestName] succeeded in their mission for the Ivy League."
-		add_character_modifier = { #will delay the next quest for a while
-			name = quest_cooldown_timer
-			hidden = yes
-			days = 800
-		}
+	option = {
+		text = EVTOPTA_faculty_503
 	}
 }

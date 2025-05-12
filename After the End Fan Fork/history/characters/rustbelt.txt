@@ -604,7 +604,7 @@
 	trait=wroth
 	trait=lustful
 	2635.1.1={birth=yes}
-	2651.5.19={add_spouse=1967034}
+	2651.5.19={add_matrilineal_spouse=1967034}
 	2677.12.29={death=yes}
 }
 
@@ -626,18 +626,6 @@
 	trait=patient
 	trait=temperate
 	2632.4.3={birth=yes}
-	2651.5.19={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2686.4.21={death=yes}
 }
 
@@ -963,18 +951,6 @@
 	father=1967048
 	mother=1967047
 	2613.8.28={birth=yes}
-	2633.2.7={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2667.12.1={death=yes}
 }
 
@@ -997,7 +973,7 @@
 	trait=cruel
 	trait=just
 	2613.10.6={birth=yes}
-	2633.2.7={add_spouse=1967049}
+	2633.2.7={add_matrilineal_spouse=1967049}
 	2657.9.15={death=yes}
 }
 

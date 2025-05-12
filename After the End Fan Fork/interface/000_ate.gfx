@@ -1675,7 +1675,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_failed_exam_abdicate"
-		texturefile = "gfx/interface/writing2.dds"
+		texturefile = "gfx\\interface\\writing2.dds"
 	}
 	spriteType = {
 		name = "GFX_claim_realm_exam"
@@ -5569,5 +5569,13 @@ spriteTypes = {
 		noOfFrames = 1
 		norefcount = yes
 		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_american_renaissance"
+		texturefile = "gfx/interface/form_the_usa.dds"
+	}
+	spriteType = {
+		name = "GFX_donate_to_ivy_league"
+		texturefile = "gfx/interface/decision_icon_borrow_money.dds"
 	}
 }

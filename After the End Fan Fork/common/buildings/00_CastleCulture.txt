@@ -906,6 +906,7 @@ castle = {
 				culture = tuskegean
 				culture = southron
 				culture = yanquito
+				culture = american
 				has_building = ca_culture_dixie_1
 			}
 		}
@@ -916,6 +917,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		} 
@@ -927,6 +929,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		}
@@ -947,6 +950,7 @@ castle = {
 				culture = tuskegean
 				culture = southron
 				culture = yanquito
+				culture = american
 				has_building = ca_culture_dixie_1
 				has_building = ca_culture_dixie_2
 			}
@@ -958,6 +962,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		} 
@@ -969,6 +974,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		}
@@ -989,6 +995,7 @@ castle = {
 				culture = tuskegean
 				culture = southron
 				culture = yanquito
+				culture = american
 				has_building = ca_culture_dixie_1
 				has_building = ca_culture_dixie_2
 				has_building = ca_culture_dixie_3
@@ -1001,6 +1008,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		} 
@@ -1012,6 +1020,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		}
@@ -1032,6 +1041,7 @@ castle = {
 				culture = tuskegean
 				culture = southron
 				culture = yanquito
+				culture = american
 				has_building = ca_culture_dixie_1
 				has_building = ca_culture_dixie_2
 				has_building = ca_culture_dixie_3
@@ -1045,6 +1055,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		} 
@@ -1056,6 +1067,7 @@ castle = {
 					culture = tuskegean
 					culture = southron
 					culture = yanquito
+					culture = american
 				}
 			}
 		}
@@ -1528,6 +1540,7 @@ castle = {
 			OR = {
 				culture = delawarean
 				culture = beltway
+				culture = american
 				has_building = ca_culture_delawarean_1
 			}
 		}
@@ -1536,6 +1549,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1545,6 +1559,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1564,6 +1579,7 @@ castle = {
 			OR = {
 				culture = delawarean
 				culture = beltway
+				culture = american
 				has_building = ca_culture_delawarean_1
 				has_building = ca_culture_delawarean_2
 			}
@@ -1573,6 +1589,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1582,6 +1599,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1601,6 +1619,7 @@ castle = {
 			OR = {
 				culture = delawarean
 				culture = beltway
+				culture = american
 				has_building = ca_culture_delawarean_1
 				has_building = ca_culture_delawarean_2
 				has_building = ca_culture_delawarean_3
@@ -1611,6 +1630,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1620,6 +1640,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1639,6 +1660,7 @@ castle = {
 			OR = {
 				culture = delawarean
 				culture = beltway
+				culture = american
 				has_building = ca_culture_delawarean_1
 				has_building = ca_culture_delawarean_2
 				has_building = ca_culture_delawarean_3
@@ -1650,6 +1672,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}
@@ -1659,6 +1682,7 @@ castle = {
 				OR = {
 					culture = delawarean
 					culture = beltway
+					culture = american
 				}
 			}
 		}

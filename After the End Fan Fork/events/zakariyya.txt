@@ -1,8 +1,9 @@
 namespace = zakariyya
 
+#Carmine Investigation
 narrative_event = {
 	id = zakariyya.1
-	title= EVTTITLE_zkinvestigate
+	title = EVTTITLE_zkinvestigate
 	desc = "EVTDESC_zakariyya1"
 	picture = GFX_evt_open_book_hf
 	border = GFX_event_narrative_frame_religion
@@ -25,7 +26,38 @@ narrative_event = {
 		clr_character_flag = zakariyya
 		set_character_flag = zakariyya2
 		hidden_tooltip = {
-			character_event = { id = zakariyya.2 days = 1 }
+			character_event = { id = zakariyya.2 days = 10 random = 10 }
+			add_trait = no_marriage
+			if = {
+				limit = {
+					c_2200027 = {
+						ai = no
+					}
+				}
+				c_2200027 = {
+					remove_trait = no_marriage
+				}
+			}
+			if = {
+				limit = {
+					c_2200028 = {
+						ai = yes
+					}
+				}
+				c_2200028 = {
+					add_trait = no_marriage
+				}
+			}
+			if = {
+				limit = {
+					c_2200029 = {
+						ai = yes
+					}
+				}
+				c_2200029 = {
+					add_trait = no_marriage
+				}
+			}
 		}
 		ai_chance = { factor = 10 }
 	
@@ -43,6 +75,7 @@ narrative_event = {
 	}
 }
 
+#Anti-Carmine Marriage Alliance
 character_event = {
 	id = zakariyya.2
 	desc = "EVTDESC_zakariyya2"
@@ -53,15 +86,53 @@ character_event = {
 	option = {
 		name = "EVTOPT_zkmarry"
 		hidden_tooltip = {
-			character_event = { id = zakariyya.3 days = 1 }
+			c_2200028 = {
+				save_event_target_as = christina_baja
+			}
+			c_2200027 = {
+				save_event_target_as = sofia_joshua_tree
+			}
+			c_2200029 = {
+				save_event_target_as = shirin_baker
+			}
+			if = {
+				limit = {
+					c_2200028 = {
+						is_married = no
+					}
+				}
+				character_event = { id = zakariyya.3 days = 30 random = 60 }
+			}
+			else_if = {
+				limit = {
+					c_2200027 = {
+						is_married = no
+					}
+				}
+				character_event = { id = zakariyya.4 days = 30 random = 60 }
+			}
+			else_if = {
+				limit = {
+					c_2200029 = {
+						is_alive = yes
+						is_married = no
+					}
+				}
+				character_event = { id = zakariyya.5 days = 30 random = 60 }
+			}
+			else = {
+				character_event = { id = zakariyya.6 days = 20 random = 10 }
+			}
 		}	
 	}
 }
 
+#Christina, Princess of Baja
 narrative_event = {
 	id = zakariyya.3
-	title= EVTTITLE_zkbajaprincess
+	title = EVTTITLE_zkbajaprincess
 	desc = "EVTDESC_zakariyya3"
+	portrait = event_target:christina_baja
 	picture = GFX_evt_diplomat_hf
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -69,15 +140,39 @@ narrative_event = {
 	option = {
 		name = "EVTOPT_zkmarry1"
 		hidden_tooltip = {
-			character_event = { id = zakariyya.4 days = 1 }
+			if = {
+				limit = {
+					c_2200027 = {
+						is_married = no
+					}
+				}
+				c_2200027 = {
+					save_event_target_as = sofia_joshua_tree
+				}
+				character_event = { id = zakariyya.4 days = 30 random = 10 }
+			}
+			else_if = {
+				limit = {
+					c_2200029 = {
+						is_alive = yes
+						is_married = no
+					}
+				}
+				character_event = { id = zakariyya.5 days = 10 random = 5 }
+			}
+			else = {
+				character_event = { id = zakariyya.6 days = 20 random = 10 }
+			}
 		}	
 	}
 }
 
+#Sofia, Countess of Joshua Tree
 narrative_event = {
 	id = zakariyya.4
-	title= EVTTITLE_zkjoshuatree
+	title = EVTTITLE_zkjoshuatree
 	desc = "EVTDESC_zakariyya4"
+	portrait = event_target:sofia_joshua_tree
 	picture = GFX_evt_meeting_hf
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -88,15 +183,28 @@ narrative_event = {
 		}
 		name = "EVTOPT_zkmarry2"
 		hidden_tooltip = {
-			character_event = { id = zakariyya.5 days = 1 }
+			if = {
+				limit = {
+					c_2200029 = {
+						is_alive = yes
+						is_married = no
+					}
+				}
+				character_event = { id = zakariyya.5 days = 30 random = 60 }
+			}
+			else = {
+				character_event = { id = zakariyya.6 days = 20 random = 10 }
+			}
 		}	
 	}
 }
 
+#Shirin, the Baker's Daughter
 narrative_event = {
 	id = zakariyya.5
 	title= EVTTITLE_zkpeasant
 	desc = "EVTDESC_zakariyya5"
+	portrait = event_target:shirin_baker
 	picture = GFX_evt_princess_byzantine
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -112,9 +220,6 @@ narrative_event = {
 		hidden_tooltip = {
 			character_event = { id = zakariyya.6 days = 1 }
 			remove_trait = flowered
-			liege = {
-				character_event = { id = zakariyya.23 days = 5 } #Carmine Event- we should be golden.
-			} #idk about that one chief
 		}	
 	}
 	
@@ -129,40 +234,88 @@ narrative_event = {
 		hidden_tooltip = {
 			character_event = { id = zakariyya.6 days = 1 }
 			remove_trait = flowered
-			liege = {
-				character_event = { id = zakariyya.23 days = 5 } #Carmine Event- we should be golden.
-			} #idk about that one chief
 		}	
 	}
 }
 
+#The Marriage Choice
 character_event = {
 	id = zakariyya.6
-	desc = "EVTDESC_zakariyya6"
+	hide_from = yes
+	desc = {
+		trigger = {
+			AND = {
+				c_2200027 = {
+					is_alive = yes
+					is_married = no
+				}
+				c_2200028 = {
+					is_alive = yes
+					is_married = no
+				}
+				c_2200029 = {
+					is_alive = yes
+					is_married = no
+				}
+			}
+		}
+		text = EVTDESC_zakariyya6
+	}
+	desc = {
+		trigger = {
+			NAND = {
+				c_2200027 = {
+					is_alive = yes
+					is_married = no
+				}
+				c_2200028 = {
+					is_alive = yes
+					is_married = no
+				}
+				c_2200029 = {
+					is_alive = yes
+					is_married = no
+				}
+			}
+		}
+		text = EVTDESC_zakariyya6_B
+	}
 	picture = GFX_evt_throne_room_arabic
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	is_triggered_only = yes
+	immediate = {
+		remove_trait = no_marriage
+	}
 	option = {
-		name = "EVTOPT_zkmarrybaja" # Marry the Princess of Baja
+		name = "EVTOPT_zkmarrybaja" #Marry the Princess of Baja
+		show_portrait = event_target:christina_baja
+		trigger = {
+			c_2200028 = {
+				is_alive = yes
+				is_married = no
+			}
+		}
+		
 		set_character_flag = bajamarriage
 		k_baja_california = {
-			holder_scope = {
-				any_sibling = {
-					limit = {
-						is_female = yes
-						is_married = no
-					}
-					add_spouse = ROOT
-				}
-				add_alliance = { who = ROOT years = 15 }
-			}
+			add_alliance = { who = ROOT years = 15 }
+		}
+		c_2200028 = {
+			add_spouse = ROOT
 		}
 		ai_chance = { factor = 1 }
 	}
 	option = {
 		name = "EVTOPT_zkmarryscholar" # Marry the Countess of Joshua Tree
+		show_portrait = event_target:sofia_joshua_tree
 		set_character_flag = joshuatreemarriage
+		trigger = {
+			c_2200027 = {
+				is_alive = yes
+				is_married = no
+			}
+		}
 
 		c_joshua_tree = {
 			holder_scope = {
@@ -174,16 +327,123 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPT_zkmarrypeasant" # Marry your Peasant Childhood Friend
-		any_realm_character = {
-			limit = {
-				has_character_flag = peasant_girl
+		show_portrait = event_target:shirin_baker
+		trigger = {
+			c_2200029 = {
+				is_alive = yes
+				is_married = no
 			}
+		}
+		c_2200029 = {
 			add_spouse = ROOT
 		}
 		ai_chance = { factor = 1 }	
 	}
+	option = {
+		name = EVTOPT_zkmarrynoble #Marry noblewoman (back up option)
+		wealth = 500
+		create_character = {
+			random_traits = yes
+			religion = cetic
+			culture = angeleno
+			dynasty = actually_culture
+			female = yes
+			age = 23
+		}
+		new_character = {
+			character_event = { id = misc.3 } # Diversity
+			character_event = { id = misc.4 } # Physique
+			remove_trait = slow
+			remove_trait = imbecile
+			remove_trait = distractible
+			remove_trait = dull
+			remove_trait = mystic
+			remove_trait = socializer
+			remove_trait = gamer
+			remove_trait = hedonist
+			remove_trait = duelist
+			remove_trait = hunter
+			remove_trait = strategist
+			remove_trait = administrator
+			remove_trait = architect
+			remove_trait = gardener
+			remove_trait = schemer
+			remove_trait = impaler
+			remove_trait = seducer
+			remove_trait = seductress
+			remove_trait = theologian
+			remove_trait = scholar
+			add_trait = quick
+			add_spouse = ROOT
+			random_list = { # Flavor Randomization
+				35 = { 
+					# Nothing
+				}
+				25 = {
+					change_stewardship = 2
+				}
+				10 = {
+					add_trait = gardener
+				}
+				10 = {
+					add_trait = architect
+				}
+				10 = {
+					add_trait = administrator
+				}
+				10 = {
+					change_stewardship = 4
+				}
+				5 = {
+					change_stewardship = 6
+				}
+				5 = {
+					add_trait = shrewd
+				}
+			}
+		}
+		ai_chance = { factor = 0 }
+	}
+	after = {
+		hidden_tooltip = {
+			if = {
+				limit = {
+					liege = {
+						character = 1910151
+					}
+				}
+				liege = {
+					character_event = { id = zakariyya.23 days = 5 } #Carmine Event
+				}
+			}
+			else = {
+				letter_event = { id = zakariyya.46 days = 1 }
+			}
+			c_2200027 = {
+				remove_trait = no_marriage
+			}
+			c_2200028 = {
+				remove_trait = no_marriage
+			}
+			c_2200029 = {
+				remove_trait = no_marriage
+			}
+		}
+	}
 }
 
+#Failsafe if Carmine dies during the marriage event life
+letter_event = {
+	id = zakariyya.46
+	desc = "EVTDESC_zakariyya46"
+	is_triggered_only = yes
+	
+	option = {
+		name = EVTOPTA_zakariyya46
+	}
+}
+
+#Investigation Start
 character_event = {
 	id = zakariyya.7
 	desc = "EVTDESC_zakariyya7"
@@ -195,7 +455,7 @@ character_event = {
 	option = {
 		name = "EVTOPT_ZKCourtierHunt"
 		hidden_tooltip = {
-			character_event = { id = zakariyya.8 days = 30 }
+			character_event = { id = zakariyya.8 days = 20 random = 10 }
 			e_california = {
 				holder_scope = {
 					character_event = { id = zakariyya.41 days = 5 }
@@ -205,6 +465,7 @@ character_event = {
 	}
 }
 
+#Investigation Results
 character_event = {
 	id = zakariyya.8
 
@@ -214,13 +475,14 @@ character_event = {
 
 	immediate = {
 		random_list = {
-			50 = { character_event = { id = zakariyya.9 } }
-			25 = { character_event = { id = zakariyya.10 } }
-			25 = { character_event = { id = zakariyya.11 } }
+			50 = { character_event = { id = zakariyya.9 } } #Investigation - Messengers Have Not Returned
+			25 = { character_event = { id = zakariyya.10 } } #Investigation - Messengers Succeed: True Witness
+			25 = { character_event = { id = zakariyya.11 } } #Investigation - Messengers Succeed: Carmine Spy
 		}
 	}
 }
 
+#Investigation - Messengers Have Not Returned
 character_event = {
 	id = zakariyya.9
 	desc = "EVTDESC_zakariyya9"
@@ -242,6 +504,7 @@ character_event = {
 	}
 }
 
+#Investigation - Messengers Succeed: True Witness
 character_event = {
 	id = zakariyya.10
 	desc = "EVTDESC_zakariyya10"
@@ -276,6 +539,7 @@ character_event = {
 	}
 }
 
+#Investigation - Messengers Succeed: Carmine Spy
 character_event = {
 	id = zakariyya.11
 	desc = "EVTDESC_zakariyya10"
@@ -309,9 +573,11 @@ character_event = {
 	}
 }
 
+#Investigation - Trust or Condemn True Witness
 character_event = {
 	id = zakariyya.12
 	desc = "EVTDESC_zakariyya12"
+	portrait = event_target:true_witness
 	picture = GFX_evt_bad_news
 	border = GFX_event_normal_frame_religion
 	prisoner = no
@@ -332,10 +598,12 @@ character_event = {
 	}
 }
 
+#Investigation - True Witness Trusted
 narrative_event = {
 	id = zakariyya.13
-	title= EVTTITLE_zktrustedwitness
+	title = EVTTITLE_zktrustedwitness
 	desc = "EVTDESC_zakariyya13"
+	portrait = event_target:true_witness
 	picture = GFX_evt_sway_hf
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -348,10 +616,12 @@ narrative_event = {
 	}
 }
 
+#Investigation - True Witness Condemned
 narrative_event = {
 	id = zakariyya.14
-	title= EVTTITLE_zkcondemnedwitness
+	title = EVTTITLE_zkcondemnedwitness
 	desc = "EVTDESC_zakariyya14"
+	portrait = event_target:true_witness
 	picture = GFX_evt_dead_body_hf
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -365,9 +635,11 @@ narrative_event = {
 	}
 }
 
+#Investigation - Trust or Condemn Carmine Spy
 character_event = {
 	id = zakariyya.15
 	desc = "EVTDESC_zakariyya12"
+	portrait = event_target:carmine_spy
 	picture = GFX_evt_bad_news
 	border = GFX_event_normal_frame_religion
 	prisoner = no
@@ -388,10 +660,12 @@ character_event = {
 	}
 }
 
+#Carmine Spy Trusted
 narrative_event = {
 	id = zakariyya.16
-	title= EVTTITLE_zktrustedspy
+	title = EVTTITLE_zktrustedspy
 	desc = "EVTDESC_zakariyya16"
+	portrait = event_target:carmine_spy
 	picture = GFX_evt_cornered_duel_hf
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -405,10 +679,12 @@ narrative_event = {
 	}
 }
 
+#Carmine Spy Condemned
 narrative_event = {
 	id = zakariyya.17
-	title= EVTTITLE_zkcondemnedspy
+	title = EVTTITLE_zkcondemnedspy
 	desc = "EVTDESC_zakariyya17"
+	portrait = event_target:carmine_spy
 	picture = GFX_evt_assassination
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -424,6 +700,7 @@ narrative_event = {
 	}
 }
 
+#Carmine Plot Revealed
 character_event = {
 	id = zakariyya.18
 	desc = "EVTDESC_zakariyya18"
@@ -438,6 +715,12 @@ character_event = {
 	}
 	option = {
 		name = "EVTOPT_zkwar"
+		trigger = {
+			OR = {
+				ai = no
+				war = no
+			}
+		}
 		if = {
 			limit = {
 				has_character_flag = joshuatreemarriage
@@ -467,16 +750,18 @@ character_event = {
 		hidden_tooltip = {
 			e_california = {
 				holder_scope = {
-					character_event = { id = zakariyya.43 }
+					character_event = { id = zakariyya.42 }
 				}
 			}
 		}
 	}
 }
 
+#Zakariyya Revenge on Carmine
 character_event = {
 	id = zakariyya.20
 	desc = "EVTDESC_zakariyya20"
+	portrait = event_target:carmine_revenge_target
 	picture = GFX_evt_melee_arabic
 	border = GFX_event_normal_frame_religion
 
@@ -485,21 +770,47 @@ character_event = {
 
 	trigger = {
 		has_landed_title = k_socal
+		any_realm_character = {
+			is_landed = yes
+			dynasty = 1850066
+		}
 	}
 	mean_time_to_happen = {
 		days = 10
-	}	
+	}
+
+	immediate = {
+		if = {
+			limit = {
+				c_1910151 = {
+					is_alive = yes
+					OR = {
+						at_location = ROOT
+						is_vassal_or_below_of = ROOT
+					}
+				}
+			}
+			c_1910151 = {
+				save_event_target_as = carmine_revenge_target
+			}
+		}
+		else = {
+			random_realm_character = {
+				limit = {
+					is_landed = yes
+					dynasty = 1850066
+				}
+				save_event_target_as = carmine_revenge_target
+			}
+		}
+	}
 
 	option = {
 		name = "EVTOPT_zkexecute"
 		give_nickname = nick_the_avenger
-		c_san_diego = {
-			holder_scope = { 
-				death = { death_reason = death_execution killer = ROOT } 
-			}
-		}
-		c_san_diego = { 
-			gain_title = ROOT 
+		event_target:carmine_revenge_target = {
+			abdicate_to = ROOT
+			death = { death_reason = death_execution killer = ROOT } 
 		}
 		clr_character_flag = zakariyya2
 		set_character_flag = zakariyya3
@@ -512,8 +823,8 @@ character_event = {
 		name = "EVTOPT_zkmerciful"
 		give_nickname = nick_the_restorer
 		piety = 100
-		c_san_diego = { 
-			gain_title = ROOT 
+		event_target:carmine_revenge_target = {
+			abdicate_to = ROOT
 		}
 		clr_character_flag = zakariyya2
 		set_character_flag = zakariyya3
@@ -522,6 +833,7 @@ character_event = {
 	}
 }
 
+#Demands of the Kingdom of Baja
 character_event = {
 	id = zakariyya.22
 	desc = "EVTDESC_zakariyya22"
@@ -543,9 +855,9 @@ character_event = {
 		name = EVTOPT_zkbajawar
 		clr_character_flag = bajamarriage
 		random_list = {
-			50 = { c_112120037 = { add_rival = ROOT } }
-			25 = { c_112120037 = { remove_spouse = spouse } }
-			25 = { c_112120037 = { add_lover = ROOT } }
+			50 = { c_2200028 = { add_rival = ROOT } }
+			25 = { c_2200028 = { remove_spouse = spouse } }
+			25 = { c_2200028 = { add_lover = ROOT } }
 		}
 		k_baja_california = {
 			holder_scope = {	
@@ -568,6 +880,7 @@ character_event = {
 	}
 }
 
+#Carmine Receives News of Investigation
 character_event = {
 	id = zakariyya.23
 	desc = "EVTDESC_carmine"
@@ -638,6 +951,7 @@ character_event = {
 	}
 }
 
+#Zakariyya Summoned to the Imperial Court
 character_event = {
 	id = zakariyya.24
 	desc = "EVTDESC_zakariyya24"
@@ -645,10 +959,25 @@ character_event = {
 	border = GFX_event_normal_frame_religion
 	prisoner = no
 	only_independent = yes
+	
+	immediate = {
+		e_california = {
+			holder_scope = {
+				save_event_target_as = californian_emperor
+			}
+		}
+	}
 
 	trigger = {
 		has_landed_title = k_socal
 		has_character_flag = zakariyya3
+		war = no
+		e_california = {
+			has_holder = yes
+			holder_scope = {
+				religion = cetic
+			}
+		}
 	}
 	mean_time_to_happen = {
 		days = 1
@@ -664,9 +993,11 @@ character_event = {
 	}
 }
 
+#Zakariyya Arrives in Sacramento
 character_event = {
 	id = zakariyya.25
 	desc = "EVTDESC_zakariyya25"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_open
 	border = GFX_event_normal_frame_religion
 	prisoner = no
@@ -680,10 +1011,12 @@ character_event = {
 	}
 }
 
+#Zakariyya at the Palace
 narrative_event = {
 	id = zakariyya.26
 	desc = "EVTDESC_zakariyya26"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -704,10 +1037,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Refuses to Listen
 narrative_event = {
 	id = zakariyya.27
 	desc = "EVTDESC_zakariyya27"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_isolationist
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -722,10 +1057,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Listens
 narrative_event = {
 	id = zakariyya.28
 	desc = "EVTDESC_zakariyya28"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -738,10 +1075,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Listens
 narrative_event = {
 	id = zakariyya.29
 	desc = "EVTDESC_zakariyya29"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -754,10 +1093,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Listens
 narrative_event = {
 	id = zakariyya.30
 	desc = "EVTDESC_zakariyya30"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -770,10 +1111,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Listens
 narrative_event = {
 	id = zakariyya.31
 	desc = "EVTDESC_zakariyya31"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -786,10 +1129,12 @@ narrative_event = {
 	}
 }
 
+#Submit or Not to California
 narrative_event = {
 	id = zakariyya.32
 	desc = "EVTDESC_zakariyya32"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -810,10 +1155,12 @@ narrative_event = {
 	}
 }
 
+#Submit
 narrative_event = {
 	id = zakariyya.33
 	desc = "EVTDESC_zakariyya33"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -826,10 +1173,12 @@ narrative_event = {
 	}
 }
 
+#Submit Continued
 narrative_event = {
 	id = zakariyya.34
 	desc = "EVTDESC_zakariyya34"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -842,10 +1191,12 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Becomes a Vassal of California
 narrative_event = {
 	id = zakariyya.35
 	desc = "EVTDESC_zakariyya35"
-	title= "EVTTITLE_ZKBEARPALACE"
+	title = "EVTTITLE_ZKBEARPALACE"
+	portrait = event_target:californian_emperor
 	picture = GFX_evt_china_golden_age
 	border = GFX_event_narrative_frame_religion
 	prisoner = no
@@ -858,21 +1209,28 @@ narrative_event = {
 				set_defacto_vassal = ROOT
 			}
 		}
-		sanctioned_governator = {
+		any_character = {
+			limit = {
+				trait = sanctioned_governator
+				NOT = {
+					character = c_2200016
+				}
+			}
 			remove_trait = sanctioned_governator
 		}
 		add_trait = sanctioned_governator
 		hidden_tooltip = {
 			character_event = { id = zakariyya.36 days = 7 }
-			# e_california = {
-				# holder_scope = {
-					# narrative_event = { id = zakariyya.42 }
-				# }
-			# }
+			e_california = {
+				holder_scope = {
+					narrative_event = { id = zakariyya.43 }
+				}
+			}
 		}
 	}
 }
 
+#Zakariyya Becomes Anti-Governator
 character_event = {
 	id = zakariyya.36
 	desc = "EVTDESC_zakariyya36"
@@ -886,6 +1244,7 @@ character_event = {
 	}
 }
 
+#Carmine Refuses to Step Down
 character_event = {
 	id = zakariyya.37
 	desc = "EVTDESC_zakariyya37"
@@ -907,7 +1266,7 @@ character_event = {
 			tier = DUKE
 			landless = yes
 			temporary = yes
-			culture = moroccan
+			culture = khalfi
 			name = "Abbas Loyalists"
 			holder = ROOT
 		}
@@ -929,9 +1288,10 @@ character_event = {
 
 }
 
+#Carmine Abdicates
 narrative_event = {
 	id = zakariyya.38
-	title= EVTTITLE_zkcarmineabdication
+	title = EVTTITLE_zkcarmineabdication
 	desc = "EVTDESC_zakariyya38"
 	picture = GFX_evt_meeting_hf
 	border = GFX_event_narrative_frame_religion
@@ -944,6 +1304,7 @@ narrative_event = {
 	}
 }
 
+#Zakariyya Debates Becoming Alawiyya
 character_event = {
 	id = zakariyya.40
 	desc = "EVTDESC_zakariyya40"
@@ -985,6 +1346,7 @@ character_event = {
 	}
 }
 
+#Emperor of California Decides Whether to Help Zakariyya in Investigation
 character_event = {
 	id = zakariyya.41
 	desc = EVTDESC_zkcouriersend
@@ -1004,6 +1366,7 @@ character_event = {
 	}
 }
 
+#Emperor is Notified - Zakariyya Declares War on Carmine
 narrative_event = {
 	id = zakariyya.42
 	title = EVTTITLE_zkwarnotif
@@ -1018,6 +1381,7 @@ narrative_event = {
 	}
 }
 
+#Emperor is Notified - Zakariyya Swears Fealty to California
 narrative_event = {
 	id = zakariyya.43
 	title = EVTTITLE_zkintegrate
@@ -1029,9 +1393,11 @@ narrative_event = {
 	
 	option = {
 		name = EVTOPTA_zkintegrate
+		custom_tooltip = { text = zakariyya_sanctioned_governator_TT }
 	}
 }
 
+#Emperor is Notified - Carmine Abdicates
 character_event = {
 	id = zakariyya.44
 	desc = EVTDESC_zkabdicate
@@ -1045,6 +1411,7 @@ character_event = {
 	}
 }
 
+#Zakariyya Debates Becoming Qingzhen
 character_event = {
 	id = zakariyya.45
 	desc = "EVTDESC_zakariyya45"
@@ -1053,7 +1420,7 @@ character_event = {
 	prisoner = no
 	is_triggered_only = yes
 	
-		option = {	
+	option = {	
 		name = "EVTOPT_zkqingzhen"
 		destroy_landed_title = d_imamite
 		grant_title_no_opinion = d_qingzhen
@@ -1084,5 +1451,26 @@ character_event = {
 		name = "EVTOPT_zkimamite2"
 		piety = 100
 		custom_tooltip = { text = TXT_EVTOPT_zkimamite2 }
+	}
+}
+
+#Failsafe if Zak dies or is married and other characters still have no_marriage trait
+character_event = {
+	id = zakariyya.47
+	hide_window = yes
+	mean_time_to_happen = {
+		days = 1
+	}
+	trigger = {
+		c_2200016 = {
+			OR = {
+				is_married = yes
+				is_alive = no
+			}
+		}
+		trait = no_marriage
+	}
+	immediate = {
+		remove_trait = no_marriage
 	}
 }

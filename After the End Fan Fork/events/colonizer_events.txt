@@ -362,31 +362,25 @@ narrative_event = {
 	picture = "GFX_evt_colonial_russia"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = novorusskiy
 	
 	trigger = {
 		NOT = { has_global_flag = russians_take_sitka }
-		OR = {
-			has_landed_title = e_novorusskiy
-			liege = { has_landed_title = e_novorusskiy }
-			top_liege = { has_landed_title = e_novorusskiy }
-		}
-		FROM = { title = b_sitka_AK }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_novorusskiy
-						liege = { has_landed_title = e_novorusskiy }
-						top_liege = { has_landed_title = e_novorusskiy }
+		e_novorusskiy = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_sitka_AK
+					any_vassal = {
+						title = b_sitka_AK
 					}
 				}
 			}
 		}
-	}	
+	}
 	immediate = {
 		set_global_flag = russians_take_sitka
 		any_playable_ruler = {
@@ -425,31 +419,25 @@ narrative_event = {
 	picture = "GFX_evt_colonial_russia"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = novorusskiy
 	
 	trigger = {
 		NOT = { has_global_flag = russians_take_vancouver }
-		OR = {
-			has_landed_title = e_novorusskiy
-			liege = { has_landed_title = e_novorusskiy }
-			top_liege = { has_landed_title = e_novorusskiy }
-		}
-		FROM = { title = b_vancouver_BC }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_novorusskiy
-						liege = { has_landed_title = e_novorusskiy }
-						top_liege = { has_landed_title = e_novorusskiy }
+		e_novorusskiy = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_vancouver_BC
+					any_vassal = {
+						title = b_vancouver_BC
 					}
 				}
 			}
 		}
-	}	
+	}
 	immediate = {
 		set_global_flag = russians_take_vancouver
 		any_playable_ruler = {
@@ -490,26 +478,20 @@ narrative_event = {
 	
 	is_triggered_only = yes
 	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
 	only_playable = yes
-	culture_group = novorusskiy
 	
 	trigger = {
 		NOT = { has_global_flag = russians_take_seattle }
-		OR = {
-			has_landed_title = e_novorusskiy
-			liege = { has_landed_title = e_novorusskiy }
-			top_liege = { has_landed_title = e_novorusskiy }
-		}
-		FROM = {
-			has_landed_title = b_seattle_WA
-		}
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_novorusskiy
-						liege = { has_landed_title = e_novorusskiy }
-						top_liege = { has_landed_title = e_novorusskiy }
+		e_novorusskiy = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_seattle_WA
+					any_vassal = {
+						title = b_seattle_WA
 					}
 				}
 			}
@@ -555,26 +537,20 @@ narrative_event = {
 	picture = "GFX_evt_colonial_russia"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = novorusskiy
 	
 	trigger = {
 		NOT = { has_global_flag = russians_take_portland }
-		OR = {
-			has_landed_title = e_novorusskiy
-			liege = { has_landed_title = e_novorusskiy }
-			top_liege = { has_landed_title = e_novorusskiy }
-		}
-		FROM = { title = b_portland_OR }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_novorusskiy
-						liege = { has_landed_title = e_novorusskiy }
-						top_liege = { has_landed_title = e_novorusskiy }
+		e_novorusskiy = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_portland_OR
+					any_vassal = {
+						title = b_portland_OR
 					}
 				}
 			}
@@ -618,31 +594,25 @@ narrative_event = {
 	picture = "GFX_evt_colonial_japan"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = nihonjin
 	
 	trigger = {
-		NOT = { has_global_flag = japanese_take_san_francisco}
-		OR = {
-			has_landed_title = e_edokko
-			liege = { has_landed_title = e_edokko }
-			top_liege = { has_landed_title = e_edokko }
-		}
-		FROM = { title = b_fort_point_CA }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_edokko
-						liege = { has_landed_title = e_edokko }
-						top_liege = { has_landed_title = e_edokko }
+		NOT = { has_global_flag = japanese_take_san_francisco }
+		e_edokko = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_fort_point_CA
+					any_vassal = {
+						title = b_fort_point_CA
 					}
 				}
 			}
 		}
-	}	
+	}
 	immediate = {
 		set_global_flag = japanese_take_san_francisco
 		any_playable_ruler = {
@@ -681,26 +651,20 @@ narrative_event = {
 	picture = "GFX_evt_colonial_japan"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = nihonjin
 	
 	trigger = {
-		NOT = { has_global_flag = japanese_take_eureka}
-		OR = {
-			has_landed_title = e_edokko
-			liege = { has_landed_title = e_edokko }
-			top_liege = { has_landed_title = e_edokko }
-		}
-		FROM = { title = b_eureka_CA }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_edokko
-						liege = { has_landed_title = e_edokko }
-						top_liege = { has_landed_title = e_edokko }
+		NOT = { has_global_flag = japanese_take_eureka }
+		e_edokko = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_eureka_CA
+					any_vassal = {
+						title = b_eureka_CA
 					}
 				}
 			}
@@ -744,26 +708,20 @@ narrative_event = {
 	picture = "GFX_evt_colonial_japan"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = nihonjin
 	
 	trigger = {
-		NOT = { has_global_flag = japanese_take_la}
-		OR = {
-			has_landed_title = e_edokko
-			liege = { has_landed_title = e_edokko }
-			top_liege = { has_landed_title = e_edokko }
-		}
-		FROM = { title = b_hollywood_CA }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_edokko
-						liege = { has_landed_title = e_edokko }
-						top_liege = { has_landed_title = e_edokko }
+		NOT = { has_global_flag = japanese_take_la }
+		e_edokko = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_hollywood_CA
+					any_vassal = {
+						title = b_hollywood_CA
 					}
 				}
 			}
@@ -801,33 +759,27 @@ narrative_event = {
 #Japanese seize Sacramento
 narrative_event = {
 	id = pacific.23
-	title = "EVTTITLE_PACIFIC22"
-	desc = "EVTDESC_PACIFIC22"
+	title = "EVTTITLE_PACIFIC23"
+	desc = "EVTDESC_PACIFIC23"
 	major = yes
 	
 	picture = "GFX_evt_colonial_japan"
 	border = "GFX_event_narrative_frame_war"
 	
-	is_triggered_only = yes
+	mean_time_to_happen = {
+		days = 1
+	}
 	
 	only_playable = yes
-	culture_group = nihonjin
 	
 	trigger = {
-		NOT = { has_global_flag = japanese_take_sacramento}
-		OR = {
-			has_landed_title = e_edokko
-			liege = { has_landed_title = e_edokko }
-			top_liege = { has_landed_title = e_edokko }
-		}
-		FROM = { title = b_sacramento_CA }
-		NOT = {
-			FROM = {
-				owner = {
-					OR = {
-						has_landed_title = e_edokko
-						liege = { has_landed_title = e_edokko }
-						top_liege = { has_landed_title = e_edokko }
+		NOT = { has_global_flag = japanese_take_sacramento }
+		e_edokko = {
+			holder_scope = {
+				OR = {
+					has_landed_title = b_sacramento_CA
+					any_vassal = {
+						title = b_sacramento_CA
 					}
 				}
 			}
@@ -928,13 +880,4 @@ character_event = {
 			factor = 10
 		}
 	}
-
 }
-
-
-
-
-
-
-
-

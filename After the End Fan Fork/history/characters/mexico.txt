@@ -884,19 +884,6 @@
 	trait=ambitious
 	trait=patient
 	2628.5.15={birth=yes}
-	2651.9.15={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
-
 	2688.7.5={death=yes}
 }
 
@@ -917,7 +904,7 @@
 	trait=cruel
 	trait=just
 	2631.8.15={birth=yes}
-	2651.9.15={add_spouse=1810056}
+	2651.9.15={add_matrilineal_spouse=1810056}
 	2694.9.15={death=yes}
 }
 

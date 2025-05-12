@@ -2658,8 +2658,14 @@ quest_hermetics_find_apprentice_desc;Every respectable scholar of the Ivy League
 quest_hermetics_find_apprentice_tooltip;§Y[Root.GetTitledFirstName]§! must either assign an apprentice through the §YMinor Titles§! screen or keep their eyes open for a promising pupil to appear to complete this mission.;[Root.Get_Le_Title]§Y[Root.GetTitledFirstName]§! doit soit assigner un apprenti par l'intermédiaire de l'écran des §YTitres mineurs§! ou garder les yeux ouverts pour qu'un élève prometteur apparaisse pour remplir cette mission.;§Y[Root.GetTitledFirstName]§! muss entweder über das Menü §YNiedrige Titel§! einen Lehrling zuweisen oder nach einem vielversprechenden Schüler Ausschau halten, um diese Mission abzuschließen.;;§Y[Root.GetTitledFirstName]§! debe asignar un aprendiz mediante el menú §YTítulos menores§! o mantener los ojos abiertos para dar con un alumno prometedor y completar esta misión.;;;;;;;;;x
 
 quest_faculty_quest_1;Donate to the Ivy League;;;;;;;;;;;;x
-quest_faculty_quest_1_desc;You have been asked to donate money to the Ivy League. A herald will arrive shortly to facilitate the transaction.;;;;;;;;;;;;x
-quest_faculty_quest_1_tooltip;To complete this mission, wait for the herald to arrive, then pay him.;;;;;;;;;;;;x
+quest_faculty_quest_1_desc;In order to further the progress of science, you have been asked to donate to the Ivy League.;;;;;;;;;;;;x
+quest_faculty_quest_1_tooltip;To complete this mission, activate the decision §Y'Donate to the Ivy League'§! in the Intrigue menu.;;;;;;;;;;;;x
+
+donate_to_ivy_league;Donate to the Ivy League;;;;;;;;;;;;;x
+donate_to_ivy_league_desc;As an alumn of the Ivy League, it is expected of me by the deans that I contribute every once in a while to the upkeep of facilities, purchase of instruments of learning, and other expenses incurred by the organization and its members.;;;;;;;;;;;;;x
+faculty_request_donation_TT;The deans of the Ivy League have requested that you make a donation;;;;;;;;;;;;;x
+not_donated_to_ivy_league_five_years_TT;Has not donated to the Ivy League in five years;;;;;;;;;;;;;x
+donated_to_ivy_league;Donated to the Ivy League;;;;;;;;;;;;;x
 
 quest_faculty_quest_2;Rebuild a Library;;;;;;;;;;;;x
 quest_faculty_quest_2_desc;The Ivy League has asked you to restore an old library of theirs. You have accepted, but it will take a lot of work to get this building back to Ivy League standards...;;;;;;;;;;;;x
@@ -2871,14 +2877,6 @@ NO_HIGHER_QUALITY_VERSION_ACTIVE;Does NOT have an active higher quality Master T
 EVTOPTA_MNM_1461;Our work shall be a great tribute to Science!;;;;;;;;;;;;x
 EVTDESC_MNM_1478_A;The invention, the culmination of our great collaboration, is finally finished! Our accomplishment is twofold – not only have we rediscovered the recipe for an efficient explosive powder, we have also designed and produced a device that can harness it like the firearms of old. This 'handgun' is sure to revolutionize warfare once again!;;;;;;;;;;;;x
 EVTDESC_MNM_1478_B;The invention, the culmination of our great collaboration, is finally finished! We have invented a device which always points towards the lodestar of the north, making it possible to navigate even when the celestial bodies are obscured by clouds. It will surely give an advantage to our traders, and be worthy of standing alongside ancient examples.;;;;;;;;;;;;x
-
-quest_faculty_quest_1;Donate to the Ivy League;;;;;;;;;;;;x
-quest_faculty_quest_1_desc;You have been asked to donate money to the Ivy League. A herald will arrive shortly to facilitate the transaction.;;;;;;;;;;;;x
-quest_faculty_quest_1_tooltip;To complete this mission, wait for the herald to arrive, then pay him.;;;;;;;;;;;;x
-
-quest_faculty_quest_2;Rebuild a Library;;;;;;;;;;;;x
-quest_faculty_quest_2_desc;The Ivy League has asked you to restore an old library of theirs. You have accepted, but it will take a lot of work to get this building back to Ivy League standards...;;;;;;;;;;;;x
-quest_faculty_quest_2_tooltip;To complete this mission, successfully rebuild the library.;;;;;;;;;;;;x
 
 ##LODGES##
 

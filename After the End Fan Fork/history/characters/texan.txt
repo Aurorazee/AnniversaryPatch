@@ -131,9 +131,9 @@
 		raise_levies={
 			location=1235 # Travis
 			force_mult=1.0
-			set_character_flag=is_mack
-			set_character_flag=is_special_character
 		}
+		set_character_flag=is_mack
+		set_character_flag=is_special_character
 	}
 	2668.1.1={
 		raise_levies={
@@ -231,9 +231,9 @@
 		raise_levies={
 			location=1238 # houston
 			force_mult=1.0
-			set_character_flag=is_floyd
-			set_character_flag=is_special_character
 		}
+		set_character_flag=is_floyd
+		set_character_flag=is_special_character
 	}
 	2668.1.1={
 		raise_levies={
@@ -477,17 +477,7 @@
 	trait=charismatic_negotiator
 	2635.1.1={birth=yes}
 	2657.1.1={
-		add_spouse=1836028
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1836028
 	}
 	2700.1.1={death=yes}
 }
@@ -504,7 +494,7 @@
 	religion=catholic
 	trait=gregarious
 	2631.1.1={birth=yes}
-	2657.1.1={add_spouse=1836027}
+	2657.1.1={add_matrilineal_spouse=1836027}
 	2700.1.1={death=yes}
 }
 
@@ -1317,17 +1307,8 @@
 	}
 	
 	2666.4.2={
-		add_spouse=2302209
+		add_matrilineal_spouse=2302209
 		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			set_character_flag=ORF_embrace
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
 			add_lover=2302209
 		}
 	}
@@ -1358,7 +1339,7 @@
 			set_character_flag=is_special_character
 		}
 	}
-	2666.4.2={add_spouse=2302208}
+	2666.4.2={add_matrilineal_spouse=2302208}
 }
 2302211={
 	name="William" #Ironhorse

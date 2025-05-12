@@ -4327,7 +4327,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}
@@ -4467,7 +4466,6 @@ character_event = {
 						has_minor_title = title_lawspeaker
 						has_minor_title = title_court_skald
 						has_minor_title = title_venerable_elder
-						has_minor_title = title_lawspeaker
 						learning = 18
 					}
 				}

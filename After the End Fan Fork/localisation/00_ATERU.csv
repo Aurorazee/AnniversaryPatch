@@ -23,9 +23,11 @@ EVTDESC_zakariyya5;One evening at court, the stress of my investigation and your
 EVTOPT_zkmarry3;What is marriage for if not for affection?;;;;;;;;;;;;;x
 EVTOPT_zkmarryno;We are just friends.;;;;;;;;;;;;;x
 EVTDESC_zakariyya6;I sit once more in my study, alone. I cannot quite keep my mind off of the three potential pathways for marriage I could go down — to marry a friend and lover with no power, a friend with minor resources, or a complete foreigner with the armies of a kingdom behind her. I must be firm in my resolve — who am I to marry?;;;;;;;;;;;;;x
+EVTDESC_zakariyya6_B;I sit once more in my study, alone. I cannot quite keep my mind off of the potential pathways for marriage I could go down. I must be firm in my resolve — who am I to marry?;;;;;;;;;;;;;x
 EVTOPT_zkmarrybaja;The Princess of Baja will be my bride.;;;;;;;;;;;;;x
 EVTOPT_zkmarryscholar;I can trust Sofia, and she has men to her name.;;;;;;;;;;;;;x
 EVTOPT_zkmarrypeasant;My wife must be my love, rank be damned!;;;;;;;;;;;;;x
+EVTOPT_zkmarrynoble;Let us marry a local noble instead.;;;;;;;;;;;;;x
 EVTDESC_zakariyya7;With an ally secured, I am a bit more confident to investigate the lies of the Carmines. In secret, I have sent my couriers across Socal, looking for anyone who may have proof of the treachery that has been committed against my fathers. An informant should be arriving in Orange soon.;;;;;;;;;;;;;x
 EVTOPT_ZKCourtierHunt; Before long, their treachery will be exposed.;;;;;;;;;;;;;x
 EVTDESC_zakariyya9;The messengers have not returned yet. Surely someone has proof of these crimes?;;;;;;;;;;;;;x
@@ -55,7 +57,7 @@ EVTOPT_zkquiet; This is not the time for war, but my time will come soon. I must
 EVTDESC_zakariyya21;For many centuries, my family were loyal subjects of the emperor. It was the decline of the Yudkow dynasty that brought upon their demise. Many Cetics in my court argue whether or not the Yudkows have lost the heavenly right to rule California — is this so? I have a choice to support the liege of my ancestors, or go on my own path.;;;;;;;;;;;;;x
 EVTOPT_zksocalkowtow;The Abbas dynasty will always be loyal to the emperor.;;;;;;;;;;;;;x
 EVTOPT_zksocalindependent;The empire is dead — I will make my own fate for Socal.;;;;;;;;;;;;;x
-EVTDESC_zakariyya20;[From.GetFirstNameWithDynasty], I hereby decree that you have no right to the title King, your unjust actions prove it thus. Vengeance has finally been gained against the Carmines, and now [From.GetFirstNameWithDynasty] stands before you to hear your judgment..;;;;;;;;;;;;;x
+EVTDESC_zakariyya20;[carmine_revenge_target.GetFirstNameWithDynasty], I hereby decree that you have no right to the title King, your unjust actions prove it thus. Vengeance has finally been gained against the Carmines, and now [carmine_revenge_target.GetFirstNameWithDynasty] stands before you to hear your judgment..;;;;;;;;;;;;;x
 EVTOPT_zkexecute;The Carmines must answer for the deaths of my fathers.;;;;;;;;;;;;;x
 EVTOPT_zkmerciful;An eye for an eye makes the whole world blind.;;;;;;;;;;;;;x
 
@@ -120,9 +122,13 @@ EVTTITLE_zkwarnotif;Civil War in Socal;;;;;;;;;;;;;x
 EVTDESC_zkwarnotif;You have received reports that Zakariyya Abbas has declared war on his Carmine liege, alleging that his family was responsible for the death of his relative Yassir and that he is the rightful ruler of Socal. You are unable to intervene directly, which is just as well — you are unsure whether Abbas will be more loyal to the Empire in the end...;;;;;;;;;;;;;x
 EVTOPTA_zkwarnotif;Let's see how this plays out.;;;;;;;;;;;;;x
 
+EVTDESC_zakariyya46;With Ronald Carmine no longer my liege, there is no point in continuing my investigation.;;;;;;;;;;;;;x
+EVTOPTA_zakariyya46;Alright.;;;;;;;;;;;;;x
+
 EVTTITLE_zkintegrate;Integration of Socal;;;;;;;;;;;;;x
 EVTDESC_zkintegrate;You have received amazing news from Socal! Zakariyya Abbas, fresh from his victory in the civil war, has visited your court. He has sworn full fealty to the Celestial Throne, giving the Empire true ownership over the rich lands and plentiful troops of Socal for the first time in decades. This is an auspicious occasion!;;;;;;;;;;;;;x
 EVTOPTA_zkintegrate;Hopefully Socal is only the first...;;;;;;;;;;;;;x
+zakariyya_sanctioned_governator_TT;For his services, Zakariyya shall be appointed Anti-Governatus;;;;;;;;;;;;;x
 
 EVTDESC_islamate1;An Islamic poet, in search of a new host, has showed up at your court. His time spent among the courts of Southern California has gifted him with court knowledge, and by all accounts he is skilled with words. We may have use of him.;;;;;;;;;;;;;x
 
@@ -813,7 +819,7 @@ thriving_muslim_settlement;Thriving Muslim Settlement;;;;;;;;;;;;;x
 desc_thriving_muslim_settlement;A large Muslim community is thriving in this county, their merchants and scholars significantly contributing to the commerce and culture of the county.;;;;;;;;;;;;;x
 expelled_muslim_settlement;Expelled Muslim Settlement;;;;;;;;;;;;;x
 desc_expelled_muslim_settlement;A large Muslim community was expelled from this county, which has negatively affected commerce and culture in the county.;;;;;;;;;;;;;x
-EVTDESC_muslim_mexico_1;There is strange news coming from the county of [event_target:muslim_mexico.GetName]. A charismatic Muslim scholar has begun preaching that the people of [ROOT.PrimaryTitle.GetName] once followed Islam, and that the time has come to return to the true faith. Many influential residents have heeded his words, and a small Muslim community has formed.;;;;;;;;;;;;;x
+EVTDESC_muslim_mexico_1;There is strange news coming from the county of [muslim_mexico.GetName]. A charismatic Muslim scholar has begun preaching that the people of [Root.PrimaryTitle.GetName] once followed Islam, and that the time has come to return to the true faith. Many influential residents have heeded his words, and a small Muslim community has formed.;;;;;;;;;;;;;x
 EVTOPTA_muslim_mexico_1;Curious...;;;;;;;;;;;;;x
 EVTDESC_muslim_mexico_2;The preacher responsible for converting many of your subjects to Islam has arrived at your court. He says that his followers have faced much hardship from their non-Muslim neighbors, and pleads with you to issue an official decree protecting all Muslims in your realm from persecution.;;;;;;;;;;;;;x
 EVTOPTA_muslim_mexico_2;I will heed your request.;;;;;;;;;;;;;x
@@ -824,7 +830,7 @@ TXT_EVTOPTA_muslim_mexico_2;You issue a decree protecting Muslims in your realm.
 TXT_EVTOPTB_muslim_mexico_2;The Muslim community in your realm begins to thrive.;;;;;;;;;;;;;x
 TXT_EVTOPTC_muslim_mexico_2;All Muslims are forced to either convert or leave your realm.;;;;;;;;;;;;;x
 TXT_EVTOPTD_muslim_mexico_2;You and your entire family converts to Islam.;;;;;;;;;;;;;x
-EVTDESC_muslim_mexico_3;A Muslim preacher has arrived at your court. He explains that he is the leader of the Muslim community that was expelled from your land years ago, and is now petitioning you to allow his flock to return to [event_target:muslim_mexico.GetBaseName].;;;;;;;;;;;;;x
+EVTDESC_muslim_mexico_3;A Muslim preacher has arrived at your court. He explains that he is the leader of the Muslim community that was expelled from your land years ago, and is now petitioning you to allow his flock to return to [muslim_mexico.GetBaseName].;;;;;;;;;;;;;x
 EVTOPTA_muslim_mexico_3;Your request is reasonable. You may return.;;;;;;;;;;;;;x
 EVTOPTB_muslim_mexico_3;You should join my court, so this does not happen again.;;;;;;;;;;;;;x
 EVTOPTC_muslim_mexico_3;I don't think so. Begone!;;;;;;;;;;;;;x
@@ -832,7 +838,7 @@ EVTOPTD_muslim_mexico_3;Tell me more about your faith...;;;;;;;;;;;;;x
 TXT_EVTOPTA_muslim_mexico_3;The Muslim community returns to your lands.;;;;;;;;;;;;;x
 TXT_EVTOPTB_muslim_mexico_3;The Muslim community returns and begins to thrive.;;;;;;;;;;;;;x
 TXT_EVTOPTC_muslim_mexico_3;The Muslim community remains expelled.;;;;;;;;;;;;;x
-EVTDESC_muslim_mexico_4;The county of [event_target:muslim_mexico.GetBaseName] houses a substantial Muslim community. Your advisors begin to pressure you to deal with them officially, to avoid strife in your new lands.;;;;;;;;;;;;;x
+EVTDESC_muslim_mexico_4;The county of muslim_mexico.GetBaseName] houses a substantial Muslim community. Your advisors begin to pressure you to deal with them officially, to avoid strife in your new lands.;;;;;;;;;;;;;x
 EVTOPTA_muslim_mexico_4;They may stay.;;;;;;;;;;;;;x
 
 EVTOPTB_muslim_mexico_4;They must go!;;;;;;;;;;;;;x

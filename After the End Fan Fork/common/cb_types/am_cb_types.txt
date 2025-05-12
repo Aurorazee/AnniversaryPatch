@@ -439,6 +439,9 @@ consumerist_rising = {
 			}
 			clr_character_flag = consumerist_prophet
 		}
+		any_player = {
+			narrative_event = { id = consumer.21 }
+		}
 		FROM = {
 			piety = -500
 		}

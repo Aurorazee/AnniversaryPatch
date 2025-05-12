@@ -1405,7 +1405,7 @@ narrative_event = { #Follow up from option A
 			}
 		}
 	}
-	#picture = GFX_evt_feast
+	picture = GFX_evt_pilgrims_epic_journey
 	border = GFX_event_narrative_frame_intrigue
 	
 	portrait = event_target:target_host
@@ -3030,7 +3030,7 @@ narrative_event = { #Determine whether you get caught or not
 					intrigue = 2
 					factor = 3
 				}
-				narrative_event = { id = plscometobr.38 } # Caught
+				narrative_event = { id = plscometobr.39 } # Caught
 			}
 		}
 	}

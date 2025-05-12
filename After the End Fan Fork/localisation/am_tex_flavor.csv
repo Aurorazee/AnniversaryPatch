@@ -240,7 +240,10 @@ EVTOPT_texarkana_emperor;This is a crown well earned.;;;;;;;;;;;;;x
 EVTOPT_texarkana_catholic;Blessed be [Root.GetTitledFirstName];;;;;;;;;;;;;x
 EVTOPT_texarkana_infidel;The Pope's grip on the plains tightens.;;;;;;;;;;;;;x
 EVTOPT_texarkana_dixie;If they wish to test the resolve of a true servant of God, then so be it.;;;;;;;;;;;;;x
-
+tex_texarkana_male;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
+tex_texarkana_male_desc;With God at his side and a sword in his hand, [This.GetBestName] united the region of Texarkana as a bulwark of Christianity against heathens and heretics.;;;;;;;;;;;;;x
+tex_texarkana_female;Blood of [This.GetFirstNameWithNick];;;;;;;;;;;;;x
+tex_texarkana_female_desc;With God at her side and a sword in her hand, [This.GetBestName] united the region of Texarkana as a bulwark of Christianity against heathens and heretics.;;;;;;;;;;;;;x
 
 HOLD_TEXAN_KINGDOM_TITULAR;Hold one of the titular Starfolk Kingdoms.;;;;;;;;;;;;;x
 CONTROL_AIRMEN;You, a vassal, or a tributary hold the Banner of the Airmen.;;;;;;;;;;;;;x

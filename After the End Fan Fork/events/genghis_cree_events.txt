@@ -82,14 +82,6 @@ character_event = {
 		new_character = {
 			set_character_flag = is_special_character
 			set_character_flag = iron_chief_himself
-			if = {
-				limit = {
-					has_dlc = "Holy Fury"
-				}
-				create_bloodline = { #we have to add this!
-					type = iron_chief
-				}
-			}
 			character_event = {
 				id = iron.2
 				days = 3285
@@ -481,7 +473,7 @@ character_event = {
 	}
 }
 
-# The landed Timur and his men start an adventure
+# The landed Iron Chief and his men start an adventure
 character_event = {
 	id = iron.5
 	desc = EVTDESC_iron_5
@@ -697,7 +689,7 @@ character_event = {
 	}
 }
 
-# Notify Timur's old liege
+# Notify Iron Chief's old liege
 character_event = {
 	id = iron.6
 	desc = EVTDESC_iron_6
@@ -948,6 +940,16 @@ narrative_event = {
 		trigger = {
 			NOT = { has_character_flag = iron_chief_himself }
 			NOT = { culture_group = plains }
+		}
+	}
+	after = {
+		if = {
+			limit = {
+				has_dlc = "Holy Fury"
+			}
+			create_bloodline = {
+				type = iron_chief_bloodline
+			}
 		}
 	}
 }

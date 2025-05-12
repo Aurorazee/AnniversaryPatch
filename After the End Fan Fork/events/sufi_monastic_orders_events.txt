@@ -7,107 +7,6 @@
 ###########################################
 
 namespace = SUFI
-
-#### MANAGEMENT ####
-#Title Overhaul Management
-character_event = {
-	id = SUFI.908
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { has_global_flag = the_sufi_schools_active }
-	}
-	
-	immediate = {
-		set_global_flag = the_sufi_schools_active #for crossmod stuff
-		# if = {
-			# limit = {
-				# any_playable_ruler = { culture = hedgehog_culture }
-			# }
-			# set_global_flag = chivalry_animals_kingdom_active #animals_kingdom
-		# }
-		# if = { #Ancient religion
-			# limit = {
-				# has_global_flag = ancrel
-			# }
-			# set_global_flag = ANCREL_ACTIVE
-		# }
-		if = { #HIP
-			# limit = {
-				# has_character_flag = start_of_game_character
-			# }
-			# set_global_flag = CK2PLUS_ACTIVE
-		# }
-		# else_if = { #CK2+
-			limit = {
-				OR = {
-					has_global_flag = EMF
-					has_global_flag = SWMH
-				}
-			}
-			set_global_flag = HIPEMF_ACTIVE
-		}
-		# else_if = { #ElderKIngs
-			# limit = {
-				# OR = {
-					# has_global_flag = mages_tamriel_necromancy_allowed
-					# has_global_flag = mages_tamriel_necromancy_banned
-				# }
-			# }
-			# set_global_flag = ELDERKINGS_ACTIVE
-		# }
-		else = {
-			character_event = { id = SUFI.9081 days = 1 }
-		}
-	}
-}
-
-#Title Overhaul Management Ping
-character_event = {
-	id = SUFI.9081
-	hide_window = yes
-
-	is_triggered_only = yes
-
-	immediate = {
-		# if = { #Ancient religion
-			# limit = {
-				# has_global_flag = ancrel
-			# }
-			# set_global_flag = ANCREL_ACTIVE
-		# }
-		if = { #HIP
-			# limit = {
-				# has_character_flag = start_of_game_character
-			# }
-			# set_global_flag = CK2PLUS_ACTIVE
-		# }
-		# else_if = { #CK2+
-			limit = {
-				OR = {
-					has_global_flag = EMF
-					has_global_flag = SWMH
-				}
-			}
-			set_global_flag = HIPEMF_ACTIVE
-		}
-		# else_if = { #ElderKIngs
-			# limit = {
-				# OR = {
-					# has_global_flag = mages_tamriel_necromancy_allowed
-					# has_global_flag = mages_tamriel_necromancy_banned
-				# }
-			# }
-			# set_global_flag = ELDERKINGS_ACTIVE
-		# }
-		# else = { }
-	}
-}
-
-
-
 ###JOINING###
 
 #From on_character_ask_to_join_society
@@ -357,8 +256,6 @@ letter_event = {
 	desc = EVTDESC_SUFI_10023
 	border = GFX_event_letter_frame_religion
 
-	is_triggered_only = yes
-	
 	is_triggered_only = yes
 	
 	option = {
@@ -3053,7 +2950,6 @@ character_event = {
 #Done
 letter_event = {
 	id = SUFI.8099
-	picture = GFX_evt_pilgrims_epic_journey_desert
 	border = GFX_event_letter_frame_religion
 
 	is_triggered_only = yes
@@ -6136,7 +6032,6 @@ character_event = {
 letter_event = {
 	id = SUFI.4624
 	desc = EVTDESC_SUFI_4624
-	picture = GFX_evt_shady_meeting
 	border = GFX_event_letter_frame_religion
 
 	is_triggered_only = yes
@@ -6392,7 +6287,7 @@ character_event = {
 						diplomacy = 15
 					}
 					NOT = { character = ROOT }
-					same_realm = yes
+					same_realm = ROOT
 				}
 				character_event = { id = SUFI.3261 }
 				break = yes
@@ -6823,7 +6718,7 @@ character_event = {
 						diplomacy = 15
 					}
 					NOT = { character = ROOT }
-					same_realm = yes
+					same_realm = ROOT
 				}
 				character_event = { id = SUFI.4201 }
 				break = yes
@@ -7124,7 +7019,7 @@ character_event = { #Hidden start
 					is_inaccessible_trigger = no
 					has_vice_trigger = yes
 					NOT = { character = ROOT }
-					same_realm = yes
+					same_realm = ROOT
 				}
 				character_event = { id = SUFI.4211 }
 				break = yes
@@ -8559,7 +8454,6 @@ narrative_event = { #shiite
 	picture = GFX_evt_imam
 	
 	only_playable = yes
-	hide_from = yes
 	
 	is_triggered_only = yes
 	
@@ -8600,7 +8494,6 @@ narrative_event = { #ibadi
 	picture = GFX_evt_imam
 	
 	only_playable = yes
-	hide_from = yes
 	
 	is_triggered_only = yes
 	

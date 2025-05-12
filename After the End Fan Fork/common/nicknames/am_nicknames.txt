@@ -682,8 +682,8 @@ nick_the_kid = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1.5
-			OR = {
+			factor = 0
+			NOR = {
 				culture_group = west_anglo
 				culture_group = starfolk
 			}
@@ -702,8 +702,8 @@ nick_appletree = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1.5
-			OR = {
+			factor = 0
+			NOR = {
 				culture_group = west_anglo
 				culture_group = starfolk
 			}
@@ -721,8 +721,8 @@ nick_the_charger = {
 	chance = {
 		factor = 2
 		modifier = {
-			factor = 1.5
-			OR = {
+			factor = 0
+			NOR = {
 				culture_group = west_anglo
 				culture_group = starfolk
 			}
@@ -1451,6 +1451,7 @@ nick_the_surfer = {
 		NOT = { trait = cynical }
 		NOT = { trait = envious }
 		NOT = { trait = greedy }
+		NOT = { age = 40 } #no OLDS
 	}
 	chance = {
 		factor = 2
@@ -1868,3 +1869,4 @@ nick_boudica = {}
 nick_the_gaul = {}
 nick_the_mighty_and_strong = {}
 nick_renovator = {}
+nick_the_wali = {}

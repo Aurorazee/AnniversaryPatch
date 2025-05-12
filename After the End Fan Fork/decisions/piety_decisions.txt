@@ -275,16 +275,26 @@ targetted_decisions = {
 		only_playable = yes
 		filter = self
 		ai_target_filter = self
-		ai_check_interval = 50
+		ai_check_interval = 12
 		
 		
 		potential = {	
 			is_playable = yes
 			religion = gaian
-			NOT = { #nor block instead of not or
-				trait = zealous
-				trait = devout
+			NOT = {
 				has_character_flag = hike_inecessible
+			}
+			custom_tooltip = {
+				text = not_gone_hiking_five_years_TT
+				hidden_tooltip = {
+					OR = {
+						NOT = { has_character_flag = gone_hiking }
+						had_character_flag = {
+							flag = gone_hiking
+							years = 5
+						}
+					}
+				}
 			}
 			is_adult = yes
 			prisoner = no
@@ -295,19 +305,44 @@ targetted_decisions = {
 		
 		allow = {
 			piety = 200
-			trait = mystic
+			is_inaccessible_trigger = no
 		}
 		
 		effect = {
 			piety = -200
 			character_event = { id = gaian.1 tooltip = EVTTOOLTIP_GOHIKING }
 			set_character_flag = hike_inecessible
+			set_character_flag = gone_hiking
 		}
 		
-		
-		
 		ai_will_do = {
-			factor = 1	
+			factor = 0.25
+			modifier = {
+				factor = 3
+				OR = {
+					trait = devout
+					trait = zealous
+				}
+			}
+			modifier = {
+				factor = 0.1
+				trait = cynical
+			}
+			modifier = {
+				factor = 0.1
+				is_maimed_trigger = yes
+			}
+			modifier = {
+				factor = 0.25
+				OR = {
+					has_symptom_trigger = yes
+					has_injury_trigger = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				has_disease_trigger = yes
+			}
 		}
 	}
 	choose_evangelical_branch = {

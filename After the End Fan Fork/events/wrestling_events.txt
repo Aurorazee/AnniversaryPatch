@@ -256,11 +256,55 @@ character_event = {
 				limit = {
 					has_quest = quest_warrior_lodge_mexican_train
 				}
-				random_society_member = {
+				if = { #If YOU are the leader of the society, find someone random...
 					limit = {
 						is_society_grandmaster = yes
-						same_society_as = ROOT
 					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+						}
+						character_event = { id = WR.10 } #Mission success/fail
+					}
+				}
+				else_if = { #Else, find the leader (provided they are available)...
+					limit = {
+						any_society_member = {
+							same_society_as = ROOT
+							is_society_grandmaster = yes
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							is_society_grandmaster = yes
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = { id = WR.10 } #Mission success/fail
+					}		
+				}
+				else_if = { #If not, find someone who is...
+					limit = {
+						any_society_member = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+					}
+					random_society_member = {
+						limit = {
+							same_society_as = ROOT
+							NOT = { character = ROOT }
+							block_general_event_trigger = no
+						}
+						character_event = { id = WR.10 } #Mission success/fail
+					}		
+				}
+				else = { #Else, send it to yourself ...
 					character_event = { id = WR.10 } #Mission success/fail
 				}
 			}
@@ -1663,7 +1707,6 @@ letter_event = { #FAILURE: You can't sit with us
 		clr_character_flag = society_join_block
 	}
 }
-
 
 character_event = {
 	id = WR.408

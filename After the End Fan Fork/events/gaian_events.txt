@@ -64,11 +64,12 @@ character_event = {
 		name = EVTOPT_gaian_hike_giveup
 		piety = -20
 		random = {
-		chance = 25
-		add_trait = slothful
+			chance = 25
+			add_trait = slothful
 		}
+		clr_character_flag = gone_hiking
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 	}
 }
@@ -1168,7 +1169,7 @@ narrative_event = {
 		remove_trait = on_hike
 		random_list = {
 			30 = {
-				martial = 1
+				change_martial = 1
 				add_character_modifier = {
 				name = peaked_garibaldi
 				years = 5

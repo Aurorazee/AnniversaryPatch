@@ -1133,7 +1133,6 @@ defined_text = {
 				graphical_culture = italiangfx 
 				graphical_culture = southerngfx
 				graphical_culture = byzantinegfx
-				graphical_culture = byzantinegfx
 				graphical_culture = easternslavicgfx
 				graphical_culture = byzantinegfx
 				graphical_culture = turkishgfx 

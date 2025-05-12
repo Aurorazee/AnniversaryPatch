@@ -203,11 +203,9 @@ narrative_event = {
 	option = {
 		name = EVTOPT_tish_memories
 		job_spiritual = {
-		holder_scope = {
 			opinion = {
-					who = ROOT
-					modifier = opinion_tish_celebration
-				}
+				who = ROOT
+				modifier = opinion_tish_celebration
 			}
 		}
 		clr_character_flag = invited_to_tish
@@ -418,11 +416,9 @@ character_event = { #training to read Torah
 			}
 		}
 		job_spiritual = {
-			holder_scope = {
-				opinion = {
-					who = bar_mitzvah_target
-					modifier = opinion_good_student
-				}
+			opinion = {
+				who = bar_mitzvah_target
+				modifier = opinion_good_student
 			}
 		}
 		transfer_scaled_wealth = {#is that impossible without the money being scaled?
@@ -538,12 +534,10 @@ character_event = { #training to read Torah
 			}
 		}
 		job_spiritual = {
-			holder_scope = {
-				opinion = {
-					modifier = opinion_disappointed
-					who = ROOT
-					years = 5
-				}
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 5
 			}
 		}
 		ai_chance = {
@@ -644,12 +638,10 @@ character_event = { #training to read Torah
 		piety = -50
 		
 		job_spiritual = {
-			holder_scope = {
-				opinion = {
-					modifier = opinion_disappointed
-					who = ROOT
-					years = 10
-				}
+			opinion = {
+				modifier = opinion_disappointed
+				who = ROOT
+				years = 10
 			}
 		}
 		ai_chance = {

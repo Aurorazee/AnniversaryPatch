@@ -3176,6 +3176,10 @@ bible_scholar = {
 	same_opinion = 5
 }
 
+no_marriage = { #For the Zak event chain to prevent Zak from marrying initially. Do not use for other things
+	cannot_marry = yes
+	hidden = yes
+}
 
 #Commented these out because I have no idea what these are supposed to do.
 

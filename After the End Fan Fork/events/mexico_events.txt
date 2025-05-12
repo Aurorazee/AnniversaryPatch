@@ -195,22 +195,9 @@ narrative_event = {
 	trigger = {
 		is_alternate_start = no
 		has_dlc = "Legacy of Rome"
-		OR = {
-			has_landed_title = e_mexico
-		}
-		NOT = { has_global_flag = roman_borders }
-		
+		has_landed_title = e_mexico
+		NOT = { has_global_flag = mexican_borders }
 		completely_controls_region = custom_oldworld_mexico
-
-	}
-	
-	immediate = {
-		if = {
-			limit = {
-				ai = no
-			}
-			set_character_flag = achievement_cdmx
-		}
 	}
 	
 	mean_time_to_happen = {

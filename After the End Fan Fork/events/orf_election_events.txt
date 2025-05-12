@@ -4,6 +4,7 @@ namespace = orfelection
 character_event = {
 	id = orfelection.1
 	title = EVTTITLE_orfelection_1
+	picture = GFX_evt_council
 	desc = EVTDESC_orfelection_1
 	is_triggered_only = yes
 	
@@ -1193,6 +1194,7 @@ character_event = {
 #Informs liege incumbent has resigned
 character_event = {
 	id = orfelection.55
+	picture = GFX_evt_emissary
 	desc = EVTDESC_orfelection_55
 	is_triggered_only = yes
 	
@@ -1206,6 +1208,7 @@ character_event = {
 #Informs liege attacker won
 character_event = {
 	id = orfelection.56
+	picture = GFX_evt_emissary
 	desc = EVTDESC_orfelection_56
 	is_triggered_only = yes
 	
@@ -1219,6 +1222,7 @@ character_event = {
 #Informs liege defender won
 character_event = {
 	id = orfelection.57
+	picture = GFX_evt_emissary
 	desc = EVTDESC_orfelection_57
 	is_triggered_only = yes
 	
@@ -1425,6 +1429,7 @@ character_event = {
 #Event for edge cases
 character_event = {
 	id = orfelection.104
+	picture = GFX_evt_emissary
 	desc = EVTDESC_orfelection_104
 	mean_time_to_happen = {
 		days = 1
@@ -1493,6 +1498,7 @@ character_event = {
 #Informs old defender
 character_event = {
 	id = orfelection.105
+	picture = GFX_evt_death_default
 	desc = EVTDESC_orfelection_105
 	is_triggered_only = yes
 	
@@ -1505,6 +1511,7 @@ character_event = {
 #Informs liege of defender's death
 character_event = {
 	id = orfelection.106
+	picture = GFX_evt_death_default
 	desc = EVTDESC_orfelection_106
 	is_triggered_only = yes
 	
@@ -1518,6 +1525,7 @@ character_event = {
 #Informs liege of attacker's death
 character_event = {
 	id = orfelection.107
+	picture = GFX_evt_death_default
 	desc = EVTDESC_orfelection_107
 	is_triggered_only = yes
 	
@@ -2710,7 +2718,7 @@ long_character_event = {#resolved
 character_event = {
 	id = orfelection.21
 	desc = EVTDESC_orfelec_problem_range_ambush
-	#picture = something
+	picture = GFX_evt_bandits
 	is_triggered_only = yes#i..think? maybe we will do a tombola, maybe we will have a MTTH on election events
 	trigger = { #Insurance against edge cases
 		has_character_flag = orf_election_running
@@ -2740,20 +2748,23 @@ character_event ={#resolved
 	desc = {
 		trigger = { has_character_flag = orfelect_good_21}
 		text = EVTDESC_orfelec_problem_range_ambush_good
+		picture = GFX_evt_mounted_combat_hf
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_neutral_21}
 		text = EVTDESC_orfelec_problem_range_ambush_neutral
+		picture = GFX_evt_mounted_knights_hf
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_21}
 		text = EVTDESC_orfelec_problem_range_ambush_cowardice
+		picture = GFX_evt_mysterious_forest
 	}
 	desc = {
 		trigger = { has_character_flag = orfelect_bad_21}
 		text = EVTDESC_orfelec_problem_range_ambush_death
+		picture = GFX_evt_melee
 	}
-	#picture = something
 	only_playable = yes
 	capable_only = yes
 	is_triggered_only = yes

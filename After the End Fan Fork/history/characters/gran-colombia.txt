@@ -507,16 +507,8 @@
 	trait=patria_manuelita
 	trait=elusive_shadow
 	2616.7.29={birth=yes}
-	2635.4.2={effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+	2635.4.2={
+		add_matrilineal_spouse=1811027
 	}
 	2683.2.10={death=yes}
 }
@@ -529,7 +521,7 @@
 	trait=patria_santander
 	trait=martial_cleric
 	2612.12.18={birth=yes}
-	2635.4.2={add_spouse=1811026}
+	2635.4.2={add_matrilineal_spouse=1811026}
 	2673.3.10={death=yes}
 }
 
@@ -1570,17 +1562,6 @@
 	trait=proud
 	mother=1811093
 	2630.10.23={birth=yes}
-	2660.1.1={effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2700.1.1={death=yes}
 }
 
@@ -1807,7 +1788,7 @@
 	2641.1.1={birth=yes
 		culture=truenonato
 	}
-	2660.1.1={add_spouse=1811094}
+	2660.1.1={add_matrilineal_spouse=1811094}
 	2681.3.18={death=yes}
 }
 

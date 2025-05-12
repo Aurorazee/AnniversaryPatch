@@ -2556,10 +2556,6 @@ character_event = {
 							factor = 0
 							learning <= 5
 						}
-						modifier = {
-							factor = 0
-							learning <= 5
-						}
 						change_variable = { which = "test_score" value = 19 }
 					}
 					4 = {
@@ -2681,10 +2677,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							learning <= 5
 						}
 						modifier = {
 							factor = 0
@@ -3740,10 +3732,6 @@ character_event = {
 						modifier = {
 							factor = 0
 							trait = inbred
-						}
-						modifier = {
-							factor = 0
-							learning <= 5
 						}
 						modifier = {
 							factor = 0

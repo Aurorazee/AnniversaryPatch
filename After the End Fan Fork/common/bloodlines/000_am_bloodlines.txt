@@ -1113,3 +1113,14 @@ bushart_bloodline = {
 		}
 	}
 }
+
+iron_chief_bloodline = {
+	combat_rating = 8
+	monthly_character_prestige = 0.25
+	plains_opinion = 10
+	bloodline_effect_great_heroes_appear = 1
+	inheritance = patrilineal
+	allow_bastards = yes
+	picture = GFX_bloodlines_symbol_horse
+	flags = { bloodline_heroes }
+}

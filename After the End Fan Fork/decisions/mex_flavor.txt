@@ -85,10 +85,7 @@ decisions = {
 
 		effect = {
 			set_character_flag = becoming_cajita
-			FROM = {
-				character_event = { id = fide.123 }
-			}
-
+			character_event = { id = fide.123 }
 		}
 
 		

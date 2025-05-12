@@ -823,8 +823,7 @@ narrative_event = {
 			holder_scope = {
 				spawn_unit = {
 					province = closest_to_capital
-					troops =
-					{
+					troops = {
 						light_cavalry = { 750 750 }
 						light_infantry = { 500 500 }
 						pikemen = { 800 800 }
@@ -903,10 +902,9 @@ character_event = {
 	immediate = {
 		wealth = 500 
 		spawn_unit = {
-			owner = FROM
+			owner = ROOT
 			province = closest_to_capital
-			troops =
-			{	
+			troops = {	
 				pikemen = { 800 800 }
 				archers = { 350 350 }
 				heavy_infantry = { 150 150 }
@@ -959,57 +957,53 @@ character_event = {
 	}
 	
 	immediate = {
-		e_edokko = {
-			holder_scope = {
-				create_character = {
-					random_traits = yes
-					dynasty = actually_culture
-					religion = shinto
-					culture = edokko
-					female = no
-					age = 30
-					trait = ambitious
+		create_character = {
+			random_traits = yes
+			dynasty = actually_culture
+			religion = shinto
+			culture = edokko
+			female = no
+			age = 30
+			trait = ambitious
+		}
+		new_character = {
+			add_artifact = ate_firearm
+			random_list = {
+				25 = {
+					add_trait = ryobu_shinto
 				}
-				new_character = {
-					add_artifact = ate_firearm
-					random_list = {
-						25 = {
-							add_trait = ryobu_shinto
-						}
-						25 = {
-							add_trait = shugendo_shinto
-						}	
-						25 = {
-							add_trait = minzoku_shinto
-						}	
-						25 = {
-							add_trait = koshitsu_shinto
-						}
-					}	
-
-					spawn_unit = {
-						province = FROM
-						troops =
-						{	
-							pikemen = { 300 300 }
-							archers = { 250 250 }
-							light_infantry = { 450 450 }
-						}
-						attrition = 0.25
-						reinforces = yes
-					}
-					character_event = { id = misc.4 } # Physique
+				25 = {
+					add_trait = shugendo_shinto
 				}	
-				random_realm_province = {
-					limit = { 
-						NOR = { 
-							culture = edokko
-						} 
-					}
-					culture = edokko
-					religion = shinto
+				25 = {
+					add_trait = minzoku_shinto
+				}	
+				25 = {
+					add_trait = koshitsu_shinto
 				}
 			}
+			spawn_unit = {
+				province = closest_to_capital
+				owner = ROOT
+				leader = THIS
+				troops = {	
+					pikemen = { 300 300 }
+					archers = { 250 250 }
+					light_infantry = { 450 450 }
+				}
+				attrition = 0.25
+				reinforces = yes
+			}
+			character_event = { id = misc.4 } # Physique
+		}	
+		random_realm_province = {
+			limit = { 
+				NOR = { 
+					culture = edokko
+				} 
+			}
+			culture = edokko
+			religion = shinto
 		}
 	}
 	
@@ -1505,8 +1499,7 @@ narrative_event = {
 			holder_scope = {
 				spawn_unit = {
 					province = closest_to_capital
-					troops =
-					{
+					troops = {
 						light_cavalry = { 750 750 }
 						light_infantry = { 500 500 }
 						pikemen = { 800 800 }
@@ -1578,10 +1571,9 @@ character_event = {
 	immediate = {
 		wealth = 500 
 		spawn_unit = {
-			owner = FROM
+			owner = ROOT
 			province = closest_to_capital
-			troops =
-			{	
+			troops = {	
 				pikemen = { 800 800 }
 				archers = { 650 650 }
 				light_infantry = { 300 300 }
@@ -1827,16 +1819,16 @@ narrative_event = {
 				character_event = { id = misc.3 } # Diversity
 				character_event = { id = misc.4 } # Physique
 				spawn_unit = {
-					province = FROM
-						troops = {
-							light_cavalry = { 1200 1200 }
-							light_infantry = { 3000 3000 }
-							heavy_infantry = { 950 950 }
-							knights = { 500 500 }
-							pikemen = { 600 600 }
-							archers = { 1500 1500 }
-						}
-						attrition = 0.25
+					province = PREV
+					troops = {
+						light_cavalry = { 1200 1200 }
+						light_infantry = { 3000 3000 }
+						heavy_infantry = { 950 950 }
+						knights = { 500 500 }
+						pikemen = { 600 600 }
+						archers = { 1500 1500 }
+					}
+					attrition = 0.25
 				}
 			}
 			create_character = {
@@ -2170,16 +2162,16 @@ narrative_event = {
 				character_event = { id = misc.3 } # Diversity
 				character_event = { id = misc.4 } # Physique
 				spawn_unit = {
-					province = FROM
-						troops = {
-							light_cavalry = { 1200 1200 }
-							light_infantry = { 3000 3000 }
-							heavy_infantry = { 950 950 }
-							knights = { 500 500 }
-							pikemen = { 600 600 }
-							archers = { 1500 1500 }
-						}
-						attrition = 0.25
+					province = PREV
+					troops = {
+						light_cavalry = { 1200 1200 }
+						light_infantry = { 3000 3000 }
+						heavy_infantry = { 950 950 }
+						knights = { 500 500 }
+						pikemen = { 600 600 }
+						archers = { 1500 1500 }
+					}
+					attrition = 0.25
 				}
 			}
 			create_character = {

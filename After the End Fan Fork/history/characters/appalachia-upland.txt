@@ -333,7 +333,7 @@
 	trait=impaler
 	trait=ambitious
 	2593.1.1={birth=yes}
-	2614.5.25={add_spouse=1933019}
+	2614.5.25={add_matrilineal_spouse=1933019}
 	2649.2.10={death=yes}
 }
 
@@ -356,16 +356,7 @@
 	trait=kind
 	2591.2.7={birth=yes}
 	2614.5.25={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1933018
 	}
 	2670.12.7={death=yes}
 }
@@ -389,16 +380,7 @@
 	mother=1933019
 	2618.12.25={birth=yes}
 	2640.12.9={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1933029
 	}
 	2662.6.10={death=yes}
 }
@@ -417,22 +399,9 @@
 	learning=7
 	trait=charismatic_negotiator
 	trait=gluttonous
-	#conflicting trait
 	father=1933018
 	mother=1933019
 	2620.12.10={birth=yes}
-	2640.6.21={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
-	}
 	2690.6.8={death=yes}
 }
 
@@ -458,16 +427,7 @@
 	mother=1933019
 	2626.3.16={birth=yes}
 	2648.6.10={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1933023
 	}
 	2685.3.27={death=yes}
 }
@@ -509,16 +469,7 @@
 	mother=1933019
 	2629.8.19={birth=yes}
 	2646.6.1={
-		effect={
-			set_character_flag=recieved_royal_marriage_aid_duty
-			spouse={
-				set_character_flag=recieved_royal_marriage_aid_duty
-				remove_spouse=spouse
-				add_spouse_matrilineal=ROOT
-				clr_character_flag=recieved_royal_marriage_aid_duty
-			}
-			clr_character_flag=recieved_royal_marriage_aid_duty
-		}
+		add_matrilineal_spouse=1933026
 	}
 	2676.2.3={death=yes}
 }
@@ -556,7 +507,7 @@
 	learning=6
 	trait=elusive_shadow
 	2628.3.19={birth=yes}
-	2646.6.1={add_spouse=1933024}
+	2646.6.1={add_matrilineal_spouse=1933024}
 	2677.7.19={death=yes}
 }
 
@@ -621,7 +572,7 @@
 	trait=brave
 	trait=deceitful
 	2621.4.15={birth=yes}
-	2640.12.9={add_spouse=1933020}
+	2640.12.9={add_matrilineal_spouse=1933020}
 	2677.9.10={death=yes}
 }
 
@@ -662,7 +613,7 @@
 	trait=gregarious
 	trait=charitable
 	2621.7.7={birth=yes}
-	2640.6.21={add_spouse=1933021}
+	2640.6.21={add_matrilineal_spouse=1933021}
 	2676.6.21={death=yes}
 }
 

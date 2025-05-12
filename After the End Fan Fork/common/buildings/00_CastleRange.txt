@@ -44,7 +44,8 @@ castle = {
 		}
 		gold_cost = 150
 		build_time = 365
-		cowboys = 25
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -75,6 +76,7 @@ castle = {
 		gold_cost = 150
 		build_time = 365
 		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -103,7 +105,8 @@ castle = {
 		upgrades_from = open_range_2
 		gold_cost = 150
 		build_time = 365
-		cowboys = 25
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -132,7 +135,8 @@ castle = {
 		upgrades_from = open_range_3
 		gold_cost = 200
 		build_time = 730
-		cowboys = 25
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -161,7 +165,8 @@ castle = {
 		upgrades_from = open_range_4
 		gold_cost = 200
 		build_time = 730
-		cowboys = 25
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -190,7 +195,8 @@ castle = {
 		upgrades_from = open_range_5
 		gold_cost = 300
 		build_time = 1095
-		cowboys = 30
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80
@@ -219,7 +225,8 @@ castle = {
 		upgrades_from = open_range_6
 		gold_cost = 400
 		build_time = 1095
-		cowboys = 30
+		cowboys = 50
+		tax_income = 2.5
 		monthly_character_prestige = 0.1
 		
 		ai_creation_factor = 80

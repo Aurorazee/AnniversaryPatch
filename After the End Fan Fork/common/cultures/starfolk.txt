@@ -247,6 +247,4 @@ starfolk = {
 
 		modifier = default_culture_modifier
 	}
-
-	
 }

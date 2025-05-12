@@ -3278,7 +3278,7 @@ character_event = {
 		}
 	}
 	immediate = {
-		set_variable = { which = global_imp_auth value = 10 }
+		set_variable = { which = global_imp_auth value = 25 }
 		set_global_flag = a_flaming
 		set_global_flag = n_bear
 		# set_character_flag = ia_goodstats
@@ -8463,7 +8463,7 @@ character_event = {
 			limit = {
 				event_target:inspectee = {
 					primary_title = {
-						check_variable = { which = bureau_number value > 70 days = 10 }
+						check_variable = { which = bureau_number value > 70 }
 					}
 				}
 			}
@@ -8473,7 +8473,7 @@ character_event = {
 			limit = {
 				event_target:inspectee = {
 					primary_title = {
-						check_variable = { which = bureau_number value < 40 days = 10 }
+						check_variable = { which = bureau_number value < 40 }
 					}
 				}
 			}

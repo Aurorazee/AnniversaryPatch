@@ -1524,6 +1524,7 @@ on_battle_lost_owner = {
 on_siege_won_leader = {
 	events = {
 		8330 # Conquers the crusade target
+		88005 # British Provoke Men in Black
 		CM.10033 # Chronicle for certain major locations
 		CM.10034 # Chronicle for certain major locations
 		HF.49121 # Northern Crusade flavor tombola
@@ -1586,6 +1587,7 @@ on_siege_over_winner = {
 		MNM.9900 # Chance to steal artifact from capital holdings
 		HF.23473 # Destroy Tribal Great Pillar
 		HFP.41084 # Piety and Prestige on siege wins
+		177506 # Redcoats sack DC 
 	}
 	random_events = {
 		400 = 0 # Nothing happens
@@ -3611,6 +3613,7 @@ on_offmap_policy_changed = {
 		JD.30501 # Print policy update to logs
 		JD.50020 # News from China about Policy Change
 		JD.50400 # Update Silk Road values
+		plscometobr.59
 	}
 }
 

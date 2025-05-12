@@ -6524,7 +6524,7 @@ childrens_crusade = {
 			death = { death_reason = death_slavery } 
 		}
 		any_player = { 
-				limit = {
+			limit = {
 				religion_group = christian
 				NOT = {
 					character = ROOT
