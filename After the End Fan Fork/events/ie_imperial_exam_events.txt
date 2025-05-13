@@ -5888,9 +5888,9 @@ character_event = {
 					has_character_flag = tributary_scholar_application
 					#persistent_event_target:tributary_scholar_liege = { character = persistent_event_target:tributary_scholar_liege }
 				}
-				persistent_event_target:tributary_scholar_liege = {
-					letter_event = { id = offmapcali.113 }
-				}
+				# persistent_event_target:tributary_scholar_liege = {
+					# letter_event = { id = offmapcali.113 }
+				# }
 				clr_character_flag = tributary_scholar_application
 				clear_persistent_event_target = tributary_scholar_liege
 			}
@@ -6034,9 +6034,9 @@ character_event = {
 					has_character_flag = tributary_scholar_application
 					#persistent_event_target:tributary_scholar_liege = { character = persistent_event_target:tributary_scholar_liege }
 				}
-				persistent_event_target:tributary_scholar_liege = {
-					letter_event = { id = offmapcali.111 }
-				}
+				# persistent_event_target:tributary_scholar_liege = {
+					# letter_event = { id = offmapcali.111 }
+				# }
 				clr_character_flag = tributary_scholar_application
 				clear_persistent_event_target = tributary_scholar_liege
 			}
@@ -6071,9 +6071,9 @@ character_event = {
 					has_character_flag = tributary_scholar_application
 					#persistent_event_target:tributary_scholar_liege = { character = persistent_event_target:tributary_scholar_liege }
 				}
-				persistent_event_target:tributary_scholar_liege = {
-					letter_event = { id = offmapcali.112 }
-				}
+				# persistent_event_target:tributary_scholar_liege = {
+					# letter_event = { id = offmapcali.112 }
+				# }
 				clr_character_flag = tributary_scholar_application
 				clear_persistent_event_target = tributary_scholar_liege
 			}
@@ -6237,9 +6237,9 @@ character_event = {
 					has_character_flag = tributary_scholar_application
 					#persistent_event_target:tributary_scholar_liege = { character = persistent_event_target:tributary_scholar_liege }
 				}
-				persistent_event_target:tributary_scholar_liege = {
-					letter_event = { id = offmapcali.111 }
-				}
+				# persistent_event_target:tributary_scholar_liege = {
+					# letter_event = { id = offmapcali.111 }
+				# }
 				clr_character_flag = tributary_scholar_application
 				clear_persistent_event_target = tributary_scholar_liege
 			}
@@ -6273,9 +6273,9 @@ character_event = {
 					has_character_flag = tributary_scholar_application
 					#persistent_event_target:tributary_scholar_liege = { character = persistent_event_target:tributary_scholar_liege }
 				}
-				persistent_event_target:tributary_scholar_liege = {
-					letter_event = { id = offmapcali.113 }
-				}
+				# persistent_event_target:tributary_scholar_liege = {
+					# letter_event = { id = offmapcali.113 }
+				# }
 				clr_character_flag = tributary_scholar_application
 				clear_persistent_event_target = tributary_scholar_liege
 			}

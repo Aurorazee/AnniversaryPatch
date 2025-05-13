@@ -1113,7 +1113,7 @@ letter_event = {
 		}
 	}
 	option = {
-		text = EVTOPTA_faculty_500
+		name = EVTOPTA_faculty_500
 	}
 }
 
@@ -1144,7 +1144,7 @@ letter_event = {
 		}		
 	}
 	option = {
-		text = EVTOPTA_faculty_501
+		name = EVTOPTA_faculty_501
 	}
 }
 
@@ -1175,7 +1175,7 @@ letter_event = {
 		}
 	}
 	option = {
-		text = EVTOPTA_faculty_502
+		name = EVTOPTA_faculty_502
 	}
 }
 
@@ -1206,6 +1206,6 @@ letter_event = {
 		}		
 	}
 	option = {
-		text = EVTOPTA_faculty_503
+		name = EVTOPTA_faculty_503
 	}
 }

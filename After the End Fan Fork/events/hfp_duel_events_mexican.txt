@@ -929,267 +929,267 @@ character_event = {
 }
 
 #Double Death Attacker
-# character_event = {
-	# id = HFP.16009
-	# picture = GFX_evt_duel_scene
-	# border = GFX_event_normal_frame_war
-	# title = getDuelTitle
-	# is_triggered_only = yes
-	# portrait = event_target:combatant_2
-	# immediate = {
-		# if = {
-			# limit = { multiplayer = yes }
-			# debug_battle_death_counter_effect = yes #for debug purposes
-			# send_notifications_after_champion_stand_in_effect = yes
-			# if = {
-				# limit = {
-					# event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
-				# }	
-				# death = {
-					# death_reason = death_mission_wrestle #for flavor
-					# killer = event_target:combatant_2
-				# }
-			# }
-			# else_if = {
-				# limit = { has_character_flag = is_battlefield_duel }
-				# death = {
-					# death_reason = death_battle_duel
-					# killer = event_target:combatant_2
-				# }
-			# }
-			# else = {
-				# death = {
-					# death_reason = death_wrestle #regular duel death
-					# killer = event_target:combatant_2
-				# }
-			# }
-		# }
-	# }
-	# desc = {
-		# trigger = {
-			# NOR = {
-				# has_character_flag = elegant_double_KO
-				# has_character_flag = clumsy_double_KO
-			# }
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16009_default
-	# }
-	# desc = {
-		# trigger = {
-			# has_character_flag = clumsy_double_KO
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16009_clumsy
-	# }
-	# desc = {
-		# trigger = {
-			# has_character_flag = elegant_double_KO
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16009_elegant
-	# }
-	# desc = { #They used intrigue option to kill you (both die)
-		# trigger = {
-			# is_using_intrigue_trigger = no
-			# event_target:other_combatant = { is_using_intrigue_trigger = yes }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_poison_killed_me 
-	# }
-	# desc = { #You used intrigue option to kill them (both die)
-		# trigger = {
-			# is_using_intrigue_trigger = yes
-			# event_target:other_combatant = { is_using_intrigue_trigger = no }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_poison_killed_them
-	# }
-	# desc = { #BOTH used intrigue option?! OH NOES.
-		# trigger = {
-			# is_using_intrigue_trigger = yes
-			# event_target:other_combatant = { is_using_intrigue_trigger = yes }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_both_used_poison 
-	# }
+character_event = {
+	id = HFP.16009
+	picture = GFX_evt_duel_scene
+	border = GFX_event_normal_frame_war
+	title = getDuelTitle
+	is_triggered_only = yes
+	portrait = event_target:combatant_2
+	immediate = {
+		if = {
+			limit = { multiplayer = yes }
+			debug_battle_death_counter_effect = yes #for debug purposes
+			send_notifications_after_champion_stand_in_effect = yes
+			if = {
+				limit = {
+					event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
+				}	
+				death = {
+					death_reason = death_mission_wrestle #for flavor
+					killer = event_target:combatant_2
+				}
+			}
+			else_if = {
+				limit = { has_character_flag = is_battlefield_duel }
+				death = {
+					death_reason = death_battle_duel
+					killer = event_target:combatant_2
+				}
+			}
+			else = {
+				death = {
+					death_reason = death_wrestle #regular duel death
+					killer = event_target:combatant_2
+				}
+			}
+		}
+	}
+	desc = {
+		trigger = {
+			NOR = {
+				has_character_flag = elegant_double_KO
+				has_character_flag = clumsy_double_KO
+			}
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16009_default
+	}
+	desc = {
+		trigger = {
+			has_character_flag = clumsy_double_KO
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16009_clumsy
+	}
+	desc = {
+		trigger = {
+			has_character_flag = elegant_double_KO
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16009_elegant
+	}
+	desc = { #They used intrigue option to kill you (both die)
+		trigger = {
+			is_using_intrigue_trigger = no
+			event_target:other_combatant = { is_using_intrigue_trigger = yes }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_poison_killed_me 
+	}
+	desc = { #You used intrigue option to kill them (both die)
+		trigger = {
+			is_using_intrigue_trigger = yes
+			event_target:other_combatant = { is_using_intrigue_trigger = no }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_poison_killed_them
+	}
+	desc = { #BOTH used intrigue option?! OH NOES.
+		trigger = {
+			is_using_intrigue_trigger = yes
+			event_target:other_combatant = { is_using_intrigue_trigger = yes }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_both_used_poison 
+	}
 
-	# option = {
-		# name = {
-			# text = EVTOPTA_HFP_16009_default
-			# trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
-		# }
-		# name = {
-			# text = EVTOPTA_HFP_16009_clumsy
-			# trigger = { has_character_flag = clumsy_double_KO }
-		# }
-		# name = {
-			# text = EVTOPTA_HFP_16009_elegant
-			# trigger = { has_character_flag = elegant_double_KO }
-		# }
-		# custom_tooltip = { text = no_one_wins_the_duel_tt }
-		# tooltip = {
-			# event_target:combatant_2 = {
-				# show_scope_change = no
-				# death = {
-					# death_reason = death_wrestle
-					# killer = ROOT
-				# }
-			# }
-		# }
-		# if = {
-			# limit = { multiplayer = no }
-			# debug_battle_death_counter_effect = yes #for debug purposes
-			# send_notifications_after_champion_stand_in_effect = yes
-			# if = {
-				# limit = {
-					# event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
-				# }	
-				# death = {
-					# death_reason = death_mission_wrestle #for flavor
-					# killer = event_target:combatant_2
-				# }
-			# }
-			# else = {
-				# death = {
-					# death_reason = death_wrestle #regular duel death
-					# killer = event_target:combatant_2
-				# }
-			# }
-		# }
-	# }
-	# after = {
-		# hidden_effect = {
-			# clean_up_after_duel_effect = yes
-		# }
-	# }
-# }
+	option = {
+		name = {
+			text = EVTOPTA_HFP_16009_default
+			trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
+		}
+		name = {
+			text = EVTOPTA_HFP_16009_clumsy
+			trigger = { has_character_flag = clumsy_double_KO }
+		}
+		name = {
+			text = EVTOPTA_HFP_16009_elegant
+			trigger = { has_character_flag = elegant_double_KO }
+		}
+		custom_tooltip = { text = no_one_wins_the_duel_tt }
+		tooltip = {
+			event_target:combatant_2 = {
+				show_scope_change = no
+				death = {
+					death_reason = death_wrestle
+					killer = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { multiplayer = no }
+			debug_battle_death_counter_effect = yes #for debug purposes
+			send_notifications_after_champion_stand_in_effect = yes
+			if = {
+				limit = {
+					event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
+				}	
+				death = {
+					death_reason = death_mission_wrestle #for flavor
+					killer = event_target:combatant_2
+				}
+			}
+			else = {
+				death = {
+					death_reason = death_wrestle #regular duel death
+					killer = event_target:combatant_2
+				}
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			clean_up_after_duel_effect = yes
+		}
+	}
+}
 
 #Double death - Defender
-# character_event = {
-	# id = HFP.16010
-	# picture = GFX_evt_duel_scene
-	# border = GFX_event_normal_frame_war
-	# title = getDuelTitle
-	# is_triggered_only = yes
-	# portrait = event_target:combatant_1
+character_event = {
+	id = HFP.16010
+	picture = GFX_evt_duel_scene
+	border = GFX_event_normal_frame_war
+	title = getDuelTitle
+	is_triggered_only = yes
+	portrait = event_target:combatant_1
 
-	# immediate = {
-		# if = {
-			# limit = { multiplayer = yes }
-			# debug_battle_death_counter_effect = yes #for debug purposes
-			# send_notifications_after_champion_stand_in_effect = yes
-			# if = {
-				# limit = {
-					# event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
-				# }	
-				# death = {
-					# death_reason = death_mission_wrestle #for flavor
-					# killer = event_target:combatant_1
-				# }
-			# }
-			# else = {
-				# death = {
-					# death_reason = death_wrestle #regular duel death
-					# killer = event_target:combatant_1
-				# }
-			# }
-		# }
-	# }
+	immediate = {
+		if = {
+			limit = { multiplayer = yes }
+			debug_battle_death_counter_effect = yes #for debug purposes
+			send_notifications_after_champion_stand_in_effect = yes
+			if = {
+				limit = {
+					event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
+				}	
+				death = {
+					death_reason = death_mission_wrestle #for flavor
+					killer = event_target:combatant_1
+				}
+			}
+			else = {
+				death = {
+					death_reason = death_wrestle #regular duel death
+					killer = event_target:combatant_1
+				}
+			}
+		}
+	}
 	
-	# desc = {
-		# trigger = {
-			# NOR = {
-				# has_character_flag = elegant_double_KO
-				# has_character_flag = clumsy_double_KO
-			# }
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16010_default
-	# }
-	# desc = {
-		# trigger = {
-			# has_character_flag = clumsy_double_KO
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16010_clumsy
-	# }
-	# desc = {
-		# trigger = {
-			# has_character_flag = elegant_double_KO
-			# is_using_intrigue_trigger = no
-		# }
-		# text = EVTDESC_HFP_16010_elegant
-	# }
-	# desc = { #They used intrigue option to kill you (both die)
-		# trigger = {
-			# is_using_intrigue_trigger = no
-			# event_target:other_combatant = { is_using_intrigue_trigger = yes }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_poison_killed_me 
-	# }
-	# desc = { #You used intrigue option to kill them (both die)
-		# trigger = {
-			# is_using_intrigue_trigger = yes
-			# event_target:other_combatant = { is_using_intrigue_trigger = no }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_poison_killed_them
-	# }
-	# desc = { #BOTH used intrigue option?! OH NOES.
-		# trigger = {
-			# is_using_intrigue_trigger = yes
-			# event_target:other_combatant = { is_using_intrigue_trigger = yes }
-		# }
-		# text = EVTDESC_HFP_double_death_intrigue_both_used_poison 
-	# }
+	desc = {
+		trigger = {
+			NOR = {
+				has_character_flag = elegant_double_KO
+				has_character_flag = clumsy_double_KO
+			}
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16010_default
+	}
+	desc = {
+		trigger = {
+			has_character_flag = clumsy_double_KO
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16010_clumsy
+	}
+	desc = {
+		trigger = {
+			has_character_flag = elegant_double_KO
+			is_using_intrigue_trigger = no
+		}
+		text = EVTDESC_HFP_16010_elegant
+	}
+	desc = { #They used intrigue option to kill you (both die)
+		trigger = {
+			is_using_intrigue_trigger = no
+			event_target:other_combatant = { is_using_intrigue_trigger = yes }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_poison_killed_me 
+	}
+	desc = { #You used intrigue option to kill them (both die)
+		trigger = {
+			is_using_intrigue_trigger = yes
+			event_target:other_combatant = { is_using_intrigue_trigger = no }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_poison_killed_them
+	}
+	desc = { #BOTH used intrigue option?! OH NOES.
+		trigger = {
+			is_using_intrigue_trigger = yes
+			event_target:other_combatant = { is_using_intrigue_trigger = yes }
+		}
+		text = EVTDESC_HFP_double_death_intrigue_both_used_poison 
+	}
 
-	# option = {	
-		# name = {
-			# text = EVTOPTA_HFP_16010_default
-			# trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
-		# }
-		# name = {
-			# text = EVTOPTA_HFP_16010_clumsy
-			# trigger = { has_character_flag = clumsy_double_KO }
-		# }
-		# name = {
-			# text = EVTOPTA_HFP_16010_elegant
-			# trigger = { has_character_flag = elegant_double_KO }
-		# }
-		# custom_tooltip = { text = no_one_wins_the_duel_tt }
-		# tooltip = {
-			# event_target:combatant_1 = {
-				# show_scope_change = no
-				# death = {
-					# death_reason = death_wrestle
-					# killer = ROOT
-				# }
-			# }
-		# }
-		# if = {
-			# limit = { multiplayer = no }
-			# debug_battle_death_counter_effect = yes #for debug purposes
-			# send_notifications_after_champion_stand_in_effect = yes
-			# if = {
-				# limit = {
-					# event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
-				# }	
-				# death = {
-					# death_reason = death_mission_wrestle #for flavor
-					# killer = event_target:combatant_1
-				# }
-			# }
-			# else = {
-				# death = {
-					# death_reason = death_wrestle #regular duel death
-					# killer = event_target:combatant_1
-				# }
-			# }
-		# }
-	# }
-	# after = {
-		# hidden_effect = {
-			# clean_up_after_duel_effect = yes
-		# }
-	# }
-# }
+	option = {	
+		name = {
+			text = EVTOPTA_HFP_16010_default
+			trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
+		}
+		name = {
+			text = EVTOPTA_HFP_16010_clumsy
+			trigger = { has_character_flag = clumsy_double_KO }
+		}
+		name = {
+			text = EVTOPTA_HFP_16010_elegant
+			trigger = { has_character_flag = elegant_double_KO }
+		}
+		custom_tooltip = { text = no_one_wins_the_duel_tt }
+		tooltip = {
+			event_target:combatant_1 = {
+				show_scope_change = no
+				death = {
+					death_reason = death_wrestle
+					killer = ROOT
+				}
+			}
+		}
+		if = {
+			limit = { multiplayer = no }
+			debug_battle_death_counter_effect = yes #for debug purposes
+			send_notifications_after_champion_stand_in_effect = yes
+			if = {
+				limit = {
+					event_target:combatant_1 = { has_character_flag = deadly_duel@event_target:combatant_2 }
+				}	
+				death = {
+					death_reason = death_mission_wrestle #for flavor
+					killer = event_target:combatant_1
+				}
+			}
+			else = {
+				death = {
+					death_reason = death_wrestle #regular duel death
+					killer = event_target:combatant_1
+				}
+			}
+		}
+	}
+	after = {
+		hidden_effect = {
+			clean_up_after_duel_effect = yes
+		}
+	}
+}
 
 #DEATH: I killed my opponent - I won!
 character_event = {
