@@ -167,7 +167,7 @@ send_duel_result_event_mexican_effect = { # Runs via the attacker/combatant_1
 			# (D. Something else?)
 
 	random_list = {
-		0 = { #LETHAL for both...
+		1 = { #LETHAL for both...
 			trigger = {
 				NOR = {
 					has_character_flag = mock_duel

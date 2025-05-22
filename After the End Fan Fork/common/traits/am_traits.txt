@@ -3176,6 +3176,49 @@ bible_scholar = {
 	same_opinion = 5
 }
 
+jadidi = {
+	monthly_character_piety = 0.25 #balancing
+	learning = 1
+	
+	religious = yes # Lost immediately on religion change
+	
+	potential = { #this ensures that only imamites get it
+		religion = imamite
+	}
+	
+	opposites = {
+		ansari
+	}
+	
+	opposite_opinion = -10
+	same_opinion = 10
+	
+	customizer = no
+	random = no
+}
+
+ansari = {
+	monthly_character_piety = 0.25
+	martial = 1
+	
+	religious = yes # Lost immediately on religion change
+	
+	potential = {
+		religion = imamite
+	}
+	
+	opposites = {
+		jadidi
+	}
+	
+	opposite_opinion = -10
+	same_opinion = 10
+	
+	customizer = no
+	random = no
+}
+
+
 no_marriage = { #For the Zak event chain to prevent Zak from marrying initially. Do not use for other things
 	cannot_marry = yes
 	hidden = yes

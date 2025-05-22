@@ -1,4 +1,3 @@
-
 ruler_pilgrimage = {
 	authority = 1
 	years = 5

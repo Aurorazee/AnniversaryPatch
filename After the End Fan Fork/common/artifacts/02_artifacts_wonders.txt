@@ -43,7 +43,7 @@ zweihander_sword = {
 	slot = weapon
 }
 
-#The default name and desccription refer to Cathedral, but this can be overwrritten at spawn
+#The default name and description refer to Cathedral, but this can be overwrritten at spawn
 wonder_artifact_bells = {
 	quality = 3
 	active = {

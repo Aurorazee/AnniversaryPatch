@@ -74,7 +74,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					AND = {
 						religion_group = christian
 						has_artifact = sword_michael
-						has_artifact = ate_ark_of_the_covenant
+						has_artifact = ark_of_the_covenant
 						has_artifact = stone_of_golgotha
 					}
 				}
@@ -92,7 +92,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					factor = 0
 					AND = {
 						religion_group = cult_of_saints
-						has_artifact = ate_ark_of_the_covenant
+						has_artifact = ark_of_the_covenant
 						has_artifact = stone_of_golgotha
 					}
 				}
@@ -101,7 +101,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					AND = {
 						religion_group = jewish_group
 						has_artifact = golden_menorah
-						has_artifact = ate_ark_of_the_covenant
+						has_artifact = ark_of_the_covenant
 					}
 				}
 				#yes hello we must add more muslim artifacts
@@ -110,7 +110,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					AND = {
 						religion_group = latter_day_saints
 						has_artifact = urim_and_thummim
-						has_artifact = ate_ark_of_the_covenant
+						has_artifact = ark_of_the_covenant
 						has_artifact = stone_of_golgotha
 					}
 				}
@@ -277,7 +277,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					AND = {
 						religion_group = christian
 						has_artifact = horn_gabriel
-						has_artifact = ate_fragment_of_true_cross
+						has_artifact = fragment_of_true_cross
 					}
 				}
 				modifier = {
@@ -465,7 +465,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					factor = 0
 					AND = {
 						religion_group = christian
-						has_artifact = ate_fingerbone_of_saint
+						has_artifact = fingerbone_of_saint
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -474,14 +474,14 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
 						has_artifact = right_hand_petrus
-						has_artifact = ate_weeping_statue
+						has_artifact = weeping_statue
 					}
 				}
 				modifier = {
 					factor = 0
 					AND = {
 						religion_group = cult_of_saints
-						has_artifact = ate_fingerbone_of_saint
+						has_artifact = fingerbone_of_saint
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -489,7 +489,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 						has_artifact = famous_arm
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
-						has_artifact = ate_weeping_statue
+						has_artifact = weeping_statue
 					}
 				}
 				modifier = {
@@ -512,7 +512,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 					factor = 0
 					AND = {
 						religion_group = latter_day_saints
-						has_artifact = ate_fingerbone_of_saint
+						has_artifact = fingerbone_of_saint
 						has_artifact = famous_head
 						has_artifact = famous_tongue
 						has_artifact = infamous_tongue
@@ -521,7 +521,7 @@ character_event = { #We should expand this event chain to accommodate more AtE r
 						has_artifact = famous_foot
 						has_artifact = famous_ancient_weapon
 						has_artifact = nauvoo_fragment
-						has_artifact = ate_weeping_statue
+						has_artifact = weeping_statue
 					}
 				}
 				modifier = {
@@ -1324,7 +1324,7 @@ character_event = {
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_medium } }
 					modifier = {
 						factor = 0
-						has_artifact = ate_fragment_of_true_cross
+						has_artifact = fragment_of_true_cross
 					}
 					#Insert artifact event here
 					character_event = { id = MNM.9807 } #Fragment of the True Cross
@@ -1342,7 +1342,7 @@ character_event = {
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
-						has_artifact = ate_fingerbone_of_saint
+						has_artifact = fingerbone_of_saint
 					}
 					#Insert artifact event here
 					character_event = { id = MNM.9809 } #Fingerbone of Saint
@@ -1376,7 +1376,7 @@ character_event = {
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_minor } }
 					modifier = {
 						factor = 0
-						has_artifact = ate_weeping_statue
+						has_artifact = weeping_statue
 					}
 					#Insert artifact event here
 					character_event = { id = MNM.9846 } #Weeping Statue
@@ -1446,7 +1446,7 @@ character_event = {
 					modifier = { factor = 0 NOT = { has_character_modifier = relic_rumor_major } }
 					modifier = {
 						factor = 0
-						has_artifact = ate_ark_of_the_covenant
+						has_artifact = ark_of_the_covenant
 					}
 					#Insert artifact event here
 					narrative_event = { id = MNM.9890 } #Ark of the Covenant
@@ -4138,7 +4138,7 @@ character_event = {
 			modifier = opinion_very_disappointed
 			years = 15
 		}
-		add_artifact = ate_fragment_of_true_cross
+		add_artifact = fragment_of_true_cross
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4163,7 +4163,7 @@ character_event = {
 			min = 35
 		}
 
-		add_artifact = ate_fragment_of_true_cross
+		add_artifact = fragment_of_true_cross
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4183,7 +4183,7 @@ character_event = {
 			years = 15
 		}
 		reverse_add_favor = FROM
-		add_artifact = ate_fragment_of_true_cross
+		add_artifact = fragment_of_true_cross
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4210,7 +4210,7 @@ character_event = {
 			chance = 20
 			add_friend = FROM
 		}
-		add_artifact = ate_fragment_of_true_cross
+		add_artifact = fragment_of_true_cross
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4240,7 +4240,7 @@ character_event = {
 		modifier = opinion_disappointed
 			years = 10
 		}
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4265,7 +4265,7 @@ character_event = {
 			min = 20
 		}
 
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4285,7 +4285,7 @@ character_event = {
 			years = 10
 		}
 		reverse_add_favor = FROM
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4312,7 +4312,7 @@ character_event = {
 			chance = 20
 			add_friend = FROM
 		}
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4439,7 +4439,7 @@ character_event = {
 		modifier = opinion_disappointed
 			years = 10
 		}
-		add_artifact = ate_weeping_statue
+		add_artifact = weeping_statue
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4464,7 +4464,7 @@ character_event = {
 			min = 20
 		}
 
-		add_artifact = ate_weeping_statue
+		add_artifact = weeping_statue
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4484,7 +4484,7 @@ character_event = {
 			years = 10
 		}
 		reverse_add_favor = FROM
-		add_artifact = ate_weeping_statue
+		add_artifact = weeping_statue
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4511,7 +4511,7 @@ character_event = {
 			chance = 20
 			add_friend = FROM
 		}
-		add_artifact = ate_weeping_statue
+		add_artifact = weeping_statue
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4642,7 +4642,7 @@ narrative_event = {
 			modifier = opinion_extremely_disappointed
 			years = 20
 		}
-		add_artifact = ate_ark_of_the_covenant
+		add_artifact = ark_of_the_covenant
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4667,7 +4667,7 @@ narrative_event = {
 			min = 50
 		}
 
-		add_artifact = ate_ark_of_the_covenant
+		add_artifact = ark_of_the_covenant
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4687,7 +4687,7 @@ narrative_event = {
 			years = 15
 		}
 		reverse_add_favor = FROM
-		add_artifact = ate_ark_of_the_covenant
+		add_artifact = ark_of_the_covenant
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -4714,7 +4714,7 @@ narrative_event = {
 			chance = 20
 			add_friend = FROM
 		}
-		add_artifact = ate_ark_of_the_covenant
+		add_artifact = ark_of_the_covenant
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}

@@ -133,24 +133,6 @@ famous_ancient_weapon = { #rusty old weapon
 ### Christian Artifacts ###
 ###########################
 
-iron_crown_of_lombardy = {
-	short_reign_length = -5
-	monthly_character_piety = 0.5
-	monthly_character_prestige = 1
-	vassal_opinion = 10
-	diplomacy = 1
-	active = { religion_group = christian }
-	allowed_gift = {
-		religion_group = christian
-	}
-	quality = 4
-	indestructible = yes
-	flags = { religious christian jewelry unique crucifixion }
-	stacking = no
-	picture = "GFX_iron_crown_of_lombardy"
-	slot = crown
-}
-
 shroud_of_jesus = {
 	monthly_character_piety = 0.5
 	monthly_character_prestige = 0.5
@@ -273,9 +255,19 @@ fragment_of_true_cross = {
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.5
 	diplomacy = 2
-	active = { religion_group = christian }
+	active = {
+		OR = {
+			religion_group = christian 
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
+	}
 	allowed_gift = {
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
 	}
 	quality = 3
 	flags = { religious christian rare crucifixion }
@@ -303,10 +295,18 @@ fingerbone_of_saint = {
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.25
 	active = { 
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
 	}
 	allowed_gift = {
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
 	}
 	quality = 1
 	flags = { religious christian bone saint bodypart }
@@ -317,9 +317,19 @@ finger_of_st_john = { #separate event chain
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.5
 	learning = 1
-	active = { religion_group = christian }
+	active = {
+		OR = {
+			religion_group = christian 
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
+	}
 	allowed_gift = {
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
 	}
 	quality = 2
 	flags = { religious christian SoA bodypart }
@@ -400,9 +410,19 @@ remains_of_st_cessianus = {
 weeping_statue = {
 	monthly_character_prestige = 0.1
 	global_tax_modifier = 0.05
-	active = { religion_group = christian }
+	active = {
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
+	}
 	allowed_gift = {
-		religion_group = christian
+		OR = {
+			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
+		}
 	}
 	quality = 2
 	flags = { religious christian mary statue }
@@ -414,6 +434,7 @@ weeping_statue = {
 ###########################
 ##### Jewish Artifacts ####
 ###########################
+
 staff_of_moses = {
 	monthly_character_prestige = 0.1
 	monthly_character_piety = 0.5
@@ -481,14 +502,18 @@ ark_of_the_covenant = {
 	same_religion_opinion = 10
 	stewardship = 2
 	active = { 
-		OR= {
+		OR = {
 			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
 			religion_group = jewish_group
 		}
 	}
 	allowed_gift = {
-		OR= {
+		OR = {
 			religion_group = christian
+			religion_group = cult_of_saints
+			religion_group = latter_day_saints
 			religion_group = jewish_group
 		}
 	}
@@ -1375,8 +1400,6 @@ iron_crown = {
 	
 	slot = crown
 }
-
-
 
 #Slavic/baltic/finnish/tengri sets
 heros_crown = {

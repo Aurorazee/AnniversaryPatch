@@ -141,6 +141,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 10
+				culture = american
+			}
+			modifier = {
 				factor = 30
 				culture = lacustrine
 			}
@@ -903,6 +907,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 20
+				culture = american
+			}
 			modifier = {
 				factor = 3
 				culture = lacustrine
@@ -1667,6 +1675,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 10
+				culture = american
+			}
+			modifier = {
 				factor = 11
 				culture = lacustrine
 			}
@@ -2428,6 +2440,10 @@ character_event = {
 
 	option = {
 		ai_chance = {
+			modifier = {
+				factor = 5
+				culture = american
+			}
 			factor = 1
 			modifier = {
 				factor = 1
@@ -3184,6 +3200,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 5
+				culture = american
+			}
 			modifier = {
 				factor = 0
 				culture = lacustrine
@@ -3948,6 +3968,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 10
+				culture = american
+			}
+			modifier = {
 				factor = 0
 				culture = lacustrine
 			}
@@ -4706,6 +4730,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 5
+				culture = american
+			}
 			modifier = {
 				factor = 0
 				culture = lacustrine
@@ -5471,6 +5499,10 @@ character_event = {
 			factor = 1
 			modifier = {
 				factor = 0
+				culture = american
+			}
+			modifier = {
+				factor = 0
 				culture = lacustrine
 			}
 			modifier = {
@@ -6228,6 +6260,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 5
+				culture = american
+			}
 			modifier = {
 				factor = 0
 				culture = lacustrine
@@ -6992,6 +7028,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 5
+				culture = american
+			}
+			modifier = {
 				factor = 0
 				culture = lacustrine
 			}
@@ -7750,6 +7790,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 2.5
+				culture = american
+			}
 			modifier = {
 				factor = 0
 				culture = lacustrine
@@ -8514,6 +8558,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 2.5
+				culture = american
+			}
+			modifier = {
 				factor = 0
 				culture = lacustrine
 			}
@@ -9277,6 +9325,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 5
+				culture = american
+			}
+			modifier = {
 				factor = 0
 				culture = lacustrine
 			}
@@ -10015,6 +10067,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 10
+				culture = american
+			}
 			modifier = {
 				factor = 45
 				culture = lacustrine
@@ -11532,6 +11588,10 @@ character_event = {
 	
 	option = {
 		ai_chance = {
+			modifier = {
+				factor = 5
+				culture = american
+			}
 			factor = 1
 			modifier = {
 				factor = 0
@@ -12297,6 +12357,10 @@ character_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
+				factor = 5
+				culture = american
+			}
+			modifier = {
 				factor = 10
 				culture = lacustrine
 			}
@@ -13061,6 +13125,10 @@ character_event = {
 			factor = 1
 			modifier = {
 				factor = 0
+				culture = american
+			}
+			modifier = {
+				factor = 0
 				culture = lacustrine
 			}
 			modifier = {
@@ -13822,6 +13890,10 @@ character_event = {
 	option = {
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0
+				culture = american
+			}
 			modifier = {
 				factor = 0
 				culture = lacustrine

@@ -8652,9 +8652,6 @@ weaken_vassal_plot = {
 	}
 }
 
-# Removed entirely (Decadence Revolt)
-
-# Removed entirely (Muslim Invasion)
 
 cb_faction_independence = {
 	name = CB_NAME_INDEPENDENCE

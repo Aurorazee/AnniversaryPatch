@@ -1013,18 +1013,18 @@ character_event = {
 
 	option = {
 		name = {
-			text = EVTOPTA_HFP_16009_default
+			text = EVTOPTA_HFP_10101_default
 			trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
 		}
 		name = {
-			text = EVTOPTA_HFP_16009_clumsy
+			text = EVTOPTA_HFP_10101_clumsy
 			trigger = { has_character_flag = clumsy_double_KO }
 		}
 		name = {
-			text = EVTOPTA_HFP_16009_elegant
+			text = EVTOPTA_HFP_10101_elegant
 			trigger = { has_character_flag = elegant_double_KO }
 		}
-		custom_tooltip = { text = no_one_wins_the_duel_tt }
+		custom_tooltip = { text = no_one_wins_the_match_tt }
 		tooltip = {
 			event_target:combatant_2 = {
 				show_scope_change = no
@@ -1142,15 +1142,15 @@ character_event = {
 
 	option = {	
 		name = {
-			text = EVTOPTA_HFP_16010_default
+			text = EVTOPTA_HFP_10102_default
 			trigger = { NOR = { has_character_flag = elegant_double_KO has_character_flag = clumsy_double_KO } }
 		}
 		name = {
-			text = EVTOPTA_HFP_16010_clumsy
+			text = EVTOPTA_HFP_10102_clumsy
 			trigger = { has_character_flag = clumsy_double_KO }
 		}
 		name = {
-			text = EVTOPTA_HFP_16010_elegant
+			text = EVTOPTA_HFP_10102_elegant
 			trigger = { has_character_flag = elegant_double_KO }
 		}
 		custom_tooltip = { text = no_one_wins_the_duel_tt }
@@ -2225,14 +2225,14 @@ character_event = {
 	}
 
 	option = {	
-		# name = {
-			# text = EVTOPTA_HFP_16014_bare_hands #HOW?! With your bare hands?
-			# trigger = {
+		name = {
+			text = EVTOPTA_HFP_10106_bare_hands #HOW?! With your bare hands?
+			trigger = {
 				# FROM = { has_character_flag = weapon_is_hand }
-				# has_character_flag = actually_injured
-				# has_character_flag = mock_duel
-			# }
-		# }
+				has_character_flag = actually_injured
+				has_character_flag = mock_duel
+			}
+		}
 		# name = {
 			# text = EVTOPTA_HFP_16014_sword #HOW?! With a WOODEN sword?
 			# trigger = {

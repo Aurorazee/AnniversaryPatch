@@ -6091,7 +6091,7 @@ character_event = {
 		save_event_target_as = monastic_artifact_stealer
 		random_list = {
 			10 = {
-				modifier = { factor = 0 NOR = { religion_group = christian religion_group = mormon } }
+				modifier = { factor = 0 NOR = { religion_group = christian religion_group = latter_day_saints } }
 				modifier = {
 					factor = 0
 					has_artifact = stone_of_golgotha
@@ -6110,18 +6110,17 @@ character_event = {
 				modifier = { factor = 0 NOR = { religion_group = christian religion_group = latter_day_saints } }
 				modifier = {
 					factor = 0
-					has_artifact = ate_fragment_of_true_cross
+					has_artifact = fragment_of_true_cross
 				}
 				set_character_flag = monastic_artifact_fragment_of_true_cross
 			}
 			20 = {
-				modifier = { factor = 0 NOR = { religion_group = christian religion_group = mormon } }
+				modifier = { factor = 0 NOR = { religion_group = christian religion_group = latter_day_saints } }
 				modifier = {
 					factor = 0
-					has_artifact = ate_weeping_statue
+					has_artifact = weeping_statue
 				}
-				#Insert artifact event here
-				set_character_flag = monastic_artifact_ate_weeping_statue
+				set_character_flag = monastic_artifact_weeping_statue
 			}
 			20 = {
 				modifier = { factor = 0 NOT = { religion_group = christian } }
@@ -6297,7 +6296,7 @@ character_event = {
 			monastic_artifact_stone_of_golgotha = { custom_tooltip = { text = EVTOPTC_MNM_4610_seamless_robe_of_jesus } }
 			monastic_artifact_horn_gabriel = { custom_tooltip = { text = EVTOPTC_MNM_4610_crown_of_thorns } }
 			monastic_artifact_fragment_of_true_cross = { custom_tooltip = { text = EVTOPTC_MNM_4610_fragment_of_true_cross } }
-			monastic_artifact_ate_weeping_statue = { custom_tooltip = { text = EVTOPTC_MNM_4610_holy_foreskin } }
+			monastic_artifact_weeping_statue = { custom_tooltip = { text = EVTOPTC_MNM_4610_holy_foreskin } }
 			monastic_artifact_right_hand_petrus = { custom_tooltip = { text = EVTOPTC_MNM_4610_image_of_edessa } }
 			monastic_artifact_elaborate_danda = { custom_tooltip = { text = EVTOPTC_MNM_4610_elaborate_danda } }
 			monastic_artifact_sariraka_actual_body_part = { custom_tooltip = { text = EVTOPTC_MNM_4610_sariraka_actual_body_part } }
@@ -6943,8 +6942,8 @@ character_event = { # win - no wound
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -6973,7 +6972,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7006,7 +7005,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7039,7 +7038,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7072,7 +7071,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7105,7 +7104,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7135,7 +7134,7 @@ character_event = { # win - no wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7173,8 +7172,8 @@ character_event = { # win - wound
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -7203,7 +7202,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7236,7 +7235,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7269,7 +7268,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7302,7 +7301,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7335,7 +7334,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7365,7 +7364,7 @@ character_event = { # win - wound
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7411,8 +7410,8 @@ character_event = { # win - maimed
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -7441,7 +7440,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7474,7 +7473,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7507,7 +7506,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7540,7 +7539,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7573,7 +7572,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7603,7 +7602,7 @@ character_event = { # win - maimed
 							clr_character_flag = monastic_artifact_stone_of_golgotha
 							clr_character_flag = monastic_artifact_horn_gabriel
 							clr_character_flag = monastic_artifact_fragment_of_true_cross
-							clr_character_flag = monastic_artifact_ate_weeping_statue
+							clr_character_flag = monastic_artifact_weeping_statue
 							clr_character_flag = monastic_artifact_right_hand_petrus
 							clr_character_flag = monastic_artifact_elaborate_danda
 							clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7650,8 +7649,8 @@ character_event = {
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -7668,7 +7667,7 @@ character_event = {
 			clr_character_flag = monastic_artifact_stone_of_golgotha
 			clr_character_flag = monastic_artifact_horn_gabriel
 			clr_character_flag = monastic_artifact_fragment_of_true_cross
-			clr_character_flag = monastic_artifact_ate_weeping_statue
+			clr_character_flag = monastic_artifact_weeping_statue
 			clr_character_flag = monastic_artifact_right_hand_petrus
 			clr_character_flag = monastic_artifact_elaborate_danda
 			clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7699,8 +7698,8 @@ character_event = {
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -7717,7 +7716,7 @@ character_event = {
 			clr_character_flag = monastic_artifact_stone_of_golgotha
 			clr_character_flag = monastic_artifact_horn_gabriel
 			clr_character_flag = monastic_artifact_fragment_of_true_cross
-			clr_character_flag = monastic_artifact_ate_weeping_statue
+			clr_character_flag = monastic_artifact_weeping_statue
 			clr_character_flag = monastic_artifact_right_hand_petrus
 			clr_character_flag = monastic_artifact_elaborate_danda
 			clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7748,8 +7747,8 @@ character_event = {
 			on_trigger = has_character_flag
 			monastic_artifact_stone_of_golgotha = { add_artifact = stone_of_golgotha }
 			monastic_artifact_horn_gabriel = { add_artifact = horn_gabriel }
-			monastic_artifact_fragment_of_true_cross = { add_artifact = ate_fragment_of_true_cross }
-			monastic_artifact_ate_weeping_statue = { add_artifact = ate_weeping_statue }
+			monastic_artifact_fragment_of_true_cross = { add_artifact = fragment_of_true_cross }
+			monastic_artifact_weeping_statue = { add_artifact = weeping_statue }
 			monastic_artifact_right_hand_petrus = { add_artifact = right_hand_petrus }
 			monastic_artifact_elaborate_danda = { add_artifact = elaborate_danda }
 			monastic_artifact_sariraka_actual_body_part = { add_artifact = sariraka_actual_body_part }
@@ -7766,7 +7765,7 @@ character_event = {
 			clr_character_flag = monastic_artifact_stone_of_golgotha
 			clr_character_flag = monastic_artifact_horn_gabriel
 			clr_character_flag = monastic_artifact_fragment_of_true_cross
-			clr_character_flag = monastic_artifact_ate_weeping_statue
+			clr_character_flag = monastic_artifact_weeping_statue
 			clr_character_flag = monastic_artifact_right_hand_petrus
 			clr_character_flag = monastic_artifact_elaborate_danda
 			clr_character_flag = monastic_artifact_sariraka_actual_body_part
@@ -7854,11 +7853,11 @@ letter_event = {
 				}
 				AND = {
 					has_character_flag = monastic_artifact_fragment_of_true_cross
-					has_artifact = ate_fragment_of_true_cross
+					has_artifact = fragment_of_true_cross
 				}
 				AND = {
-					has_character_flag = monastic_artifact_ate_weeping_statue
-					has_artifact = ate_weeping_statue
+					has_character_flag = monastic_artifact_weeping_statue
+					has_artifact = weeping_statue
 				}
 				AND = {
 					has_character_flag = monastic_artifact_right_hand_petrus
@@ -7913,10 +7912,10 @@ letter_event = {
 				destroy_artifact = horn_gabriel
 			}
 			monastic_artifact_fragment_of_true_cross = {
-				destroy_artifact = ate_fragment_of_true_cross
+				destroy_artifact = fragment_of_true_cross
 			}
-			monastic_artifact_ate_weeping_statue = {
-				destroy_artifact = ate_weeping_statue
+			monastic_artifact_weeping_statue = {
+				destroy_artifact = weeping_statue
 			}
 			monastic_artifact_right_hand_petrus = {
 				destroy_artifact = right_hand_petrus
@@ -8085,7 +8084,7 @@ letter_event = {
 			clr_character_flag = monastic_artifact_stone_of_golgotha
 			clr_character_flag = monastic_artifact_horn_gabriel
 			clr_character_flag = monastic_artifact_fragment_of_true_cross
-			clr_character_flag = monastic_artifact_ate_weeping_statue
+			clr_character_flag = monastic_artifact_weeping_statue
 			clr_character_flag = monastic_artifact_right_hand_petrus
 			clr_character_flag = monastic_artifact_elaborate_danda
 			clr_character_flag = monastic_artifact_sariraka_actual_body_part

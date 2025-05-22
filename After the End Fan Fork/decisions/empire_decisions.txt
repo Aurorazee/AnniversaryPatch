@@ -118,6 +118,7 @@ decisions = {
 		effect = {
 			activate_title = { title = e_usa status = yes }
 			scaled_wealth = -2
+			set_character_flag = restored_the_united_states
 			if = {
 				limit = { has_nickname = no }
 				give_nickname = nick_the_great

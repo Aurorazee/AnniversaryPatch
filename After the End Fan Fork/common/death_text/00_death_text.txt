@@ -8,7 +8,7 @@
 #Bestiality
 #Cannibal
 #Satanist Leader
-#Restorer of Roman Empire
+#Restorer of America
 
 #SHAME
 #Excommunicated
@@ -164,18 +164,18 @@ death_text_satanist = {
 		}
 	}
 }
-#death_text_roman_emperor = { #replace with USA restorer later
-#	weight_multiplier = {
-#		factor = 60
-#	
-#		modifier = {
-#			factor = 0
-#			NOT = { 
-#				has_character_flag = achievement_legacy_of_rome
-#			}
-#		}
-#	}
-#}
+death_text_american_emperor = {
+	weight_multiplier = {
+		factor = 60
+	
+		modifier = {
+			factor = 0
+			NOT = { 
+				has_character_flag = restored_the_united_states
+			}
+		}
+	}
+}
 
 death_text_excommunicated = {
 	weight_multiplier = {

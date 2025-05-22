@@ -17483,13 +17483,6 @@ character_event = {
 				has_landed_title = e_california
 				any_artifact = { artifact_type = crown_california }
 			}
-		#	AND = { 
-		#		has_landed_title = k_italy 
-		#		any_artifact = { artifact_type = iron_crown_of_lombardy }
-		#	}
-		#	AND = { 
-		#		any_artifact = { artifact_type = cursed_diamond_crown }
-		#	}
 		}
 	}
 	

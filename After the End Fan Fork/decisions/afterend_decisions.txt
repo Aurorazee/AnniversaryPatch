@@ -223,6 +223,7 @@ decisions = {
 			modifier = { factor = 0.2 }
 			modifier = { factor = 2 trait = brave }
 			modifier = { factor = 2 trait = strong }
+			modifier = { factor = 2 society_member_of = warrior_lodge_mexican }
 			modifier = { factor = 1.5 martial = 12 }
 			modifier = { factor = 0.1 NOT = { martial = 8 } }
 			modifier = { factor = 0.1 trait = craven }

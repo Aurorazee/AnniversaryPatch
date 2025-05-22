@@ -663,6 +663,7 @@ government_flavor = {
 		has_landed_title = e_usa #placeholder
 	}	
 }
+
 government_flavor = {
 	name = gov_roman_imperial_government_decayed
 	graphics = GFX_evt_rome_falls

@@ -109,7 +109,7 @@ decisions = {
 			}
 		}
 		effect = {
-			#narrative_event = { id = MXR.210 tooltip = EVTTOOLTIPMXR.210}
+			narrative_event = { id = MXR.210 tooltip = EVTTOOLTIPMXR.210}
 			set_global_flag = orthodoxy_enforced
 
 		}
