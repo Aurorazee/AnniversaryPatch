@@ -26,6 +26,6 @@ religion=ursuline
 	b_charlesbourg_QC=ca_wall_2
 	b_charlesbourg_QC=ca_wall_3
 }
-2627.12.5={
+2629.12.5={
 	capital=b_quebec_QC
 }

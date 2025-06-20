@@ -195,52 +195,6 @@ feudal_governments = {
 		frame_suffix = "_mormon"
 		title_prefix = "mormon_government_"
 		potential = {
-			OR = {
-				controls_religion = no
-				religion = cetic
-				religion = imamite
-				religion = americanist
-				religion = consumerist
-				religion = monetarist
-				religion = rust_cultist
-				religion = revivalist
-				religion = alawiyya
-				religion = qingzhen
-				religion = nazarene
-				religion = exovedate
-				religion = nousthreskeia
-				religion = sol_invicta
-				religion = patria_grande
-				religion = atomicist
-				religion = celeste
-				religion = true_cross
-				religion = glorian
-				religion_group = latter_day_saints
-				has_religion_feature = religion_temporal_head
-				AND = {
-					OR = {
-						religion = norse_pagan_reformed
-						religion = rust_cultist
-						religion = americanist
-						religion = consumerist
-						religion = monetarist
-						religion = imamite
-						religion = revivalist
-						religion = alawiyya
-						religion = qingzhen
-						religion = nazarene
-						religion = exovedate
-						religion = nousthreskeia
-						religion = sol_invicta
-						religion = patria_grande
-						religion = atomicist
-						religion = celeste
-						religion = true_cross
-						religion = glorian
-					}
-					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
-				}
-			}
 			religion_group = latter_day_saints
 			NOT = { religion = neogodbeite }
 			NOT = { is_government_potential = mex_imperial_government }
@@ -299,64 +253,14 @@ feudal_governments = {
 		title_prefix = "bureaucracy_"
 		potential = {
 			OR = {
-				controls_religion = no
 				religion = cetic
-				religion = imamite
-				religion = americanist
-				religion = consumerist
-				religion = monetarist
-				religion = rust_cultist
-				religion = revivalist
-				religion = alawiyya
 				religion = qingzhen
+				religion = imamite
 				religion = nazarene
-				religion = exovedate
-				religion = nousthreskeia
-				religion = sol_invicta
-				religion = patria_grande
-				religion = atomicist
-				religion = celeste
-				religion = true_cross
-				religion = glorian
-				has_religion_feature = religion_temporal_head
-				AND = {
-					OR = {
-						religion = norse_pagan_reformed
-						religion = rust_cultist
-						religion = americanist
-						religion = consumerist
-						religion = monetarist
-						religion = imamite
-						religion = revivalist
-						religion = alawiyya
-						religion = qingzhen
-						religion = nazarene
-						religion = exovedate
-						religion = nousthreskeia
-						religion = sol_invicta
-						religion = patria_grande
-						religion = atomicist
-						religion = celeste
-						religion = true_cross
-						religion = glorian
-					}
-					has_religion_features = no # Old saves, and campaigns without HF, need the Fylkirate to continue working
-				}
 			}
-			OR = {
-				religion = cetic
-				religion = qingzhen
-				religion = imamite
-				AND = {
-					culture_group = californian
-					NOT = {
-						religion = nazarene
-					}
-				}
-				AND = {
-					religion = nazarene
-					controls_religion = no
-				}
+			NAND = {
+				religion = nazarene
+				controls_religion = yes
 			}
 			NOT = {
 				primary_title = {

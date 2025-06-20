@@ -1462,11 +1462,14 @@ character_event = {
 		days = 1
 	}
 	trigger = {
-		c_2200016 = {
-			OR = {
-				is_married = yes
-				is_alive = no
+		OR = {
+			c_2200016 = {
+				OR = {
+					is_married = yes
+					is_alive = no
+				}
 			}
+			year = 2668
 		}
 		trait = no_marriage
 	}
