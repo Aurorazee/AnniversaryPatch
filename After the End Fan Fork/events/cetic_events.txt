@@ -313,8 +313,11 @@ narrative_event = {
 			has_landed_title = e_california
 			has_landed_title = e_new_california
 		}
+		NOT = {has_character_flag = cetic_11_decision}
 	}
-
+	immediate = {
+					set_character_flag = cetic_11_decision
+				}
 	option = {# same dynasty, previous holder was weak
 		name = EVTOPT_cetic_usurp_same
 		trigger = {

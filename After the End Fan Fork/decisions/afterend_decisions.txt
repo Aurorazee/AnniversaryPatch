@@ -910,6 +910,11 @@ decisions = {
 				}
 			}
 			num_of_king_titles = 2
+			OR = {
+					diplomacy = 14
+					learning = 14
+					e_california = {holder_scope = {dynasty = ROOT}}
+				 }
 			OR = { # can declare at any time with these traits, else have to wait until emperor publishes unenlightened teachings
 				trait = ambitious
 				trait = proud
