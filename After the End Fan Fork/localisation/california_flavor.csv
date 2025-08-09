@@ -11,6 +11,8 @@ has_eval_merit_TT;Has an available Evaluator of Merit or Guru;;;;;;;;;;;;;x
 failed_exam_abdicate;Abdicate as [Root.GetTitle] of [Root.PrimaryTitle.GetName];;;;;;;;;;;;;x
 failed_exam_abdicate_desc;Failing your Imperial Exam is a major blow to both your prestige and legitimacy as a [Root.Government.GetName] ruler. Although you are under no obligation to renounce your position, it may be best for the realm to do so.;;;;;;;;;;;;;x
 
+failed_exam_liege;Failed Exam;;;;;;;;;;;;;x
+
 reschedule_exam;Reschedule Imperial Exam;;;;;;;;;;;;;x
 reschedule_exam_desc;For one reason or another, the evaluators have yet to come back to you. At this point, it's easier to cut your losses and reschedule.;;;;;;;;;;;;;x
 

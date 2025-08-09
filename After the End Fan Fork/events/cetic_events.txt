@@ -313,11 +313,8 @@ narrative_event = {
 			has_landed_title = e_california
 			has_landed_title = e_new_california
 		}
-		NOT = {has_character_flag = cetic_11_decision}
 	}
-	immediate = {
-					set_character_flag = cetic_11_decision
-				}
+
 	option = {# same dynasty, previous holder was weak
 		name = EVTOPT_cetic_usurp_same
 		trigger = {
@@ -8138,9 +8135,24 @@ character_event = {
 			set_title_flag = bureaucracy_set
 			set_title_flag = primary_set
 		}
-		primary_title = {
-			set_variable = { which = bureau_number which = global_bureau_number }
+		if = {
+			limit = { liege = { government = bureaucratic_government } }
+			liege = {
+				primary_title = {
+					set_variable = {
+						which = global_bureau_number_liege
+						which = bureau_number
+					}
+				}
+			}
+			primary_title = {
+				set_variable = {
+					which = bureau_number
+					which = global_bureau_number_liege
+				}
+			}
 		}
+		else = { primary_title = { set_variable = { which = bureau_number value = 20 } } }
 	}
 	
 	option = {
@@ -8148,11 +8160,6 @@ character_event = {
 		add_character_modifier = {
 			name = bureaucracy
 			duration = -1
-		}
-		hidden_tooltip = {
-			primary_title = {
-				set_variable = { which = bureau_number which = global_bureau_number }
-			}
 		}
 	}
 }
@@ -8353,55 +8360,55 @@ character_event = {
 	}
 }
 
-character_event = {
-	id = cetic.505
-	hide_window = yes
-	trigger = {
-		higher_real_tier_than = BARON
-		has_character_modifier = bureaucracy
-		any_demesne_title = {
-			has_title_flag = bureaucracy_set
-			has_title_flag = primary_set
-		}
-		NOT = {
-			primary_title = {
-				has_title_flag = bureaucracy_set
-			}
-		}	
-	}
-	mean_time_to_happen = {
-		days = 1
-	}
+# character_event = {
+	# id = cetic.505
+	# hide_window = yes
+	# trigger = {
+		# higher_real_tier_than = BARON
+		# has_character_modifier = bureaucracy
+		# any_demesne_title = {
+			# has_title_flag = bureaucracy_set
+			# has_title_flag = primary_set
+		# }
+		# NOT = {
+			# primary_title = {
+				# has_title_flag = bureaucracy_set
+			# }
+		# }	
+	# }
+	# mean_time_to_happen = {
+		# days = 1
+	# }
 	
-	immediate = {
-		any_demesne_title = {
-			limit = {
-				has_title_flag = primary_set
-			}
-			set_variable = { which = global_selfbureau_number which = bureau_number }
-			clr_title_flag = bureaucracy_set
-			clr_title_flag = primary_set
-		}
-		primary_title = {
-			set_variable = { which = bureau_number which = global_selfbureau_number }
-			set_title_flag = bureaucracy_set
-			set_title_flag = primary_set
-		}
-		if = {
-			limit = {
-				any_demesne_title = {
-					has_title_flag = devolved_bureaucracy
-				}
-			}
-			any_demesne_title = {
-				clr_title_flag = devolved_bureaucracy
-			}
-			primary_title = {
-				set_title_flag = devolved_bureaucracy
-			}
-		}
-	}
-}
+	# immediate = {
+		# any_demesne_title = {
+			# limit = {
+				# has_title_flag = primary_set
+			# }
+			# set_variable = { which = global_selfbureau_number which = bureau_number }
+			# clr_title_flag = bureaucracy_set
+			# clr_title_flag = primary_set
+		# }
+		# primary_title = {
+			# set_variable = { which = bureau_number which = global_selfbureau_number }
+			# set_title_flag = bureaucracy_set
+			# set_title_flag = primary_set
+		# }
+		# if = {
+			# limit = {
+				# any_demesne_title = {
+					# has_title_flag = devolved_bureaucracy
+				# }
+			# }
+			# any_demesne_title = {
+				# clr_title_flag = devolved_bureaucracy
+			# }
+			# primary_title = {
+				# set_title_flag = devolved_bureaucracy
+			# }
+		# }
+	# }
+# }
 
 #B Rise: Strong Council
 character_event = {

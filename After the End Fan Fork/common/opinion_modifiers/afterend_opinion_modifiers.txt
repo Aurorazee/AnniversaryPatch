@@ -219,6 +219,12 @@ bad_bureaucrat = {
 	years = 5
 }
 
+failed_exam_liege = {
+	opinion = -25
+	years = 10
+	revoke_reason = yes
+}
+
 opinion_machete_infatuated = {
 	opinion = 60
 }
