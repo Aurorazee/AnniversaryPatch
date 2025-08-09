@@ -401,7 +401,6 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 10
 	}
-
 	order_government = {
 		preferred_holdings = { CASTLE }
 		allowed_holdings = {

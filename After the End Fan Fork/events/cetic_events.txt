@@ -309,10 +309,13 @@ narrative_event = {
 	only_playable = yes
 	
 	trigger = {
-		OR = {
-			has_landed_title = e_california
-			has_landed_title = e_new_california
+		FROM = {
+			OR = {
+				title = e_california
+				title = e_new_california
+			}
 		}
+		NOT = { has_character_flag = imperial_claimant }
 	}
 
 	option = {# same dynasty, previous holder was weak
@@ -399,10 +402,11 @@ narrative_event = {
 		ai_chance = { factor = 100 }
 	}
 	
-	option = {# different dynasty
+	option = {# different dynasty, not imperial_claimant
 		name = EVTOPT_cetic_usurp_destroy
 		trigger = {
 			NOT = { dynasty = FROMFROM }
+			NOT = { has_character_flag = imperial_claimant }
 		}
 		piety = -50
 		e_california = { destroy_landed_title = THIS }
@@ -418,6 +422,25 @@ narrative_event = {
 				narrative_event = { id = cetic.13 }
 			}
 		}
+		ai_chance = { factor = 1 }
+	}
+	
+	option = {# different dynasty, imperial_claimant
+		name = EVTOPT_cetic_usurp
+		trigger = {
+			NOT = { dynasty = FROMFROM }
+			NOR = {
+				learning = 14
+				diplomacy = 14
+			}
+			has_character_flag = imperial_claimant
+		}
+		piety = -50
+		add_character_modifier = {
+			name = imperial_authority
+			duration = -1
+		}
+		religion_authority = { modifier = emperor_overthrown }
 		ai_chance = { factor = 1 }
 	}
 }
@@ -2868,7 +2891,7 @@ narrative_event = {
 		trigger = {
 			has_character_flag = imperial_claimant
 		}
-		grant_title = e_california # insanity check
+		grant_title_no_opinion = e_california # insanity check
 		clr_character_flag = imperial_claimant
 		hidden_tooltip = {
 			set_variable = { which = global_imp_auth value = 70 }
@@ -6789,10 +6812,6 @@ character_event = {
 		e_california = {
 			holder_scope = {
 				add_rival = ROOT
-			}
-		}
-		e_california = {
-			holder_scope = {
 				war = {
 					target = FROM 
 					casus_belli = imperial_claim_war
@@ -6801,10 +6820,7 @@ character_event = {
 				}
 			}
 		}
-		set_character_flag = imperial_claimant # for later events
-		FROM = {
-			character_event = { id = cetic.404 }
-		}
+		FROM = { character_event = { id = cetic.404 } }
 	}
 }
 
@@ -8135,24 +8151,24 @@ character_event = {
 			set_title_flag = bureaucracy_set
 			set_title_flag = primary_set
 		}
-		if = {
-			limit = { liege = { government = bureaucratic_government } }
-			liege = {
-				primary_title = {
-					set_variable = {
-						which = global_bureau_number_liege
-						which = bureau_number
-					}
-				}
-			}
-			primary_title = {
-				set_variable = {
-					which = bureau_number
-					which = global_bureau_number_liege
-				}
-			}
-		}
-		else = { primary_title = { set_variable = { which = bureau_number value = 20 } } }
+		# if = {
+			# limit = { liege = { government = bureaucratic_government } }
+			# liege = {
+				# primary_title = {
+					# set_variable = {
+						# which = global_bureau_number_liege
+						# which = bureau_number
+					# }
+				# }
+			# }
+			# primary_title = {
+				# set_variable = {
+					# which = bureau_number
+					# which = global_bureau_number_liege
+				# }
+			# }
+		# }
+		else = { primary_title = { set_variable = { which = bureau_number which = global_bureau_number } } }
 	}
 	
 	option = {
@@ -8178,9 +8194,6 @@ character_event = {
 		primary_title = {
 			has_title_flag = bureaucracy_set
 		}
-		# ROOT = {
-			# government = bureaucratic_government
-		# }
 		higher_real_tier_than = BARON
 	}
 	
