@@ -2628,7 +2628,7 @@ letter_event = {
 		add_character_modifier = { name = imperial_favor duration = 1500 }
 		hidden_tooltip = {
 			remove_character_modifier = imperial_censure
-			FROM = { diploresponse_event = { id = 238 } }
+			FROM = { character_event = { id = 238 } }
 		}
 		ai_chance = {
 			factor = 10
@@ -2646,7 +2646,7 @@ letter_event = {
 		piety = -25
 		prestige = -25
 		hidden_tooltip = {
-			FROM = { diploresponse_event = { id = 239 } }
+			FROM = { character_event = { id = 239 } }
 		}
 		ai_chance = {
 			factor = 10
@@ -8168,7 +8168,7 @@ character_event = {
 				# }
 			# }
 		# }
-		else = { primary_title = { set_variable = { which = bureau_number which = global_bureau_number } } }
+		if = { primary_title = { set_variable = { which = bureau_number which = global_bureau_number } } }
 	}
 	
 	option = {
