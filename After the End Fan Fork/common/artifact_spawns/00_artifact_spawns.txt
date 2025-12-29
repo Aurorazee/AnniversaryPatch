@@ -862,7 +862,7 @@ weeping_statue = {
 	}
 
 	artifacts = {
-		ate_weeping_statue = {
+		weeping_statue = {
 			value = 1
 		}
 	}

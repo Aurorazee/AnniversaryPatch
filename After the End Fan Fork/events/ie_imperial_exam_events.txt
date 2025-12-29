@@ -5872,6 +5872,13 @@ character_event = {
 	option = {
 		name = EVTOPTAIE13
 		add_trait = failed_exam
+		if = {
+			limit = { 
+				independent = no
+				liege = { government = bureaucratic_government }
+			}
+			reverse_opinion = { name = failed_exam_liege who = liege }
+		}
 		clr_character_flag = study_hard
 		clr_character_flag = study_well
 		clr_character_flag = study_math
@@ -5898,6 +5905,7 @@ character_event = {
 	}
 	option = { #Attempt to bribe
 		name = EVTOPTBIE13
+		add_trait = failed_exam
 		trigger = {
 			wealth = 500
 		}
@@ -6056,6 +6064,13 @@ character_event = {
 		name = EVTOPTAIE17
 		prestige = -50
 		add_trait = failed_exam
+		if = {
+			limit = { 
+				independent = no
+				liege = { government = bureaucratic_government }
+			}
+			reverse_opinion = { name = failed_exam_liege who = liege }
+		}
 		set_variable = { which = "test_score" value = 0 }
 		set_character_flag = need_retest
 		clr_character_flag = study_hard
@@ -6084,6 +6099,13 @@ character_event = {
 			wealth = 500
 		}
 		add_trait = failed_exam
+		if = {
+			limit = { 
+				independent = no
+				liege = { government = bureaucratic_government }
+			}
+			reverse_opinion = { name = failed_exam_liege who = liege }
+		}
 		set_character_flag = need_retest
 		clr_character_flag = study_hard
 		clr_character_flag = study_well
@@ -6229,6 +6251,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTAIE19
+		remove_trait = failed_exam
 		add_trait = imp_ex1
 		set_character_flag = ie_applied
 		hidden_effect = {
@@ -6365,6 +6388,10 @@ character_event = {
 		remove_trait = imp_ex2
 		remove_trait = imp_ex3
 		remove_trait = imp_ex4
+		any_character = {
+			limit = { has_opinion_modifier = { name = failed_exam_liege who = ROOT } }
+			remove_opinion = { name = failed_exam_liege who = ROOT }
+		}
 	}
 }
 

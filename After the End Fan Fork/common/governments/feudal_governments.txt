@@ -401,7 +401,6 @@ feudal_governments = {
 		## Modifiers
 		court_size_modifier = 10
 	}
-
 	order_government = {
 		preferred_holdings = { CASTLE }
 		allowed_holdings = {
@@ -624,7 +623,14 @@ feudal_governments = {
 					}
 				}
 			}
-			controls_religion = no
+			OR = {
+				controls_religion = no
+				AND = {
+					controls_religion = yes
+					any_demesne_title = { title = d_americanist }
+					any_demesne_title = { count = 2 }
+				}
+			}
 			is_patrician = no
 			NOT = {
 				primary_title = {

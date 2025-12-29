@@ -132,8 +132,10 @@
 			location=1235 # Travis
 			force_mult=1.0
 		}
-		set_character_flag=is_mack
-		set_character_flag=is_special_character
+		effect = {
+			set_character_flag=is_mack
+			set_character_flag=is_special_character
+		}
 	}
 	2668.1.1={
 		raise_levies={
@@ -232,8 +234,10 @@
 			location=1238 # houston
 			force_mult=1.0
 		}
-		set_character_flag=is_floyd
-		set_character_flag=is_special_character
+		effect = {
+			set_character_flag=is_floyd
+			set_character_flag=is_special_character
+		}
 	}
 	2668.1.1={
 		raise_levies={

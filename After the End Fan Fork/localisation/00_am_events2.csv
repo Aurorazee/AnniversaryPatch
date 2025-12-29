@@ -1344,6 +1344,7 @@ EVTOPT_cetic_usurp_same;Imperial blood runs through my veins!;;;;;;;;;;;;;x
 EVTOPT_cetic_usurp_diplo;All men seek to follow my commands!;;;;;;;;;;;;;x
 EVTOPT_cetic_usurp_learn;I am the righteous, enlightened Emperor!;;;;;;;;;;;;;x
 EVTOPT_cetic_usurp_destroy;I am not worthy...;;;;;;;;;;;;;x
+EVTOPT_cetic_usurp;Elton has shown by his deeds: might makes right!;;;;;;;;;;;;;x
 emperor_overthrown;Emperor Overthrown;;;;;;;;;;;;;x
 EVTNAME_cetic_emperor_destroyed;The Emperor Overthrown!;;;;;;;;;;;;;x
 EVTDESC_cetic_emperor_destroyed;Black news for the faithful, as the glorious Emperor has been cast down from his position as head of Ceticism. With the imperial office empty, dark days are ahead for those who rely on the enlightened teachings of the Emperor.\n\nWord is spreading that [From.GetTitledFirstName] may have been instrumental in the downfall of the Emperor.;;;;;;;;;;;;;x
