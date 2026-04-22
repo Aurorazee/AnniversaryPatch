@@ -3174,6 +3174,7 @@ bible_scholar = {
 	religious = yes
 	church_opinion = 5
 	same_opinion = 5
+	random = no
 }
 
 jadidi = {
@@ -3222,6 +3223,7 @@ ansari = {
 no_marriage = { #For the Zak event chain to prevent Zak from marrying initially. Do not use for other things
 	cannot_marry = yes
 	hidden = yes
+	random = no
 }
 
 #Commented these out because I have no idea what these are supposed to do.
@@ -3316,5 +3318,6 @@ no_marriage = { #For the Zak event chain to prevent Zak from marrying initially.
 eight_folded_path = { # debug thing
 	combat_rating = 500
 	martial = 500
+	random = no
 	customizer = no
 }
