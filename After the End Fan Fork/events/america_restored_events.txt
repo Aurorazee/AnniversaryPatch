@@ -124,7 +124,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_2
 		set_global_flag = virginia
 		prestige = 500
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -155,7 +155,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_3
 		set_global_flag = pennsylvania
 		prestige = 500
-		character_event = { id = americarestored.20 days = 12 }		
+		character_event = { id = americarestored.20 days = 12 random = 20 }		
 	}
 }
 
@@ -186,7 +186,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_4
 		set_global_flag = newyork
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }	
 
@@ -216,7 +216,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_5
 		set_global_flag = newjersey
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -245,7 +245,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_6
 		set_global_flag = newengland
 		prestige = 500
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -275,7 +275,7 @@ narrative_event = {
 		name = "EVTOPTA_americarestored_7"
 		set_global_flag = carolina
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -307,7 +307,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_8
 		set_global_flag = the_south
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -336,7 +336,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_9
 		set_global_flag = florida
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -365,7 +365,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_10
 		set_global_flag = dakota
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -394,7 +394,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_11
 		set_global_flag = texas
 		prestige = 500
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -425,7 +425,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_12
 		set_global_flag = usa_caribbean
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -456,7 +456,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_13
 		set_global_flag = usa_canada
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -488,7 +488,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_14
 		set_global_flag = greatlakes
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -516,7 +516,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_15
 		set_global_flag = heartland
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -545,7 +545,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_16
 		set_global_flag = appalachia
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -575,7 +575,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_17
 		set_global_flag = rockies
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -611,7 +611,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_18
 		set_global_flag = pacific
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 
@@ -655,7 +655,7 @@ narrative_event = {
 		name = EVTOPTA_americarestored_19
 		set_global_flag = second_america
 		prestige = 500	
-		character_event = { id = americarestored.20 days = 12 }
+		character_event = { id = americarestored.20 days = 12 random = 20 }
 	}
 }
 	
