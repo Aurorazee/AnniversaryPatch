@@ -13,7 +13,7 @@ decisions = {
 			}
 			is_playable = yes
 			independent = yes
-			realm_size = 100
+			
 			OR = {
 				religion_group = christian
 				religion_group = oldworld
@@ -27,7 +27,6 @@ decisions = {
 			}
 			OR = {
 				culture_group = mid_atlantic
-				is_nomadic = yes
 				AND = {
 					culture_group = laurentian
 					NOT = { culture = ontarian }
@@ -48,7 +47,7 @@ decisions = {
 			prisoner = no
 			NOT = { is_incapable = yes }
 			prestige = 2500
-			realm_size = 250
+			
 			has_landed_title = k_columbia
 			custom_tooltip = {
 				text = TXT_kingdom_columbia
