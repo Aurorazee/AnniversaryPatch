@@ -8168,7 +8168,7 @@ character_event = {
 				# }
 			# }
 		# }
-		if = { primary_title = { set_variable = { which = bureau_number which = global_bureau_number } } }
+		primary_title = { set_variable = { which = bureau_number which = global_bureau_number } }
 	}
 	
 	option = {
@@ -8439,7 +8439,7 @@ character_event = {
 	}
 	
 	immediate = {
-		change_variable = { which = global_bureau_number value = 0.1 }
+		change_variable = { which = global_bureau_number value = 1 }
 		primary_title = {
 			change_variable = { which = bureau_number value = 1.5 }
 		}
@@ -8563,7 +8563,7 @@ character_event = {
 	}
 	
 	immediate = {
-		change_variable = { which = global_bureau_number value = -3 }
+		change_variable = { which = global_bureau_number value = -0.5 }
 		primary_title = {
 			change_variable = { which = bureau_number value = -5 }
 		}
@@ -8693,7 +8693,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		change_variable = { which = global_bureau_number value = 0.1 }
+		change_variable = { which = global_bureau_number value = 2 }
 	}
 	
 	option = {
@@ -9072,7 +9072,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		change_variable = { which = global_bureau_number value = 0.2 }
+		change_variable = { which = global_bureau_number value = 1 }
 		primary_title = {
 			change_variable = { which = bureau_number value = 3 }
 		}
@@ -9097,7 +9097,7 @@ character_event = {
 	is_triggered_only = yes
 	
 	immediate = {
-		change_variable = { which = global_bureau_number value = 0.5 }
+		change_variable = { which = global_bureau_number value = 2 }
 		primary_title = {
 			change_variable = { which = bureau_number value = 5 }
 		}
@@ -10140,7 +10140,7 @@ character_event = {
 						has_province_modifier = bureau_roads
 					}
 				}
-				change_variable = { which = global_bureau_number value = 0.1 }
+				change_variable = { which = global_bureau_number value = 0.5 }
 			}
 			if = {
 				limit = {
@@ -10150,7 +10150,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = 0.1 }
+					change_variable = { which = global_bureau_number value = 0.5 }
 				}
 			}
 			if = {
@@ -10161,7 +10161,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = 0.1 }
+					change_variable = { which = global_bureau_number value = 0.5 }
 				}
 			}
 			if = {
@@ -10172,7 +10172,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = 0.1 }
+					change_variable = { which = global_bureau_number value = 0.5 }
 				}
 			}
 			if = {
@@ -10183,7 +10183,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = 0.1 }
+					change_variable = { which = global_bureau_number value = 0.5 }
 				}
 			}
 			if = {
@@ -10194,7 +10194,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = 0.1}
+					change_variable = { which = global_bureau_number value = 0.5 }
 				}
 			}
 			if = {
@@ -10205,7 +10205,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = -0.2 }
+					change_variable = { which = global_bureau_number value = -0.1 }
 				}
 			}
 			if = {
@@ -10216,7 +10216,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = -0.2 }
+					change_variable = { which = global_bureau_number value = -0.1 }
 				}
 			}
 			if = {
@@ -10227,7 +10227,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = -0.2 }
+					change_variable = { which = global_bureau_number value = -0.1 }
 				}
 			}
 			if = {
@@ -10238,7 +10238,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = -0.2 }
+					change_variable = { which = global_bureau_number value = -0.1 }
 				}
 			}
 			if = {
@@ -10249,7 +10249,7 @@ character_event = {
 					}
 				}
 				hidden_tooltip = {
-					change_variable = { which = global_bureau_number value = -0.2 }
+					change_variable = { which = global_bureau_number value = -0.1 }
 				}
 			}
 			if = {
@@ -10263,7 +10263,7 @@ character_event = {
 					}
 					higher_real_tier_than = COUNT
 				}
-				change_variable = { which = global_bureau_number value = 0.2 }
+				change_variable = { which = global_bureau_number value = 0.5 }
 			}
 			if = {
 				limit = {
@@ -10276,35 +10276,35 @@ character_event = {
 					}
 					higher_real_tier_than = COUNT
 				}
-				change_variable = { which = global_bureau_number value = -0.25 }
+				change_variable = { which = global_bureau_number value = -0.2 }
 			}
 			if = {
 				limit = {
 					has_character_modifier = low_bureaucracy
 					higher_real_tier_than = COUNT
 				}
-				change_variable = { which = global_bureau_number value = -0.5 }
+				change_variable = { which = global_bureau_number value = -0.1 }
 			}
 			if = {
 				limit = {
 					has_character_modifier = low_bureaucracy
 					higher_real_tier_than = DUKE
 				}
-				change_variable = { which = global_bureau_number value = -0.5 }
+				change_variable = { which = global_bureau_number value = -0.1 }
 			}
 			if = {
 				limit = {
 					has_character_modifier = low_bureaucracy
 					higher_real_tier_than = KING
 				}
-				change_variable = { which = global_bureau_number value = -0.5 }
+				change_variable = { which = global_bureau_number value = -0.1 }
 			}
 			if = {
 				limit = {
 					has_character_modifier = low_bureaucracy
 					higher_real_tier_than = EMPEROR
 				}
-				change_variable = { which = global_bureau_number value = -0.5 }
+				change_variable = { which = global_bureau_number value = -0.1 }
 			}
 			if = {
 				limit = {
@@ -10313,14 +10313,14 @@ character_event = {
 						has_character_modifier = high_bureaucracy
 					}
 				}
-				change_variable = { which = global_bureau_number value = 0.25 }
+				change_variable = { which = global_bureau_number value = 0.5 }
 			}
 			if = {
 				limit = {
 					has_character_modifier = high_bureaucracy
 					higher_real_tier_than = COUNT
 				}
-				change_variable = { which = global_bureau_number value = 0.5 }
+				change_variable = { which = global_bureau_number value = 1 }
 			}
 			if = {
 				limit = {
@@ -10328,7 +10328,7 @@ character_event = {
 					higher_real_tier_than = DUKE
 					check_variable = { which = global_bureau_number value > 80 }
 				}
-				change_variable = { which = global_bureau_number value = 0.5 }
+				change_variable = { which = global_bureau_number value = 1 }
 			}
 			if = {
 				limit = {
@@ -10336,7 +10336,7 @@ character_event = {
 					higher_real_tier_than = KING
 					check_variable = { which = global_bureau_number value > 70 }
 				}
-				change_variable = { which = global_bureau_number value = 0.5 }
+				change_variable = { which = global_bureau_number value = 1 }
 			}
 			if = {
 				limit = {
@@ -10344,7 +10344,7 @@ character_event = {
 					higher_real_tier_than = EMPEROR
 					check_variable = { which = global_bureau_number value > 60 }
 				}
-				change_variable = { which = global_bureau_number value = 0.5 }
+				change_variable = { which = global_bureau_number value = 1 }
 			}
 		}
 		

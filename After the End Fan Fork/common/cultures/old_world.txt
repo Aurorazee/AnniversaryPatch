@@ -26,7 +26,7 @@ old_world = {
 			Omar Ossian Oliver_Oliver Outerbridge Ogilvy
 			Petworth Penn Prentice Pershing Patton Preamble Patricius_Patrick Paul_Paul Peter_Peter Philander Phineas Philip_Phillip Philadelphus Percy Philemon Preston
 			Quincy Quorum Quentin Quantell Quint
-			Rexford Ronald Rutherford Robert_Robert Rutledge Ray_Raymond Rufus_Red Reginald Riley Richard_Richard Rupert_Robert Ronald_Ronald Rowland_Roland Ralph_Ralph Reginald Reorus
+			Rexford Ronald Rutherford Robert_Robert Rutledge Ray_Raymond Rufus_Red Reginald Riley Richard_Richard Rupert_Robert Ronald_Ronald Rowland_Roland Ralph_Ralph Reorus
 			Shaw Shipley Smith Seymour Stephen_Stephen Samuel_Samuel Sherman Sidney Silvan_Silvanus Sam_Samuel Scipio Scott Sheridan Sterling Severin Simon_Simon Stansbury Saul Summerset Spencer Stanley
 			Truxton Totten Tenley Thaddeus_Thaddeus Theodore_Theodore Truman Thomas_Thomas Tecumseh Tyrone Terrell Terrance Tom_Thomas Tim_Timothy Terry Timothy_Timothy Theobald Truesdell
 			Ulysses_Odysseus
@@ -49,14 +49,14 @@ old_world = {
 			Justina Justice Julia Joyce Jade Jasmine Jayla Jean_Joana Josephine Jessie Jessica Jennifer_Jennfer Jane_Jane Janet Josephine_Josepha Joanne_Joana Junie Julie Judith
 			Kayla Katharine_Catherine
 			Libertas Liberalitas Loretta Lichelle Linda Layla Lennis Lilian Lula Laura_Laura Lois Livia
-			Majority Martha Miranda Merces Millicent_Millicent Melissa_Melissa Mary_Mary Marisa Michelle May_May Martha Madison Marceline Melanie Melody
+			Majority Martha Miranda Merces Millicent_Millicent Melissa_Melissa Mary_Mary Marisa Michelle May_May Madison Marceline Melanie Melody
 			Nullabona Nongrata Nia Nichole Natalie Nancy Nicole
 			Olympia Olivia Octavia
-			Prudence Petra Purity Prosperity Precedenta Pamela_Pam Parris Patrice Precious Petunia Petra Paula_Pauline Patricia
+			Prudence Petra Purity Prosperity Precedenta Pamela_Pam Parris Patrice Precious Petunia Paula_Pauline Patricia
 			Respublia Rosa Raven Ruth Roalie Rosemary Roberta Rachel
 			Subpoena Stella Sola Sarah_Sarah Susanna_Susan Sierra Sara_Sarah Susan_Susan
 			Teayonna Theresa_Theresa Tierra Tituba
-			Virginia Victory Vindicta Virtue Valerie Violet Valerie
+			Virginia Victory Vindicta Virtue Valerie Violet
 			Wilmot_Wilhelmina
 			Zenia
 		}
