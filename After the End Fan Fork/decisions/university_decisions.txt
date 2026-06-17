@@ -21,7 +21,7 @@ decisions = {
 			}
 		}
 		allow = {
-			scaled_wealth = 250
+			wealth = 250
 			learning = 10
 		}
 		effect = {
@@ -140,7 +140,7 @@ targetted_decisions = {
 			NOT = { trait = graduate }
 		}
 		allow = {
-			FROM = { scaled_wealth = 250 }
+			FROM = { wealth = 250 }
 		}
 		effect = {
 			character_event = { id = univ.1 } # should add an event to give kid a choice
