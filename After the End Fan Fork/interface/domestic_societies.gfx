@@ -845,21 +845,21 @@ spriteTypes = {
 		name = "GFX_society_expansion_background_monastic_order_mormon"
 		texturefile = "gfx\\interface\\societies\\society_exp_bg_monastic_order_nestorian.dds"
 	}
+
+	spriteType = {
+		name = "GFX_icon_small_monastic_order_mormon"
+		texturefile = "gfx\\interface\\societies\\symbol_small_monastic_order_mormon.dds"
+		noOfFrames = 2
+	}
 	
 	spriteType = {
 		name = "GFX_society_influence_monastic_order_mormon"
 		texturefile = "gfx\\interface\\societies\\society_influence_monastic_order_nestorian.dds"
-		noOfFrames = 2
 	}
 	
 	spriteType = {
 		name = "GFX_society_portrait_ring_monastic_order_mormon"
 		texturefile = "gfx\\interface\\societies\\portrait_ring_monastic_order_nestorian.dds"
-	}
-	
-	spriteType = {
-		name = "GFX_society_portrait_ring_small_monastic_order_mormon"
-		texturefile = "gfx\\interface\\societies\\portrait_ring_small_monastic_order_nestorian.dds"
 	}
 	
 	spriteType = {
@@ -876,7 +876,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_society_main_background_hermetics"
-		texturefile = "gfx\\interface\\societies\\society_bg_monastic_order_stoics.tga"
+		texturefile = "gfx\\interface\\societies\\society_bg_hermetics.dds"
 	}
 	
 	spriteType = {
@@ -886,7 +886,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_icon_small_hermetics"
-		texturefile = "gfx\\interface\\societies\\symbol_small_monastic_order_stoics.tga"
+		texturefile = "gfx\\interface\\societies\\symbol_small_hermetics.dds"
 		noOfFrames = 2
 	}
 	
