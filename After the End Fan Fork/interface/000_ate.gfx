@@ -5578,4 +5578,8 @@ spriteTypes = {
 		name = "GFX_donate_to_ivy_league"
 		texturefile = "gfx/interface/decision_icon_borrow_money.dds"
 	}
+	spriteType = {
+		name = "GFX_switch_jewish"
+		texturefile = "gfx\\interface\\switch_jewish.tga"
+	}
 }
