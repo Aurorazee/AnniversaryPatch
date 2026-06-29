@@ -342,7 +342,7 @@
 			add_friend=2200040
 			add_friend=1384010
 			add_friend=1384011
-			add_friend=1911151
+			#add_friend=1911151
 		}
 	}
 	2660.1.2={
@@ -1390,7 +1390,7 @@
 			set_character_flag=diversity
 			set_character_flag=physique
 			add_friend=1384011
-			add_friend=1911151
+			#add_friend=1911151
 			add_friend=2200016
 		}
 	}
@@ -1431,7 +1431,7 @@
 	2660.1.1={
 		effect={
 			add_friend=1384010
-			add_friend=1911151
+			#add_friend=1911151
 			add_friend=2200016
 		}
 	}

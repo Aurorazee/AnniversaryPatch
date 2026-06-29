@@ -36,7 +36,7 @@ character_event = {
 	trigger = {
 		in_command = yes
 		NOT = {
-			has_artifact = ate_fingerbone_of_saint
+			has_artifact = fingerbone_of_saint
 		}
 	}
 	
@@ -46,7 +46,7 @@ character_event = {
 	
 	option = {
 		name = EVTOPTA_SoA_5200
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -76,7 +76,7 @@ character_event = {
 		has_dlc = "Sons of Abraham"
 		wealth = 20
 		NOT = {
-			has_artifact = ate_fingerbone_of_saint
+			has_artifact = fingerbone_of_saint
 		}
 	}
 	
@@ -87,7 +87,7 @@ character_event = {
 	option = {
 		name = EVTOPTA_SoA_5201
 		wealth = -10
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -127,7 +127,7 @@ character_event = {
 	trigger = {
 		has_dlc = "Sons of Abraham"
 		NOT = {
-			has_artifact = ate_fingerbone_of_saint
+			has_artifact = fingerbone_of_saint
 		}
 	}
 	
@@ -137,7 +137,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5202
-		add_artifact = ate_fingerbone_of_saint
+		add_artifact = fingerbone_of_saint
 		new_artifact = {
 			set_creation_date = 1.1.1
 		}
@@ -164,7 +164,7 @@ character_event = {
 			trait = slothful
 		}
 		has_dlc = "Sons of Abraham"
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -173,7 +173,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5203
-		destroy_artifact = ate_fingerbone_of_saint
+		destroy_artifact = fingerbone_of_saint
 	}
 }
 
@@ -196,7 +196,7 @@ character_event = {
 				controlled_by = ROOT
 			}
 		}
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -205,7 +205,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5204
-		destroy_artifact = ate_fingerbone_of_saint
+		destroy_artifact = fingerbone_of_saint
 	}
 }
 
@@ -224,7 +224,7 @@ character_event = {
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -233,7 +233,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5205
-		destroy_artifact = ate_fingerbone_of_saint
+		destroy_artifact = fingerbone_of_saint
 	}
 	option = {
 		name = EVTOPTB_SoA_5205
@@ -279,7 +279,7 @@ character_event = {
 		NOT = {
 			has_dlc = "Reapers"
 		}
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -351,7 +351,7 @@ character_event = {
 		has_dlc = "Sons of Abraham"
 		month = 4
 		NOT = { month = 7 }
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -468,7 +468,7 @@ character_event = {
 
 	trigger = {
 		has_dlc = "Sons of Abraham"
-		has_artifact = ate_fingerbone_of_saint
+		has_artifact = fingerbone_of_saint
 	}
 	
 	mean_time_to_happen = {
@@ -477,7 +477,7 @@ character_event = {
 
 	option = {
 		name = EVTOPTA_SoA_5209
-		destroy_artifact = ate_fingerbone_of_saint
+		destroy_artifact = fingerbone_of_saint
 		piety = 30
 			if = {
 				limit = { NOT = { trait = humble } }
@@ -486,7 +486,7 @@ character_event = {
 	}
 	option = {
 		name = EVTOPTB_SoA_5209
-		destroy_artifact = ate_fingerbone_of_saint
+		destroy_artifact = fingerbone_of_saint
 		piety = 30
 		prestige = 30
 		add_character_modifier = {

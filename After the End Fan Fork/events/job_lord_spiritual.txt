@@ -91,7 +91,7 @@ character_event = {
 		modifier = {
 			factor = 0.75
 			liege = {
-				has_artifact = ate_fingerbone_of_saint
+				has_artifact = fingerbone_of_saint
 			}
 		}
 		modifier = {

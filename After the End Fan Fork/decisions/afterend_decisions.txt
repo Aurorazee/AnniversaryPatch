@@ -4717,7 +4717,7 @@ decisions = {
 						}
 						if = {
 							limit = { 
-								culture_group = beltway
+								culture = beltway
 								NOT = { distance = { where = 63 distance = 200 } } 
 							}
 							random = { 
@@ -4727,7 +4727,7 @@ decisions = {
 						}
 						if = {
 							limit = { 
-								culture_group = beltway
+								culture = beltway
 								NOT = { distance = { where = 63 distance = 400 } } 
 							}
 							random = { 
@@ -4846,7 +4846,7 @@ decisions = {
 						}
 						if = {
 							limit = { 
-								culture_group = beltway
+								culture = beltway
 								capital_scope = { NOT = { distance = { where = PREV distance = 200 } } } 
 							}
 							random = { 
@@ -4856,7 +4856,7 @@ decisions = {
 						}
 						if = {
 							limit = { 
-								culture_group = beltway
+								culture = beltway
 								capital_scope = { NOT = { distance = { where = PREV distance = 400 } } } 
 							}
 							random = { 

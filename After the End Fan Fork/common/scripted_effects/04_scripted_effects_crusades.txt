@@ -254,10 +254,10 @@ crusade_give_artifact_effect = {
 		}
 		#Random Christian associated artifacts
 		5 = {
-			add_artifact = ate_fragment_of_true_cross
+			add_artifact = fragment_of_true_cross
 		}
 		5 = {
-			add_artifact = ate_weeping_statue
+			add_artifact = weeping_statue
 		}
 		#Crusade Armor
 		20 = {
